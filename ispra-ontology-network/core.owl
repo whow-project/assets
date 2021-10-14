@@ -145,6 +145,22 @@
     
 
 
+    <!-- https://dati.isprambiente.it/ontology/core/hasCollection -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasCollection">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isCollectionOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Collection"/>
+        <rdfs:comment xml:lang="it">La relazione esistente tra un&apos;entità ed una collezione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between an entity and a collection.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
+        <rdfs:label xml:lang="it">ha collezione</rdfs:label>
+        <rdfs:label xml:lang="en">has collection</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://dati.isprambiente.it/ontology/core/hasDataSchema -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasDataSchema">
@@ -460,6 +476,21 @@
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
         <rdfs:label xml:lang="en">is classified by</rdfs:label>
         <rdfs:label xml:lang="it">è classificato da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/core/isCollectionOf -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isCollectionOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Collection"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:comment xml:lang="it">La relazione esistente tra una collezione ed una qualsiasi entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between a collection and any possible entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
+        <rdfs:label xml:lang="en">is collection of</rdfs:label>
+        <rdfs:label xml:lang="it">è collezione di</rdfs:label>
     </owl:ObjectProperty>
     
 
