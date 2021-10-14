@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://dati.isprambiente.it/ontology/inspire-mf-ontopia-aligns/" uri="inspire-mf-ontopia-aligns.owl"/>
+    <uri id="User Entered Import Resolution" name="https://dati.isprambiente.it/ontology/core/" uri="file:/Users/andrea/Documents/software/sourcetree/ispra/src/ontology/rdf/ontology-network/v2/core.owl"/>
+    <uri id="User Entered Import Resolution" name="https://dati.isprambiente.it/ontology/inspire-mf/" uri="file:/Users/andrea/Documents/software/sourcetree/ispra/src/ontology/rdf/ontology-network/v2/inspire-mf.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1632326822074" name="https://dati.isprambiente.it/ontology/inspire-mf-aligns/" uri="inspire-mf-ontopia-aligns.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1632326822074" name="https://dati.isprambiente.it/ontology/inspire-mf-full-aligns/" uri="inspire-mf-full.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1632326822074" name="https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/" uri="inspire-mf-ssn-sosa-aligns.owl"/>
+    </group>
+</catalog>

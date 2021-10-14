@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/andrea/ontologies/2021/8/untitled-ontology-107#"
+     xml:base="http://www.semanticweb.org/andrea/ontologies/2021/8/untitled-ontology-107"
+     xmlns:places="https://dati.isprambiente.it/ontology/places/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:clv="https://w3id.org/italia/onto/CLV/">
+    <owl:Ontology rdf:about="https://dati.isprambiente.it/ontology/places-aligns/">
+        <owl:imports rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/hasCountry -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/hasCountry">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasCountry"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasLocation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/hasDirectHigherRank -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/hasDirectHigherRank">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasDirectHigherRank"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/hasGeometry -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/hasGeometry">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasGeometry"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/hasHigherRank -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/hasHigherRank">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasHigherRank"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/hasLowerRank -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/hasLowerRank">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasLowerRank"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/hasMunicipality -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/hasMunicipality">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasCity"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/hasProvince -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/hasProvince">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasProvince"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/hasRegion -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/hasRegion">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasRegion"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/isGeometryOf -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/isGeometryOf">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/isGeometryFor"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasCity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasCity"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasCountry -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasCountry"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasDirectHigherRank -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasDirectHigherRank"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasGeometry"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasHigherRank -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasHigherRank"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasLowerRank -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasLowerRank"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasProvince -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasProvince"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/hasRegion -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasRegion"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/isGeometryFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/isGeometryFor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/coordinateSystem -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/coordinateSystem">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/coordinateSystem"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/geometry -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/geometry">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/serialization"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/istat -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/istat">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/CLV/identifier"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/lat -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/lat">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/lat"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/long -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/long">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/italia/onto/CLV/long"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/coordinateSystem -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/coordinateSystem"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/identifier -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/identifier"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/lat -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/lat"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/long -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/long"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/serialization -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/CLV/serialization"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/AdministrativeUnit -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/AdministrativeUnit">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/Country -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/Country">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/CLV/Country"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/Geometry -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/Geometry">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/CLV/Geometry"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/Municipality -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/Municipality">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/CLV/City"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/Province -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/Province">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/CLV/Province"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/Region -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/Region">
+        <owl:equivalentClass rdf:resource="https://w3id.org/italia/onto/CLV/Region"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/AdminUnitComponent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/AdminUnitComponent"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/City -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/City"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/Country -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Country"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/Geometry -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Geometry"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/Province -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Province"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/Region -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Region"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
