@@ -1,2 +1,2 @@
 # ontologies
-This repository stores the ontologies that will be implemented during the WHOW project
+This repository stores the ontologies that will be used and implemented from scratch during the WHOW project
