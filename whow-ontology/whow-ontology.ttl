@@ -1,9 +1,12 @@
 # baseURI: https://whowproject.eu/ontologies/whow-ontology
 # imports: http://www.w3.org/2004/02/skos/core
+# imports: http://www.w3.org/ns/ssn/
+# imports: https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/
 # imports: https://dati.isprambiente.it/ontology/inspire-mf/
 
 @prefix :        <https://whowproject.eu/ontologies/whow-ontology#> .
 @prefix inspire-mf:  <https://dati.isprambiente.it/ontology/inspire-mf/> .
+@prefix inspire-mf-ssn-sosa-aligns:  <https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,7 +15,59 @@
 
 <https://whowproject.eu/ontologies/whow-ontology>
       rdf:type owl:Ontology ;
-      owl:imports <http://www.w3.org/2004/02/skos/core> , inspire-mf: ;
+      owl:imports <http://www.w3.org/2004/02/skos/core> , <http://www.w3.org/ns/ssn/> , inspire-mf-ssn-sosa-aligns: , inspire-mf: ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
       skos:definition "Ontology for describing WHOW project concepts about water monitoring"@en ;
       skos:prefLabel "WHOW Ontology"@en .
+
+:ChemicalAgentConcentrationObservation
+      rdf:type owl:Class ;
+      rdfs:label "Chemical Agent Concentration Observation "@en ;
+      rdfs:subClassOf :WaterObservation ;
+      skos:prefLabel "Chemical Agent Concentration Observation "@en .
+
+:ChemicalAgentConcentrationObservation_1
+      rdf:type :ChemicalAgentConcentrationObservation ;
+      :takenFromStation :MonitoringStation_1 .
+
+:MonitoringStation
+      rdf:type owl:Class ;
+      rdfs:label "Monitoring Station "@en ;
+      rdfs:subClassOf inspire-mf:MonitoringFacility , :WHOWConcept ;
+      skos:prefLabel "Monitoring Station "@en .
+
+:MonitoringStation_1
+      rdf:type :MonitoringStation .
+
+:WHOWConcept
+      rdf:type owl:Class ;
+      rdfs:comment "An abstract class collecting all the WHOW concepts."@en ;
+      rdfs:label "WHOW Concept "@en ;
+      rdfs:subClassOf owl:Thing ;
+      skos:prefLabel "WHOW Concept "@en .
+
+:WaterObservation
+      rdf:type owl:Class ;
+      rdfs:label "Water Observation "@en ;
+      rdfs:subClassOf inspire-mf:Observation , :WHOWConcept ;
+      skos:prefLabel "Water Observation "@en .
+
+:WaterObservationParameter
+      rdf:type owl:Class ;
+      rdfs:label "Water Observation Parameter"@en ;
+      rdfs:subClassOf inspire-mf:ObservationParameter , :WHOWConcept ;
+      skos:prefLabel "Water Observation Parameter"@en .
+
+:hasWaterObservationParameter
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterObservation ;
+      rdfs:label "has water observation parameter"@en ;
+      rdfs:range :WaterObservationParameter ;
+      skos:prefLabel "has water observation parameter"@en .
+
+:takenFromStation
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterObservation ;
+      rdfs:label "taken from station "@en ;
+      rdfs:range :MonitoringStation ;
+      skos:prefLabel "taken from station "@en .
