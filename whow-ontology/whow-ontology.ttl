@@ -148,7 +148,7 @@
 :WaterChemicalAgentType
       rdf:type owl:Class ;
       rdfs:label "Water Chemical Agent Type "@en ;
-      rdfs:subClassOf :WHOWConcept ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> , :WHOWConcept ;
       skos:prefLabel "Water Chemical Agent Type "@en .
 
 :WaterObservation
