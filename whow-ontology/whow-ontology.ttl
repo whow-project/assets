@@ -1,15 +1,17 @@
 # baseURI: https://whowproject.eu/ontologies/whow-ontology
+# imports: http://purl.org/dc/terms/
 # imports: http://www.w3.org/2004/02/skos/core
+# imports: http://www.w3.org/ns/dcat
 # imports: http://www.w3.org/ns/ssn/
 # imports: https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/
 # imports: https://dati.isprambiente.it/ontology/inspire-mf/
-# imports: https://w3id.org/italia/onto/CLV
+# imports: https://dati.isprambiente.it/ontology/places/
 
 @prefix :        <https://whowproject.eu/ontologies/whow-ontology#> .
-@prefix CLV:     <https://w3id.org/italia/onto/CLV/> .
 @prefix inspire-mf:  <https://dati.isprambiente.it/ontology/inspire-mf/> .
 @prefix inspire-mf-ssn-sosa-aligns:  <https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix places:  <https://dati.isprambiente.it/ontology/places/> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
@@ -17,7 +19,7 @@
 
 <https://whowproject.eu/ontologies/whow-ontology>
       rdf:type owl:Ontology ;
-      owl:imports <http://www.w3.org/2004/02/skos/core> , <http://www.w3.org/ns/ssn/> , inspire-mf-ssn-sosa-aligns: , inspire-mf: , <https://w3id.org/italia/onto/CLV> ;
+      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2004/02/skos/core> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/ns/ssn/> , inspire-mf-ssn-sosa-aligns: , inspire-mf: , places: ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
       skos:definition "Ontology for describing WHOW project concepts about water monitoring"@en ;
       skos:prefLabel "WHOW Ontology"@en .
@@ -90,7 +92,6 @@
       rdf:type owl:Class ;
       rdfs:label "Monitoring Station "@en ;
       rdfs:subClassOf inspire-mf:MonitoringFacility , :WHOWConcept ;
-      owl:equivalentClass <https://w3id.org/italia/onto/l0/Location> ;
       skos:prefLabel "Monitoring Station "@en .
 
 :MonitoringStation_1
