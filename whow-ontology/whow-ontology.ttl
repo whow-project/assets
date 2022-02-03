@@ -1,8 +1,10 @@
 # baseURI: https://whowproject.eu/ontologies/whow-ontology
 # imports: http://purl.org/dc/terms/
 # imports: http://www.w3.org/2004/02/skos/core
+# imports: http://www.w3.org/2006/vcard/ns
 # imports: http://www.w3.org/ns/dcat
 # imports: http://www.w3.org/ns/ssn/
+# imports: http://xmlns.com/foaf/0.1/
 # imports: https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/
 # imports: https://dati.isprambiente.it/ontology/inspire-mf/
 # imports: https://dati.isprambiente.it/ontology/places/
@@ -19,7 +21,7 @@
 
 <https://whowproject.eu/ontologies/whow-ontology>
       rdf:type owl:Ontology ;
-      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2004/02/skos/core> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/ns/ssn/> , inspire-mf-ssn-sosa-aligns: , inspire-mf: , places: ;
+      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2004/02/skos/core> , <http://www.w3.org/2006/vcard/ns> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/ns/ssn/> , <http://xmlns.com/foaf/0.1/> , inspire-mf-ssn-sosa-aligns: , inspire-mf: , places: ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
       skos:definition "Ontology for describing WHOW project concepts about water monitoring"@en ;
       skos:prefLabel "WHOW Ontology"@en .
@@ -118,7 +120,7 @@
 :SpatialSamplingFeature
       rdf:type owl:Class ;
       rdfs:label "Spatial Sampling Feature "@en ;
-      rdfs:subClassOf :WHOWConcept ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> , :WHOWConcept ;
       skos:prefLabel "Spatial Sampling Feature "@en .
 
 :TerritorialWaters
@@ -175,6 +177,12 @@
       rdfs:label "Water Sampling Feature "@en ;
       rdfs:subClassOf :SpatialSamplingFeature ;
       skos:prefLabel "Water Sampling Feature "@en .
+
+:WaterSamplingValue
+      rdf:type owl:Class ;
+      rdfs:label "Water Sampling Value "@en ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Value> , :WHOWConcept ;
+      skos:prefLabel "Water Sampling Value "@en .
 
 :hasWaterChemicalAgentType
       rdf:type rdf:Property ;
