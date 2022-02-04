@@ -182,6 +182,7 @@
       rdfs:domain :WaterSamplingFeature ;
       rdfs:label "has related water basin "@en ;
       rdfs:range :WaterBody ;
+      skos:note "TODO: Che relazione è questa? (Matteo)"^^xsd:string ;
       skos:prefLabel "has related water basin "@en .
 
 :hasWaterChemicalAgentType
