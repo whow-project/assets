@@ -44,10 +44,6 @@
       rdfs:subClassOf :WaterObservation ;
       skos:prefLabel "Chemical Agent Concentration Observation "@en .
 
-:ChemicalAgentConcentrationObservation_1
-      rdf:type :ChemicalAgentConcentrationObservation ;
-      :takenFromStation :MonitoringStation_1 .
-
 :CoastalWaterBody
       rdf:type owl:Class ;
       rdfs:label "Coastal Water Body "@en ;
@@ -95,9 +91,6 @@
       rdfs:label "Monitoring Station "@en ;
       rdfs:subClassOf inspire-mf:MonitoringFacility , :WHOWConcept ;
       skos:prefLabel "Monitoring Station "@en .
-
-:MonitoringStation_1
-      rdf:type :MonitoringStation .
 
 :RadioactivityConcentrationObservation
       rdf:type owl:Class ;
@@ -184,6 +177,13 @@
       rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Value> , :WHOWConcept ;
       skos:prefLabel "Water Sampling Value "@en .
 
+:hasRelatedWaterBasin
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterSamplingFeature ;
+      rdfs:label "has related water basin "@en ;
+      rdfs:range :WaterBody ;
+      skos:prefLabel "has related water basin "@en .
+
 :hasWaterChemicalAgentType
       rdf:type rdf:Property ;
       rdfs:domain :WaterObservation ;
@@ -197,6 +197,13 @@
       rdfs:label "has water observation parameter"@en ;
       rdfs:range :WaterObservationParameter ;
       skos:prefLabel "has water observation parameter"@en .
+
+:hasWaterSamplingType
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterSamplingFeature ;
+      rdfs:label "has water sampling type "@en ;
+      rdfs:range :waterSamplingType ;
+      skos:prefLabel "has water sampling type "@en .
 
 :metadata
       rdf:type owl:ObjectProperty ;
@@ -223,3 +230,9 @@
       rdfs:label "taken from station "@en ;
       rdfs:range :MonitoringStation ;
       skos:prefLabel "taken from station "@en .
+
+:waterSamplingType
+      rdf:type owl:Class ;
+      rdfs:label "Water Sampling Type "@en ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> , :WHOWConcept ;
+      skos:prefLabel "Water Sampling Type "@en .

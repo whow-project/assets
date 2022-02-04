@@ -12,6 +12,9 @@
 @prefix whow:    <https://whowproject.eu/ontologies/whow-ontology#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+core:UnitOfMeasure
+      skos:note "TODO: trovare UM esterne a cui puntare"^^xsd:string .
+
 <https://whowproject.eu/ontologies/instances_test_1>
       rdf:type owl:Ontology ;
       owl:imports <https://whowproject.eu/ontologies/whow-ontology> ;
@@ -29,10 +32,6 @@
       rdf:type inspire-mf:ObservationValue ;
       rdfs:label "3.9 μg/l"^^xsd:string .
 
-<https://whowproject.eu/ontologies/instances_test_1#7-7.5>
-      rdf:type whow:WaterSamplingValue ;
-      rdfs:label "7-7.5"^^xsd:string .
-
 :BG   rdf:type places:Municipality ;
       rdfs:label "Municipality of Bergamo"^^xsd:string .
 
@@ -44,18 +43,19 @@
       rdf:type core:UniqueIdentifier ;
       rdfs:label "CAS 479-61-8"^^xsd:string .
 
-:Concentration
-      rdf:type whow:WaterObservationParameter ;
-      rdfs:label "concentration "@en ;
-      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#7-7.5> .
-
-:Endine
+:EndineWaterBody
       rdf:type whow:LakeWaterBody ;
-      rdfs:label "Endine"^^xsd:string .
+      rdfs:label "Endine WaterBody"^^xsd:string ;
+      core:hasUniqueIdentifier
+              :IT03POOG3CE2LN1LO .
 
-:Geometry_1
+:Geometry_573578_507552
       rdf:type places:Geometry ;
       rdfs:label "Geometry"^^xsd:string .
+
+:IT03POOG3CE2LN1LO
+      rdf:type core:UniqueIdentifier ;
+      rdfs:label "Endine Identifier "@en .
 
 :Italy
       rdf:type places:Country ;
@@ -65,6 +65,10 @@
       rdf:type places:Region ;
       rdfs:label "Lombardia "@it .
 
+:OglioRiverBody
+      rdf:type whow:RiverWaterBody ;
+      rdfs:label "Oglio river"^^xsd:string .
+
 :POOG3CE2LN1l01
       rdf:type whow:MonitoringStation ;
       rdfs:label "Code of the station"^^xsd:string .
@@ -73,18 +77,46 @@
       rdf:type whow:WaterChemicalAgentType ;
       rdfs:label "clorofilla \"a\""^^xsd:string .
 
-<https://whowproject.eu/ontologies/instances_test_1#lagodiendinestratointegrato_0-7.5>
+:concentration
+      rdf:type whow:WaterObservationParameter ;
+      rdfs:label "concentration "@en .
+
+<https://whowproject.eu/ontologies/instances_test_1#lagoDiEndineStratoIntegrato_0-7.5>
       rdf:type whow:WaterSamplingFeature ;
-      rdfs:label "Lago Endine strato integrato 0-7.5"^^xsd:string .
+      rdfs:label "Lago di Endine strato integrato 0-7.5"^^xsd:string ;
+      core:value "0-7.5"^^xsd:string ;
+      whow:hasRelatedWaterBasin
+              :OglioRiverBody ;
+      whow:hasWaterSamplingType
+              :waterDepth .
 
 :meter
       rdf:type core:UnitOfMeasure ;
       rdfs:label "meter"^^xsd:string .
 
-<https://whowproject.eu/ontologies/instances_test_1#micrograms/liter>
+:micrograms_on_liter
       rdf:type core:UnitOfMeasure ;
       rdfs:label "micrograms/liter"^^xsd:string .
 
-<https://whowproject.eu/ontologies/instances_test_1#oglio_endine_POOF3CE2LN1lo1_190319_clorofillaa_3.9>
+<https://whowproject.eu/ontologies/instances_test_1#oglio_Endine_POOF3CE2LN1lo1_190319_clorofillaa_3.9>
       rdf:type whow:LakeChemicalAgentConcentrationObservation ;
-      rdfs:label "Oglio Endine POOF3CE2LN1lo1 19/03/19 clorofilla \"a\" 3.9"^^xsd:string .
+      rdfs:label "Oglio Endine POOF3CE2LN1lo1 19/03/19 clorofilla \"a\" 3.9"^^xsd:string ;
+      core:time "2019-03-19T00:00:00.000"^^xsd:dateTime ;
+      whow:hasWaterChemicalAgentType
+              :clorofilla_a ;
+      whow:hasWaterObservationParameter
+              :concentration ;
+      whow:relatedWaterBody
+              :EndineWaterBody ;
+      whow:relatedWaterSamplingFeature
+              <https://whowproject.eu/ontologies/instances_test_1#lagoDiEndineStratoIntegrato_0-7.5> ;
+      whow:takenFromStation
+              :POOG3CE2LN1l01 .
+
+<https://whowproject.eu/ontologies/instances_test_1#value_7-7.5>
+      rdf:type whow:WaterSamplingValue ;
+      rdfs:label "7-7.5"^^xsd:string .
+
+:waterDepth
+      rdf:type whow:waterSamplingType ;
+      rdfs:label "water depth "@en .
