@@ -213,7 +213,7 @@
 
 :relatedWaterBody
       rdf:type owl:ObjectProperty ;
-      rdfs:domain inspire-mf:Observation ;
+      rdfs:domain :WaterObservation ;
       rdfs:label "related water body "@en ;
       rdfs:range :WaterBody ;
       skos:prefLabel "related water body "@en .
