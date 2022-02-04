@@ -21,7 +21,7 @@ The **WHOW** models concepts and relations describing water quality monitoring a
 The following triples express, for example, an istance of WaterObservation:
 
 ```turtle
-qui esempio
+      ===> qui esempio di istanza in RDF
 ```
 
 where `ex` is a prefixes for another namespace.
@@ -30,9 +30,9 @@ The RDF structure for this example shows as follows:
 
 ![Example: Water oberservation](images/WaterObservationINstanceGraph.png)
 
-**Figure 2.** An RDF diagram representing the size of an apple as 10 cm.
+**Figure 2.** An RDF diagram representing a Lake Water Observation instance 
 
 Please not that:
 
-> Some note here
+> Some note here....
 
