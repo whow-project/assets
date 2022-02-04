@@ -16,7 +16,7 @@ The **WHOW** models concepts and relations describing water quality monitoring a
 
 ![OverallWHOWModelDiagram](images/OverallWHOWModelDiagram.png)
 
-**Figure 1.** The UML diagram below shows the class structure of the OM ontology. **Correction:** the range of hasNumericalValue is not xsd:float, as indicated in the figure, but is left open to accomodate any datatype required in one's application of OM.
+**Figure 1.** The diagram below shows the class structure of the WO ontology. 
 
 The following triples express, for example, an istance of WaterObservation:
 
