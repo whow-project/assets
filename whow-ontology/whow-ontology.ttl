@@ -19,6 +19,9 @@
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://dati.isprambiente.it/ontology/core/UnitOfMeasure>
+      skos:note "TODO: trovare UM esterne a cui puntare"^^xsd:string .
+
 <https://whowproject.eu/ontologies/whow-ontology>
       rdf:type owl:Ontology ;
       owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2004/02/skos/core> , <http://www.w3.org/2006/vcard/ns> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/ns/ssn/> , <http://xmlns.com/foaf/0.1/> , inspire-mf-ssn-sosa-aligns: , inspire-mf: , places: ;
@@ -135,6 +138,18 @@
       rdfs:subClassOf owl:Thing ;
       skos:prefLabel "WHOW Concept "@en .
 
+:WaterBasin
+      rdf:type owl:Class ;
+      rdfs:label "Water Basin "@en ;
+      rdfs:subClassOf inspire-mf:FeatureOfInterest , :WHOWConcept ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+                owl:onProperty :relatedWaterBody
+              ] ;
+      skos:note "TODO: Per considerare i sublacuali e i postlacuali si potrebbe introdurre una relazione ricorsiva tra waterbody e waterbody"^^xsd:string ;
+      skos:prefLabel "Water Basin "@en .
+
 :WaterBody
       rdf:type owl:Class ;
       rdfs:label "Water Body "@en ;
@@ -212,9 +227,25 @@
       rdfs:label "metadata "@en ;
       skos:prefLabel "metadata "@en .
 
-:relatedWaterBody
+:relatedLake
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :LakeChemicalAgentConcentrationObservation ;
+      rdfs:label "related lake "@en ;
+      skos:prefLabel "related lake "@en .
+
+:relatedWaterBasin
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterObservation ;
+      rdfs:label "related water basin "@en ;
+      rdfs:range :WaterBasin ;
+      skos:prefLabel "related water basin "@en .
+
+:relatedWaterBody
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain
+              [ rdf:type owl:Class ;
+                owl:unionOf (:WaterObservation :WaterBasin)
+              ] ;
       rdfs:label "related water body "@en ;
       rdfs:range :WaterBody ;
       skos:prefLabel "related water body "@en .
