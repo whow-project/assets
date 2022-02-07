@@ -24,13 +24,13 @@ core:UnitOfMeasure
       rdf:type core:TemporalEntity ;
       rdfs:label "19/03/2019"^^xsd:string .
 
-<https://whowproject.eu/ontologies/instances_test_1#3.9>
+<https://whowproject.eu/ontologies/instances_test_1#7-7.5>
       rdf:type core:Value ;
-      rdfs:label "3.9"^^xsd:string .
+      rdfs:label "7-7.5"^^xsd:string .
 
-<https://whowproject.eu/ontologies/instances_test_1#3.9_micrograms/liter>
-      rdf:type inspire-mf:ObservationValue ;
-      rdfs:label "3.9 μg/l"^^xsd:string .
+:Adrara_San_Rocco
+      rdf:type places:MetropolitanCity ;
+      rdfs:label "Adrara San Rocco"^^xsd:string .
 
 :BG   rdf:type places:Municipality ;
       rdfs:label "Municipality of Bergamo"^^xsd:string .
@@ -45,7 +45,7 @@ core:UnitOfMeasure
 
 :EndineWaterBody
       rdf:type whow:LakeWaterBody ;
-      rdfs:label "Endine WaterBody"^^xsd:string ;
+      rdfs:label "Endine waterbody"@en ;
       core:hasUniqueIdentifier
               :IT03POOG3CE2LN1LO .
 
@@ -53,9 +53,23 @@ core:UnitOfMeasure
       rdf:type places:Geometry ;
       rdfs:label "Geometry"^^xsd:string .
 
+:Geometry_574903_5063200
+      rdf:type places:Geometry ;
+      rdfs:label "Geometry 574903 5063200"^^xsd:string ;
+      places:lat "574903"^^xsd:string ;
+      places:long "5063200"^^xsd:string .
+
+:GuernaRiverBody
+      rdf:type whow:LakeWaterBody ;
+      rdfs:label "Guerna river body "@en .
+
 :IT03POOG3CE2LN1LO
       rdf:type core:UniqueIdentifier ;
-      rdfs:label "Endine Identifier "@en .
+      rdfs:label "Endine identifier"@en .
+
+:ITN0080600061lo1
+      rdf:type core:UniqueIdentifier ;
+      rdfs:label "Guerna identifier"@en .
 
 :Italy
       rdf:type places:Country ;
@@ -65,25 +79,48 @@ core:UnitOfMeasure
       rdf:type places:Region ;
       rdfs:label "Lombardia "@it .
 
+<https://whowproject.eu/ontologies/instances_test_1#MCPA_Acido_2.4_meticlorofenossi_acetico>
+      rdf:type whow:WaterChemicalAgentType ;
+      rdfs:label "(MCPA) Acido 2,4 meticlorofenossi acetico"^^xsd:string ;
+      skos:note "<sostanza>"^^xsd:string ;
+      core:hasUniqueIdentifier
+              :id_94-74-6 .
+
+:N0080600061lo1
+      rdf:type whow:MonitoringStation ;
+      rdfs:label "Code of the station"^^xsd:string ;
+      skos:note "<codice stazione>"^^xsd:string ;
+      places:hasGeometry :Geometry_573578_507552 .
+
 :OglioRiverBody
       rdf:type whow:RiverWaterBody ;
-      rdfs:label "Oglio river"^^xsd:string .
+      rdfs:label "Oglio river body"@en .
 
 :POOG3CE2LN1l01
       rdf:type whow:MonitoringStation ;
-      rdfs:label "Code of the station"^^xsd:string .
+      rdfs:label "Code of the station"^^xsd:string ;
+      skos:note "<codice stazione>"^^xsd:string ;
+      places:hasGeometry :Geometry_574903_5063200 .
 
 :clorofilla_a
       rdf:type whow:WaterChemicalAgentType ;
-      rdfs:label "clorofilla \"a\""^^xsd:string .
+      rdfs:label "clorofilla \"a\""^^xsd:string ;
+      skos:note "<parametro>"^^xsd:string ;
+      core:hasUniqueIdentifier
+              :CAS_479-61-8 .
 
 :concentration
       rdf:type whow:WaterObservationParameter ;
       rdfs:label "concentration "@en .
 
+:id_94-74-6
+      rdf:type core:UniqueIdentifier ;
+      rdfs:label "CAS 94-74-6"^^xsd:string .
+
 <https://whowproject.eu/ontologies/instances_test_1#lagoDiEndineStratoIntegrato_0-7.5>
       rdf:type whow:WaterSamplingFeature ;
       rdfs:label "Lago di Endine strato integrato 0-7.5"^^xsd:string ;
+      skos:note "<descrizione profondità>_<profondità>"^^xsd:string ;
       core:value "0-7.5"^^xsd:string ;
       whow:hasRelatedWaterBasin
               :OglioRiverBody ;
@@ -92,16 +129,26 @@ core:UnitOfMeasure
 
 :meter
       rdf:type core:UnitOfMeasure ;
-      rdfs:label "meter"^^xsd:string .
+      rdfs:label "meter"@en .
 
 :micrograms_on_liter
       rdf:type core:UnitOfMeasure ;
-      rdfs:label "micrograms/liter"^^xsd:string .
+      rdfs:label "micrograms/liter"@en ;
+      skos:note "µg/L"^^xsd:string .
 
-<https://whowproject.eu/ontologies/instances_test_1#oglio_Endine_POOF3CE2LN1lo1_190319_clorofillaa_3.9>
+<https://whowproject.eu/ontologies/instances_test_1#oglio_Endine_ITPOOF3CE2LN1lo1_190319_clorofillaa_3.9>
       rdf:type whow:LakeChemicalAgentConcentrationObservation ;
       rdfs:label "Oglio Endine POOF3CE2LN1lo1 19/03/19 clorofilla \"a\" 3.9"^^xsd:string ;
+      skos:note "<bacino idrografico>_<lago>_<corpo idrico>_<data campionamento>_<parametro>_<valore>"^^xsd:string ;
+      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_3.9_micrograms_on_liter> ;
       core:time "2019-03-19T00:00:00.000"^^xsd:dateTime ;
+      places:hasCountry :Italy ;
+      places:hasGeometry :Geometry_573578_507552 ;
+      places:hasMetropolitanCity
+              :Bergamo ;
+      places:hasMunicipality
+              :BG ;
+      places:hasRegion :Lombardia ;
       whow:hasWaterChemicalAgentType
               :clorofilla_a ;
       whow:hasWaterObservationParameter
@@ -113,10 +160,68 @@ core:UnitOfMeasure
       whow:takenFromStation
               :POOG3CE2LN1l01 .
 
+<https://whowproject.eu/ontologies/instances_test_1#oglio_Guerna_IT03N0080600061LO_03042019_MCPA_greaterthan0.03>
+      rdf:type whow:WaterObservation ;
+      rdfs:label "Oglio Guerna IT03N0080600061LO 03/04/2019 MCPA <0.03"^^xsd:string ;
+      skos:note "<bacino idrografico>_<corso d'acqua>_<corpo idrico>_<data campionamento>_<sostanza>_<concentrazione>"^^xsd:string ;
+      core:hasUniqueIdentifier
+              :ITN0080600061lo1 ;
+      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.03_micrograms_on_liter> ;
+      core:time "2019-04-03T00:00:00.000"^^xsd:dateTime ;
+      places:hasGeometry :Geometry_574903_5063200 ;
+      places:hasMetropolitanCity
+              :Adrara_San_Rocco ;
+      places:hasMunicipality
+              :BG ;
+      places:hasRegion :Lombardia ;
+      whow:hasWaterChemicalAgentType
+              <https://whowproject.eu/ontologies/instances_test_1#MCPA_Acido_2.4_meticlorofenossi_acetico> ;
+      whow:hasWaterObservationParameter
+              :concentration ;
+      whow:relatedWaterBody
+              :GuernaRiverBody ;
+      whow:takenFromStation
+              :N0080600061lo1 .
+
+<https://whowproject.eu/ontologies/instances_test_1#value_3.9>
+      rdf:type core:Value , inspire-mf:ObservationValue ;
+      rdfs:label "3.9"^^xsd:string ;
+      skos:note "value_<concentrazione> without unit of measure"^^xsd:string .
+
+<https://whowproject.eu/ontologies/instances_test_1#value_3.9_micrograms_on_liter>
+      rdf:type inspire-mf:ObservationValue ;
+      rdfs:label "3.9 μg/l"^^xsd:string ;
+      skos:note "value_<concentrazione> with symbols (>, <, /) and unit of measure separated by the underscore."^^xsd:string ;
+      core:hasUnitOfMeasure
+              :micrograms_on_liter ;
+      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_3.9> .
+
 <https://whowproject.eu/ontologies/instances_test_1#value_7-7.5>
       rdf:type whow:WaterSamplingValue ;
       rdfs:label "7-7.5"^^xsd:string .
 
+<https://whowproject.eu/ontologies/instances_test_1#value_7-7.5_meter>
+      rdf:type whow:WaterSamplingValue ;
+      rdfs:label "7-7.5 m"^^xsd:string ;
+      skos:note "<profondità>"^^xsd:string ;
+      core:hasUnitOfMeasure
+              :meter ;
+      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_7-7.5> .
+
+<https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.03>
+      rdf:type inspire-mf:ObservationValue ;
+      rdfs:label "< 0.03"^^xsd:string ;
+      skos:note "value_<concentrazione> without unit of measure"^^xsd:string .
+
+<https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.03_micrograms_on_liter>
+      rdf:type inspire-mf:ObservationValue ;
+      rdfs:label "<0.03 µg/L"^^xsd:string ;
+      skos:note "value_<concentrazione> with symbols (>, <, /) and unit of measure separated by the underscore."^^xsd:string ;
+      core:hasUnitOfMeasure
+              :micrograms_on_liter ;
+      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.03> .
+
 :waterDepth
       rdf:type whow:waterSamplingType ;
-      rdfs:label "water depth "@en .
+      rdfs:label "water depth "@en ;
+      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_7-7.5_meter> .
