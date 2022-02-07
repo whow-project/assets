@@ -39,6 +39,11 @@ core:UnitOfMeasure
       rdf:type core:UniqueIdentifier ;
       rdfs:label "CAS 479-61-8"^^xsd:string .
 
+:DOC  rdf:type whow:WaterChemicalAgentType ;
+      rdfs:label "DOC"^^xsd:string ;
+      core:hasUniqueIdentifier
+              :WISE_3133-05-9 .
+
 :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody
       rdf:type whow:LakeWaterBody ;
       rdfs:label "Endine waterbody"@en ;
@@ -107,6 +112,14 @@ core:UnitOfMeasure
       skos:note "<codice stazione>"^^xsd:string ;
       places:hasGeometry :Geometry_574903_5063200 .
 
+:WISE_3133-05-9
+      rdf:type core:UniqueIdentifier ;
+      rdfs:label "WISE 3133-05-9"^^xsd:string .
+
+<https://whowproject.eu/ontologies/instances_test_1#chemical_agent_2.4.5-T>
+      rdf:type whow:WaterChemicalAgentType ;
+      rdfs:label "todo"^^xsd:string .
+
 :clorofilla_a
       rdf:type whow:WaterChemicalAgentType ;
       rdfs:label "clorofilla \"a\""^^xsd:string ;
@@ -141,12 +154,43 @@ core:UnitOfMeasure
       rdfs:label "micrograms/liter"@en ;
       skos:note "µg/L"^^xsd:string .
 
+:milligrams_on_meter
+      rdf:type core:UnitOfMeasure ;
+      rdfs:label "todo"^^xsd:string .
+
+<https://whowproject.eu/ontologies/instances_test_1#oglio_Endine_ITPOOF3CE2LN1lo1_190319_DOC_greatherthan_0.5>
+      rdf:type whow:LakeChemicalAgentConcentrationObservation ;
+      rdfs:label "Oglio Endine ITPOOF3CE2LN1lo1 190319 DOC <0.5"^^xsd:string ;
+      core:time "2019-03-19T00:00:00.000"^^xsd:dateTime ;
+      inspire-mf:hasObservationValue
+              <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.05_milligrams_on_liter> ;
+      places:hasCountry :Italy ;
+      places:hasGeometry :Geometry_573578_507552 ;
+      places:hasMetropolitanCity
+              :Bergamo ;
+      places:hasMunicipality
+              :BG ;
+      places:hasRegion :Lombardia ;
+      whow:hasWaterChemicalAgentType
+              :DOC ;
+      whow:hasWaterObservationParameter
+              :concentration ;
+      whow:relatedLake :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
+      whow:relatedWaterBasin
+              :OglioWaterBasin ;
+      whow:relatedWaterSamplingFeature
+              <https://whowproject.eu/ontologies/instances_test_1#lagoDiEndineStratoIntegrato_0-7.5> ;
+      whow:takenFromStation
+              :POOG3CE2LN1l01 .
+
 <https://whowproject.eu/ontologies/instances_test_1#oglio_Endine_ITPOOF3CE2LN1lo1_190319_clorofillaa_3.9>
       rdf:type whow:LakeChemicalAgentConcentrationObservation ;
       rdfs:label "Oglio Endine POOF3CE2LN1lo1 19/03/19 clorofilla \"a\" 3.9"^^xsd:string ;
       skos:note "<bacino idrografico>_<lago>_<corpo idrico>_<data campionamento>_<parametro>_<valore>"^^xsd:string ;
       core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_3.9_micrograms_on_liter> ;
       core:time "2019-03-19T00:00:00.000"^^xsd:dateTime ;
+      inspire-mf:hasObservationValue
+              <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.05_milligrams_on_liter> ;
       places:hasCountry :Italy ;
       places:hasGeometry :Geometry_573578_507552 ;
       places:hasMetropolitanCity
@@ -158,12 +202,40 @@ core:UnitOfMeasure
               :clorofilla_a ;
       whow:hasWaterObservationParameter
               :concentration ;
+      whow:relatedLake :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
+      whow:relatedWaterBasin
+              :OglioWaterBasin ;
       whow:relatedWaterBody
               :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
       whow:relatedWaterSamplingFeature
               <https://whowproject.eu/ontologies/instances_test_1#lagoDiEndineStratoIntegrato_0-7.5> ;
       whow:takenFromStation
               :POOG3CE2LN1l01 .
+
+<https://whowproject.eu/ontologies/instances_test_1#oglio_Guerna_IT03N0080600061LO_03042019_2.4.5-T_greaterthan_0.03>
+      rdf:type whow:RiverChemicalAgentConcentrationObservation ;
+      rdfs:label "todo"^^xsd:string ;
+      core:time "2019-04-03T00:00:00.000"^^xsd:dateTime ;
+      inspire-mf:hasObservationParameter
+              :concentration ;
+      inspire-mf:hasObservationValue
+              <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.03_micrograms_on_liter> ;
+      places:hasGeometry :Geometry_574903_5063200 ;
+      places:hasMetropolitanCity
+              :Adrara_San_Rocco ;
+      places:hasMunicipality
+              :BG ;
+      places:hasRegion :Lombardia ;
+      whow:hasWaterChemicalAgentType
+              <https://whowproject.eu/ontologies/instances_test_1#chemical_agent_2.4.5-T> ;
+      whow:hasWaterObservationParameter
+              :concentration ;
+      whow:relatedWaterBasin
+              :sublacual_Oglio ;
+      whow:relatedWaterBody
+              :Guerna_IT03N0080600061LO_RiverWaterBody ;
+      whow:takenFromStation
+              :N0080600061lo1 .
 
 <https://whowproject.eu/ontologies/instances_test_1#oglio_Guerna_IT03N0080600061LO_03042019_MCPA_greaterthan0.03>
       rdf:type whow:RiverChemicalAgentConcentrationObservation ;
@@ -173,6 +245,10 @@ core:UnitOfMeasure
               :ITN0080600061lo1 ;
       core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.03_micrograms_on_liter> ;
       core:time "2019-04-03T00:00:00.000"^^xsd:dateTime ;
+      inspire-mf:hasObservationParameter
+              :concentration ;
+      inspire-mf:hasObservationValue
+              <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.03_micrograms_on_liter> ;
       places:hasGeometry :Geometry_574903_5063200 ;
       places:hasMetropolitanCity
               :Adrara_San_Rocco ;
@@ -231,6 +307,17 @@ core:UnitOfMeasure
       core:hasUnitOfMeasure
               :micrograms_on_liter ;
       core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.03> .
+
+<https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.05_milligrams_on_liter>
+      rdf:type inspire-mf:ObservationValue ;
+      rdfs:label "todo"^^xsd:string ;
+      core:hasUnitOfMeasure
+              :milligrams_on_meter ;
+      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.5> .
+
+<https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.5>
+      rdf:type core:Value ;
+      rdfs:label "todo"^^xsd:string .
 
 :waterDepth
       rdf:type whow:waterSamplingType ;
