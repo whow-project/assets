@@ -47,7 +47,9 @@ core:UnitOfMeasure
       skos:note "TODO: disaccoppiare con una classe nostra (es. \"Lake\") per poi fare il sameAs fra l'istanza nostra di Lake e quella di wikidata oppure no?"^^xsd:string ;
       core:hasUniqueIdentifier
               :IT03POOG3CE2LN1LO ;
-      core:isPartOf :OglioWaterBasin .
+      core:isPartOf :OglioWaterBasin ;
+      whow:belongsToWaterBasin
+              :OglioWaterBasin .
 
 :Geometry_573578_507552
       rdf:type places:Geometry ;
@@ -67,7 +69,9 @@ core:UnitOfMeasure
       owl:sameAs <https://www.wikidata.org/wiki/Q3778528> ;
       core:hasUniqueIdentifier
               :IT03N0080600061LO ;
-      core:isPartOf :sublacual_Oglio .
+      core:isPartOf :sublacual_Oglio ;
+      whow:belongsToWaterBasin
+              :sublacual_Oglio .
 
 :IT03N0080600061LO
       rdf:type core:UniqueIdentifier ;
