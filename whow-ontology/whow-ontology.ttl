@@ -238,8 +238,16 @@
       rdfs:domain :LakeChemicalAgentConcentrationObservation ;
       rdfs:label "related lake "@en ;
       rdfs:range :LakeWaterBody ;
+      rdfs:subPropertyOf :relatedWaterBody ;
       skos:note "TODO: Vedere TODO di LakeWaterBody"^^xsd:string ;
       skos:prefLabel "related lake "@en .
+
+:relatedRiver
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :RiverChemicalAgentConcentrationObservation ;
+      rdfs:label "related river"@en ;
+      rdfs:range :RiverWaterBody ;
+      rdfs:subPropertyOf :relatedWaterBody .
 
 :relatedWaterBody
       rdf:type owl:ObjectProperty ;
