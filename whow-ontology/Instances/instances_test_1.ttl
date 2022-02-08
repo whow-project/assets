@@ -236,7 +236,7 @@ core:UnitOfMeasure
       whow:takenFromStation
               :N0080600061lo1 .
 
-<https://whowproject.eu/ontologies/instances_test_1#oglio_Guerna_IT03N0080600061LO_03042019_MCPA_greaterthan0.03>
+<https://whowproject.eu/ontologies/instances_test_1#oglio_Guerna_IT03N0080600061LO_03042019_MCPA_greaterthan_0.03>
       rdf:type whow:RiverChemicalAgentConcentrationObservation ;
       rdfs:label "Oglio Guerna IT03N0080600061LO 03/04/2019 MCPA <0.03"^^xsd:string ;
       skos:note "<bacino idrografico>_<corso d'acqua>_<corpo idrico>_<data campionamento>_<sostanza>_<concentrazione>"^^xsd:string ;
