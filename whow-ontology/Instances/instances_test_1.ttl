@@ -43,6 +43,7 @@ core:UnitOfMeasure
 :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody
       rdf:type whow:LakeWaterBody ;
       rdfs:label "Endine waterbody"@en ;
+      owl:sameAs <https://www.wikidata.org/wiki/Q917288> ;
       core:hasUniqueIdentifier
               :IT03POOG3CE2LN1LO .
 
@@ -59,6 +60,7 @@ core:UnitOfMeasure
 :Guerna_IT03N0080600061LO_RiverWaterBody
       rdf:type whow:RiverWaterBody ;
       rdfs:label "Guerna river body "@en ;
+      owl:sameAs <https://www.wikidata.org/wiki/Q3778528> ;
       core:hasUniqueIdentifier
               :IT03N0080600061LO .
 
@@ -98,6 +100,7 @@ core:UnitOfMeasure
 :OglioWaterBasin
       rdf:type whow:WaterBasin ;
       rdfs:label "Oglio water basin"@en ;
+      owl:sameAs <https://dbpedia.org/page/Oglio> ;
       core:hasPart :sublacual_Oglio ;
       whow:relatedWaterBody
               :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody , :Guerna_IT03N0080600061LO_RiverWaterBody .
