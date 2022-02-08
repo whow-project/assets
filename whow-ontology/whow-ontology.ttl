@@ -75,6 +75,7 @@
       rdf:type owl:Class ;
       rdfs:label "Lake Water Body "@en ;
       rdfs:subClassOf :WaterBody ;
+      skos:note "TODO: disaccoppiare il concetto di CorpoIdrico da quello di Lago a livello geografico? Class \"Lake\""^^xsd:string ;
       skos:prefLabel "Lake Water Body "@en .
 
 :MarineWaters
@@ -192,13 +193,11 @@
       rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Value> , :WHOWConcept ;
       skos:prefLabel "Water Sampling Value "@en .
 
-:hasRelatedWaterBasin
+:belongsToWaterBasin
       rdf:type owl:ObjectProperty ;
-      rdfs:domain inspire-mf:Observation , :WaterSamplingFeature ;
-      rdfs:label "has related water basin "@en ;
-      rdfs:range :WaterBody ;
-      skos:note "TODO: Che relazione è questa? (Matteo)"^^xsd:string ;
-      skos:prefLabel "has related water basin "@en .
+      rdfs:domain :SpatialSamplingFeature , :WaterBody ;
+      rdfs:label "belongs to water basin "@en ;
+      rdfs:range :WaterBasin .
 
 :hasWaterChemicalAgentType
       rdf:type rdf:Property ;
@@ -221,6 +220,13 @@
       rdfs:range :waterSamplingType ;
       skos:prefLabel "has water sampling type "@en .
 
+:isSubWaterBasin
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterBasin ;
+      rdfs:label "is sub water basin "@en ;
+      rdfs:range :WaterBasin ;
+      skos:note "TODO: proprietà ricorsiva per indicare la parte pre- o sub- lacuale. Ha senso?"^^xsd:string .
+
 :metadata
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterObservation ;
@@ -231,6 +237,8 @@
       rdf:type owl:ObjectProperty ;
       rdfs:domain :LakeChemicalAgentConcentrationObservation ;
       rdfs:label "related lake "@en ;
+      rdfs:range :LakeWaterBody ;
+      skos:note "TODO: Vedere TODO di LakeWaterBody"^^xsd:string ;
       skos:prefLabel "related lake "@en .
 
 :relatedWaterBody
