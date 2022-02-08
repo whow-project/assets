@@ -20,10 +20,6 @@ core:UnitOfMeasure
       owl:imports <https://whowproject.eu/ontologies/whow-ontology> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
-<https://whowproject.eu/ontologies/instances_test_1#19/03/2019>
-      rdf:type core:TemporalEntity ;
-      rdfs:label "19/03/2019"^^xsd:string .
-
 :Adrara_San_Rocco
       rdf:type places:MetropolitanCity ;
       rdfs:label "Adrara San Rocco"^^xsd:string .
@@ -52,7 +48,7 @@ core:UnitOfMeasure
 
 :Geometry_573578_507552
       rdf:type places:Geometry ;
-      rdfs:label "Geometry"^^xsd:string .
+      rdfs:label "Geometry 573578 507552"^^xsd:string .
 
 :Geometry_574903_5063200
       rdf:type places:Geometry ;
@@ -95,7 +91,7 @@ core:UnitOfMeasure
 
 :N0080600061lo1
       rdf:type whow:MonitoringStation ;
-      rdfs:label "Code of the station"^^xsd:string ;
+      rdfs:label "Code of the station"@en ;
       skos:note "<codice stazione>"^^xsd:string ;
       places:hasGeometry :Geometry_573578_507552 .
 
@@ -108,7 +104,7 @@ core:UnitOfMeasure
 
 :POOG3CE2LN1l01
       rdf:type whow:MonitoringStation ;
-      rdfs:label "Code of the station"^^xsd:string ;
+      rdfs:label "Code of the station"@en ;
       skos:note "<codice stazione>"^^xsd:string ;
       places:hasGeometry :Geometry_574903_5063200 .
 
@@ -118,7 +114,7 @@ core:UnitOfMeasure
 
 <https://whowproject.eu/ontologies/instances_test_1#chemical_agent_2.4.5-T>
       rdf:type whow:WaterChemicalAgentType ;
-      rdfs:label "todo"^^xsd:string .
+      rdfs:label "2,4,5-T"^^xsd:string .
 
 :clorofilla_a
       rdf:type whow:WaterChemicalAgentType ;
@@ -147,20 +143,23 @@ core:UnitOfMeasure
 
 :meter
       rdf:type core:UnitOfMeasure ;
-      rdfs:label "meter"@en .
+      rdfs:label "meter"@en ;
+      skos:note "m"^^xsd:string .
 
 :micrograms_on_liter
       rdf:type core:UnitOfMeasure ;
       rdfs:label "micrograms/liter"@en ;
       skos:note "µg/L"^^xsd:string .
 
-:milligrams_on_meter
+:milligrams_on_liter
       rdf:type core:UnitOfMeasure ;
-      rdfs:label "todo"^^xsd:string .
+      rdfs:label "milligrams on liter"^^xsd:string ;
+      skos:note "mg/l"^^xsd:string .
 
 <https://whowproject.eu/ontologies/instances_test_1#oglio_Endine_ITPOOF3CE2LN1lo1_190319_DOC_greatherthan_0.5>
       rdf:type whow:LakeChemicalAgentConcentrationObservation ;
       rdfs:label "Oglio Endine ITPOOF3CE2LN1lo1 190319 DOC <0.5"^^xsd:string ;
+      skos:note "<bacino idrografico>_<lago>_<corpo idrico>_<data campionamento>_<parametro>_<valore>"^^xsd:string ;
       core:time "2019-03-19T00:00:00.000"^^xsd:dateTime ;
       inspire-mf:hasObservationValue
               <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.05_milligrams_on_liter> ;
@@ -214,7 +213,8 @@ core:UnitOfMeasure
 
 <https://whowproject.eu/ontologies/instances_test_1#oglio_Guerna_IT03N0080600061LO_03042019_2.4.5-T_greaterthan_0.03>
       rdf:type whow:RiverChemicalAgentConcentrationObservation ;
-      rdfs:label "todo"^^xsd:string ;
+      rdfs:label "Oglio Guerna IT03N0080600061LO 03/04/2019 2,4,5-T <0.03"^^xsd:string ;
+      skos:note "<bacino idrografico>_<corso d'acqua>_<corpo idrico>_<data campionamento>_<sostanza>_<concentrazione>"^^xsd:string ;
       core:time "2019-04-03T00:00:00.000"^^xsd:dateTime ;
       inspire-mf:hasObservationParameter
               :concentration ;
@@ -285,12 +285,13 @@ core:UnitOfMeasure
 
 <https://whowproject.eu/ontologies/instances_test_1#value_7-7.5>
       rdf:type core:Value , whow:WaterSamplingValue ;
-      rdfs:label "7-7.5"^^xsd:string .
+      rdfs:label "7-7.5"^^xsd:string ;
+      skos:note "value_<profondità> without unit of measure"^^xsd:string .
 
 <https://whowproject.eu/ontologies/instances_test_1#value_7-7.5_meter>
       rdf:type whow:WaterSamplingValue ;
       rdfs:label "7-7.5 m"^^xsd:string ;
-      skos:note "<profondità>"^^xsd:string ;
+      skos:note "value_<profondità> with unit of measure."^^xsd:string ;
       core:hasUnitOfMeasure
               :meter ;
       core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_7-7.5> .
@@ -308,16 +309,18 @@ core:UnitOfMeasure
               :micrograms_on_liter ;
       core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.03> .
 
+<https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.05>
+      rdf:type core:Value ;
+      rdfs:label "< 0.05"^^xsd:string ;
+      skos:note "value_<concentrazione> without unit of measure"^^xsd:string .
+
 <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.05_milligrams_on_liter>
       rdf:type inspire-mf:ObservationValue ;
-      rdfs:label "todo"^^xsd:string ;
+      rdfs:label "< 0.05 mg/l"^^xsd:string ;
+      skos:note "value_<concentrazione> with unit of measure."^^xsd:string ;
       core:hasUnitOfMeasure
-              :milligrams_on_meter ;
-      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.5> .
-
-<https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.5>
-      rdf:type core:Value ;
-      rdfs:label "todo"^^xsd:string .
+              :milligrams_on_liter ;
+      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.05> .
 
 :waterDepth
       rdf:type whow:waterSamplingType ;
