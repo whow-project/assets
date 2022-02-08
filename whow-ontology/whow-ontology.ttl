@@ -194,7 +194,7 @@
 
 :hasRelatedWaterBasin
       rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterSamplingFeature ;
+      rdfs:domain inspire-mf:Observation , :WaterSamplingFeature ;
       rdfs:label "has related water basin "@en ;
       rdfs:range :WaterBody ;
       skos:note "TODO: Che relazione è questa? (Matteo)"^^xsd:string ;
@@ -232,13 +232,6 @@
       rdfs:domain :LakeChemicalAgentConcentrationObservation ;
       rdfs:label "related lake "@en ;
       skos:prefLabel "related lake "@en .
-
-:relatedWaterBasin
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterObservation ;
-      rdfs:label "related water basin "@en ;
-      rdfs:range :WaterBasin ;
-      skos:prefLabel "related water basin "@en .
 
 :relatedWaterBody
       rdf:type owl:ObjectProperty ;
