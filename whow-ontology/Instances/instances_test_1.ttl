@@ -141,6 +141,7 @@ core:UnitOfMeasure
       rdfs:label "Lago di Endine strato integrato 0-7.5"^^xsd:string ;
       skos:note "<descrizione profondità>_<profondità>"^^xsd:string ;
       core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_7-7.5> ;
+      core:isPartOf :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
       core:value "0-7.5"^^xsd:string ;
       whow:hasRelatedWaterBasin
               :OglioWaterBasin ;
