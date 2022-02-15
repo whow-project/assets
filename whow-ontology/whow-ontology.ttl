@@ -41,11 +41,11 @@
       rdfs:subClassOf :WaterObservation ;
       skos:prefLabel "Biotic Index Observation "@en .
 
-:ChemicalAgentConcentrationObservation
+:ChemicalAgentObservation
       rdf:type owl:Class ;
-      rdfs:label "Chemical Agent Concentration Observation "@en ;
+      rdfs:label "Chemical Agent Observation"@en ;
       rdfs:subClassOf :WaterObservation ;
-      skos:prefLabel "Chemical Agent Concentration Observation "@en .
+      skos:prefLabel "Chemical Agent Observation"@en .
 
 :CoastalWaterBody
       rdf:type owl:Class ;
@@ -64,12 +64,6 @@
       rdfs:label "LTLECO Observation "@en ;
       rdfs:subClassOf :WaterQualityParameterObservation ;
       skos:prefLabel "LTLECO Observation "@en .
-
-:LakeChemicalAgentConcentrationObservation
-      rdf:type owl:Class ;
-      rdfs:label "Lake Chemical Agent Concentration Observation "@en ;
-      rdfs:subClassOf :ChemicalAgentConcentrationObservation ;
-      skos:prefLabel "Lake Chemical Agent Concentration Observation "@en .
 
 :LakeWaterBody
       rdf:type owl:Class ;
@@ -90,23 +84,11 @@
       rdfs:subClassOf :WHOWConcept ;
       skos:prefLabel "Metadata "@en .
 
-:MonitoringStation
+:RadioactivityObservation
       rdf:type owl:Class ;
-      rdfs:label "Monitoring Station "@en ;
-      rdfs:subClassOf inspire-mf:MonitoringFacility , :WHOWConcept ;
-      skos:prefLabel "Monitoring Station "@en .
-
-:RadioactivityConcentrationObservation
-      rdf:type owl:Class ;
-      rdfs:label "Radioactivity Concentration Observation "@en ;
-      rdfs:subClassOf :ChemicalAgentConcentrationObservation ;
-      skos:prefLabel "Radioactivity Concentration Observation "@en .
-
-:RiverChemicalAgentConcentrationObservation
-      rdf:type owl:Class ;
-      rdfs:label "River Chemical Agent Concentration Observation "@en ;
-      rdfs:subClassOf :ChemicalAgentConcentrationObservation ;
-      skos:prefLabel "River Chemical Agent Concentration Observation "@en .
+      rdfs:label "Radioactivity Observation"@en ;
+      rdfs:subClassOf :ChemicalAgentObservation ;
+      skos:prefLabel "Radioactivity Observation"@en .
 
 :RiverWaterBody
       rdf:type owl:Class ;
@@ -163,6 +145,12 @@
       rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> , :WHOWConcept ;
       skos:prefLabel "Water Chemical Agent Type "@en .
 
+:WaterMonitoringStation
+      rdf:type owl:Class ;
+      rdfs:label "Water Monitoring Station"@en ;
+      rdfs:subClassOf inspire-mf:Platform , :WHOWConcept ;
+      skos:prefLabel "Water Monitoring Station"@en .
+
 :WaterObservation
       rdf:type owl:Class ;
       rdfs:label "Water Observation "@en ;
@@ -201,7 +189,7 @@
 
 :hasWaterChemicalAgentType
       rdf:type rdf:Property ;
-      rdfs:domain :WaterObservation ;
+      rdfs:domain :ChemicalAgentObservation ;
       rdfs:label "has water chemical agent type "@en ;
       rdfs:range :WaterChemicalAgentType ;
       skos:prefLabel "has water chemical agent type "@en .
@@ -233,22 +221,6 @@
       rdfs:label "metadata "@en ;
       skos:prefLabel "metadata "@en .
 
-:relatedLake
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :LakeChemicalAgentConcentrationObservation ;
-      rdfs:label "related lake "@en ;
-      rdfs:range :LakeWaterBody ;
-      rdfs:subPropertyOf :relatedWaterBody ;
-      skos:note "TODO: Vedere TODO di LakeWaterBody"^^xsd:string ;
-      skos:prefLabel "related lake "@en .
-
-:relatedRiver
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :RiverChemicalAgentConcentrationObservation ;
-      rdfs:label "related river"@en ;
-      rdfs:range :RiverWaterBody ;
-      rdfs:subPropertyOf :relatedWaterBody .
-
 :relatedWaterBody
       rdf:type owl:ObjectProperty ;
       rdfs:domain
@@ -269,7 +241,7 @@
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterObservation ;
       rdfs:label "taken from station "@en ;
-      rdfs:range :MonitoringStation ;
+      rdfs:range :WaterMonitoringStation ;
       skos:prefLabel "taken from station "@en .
 
 :waterSamplingType
