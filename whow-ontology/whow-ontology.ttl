@@ -229,13 +229,6 @@
       rdfs:label "related water sampling feature "@en ;
       skos:prefLabel "related water sampling feature "@en .
 
-:takenFromStation
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterObservation ;
-      rdfs:label "taken from station "@en ;
-      rdfs:range :WaterMonitoringStation ;
-      skos:prefLabel "taken from station "@en .
-
 :waterSamplingType
       rdf:type owl:Class ;
       rdfs:label "Water Sampling Type "@en ;
