@@ -34,23 +34,11 @@
       skos:definition "Ontology for describing WHOW project concepts about water monitoring"@en ;
       skos:prefLabel "WHOW Ontology"@en .
 
-:BioindicatorObservation
+:ChemicalAgent
       rdf:type owl:Class ;
-      rdfs:label "Bioindicator Observation "@en ;
-      rdfs:subClassOf :WaterObservation ;
-      skos:prefLabel "Bioindicator Observation "@en .
-
-:BioticIndexObservation
-      rdf:type owl:Class ;
-      rdfs:label "Biotic Index Observation "@en ;
-      rdfs:subClassOf :WaterObservation ;
-      skos:prefLabel "Biotic Index Observation "@en .
-
-:ChemicalAgentObservation
-      rdf:type owl:Class ;
-      rdfs:label "Chemical Agent Observation"@en ;
-      rdfs:subClassOf :WaterObservation ;
-      skos:prefLabel "Chemical Agent Observation"@en .
+      rdfs:label "Chemical Agent"@en ;
+      rdfs:subClassOf :ObservablePropertyAgent ;
+      skos:prefLabel "Chemical Agent"@en .
 
 :CoastalWaterBody
       rdf:type owl:Class ;
@@ -89,11 +77,18 @@
       rdfs:subClassOf :WHOWConcept ;
       skos:prefLabel "Metadata "@en .
 
-:RadioactivityObservation
+:NuclideAgent
       rdf:type owl:Class ;
-      rdfs:label "Radioactivity Observation"@en ;
-      rdfs:subClassOf :ChemicalAgentObservation ;
-      skos:prefLabel "Radioactivity Observation"@en .
+      rdfs:label "Nuclide Agent"@en ;
+      rdfs:subClassOf :ObservablePropertyAgent ;
+      skos:note "specializzare la property da Observation a ObservationPropertyAgent o tenere sempre un generico \"relatedToPropertyAgent\"...(diversamente da come modellato adesso hasNuclide, o hasChemicalAgentType? + possiamo chiamarlo RadioactivityAgent?"^^xsd:string ;
+      skos:prefLabel "Nuclide Agent"@en .
+
+:ObservablePropertyAgent
+      rdf:type owl:Class ;
+      rdfs:label "Observable Property Agent "@en ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Agent> , :WHOWConcept ;
+      skos:prefLabel "Observable Property Agent "@en .
 
 :RiverWaterBody
       rdf:type owl:Class ;
@@ -129,26 +124,50 @@
 :WaterBasin
       rdf:type owl:Class ;
       rdfs:label "Water Basin "@en ;
-      rdfs:subClassOf inspire-mf:FeatureOfInterest , :WHOWConcept ;
+      rdfs:subClassOf :WaterFeature ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
                 owl:minCardinality "1"^^xsd:nonNegativeInteger ;
-                owl:onProperty :relatedWaterBody
+                owl:onProperty :relatedWaterFeature
               ] ;
       skos:note "TODO: Per considerare i sublacuali e i postlacuali si potrebbe introdurre una relazione ricorsiva tra waterbody e waterbody"^^xsd:string ;
       skos:prefLabel "Water Basin "@en .
 
+:WaterBioindicatorObservation
+      rdf:type owl:Class ;
+      rdfs:label "Water Bioindicator Observation"@en ;
+      rdfs:subClassOf :WaterObservation ;
+      skos:prefLabel "Water Bioindicator Observation"@en .
+
+:WaterBioticIndexObservation
+      rdf:type owl:Class ;
+      rdfs:label "Water Biotic Index Observation"@en ;
+      rdfs:subClassOf :WaterObservation ;
+      skos:prefLabel "Water Biotic Index Observation"@en .
+
 :WaterBody
       rdf:type owl:Class ;
       rdfs:label "Water Body "@en ;
-      rdfs:subClassOf inspire-mf:FeatureOfInterest , :WHOWConcept ;
+      rdfs:subClassOf :WaterFeature ;
       skos:prefLabel "Water Body "@en .
 
-:WaterChemicalAgentType
+:WaterChemicalAgentObservation
       rdf:type owl:Class ;
-      rdfs:label "Water Chemical Agent Type "@en ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> , :WHOWConcept ;
-      skos:prefLabel "Water Chemical Agent Type "@en .
+      rdfs:label "Water Chemical Agent Observation"@en ;
+      rdfs:subClassOf :WaterObservation ;
+      skos:prefLabel "Water Chemical Agent Observation"@en .
+
+:WaterFeature
+      rdf:type owl:Class ;
+      rdfs:label "Water feature "@en ;
+      rdfs:subClassOf inspire-mf:FeatureOfInterest , :WHOWConcept ;
+      skos:prefLabel "Water feature "@en .
+
+:WaterFeatureType
+      rdf:type owl:Class ;
+      rdfs:label "Water feature type "@en ;
+      rdfs:subClassOf :WHOWConcept ;
+      skos:prefLabel "Water feature type "@en .
 
 :WaterMonitoringStation
       rdf:type owl:Class ;
@@ -168,6 +187,12 @@
       rdfs:subClassOf :WaterObservation ;
       skos:prefLabel "Water Quality Parameter Observation "@en .
 
+:WaterRadioactivityObservation
+      rdf:type owl:Class ;
+      rdfs:label "Water Radioactivity Observation"@en ;
+      rdfs:subClassOf :WaterObservation ;
+      skos:prefLabel "Water Radioactivity Observation"@en .
+
 :WaterSamplingFeature
       rdf:type owl:Class ;
       rdfs:label "Water Sampling Feature "@en ;
@@ -186,12 +211,12 @@
       rdfs:label "belongs to water basin "@en ;
       rdfs:range :WaterBasin .
 
-:hasWaterChemicalAgentType
-      rdf:type rdf:Property ;
-      rdfs:domain :ChemicalAgentObservation ;
-      rdfs:label "has water chemical agent type "@en ;
-      rdfs:range :WaterChemicalAgentType ;
-      skos:prefLabel "has water chemical agent type "@en .
+:hasWaterFeatureType
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterFeature ;
+      rdfs:label "has water feature type "@en ;
+      rdfs:range :WaterFeature ;
+      skos:prefLabel "has water feature type "@en .
 
 :hasWaterSamplingType
       rdf:type owl:ObjectProperty ;
@@ -213,15 +238,22 @@
       rdfs:label "metadata "@en ;
       skos:prefLabel "metadata "@en .
 
-:relatedWaterBody
+:relatedToPropertyAgent
+      rdf:type rdf:Property ;
+      rdfs:domain :WaterObservation ;
+      rdfs:label "related to property agent"@en ;
+      rdfs:range :ObservablePropertyAgent ;
+      skos:prefLabel "related to property agent"@en .
+
+:relatedWaterFeature
       rdf:type owl:ObjectProperty ;
       rdfs:domain
               [ rdf:type owl:Class ;
                 owl:unionOf (:WaterObservation :WaterBasin)
               ] ;
-      rdfs:label "related water body "@en ;
-      rdfs:range :WaterBody ;
-      skos:prefLabel "related water body "@en .
+      rdfs:label "related water feature"@en ;
+      rdfs:range :WaterFeature ;
+      skos:prefLabel "related water feature"@en .
 
 :relatedWaterSamplingFeature
       rdf:type owl:ObjectProperty ;
