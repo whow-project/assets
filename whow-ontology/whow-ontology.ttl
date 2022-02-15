@@ -16,8 +16,13 @@
 @prefix places:  <https://dati.isprambiente.it/ontology/places/> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo:     <http://schema.org/> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.w3.org/ns/sosa/observedProperty>
+      rdfs:domain :WaterObservation ;
+      sdo:domainIncludes :WaterObservation .
 
 <https://dati.isprambiente.it/ontology/core/UnitOfMeasure>
       skos:note "TODO: trovare UM esterne a cui puntare"^^xsd:string .
@@ -83,12 +88,6 @@
       rdfs:label "Metadata "@en ;
       rdfs:subClassOf :WHOWConcept ;
       skos:prefLabel "Metadata "@en .
-
-:ObservedProperty
-      rdf:type owl:Class ;
-      rdfs:label "Observed Property"@en ;
-      rdfs:subClassOf inspire-mf:ObservationParameter , :WHOWConcept ;
-      skos:prefLabel "Observed Property"@en .
 
 :RadioactivityObservation
       rdf:type owl:Class ;
@@ -193,13 +192,6 @@
       rdfs:label "has water chemical agent type "@en ;
       rdfs:range :WaterChemicalAgentType ;
       skos:prefLabel "has water chemical agent type "@en .
-
-:hasWaterObservationParameter
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterObservation ;
-      rdfs:label "has water observation parameter"@en ;
-      rdfs:range :ObservedProperty ;
-      skos:prefLabel "has water observation parameter"@en .
 
 :hasWaterSamplingType
       rdf:type owl:ObjectProperty ;
