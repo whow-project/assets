@@ -84,6 +84,12 @@
       rdfs:subClassOf :WHOWConcept ;
       skos:prefLabel "Metadata "@en .
 
+:ObservedProperty
+      rdf:type owl:Class ;
+      rdfs:label "Observed Property"@en ;
+      rdfs:subClassOf inspire-mf:ObservationParameter , :WHOWConcept ;
+      skos:prefLabel "Observed Property"@en .
+
 :RadioactivityObservation
       rdf:type owl:Class ;
       rdfs:label "Radioactivity Observation"@en ;
@@ -157,12 +163,6 @@
       rdfs:subClassOf inspire-mf:Observation , :WHOWConcept ;
       skos:prefLabel "Water Observation "@en .
 
-:WaterObservationParameter
-      rdf:type owl:Class ;
-      rdfs:label "Water Observation Parameter"@en ;
-      rdfs:subClassOf inspire-mf:ObservationParameter , :WHOWConcept ;
-      skos:prefLabel "Water Observation Parameter"@en .
-
 :WaterQualityParameterObservation
       rdf:type owl:Class ;
       rdfs:label "Water Quality Parameter Observation "@en ;
@@ -198,7 +198,7 @@
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterObservation ;
       rdfs:label "has water observation parameter"@en ;
-      rdfs:range :WaterObservationParameter ;
+      rdfs:range :ObservedProperty ;
       skos:prefLabel "has water observation parameter"@en .
 
 :hasWaterSamplingType

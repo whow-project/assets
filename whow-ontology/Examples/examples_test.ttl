@@ -132,7 +132,7 @@ core:UnitOfMeasure
               :CAS_479-61-8 .
 
 :concentration
-      rdf:type whow:WaterObservationParameter ;
+      rdf:type whow:ObservedProperty ;
       rdfs:label "concentration "@en .
 
 :id_94-74-6
