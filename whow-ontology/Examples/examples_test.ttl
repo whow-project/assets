@@ -100,7 +100,7 @@ core:UnitOfMeasure
               :id_94-74-6 .
 
 :N0080600061lo1
-      rdf:type whow:MonitoringStation ;
+      rdf:type whow:WaterMonitoringStation ;
       rdfs:label "Code of the station"@en ;
       skos:note "<codice stazione>"^^xsd:string ;
       places:hasGeometry :Geometry_573578_507552 .
@@ -111,7 +111,7 @@ core:UnitOfMeasure
       owl:sameAs <https://dbpedia.org/page/Oglio> .
 
 :POOG3CE2LN1l01
-      rdf:type whow:MonitoringStation ;
+      rdf:type whow:WaterMonitoringStation ;
       rdfs:label "Code of the station"@en ;
       skos:note "<codice stazione>"^^xsd:string ;
       places:hasGeometry :Geometry_574903_5063200 .
