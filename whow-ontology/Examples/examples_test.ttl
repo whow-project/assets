@@ -38,6 +38,10 @@ core:UnitOfMeasure
       rdf:type core:UniqueIdentifier ;
       rdfs:label "CAS 479-61-8"^^xsd:string .
 
+:CS-137
+      rdf:type core:UniqueIdentifier ;
+      rdfs:label "CS-137"^^xsd:string .
+
 :DOC  rdf:type whow:ChemicalAgent ;
       rdfs:label "DOC"^^xsd:string ;
       core:hasUniqueIdentifier
@@ -123,6 +127,52 @@ core:UnitOfMeasure
       rdf:type core:UniqueIdentifier ;
       rdfs:label "WISE 3133-05-9"^^xsd:string .
 
+:acqua__d_impianto_di_depurazione
+      rdf:type whow:WaterFeatureType ;
+      rdfs:label "acqua d'impianto di depurazione"^^xsd:string .
+
+:acquadepurata_04062019_04062019_bg_cs-137
+      rdf:type whow:WaterRadioactivityObservation ;
+      rdfs:label "acquadepurata 04062019 04062019 bg cs-137"^^xsd:string ;
+      skos:note "<descrizione matrice 2° livello>_<data inizio>_<data fine>_<provincia>_<nuclide>_<attività specifica>"^^xsd:string ;
+      sosa:observedProperty
+              :activity ;
+      inspire-mf:hasFeatureOfInterest
+              :acquadepurata_bergamo_bg ;
+      inspire-mf:hasObservationValue
+              <https://whowproject.eu/ontologies/instances_test_1#n.r._becquerel_on_liter> ;
+      inspire-mf:phenomenonTime
+              :date_04062019-04062019 ;
+      places:hasCountry :Italy ;
+      places:hasMetropolitanCity
+              :Bergamo ;
+      places:hasMunicipality
+              :BG ;
+      places:hasRegion :Lombardia ;
+      whow:relatedToPropertyAgent
+              :nuclide_cs-137 ;
+      whow:relatedWaterFeature
+              :acquadepurata_bergamo_bg .
+
+:acquadepurata_bergamo_bg
+      rdf:type whow:WaterFeature ;
+      rdfs:label "acqua depurata bergamo (bg)"^^xsd:string ;
+      places:hasMunicipality
+              :BG ;
+      places:hasRegion :Lombardia ;
+      whow:hasWaterFeatureType
+              :acqua__d_impianto_di_depurazione .
+
+:activity
+      rdf:type sosa:ObservableProperty ;
+      rdfs:label "activity"^^xsd:string ;
+      qudt:quantityKind qudt:ActivityUnit ;
+      skos:note "TODO: notare che ho inserito qudt che era built in qua, mentre in un altro caso ho provato con sameas. Quello builtin non è aggiornato mi sembra"^^xsd:string .
+
+:bequerel_on_liter
+      rdf:type core:UnitOfMeasure ;
+      rdfs:label "BQ/L"^^xsd:string .
+
 <https://whowproject.eu/ontologies/instances_test_1#chemical_agent_2.4.5-T>
       rdf:type whow:ChemicalAgent ;
       rdfs:label "2,4,5-T"^^xsd:string .
@@ -137,6 +187,10 @@ core:UnitOfMeasure
 :concentration
       rdf:type owl:Thing , sosa:ObservableProperty ;
       rdfs:label "concentration"^^xsd:string , "concentration "@en .
+
+:date_04062019-04062019
+      rdf:type core:TemporalEntity ;
+      rdfs:label "04/06/2019-04/06/2019"^^xsd:string .
 
 :id_94-74-6
       rdf:type core:UniqueIdentifier ;
@@ -215,6 +269,23 @@ core:UnitOfMeasure
       rdf:type core:UnitOfMeasure ;
       rdfs:label "milligrams on liter"^^xsd:string ;
       skos:note "mg/l"^^xsd:string .
+
+<https://whowproject.eu/ontologies/instances_test_1#n.r.>
+      rdf:type core:Value ;
+      rdfs:label "n.r., non rilevato "@it .
+
+<https://whowproject.eu/ontologies/instances_test_1#n.r._becquerel_on_liter>
+      rdf:type inspire-mf:ObservationValue ;
+      rdfs:label "n.r. BQ/L"^^xsd:string ;
+      core:hasUnitOfMeasure
+              :bequerel_on_liter ;
+      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#n.r.> .
+
+:nuclide_cs-137
+      rdf:type whow:NuclideAgent ;
+      rdfs:label "nuclide CS-137"^^xsd:string ;
+      core:hasUniqueIdentifier
+              :CS-137 .
 
 <https://whowproject.eu/ontologies/instances_test_1#oglio_Endine_ITPOOF3CE2LN1lo1_190319_DOC_greatherthan_0.5>
       rdf:type whow:LakeChemicalAgentConcentrationObservation ;

@@ -215,7 +215,7 @@
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterFeature ;
       rdfs:label "has water feature type "@en ;
-      rdfs:range :WaterFeature ;
+      rdfs:range :WaterFeatureType ;
       skos:prefLabel "has water feature type "@en .
 
 :hasWaterSamplingType
