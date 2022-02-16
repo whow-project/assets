@@ -88,7 +88,7 @@
 :ObservablePropertyAgent
       rdf:type owl:Class ;
       rdfs:label "Observable Property Agent "@en ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Agent> , :WHOWConcept ;
+      rdfs:subClassOf skos:Concept , <https://dati.isprambiente.it/ontology/core/Agent> , :WHOWConcept ;
       skos:prefLabel "Observable Property Agent "@en .
 
 :RiverWaterBody
@@ -167,7 +167,7 @@
 :WaterFeatureType
       rdf:type owl:Class ;
       rdfs:label "Water feature type "@en ;
-      rdfs:subClassOf :WHOWConcept ;
+      rdfs:subClassOf skos:Concept , :WHOWConcept ;
       skos:prefLabel "Water feature type "@en .
 
 :WaterMonitoringStation
@@ -200,6 +200,12 @@
       rdfs:subClassOf :SpatialSamplingFeature ;
       skos:prefLabel "Water Sampling Feature "@en .
 
+:WaterSamplingType
+      rdf:type owl:Class ;
+      rdfs:label "Water Sampling Type "@en ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> , :WHOWConcept ;
+      skos:prefLabel "Water Sampling Type "@en .
+
 :WaterSamplingValue
       rdf:type owl:Class ;
       rdfs:label "Water Sampling Value "@en ;
@@ -223,7 +229,7 @@
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterSamplingFeature ;
       rdfs:label "has water sampling type "@en ;
-      rdfs:range :waterSamplingType ;
+      rdfs:range :WaterSamplingType ;
       skos:prefLabel "has water sampling type "@en .
 
 :isSubWaterBasin
@@ -261,9 +267,3 @@
       rdfs:domain :WaterObservation ;
       rdfs:label "related water sampling feature "@en ;
       skos:prefLabel "related water sampling feature "@en .
-
-:waterSamplingType
-      rdf:type owl:Class ;
-      rdfs:label "Water Sampling Type "@en ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> , :WHOWConcept ;
-      skos:prefLabel "Water Sampling Type "@en .

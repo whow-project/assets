@@ -27,11 +27,11 @@ core:UnitOfMeasure
       rdf:type places:MetropolitanCity ;
       rdfs:label "Adrara San Rocco"^^xsd:string .
 
-:BG   rdf:type places:Municipality ;
+:BG   rdf:type places:Province ;
       rdfs:label "Municipality of Bergamo"^^xsd:string .
 
 :Bergamo
-      rdf:type places:MetropolitanCity ;
+      rdf:type places:Municipality ;
       rdfs:label "Bergamo"^^xsd:string .
 
 :CAS_479-61-8
@@ -243,10 +243,9 @@ core:UnitOfMeasure
               <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.05_milligrams_on_liter> ;
       places:hasCountry :Italy ;
       places:hasGeometry :Geometry_573578_507552 ;
-      places:hasMetropolitanCity
-              :Bergamo ;
       places:hasMunicipality
-              :BG ;
+              :Bergamo ;
+      places:hasProvince :BG ;
       places:hasRegion :Lombardia ;
       whow:relatedToPropertyAgent
               :DOC ;
@@ -496,6 +495,6 @@ core:UnitOfMeasure
       core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.05> .
 
 :waterDepth
-      rdf:type whow:waterSamplingType ;
+      rdf:type whow:WaterSamplingType ;
       rdfs:label "water depth "@en ;
       core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_7-7.5_meter> .
