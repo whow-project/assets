@@ -22,6 +22,7 @@
 
 <http://www.w3.org/ns/sosa/observedProperty>
       rdfs:domain :WaterObservation ;
+      rdfs:range <http://www.w3.org/ns/sosa/ObservableProperty> ;
       sdo:domainIncludes :WaterObservation .
 
 <https://dati.isprambiente.it/ontology/core/UnitOfMeasure>
