@@ -10,258 +10,14 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 []    rdf:type visual:Graph ;
-      rdfs:label "Es 2 - Radioactiviti Observation" ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/whow-ontology#NuclideAgent> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "222"^^xsd:int ;
-                visual:x "1974"^^xsd:int ;
-                visual:y "244"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#date_04062019-04062019> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "348"^^xsd:int ;
-                visual:x "2395"^^xsd:int ;
-                visual:y "1151"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#bequerel_on_liter> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "112"^^xsd:int ;
-                visual:x "2590"^^xsd:int ;
-                visual:y "683"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Bergamo> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "160"^^xsd:int ;
-                visual:x "450"^^xsd:int ;
-                visual:y "1183"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#acquadepurata_bergamo_bg> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "408"^^xsd:int ;
-                visual:x "1005"^^xsd:int ;
-                visual:y "1192"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#activity> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "251"^^xsd:int ;
-                visual:x "1581"^^xsd:int ;
-                visual:y "254"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#BG> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "344"^^xsd:int ;
-                visual:x "190"^^xsd:int ;
-                visual:y "1073"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#n.r._becquerel_on_liter> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "155"^^xsd:int ;
-                visual:x "2094"^^xsd:int ;
-                visual:y "687"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/whow-ontology#WaterRadioactivityObservation> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "434"^^xsd:int ;
-                visual:x "574"^^xsd:int ;
-                visual:y "242"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#CS-137> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "140"^^xsd:int ;
-                visual:x "2583"^^xsd:int ;
-                visual:y "383"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#nuclide_cs-137> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "233"^^xsd:int ;
-                visual:x "1968"^^xsd:int ;
-                visual:y "390"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#acqua__d_impianto_di_depurazione> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "445"^^xsd:int ;
-                visual:x "982"^^xsd:int ;
-                visual:y "1428"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Italy> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "110"^^xsd:int ;
-                visual:x "47"^^xsd:int ;
-                visual:y "821"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Lombardia> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "181"^^xsd:int ;
-                visual:x "137"^^xsd:int ;
-                visual:y "937"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <http://qudt.org/schema/qudt#ActivityUnit> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "197"^^xsd:int ;
-                visual:x "1616"^^xsd:int ;
-                visual:y "56"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#acquadepurata_04062019_04062019_bg_cs-137> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "610"^^xsd:int ;
-                visual:x "897"^^xsd:int ;
-                visual:y "701"^^xsd:int
-              ] ;
-      visual:depicts <https://whowproject.eu/ontologies/instances_test_1#acquadepurata_04062019_04062019_bg_cs-137> .
-
-[]    rdf:type visual:Graph ;
       rdfs:label "Es 1 - Lago Endine Chemical Agent Observation" ;
       visual:child
               [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Italy> ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#lago_di_endine_strato_integrato_IT03POOG3CE2LN1LO_DOC_19032019> ;
                 visual:height "39"^^xsd:int ;
-                visual:width "171"^^xsd:int ;
-                visual:x "50"^^xsd:int ;
-                visual:y "1051"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Lombardia> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "181"^^xsd:int ;
-                visual:x "95"^^xsd:int ;
-                visual:y "1116"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#DOC> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "109"^^xsd:int ;
-                visual:x "2349"^^xsd:int ;
-                visual:y "621"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#lagoDiEndineStratoIntegrato_0-7.5> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "575"^^xsd:int ;
-                visual:x "1814"^^xsd:int ;
-                visual:y "1242"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Geometry_573578_507552> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "372"^^xsd:int ;
-                visual:x "359"^^xsd:int ;
-                visual:y "1323"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/whow-ontology#ChemicalAgent> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "310"^^xsd:int ;
-                visual:x "2248"^^xsd:int ;
-                visual:y "382"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Endine_ITPOOF3CE2LN1lo1_LakeWaterBody> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "576"^^xsd:int ;
-                visual:x "1018"^^xsd:int ;
-                visual:y "1450"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/whow-ontology#WaterChemicalAgentObservation> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "524"^^xsd:int ;
-                visual:x "532"^^xsd:int ;
-                visual:y "386"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#value_7-7.5> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "189"^^xsd:int ;
-                visual:x "2360"^^xsd:int ;
-                visual:y "1462"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#BG> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "388"^^xsd:int ;
-                visual:x "120"^^xsd:int ;
-                visual:y "1189"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Bergamo> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "219"^^xsd:int ;
-                visual:x "290"^^xsd:int ;
-                visual:y "1260"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#WISE_3133-05-9> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "251"^^xsd:int ;
-                visual:x "2752"^^xsd:int ;
-                visual:y "454"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#concentration> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "266"^^xsd:int ;
-                visual:x "1890"^^xsd:int ;
-                visual:y "391"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#OglioWaterBasin> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "262"^^xsd:int ;
-                visual:x "1142"^^xsd:int ;
-                visual:y "1679"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.05_milligrams_on_liter> ;
-                visual:height "39"^^xsd:int ;
-                visual:width "561"^^xsd:int ;
-                visual:x "2655"^^xsd:int ;
-                visual:y "877"^^xsd:int
+                visual:width "1471"^^xsd:int ;
+                visual:x "677"^^xsd:int ;
+                visual:y "867"^^xsd:int
               ] ;
       visual:child
               [ rdf:type visual:Box ;
@@ -273,10 +29,254 @@
               ] ;
       visual:child
               [ rdf:type visual:Box ;
-                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#lago_di_endine_strato_integrato_IT03POOG3CE2LN1LO_573578_507552_19032019_greaterthan_0.5_milligrams_on_liter> ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.05_milligrams_on_liter> ;
                 visual:height "39"^^xsd:int ;
-                visual:width "1471"^^xsd:int ;
-                visual:x "677"^^xsd:int ;
-                visual:y "867"^^xsd:int
+                visual:width "561"^^xsd:int ;
+                visual:x "2655"^^xsd:int ;
+                visual:y "877"^^xsd:int
               ] ;
-      visual:depicts <https://whowproject.eu/ontologies/instances_test_1#lago_di_endine_strato_integrato_IT03POOG3CE2LN1LO_573578_507552_19032019_greaterthan_0.5_milligrams_on_liter> .
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#OglioWaterBasin> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "262"^^xsd:int ;
+                visual:x "1142"^^xsd:int ;
+                visual:y "1679"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#concentration> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "266"^^xsd:int ;
+                visual:x "1890"^^xsd:int ;
+                visual:y "391"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#WISE_3133-05-9> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "251"^^xsd:int ;
+                visual:x "2752"^^xsd:int ;
+                visual:y "454"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Bergamo> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "219"^^xsd:int ;
+                visual:x "290"^^xsd:int ;
+                visual:y "1260"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#BG> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "388"^^xsd:int ;
+                visual:x "120"^^xsd:int ;
+                visual:y "1189"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#value_7-7.5> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "189"^^xsd:int ;
+                visual:x "2360"^^xsd:int ;
+                visual:y "1462"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/whow-ontology#WaterChemicalAgentObservation> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "524"^^xsd:int ;
+                visual:x "532"^^xsd:int ;
+                visual:y "386"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Endine_ITPOOF3CE2LN1lo1_LakeWaterBody> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "576"^^xsd:int ;
+                visual:x "1018"^^xsd:int ;
+                visual:y "1450"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/whow-ontology#ChemicalAgent> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "310"^^xsd:int ;
+                visual:x "2248"^^xsd:int ;
+                visual:y "382"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Geometry_573578_507552> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "372"^^xsd:int ;
+                visual:x "359"^^xsd:int ;
+                visual:y "1323"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#lagoDiEndineStratoIntegrato_0-7.5> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "575"^^xsd:int ;
+                visual:x "1814"^^xsd:int ;
+                visual:y "1242"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#DOC> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "109"^^xsd:int ;
+                visual:x "2349"^^xsd:int ;
+                visual:y "621"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Lombardia> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "181"^^xsd:int ;
+                visual:x "95"^^xsd:int ;
+                visual:y "1116"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Italy> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "171"^^xsd:int ;
+                visual:x "50"^^xsd:int ;
+                visual:y "1051"^^xsd:int
+              ] ;
+      visual:depicts <https://whowproject.eu/ontologies/instances_test_1#lago_di_endine_strato_integrato_IT03POOG3CE2LN1LO_DOC_19032019> .
+
+[]    rdf:type visual:Graph ;
+      rdfs:label "Es 2 - Radioactiviti Observation" ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#acquadepurata_from04062019_to04062019_bg_cs-137> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "610"^^xsd:int ;
+                visual:x "897"^^xsd:int ;
+                visual:y "701"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://qudt.org/schema/qudt#ActivityUnit> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "197"^^xsd:int ;
+                visual:x "1616"^^xsd:int ;
+                visual:y "56"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Lombardia> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "181"^^xsd:int ;
+                visual:x "137"^^xsd:int ;
+                visual:y "937"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Italy> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "110"^^xsd:int ;
+                visual:x "47"^^xsd:int ;
+                visual:y "821"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#acqua__d_impianto_di_depurazione> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "445"^^xsd:int ;
+                visual:x "982"^^xsd:int ;
+                visual:y "1428"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#nuclide_cs-137> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "233"^^xsd:int ;
+                visual:x "1968"^^xsd:int ;
+                visual:y "390"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#CS-137> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "140"^^xsd:int ;
+                visual:x "2583"^^xsd:int ;
+                visual:y "383"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/whow-ontology#WaterRadioactivityObservation> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "434"^^xsd:int ;
+                visual:x "574"^^xsd:int ;
+                visual:y "242"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#n.r._becquerel_on_liter> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "155"^^xsd:int ;
+                visual:x "2094"^^xsd:int ;
+                visual:y "687"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#BG> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "344"^^xsd:int ;
+                visual:x "190"^^xsd:int ;
+                visual:y "1073"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#activity> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "251"^^xsd:int ;
+                visual:x "1581"^^xsd:int ;
+                visual:y "254"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#acquadepurata_bergamo_bg> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "408"^^xsd:int ;
+                visual:x "1005"^^xsd:int ;
+                visual:y "1192"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#Bergamo> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "160"^^xsd:int ;
+                visual:x "450"^^xsd:int ;
+                visual:y "1183"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#bequerel_on_liter> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "112"^^xsd:int ;
+                visual:x "2590"^^xsd:int ;
+                visual:y "683"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1#date_04062019-04062019> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "348"^^xsd:int ;
+                visual:x "2395"^^xsd:int ;
+                visual:y "1151"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/whow-ontology#NuclideAgent> ;
+                visual:height "39"^^xsd:int ;
+                visual:width "222"^^xsd:int ;
+                visual:x "1974"^^xsd:int ;
+                visual:y "244"^^xsd:int
+              ] ;
+      visual:depicts <https://whowproject.eu/ontologies/instances_test_1#acquadepurata_from04062019_to04062019_bg_cs-137> .

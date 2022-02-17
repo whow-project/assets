@@ -131,10 +131,19 @@ core:UnitOfMeasure
       rdf:type whow:WaterFeatureType ;
       rdfs:label "acqua d'impianto di depurazione"^^xsd:string .
 
-:acquadepurata_04062019_04062019_bg_cs-137
+:acquadepurata_bergamo_bg
+      rdf:type whow:WaterFeature ;
+      rdfs:label "acqua depurata bergamo (bg)"^^xsd:string ;
+      places:hasMunicipality
+              :BG ;
+      places:hasRegion :Lombardia ;
+      whow:hasWaterFeatureType
+              :acqua__d_impianto_di_depurazione .
+
+:acquadepurata_from04062019_to04062019_bg_cs-137
       rdf:type whow:WaterRadioactivityObservation ;
       rdfs:label "acquadepurata 04062019 04062019 bg cs-137"^^xsd:string ;
-      skos:note "<descrizione matrice 2° livello>_<data inizio>_<data fine>_<provincia>_<nuclide>_<attività specifica>"^^xsd:string ;
+      skos:note "<descrizione matrice 2° livello>_from<data inizio>_to<data fine>_<provincia>_<nuclide>_<attività specifica>"^^xsd:string ;
       sosa:observedProperty
               :activity ;
       inspire-mf:hasFeatureOfInterest
@@ -146,22 +155,12 @@ core:UnitOfMeasure
       places:hasCountry :Italy ;
       places:hasMetropolitanCity
               :Bergamo ;
-      places:hasMunicipality
-              :BG ;
+      places:hasProvince :BG ;
       places:hasRegion :Lombardia ;
       whow:relatedToPropertyAgent
               :nuclide_cs-137 ;
       whow:relatedWaterFeature
               :acquadepurata_bergamo_bg .
-
-:acquadepurata_bergamo_bg
-      rdf:type whow:WaterFeature ;
-      rdfs:label "acqua depurata bergamo (bg)"^^xsd:string ;
-      places:hasMunicipality
-              :BG ;
-      places:hasRegion :Lombardia ;
-      whow:hasWaterFeatureType
-              :acqua__d_impianto_di_depurazione .
 
 :activity
       rdf:type sosa:ObservableProperty ;
@@ -200,51 +199,23 @@ core:UnitOfMeasure
       rdf:type whow:WaterSamplingFeature ;
       rdfs:label "Lago di Endine strato integrato 0-7.5"^^xsd:string ;
       skos:note "<descrizione profondità>_<profondità>"^^xsd:string ;
-      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_7-7.5> ;
+      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_0-7.5> ;
       core:isPartOf :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
       core:value "0-7.5"^^xsd:string ;
       whow:hasWaterSamplingType
               :waterDepth .
 
-<https://whowproject.eu/ontologies/instances_test_1#lago_di_endine_strato_integrato_IT03POOG3CE2LN1LO_573578_507552_19032019_3.9_micrograms_on_liter>
+:lago_di_endine_strato_integrato_IT03POOG3CE2LN1LO_DOC_19032019
       rdf:type whow:WaterChemicalAgentObservation ;
-      rdfs:label "lago di endine strato integrato IT03POOG3CE2LN1LO 573578 507552 19032019 3.9 micrograms on liter "@en ;
-      skos:note "<descrizione profondità>_<corpo idrico>_<coord x>_<coord y>_<data campionamento>_<valore>"^^xsd:string ;
+      rdfs:label "lago di endine strato integrato IT03POOG3CE2LN1LO  19/03/2019 DOC"^^xsd:string ;
+      skos:note "<descrizione profondità>_<corpo idrico>_<parametro>_<data campionamento>"^^xsd:string ;
       sosa:observedProperty
               :concentration ;
       core:time "2019-03-19T00:00:00.00"^^xsd:dateTime ;
-      inspire-mf:hasFeatureOfInterest
-              :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
-      inspire-mf:hasObservationValue
-              <https://whowproject.eu/ontologies/instances_test_1#value_3.9_micrograms_on_liter> ;
-      inspire-mf:hasPlatform
-              :POOG3CE2LN1l01 ;
-      places:hasCountry :Italy ;
-      places:hasGeometry :Geometry_573578_507552 ;
-      places:hasMunicipality
-              :BG ;
-      places:hasRegion :Lombardia ;
-      whow:relatedToPropertyAgent
-              :clorofilla_a ;
-      whow:relatedWaterFeature
-              :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
-      whow:relatedWaterSamplingFeature
-              <https://whowproject.eu/ontologies/instances_test_1#lagoDiEndineStratoIntegrato_0-7.5> .
-
-<https://whowproject.eu/ontologies/instances_test_1#lago_di_endine_strato_integrato_IT03POOG3CE2LN1LO_573578_507552_19032019_greaterthan_0.5_milligrams_on_liter>
-      rdf:type whow:WaterChemicalAgentObservation ;
-      rdfs:label "lago di endine strato integrato IT03POOG3CE2LN1LO 573578 507552 19032019 greater than 0.5 milligrams on liter"^^xsd:string ;
-      sosa:observedProperty
-              :concentration ;
-      core:time "2019-03-19T00:00:00.00"^^xsd:dateTime ;
-      inspire-mf:hasFeatureOfInterest
-              :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
       inspire-mf:hasObservationValue
               <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.05_milligrams_on_liter> ;
       places:hasCountry :Italy ;
       places:hasGeometry :Geometry_573578_507552 ;
-      places:hasMunicipality
-              :Bergamo ;
       places:hasProvince :BG ;
       places:hasRegion :Lombardia ;
       whow:relatedToPropertyAgent
@@ -252,7 +223,31 @@ core:UnitOfMeasure
       whow:relatedWaterFeature
               :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
       whow:relatedWaterSamplingFeature
-              <https://whowproject.eu/ontologies/instances_test_1#lagoDiEndineStratoIntegrato_0-7.5> .
+              <https://whowproject.eu/ontologies/instances_test_1#lagoDiEndineStratoIntegrato_0-7.5> ;
+      whow:takenFromStation
+              :POOG3CE2LN1l01 .
+
+:lago_di_endine_strato_integrato_IT03POOG3CE2LN1LO_clorofilla_a_19032019
+      rdf:type whow:WaterChemicalAgentObservation ;
+      rdfs:label "lago di endine strato integrato IT03POOG3CE2LN1LO 19/03/2019 clorofilla a"@en ;
+      skos:note "<descrizione profondità>_<corpo idrico>_<parametro>_<data campionamento>"^^xsd:string ;
+      sosa:observedProperty
+              :concentration ;
+      core:time "2019-03-19T00:00:00.00"^^xsd:dateTime ;
+      inspire-mf:hasObservationValue
+              <https://whowproject.eu/ontologies/instances_test_1#value_3.9_micrograms_on_liter> ;
+      places:hasCountry :Italy ;
+      places:hasGeometry :Geometry_573578_507552 ;
+      places:hasProvince :BG ;
+      places:hasRegion :Lombardia ;
+      whow:relatedToPropertyAgent
+              :clorofilla_a ;
+      whow:relatedWaterFeature
+              :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
+      whow:relatedWaterSamplingFeature
+              <https://whowproject.eu/ontologies/instances_test_1#lagoDiEndineStratoIntegrato_0-7.5> ;
+      whow:takenFromStation
+              :POOG3CE2LN1l01 .
 
 :meter
       rdf:type core:UnitOfMeasure ;
@@ -386,61 +381,67 @@ core:UnitOfMeasure
       whow:takenFromStation
               :N0080600061lo1 .
 
-<https://whowproject.eu/ontologies/instances_test_1#ogliosublacuale_guerna_IT03N0080600061LO_574903_5063200_03042019_93-76-5_greaterthan_0.03_microgramsonliter>
+:ogliosublacuale_guerna_IT03N0080600061LO_93-76-5_03042019
       rdf:type whow:WaterChemicalAgentObservation ;
       rdfs:label "oglio sublacuale guerna IT03N0080600061LO 574903 5063200 03042019 93-76-5 >0.03_micrograms on liter"^^xsd:string ;
-      skos:note "<bacino idrografico>_<corso d'acqua>_<corpo idrico>_<coord x>_<coord y>_<data campionamento>_<CAS>_<concentrazione>"^^xsd:string ;
+      skos:note "<bacino idrografico>_<corso d'acqua>_<corpo idrico>_<CAS>_<data campionamento>"^^xsd:string ;
       sosa:observedProperty
               :concentration ;
       core:time "2019-03-04T00:00:00.00"^^xsd:dateTime ;
-      inspire-mf:hasFeatureOfInterest
-              :Guerna_IT03N0080600061LO_RiverWaterBody ;
       inspire-mf:hasObservationValue
               <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.03_micrograms_on_liter> ;
-      inspire-mf:hasPlatform
-              :N0080600061lo1 ;
       places:hasCountry :Italy ;
       places:hasGeometry :Geometry_574903_5063200 ;
       places:hasMetropolitanCity
               :Adrara_San_Rocco ;
-      places:hasMunicipality
-              :BG ;
+      places:hasProvince :BG ;
       places:hasRegion :Lombardia ;
       whow:relatedToPropertyAgent
               <https://whowproject.eu/ontologies/instances_test_1#chemical_agent_2.4.5-T> ;
       whow:relatedWaterFeature
-              :Guerna_IT03N0080600061LO_RiverWaterBody .
+              :Guerna_IT03N0080600061LO_RiverWaterBody ;
+      whow:takenFromStation
+              :N0080600061lo1 .
 
-<https://whowproject.eu/ontologies/instances_test_1#ogliosublacuale_guerna_IT03N0080600061LO_574903_5063200_03042019_greaterthan_0.03_microgramsonliter>
+:ogliosublacuale_guerna_IT03N0080600061LO_94-74-6_03042019
       rdf:type whow:WaterChemicalAgentObservation ;
-      rdfs:label "ogliosublacuale guerna IT03N0080600061LO 574903 5063200 03042019 <0.03 micrograms on liter"^^xsd:string ;
-      skos:note "<bacino idrografico>_<corso d'acqua>_<corpo idrico>_<coord x>_<coord y>_<data campionamento>_<concentrazione>"^^xsd:string ;
+      rdfs:label "ogliosublacuale guerna IT03N0080600061LO 574903 5063200 03042019 94-74-6"^^xsd:string ;
+      skos:note "<bacino idrografico>_<corso d'acqua>_<corpo idrico>_<CAS>_<data campionamento>"^^xsd:string ;
       sosa:observedProperty
               :concentration ;
       core:time "2019-03-04T00:00:00.00"^^xsd:dateTime ;
-      inspire-mf:hasFeatureOfInterest
-              :Guerna_IT03N0080600061LO_RiverWaterBody ;
       inspire-mf:hasObservationValue
               <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.03_micrograms_on_liter> ;
-      inspire-mf:hasPlatform
-              :N0080600061lo1 ;
       places:hasCountry :Italy ;
       places:hasGeometry :Geometry_574903_5063200 ;
       places:hasMetropolitanCity
               :Adrara_San_Rocco ;
-      places:hasMunicipality
-              :BG ;
+      places:hasProvince :BG ;
       places:hasRegion :Lombardia ;
       whow:relatedToPropertyAgent
               <https://whowproject.eu/ontologies/instances_test_1#MCPA_Acido_2.4_meticlorofenossi_acetico> ;
       whow:relatedWaterFeature
-              :Guerna_IT03N0080600061LO_RiverWaterBody .
+              :Guerna_IT03N0080600061LO_RiverWaterBody ;
+      whow:takenFromStation
+              :N0080600061lo1 .
 
 :sublacual_Oglio
       rdf:type whow:WaterBasin ;
       rdfs:label "Oglio sublacuale "@it ;
       whow:isSubWaterBasin
               :OglioWaterBasin .
+
+<https://whowproject.eu/ontologies/instances_test_1#value_0-7.5>
+      rdf:type whow:WaterSamplingValue ;
+      rdfs:label "value_0-7.5"^^xsd:string .
+
+<https://whowproject.eu/ontologies/instances_test_1#value_0-7.5_meter>
+      rdf:type whow:WaterSamplingValue ;
+      rdfs:label "7-7.5 m"^^xsd:string ;
+      skos:note "value_<profondità> with unit of measure."^^xsd:string ;
+      core:hasUnitOfMeasure
+              :meter ;
+      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_0-7.5> .
 
 <https://whowproject.eu/ontologies/instances_test_1#value_3.9>
       rdf:type core:Value , inspire-mf:ObservationValue ;
@@ -454,19 +455,6 @@ core:UnitOfMeasure
       core:hasUnitOfMeasure
               :micrograms_on_liter ;
       core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_3.9> .
-
-<https://whowproject.eu/ontologies/instances_test_1#value_7-7.5>
-      rdf:type core:Value , whow:WaterSamplingValue ;
-      rdfs:label "7-7.5"^^xsd:string ;
-      skos:note "value_<profondità> without unit of measure"^^xsd:string .
-
-<https://whowproject.eu/ontologies/instances_test_1#value_7-7.5_meter>
-      rdf:type whow:WaterSamplingValue ;
-      rdfs:label "7-7.5 m"^^xsd:string ;
-      skos:note "value_<profondità> with unit of measure."^^xsd:string ;
-      core:hasUnitOfMeasure
-              :meter ;
-      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_7-7.5> .
 
 <https://whowproject.eu/ontologies/instances_test_1#value_greaterthan_0.03>
       rdf:type inspire-mf:ObservationValue ;
@@ -497,4 +485,4 @@ core:UnitOfMeasure
 :waterDepth
       rdf:type whow:WaterSamplingType ;
       rdfs:label "water depth "@en ;
-      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_7-7.5_meter> .
+      core:hasValue <https://whowproject.eu/ontologies/instances_test_1#value_0-7.5_meter> .

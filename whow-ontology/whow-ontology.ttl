@@ -101,6 +101,7 @@
       rdf:type owl:Class ;
       rdfs:label "Spatial Sampling Feature "@en ;
       rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> , :WHOWConcept ;
+      skos:note "TODO: partOf tra spatial sampling feature e water feature o creare una nostra proprietà?"^^xsd:string ;
       skos:prefLabel "Spatial Sampling Feature "@en .
 
 :TerritorialWaters
@@ -260,6 +261,7 @@
               ] ;
       rdfs:label "related water feature"@en ;
       rdfs:range :WaterFeature ;
+      rdfs:subPropertyOf inspire-mf:hasFeatureOfInterest ;
       skos:prefLabel "related water feature"@en .
 
 :relatedWaterSamplingFeature
@@ -267,3 +269,10 @@
       rdfs:domain :WaterObservation ;
       rdfs:label "related water sampling feature "@en ;
       skos:prefLabel "related water sampling feature "@en .
+
+:takenFromStation
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain inspire-mf:Observation ;
+      rdfs:label "taken from station "@en ;
+      rdfs:range :WaterMonitoringStation ;
+      skos:prefLabel "taken from station "@en .
