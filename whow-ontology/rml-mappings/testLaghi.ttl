@@ -1,0 +1,167 @@
+# baseURI: https://whowproject.eu/data/examples/test
+# imports: https://dati.isprambiente.it/ontology/core/
+# imports: https://whowproject.eu/ontologies/water-monitoring-ontology
+
+@prefix :        <https://whowproject.eu/data/examples/test/> .
+@prefix core:    <https://dati.isprambiente.it/ontology/core/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix places:  <https://w3id.org/stlab/places/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix whow-water:  <https://whowproject.eu/ontologies/water-monitoring-ontology/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<https://whowproject.eu/data/examples/test>
+      rdf:type owl:Ontology ;
+      owl:imports core: , <https://whowproject.eu/ontologies/water-monitoring-ontology> .
+
+<https://whowproject.eu/data/examples/test/%3C0%2C5>
+      rdf:type core:Value .
+
+<https://whowproject.eu/data/examples/test/%3C0%2C5_mg%2FL>
+      rdf:type core:ObservationValue ;
+      core:hasUnitOfMeasure
+              <https://whowproject.eu/data/examples/test/%C2%B5g%2FL> , <https://whowproject.eu/data/examples/test/mg%2FL> ;
+      core:hasValue <https://whowproject.eu/data/examples/test/%3C0%2C5> , <https://whowproject.eu/data/examples/test/2.3> , <https://whowproject.eu/data/examples/test/3.9> .
+
+<https://whowproject.eu/data/examples/test/%C2%B5g%2FL>
+      rdf:type core:UnitOfMeasure .
+
+<https://whowproject.eu/data/examples/test/2.3>
+      rdf:type core:Value .
+
+<https://whowproject.eu/data/examples/test/2.3_%C2%B5g%2FL>
+      rdf:type core:ObservationValue ;
+      core:hasUnitOfMeasure
+              <https://whowproject.eu/data/examples/test/%C2%B5g%2FL> , <https://whowproject.eu/data/examples/test/mg%2FL> ;
+      core:hasValue <https://whowproject.eu/data/examples/test/%3C0%2C5> , <https://whowproject.eu/data/examples/test/2.3> , <https://whowproject.eu/data/examples/test/3.9> .
+
+<https://whowproject.eu/data/examples/test/3.9>
+      rdf:type core:Value .
+
+<https://whowproject.eu/data/examples/test/3.9_%C2%B5g%2FL>
+      rdf:type core:ObservationValue ;
+      core:hasUnitOfMeasure
+              <https://whowproject.eu/data/examples/test/%C2%B5g%2FL> , <https://whowproject.eu/data/examples/test/mg%2FL> ;
+      core:hasValue <https://whowproject.eu/data/examples/test/%3C0%2C5> , <https://whowproject.eu/data/examples/test/2.3> , <https://whowproject.eu/data/examples/test/3.9> .
+
+<https://whowproject.eu/data/examples/test/479-61-8>
+      rdf:type core:UniqueIdentifier .
+
+:BG   rdf:type places:Province .
+
+<https://whowproject.eu/data/examples/test/Clorofilla%20%22a%22>
+      rdf:type whow-water:ChemicalAgent ;
+      core:hasUniqueIdentifier
+              <https://whowproject.eu/data/examples/test/479-61-8> , <https://whowproject.eu/data/examples/test/WISE%203133-05-9> .
+
+:Concentrazione
+      rdf:type whow-water:ObservableProperty .
+
+:DOC  rdf:type whow-water:ChemicalAgent ;
+      core:hasUniqueIdentifier
+              <https://whowproject.eu/data/examples/test/479-61-8> , <https://whowproject.eu/data/examples/test/WISE%203133-05-9> .
+
+:ENDINE
+      rdf:type whow-water:LakeWaterBody ;
+      core:isPartOf :Oglio .
+
+<https://whowproject.eu/data/examples/test/Endine%20Gaiano>
+      rdf:type places:Municipality .
+
+<https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato_0%20-%207%2C3>
+      rdf:type whow-water:WaterSamplingFeature .
+
+<https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato_0%20-%207%2C5>
+      rdf:type whow-water:WaterSamplingFeature .
+
+:Oglio
+      rdf:type whow-water:WaterBasin .
+
+<https://whowproject.eu/data/examples/test/Oglio_ENDINE_IT03POOG3CE2LN1LO_Clorofilla%20%22a%22_2019-03-18T23%3A00%3A00Z>
+      rdf:type whow-water:WaterChemicalAgentObservation ;
+      core:hasGeometry <https://whowproject.eu/data/examples/test/geometry_573578.0_5070552.0> ;
+      core:hasMunicipality
+              <https://whowproject.eu/data/examples/test/Endine%20Gaiano> ;
+      core:hasObservationValue
+              <https://whowproject.eu/data/examples/test/%3C0%2C5_mg%2FL> , <https://whowproject.eu/data/examples/test/2.3_%C2%B5g%2FL> , <https://whowproject.eu/data/examples/test/3.9_%C2%B5g%2FL> ;
+      places:HasProvince :BG ;
+      whow-water:RelatedToPropertyAgent
+              <https://whowproject.eu/data/examples/test/Clorofilla%20%22a%22> , :DOC ;
+      whow-water:hasObservableProperty
+              :Concentrazione ;
+      whow-water:relatedToWaterFeature
+              :ENDINE ;
+      whow-water:relatedWaterSamplingFeature
+              <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato_0%20-%207%2C3> , <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato_0%20-%207%2C5> ;
+      whow-water:takenFromStation
+              :POOG3CE2LN1lo1 .
+
+<https://whowproject.eu/data/examples/test/Oglio_ENDINE_IT03POOG3CE2LN1LO_Clorofilla%20%22a%22_2019-04-15T22%3A00%3A00Z>
+      rdf:type whow-water:WaterChemicalAgentObservation ;
+      core:hasGeometry <https://whowproject.eu/data/examples/test/geometry_573578.0_5070552.0> ;
+      core:hasMunicipality
+              <https://whowproject.eu/data/examples/test/Endine%20Gaiano> ;
+      core:hasObservationValue
+              <https://whowproject.eu/data/examples/test/%3C0%2C5_mg%2FL> , <https://whowproject.eu/data/examples/test/2.3_%C2%B5g%2FL> , <https://whowproject.eu/data/examples/test/3.9_%C2%B5g%2FL> ;
+      places:HasProvince :BG ;
+      whow-water:RelatedToPropertyAgent
+              <https://whowproject.eu/data/examples/test/Clorofilla%20%22a%22> , :DOC ;
+      whow-water:hasObservableProperty
+              :Concentrazione ;
+      whow-water:relatedToWaterFeature
+              :ENDINE ;
+      whow-water:relatedWaterSamplingFeature
+              <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato_0%20-%207%2C3> , <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato_0%20-%207%2C5> ;
+      whow-water:takenFromStation
+              :POOG3CE2LN1lo1 .
+
+<https://whowproject.eu/data/examples/test/Oglio_ENDINE_IT03POOG3CE2LN1LO_DOC_2019-03-18T23%3A00%3A00Z>
+      rdf:type whow-water:WaterChemicalAgentObservation ;
+      core:hasGeometry <https://whowproject.eu/data/examples/test/geometry_573578.0_5070552.0> ;
+      core:hasMunicipality
+              <https://whowproject.eu/data/examples/test/Endine%20Gaiano> ;
+      core:hasObservationValue
+              <https://whowproject.eu/data/examples/test/%3C0%2C5_mg%2FL> , <https://whowproject.eu/data/examples/test/2.3_%C2%B5g%2FL> , <https://whowproject.eu/data/examples/test/3.9_%C2%B5g%2FL> ;
+      places:HasProvince :BG ;
+      whow-water:RelatedToPropertyAgent
+              <https://whowproject.eu/data/examples/test/Clorofilla%20%22a%22> , :DOC ;
+      whow-water:hasObservableProperty
+              :Concentrazione ;
+      whow-water:relatedToWaterFeature
+              :ENDINE ;
+      whow-water:relatedWaterSamplingFeature
+              <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato_0%20-%207%2C3> , <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato_0%20-%207%2C5> ;
+      whow-water:takenFromStation
+              :POOG3CE2LN1lo1 .
+
+<https://whowproject.eu/data/examples/test/Oglio_ENDINE_IT03POOG3CE2LN1LO_DOC_2019-04-15T22%3A00%3A00Z>
+      rdf:type whow-water:WaterChemicalAgentObservation ;
+      core:hasGeometry <https://whowproject.eu/data/examples/test/geometry_573578.0_5070552.0> ;
+      core:hasMunicipality
+              <https://whowproject.eu/data/examples/test/Endine%20Gaiano> ;
+      core:hasObservationValue
+              <https://whowproject.eu/data/examples/test/%3C0%2C5_mg%2FL> , <https://whowproject.eu/data/examples/test/2.3_%C2%B5g%2FL> , <https://whowproject.eu/data/examples/test/3.9_%C2%B5g%2FL> ;
+      places:HasProvince :BG ;
+      whow-water:RelatedToPropertyAgent
+              <https://whowproject.eu/data/examples/test/Clorofilla%20%22a%22> , :DOC ;
+      whow-water:hasObservableProperty
+              :Concentrazione ;
+      whow-water:relatedToWaterFeature
+              :ENDINE ;
+      whow-water:relatedWaterSamplingFeature
+              <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato_0%20-%207%2C3> , <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato_0%20-%207%2C5> ;
+      whow-water:takenFromStation
+              :POOG3CE2LN1lo1 .
+
+:POOG3CE2LN1lo1
+      rdf:type whow-water:WaterMonitoringStation .
+
+<https://whowproject.eu/data/examples/test/WISE%203133-05-9>
+      rdf:type core:UniqueIdentifier .
+
+<https://whowproject.eu/data/examples/test/geometry_573578.0_5070552.0>
+      rdf:type core:Geometry .
+
+<https://whowproject.eu/data/examples/test/mg%2FL>
+      rdf:type core:UnitOfMeasure .
