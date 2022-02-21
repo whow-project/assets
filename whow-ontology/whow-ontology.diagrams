@@ -9,164 +9,6 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >209</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >262</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1852</cd:x>
-        <cd:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >356</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >777</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1388</cd:x>
-        <cd:class rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >243</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >672</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1731</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#ChemicalAgent"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >369</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >548</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1820</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#ObservablePropertyAgent"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >457</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1016</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >367</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterChemicalAgentObservation"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >277</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >263</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >140</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterFeatureType"/>
-      </cd:URINode>
-    </cd:nodes>
-    <rdfs:label>Water Observation General Pattern</rdfs:label>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >52</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >334</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >341</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >732</cd:x>
-        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >420</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1113</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >637</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterBioindicatorObservation"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >221</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >544</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >173</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterFeature"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >277</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >541</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >761</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterObservation"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:selectedResource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >90</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >399</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >445</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1353</cd:x>
-        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >407</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1100</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >38</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterBioticIndexObservation"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >193</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >785</cd:y>
@@ -193,12 +35,26 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >225</cd:width>
+        >221</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >665</cd:y>
+        >544</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >2060</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#NuclideAgent"/>
+        >173</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterFeature"/>
+      </cd:URINode>
+    </cd:nodes>
+    <rdfs:label>Water Observation General Pattern</rdfs:label>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >243</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >672</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1731</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#ChemicalAgent"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -214,6 +70,150 @@
         <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterRadioactivityObservation"/>
       </cd:URINode>
     </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >420</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1113</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >637</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterBioindicatorObservation"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >407</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1100</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >38</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterBioticIndexObservation"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >90</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >399</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >445</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1353</cd:x>
+        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >225</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >665</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >2060</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#NuclideAgent"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >209</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >262</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1852</cd:x>
+        <cd:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >369</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >548</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1820</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#ObservablePropertyAgent"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >277</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >541</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >761</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterObservation"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >457</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1016</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >367</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterChemicalAgentObservation"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:selectedResource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >356</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >777</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1388</cd:x>
+        <cd:class rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >277</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >263</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >140</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterFeatureType"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >52</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >334</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >341</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >732</cd:x>
+        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
+      </cd:URINode>
+    </cd:nodes>
   </cd:Diagram>
   <cd:Diagram>
     <cd:nodes>
@@ -221,38 +221,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >387</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >625</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >2266</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterObservationParameter"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >340</cd:width>
+        >472</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1180</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >972</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#BioindicatorObservation"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >604</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1346</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >2172</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#RiverChemicalAgentConcentrationObservation"/>
+        >464</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterQualityParameterObservation"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -273,12 +247,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >300</cd:width>
+        >604</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >861</cd:y>
+        >1346</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1753</cd:x>
-        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Procedure"/>
+        >2172</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#RiverChemicalAgentConcentrationObservation"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -286,51 +260,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >300</cd:width>
+        >327</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >502</cd:y>
+        >1171</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >2383</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterSamplingValue"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >270</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >998</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >482</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#MonitoringStation"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >167</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >988</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1906</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#Metadata"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >250</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >838</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >532</cd:x>
-        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/places/Geometry"/>
+        >1323</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#BioticIndexObservation"/>
       </cd:URINode>
     </cd:nodes>
     <rdfs:label>Overall Diagram</rdfs:label>
@@ -339,12 +274,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >242</cd:width>
+        >599</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1215</cd:y>
+        >1351</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >179</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#RiverWaterBody"/>
+        >1559</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#LakeChemicalAgentConcentrationObservation"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -378,25 +313,25 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >518</cd:width>
+        >167</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1354</cd:y>
+        >988</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1036</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#RadioactivityConcentrationObservation"/>
+        >1906</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#Metadata"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >111</cd:height>
+        >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >384</cd:width>
+        >389</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >213</cd:y>
+        >526</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >440</cd:x>
-        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest"/>
+        >1962</cd:x>
+        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -417,12 +352,39 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >545</cd:width>
+        >250</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1169</cd:y>
+        >838</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1657</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#ChemicalAgentConcentrationObservation"/>
+        >532</cd:x>
+        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/places/Geometry"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:selectedResource rdf:resource="https://whowproject.eu/ontologies/whow-ontology#Metadata"/>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >302</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >226</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >2018</cd:x>
+        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/core/UniqueIdentifier"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >359</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >836</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >2197</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterChemicalAgentType"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -443,12 +405,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >389</cd:width>
+        >340</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >526</cd:y>
+        >1180</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1962</cd:x>
-        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue"/>
+        >972</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#BioindicatorObservation"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -456,12 +418,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >327</cd:width>
+        >387</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1171</cd:y>
+        >625</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1323</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#BioticIndexObservation"/>
+        >2266</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterObservationParameter"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -469,12 +431,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >599</cd:width>
+        >270</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1351</cd:y>
+        >998</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1559</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#LakeChemicalAgentConcentrationObservation"/>
+        >482</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#MonitoringStation"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -482,12 +444,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >289</cd:width>
+        >518</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >109</cd:y>
+        >1354</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >2346</cd:x>
-        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/core/UnitOfMeasure"/>
+        >1036</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#RadioactivityConcentrationObservation"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -495,25 +457,38 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >302</cd:width>
+        >242</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >226</cd:y>
+        >1215</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >2018</cd:x>
-        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/core/UniqueIdentifier"/>
+        >179</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#RiverWaterBody"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
       <cd:URINode>
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >130</cd:height>
+        >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >233</cd:width>
+        >267</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >546</cd:y>
+        >575</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >73</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterBody"/>
+        >1145</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterObservation"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >111</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >384</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >213</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >440</cd:x>
+        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -534,12 +509,77 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >472</cd:width>
+        >323</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1180</cd:y>
+        >341</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >464</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterQualityParameterObservation"/>
+        >33</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterSamplingFeature"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >300</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >502</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >2383</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterSamplingValue"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >130</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >233</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >546</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >73</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterBody"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >289</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >109</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >2346</cd:x>
+        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/core/UnitOfMeasure"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >300</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >861</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1753</cd:x>
+        <cd:class rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Procedure"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >545</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1169</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1657</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#ChemicalAgentConcentrationObservation"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -555,45 +595,5 @@
         <cd:class rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
       </cd:URINode>
     </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >323</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >341</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >33</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterSamplingFeature"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >359</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >836</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >2197</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterChemicalAgentType"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >267</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >575</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1145</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/whow-ontology#WaterObservation"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:selectedResource rdf:resource="https://whowproject.eu/ontologies/whow-ontology#Metadata"/>
   </cd:Diagram>
 </rdf:RDF>

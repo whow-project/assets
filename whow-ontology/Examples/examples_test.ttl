@@ -23,6 +23,13 @@ core:UnitOfMeasure
       owl:imports <http://qudt.org/schema/qudt> , <https://whowproject.eu/ontologies/water-monitoring-ontology> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
+<https://whowproject.eu/ontologies/instances_test_1/#MCPA_Acido_2.4_meticlorofenossi_acetico>
+      rdf:type whow-water:ChemicalAgent ;
+      rdfs:label "(MCPA) Acido 2,4 meticlorofenossi acetico"^^xsd:string ;
+      skos:note "<sostanza>"^^xsd:string ;
+      core:hasUniqueIdentifier
+              :id_94-74-6 .
+
 :Adrara_San_Rocco
       rdf:type places:MetropolitanCity ;
       rdfs:label "Adrara San Rocco"^^xsd:string .
@@ -99,13 +106,6 @@ core:UnitOfMeasure
       rdf:type places:Region ;
       rdfs:label "Lombardia "@it .
 
-<https://whowproject.eu/ontologies/instances_test_1/#MCPA_Acido_2.4_meticlorofenossi_acetico>
-      rdf:type whow-water:ChemicalAgent ;
-      rdfs:label "(MCPA) Acido 2,4 meticlorofenossi acetico"^^xsd:string ;
-      skos:note "<sostanza>"^^xsd:string ;
-      core:hasUniqueIdentifier
-              :id_94-74-6 .
-
 :N0080600061lo1
       rdf:type whow-water:WaterMonitoringStation ;
       rdfs:label "Code of the station"@en ;
@@ -157,9 +157,9 @@ core:UnitOfMeasure
               :Bergamo ;
       places:hasProvince :BG ;
       places:hasRegion :Lombardia ;
-      whow-water:relatedToPropertyAgent
+      whow-water:hasPropertyAgent
               :nuclide_cs-137 ;
-      whow-water:relatedWaterFeature
+      whow-water:hasWaterFeature
               :acquadepurata_bergamo_bg .
 
 :activity
@@ -220,11 +220,11 @@ core:UnitOfMeasure
               :Bergamo ;
       places:hasProvince :BG ;
       places:hasRegion :Lombardia ;
-      whow-water:relatedToPropertyAgent
+      whow-water:hasPropertyAgent
               :DOC ;
-      whow-water:relatedWaterFeature
+      whow-water:hasWaterFeature
               :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
-      whow-water:relatedWaterSamplingFeature
+      whow-water:hasWaterSamplingFeature
               <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:takenFromStation
               :POOG3CE2LN1l01 .
@@ -242,11 +242,11 @@ core:UnitOfMeasure
       places:hasGeometry :Geometry_573578_507552 ;
       places:hasProvince :BG ;
       places:hasRegion :Lombardia ;
-      whow-water:relatedToPropertyAgent
+      whow-water:hasPropertyAgent
               :clorofilla_a ;
-      whow-water:relatedWaterFeature
+      whow-water:hasWaterFeature
               :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
-      whow-water:relatedWaterSamplingFeature
+      whow-water:hasWaterSamplingFeature
               <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:takenFromStation
               :POOG3CE2LN1l01 .
@@ -297,14 +297,14 @@ core:UnitOfMeasure
       places:hasMunicipality
               :BG ;
       places:hasRegion :Lombardia ;
+      whow-water:hasPropertyAgent
+              :DOC ;
       whow-water:hasWaterObservationParameter
               :concentration ;
+      whow-water:hasWaterSamplingFeature
+              <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:relatedLake
               :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
-      whow-water:relatedToPropertyAgent
-              :DOC ;
-      whow-water:relatedWaterSamplingFeature
-              <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:takenFromStation
               :POOG3CE2LN1l01 .
 
@@ -323,14 +323,14 @@ core:UnitOfMeasure
       places:hasMunicipality
               :BG ;
       places:hasRegion :Lombardia ;
+      whow-water:hasPropertyAgent
+              :clorofilla_a ;
       whow-water:hasWaterObservationParameter
               :concentration ;
+      whow-water:hasWaterSamplingFeature
+              <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:relatedLake
               :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
-      whow-water:relatedToPropertyAgent
-              :clorofilla_a ;
-      whow-water:relatedWaterSamplingFeature
-              <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:takenFromStation
               :POOG3CE2LN1l01 .
 
@@ -349,12 +349,12 @@ core:UnitOfMeasure
       places:hasMunicipality
               :BG ;
       places:hasRegion :Lombardia ;
+      whow-water:hasPropertyAgent
+              <https://whowproject.eu/ontologies/instances_test_1/chemical_agent_2.4.5-T> ;
       whow-water:hasWaterObservationParameter
               :concentration ;
       whow-water:relatedRiver
               :Guerna_IT03N0080600061LO_RiverWaterBody ;
-      whow-water:relatedToPropertyAgent
-              <https://whowproject.eu/ontologies/instances_test_1/chemical_agent_2.4.5-T> ;
       whow-water:takenFromStation
               :N0080600061lo1 .
 
@@ -376,13 +376,13 @@ core:UnitOfMeasure
       places:hasMunicipality
               :BG ;
       places:hasRegion :Lombardia ;
+      whow-water:hasPropertyAgent
+              <https://whowproject.eu/ontologies/instances_test_1/MCPA_Acido_2.4_meticlorofenossi_acetico> ;
+      whow-water:hasWaterFeature
+              :Guerna_IT03N0080600061LO_RiverWaterBody ;
       whow-water:hasWaterObservationParameter
               :concentration ;
       whow-water:relatedRiver
-              :Guerna_IT03N0080600061LO_RiverWaterBody ;
-      whow-water:relatedToPropertyAgent
-              <https://whowproject.eu/ontologies/instances_test_1/MCPA_Acido_2.4_meticlorofenossi_acetico> ;
-      whow-water:relatedWaterFeature
               :Guerna_IT03N0080600061LO_RiverWaterBody ;
       whow-water:takenFromStation
               :N0080600061lo1 .
@@ -402,9 +402,9 @@ core:UnitOfMeasure
               :Adrara_San_Rocco ;
       places:hasProvince :BG ;
       places:hasRegion :Lombardia ;
-      whow-water:relatedToPropertyAgent
+      whow-water:hasPropertyAgent
               <https://whowproject.eu/ontologies/instances_test_1/chemical_agent_2.4.5-T> ;
-      whow-water:relatedWaterFeature
+      whow-water:hasWaterFeature
               :Guerna_IT03N0080600061LO_RiverWaterBody ;
       whow-water:takenFromStation
               :N0080600061lo1 .
@@ -424,9 +424,9 @@ core:UnitOfMeasure
               :Adrara_San_Rocco ;
       places:hasProvince :BG ;
       places:hasRegion :Lombardia ;
-      whow-water:relatedToPropertyAgent
+      whow-water:hasPropertyAgent
               <https://whowproject.eu/ontologies/instances_test_1/MCPA_Acido_2.4_meticlorofenossi_acetico> ;
-      whow-water:relatedWaterFeature
+      whow-water:hasWaterFeature
               :Guerna_IT03N0080600061LO_RiverWaterBody ;
       whow-water:takenFromStation
               :N0080600061lo1 .

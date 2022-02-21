@@ -223,6 +223,11 @@
       rdfs:range :WaterFeatureType ;
       skos:prefLabel "has water feature type "@en .
 
+:hasWaterSamplingFeature
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterObservation ;
+      rdfs:label "has sampling feature"@en .
+
 :hasWaterSamplingType
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterSamplingFeature ;
@@ -250,12 +255,6 @@
       rdfs:range :ObservableProperty ;
       owl:equivalentProperty
               <http://www.w3.org/ns/sosa/observedProperty> .
-
-:relatedWaterSamplingFeature
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterObservation ;
-      rdfs:label "related water sampling feature "@en ;
-      skos:prefLabel "related water sampling feature "@en .
 
 :takenFromStation
       rdf:type owl:ObjectProperty ;
