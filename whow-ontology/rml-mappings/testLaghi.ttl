@@ -3,112 +3,112 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix whow-water: <https://whowproject.eu/ontologies/water-monitoring-ontology/> .
 
-<https://whowproject.eu/data/examples/test/%3C0%2C5> a core:Value .
+<https://whowproject.eu/data//Observation/Oglio-ENDINE-IT03POOG3CE2LN1LO-Clorofilla%20%22a%22-2019-03-18T23%3A00%3A00Z>
+  a whow-water:WaterChemicalAgentObservation;
+  core:hasGeometry <https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0>;
+  core:hasMunicipality <https://whowproject.eu/data/Municipality/Endine%20Gaiano>;
+  core:hasObservationValue <https://whowproject.eu/data/ObservationValue/%3C0%2C5-mg%2FL>,
+    <https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g%2FL>, <https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g%2FL>;
+  places:HasProvince <https://whowproject.eu/data/Province/BG>;
+  whow-water:hasObservableProperty <https://whowproject.eu/data/ObservableProperty/Concentrazione>;
+  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/ChemicalAgent/479-61-8>,
+    <https://whowproject.eu/data/ChemicalAgent/WISE%203133-05-9>;
+  whow-water:relatedToWaterFeature <https://whowproject.eu/data/LakeWaterBody/ENDINE>;
+  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>,
+    <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>;
+  whow-water:takenFromStation <https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> .
 
-<https://whowproject.eu/data/examples/test/%3C0%2C5-mg%2FL> a core:ObservationValue;
-  core:hasUnitOfMeasure <https://whowproject.eu/data/examples/test/%C2%B5g%2FL>, <https://whowproject.eu/data/examples/test/mg%2FL>;
-  core:hasValue <https://whowproject.eu/data/examples/test/%3C0%2C5>, <https://whowproject.eu/data/examples/test/2.3>,
-    <https://whowproject.eu/data/examples/test/3.9> .
+<https://whowproject.eu/data//Observation/Oglio-ENDINE-IT03POOG3CE2LN1LO-Clorofilla%20%22a%22-2019-04-15T22%3A00%3A00Z>
+  a whow-water:WaterChemicalAgentObservation;
+  core:hasGeometry <https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0>;
+  core:hasMunicipality <https://whowproject.eu/data/Municipality/Endine%20Gaiano>;
+  core:hasObservationValue <https://whowproject.eu/data/ObservationValue/%3C0%2C5-mg%2FL>,
+    <https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g%2FL>, <https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g%2FL>;
+  places:HasProvince <https://whowproject.eu/data/Province/BG>;
+  whow-water:hasObservableProperty <https://whowproject.eu/data/ObservableProperty/Concentrazione>;
+  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/ChemicalAgent/479-61-8>,
+    <https://whowproject.eu/data/ChemicalAgent/WISE%203133-05-9>;
+  whow-water:relatedToWaterFeature <https://whowproject.eu/data/LakeWaterBody/ENDINE>;
+  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>,
+    <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>;
+  whow-water:takenFromStation <https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> .
 
-<https://whowproject.eu/data/examples/test/%C2%B5g%2FL> a core:UnitOfMeasure .
+<https://whowproject.eu/data//Observation/Oglio-ENDINE-IT03POOG3CE2LN1LO-DOC-2019-03-18T23%3A00%3A00Z>
+  a whow-water:WaterChemicalAgentObservation;
+  core:hasGeometry <https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0>;
+  core:hasMunicipality <https://whowproject.eu/data/Municipality/Endine%20Gaiano>;
+  core:hasObservationValue <https://whowproject.eu/data/ObservationValue/%3C0%2C5-mg%2FL>,
+    <https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g%2FL>, <https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g%2FL>;
+  places:HasProvince <https://whowproject.eu/data/Province/BG>;
+  whow-water:hasObservableProperty <https://whowproject.eu/data/ObservableProperty/Concentrazione>;
+  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/ChemicalAgent/479-61-8>,
+    <https://whowproject.eu/data/ChemicalAgent/WISE%203133-05-9>;
+  whow-water:relatedToWaterFeature <https://whowproject.eu/data/LakeWaterBody/ENDINE>;
+  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>,
+    <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>;
+  whow-water:takenFromStation <https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> .
 
-<https://whowproject.eu/data/examples/test/2.3> a core:Value .
+<https://whowproject.eu/data//Observation/Oglio-ENDINE-IT03POOG3CE2LN1LO-DOC-2019-04-15T22%3A00%3A00Z>
+  a whow-water:WaterChemicalAgentObservation;
+  core:hasGeometry <https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0>;
+  core:hasMunicipality <https://whowproject.eu/data/Municipality/Endine%20Gaiano>;
+  core:hasObservationValue <https://whowproject.eu/data/ObservationValue/%3C0%2C5-mg%2FL>,
+    <https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g%2FL>, <https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g%2FL>;
+  places:HasProvince <https://whowproject.eu/data/Province/BG>;
+  whow-water:hasObservableProperty <https://whowproject.eu/data/ObservableProperty/Concentrazione>;
+  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/ChemicalAgent/479-61-8>,
+    <https://whowproject.eu/data/ChemicalAgent/WISE%203133-05-9>;
+  whow-water:relatedToWaterFeature <https://whowproject.eu/data/LakeWaterBody/ENDINE>;
+  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>,
+    <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>;
+  whow-water:takenFromStation <https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> .
 
-<https://whowproject.eu/data/examples/test/2.3-%C2%B5g%2FL> a core:ObservationValue;
-  core:hasUnitOfMeasure <https://whowproject.eu/data/examples/test/%C2%B5g%2FL>, <https://whowproject.eu/data/examples/test/mg%2FL>;
-  core:hasValue <https://whowproject.eu/data/examples/test/%3C0%2C5>, <https://whowproject.eu/data/examples/test/2.3>,
-    <https://whowproject.eu/data/examples/test/3.9> .
+<https://whowproject.eu/data/ChemicalAgent/479-61-8> a whow-water:ChemicalAgent .
 
-<https://whowproject.eu/data/examples/test/3.9> a core:Value .
+<https://whowproject.eu/data/ChemicalAgent/WISE%203133-05-9> a whow-water:ChemicalAgent .
 
-<https://whowproject.eu/data/examples/test/3.9-%C2%B5g%2FL> a core:ObservationValue;
-  core:hasUnitOfMeasure <https://whowproject.eu/data/examples/test/%C2%B5g%2FL>, <https://whowproject.eu/data/examples/test/mg%2FL>;
-  core:hasValue <https://whowproject.eu/data/examples/test/%3C0%2C5>, <https://whowproject.eu/data/examples/test/2.3>,
-    <https://whowproject.eu/data/examples/test/3.9> .
+<https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0> a core:Geometry .
 
-<https://whowproject.eu/data/examples/test/479-61-8> a whow-water:ChemicalAgent .
+<https://whowproject.eu/data/LakeWaterBody/ENDINE> a whow-water:LakeWaterBody;
+  core:isPartOf <https://whowproject.eu/data/WaterBasin/Oglio> .
 
-<https://whowproject.eu/data/examples/test/BG> a places:Province .
+<https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> a whow-water:WaterMonitoringStation .
 
-<https://whowproject.eu/data/examples/test/Concentrazione> a whow-water:ObservableProperty .
+<https://whowproject.eu/data/Municipality/Endine%20Gaiano> a places:Municipality .
 
-<https://whowproject.eu/data/examples/test/ENDINE> a whow-water:LakeWaterBody;
-  core:isPartOf <https://whowproject.eu/data/examples/test/Oglio> .
+<https://whowproject.eu/data/ObservableProperty/Concentrazione> a whow-water:ObservableProperty .
 
-<https://whowproject.eu/data/examples/test/Endine%20Gaiano> a places:Municipality .
+<https://whowproject.eu/data/ObservationValue/%3C0%2C5-mg%2FL> a core:ObservationValue;
+  core:hasUnitOfMeasure <https://whowproject.eu/data/UM/%C2%B5g%2FL>, <https://whowproject.eu/data/UM/mg%2FL>;
+  core:hasValue <https://whowproject.eu/data/Value/%3C0%2C5>, <https://whowproject.eu/data/Value/2.3>,
+    <https://whowproject.eu/data/Value/3.9> .
 
-<https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>
+<https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g%2FL> a core:ObservationValue;
+  core:hasUnitOfMeasure <https://whowproject.eu/data/UM/%C2%B5g%2FL>, <https://whowproject.eu/data/UM/mg%2FL>;
+  core:hasValue <https://whowproject.eu/data/Value/%3C0%2C5>, <https://whowproject.eu/data/Value/2.3>,
+    <https://whowproject.eu/data/Value/3.9> .
+
+<https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g%2FL> a core:ObservationValue;
+  core:hasUnitOfMeasure <https://whowproject.eu/data/UM/%C2%B5g%2FL>, <https://whowproject.eu/data/UM/mg%2FL>;
+  core:hasValue <https://whowproject.eu/data/Value/%3C0%2C5>, <https://whowproject.eu/data/Value/2.3>,
+    <https://whowproject.eu/data/Value/3.9> .
+
+<https://whowproject.eu/data/Province/BG> a places:Province .
+
+<https://whowproject.eu/data/UM/%C2%B5g%2FL> a core:UnitOfMeasure .
+
+<https://whowproject.eu/data/UM/mg%2FL> a core:UnitOfMeasure .
+
+<https://whowproject.eu/data/Value/%3C0%2C5> a core:Value .
+
+<https://whowproject.eu/data/Value/2.3> a core:Value .
+
+<https://whowproject.eu/data/Value/3.9> a core:Value .
+
+<https://whowproject.eu/data/WaterBasin/Oglio> a whow-water:WaterBasin .
+
+<https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>
   a whow-water:WaterSamplingFeature .
 
-<https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>
+<https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>
   a whow-water:WaterSamplingFeature .
-
-<https://whowproject.eu/data/examples/test/Oglio> a whow-water:WaterBasin .
-
-<https://whowproject.eu/data/examples/test/Oglio-ENDINE-IT03POOG3CE2LN1LO-Clorofilla%20%22a%22-2019-03-18T23%3A00%3A00Z>
-  a whow-water:WaterChemicalAgentObservation;
-  core:hasGeometry <https://whowproject.eu/data/examples/test/geometry_573578.0-5070552.0>;
-  core:hasMunicipality <https://whowproject.eu/data/examples/test/Endine%20Gaiano>;
-  core:hasObservationValue <https://whowproject.eu/data/examples/test/%3C0%2C5-mg%2FL>,
-    <https://whowproject.eu/data/examples/test/2.3-%C2%B5g%2FL>, <https://whowproject.eu/data/examples/test/3.9-%C2%B5g%2FL>;
-  places:HasProvince <https://whowproject.eu/data/examples/test/BG>;
-  whow-water:hasObservableProperty <https://whowproject.eu/data/examples/test/Concentrazione>;
-  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/examples/test/479-61-8>,
-    <https://whowproject.eu/data/examples/test/WISE%203133-05-9>;
-  whow-water:relatedToWaterFeature <https://whowproject.eu/data/examples/test/ENDINE>;
-  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>,
-    <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>;
-  whow-water:takenFromStation <https://whowproject.eu/data/examples/test/POOG3CE2LN1lo1> .
-
-<https://whowproject.eu/data/examples/test/Oglio-ENDINE-IT03POOG3CE2LN1LO-Clorofilla%20%22a%22-2019-04-15T22%3A00%3A00Z>
-  a whow-water:WaterChemicalAgentObservation;
-  core:hasGeometry <https://whowproject.eu/data/examples/test/geometry_573578.0-5070552.0>;
-  core:hasMunicipality <https://whowproject.eu/data/examples/test/Endine%20Gaiano>;
-  core:hasObservationValue <https://whowproject.eu/data/examples/test/%3C0%2C5-mg%2FL>,
-    <https://whowproject.eu/data/examples/test/2.3-%C2%B5g%2FL>, <https://whowproject.eu/data/examples/test/3.9-%C2%B5g%2FL>;
-  places:HasProvince <https://whowproject.eu/data/examples/test/BG>;
-  whow-water:hasObservableProperty <https://whowproject.eu/data/examples/test/Concentrazione>;
-  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/examples/test/479-61-8>,
-    <https://whowproject.eu/data/examples/test/WISE%203133-05-9>;
-  whow-water:relatedToWaterFeature <https://whowproject.eu/data/examples/test/ENDINE>;
-  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>,
-    <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>;
-  whow-water:takenFromStation <https://whowproject.eu/data/examples/test/POOG3CE2LN1lo1> .
-
-<https://whowproject.eu/data/examples/test/Oglio-ENDINE-IT03POOG3CE2LN1LO-DOC-2019-03-18T23%3A00%3A00Z>
-  a whow-water:WaterChemicalAgentObservation;
-  core:hasGeometry <https://whowproject.eu/data/examples/test/geometry_573578.0-5070552.0>;
-  core:hasMunicipality <https://whowproject.eu/data/examples/test/Endine%20Gaiano>;
-  core:hasObservationValue <https://whowproject.eu/data/examples/test/%3C0%2C5-mg%2FL>,
-    <https://whowproject.eu/data/examples/test/2.3-%C2%B5g%2FL>, <https://whowproject.eu/data/examples/test/3.9-%C2%B5g%2FL>;
-  places:HasProvince <https://whowproject.eu/data/examples/test/BG>;
-  whow-water:hasObservableProperty <https://whowproject.eu/data/examples/test/Concentrazione>;
-  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/examples/test/479-61-8>,
-    <https://whowproject.eu/data/examples/test/WISE%203133-05-9>;
-  whow-water:relatedToWaterFeature <https://whowproject.eu/data/examples/test/ENDINE>;
-  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>,
-    <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>;
-  whow-water:takenFromStation <https://whowproject.eu/data/examples/test/POOG3CE2LN1lo1> .
-
-<https://whowproject.eu/data/examples/test/Oglio-ENDINE-IT03POOG3CE2LN1LO-DOC-2019-04-15T22%3A00%3A00Z>
-  a whow-water:WaterChemicalAgentObservation;
-  core:hasGeometry <https://whowproject.eu/data/examples/test/geometry_573578.0-5070552.0>;
-  core:hasMunicipality <https://whowproject.eu/data/examples/test/Endine%20Gaiano>;
-  core:hasObservationValue <https://whowproject.eu/data/examples/test/%3C0%2C5-mg%2FL>,
-    <https://whowproject.eu/data/examples/test/2.3-%C2%B5g%2FL>, <https://whowproject.eu/data/examples/test/3.9-%C2%B5g%2FL>;
-  places:HasProvince <https://whowproject.eu/data/examples/test/BG>;
-  whow-water:hasObservableProperty <https://whowproject.eu/data/examples/test/Concentrazione>;
-  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/examples/test/479-61-8>,
-    <https://whowproject.eu/data/examples/test/WISE%203133-05-9>;
-  whow-water:relatedToWaterFeature <https://whowproject.eu/data/examples/test/ENDINE>;
-  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>,
-    <https://whowproject.eu/data/examples/test/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>;
-  whow-water:takenFromStation <https://whowproject.eu/data/examples/test/POOG3CE2LN1lo1> .
-
-<https://whowproject.eu/data/examples/test/POOG3CE2LN1lo1> a whow-water:WaterMonitoringStation .
-
-<https://whowproject.eu/data/examples/test/WISE%203133-05-9> a whow-water:ChemicalAgent .
-
-<https://whowproject.eu/data/examples/test/geometry_573578.0-5070552.0> a core:Geometry .
-
-<https://whowproject.eu/data/examples/test/mg%2FL> a core:UnitOfMeasure .

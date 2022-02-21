@@ -20,7 +20,7 @@
 @prefix places: <https://w3id.org/stlab/places/> .
 @prefix core: <https://dati.isprambiente.it/ontology/core/> .
 @prefix whow-water: <https://whowproject.eu/ontologies/water-monitoring-ontology/>.
-@base <https://whowproject.eu/data/examples/test/> .
+@base <https://whowproject.eu/data/> .
 
 ##########################################################
 ## LOGICAL SOURCES TO BE USED
@@ -38,6 +38,8 @@
     ];
     rml:referenceFormulation ql:CSV .
 
+#aggiungere logicalsource fiumi
+
 
 ###########################################################
 ##                  MAPPING RULES
@@ -50,7 +52,7 @@
 <#WaterObservationMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "{BACINO IDROGRAFICO}-{LAGO}-{CORPO IDRICO}-{PARAMETRO}-{DATA CAMPIONAMENTO}";
+  rr:template "/Observation/{BACINO IDROGRAFICO}-{LAGO}-{CORPO IDRICO}-{PARAMETRO}-{DATA CAMPIONAMENTO}";
   rr:termType rr:IRI;
   rr:class whow-water:WaterChemicalAgentObservation #ok così?
 ] ;
@@ -110,14 +112,14 @@ rr:predicateObjectMap [
 <#HasObservablePropertyMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/Concentrazione";
+  rr:template "https://whowproject.eu/data/ObservableProperty/Concentrazione";
   rr:termType rr:IRI;
   rr:class whow-water:ObservableProperty
 ] .
 <#MonitoringStationMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/{Codice Stazione}";
+  rr:template "https://whowproject.eu/data/MonitoringStation/{Codice Stazione}";
   rr:termType rr:IRI;
   rr:class whow-water:WaterMonitoringStation
 ] .
@@ -125,28 +127,28 @@ rr:subjectMap [
 <#WaterSamplingFeatureMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/{Descrizione Profondità}-{Profondità}";
+  rr:template "https://whowproject.eu/data/WaterSamplingFeature/{Descrizione Profondità}-{Profondità}";
   rr:termType rr:IRI;
   rr:class whow-water:WaterSamplingFeature
 ] .
 <#GeometryMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/geometry_{COORD X}-{COORD Y}";
+  rr:template "https://whowproject.eu/data/Geometry/geometry_{COORD X}-{COORD Y}";
   rr:termType rr:IRI;
   rr:class core:Geometry
 ] .
 <#ProvinceMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/{PROVINCIA}";
+  rr:template "https://whowproject.eu/data/Province/{PROVINCIA}";
   rr:termType rr:IRI;
   rr:class places:Province
 ] .
 <#MunicipalityMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/{COMUNE}";
+  rr:template "https://whowproject.eu/data/Municipality/{COMUNE}";
   rr:termType rr:IRI;
   rr:class places:Municipality
 ] .
@@ -156,7 +158,7 @@ rr:subjectMap [
 <#RelatedToWaterFeatureMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/{LAGO}";
+  rr:template "https://whowproject.eu/data/LakeWaterBody/{LAGO}";
   rr:termType rr:IRI;
   rr:class whow-water:LakeWaterBody
 ] ;
@@ -168,7 +170,7 @@ rr:predicateObjectMap [
 <#WaterBasinMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/{BACINO IDROGRAFICO}";
+  rr:template "https://whowproject.eu/data/WaterBasin/{BACINO IDROGRAFICO}";
   rr:termType rr:IRI;
   rr:class whow-water:WaterBasin
 ] .
@@ -179,7 +181,7 @@ rr:subjectMap [
 <#PropertyAgentMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/{CAS}";
+  rr:template "https://whowproject.eu/data/ChemicalAgent/{CAS}";
   rr:termType rr:IRI;
   rr:class whow-water:ChemicalAgent
 ] .
@@ -206,7 +208,7 @@ rr:subjectMap [
 <#ObservationValueMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/{VALORE}-{UM}";
+  rr:template "https://whowproject.eu/data/ObservationValue/{VALORE}-{UM}";
   rr:termType rr:IRI;
   rr:class core:ObservationValue
 
@@ -227,7 +229,7 @@ rr:predicateObjectMap [
 <#ObservationValueHasValueMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/{VALORE}";
+  rr:template "https://whowproject.eu/data/Value/{VALORE}";
   rr:termType rr:IRI;
   rr:class core:Value
 ] .
@@ -235,7 +237,7 @@ rr:subjectMap [
 <#UnitOfMeasureMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/{UM}";
+  rr:template "https://whowproject.eu/data/UM/{UM}";
   rr:termType rr:IRI;
   rr:class core:UnitOfMeasure
 ] .
