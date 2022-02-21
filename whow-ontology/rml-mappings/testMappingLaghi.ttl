@@ -67,8 +67,8 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
   rr:predicate whow-water:relatedToWaterFeature;
-  rr:objectMap [
-  rr:parentTriplesMap <#RelatedToWaterFeatureMapping>]
+  #rr:objectMap [rr:parentTriplesMap <#RelatedToWaterFeatureMapping>];
+  rr:objectMap [ rr:template "https://whowproject.eu/data/LakeWaterBody/{LAGO}"; rr:termType rr:IRI; ]
 ] ;
 rr:predicateObjectMap [
   rr:predicate whow-water:hasObservableProperty;
@@ -82,14 +82,14 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
   rr:predicate core:hasObservationValue;
-  rr:objectMap [
-  rr:parentTriplesMap <#ObservationValueMapping>]
-];
+  #rr:objectMap [  rr:parentTriplesMap <#ObservationValueMapping>];
+  rr:objectMap [ rr:template "https://whowproject.eu/data/ObservationValue/{VALORE}-{UM}"; rr:termType rr:IRI; ]
+  ];
 
 rr:predicateObjectMap [
   rr:predicate whow-water:relatedToPropertyAgent;
-  rr:objectMap [
-  rr:parentTriplesMap <#PropertyAgentMapping>]
+  #rr:objectMap [ rr:parentTriplesMap <#PropertyAgentMapping>];
+  rr:objectMap [ rr:template "https://whowproject.eu/data/ChemicalAgent/{CAS}"; rr:termType rr:IRI; ]
 ];
 
 rr:predicateObjectMap [
@@ -112,8 +112,8 @@ rr:predicateObjectMap [
 
 rr:predicateObjectMap [
   rr:predicate core:hasMunicipality;
-  rr:objectMap [
-  rr:parentTriplesMap <#MunicipalityMapping>]
+  #rr:objectMap [rr:parentTriplesMap <#MunicipalityMapping>];
+  rr:objectMap [ rr:template "https://whowproject.eu/data/Municipality/{COMUNE}"; rr:termType rr:IRI; ]
 ]
  .
 
