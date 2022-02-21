@@ -121,7 +121,7 @@
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
                 owl:minCardinality "1"^^xsd:nonNegativeInteger ;
-                owl:onProperty :relatedWaterFeature
+                owl:onProperty :hasWaterFeature
               ] ;
       skos:note "TODO: Per considerare i sublacuali e i postlacuali si potrebbe introdurre una relazione ricorsiva tra waterbody e waterbody"^^xsd:string .
 
@@ -197,6 +197,25 @@
       rdfs:label "belongs to water basin "@en ;
       rdfs:range :WaterBasin .
 
+:hasPropertyAgent
+      rdf:type rdf:Property ;
+      rdfs:domain
+              [ rdf:type owl:Class ;
+                owl:unionOf (:WaterObservation :ObservableProperty)
+              ] ;
+      rdfs:label "has property agent"@en ;
+      rdfs:range :ObservablePropertyAgent .
+
+:hasWaterFeature
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain
+              [ rdf:type owl:Class ;
+                owl:unionOf (:WaterObservation :WaterBasin)
+              ] ;
+      rdfs:label "has water feature"@en ;
+      rdfs:range :WaterFeature ;
+      rdfs:subPropertyOf inspire-mf:hasFeatureOfInterest .
+
 :hasWaterFeatureType
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterFeature ;
@@ -231,27 +250,6 @@
       rdfs:range :ObservableProperty ;
       owl:equivalentProperty
               <http://www.w3.org/ns/sosa/observedProperty> .
-
-:relatedToPropertyAgent
-      rdf:type rdf:Property ;
-      rdfs:domain
-              [ rdf:type owl:Class ;
-                owl:unionOf (:WaterObservation :ObservableProperty)
-              ] ;
-      rdfs:label "related to property agent"@en ;
-      rdfs:range :ObservablePropertyAgent ;
-      skos:prefLabel "related to property agent"@en .
-
-:relatedWaterFeature
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain
-              [ rdf:type owl:Class ;
-                owl:unionOf (:WaterObservation :WaterBasin)
-              ] ;
-      rdfs:label "related water feature"@en ;
-      rdfs:range :WaterFeature ;
-      rdfs:subPropertyOf inspire-mf:hasFeatureOfInterest ;
-      skos:prefLabel "related water feature"@en .
 
 :relatedWaterSamplingFeature
       rdf:type owl:ObjectProperty ;
