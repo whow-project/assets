@@ -224,6 +224,14 @@
       rdfs:label "metadata "@en ;
       skos:prefLabel "metadata "@en .
 
+:observedProperty
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain inspire-mf:Observation , :WaterObservation ;
+      rdfs:label "Observed property"^^xsd:string ;
+      rdfs:range :ObservableProperty ;
+      owl:equivalentProperty
+              <http://www.w3.org/ns/sosa/observedProperty> .
+
 :relatedToPropertyAgent
       rdf:type rdf:Property ;
       rdfs:domain
