@@ -18,7 +18,7 @@
 @prefix idlab-fn: <http://example.com/idlab/function/> .
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix places: <https://w3id.org/stlab/places/> .
-@prefix core: <https://dati.isprambiente.it/ontology/core/> . #ok prefisso?
+@prefix core: <https://dati.isprambiente.it/ontology/core/> .
 @prefix whow-water: <https://whowproject.eu/ontologies/water-monitoring-ontology/>.
 @base <https://whowproject.eu/data/examples/test/> .
 
@@ -50,7 +50,7 @@
 <#WaterObservationMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "{BACINO IDROGRAFICO}_{LAGO}_{CORPO IDRICO}_{PARAMETRO}_{DATA CAMPIONAMENTO}";
+  rr:template "{BACINO IDROGRAFICO}-{LAGO}-{CORPO IDRICO}-{PARAMETRO}-{DATA CAMPIONAMENTO}";
   rr:termType rr:IRI;
   rr:class whow-water:WaterChemicalAgentObservation #ok così?
 ] ;
@@ -76,7 +76,7 @@ rr:predicateObjectMap [
 ];
 
 rr:predicateObjectMap [
-  rr:predicate whow-water:RelatedToPropertyAgent;
+  rr:predicate whow-water:relatedToPropertyAgent;
   rr:objectMap [
   rr:parentTriplesMap <#PropertyAgentMapping>]
 ];
@@ -110,7 +110,7 @@ rr:predicateObjectMap [
 <#HasObservablePropertyMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/Concentrazione"; #ok?
+  rr:template "https://whowproject.eu/data/examples/test/Concentrazione";
   rr:termType rr:IRI;
   rr:class whow-water:ObservableProperty
 ] .
@@ -125,14 +125,14 @@ rr:subjectMap [
 <#WaterSamplingFeatureMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/{Descrizione Profondità}_{Profondità}";
+  rr:template "https://whowproject.eu/data/examples/test/{Descrizione Profondità}-{Profondità}";
   rr:termType rr:IRI;
   rr:class whow-water:WaterSamplingFeature
 ] .
 <#GeometryMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/geometry_{COORD X}_{COORD Y}";
+  rr:template "https://whowproject.eu/data/examples/test/geometry_{COORD X}-{COORD Y}";
   rr:termType rr:IRI;
   rr:class core:Geometry
 ] .
@@ -179,25 +179,25 @@ rr:subjectMap [
 <#PropertyAgentMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/{PARAMETRO}";
-  rr:termType rr:IRI;
-  rr:class whow-water:ChemicalAgent
-] ;
-
-
-rr:predicateObjectMap [
-  rr:predicate core:hasUniqueIdentifier;
-  rr:objectMap [
-  rr:parentTriplesMap <#UniqueIdentifierMapping>]
-].
-
-<#UniqueIdentifierMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceLaghi> ;
-rr:subjectMap [
   rr:template "https://whowproject.eu/data/examples/test/{CAS}";
   rr:termType rr:IRI;
-  rr:class core:UniqueIdentifier
+  rr:class whow-water:ChemicalAgent
 ] .
+
+
+#rr:predicateObjectMap [
+#  rr:predicate core:hasUniqueIdentifier;
+#  rr:objectMap [
+#  rr:parentTriplesMap <#UniqueIdentifierMapping>]
+#].
+
+#<#UniqueIdentifierMapping> a rr:TriplesMap ;
+#rml:logicalSource <#LogicalSourceLaghi> ;
+#rr:subjectMap [
+#  rr:template "https://whowproject.eu/data/examples/test/{CAS}";
+#  rr:termType rr:IRI;
+#  rr:class core:UniqueIdentifier
+#] .
 
 # #################################
 # ## OBSERVATION VALUE MAPPING
@@ -206,7 +206,7 @@ rr:subjectMap [
 <#ObservationValueMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/examples/test/{VALORE}_{UM}";
+  rr:template "https://whowproject.eu/data/examples/test/{VALORE}-{UM}";
   rr:termType rr:IRI;
   rr:class core:ObservationValue
 
