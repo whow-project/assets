@@ -21,6 +21,7 @@
 @prefix core: <https://dati.isprambiente.it/ontology/core/> .
 @prefix whow-water: <https://whowproject.eu/ontologies/water-monitoring-ontology/>.
 @prefix ti: <https://w3id.org/italia/onto/TI/>.
+@prefix inspire-mf: <https://dati.isprambiente.it/ontology/inspire-mf/>.
 @base <https://whowproject.eu/data/> .
 
 ##########################################################
