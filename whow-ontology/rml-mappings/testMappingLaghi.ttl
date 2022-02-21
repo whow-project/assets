@@ -30,7 +30,7 @@
 <#LogicalSourceLaghi> a rml:BaseSource ;
     rml:source [
       a csvw:Table;
-      csvw:url "023-ACQUE-SUPERFICIALI-DATI-Laghi-ridotto.csv";
+      csvw:url "Monitoraggio_laghi_dati_puliti.csv";
       csvw:dialect [
         a csvw:Dialect;
         csvw:delimiter ","
@@ -52,10 +52,18 @@
 <#WaterObservationMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "/Observation/{BACINO IDROGRAFICO}-{LAGO}-{CORPO IDRICO}-{PARAMETRO}-{DATA CAMPIONAMENTO}";
+  rr:template "WaterObservation/{BACINO IDROGRAFICO}-{LAGO}-{CORPO IDRICO}-{PARAMETRO}-{DATA CAMPIONAMENTO}";
   rr:termType rr:IRI;
-  rr:class whow-water:WaterChemicalAgentObservation #ok così?
+  rr:class whow-water:WaterChemicalAgentObservation
 ] ;
+rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "Observation for the parameter {PARAMETRO} of water basin {Bacino IDROGRAFICO} for lake {LAGO}. Waterbody code: {CORPO IDRICO} at date {DATA CAMPIONAMENTO}" ; rr:language "en" ]
+];
+rr:predicateObjectMap [
+  rr:predicate core:time;
+  rr:objectMap [rr:template "date-{DATA CAMPIONAMENTO}"]
+];
 rr:predicateObjectMap [
   rr:predicate whow-water:relatedToWaterFeature;
   rr:objectMap [
@@ -112,17 +120,25 @@ rr:predicateObjectMap [
 <#HasObservablePropertyMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/ObservableProperty/Concentrazione";
+  rr:template "https://whowproject.eu/data/ObservableProperty/Concentration";
   rr:termType rr:IRI;
   rr:class whow-water:ObservableProperty
-] .
+] ;
+rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "Concentration" ; rr:language "en" ]
+].
 <#MonitoringStationMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
   rr:template "https://whowproject.eu/data/MonitoringStation/{Codice Stazione}";
   rr:termType rr:IRI;
   rr:class whow-water:WaterMonitoringStation
-] .
+] ;
+rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "Monitoring station identifier for station {Codice Stazione}" ; rr:language "en" ]
+].
 
 <#WaterSamplingFeatureMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
@@ -130,28 +146,44 @@ rr:subjectMap [
   rr:template "https://whowproject.eu/data/WaterSamplingFeature/{Descrizione Profondità}-{Profondità}";
   rr:termType rr:IRI;
   rr:class whow-water:WaterSamplingFeature
-] .
+] ;
+rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "Water depth sampling description: {Descrizione Profondità} in the value/range value {Profondità}" ; rr:language "en" ]
+].
 <#GeometryMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
   rr:template "https://whowproject.eu/data/Geometry/geometry_{COORD X}-{COORD Y}";
   rr:termType rr:IRI;
   rr:class core:Geometry
-] .
+] ;
+rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "Latitude {COORD X} and Longitude {COORD Y}" ; rr:language "en" ]
+].
 <#ProvinceMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
   rr:template "https://whowproject.eu/data/Province/{PROVINCIA}";
   rr:termType rr:IRI;
   rr:class places:Province
-] .
+] ;
+rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "Province of the observation." ; rr:language "en" ]
+].
 <#MunicipalityMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
   rr:template "https://whowproject.eu/data/Municipality/{COMUNE}";
   rr:termType rr:IRI;
   rr:class places:Municipality
-] .
+] ;
+rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "Municipality of the observation." ; rr:language "en" ]
+].
 # #################################
 # ## WATER FEATURE MAPPING
 # #################################
@@ -163,6 +195,10 @@ rr:subjectMap [
   rr:class whow-water:LakeWaterBody
 ] ;
 rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "Lake waterbody {LAGO}" ; rr:language "en" ]
+];
+rr:predicateObjectMap [
   rr:predicate core:isPartOf;
   rr:objectMap [
   rr:parentTriplesMap <#WaterBasinMapping>]
@@ -173,7 +209,11 @@ rr:subjectMap [
   rr:template "https://whowproject.eu/data/WaterBasin/{BACINO IDROGRAFICO}";
   rr:termType rr:IRI;
   rr:class whow-water:WaterBasin
-] .
+] ;
+rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "Water basin {BACINO IDROGRAFICO}" ; rr:language "en" ]
+].
 
 # #################################
 # ## PROPERTY AGENT MAPPING
@@ -184,7 +224,11 @@ rr:subjectMap [
   rr:template "https://whowproject.eu/data/ChemicalAgent/{CAS}";
   rr:termType rr:IRI;
   rr:class whow-water:ChemicalAgent
-] .
+] ;
+rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "Chemical agent identifier for the agent {PARAMETRO}: {CAS}. Identification system: {ParameterIdentificationSystem}" ; rr:language "en" ]
+].
 
 
 #rr:predicateObjectMap [

@@ -1,114 +1,147 @@
+@prefix clv: <https://w3id.org/italia/onto/CLV/> .
 @prefix core: <https://dati.isprambiente.it/ontology/core/> .
+@prefix cov: <https://w3id.org/italia/onto/COV/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+@prefix idlab-fn: <http://example.com/idlab/function/> .
+@prefix indicator: <https://w3id.org/italia/onto/Indicator/> .
+@prefix iot: <https://w3id.org/italia/onto/IoT/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix mu: <https://w3id.org/italia/onto/MU/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix places: <https://w3id.org/stlab/places/> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix ti: <https://w3id.org/italia/onto/TI/> .
 @prefix whow-water: <https://whowproject.eu/ontologies/water-monitoring-ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://whowproject.eu/data//Observation/Oglio-ENDINE-IT03POOG3CE2LN1LO-Clorofilla%20%22a%22-2019-03-18T23%3A00%3A00Z>
-  a whow-water:WaterChemicalAgentObservation;
-  core:hasGeometry <https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0>;
-  core:hasMunicipality <https://whowproject.eu/data/Municipality/Endine%20Gaiano>;
-  core:hasObservationValue <https://whowproject.eu/data/ObservationValue/%3C0%2C5-mg%2FL>,
-    <https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g%2FL>, <https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g%2FL>;
-  places:HasProvince <https://whowproject.eu/data/Province/BG>;
-  whow-water:hasObservableProperty <https://whowproject.eu/data/ObservableProperty/Concentrazione>;
-  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/ChemicalAgent/479-61-8>,
-    <https://whowproject.eu/data/ChemicalAgent/WISE%203133-05-9>;
-  whow-water:relatedToWaterFeature <https://whowproject.eu/data/LakeWaterBody/ENDINE>;
-  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>,
-    <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>;
-  whow-water:takenFromStation <https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> .
+<https://whowproject.eu/data/ChemicalAgent/3133-05-9> a whow-water:ChemicalAgent;
+  rdfs:label "Chemical agent identifier for the agent DOC: 3133-05-9. Identification system: WISE"@en .
 
-<https://whowproject.eu/data//Observation/Oglio-ENDINE-IT03POOG3CE2LN1LO-Clorofilla%20%22a%22-2019-04-15T22%3A00%3A00Z>
-  a whow-water:WaterChemicalAgentObservation;
-  core:hasGeometry <https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0>;
-  core:hasMunicipality <https://whowproject.eu/data/Municipality/Endine%20Gaiano>;
-  core:hasObservationValue <https://whowproject.eu/data/ObservationValue/%3C0%2C5-mg%2FL>,
-    <https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g%2FL>, <https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g%2FL>;
-  places:HasProvince <https://whowproject.eu/data/Province/BG>;
-  whow-water:hasObservableProperty <https://whowproject.eu/data/ObservableProperty/Concentrazione>;
-  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/ChemicalAgent/479-61-8>,
-    <https://whowproject.eu/data/ChemicalAgent/WISE%203133-05-9>;
-  whow-water:relatedToWaterFeature <https://whowproject.eu/data/LakeWaterBody/ENDINE>;
-  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>,
-    <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>;
-  whow-water:takenFromStation <https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> .
+<https://whowproject.eu/data/ChemicalAgent/479-61-8> a whow-water:ChemicalAgent;
+  rdfs:label "Chemical agent identifier for the agent Clorofilla \"a\": 479-61-8. Identification system: "@en .
 
-<https://whowproject.eu/data//Observation/Oglio-ENDINE-IT03POOG3CE2LN1LO-DOC-2019-03-18T23%3A00%3A00Z>
-  a whow-water:WaterChemicalAgentObservation;
-  core:hasGeometry <https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0>;
-  core:hasMunicipality <https://whowproject.eu/data/Municipality/Endine%20Gaiano>;
-  core:hasObservationValue <https://whowproject.eu/data/ObservationValue/%3C0%2C5-mg%2FL>,
-    <https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g%2FL>, <https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g%2FL>;
-  places:HasProvince <https://whowproject.eu/data/Province/BG>;
-  whow-water:hasObservableProperty <https://whowproject.eu/data/ObservableProperty/Concentrazione>;
-  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/ChemicalAgent/479-61-8>,
-    <https://whowproject.eu/data/ChemicalAgent/WISE%203133-05-9>;
-  whow-water:relatedToWaterFeature <https://whowproject.eu/data/LakeWaterBody/ENDINE>;
-  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>,
-    <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>;
-  whow-water:takenFromStation <https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> .
-
-<https://whowproject.eu/data//Observation/Oglio-ENDINE-IT03POOG3CE2LN1LO-DOC-2019-04-15T22%3A00%3A00Z>
-  a whow-water:WaterChemicalAgentObservation;
-  core:hasGeometry <https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0>;
-  core:hasMunicipality <https://whowproject.eu/data/Municipality/Endine%20Gaiano>;
-  core:hasObservationValue <https://whowproject.eu/data/ObservationValue/%3C0%2C5-mg%2FL>,
-    <https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g%2FL>, <https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g%2FL>;
-  places:HasProvince <https://whowproject.eu/data/Province/BG>;
-  whow-water:hasObservableProperty <https://whowproject.eu/data/ObservableProperty/Concentrazione>;
-  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/ChemicalAgent/479-61-8>,
-    <https://whowproject.eu/data/ChemicalAgent/WISE%203133-05-9>;
-  whow-water:relatedToWaterFeature <https://whowproject.eu/data/LakeWaterBody/ENDINE>;
-  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>,
-    <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>;
-  whow-water:takenFromStation <https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> .
-
-<https://whowproject.eu/data/ChemicalAgent/479-61-8> a whow-water:ChemicalAgent .
-
-<https://whowproject.eu/data/ChemicalAgent/WISE%203133-05-9> a whow-water:ChemicalAgent .
-
-<https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0> a core:Geometry .
+<https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0> a core:Geometry;
+  rdfs:label "Latitude 573578.0 and Longitude 5070552.0"@en .
 
 <https://whowproject.eu/data/LakeWaterBody/ENDINE> a whow-water:LakeWaterBody;
+  rdfs:label "Lake waterbody ENDINE"@en;
   core:isPartOf <https://whowproject.eu/data/WaterBasin/Oglio> .
 
-<https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> a whow-water:WaterMonitoringStation .
+<https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> a whow-water:WaterMonitoringStation;
+  rdfs:label "Monitoring station identifier for station POOG3CE2LN1lo1"@en .
 
-<https://whowproject.eu/data/Municipality/Endine%20Gaiano> a places:Municipality .
+<https://whowproject.eu/data/Municipality/Endine%20Gaiano> a places:Municipality;
+  rdfs:label "Municipality of the observation."@en .
 
-<https://whowproject.eu/data/ObservableProperty/Concentrazione> a whow-water:ObservableProperty .
+<https://whowproject.eu/data/ObservableProperty/Concentration> a whow-water:ObservableProperty;
+  rdfs:label "Concentration"@en .
 
-<https://whowproject.eu/data/ObservationValue/%3C0%2C5-mg%2FL> a core:ObservationValue;
-  core:hasUnitOfMeasure <https://whowproject.eu/data/UM/%C2%B5g%2FL>, <https://whowproject.eu/data/UM/mg%2FL>;
-  core:hasValue <https://whowproject.eu/data/Value/%3C0%2C5>, <https://whowproject.eu/data/Value/2.3>,
+<https://whowproject.eu/data/ObservationValue/%3C0.5-mg-L> a core:ObservationValue;
+  core:hasUnitOfMeasure <https://whowproject.eu/data/UM/%C2%B5g-L>, <https://whowproject.eu/data/UM/mg-L>;
+  core:hasValue <https://whowproject.eu/data/Value/%3C0.5>, <https://whowproject.eu/data/Value/2.3>,
     <https://whowproject.eu/data/Value/3.9> .
 
-<https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g%2FL> a core:ObservationValue;
-  core:hasUnitOfMeasure <https://whowproject.eu/data/UM/%C2%B5g%2FL>, <https://whowproject.eu/data/UM/mg%2FL>;
-  core:hasValue <https://whowproject.eu/data/Value/%3C0%2C5>, <https://whowproject.eu/data/Value/2.3>,
+<https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g-L> a core:ObservationValue;
+  core:hasUnitOfMeasure <https://whowproject.eu/data/UM/%C2%B5g-L>, <https://whowproject.eu/data/UM/mg-L>;
+  core:hasValue <https://whowproject.eu/data/Value/%3C0.5>, <https://whowproject.eu/data/Value/2.3>,
     <https://whowproject.eu/data/Value/3.9> .
 
-<https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g%2FL> a core:ObservationValue;
-  core:hasUnitOfMeasure <https://whowproject.eu/data/UM/%C2%B5g%2FL>, <https://whowproject.eu/data/UM/mg%2FL>;
-  core:hasValue <https://whowproject.eu/data/Value/%3C0%2C5>, <https://whowproject.eu/data/Value/2.3>,
+<https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g-L> a core:ObservationValue;
+  core:hasUnitOfMeasure <https://whowproject.eu/data/UM/%C2%B5g-L>, <https://whowproject.eu/data/UM/mg-L>;
+  core:hasValue <https://whowproject.eu/data/Value/%3C0.5>, <https://whowproject.eu/data/Value/2.3>,
     <https://whowproject.eu/data/Value/3.9> .
 
-<https://whowproject.eu/data/Province/BG> a places:Province .
+<https://whowproject.eu/data/Province/BG> a places:Province;
+  rdfs:label "Province of the observation."@en .
 
-<https://whowproject.eu/data/UM/%C2%B5g%2FL> a core:UnitOfMeasure .
+<https://whowproject.eu/data/UM/%C2%B5g-L> a core:UnitOfMeasure .
 
-<https://whowproject.eu/data/UM/mg%2FL> a core:UnitOfMeasure .
+<https://whowproject.eu/data/UM/mg-L> a core:UnitOfMeasure .
 
-<https://whowproject.eu/data/Value/%3C0%2C5> a core:Value .
+<https://whowproject.eu/data/Value/%3C0.5> a core:Value .
 
 <https://whowproject.eu/data/Value/2.3> a core:Value .
 
 <https://whowproject.eu/data/Value/3.9> a core:Value .
 
-<https://whowproject.eu/data/WaterBasin/Oglio> a whow-water:WaterBasin .
+<https://whowproject.eu/data/WaterBasin/Oglio> a whow-water:WaterBasin;
+  rdfs:label "Water basin Oglio"@en .
 
-<https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C3>
-  a whow-water:WaterSamplingFeature .
+<https://whowproject.eu/data/WaterObservation/Oglio-ENDINE-IT03POOG3CE2LN1LO-Clorofilla%20%22a%22-2019-03-18T23%3A00%3A00Z>
+  a whow-water:WaterChemicalAgentObservation;
+  rdfs:label "Observation for the parameter Clorofilla \"a\" of water basin Oglio for lake ENDINE. CWaterbody code: IT03POOG3CE2LN1LO at date 2019-03-18T23:00:00Z"@en;
+  core:hasGeometry <https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0>;
+  core:hasMunicipality <https://whowproject.eu/data/Municipality/Endine%20Gaiano>;
+  core:hasObservationValue <https://whowproject.eu/data/ObservationValue/%3C0.5-mg-L>,
+    <https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g-L>, <https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g-L>;
+  places:HasProvince <https://whowproject.eu/data/Province/BG>;
+  whow-water:hasObservableProperty <https://whowproject.eu/data/ObservableProperty/Concentration>;
+  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/ChemicalAgent/3133-05-9>,
+    <https://whowproject.eu/data/ChemicalAgent/479-61-8>;
+  whow-water:relatedToWaterFeature <https://whowproject.eu/data/LakeWaterBody/ENDINE>;
+  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207.3>,
+    <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207.5>;
+  whow-water:takenFromStation <https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> .
 
-<https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207%2C5>
-  a whow-water:WaterSamplingFeature .
+<https://whowproject.eu/data/WaterObservation/Oglio-ENDINE-IT03POOG3CE2LN1LO-Clorofilla%20%22a%22-2019-04-15T22%3A00%3A00Z>
+  a whow-water:WaterChemicalAgentObservation;
+  rdfs:label "Observation for the parameter Clorofilla \"a\" of water basin Oglio for lake ENDINE. CWaterbody code: IT03POOG3CE2LN1LO at date 2019-04-15T22:00:00Z"@en;
+  core:hasGeometry <https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0>;
+  core:hasMunicipality <https://whowproject.eu/data/Municipality/Endine%20Gaiano>;
+  core:hasObservationValue <https://whowproject.eu/data/ObservationValue/%3C0.5-mg-L>,
+    <https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g-L>, <https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g-L>;
+  places:HasProvince <https://whowproject.eu/data/Province/BG>;
+  whow-water:hasObservableProperty <https://whowproject.eu/data/ObservableProperty/Concentration>;
+  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/ChemicalAgent/3133-05-9>,
+    <https://whowproject.eu/data/ChemicalAgent/479-61-8>;
+  whow-water:relatedToWaterFeature <https://whowproject.eu/data/LakeWaterBody/ENDINE>;
+  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207.3>,
+    <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207.5>;
+  whow-water:takenFromStation <https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> .
+
+<https://whowproject.eu/data/WaterObservation/Oglio-ENDINE-IT03POOG3CE2LN1LO-DOC-2019-03-18T23%3A00%3A00Z>
+  a whow-water:WaterChemicalAgentObservation;
+  rdfs:label "Observation for the parameter DOC of water basin Oglio for lake ENDINE. CWaterbody code: IT03POOG3CE2LN1LO at date 2019-03-18T23:00:00Z"@en;
+  core:hasGeometry <https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0>;
+  core:hasMunicipality <https://whowproject.eu/data/Municipality/Endine%20Gaiano>;
+  core:hasObservationValue <https://whowproject.eu/data/ObservationValue/%3C0.5-mg-L>,
+    <https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g-L>, <https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g-L>;
+  places:HasProvince <https://whowproject.eu/data/Province/BG>;
+  whow-water:hasObservableProperty <https://whowproject.eu/data/ObservableProperty/Concentration>;
+  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/ChemicalAgent/3133-05-9>,
+    <https://whowproject.eu/data/ChemicalAgent/479-61-8>;
+  whow-water:relatedToWaterFeature <https://whowproject.eu/data/LakeWaterBody/ENDINE>;
+  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207.3>,
+    <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207.5>;
+  whow-water:takenFromStation <https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> .
+
+<https://whowproject.eu/data/WaterObservation/Oglio-ENDINE-IT03POOG3CE2LN1LO-DOC-2019-04-15T22%3A00%3A00Z>
+  a whow-water:WaterChemicalAgentObservation;
+  rdfs:label "Observation for the parameter DOC of water basin Oglio for lake ENDINE. CWaterbody code: IT03POOG3CE2LN1LO at date 2019-04-15T22:00:00Z"@en;
+  core:hasGeometry <https://whowproject.eu/data/Geometry/geometry_573578.0-5070552.0>;
+  core:hasMunicipality <https://whowproject.eu/data/Municipality/Endine%20Gaiano>;
+  core:hasObservationValue <https://whowproject.eu/data/ObservationValue/%3C0.5-mg-L>,
+    <https://whowproject.eu/data/ObservationValue/2.3-%C2%B5g-L>, <https://whowproject.eu/data/ObservationValue/3.9-%C2%B5g-L>;
+  places:HasProvince <https://whowproject.eu/data/Province/BG>;
+  whow-water:hasObservableProperty <https://whowproject.eu/data/ObservableProperty/Concentration>;
+  whow-water:relatedToPropertyAgent <https://whowproject.eu/data/ChemicalAgent/3133-05-9>,
+    <https://whowproject.eu/data/ChemicalAgent/479-61-8>;
+  whow-water:relatedToWaterFeature <https://whowproject.eu/data/LakeWaterBody/ENDINE>;
+  whow-water:relatedWaterSamplingFeature <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207.3>,
+    <https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207.5>;
+  whow-water:takenFromStation <https://whowproject.eu/data/MonitoringStation/POOG3CE2LN1lo1> .
+
+<https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207.3>
+  a whow-water:WaterSamplingFeature;
+  rdfs:label "Water depth sampling description: Lago di Endine_strato integrato in the value/range value 0 - 7.3"@en .
+
+<https://whowproject.eu/data/WaterSamplingFeature/Lago%20di%20Endine_strato%20integrato-0%20-%207.5>
+  a whow-water:WaterSamplingFeature;
+  rdfs:label "Water depth sampling description: Lago di Endine_strato integrato in the value/range value 0 - 7.5"@en .
