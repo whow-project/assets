@@ -20,6 +20,7 @@
 @prefix places: <https://w3id.org/stlab/places/> .
 @prefix core: <https://dati.isprambiente.it/ontology/core/> .
 @prefix whow-water: <https://whowproject.eu/ontologies/water-monitoring-ontology/>.
+@prefix ti: <https://w3id.org/italia/onto/TI/>.
 @base <https://whowproject.eu/data/> .
 
 ##########################################################
@@ -61,8 +62,8 @@ rr:predicateObjectMap [
   rr:objectMap [ rr:template "Observation for the parameter {PARAMETRO} of water basin {Bacino IDROGRAFICO} for lake {LAGO}. Waterbody code: {CORPO IDRICO} at date {DATA CAMPIONAMENTO}" ; rr:language "en" ]
 ];
 rr:predicateObjectMap [
-  rr:predicate core:time;
-  rr:objectMap [rr:template "date-{DATA CAMPIONAMENTO}"]
+  rr:predicate ti:issued;
+  rr:objectMap [rml:reference "DATA CAMPIONAMENTO"]
 ];
 rr:predicateObjectMap [
   rr:predicate whow-water:relatedToWaterFeature;
