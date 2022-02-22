@@ -74,12 +74,12 @@ rr:predicateObjectMap [
 rr:predicateObjectMap [
   rr:predicate whow-water:hasObservableProperty;
   rr:objectMap [
-  rr:parentTriplesMap <#HasObservablePropertyMapping>]
+  rr:template "https://whowproject.eu/data/observable-property/concentration"; rr:termType rr:IRI;]
 ] ;
 rr:predicateObjectMap [
   rr:predicate whow-water:takenFromStation;
   rr:objectMap [
-  rr:parentTriplesMap <#MonitoringStationMapping>]
+  rr:template "https://whowproject.eu/data/monitoring-station/{Codice Stazione}";]
 ];
 rr:predicateObjectMap [
   rr:predicate inspire-mf:hasObservationValue;
@@ -96,19 +96,19 @@ rr:predicateObjectMap [
 rr:predicateObjectMap [
   rr:predicate whow-water:hasWaterSamplingFeature;
   rr:objectMap [
-  rr:parentTriplesMap <#WaterSamplingFeatureMapping>]
+  rr:template "https://whowproject.eu/data/water-sampling-feature/{Descrizione Profondità}-{Profondità}";]
 ];
 
 rr:predicateObjectMap [
   rr:predicate places:hasProvince;
   rr:objectMap [
-  rr:parentTriplesMap <#ProvinceMapping>]
+  rr:template "https://whowproject.eu/data/province/{PROVINCIA}";]
 ];
 
 rr:predicateObjectMap [
   rr:predicate core:hasGeometry;
   rr:objectMap [
-  rr:parentTriplesMap <#GeometryMapping>]
+  rr:template "https://whowproject.eu/data/geometry/geometry_{COORD X}-{COORD Y}";]
 ];
 
 rr:predicateObjectMap [
@@ -189,7 +189,7 @@ rr:predicateObjectMap [
 # #################################
 # ## WATER FEATURE MAPPING
 # #################################
-<#ObservationValueHasValueMappingWaterFeatureMapping> a rr:TriplesMap ;
+<#WaterFeatureMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
   rr:template "https://whowproject.eu/data/lake-waterbody/{LAGO}";
@@ -203,7 +203,7 @@ rr:predicateObjectMap [
 rr:predicateObjectMap [
   rr:predicate core:isPartOf;
   rr:objectMap [
-  rr:parentTriplesMap <#WaterBasinMapping>]
+  rr:template "https://whowproject.eu/data/water-basin/{BACINO IDROGRAFICO}";]
 ].
 <#WaterBasinMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
@@ -263,13 +263,13 @@ rr:subjectMap [
 rr:predicateObjectMap [
   rr:predicate core:hasValue;
   rr:objectMap [
-  rr:parentTriplesMap <#ObservationValueHasValueMapping>]
+  rr:template "https://whowproject.eu/data/value/{VALORE}";]
 ];
 
 rr:predicateObjectMap [
   rr:predicate core:hasUnitOfMeasure;
   rr:objectMap [
-  rr:parentTriplesMap <#UnitOfMeasureMapping>]
+  rr:template "https://whowproject.eu/data/um/{UM}";]
 ].
 
 <#ObservationValueHasValueMapping> a rr:TriplesMap ;
