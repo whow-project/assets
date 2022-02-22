@@ -84,7 +84,7 @@
 :ObservablePropertyAgent
       rdf:type owl:Class ;
       rdfs:label "Observable Property Agent "@en ;
-      rdfs:subClassOf skos:Concept , <https://dati.isprambiente.it/ontology/core/Agent> , :WHOWConcept .
+      rdfs:subClassOf skos:Concept , :WHOWConcept .
 
 :ObservationSample
       rdf:type owl:Class ;
@@ -197,6 +197,12 @@
       rdfs:label "belongs to water basin "@en ;
       rdfs:range :WaterBasin .
 
+:hasObservationSample
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterObservation ;
+      rdfs:label "has observation sample"@en ;
+      rdfs:range :ObservationSample .
+
 :hasPropertyAgent
       rdf:type rdf:Property ;
       rdfs:domain
@@ -222,11 +228,6 @@
       rdfs:label "has water feature type "@en ;
       rdfs:range :WaterFeatureType ;
       skos:prefLabel "has water feature type "@en .
-
-:hasWaterSamplingFeature
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterObservation ;
-      rdfs:label "has sampling feature"@en .
 
 :hasWaterSamplingType
       rdf:type owl:ObjectProperty ;
