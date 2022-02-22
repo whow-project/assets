@@ -88,9 +88,9 @@ rr:predicateObjectMap [
   ];
 
 rr:predicateObjectMap [
-  rr:predicate whow-water:hasPropertyAgent;
+  rr:predicate whow-water:hasChemicalAgentType;
   #rr:objectMap [ rr:parentTriplesMap <#PropertyAgentMapping>];
-  rr:objectMap [ rr:template "https://whowproject.eu/data/chemical-agent/{CAS}"; rr:termType rr:IRI; ]
+  rr:objectMap [ rr:template "https://whowproject.eu/data/chemical-agent-{CAS}"; rr:termType rr:IRI; ]
 ];
 
 rr:predicateObjectMap [
@@ -106,13 +106,13 @@ rr:predicateObjectMap [
 ];
 
 rr:predicateObjectMap [
-  rr:predicate core:hasGeometry;
+  rr:predicate places:hasGeometry;
   rr:objectMap [
   rr:template "https://whowproject.eu/data/geometry/geometry_{COORD X}-{COORD Y}";]
 ];
 
 rr:predicateObjectMap [
-  rr:predicate core:hasMunicipality;
+  rr:predicate places:hasMunicipality;
   #rr:objectMap [rr:parentTriplesMap <#MunicipalityMapping>];
   rr:objectMap [ rr:template "https://whowproject.eu/data/municipality/{COMUNE}"; rr:termType rr:IRI; ]
 ]
@@ -220,16 +220,21 @@ rr:predicateObjectMap [
 # #################################
 # ## PROPERTY AGENT MAPPING
 # #################################
-<#PropertyAgentMapping> a rr:TriplesMap ;
+<#ChemicalAgentMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/chemical-agent/{CAS}";
+  rr:template "https://whowproject.eu/data/chemical-agent-type-{CAS}";
   rr:termType rr:IRI;
-  rr:class whow-water:ChemicalAgent
+  rr:class whow-water:ChemicalAgentType
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
   rr:objectMap [ rr:template "Chemical agent identifier for the agent {PARAMETRO}: {CAS}. Identification system: {ParameterIdentificationSystem}" ; rr:language "en" ]
+];
+
+rr:predicateObjectMap [
+  rr:predicate core:hasUniqueIdentifier;
+  rr:objectMap [ rr:template "https://whowproject.eu/data/chemical-agent-type/identifier/{CAS}" ; rr:language "en" ]
 ].
 
 

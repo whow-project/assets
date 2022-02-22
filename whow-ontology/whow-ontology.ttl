@@ -86,6 +86,12 @@
       rdfs:label "Observable Property Agent "@en ;
       rdfs:subClassOf skos:Concept , <https://dati.isprambiente.it/ontology/core/Agent> , :WHOWConcept .
 
+:ObservationSample
+      rdf:type owl:Class ;
+      rdfs:label "ObservationSample"@en ;
+      rdfs:subClassOf :SpatialSamplingFeature ;
+      skos:prefLabel "Observation Sample"@en .
+
 :RiverWaterBody
       rdf:type owl:Class ;
       rdfs:label "River Water Body "@en ;
@@ -175,12 +181,6 @@
       rdfs:label "Water Radioactivity Observation"@en ;
       rdfs:subClassOf :WaterObservation .
 
-:WaterSamplingFeature
-      rdf:type owl:Class ;
-      rdfs:label "Water Sampling Feature "@en ;
-      rdfs:subClassOf :SpatialSamplingFeature ;
-      skos:prefLabel "Water Sampling Feature "@en .
-
 :WaterSamplingType
       rdf:type owl:Class ;
       rdfs:label "Water Sampling Type "@en ;
@@ -230,7 +230,7 @@
 
 :hasWaterSamplingType
       rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterSamplingFeature ;
+      rdfs:domain :ObservationSample ;
       rdfs:label "has water sampling type "@en ;
       rdfs:range :WaterSamplingType ;
       skos:prefLabel "has water sampling type "@en .

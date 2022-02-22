@@ -3468,13 +3468,13 @@
   whow-water:hasWaterFeature <https://whowproject.eu/data/lake-waterbody/ENDINE>;
   whow-water:takenFromStation <https://whowproject.eu/data/monitoring-station/POOG3CE2LN1lo1> .
 
-<https://whowproject.eu/data/water-observation/Oglio-ENDINE-IT03POOG3CE2LN1LO-Clorofilla%20%22a%22-2019-03-18>
+<https://whowproject.eu/data/water-observation/Oglio-ENDINE-IT03POOG3CE2LN1LO-Clorofilla%20%22a%22-2019-03-19>
   a whow-water:WaterChemicalAgentObservation;
-  rdfs:label "Observation for the parameter Clorofilla \"a\" of water basin Oglio for lake ENDINE. Waterbody code: IT03POOG3CE2LN1LO at date 2019-03-18"@en;
+  rdfs:label "Observation for the parameter Clorofilla \"a\" of water basin Oglio for lake ENDINE. Waterbody code: IT03POOG3CE2LN1LO at date 2019-03-19"@en;
   core:hasGeometry <https://whowproject.eu/data/geometry/geometry_573578-5070552>;
   core:hasMunicipality <https://whowproject.eu/data/municipality/Endine%20Gaiano>;
   inspire-mf:hasObservationValue <https://whowproject.eu/data/observation-value/3.9-%C2%B5g-L>;
-  ti:issued "2019-03-18";
+  ti:issued "2019-03-19";
   places:hasProvince <https://whowproject.eu/data/province/BG>;
   whow-water:hasObservableProperty <https://whowproject.eu/data/observable-property/concentration>;
   whow-water:hasObservationSample <https://whowproject.eu/data/observation-sample/Lago%20di%20Endine_strato%20integrato-0%20-%207.5>;
