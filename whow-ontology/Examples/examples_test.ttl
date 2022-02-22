@@ -196,7 +196,7 @@ core:UnitOfMeasure
       rdfs:label "CAS 94-74-6"^^xsd:string .
 
 <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5>
-      rdf:type whow-water:WaterSamplingFeature ;
+      rdf:type whow-water:ObservationSample ;
       rdfs:label "Lago di Endine strato integrato 0-7.5"^^xsd:string ;
       skos:note "<descrizione profondità>_<profondità>"^^xsd:string ;
       core:hasValue <https://whowproject.eu/ontologies/instances_test_1/value_0-7.5> ;
@@ -220,12 +220,12 @@ core:UnitOfMeasure
               :Bergamo ;
       places:hasProvince :BG ;
       places:hasRegion :Lombardia ;
+      whow-water:hasObservationSample
+              <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:hasPropertyAgent
               :DOC ;
       whow-water:hasWaterFeature
               :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
-      whow-water:hasWaterSamplingFeature
-              <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:takenFromStation
               :POOG3CE2LN1l01 .
 
@@ -242,12 +242,12 @@ core:UnitOfMeasure
       places:hasGeometry :Geometry_573578_507552 ;
       places:hasProvince :BG ;
       places:hasRegion :Lombardia ;
+      whow-water:hasObservationSample
+              <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:hasPropertyAgent
               :clorofilla_a ;
       whow-water:hasWaterFeature
               :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
-      whow-water:hasWaterSamplingFeature
-              <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:takenFromStation
               :POOG3CE2LN1l01 .
 
@@ -297,12 +297,12 @@ core:UnitOfMeasure
       places:hasMunicipality
               :BG ;
       places:hasRegion :Lombardia ;
+      whow-water:hasObservationSample
+              <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:hasPropertyAgent
               :DOC ;
       whow-water:hasWaterObservationParameter
               :concentration ;
-      whow-water:hasWaterSamplingFeature
-              <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:relatedLake
               :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
       whow-water:takenFromStation
@@ -323,12 +323,12 @@ core:UnitOfMeasure
       places:hasMunicipality
               :BG ;
       places:hasRegion :Lombardia ;
+      whow-water:hasObservationSample
+              <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:hasPropertyAgent
               :clorofilla_a ;
       whow-water:hasWaterObservationParameter
               :concentration ;
-      whow-water:hasWaterSamplingFeature
-              <https://whowproject.eu/ontologies/instances_test_1/lagoDiEndineStratoIntegrato_0-7.5> ;
       whow-water:relatedLake
               :Endine_ITPOOF3CE2LN1lo1_LakeWaterBody ;
       whow-water:takenFromStation
