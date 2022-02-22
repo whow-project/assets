@@ -94,9 +94,9 @@ rr:predicateObjectMap [
 ];
 
 rr:predicateObjectMap [
-  rr:predicate whow-water:hasWaterSamplingFeature;
+  rr:predicate whow-water:hasObservationSample;
   rr:objectMap [
-  rr:template "https://whowproject.eu/data/water-sampling-feature/{Descrizione Profondità}-{Profondità}";]
+  rr:template "https://whowproject.eu/data/observation-sample/{Descrizione Profondità}-{Profondità}";]
 ];
 
 rr:predicateObjectMap [
@@ -142,12 +142,12 @@ rr:predicateObjectMap [
   rr:objectMap [ rr:template "Monitoring station identifier for station {Codice Stazione}" ; rr:language "en" ]
 ].
 
-<#WaterSamplingFeatureMapping> a rr:TriplesMap ;
+<#ObservationSampleMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/water-sampling-feature/{Descrizione Profondità}-{Profondità}";
+  rr:template "https://whowproject.eu/data/observation-sample/{Descrizione Profondità}-{Profondità}";
   rr:termType rr:IRI;
-  rr:class whow-water:WaterSamplingFeature
+  rr:class whow-water:ObservationSample
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
