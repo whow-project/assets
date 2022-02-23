@@ -1,7 +1,6 @@
 # baseURI: https://whowproject.eu/ontologies/water-monitoring-ontology
 # imports: http://purl.org/dc/terms/
 # imports: http://www.w3.org/2004/02/skos/core
-# imports: http://www.w3.org/ns/ssn/
 # imports: http://xmlns.com/foaf/0.1/
 # imports: https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/
 # imports: https://dati.isprambiente.it/ontology/places/
@@ -19,15 +18,14 @@
 
 <http://www.w3.org/ns/sosa/observedProperty>
       rdfs:domain :WaterObservation ;
-      rdfs:range <http://www.w3.org/ns/sosa/ObservableProperty> ;
-      sdo:domainIncludes :WaterObservation .
+      rdfs:range <http://www.w3.org/ns/sosa/ObservableProperty> .
 
 <https://dati.isprambiente.it/ontology/core/UnitOfMeasure>
       skos:note "TODO: trovare UM esterne a cui puntare"^^xsd:string .
 
 <https://whowproject.eu/ontologies/water-monitoring-ontology>
       rdf:type owl:Ontology ;
-      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2004/02/skos/core> , <http://www.w3.org/ns/ssn/> , <http://xmlns.com/foaf/0.1/> , inspire-mf-ssn-sosa-aligns: , places: ;
+      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2004/02/skos/core> , <http://xmlns.com/foaf/0.1/> , inspire-mf-ssn-sosa-aligns: , places: ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
       skos:definition "Ontology for describing WHOW project concepts for the water monitoring domain"@en ;
       skos:prefLabel "Water Monitoring Ontology"@en .
@@ -35,7 +33,7 @@
 :ChemicalAgent
       rdf:type owl:Class ;
       rdfs:label "Chemical Agent"@en ;
-      rdfs:subClassOf :ObservablePropertyAgent .
+      rdfs:subClassOf :ObservablePropertyObject .
 
 :CoastalWaterBody
       rdf:type owl:Class ;
@@ -69,39 +67,26 @@
       rdfs:label "Metadata "@en ;
       rdfs:subClassOf :WHOWConcept .
 
-:NuclideAgent
-      rdf:type owl:Class ;
-      rdfs:label "Nuclide Agent"@en ;
-      rdfs:subClassOf :ObservablePropertyAgent ;
-      skos:note "specializzare la property da Observation a ObservationPropertyAgent o tenere sempre un generico \"relatedToPropertyAgent\"...(diversamente da come modellato adesso hasNuclide, o hasChemicalAgentType? + possiamo chiamarlo RadioactivityAgent?"^^xsd:string .
-
 :ObservableProperty
       rdf:type owl:Class ;
       rdfs:label "Observable Property"^^xsd:string ;
       rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Parameter> , :WHOWConcept ;
       owl:equivalentClass <http://www.w3.org/ns/sosa/ObservableProperty> .
 
-:ObservablePropertyAgent
+:ObservablePropertyObject
       rdf:type owl:Class ;
-      rdfs:label "Observable Property Agent "@en ;
+      rdfs:label "Observable Property Object"@en ;
       rdfs:subClassOf skos:Concept , :WHOWConcept .
 
-:ObservationSample
+:RadioactivtyObject
       rdf:type owl:Class ;
-      rdfs:label "ObservationSample"@en ;
-      rdfs:subClassOf :SpatialSamplingFeature ;
-      skos:prefLabel "Observation Sample"@en .
+      rdfs:label "Radioactivity Object"@en ;
+      rdfs:subClassOf :ObservablePropertyObject .
 
 :RiverWaterBody
       rdf:type owl:Class ;
       rdfs:label "River Water Body "@en ;
       rdfs:subClassOf :WaterBody .
-
-:SpatialSamplingFeature
-      rdf:type owl:Class ;
-      rdfs:label "Spatial Sampling Feature "@en ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> , :WHOWConcept ;
-      skos:note "TODO: partOf tra spatial sampling feature e water feature o creare una nostra proprietà?"^^xsd:string .
 
 :TerritorialWaters
       rdf:type owl:Class ;
@@ -146,9 +131,9 @@
       rdfs:label "Water Body "@en ;
       rdfs:subClassOf :WaterFeature .
 
-:WaterChemicalAgentObservation
+:WaterChemicalObservation
       rdf:type owl:Class ;
-      rdfs:label "Water Chemical Agent Observation"@en ;
+      rdfs:label "Water Chemical Observation"@en ;
       rdfs:subClassOf :WaterObservation .
 
 :WaterFeature
@@ -181,36 +166,44 @@
       rdfs:label "Water Radioactivity Observation"@en ;
       rdfs:subClassOf :WaterObservation .
 
-:WaterSamplingType
+:WaterSample
       rdf:type owl:Class ;
-      rdfs:label "Water Sampling Type "@en ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> , :WHOWConcept .
-
-:WaterSamplingValue
-      rdf:type owl:Class ;
-      rdfs:label "Water Sampling Value "@en ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Value> , :WHOWConcept .
+      rdfs:label "Water Sample"@en ;
+      rdfs:subClassOf :WHOWConcept ;
+      skos:prefLabel "Water Sample"@en .
 
 :belongsToWaterBasin
       rdf:type owl:ObjectProperty ;
-      rdfs:domain :SpatialSamplingFeature , :WaterBody ;
+      rdfs:domain :WaterBody ;
       rdfs:label "belongs to water basin "@en ;
       rdfs:range :WaterBasin .
+
+:depthDescription
+      rdf:type owl:DatatypeProperty ;
+      rdfs:comment "Es. \"Lago di Como_superficie\" o \"Lago di Como_fondo\" ecc..."@it ;
+      rdfs:domain :WaterSample ;
+      rdfs:label "depth description"@en ;
+      rdfs:range xsd:string .
+
+:hasObservablePropertyObject
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain inspire-mf:Observation ;
+      rdfs:label "has observable property object"@en ;
+      rdfs:range :ObservablePropertyObject .
 
 :hasObservationSample
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterObservation ;
       rdfs:label "has observation sample"@en ;
-      rdfs:range :ObservationSample .
+      rdfs:range :WaterSample .
 
-:hasPropertyAgent
-      rdf:type rdf:Property ;
-      rdfs:domain
-              [ rdf:type owl:Class ;
-                owl:unionOf (:WaterObservation :ObservableProperty)
-              ] ;
-      rdfs:label "has property agent"@en ;
-      rdfs:range :ObservablePropertyAgent .
+:hasObservedProperty
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain inspire-mf:Observation ;
+      rdfs:label "Observed property"^^xsd:string ;
+      rdfs:range :ObservableProperty ;
+      owl:equivalentProperty
+              <http://www.w3.org/ns/sosa/observedProperty> .
 
 :hasWaterFeature
       rdf:type owl:ObjectProperty ;
@@ -229,12 +222,11 @@
       rdfs:range :WaterFeatureType ;
       skos:prefLabel "has water feature type "@en .
 
-:hasWaterSamplingType
+:isSampleOf
       rdf:type owl:ObjectProperty ;
-      rdfs:domain :ObservationSample ;
-      rdfs:label "has water sampling type "@en ;
-      rdfs:range :WaterSamplingType ;
-      skos:prefLabel "has water sampling type "@en .
+      rdfs:domain :WaterSample ;
+      rdfs:label "is sample of"@en ;
+      rdfs:range :WaterFeature .
 
 :isSubWaterBasin
       rdf:type owl:ObjectProperty ;
@@ -249,13 +241,12 @@
       rdfs:label "metadata "@en ;
       skos:prefLabel "metadata "@en .
 
-:observedProperty
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain inspire-mf:Observation , :WaterObservation ;
-      rdfs:label "Observed property"^^xsd:string ;
-      rdfs:range :ObservableProperty ;
-      owl:equivalentProperty
-              <http://www.w3.org/ns/sosa/observedProperty> .
+:sampleDepth
+      rdf:type owl:DatatypeProperty ;
+      rdfs:comment "Es. \"5,7 m\" o \"0-7 m\" ecc..."@it ;
+      rdfs:domain :WaterSample ;
+      rdfs:label "sample depth"@en ;
+      rdfs:range xsd:string .
 
 :takenFromStation
       rdf:type owl:ObjectProperty ;
