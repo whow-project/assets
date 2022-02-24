@@ -54,9 +54,9 @@
 <#WaterObservationMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "water-observation/{BACINO IDROGRAFICO}-{LAGO}-{CORPO IDRICO}-{PARAMETRO}-{DATA CAMPIONAMENTO}";
+  rr:template "water-observation/{BACINO IDROGRAFICO}-{LAGO}-{Descrizione Profondità}-{CORPO IDRICO}-{PARAMETRO}-{DATA CAMPIONAMENTO}";
   rr:termType rr:IRI;
-  rr:class whow-water:WaterChemicalAgentObservation
+  rr:class whow-water:WaterChemicalObservation
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
@@ -72,7 +72,7 @@ rr:predicateObjectMap [
   rr:objectMap [ rr:template "https://whowproject.eu/data/lake-waterbody/{LAGO}"; rr:termType rr:IRI; ]
 ] ;
 rr:predicateObjectMap [
-  rr:predicate whow-water:hasObservableProperty;
+  rr:predicate whow-water:hasObservedProperty;
   rr:objectMap [
   rr:template "https://whowproject.eu/data/observable-property/concentration"; rr:termType rr:IRI;]
 ] ;
@@ -88,9 +88,9 @@ rr:predicateObjectMap [
   ];
 
 rr:predicateObjectMap [
-  rr:predicate whow-water:hasChemicalAgentType;
+  rr:predicate whow-water:hasObservablePropertyObject;
   #rr:objectMap [ rr:parentTriplesMap <#PropertyAgentMapping>];
-  rr:objectMap [ rr:template "https://whowproject.eu/data/chemical-agent-{CAS}"; rr:termType rr:IRI; ]
+  rr:objectMap [ rr:template "https://whowproject.eu/data/observable-property/chemical-agent-{CAS}"; rr:termType rr:IRI; ]
 ];
 
 rr:predicateObjectMap [
@@ -109,13 +109,9 @@ rr:predicateObjectMap [
   rr:predicate places:hasGeometry;
   rr:objectMap [
   rr:template "https://whowproject.eu/data/geometry/geometry_{COORD X}-{COORD Y}";]
-];
-
-rr:predicateObjectMap [
-  rr:predicate places:hasMunicipality;
-  #rr:objectMap [rr:parentTriplesMap <#MunicipalityMapping>];
-  rr:objectMap [ rr:template "https://whowproject.eu/data/municipality/{COMUNE}"; rr:termType rr:IRI; ]
 ]
+
+
  .
 
 
@@ -138,6 +134,11 @@ rr:subjectMap [
   rr:class whow-water:WaterMonitoringStation
 ] ;
 rr:predicateObjectMap [
+  rr:predicate places:hasMunicipality;
+  #rr:objectMap [rr:parentTriplesMap <#MunicipalityMapping>];
+  rr:objectMap [ rr:template "https://whowproject.eu/data/municipality/{COMUNE}"; rr:termType rr:IRI; ]
+];
+rr:predicateObjectMap [
   rr:predicate rdfs:label;
   rr:objectMap [ rr:template "Monitoring station identifier for station {Codice Stazione}" ; rr:language "en" ]
 ].
@@ -152,7 +153,18 @@ rr:subjectMap [
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
   rr:objectMap [ rr:template "Water depth sampling description: {Descrizione Profondità} in the value/range value {Profondità}" ; rr:language "en" ]
-].
+];
+rr:predicateObjectMap [
+     rr:predicate whow-water:depthDescription ;
+     rr:objectMap [ rr:template "https://whowproject.eu/data/observation-sample/{Descrizione Profondità}"; rr:datatype xsd:string ]
+   ];
+
+   rr:predicateObjectMap [
+        rr:predicate whow-water:sampleDepth ;
+        rr:objectMap [ rr:template "https://whowproject.eu/data/observation-sample/{Profondità}"; rr:datatype xsd:string ]
+      ];
+
+.
 <#GeometryMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
@@ -223,9 +235,9 @@ rr:predicateObjectMap [
 <#ChemicalAgentMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/chemical-agent-type-{CAS}";
+  rr:template "https://whowproject.eu/data/observable-property/chemical-agent-{CAS}";
   rr:termType rr:IRI;
-  rr:class whow-water:ChemicalAgentType
+  rr:class whow-water:ChemicalAgent
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
@@ -234,7 +246,7 @@ rr:predicateObjectMap [
 
 rr:predicateObjectMap [
   rr:predicate core:hasUniqueIdentifier;
-  rr:objectMap [ rr:template "https://whowproject.eu/data/chemical-agent-type/identifier/{CAS}" ; rr:language "en" ]
+  rr:objectMap [ rr:template "https://whowproject.eu/data/observable-property/chemical-agent-identifier/{CAS}" ; rr:language "en" ]
 ].
 
 
@@ -292,8 +304,3 @@ rr:subjectMap [
   rr:termType rr:IRI;
   rr:class core:UnitOfMeasure
 ] .
-
-
-# #################################
-# ## WATER SAMPLING MAPPING
-# #################################
