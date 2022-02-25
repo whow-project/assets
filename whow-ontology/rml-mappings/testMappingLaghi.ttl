@@ -19,10 +19,10 @@
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix places: <https://w3id.org/stlab/places/> .
 @prefix core: <https://dati.isprambiente.it/ontology/core/> .
-@prefix whow-water: <https://whowproject.eu/ontologies/water-monitoring-ontology/>.
+@prefix whow-water: <https://w3id.org/environmental-data/onto/water-observation/>.
 @prefix ti: <https://w3id.org/italia/onto/TI/>.
 @prefix inspire-mf: <https://dati.isprambiente.it/ontology/inspire-mf/>.
-@base <https://whowproject.eu/data/> .
+@base <https://w3id.org/environmental-data/onto/water-observation/> .
 
 ##########################################################
 ## LOGICAL SOURCES TO BE USED
@@ -67,8 +67,11 @@ rr:predicateObjectMap [
   rr:objectMap [rml:reference "DATA CAMPIONAMENTO"]
 ];
 rr:predicateObjectMap [
+  rr:predicate places:hasMunicipality;
+  rr:objectMap [ rr:template "https://whowproject.eu/data/municipality/{COMUNE}"; rr:termType rr:IRI; ]
+];
+rr:predicateObjectMap [
   rr:predicate whow-water:hasWaterFeature;
-  #rr:objectMap [rr:parentTriplesMap <#RelatedToWaterFeatureMapping>];
   rr:objectMap [ rr:template "https://whowproject.eu/data/lake-waterbody/{LAGO}"; rr:termType rr:IRI; ]
 ] ;
 rr:predicateObjectMap [
@@ -83,13 +86,11 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
   rr:predicate inspire-mf:hasObservationValue;
-  #rr:objectMap [  rr:parentTriplesMap <#ObservationValueMapping>];
   rr:objectMap [ rr:template "https://whowproject.eu/data/observation-value/{VALORE}-{UM}"; rr:termType rr:IRI; ]
   ];
 
 rr:predicateObjectMap [
   rr:predicate whow-water:hasObservablePropertyObject;
-  #rr:objectMap [ rr:parentTriplesMap <#PropertyAgentMapping>];
   rr:objectMap [ rr:template "https://whowproject.eu/data/observable-property/chemical-agent-{CAS}"; rr:termType rr:IRI; ]
 ];
 
@@ -109,10 +110,7 @@ rr:predicateObjectMap [
   rr:predicate places:hasGeometry;
   rr:objectMap [
   rr:template "https://whowproject.eu/data/geometry/geometry_{COORD X}-{COORD Y}";]
-]
-
-
- .
+].
 
 
 <#HasObservablePropertyMapping> a rr:TriplesMap ;
@@ -135,7 +133,6 @@ rr:subjectMap [
 ] ;
 rr:predicateObjectMap [
   rr:predicate places:hasMunicipality;
-  #rr:objectMap [rr:parentTriplesMap <#MunicipalityMapping>];
   rr:objectMap [ rr:template "https://whowproject.eu/data/municipality/{COMUNE}"; rr:termType rr:IRI; ]
 ];
 rr:predicateObjectMap [
@@ -156,26 +153,34 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
      rr:predicate whow-water:depthDescription ;
-     rr:objectMap [ rr:template "https://whowproject.eu/data/observation-sample/{Descrizione Profondità}"; rr:datatype xsd:string ]
+     rr:objectMap [ rr:template "{Descrizione Profondità}"; rr:datatype xsd:string ]
    ];
+rr:predicateObjectMap [
+  rr:predicate whow-water:sampleDepth ;
+  rr:objectMap [ rr:template "{Profondità}"; rr:datatype xsd:string ]
+  ].
 
-   rr:predicateObjectMap [
-        rr:predicate whow-water:sampleDepth ;
-        rr:objectMap [ rr:template "https://whowproject.eu/data/observation-sample/{Profondità}"; rr:datatype xsd:string ]
-      ];
 
-.
 <#GeometryMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
   rr:template "https://whowproject.eu/data/geometry/geometry_{COORD X}-{COORD Y}";
   rr:termType rr:IRI;
-  rr:class core:Geometry
+  rr:class places:Geometry
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
   rr:objectMap [ rr:template "Latitude {COORD X} and Longitude {COORD Y}" ; rr:language "en" ]
+];
+rr:predicateObjectMap [
+rr:predicate places:lat ;
+rr:objectMap [ rr:template "{COORD X}"; rr:datatype xsd:string ]
+];
+rr:predicateObjectMap [
+rr:predicate places:lon ;
+rr:objectMap [ rr:template "{COORD Y}"; rr:datatype xsd:string ]
 ].
+
 <#ProvinceMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
@@ -235,7 +240,7 @@ rr:predicateObjectMap [
 <#ChemicalAgentMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/observable-property/chemical-agent-{CAS}";
+  rr:template "https://whowproject.eu/data/observable-property-object/chemical-agent-{CAS}";
   rr:termType rr:IRI;
   rr:class whow-water:ChemicalAgent
 ] ;
@@ -246,23 +251,9 @@ rr:predicateObjectMap [
 
 rr:predicateObjectMap [
   rr:predicate core:hasUniqueIdentifier;
-  rr:objectMap [ rr:template "https://whowproject.eu/data/observable-property/chemical-agent-identifier/{CAS}" ; rr:language "en" ]
+  rr:objectMap [ rr:template "https://whowproject.eu/data/observable-property-object/chemical-agent-identifier/{CAS}" ; rr:language "en" ]
 ].
 
-
-#rr:predicateObjectMap [
-#  rr:predicate core:hasUniqueIdentifier;
-#  rr:objectMap [
-#  rr:parentTriplesMap <#UniqueIdentifierMapping>]
-#].
-
-#<#UniqueIdentifierMapping> a rr:TriplesMap ;
-#rml:logicalSource <#LogicalSourceLaghi> ;
-#rr:subjectMap [
-#  rr:template "https://whowproject.eu/data/examples/test/{CAS}";
-#  rr:termType rr:IRI;
-#  rr:class core:UniqueIdentifier
-#] .
 
 # #################################
 # ## OBSERVATION VALUE MAPPING
@@ -276,6 +267,11 @@ rr:subjectMap [
   rr:class inspire-mf:ObservationValue
 
 ] ;
+
+rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "Observation value {VALORE} {UM}" ; rr:language "en" ]
+];
 
 rr:predicateObjectMap [
   rr:predicate core:hasValue;
@@ -295,7 +291,17 @@ rr:subjectMap [
   rr:template "https://whowproject.eu/data/value/{VALORE}";
   rr:termType rr:IRI;
   rr:class core:Value
-] .
+] ;
+
+rr:predicateObjectMap [
+rr:predicate core:value ;
+rr:objectMap [ rr:template "{VALORE}"; rr:datatype xsd:float ]
+];
+
+rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "Value {VALORE}" ; rr:language "en" ]
+].
 
 <#UnitOfMeasureMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
@@ -303,4 +309,9 @@ rr:subjectMap [
   rr:template "https://whowproject.eu/data/um/{UM}";
   rr:termType rr:IRI;
   rr:class core:UnitOfMeasure
-] .
+] ;
+
+rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "Unit of measure: {UM}" ; rr:language "en" ]
+].
