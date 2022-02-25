@@ -68,72 +68,76 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
   rr:predicate places:hasMunicipality;
-  rr:objectMap [ rr:template "https://whowproject.eu/data/municipality/{COMUNE}"; rr:termType rr:IRI; ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/municipality/{COMUNE}"; rr:termType rr:IRI; ]
 ];
 rr:predicateObjectMap [
   rr:predicate whow-water:hasWaterFeature;
-  rr:objectMap [ rr:template "https://whowproject.eu/data/lake-waterbody/{LAGO}"; rr:termType rr:IRI; ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/lake-waterbody/{LAGO}"; rr:termType rr:IRI; ]
 ] ;
 rr:predicateObjectMap [
   rr:predicate whow-water:hasObservedProperty;
   rr:objectMap [
-  rr:template "https://whowproject.eu/data/observable-property/concentration"; rr:termType rr:IRI;]
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/observable-property/concentration"; rr:termType rr:IRI;]
 ] ;
 rr:predicateObjectMap [
   rr:predicate whow-water:takenFromStation;
   rr:objectMap [
-  rr:template "https://whowproject.eu/data/monitoring-station/{Codice Stazione}";]
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/monitoring-station/{Codice Stazione}";]
 ];
 rr:predicateObjectMap [
   rr:predicate inspire-mf:hasObservationValue;
-  rr:objectMap [ rr:template "https://whowproject.eu/data/observation-value/{VALORE}-{UM}"; rr:termType rr:IRI; ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/observation-value/{VALORE}-{UM}"; rr:termType rr:IRI; ]
   ];
 
 rr:predicateObjectMap [
   rr:predicate whow-water:hasObservablePropertyObject;
-  rr:objectMap [ rr:template "https://whowproject.eu/data/observable-property/chemical-agent-{CAS}"; rr:termType rr:IRI; ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/observable-property/chemical-agent-{CAS}"; rr:termType rr:IRI; ]
 ];
 
 rr:predicateObjectMap [
   rr:predicate whow-water:hasObservationSample;
   rr:objectMap [
-  rr:template "https://whowproject.eu/data/observation-sample/{Descrizione Profondità}-{Profondità}";]
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/observation-sample/{Descrizione Profondità}-{Profondità}";]
 ];
 
 rr:predicateObjectMap [
   rr:predicate places:hasProvince;
   rr:objectMap [
-  rr:template "https://whowproject.eu/data/province/{PROVINCIA}";]
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/province/{PROVINCIA}";]
 ];
 
 rr:predicateObjectMap [
   rr:predicate places:hasGeometry;
   rr:objectMap [
-  rr:template "https://whowproject.eu/data/geometry/geometry_{COORD X}-{COORD Y}";]
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/geometry/geometry_{COORD X}-{COORD Y}";]
 ].
 
 
 <#HasObservablePropertyMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/observable-property/concentration";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/observable-property/concentration";
   rr:termType rr:IRI;
   rr:class whow-water:ObservableProperty
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
+  rr:objectMap [ rr:constant "https://w3id.org/environmental-data/onto/water-observation/observable-property/concentration" ; rr:language "en" ]
+];
+rr:predicateObjectMap [
+  rr:predicate core:name;
   rr:objectMap [ rr:template "Concentration" ; rr:language "en" ]
 ].
 <#MonitoringStationMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/monitoring-station/{Codice Stazione}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/monitoring-station/{Codice Stazione}";
   rr:termType rr:IRI;
   rr:class whow-water:WaterMonitoringStation
 ] ;
 rr:predicateObjectMap [
   rr:predicate places:hasMunicipality;
-  rr:objectMap [ rr:template "https://whowproject.eu/data/municipality/{COMUNE}"; rr:termType rr:IRI; ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/municipality/{COMUNE}"; rr:termType rr:IRI; ]
 ];
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
@@ -143,7 +147,7 @@ rr:predicateObjectMap [
 <#ObservationSampleMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/observation-sample/{Descrizione Profondità}-{Profondità}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/observation-sample/{Descrizione Profondità}-{Profondità}";
   rr:termType rr:IRI;
   rr:class whow-water:ObservationSample
 ] ;
@@ -164,7 +168,7 @@ rr:predicateObjectMap [
 <#GeometryMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/geometry/geometry_{COORD X}-{COORD Y}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/geometry/geometry_{COORD X}-{COORD Y}";
   rr:termType rr:IRI;
   rr:class places:Geometry
 ] ;
@@ -184,7 +188,7 @@ rr:objectMap [ rr:template "{COORD Y}"; rr:datatype xsd:string ]
 <#ProvinceMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/province/{PROVINCIA}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/province/{PROVINCIA}";
   rr:termType rr:IRI;
   rr:class places:Province
 ] ;
@@ -195,7 +199,7 @@ rr:predicateObjectMap [
 <#MunicipalityMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/municipality/{COMUNE}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/municipality/{COMUNE}";
   rr:termType rr:IRI;
   rr:class places:Municipality
 ] ;
@@ -209,7 +213,7 @@ rr:predicateObjectMap [
 <#WaterFeatureMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/lake-waterbody/{LAGO}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/lake-waterbody/{LAGO}";
   rr:termType rr:IRI;
   rr:class whow-water:LakeWaterBody
 ] ;
@@ -220,12 +224,12 @@ rr:predicateObjectMap [
 rr:predicateObjectMap [
   rr:predicate core:isPartOf;
   rr:objectMap [
-  rr:template "https://whowproject.eu/data/water-basin/{BACINO IDROGRAFICO}";]
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/water-basin/{BACINO IDROGRAFICO}";]
 ].
 <#WaterBasinMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/water-basin/{BACINO IDROGRAFICO}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/water-basin/{BACINO IDROGRAFICO}";
   rr:termType rr:IRI;
   rr:class whow-water:WaterBasin
 ] ;
@@ -240,7 +244,7 @@ rr:predicateObjectMap [
 <#ChemicalAgentMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/observable-property-object/chemical-agent-{CAS}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/observable-property-object/chemical-agent-{CAS}";
   rr:termType rr:IRI;
   rr:class whow-water:ChemicalAgent
 ] ;
@@ -251,7 +255,7 @@ rr:predicateObjectMap [
 
 rr:predicateObjectMap [
   rr:predicate core:hasUniqueIdentifier;
-  rr:objectMap [ rr:template "https://whowproject.eu/data/observable-property-object/chemical-agent-identifier/{CAS}" ; rr:language "en" ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/observable-property-object/chemical-agent-identifier/{CAS}" ; rr:language "en" ]
 ].
 
 
@@ -262,7 +266,7 @@ rr:predicateObjectMap [
 <#ObservationValueMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/observation-value/{VALORE}-{UM}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/observation-value/{VALORE}-{UM}";
   rr:termType rr:IRI;
   rr:class inspire-mf:ObservationValue
 
@@ -276,19 +280,19 @@ rr:predicateObjectMap [
 rr:predicateObjectMap [
   rr:predicate core:hasValue;
   rr:objectMap [
-  rr:template "https://whowproject.eu/data/value/{VALORE}";]
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/value/{VALORE}";]
 ];
 
 rr:predicateObjectMap [
   rr:predicate core:hasUnitOfMeasure;
   rr:objectMap [
-  rr:template "https://whowproject.eu/data/um/{UM}";]
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/um/{UM}";]
 ].
 
 <#ObservationValueHasValueMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/value/{VALORE}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/value/{VALORE}";
   rr:termType rr:IRI;
   rr:class core:Value
 ] ;
@@ -306,7 +310,7 @@ rr:predicateObjectMap [
 <#UnitOfMeasureMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://whowproject.eu/data/um/{UM}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/um/{UM}";
   rr:termType rr:IRI;
   rr:class core:UnitOfMeasure
 ] ;
