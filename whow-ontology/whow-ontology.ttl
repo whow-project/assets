@@ -33,12 +33,19 @@ water-adm:WaterBody
       owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2004/02/skos/core> , <http://xmlns.com/foaf/0.1/> , inspire-mf-ssn-sosa-aligns: , places: , <https://whowproject.eu/ontologies/water-administration-ontology> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
       skos:definition "Ontology for describing WHOW project concepts for the water monitoring domain"@en ;
+      skos:note "TODO: valutare di rinominare in water-observation-ontology"^^xsd:string ;
       skos:prefLabel "Water Monitoring Ontology"@en .
 
 :ChemicalAgent
       rdf:type owl:Class ;
       rdfs:label "Chemical Agent"@en ;
       rdfs:subClassOf :ObservablePropertyObject .
+
+:IntervalOfValues
+      rdf:type owl:Class ;
+      rdfs:label "Interval of values"@en ;
+      rdfs:subClassOf :WHOWConcept ;
+      skos:note "TODO: da capire se servirà e come per eventuali Observsation con valori range anzichè puntuali."^^xsd:string .
 
 :LTLECOObservation
       rdf:type owl:Class ;
@@ -132,6 +139,16 @@ water-adm:WaterBody
       rdfs:label "depth description"@en ;
       rdfs:range xsd:string .
 
+:hasMaxValue
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :IntervalOfValues ;
+      rdfs:label "has max value"@en .
+
+:hasMinValue
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :IntervalOfValues ;
+      rdfs:label "has min value"@en .
+
 :hasObservablePropertyObject
       rdf:type owl:ObjectProperty ;
       rdfs:domain inspire-mf:Observation ;
@@ -154,10 +171,7 @@ water-adm:WaterBody
 
 :hasWaterFeature
       rdf:type owl:ObjectProperty ;
-      rdfs:domain
-              [ rdf:type owl:Class ;
-                owl:unionOf (:WaterObservation water-adm:WaterBasin)
-              ] ;
+      rdfs:domain :WaterObservation ;
       rdfs:label "has water feature"@en ;
       rdfs:range :WaterFeature ;
       rdfs:subPropertyOf inspire-mf:hasFeatureOfInterest .
@@ -168,6 +182,17 @@ water-adm:WaterBody
       rdfs:label "has water feature type "@en ;
       rdfs:range :WaterFeatureType ;
       skos:prefLabel "has water feature type "@en .
+
+:isMaxValueIncluded
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :IntervalOfValues ;
+      rdfs:range xsd:boolean .
+
+:isMinValueIncluded
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :IntervalOfValues ;
+      rdfs:label "is min value included"@en ;
+      rdfs:range xsd:boolean .
 
 :isSampleOf
       rdf:type owl:ObjectProperty ;
@@ -194,3 +219,13 @@ water-adm:WaterBody
       rdfs:label "taken from station "@en ;
       rdfs:range :WaterMonitoringStation ;
       skos:prefLabel "taken from station "@en .
+
+:valueSpecification
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain inspire-mf:ObservationValue ;
+      rdfs:label "value specification"@en ;
+      rdfs:range
+              [ rdf:type rdfs:Datatype ;
+                owl:oneOf ("greater then"^^xsd:string "lower then"^^xsd:string "equal to"^^xsd:string)
+              ] ;
+      skos:note "TODO: trovare un nome migliore per valueSpecification!!!"^^xsd:string .
