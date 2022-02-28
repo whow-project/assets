@@ -4,6 +4,7 @@
 # imports: http://xmlns.com/foaf/0.1/
 # imports: https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/
 # imports: https://dati.isprambiente.it/ontology/places/
+# imports: https://whowproject.eu/ontologies/water-administration-ontology
 
 @prefix :        <https://whowproject.eu/ontologies/water-monitoring-ontology/> .
 @prefix inspire-mf:  <https://dati.isprambiente.it/ontology/inspire-mf/> .
@@ -14,6 +15,7 @@
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sdo:     <http://schema.org/> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix water-adm:  <https://whowproject.eu/ontologies/water-administration-ontology/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.w3.org/ns/sosa/observedProperty>
@@ -23,9 +25,12 @@
 <https://dati.isprambiente.it/ontology/core/UnitOfMeasure>
       skos:note "TODO: trovare UM esterne a cui puntare"^^xsd:string .
 
+water-adm:WaterBody
+      rdfs:subClassOf :WaterFeature .
+
 <https://whowproject.eu/ontologies/water-monitoring-ontology>
       rdf:type owl:Ontology ;
-      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2004/02/skos/core> , <http://xmlns.com/foaf/0.1/> , inspire-mf-ssn-sosa-aligns: , places: ;
+      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2004/02/skos/core> , <http://xmlns.com/foaf/0.1/> , inspire-mf-ssn-sosa-aligns: , places: , <https://whowproject.eu/ontologies/water-administration-ontology> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
       skos:definition "Ontology for describing WHOW project concepts for the water monitoring domain"@en ;
       skos:prefLabel "Water Monitoring Ontology"@en .
@@ -35,32 +40,11 @@
       rdfs:label "Chemical Agent"@en ;
       rdfs:subClassOf :ObservablePropertyObject .
 
-:CoastalWaterBody
-      rdf:type owl:Class ;
-      rdfs:label "Coastal Water Body "@en ;
-      rdfs:subClassOf :WaterBody .
-
-:GroundwaterBody
-      rdf:type owl:Class ;
-      rdfs:label "Groundwater Body "@en ;
-      rdfs:subClassOf :WaterBody .
-
 :LTLECOObservation
       rdf:type owl:Class ;
       rdfs:label "LTLECO Observation "@en ;
       rdfs:subClassOf :WaterQualityParameterObservation ;
       skos:prefLabel "LTLECO Observation "@en .
-
-:LakeWaterBody
-      rdf:type owl:Class ;
-      rdfs:label "Lake Water Body "@en ;
-      rdfs:subClassOf :WaterBody ;
-      skos:note "TODO: disaccoppiare il concetto di CorpoIdrico da quello di Lago a livello geografico? Class \"Lake\""^^xsd:string .
-
-:MarineWaters
-      rdf:type owl:Class ;
-      rdfs:label "Marine Waters "@en ;
-      rdfs:subClassOf :WaterBody .
 
 :Metadata
       rdf:type owl:Class ;
@@ -83,38 +67,12 @@
       rdfs:label "Radioactivity Object"@en ;
       rdfs:subClassOf :ObservablePropertyObject .
 
-:RiverWaterBody
-      rdf:type owl:Class ;
-      rdfs:label "River Water Body "@en ;
-      rdfs:subClassOf :WaterBody .
-
-:TerritorialWaters
-      rdf:type owl:Class ;
-      rdfs:label "Territorial Waters "@en ;
-      rdfs:subClassOf :WaterBody .
-
-:TransitionalWaterBody
-      rdf:type owl:Class ;
-      rdfs:label "Transitional Water Body "@en ;
-      rdfs:subClassOf :WaterBody .
-
 :WHOWConcept
       rdf:type owl:Class ;
       rdfs:comment "An abstract class collecting all the WHOW concepts."@en ;
       rdfs:label "WHOW Concept "@en ;
       rdfs:subClassOf owl:Thing ;
       skos:prefLabel "WHOW Concept "@en .
-
-:WaterBasin
-      rdf:type owl:Class ;
-      rdfs:label "Water Basin "@en ;
-      rdfs:subClassOf :WaterFeature ;
-      rdfs:subClassOf
-              [ rdf:type owl:Restriction ;
-                owl:minCardinality "1"^^xsd:nonNegativeInteger ;
-                owl:onProperty :hasWaterFeature
-              ] ;
-      skos:note "TODO: Per considerare i sublacuali e i postlacuali si potrebbe introdurre una relazione ricorsiva tra waterbody e waterbody"^^xsd:string .
 
 :WaterBioindicatorObservation
       rdf:type owl:Class ;
@@ -125,11 +83,6 @@
       rdf:type owl:Class ;
       rdfs:label "Water Biotic Index Observation"@en ;
       rdfs:subClassOf :WaterObservation .
-
-:WaterBody
-      rdf:type owl:Class ;
-      rdfs:label "Water Body "@en ;
-      rdfs:subClassOf :WaterFeature .
 
 :WaterChemicalObservation
       rdf:type owl:Class ;
@@ -172,12 +125,6 @@
       rdfs:subClassOf :WHOWConcept ;
       skos:prefLabel "Water Sample"@en .
 
-:belongsToWaterBasin
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterBody ;
-      rdfs:label "belongs to water basin "@en ;
-      rdfs:range :WaterBasin .
-
 :depthDescription
       rdf:type owl:DatatypeProperty ;
       rdfs:comment "Es. \"Lago di Como_superficie\" o \"Lago di Como_fondo\" ecc..."@it ;
@@ -209,7 +156,7 @@
       rdf:type owl:ObjectProperty ;
       rdfs:domain
               [ rdf:type owl:Class ;
-                owl:unionOf (:WaterObservation :WaterBasin)
+                owl:unionOf (:WaterObservation water-adm:WaterBasin)
               ] ;
       rdfs:label "has water feature"@en ;
       rdfs:range :WaterFeature ;
@@ -227,13 +174,6 @@
       rdfs:domain :WaterSample ;
       rdfs:label "is sample of"@en ;
       rdfs:range :WaterFeature .
-
-:isSubWaterBasin
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterBasin ;
-      rdfs:label "is sub water basin "@en ;
-      rdfs:range :WaterBasin ;
-      skos:note "TODO: proprietà ricorsiva per indicare la parte pre- o sub- lacuale. Ha senso?"^^xsd:string .
 
 :metadata
       rdf:type owl:ObjectProperty ;
