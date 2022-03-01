@@ -22,10 +22,6 @@
 @prefix whow-water: <https://w3id.org/environmental-data/onto/water-observation/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/environmental-data/onto/water-observation/#CreateMunicipalityURI-Function>
-  a places:Municipality;
-  rdfs:label "municipality of the observation."@en .
-
 <https://w3id.org/environmental-data/onto/water-observation/geometry/geometry_573578-5070552>
   a places:Geometry;
   rdfs:label "Latitude 573578 and Longitude 5070552"@en;
@@ -57,6 +53,13 @@
   a whow-water:WaterMonitoringStation;
   rdfs:label "Monitoring station identifier for station POOG3CH2LN1lo1"@en;
   places:hasMunicipality <https://w3id.org/environmental-data/onto/water-observation/#CreateMunicipalityURI-Function> .
+
+<https://w3id.org/environmental-data/onto/water-observation/municipality/anfo> a places:Municipality;
+  rdfs:label "municipality of the observation."@en .
+
+<https://w3id.org/environmental-data/onto/water-observation/municipality/endine-gaiano>
+  a places:Municipality;
+  rdfs:label "municipality of the observation."@en .
 
 <https://w3id.org/environmental-data/onto/water-observation/observable-property-object/chemical-agent-10062>
   a whow-water:ChemicalAgent;

@@ -202,9 +202,37 @@ rr:predicateObjectMap [
 <#MunicipalityMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  #rr:template <#CreateMunicipalityURI-Function>;
-  rr:constant <#CreateMunicipalityURI-Function>;
-  rr:termType rr:IRI;
+    fnml:functionValue [
+     rr:predicateObjectMap [
+       rr:predicate fno:executes ;
+       rr:objectMap [ rr:constant grel:array_join ]
+     ];
+
+      rr:predicateObjectMap [
+        rr:predicate grel:p_array_a ;
+        rr:objectMap [ rr:constant "https://w3id.org/environmental-data/onto/water-observation/municipality"]
+      ] ;
+      rr:predicateObjectMap [
+            rr:predicate grel:p_array_a ;
+            rr:objectMap [
+                  fnml:functionValue [                                  # The object is the result of the function
+                      rml:logicalSource <#LogicalSourceLaghi> ;              # Use the same data source for input
+                      rr:predicateObjectMap [
+                          rr:predicate fno:executes ;                   # Execute the function…
+                          rr:objectMap [ rr:constant grel:toLowerCase ] # grel:toLowercase
+                      ] ;
+                      rr:predicateObjectMap [
+                          rr:predicate grel:valueParameter ;
+                          rr:objectMap [ rml:reference "COMUNE" ]         # Use as input the "name" reference
+                      ]
+                  ]
+           ]
+      ];
+      rr:predicateObjectMap [
+        rr:predicate grel:p_string_sep ;
+        rr:objectMap [ rr:constant "/" ]
+      ]
+    ];
   rr:class places:Municipality
 ] ;
 rr:predicateObjectMap [
@@ -362,3 +390,36 @@ rr:predicateObjectMap [
       ]
     ];
     rr:termType rr:IRI.
+
+<#CreateMunicipalityURISubject-Function>
+    fnml:functionValue [
+     rr:predicateObjectMap [
+       rr:predicate fno:executes ;
+       rr:objectMap [ rr:constant grel:array_join ]
+     ];
+
+      rr:predicateObjectMap [
+        rr:predicate grel:p_array_a ;
+        rr:objectMap [ rr:constant "https://w3id.org/environmental-data/onto/water-observation/municipality"]
+      ] ;
+      rr:predicateObjectMap [
+            rr:predicate grel:p_array_a ;
+            rr:objectMap [
+                  fnml:functionValue [                                  # The object is the result of the function
+                      rml:logicalSource <#LogicalSourceLaghi> ;              # Use the same data source for input
+                      rr:predicateObjectMap [
+                          rr:predicate fno:executes ;                   # Execute the function…
+                          rr:objectMap [ rr:constant grel:toLowerCase ] # grel:toLowercase
+                      ] ;
+                      rr:predicateObjectMap [
+                          rr:predicate grel:valueParameter ;
+                          rr:objectMap [ rml:reference "COMUNE" ]         # Use as input the "name" reference
+                      ]
+                  ]
+           ]
+      ];
+      rr:predicateObjectMap [
+        rr:predicate grel:p_string_sep ;
+        rr:objectMap [ rr:constant "/" ]
+      ]
+    ].
