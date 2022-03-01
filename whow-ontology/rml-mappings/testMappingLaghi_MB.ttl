@@ -68,7 +68,8 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
   rr:predicate places:hasMunicipality;
-  #rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/municipality/{COMUNE}"; rr:termType rr:IRI; ]
+  #rr:objectMap [ rr:template <#CreateMunicipalityURI-Function>; rr:termType rr:IRI; ]
+  #rr:termType rr:IRI
   rr:objectMap <#CreateMunicipalityURI-Function>
 ];
 rr:predicateObjectMap [
@@ -138,8 +139,8 @@ rr:subjectMap [
 ] ;
 rr:predicateObjectMap [
   rr:predicate places:hasMunicipality;
-  #rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/municipality/{COMUNE}"; rr:termType rr:IRI; ]
-  rr:objectMap <#CreateMunicipalityURI-Function>
+  rr:objectMap [ rr:constant <#CreateMunicipalityURI-Function>; rr:termType rr:IRI; ]
+  #rr:objectMap <#CreateMunicipalityURI-Function>
 ];
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
@@ -201,7 +202,8 @@ rr:predicateObjectMap [
 <#MunicipalityMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template <#CreateMunicipalityURI-Function>;
+  #rr:template <#CreateMunicipalityURI-Function>;
+  rr:constant <#CreateMunicipalityURI-Function>;
   rr:termType rr:IRI;
   rr:class places:Municipality
 ] ;
@@ -358,4 +360,5 @@ rr:predicateObjectMap [
         rr:predicate grel:p_string_sep ;
         rr:objectMap [ rr:constant "/" ]
       ]
-    ].
+    ];
+    rr:termType rr:IRI.
