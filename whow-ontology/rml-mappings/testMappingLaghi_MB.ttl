@@ -22,6 +22,7 @@
 @prefix whow-water: <https://w3id.org/environmental-data/onto/water-observation/>.
 @prefix ti: <https://w3id.org/italia/onto/TI/>.
 @prefix inspire-mf: <https://dati.isprambiente.it/ontology/inspire-mf/>.
+@prefix whow-adm: <https://w3id.org/environmental-data/onto/water-observation/water-administration-ontology>.
 @base <https://w3id.org/environmental-data/onto/water-observation/> .
 
 ##########################################################
@@ -74,7 +75,7 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
   rr:predicate whow-water:hasWaterFeature;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/lake-waterbody/{LAGO}"; rr:termType rr:IRI; ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/water-administration-ontology/lake-waterbody/{LAGO}"; rr:termType rr:IRI; ]
 ] ;
 rr:predicateObjectMap [
   rr:predicate whow-water:hasObservedProperty;
@@ -245,9 +246,9 @@ rr:predicateObjectMap [
 <#WaterFeatureMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/lake-waterbody/{LAGO}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/water-administration-ontology/lake-waterbody/{LAGO}";
   rr:termType rr:IRI;
-  rr:class whow-water:LakeWaterBody
+  rr:class whow-adm:LakeWaterBody
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
@@ -256,14 +257,14 @@ rr:predicateObjectMap [
 rr:predicateObjectMap [
   rr:predicate core:isPartOf;
   rr:objectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/water-basin/{BACINO IDROGRAFICO}";]
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/water-administration-ontology/water-basin/{BACINO IDROGRAFICO}";]
 ].
 <#WaterBasinMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/water-basin/{BACINO IDROGRAFICO}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/water-administration-ontology/water-basin/{BACINO IDROGRAFICO}";
   rr:termType rr:IRI;
-  rr:class whow-water:WaterBasin
+  rr:class whow-adm:WaterBasin
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
