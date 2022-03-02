@@ -28,8 +28,8 @@
 ## LOGICAL SOURCES TO BE USED
 ##########################################################
 
-# #LogicalSourceLaghi
-<#LogicalSourceLaghi> a rml:BaseSource ;
+# #LogicalSourceRadioactivity
+<#LogicalSourceRadioactivity> a rml:BaseSource ;
     rml:source [
       a csvw:Table;
       csvw:url "ARPA-LOMBARDIA-Rete-Monitoraggio-RadioattivitÃ-Dati-2019-xlsx.csv";
@@ -52,7 +52,7 @@
 # ## OBSERVATION  MAPPING:
 # #################################
 <#WaterObservationMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceLaghi> ;
+rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
   rr:template "water-observation/{DESCRIZIONE MATRICE (2° livello)}-from-{Data inizio}-to-{Data fine}-{Provincia}-{Nuclide}-{Attività specifica}";
   rr:termType rr:IRI;
@@ -69,11 +69,11 @@ rr:predicateObjectMap [
 #];
 rr:predicateObjectMap [
   rr:predicate places:hasMunicipality;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/municipality/{Comune di prelievo}"; rr:termType rr:IRI; ]
+    rr:objectMap <#CreateMunicipalityURI-Function>
 ];
 rr:predicateObjectMap [
   rr:predicate whow-water:hasWaterFeature;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/water-administration-ontology/water-feature/{DESCRIZIONE MATRICE (2° livello)}-{Comune di prelievo}-{Provincia}"; rr:termType rr:IRI; ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/water-feature/{DESCRIZIONE MATRICE (2° livello)}-{Comune di prelievo}-{Provincia}"; rr:termType rr:IRI; ]
 ] ;
 rr:predicateObjectMap [
   rr:predicate whow-water:hasObservedProperty;
@@ -100,7 +100,7 @@ rr:predicateObjectMap [
 
 
 <#HasObservablePropertyMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceLaghi> ;
+rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
   rr:template "https://w3id.org/environmental-data/onto/water-observation/observable-property/activity";
   rr:termType rr:IRI;
@@ -117,7 +117,7 @@ rr:predicateObjectMap [
 
 
 <#ProvinceMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceLaghi> ;
+rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
   rr:template "https://w3id.org/environmental-data/onto/water-observation/province/{Provincia}";
   rr:termType rr:IRI;
@@ -128,7 +128,7 @@ rr:predicateObjectMap [
   rr:objectMap [ rr:template "Province of the observation." ; rr:language "en" ]
 ].
 <#MunicipalityMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceLaghi> ;
+rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
   rr:template "https://w3id.org/environmental-data/onto/water-observation/municipality/{Comune di prelievo}";
   rr:termType rr:IRI;
@@ -142,27 +142,41 @@ rr:predicateObjectMap [
 # ## WATER FEATURE MAPPING
 # #################################
 <#WaterFeatureMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceLaghi> ;
+rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/water-administration-ontology/water-feature/{DESCRIZIONE MATRICE (2° livello)}";
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/water-feature/{DESCRIZIONE MATRICE (2° livello)}";
   rr:termType rr:IRI;
-  rr:class whow-adm:LakeWaterBody
+  rr:class whow-water:WaterFeature
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
-  rr:objectMap [ rr:template "DESCRIZIONE MATRICE (2° livello)" ; rr:language "en" ]
+  rr:objectMap [ rr:template "{DESCRIZIONE MATRICE (2° livello)}" ; rr:language "it" ]
 ];
 rr:predicateObjectMap [
-  rr:predicate whow-adm:hasWaterFeatureType;
-  rr:objectMap [ rr:template "DESCRIZIONE MATRICE (1° livello)" ; rr:language "en" ]
+  rr:predicate whow-water:hasWaterFeatureType;
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/water-feature-type/{DESCRIZIONE MATRICE (1°livello)}" ;  rr:termType rr:IRI]
 ].
 
+# #################################
+# ## WATER FEATURE TYPE MAPPING
+# #################################
+<#WaterFeatureTypeMapping> a rr:TriplesMap ;
+rml:logicalSource <#LogicalSourceRadioactivity> ;
+rr:subjectMap [
+  rr:template "https://w3id.org/environmental-data/onto/water-observation/water-feature-type/{DESCRIZIONE MATRICE (1°livello)}";
+  rr:termType rr:IRI;
+  rr:class whow-water:WaterFeatureType
+] ;
+rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [ rr:template "{DESCRIZIONE MATRICE (1°livello)}" ; rr:language "it" ]
+].
 
 # #################################
 # ## PROPERTY AGENT MAPPING
 # #################################
 <#ChemicalAgentMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceLaghi> ;
+rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
   rr:template "https://w3id.org/environmental-data/onto/water-observation/observable-property-object/radioactivity-object/nuclide-{Nuclide}";
   rr:termType rr:IRI;
@@ -184,7 +198,7 @@ rr:predicateObjectMap [
 # #################################
 
 <#ObservationValueMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceLaghi> ;
+rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
   rr:template "https://w3id.org/environmental-data/onto/water-observation/observation-value/{Attività specifica}-{Unità di misura}";
   rr:termType rr:IRI;
@@ -210,7 +224,7 @@ rr:predicateObjectMap [
 ].
 
 <#ObservationValueHasValueMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceLaghi> ;
+rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
   rr:template "https://w3id.org/environmental-data/onto/water-observation/value/{Attività specifica}";
   rr:termType rr:IRI;
@@ -228,7 +242,7 @@ rr:predicateObjectMap [
 ].
 
 <#UnitOfMeasureMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceLaghi> ;
+rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
   rr:template "https://w3id.org/environmental-data/onto/water-observation/um/{Unità di misura}";
   rr:termType rr:IRI;
@@ -244,9 +258,7 @@ rr:predicateObjectMap [
 #########################################
 #             FUNZIONI                  #
 #########################################
-
-<#CreateMunicipalityURI-Function>
-    fnml:functionValue [
+<#CreateMunicipalityURI-functionValue>
      rr:predicateObjectMap [
        rr:predicate fno:executes ;
        rr:objectMap [ rr:constant grel:array_join ]
@@ -260,14 +272,14 @@ rr:predicateObjectMap [
             rr:predicate grel:p_array_a ;
             rr:objectMap [
                   fnml:functionValue [                                  # The object is the result of the function
-                      rml:logicalSource <#LogicalSourceLaghi> ;              # Use the same data source for input
+                      rml:logicalSource <#LogicalSourceRadioactivity> ;              # Use the same data source for input
                       rr:predicateObjectMap [
                           rr:predicate fno:executes ;                   # Execute the function…
                           rr:objectMap [ rr:constant grel:toLowerCase ] # grel:toLowercase
                       ] ;
                       rr:predicateObjectMap [
                           rr:predicate grel:valueParameter ;
-                          rr:objectMap [ rml:reference "COMUNE" ]         # Use as input the "name" reference
+                          rr:objectMap [ rml:reference "Comune di prelievo" ]         # Use as input the "name" reference
                       ]
                   ]
            ]
@@ -275,39 +287,12 @@ rr:predicateObjectMap [
       rr:predicateObjectMap [
         rr:predicate grel:p_string_sep ;
         rr:objectMap [ rr:constant "/" ]
-      ]
-    ];
-    rr:termType rr:IRI.
+      ].
 
-<#CreateMunicipalityURISubject-Function>
-    fnml:functionValue [
-     rr:predicateObjectMap [
-       rr:predicate fno:executes ;
-       rr:objectMap [ rr:constant grel:array_join ]
-     ];
 
-      rr:predicateObjectMap [
-        rr:predicate grel:p_array_a ;
-        rr:objectMap [ rr:constant "https://w3id.org/environmental-data/onto/water-observation/municipality"]
-      ] ;
-      rr:predicateObjectMap [
-            rr:predicate grel:p_array_a ;
-            rr:objectMap [
-                  fnml:functionValue [                                  # The object is the result of the function
-                      rml:logicalSource <#LogicalSourceLaghi> ;              # Use the same data source for input
-                      rr:predicateObjectMap [
-                          rr:predicate fno:executes ;                   # Execute the function…
-                          rr:objectMap [ rr:constant grel:toLowerCase ] # grel:toLowercase
-                      ] ;
-                      rr:predicateObjectMap [
-                          rr:predicate grel:valueParameter ;
-                          rr:objectMap [ rml:reference "COMUNE" ]         # Use as input the "name" reference
-                      ]
-                  ]
-           ]
-      ];
-      rr:predicateObjectMap [
-        rr:predicate grel:p_string_sep ;
-        rr:objectMap [ rr:constant "/" ]
-      ]
-    ].
+<#CreateMunicipalityURI-Function> #referenzia URI comune come object
+    fnml:functionValue <#CreateMunicipalityURI-functionValue> ;
+    rr:termType rr:IRI . #qui specifica sotto no
+
+<#CreateMunicipalityURISubject-Function> #referenzia URI come soggetto
+    fnml:functionValue <#CreateMunicipalityURI-functionValue> .
