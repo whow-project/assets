@@ -1,0 +1,90 @@
+# baseURI: https://w3id.org/environmental-data/onto/hydrography
+# imports: http://purl.org/dc/terms/
+# imports: http://www.w3.org/2004/02/skos/core
+# imports: http://xmlns.com/foaf/0.1/
+
+@prefix :        <https://w3id.org/environmental-data/onto/hydrography> .
+@prefix inspire-mf:  <https://dati.isprambiente.it/ontology/inspire-mf/> .
+@prefix inspire-mf-ssn-sosa-aligns:  <https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix places:  <https://dati.isprambiente.it/ontology/places/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo:     <http://schema.org/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/environmental-data/onto/hydrography>
+      rdf:type owl:Ontology ;
+      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2004/02/skos/core> , <http://xmlns.com/foaf/0.1/> ;
+      owl:versionInfo "DRAFT"^^xsd:string ;
+      skos:definition "Ontology for describing concepts for water administration in terms of water basins and bodies concepts"@en ;
+      skos:prefLabel "Water Administraiton Ontology"@en .
+
+<https://whowproject.eu/ontologies/water-administration-ontology/CoastalWaterBody>
+      rdf:type owl:Class ;
+      rdfs:label "Coastal Water Body "@en ;
+      rdfs:subClassOf <https://whowproject.eu/ontologies/water-administration-ontology/WaterBody> .
+
+<https://whowproject.eu/ontologies/water-administration-ontology/GroundwaterBody>
+      rdf:type owl:Class ;
+      rdfs:label "Groundwater Body "@en ;
+      rdfs:subClassOf <https://whowproject.eu/ontologies/water-administration-ontology/WaterBody> .
+
+<https://whowproject.eu/ontologies/water-administration-ontology/LakeWaterBody>
+      rdf:type owl:Class ;
+      rdfs:label "Lake Water Body "@en ;
+      rdfs:subClassOf <https://whowproject.eu/ontologies/water-administration-ontology/WaterBody> ;
+      skos:note "TODO: disaccoppiare il concetto di CorpoIdrico da quello di Lago a livello geografico? Class \"Lake\""^^xsd:string .
+
+<https://whowproject.eu/ontologies/water-administration-ontology/MarineWaters>
+      rdf:type owl:Class ;
+      rdfs:label "Marine Waters "@en ;
+      rdfs:subClassOf <https://whowproject.eu/ontologies/water-administration-ontology/WaterBody> .
+
+<https://whowproject.eu/ontologies/water-administration-ontology/RiverWaterBody>
+      rdf:type owl:Class ;
+      rdfs:label "River Water Body "@en ;
+      rdfs:subClassOf <https://whowproject.eu/ontologies/water-administration-ontology/WaterBody> .
+
+<https://whowproject.eu/ontologies/water-administration-ontology/TerritorialWaters>
+      rdf:type owl:Class ;
+      rdfs:label "Territorial Waters "@en ;
+      rdfs:subClassOf <https://whowproject.eu/ontologies/water-administration-ontology/WaterBody> .
+
+<https://whowproject.eu/ontologies/water-administration-ontology/TransitionalWaterBody>
+      rdf:type owl:Class ;
+      rdfs:label "Transitional Water Body "@en ;
+      rdfs:subClassOf <https://whowproject.eu/ontologies/water-administration-ontology/WaterBody> .
+
+<https://whowproject.eu/ontologies/water-administration-ontology/WaterAdministrationConcept>
+      rdf:type owl:Class .
+
+<https://whowproject.eu/ontologies/water-administration-ontology/WaterBasin>
+      rdf:type owl:Class ;
+      rdfs:label "Water Basin "@en ;
+      rdfs:subClassOf <https://whowproject.eu/ontologies/water-administration-ontology/WaterAdministrationConcept> ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+                owl:onProperty <https://whowproject.eu/ontologies/water-administration-ontology/hasWaterFeature>
+              ] ;
+      skos:note "TODO: Per considerare i sublacuali e i postlacuali si potrebbe introdurre una relazione ricorsiva tra waterbody e waterbody"^^xsd:string .
+
+<https://whowproject.eu/ontologies/water-administration-ontology/WaterBody>
+      rdf:type owl:Class ;
+      rdfs:label "Water Body "@en ;
+      rdfs:subClassOf <https://whowproject.eu/ontologies/water-administration-ontology/WaterAdministrationConcept> .
+
+<https://whowproject.eu/ontologies/water-administration-ontology/belongsToWaterBasin>
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain <https://whowproject.eu/ontologies/water-administration-ontology/WaterBody> ;
+      rdfs:label "belongs to water basin "@en ;
+      rdfs:range <https://whowproject.eu/ontologies/water-administration-ontology/WaterBasin> .
+
+<https://whowproject.eu/ontologies/water-administration-ontology/isSubWaterBasin>
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain <https://whowproject.eu/ontologies/water-administration-ontology/WaterBasin> ;
+      rdfs:label "is sub water basin "@en ;
+      rdfs:range <https://whowproject.eu/ontologies/water-administration-ontology/WaterBasin> ;
+      skos:note "TODO: proprietà ricorsiva per indicare la parte pre- o sub- lacuale. Ha senso?"^^xsd:string .

@@ -1,5 +1,6 @@
 # baseURI: https://whowproject.eu/ontologies/instances_test_1
 # imports: http://qudt.org/schema/qudt
+# imports: https://w3id.org/environmental-data/onto/hydrography
 # imports: https://whowproject.eu/ontologies/water-monitoring-ontology
 
 @prefix :        <https://whowproject.eu/ontologies/instances_test_1/> .
@@ -20,7 +21,7 @@ core:UnitOfMeasure
 
 <https://whowproject.eu/ontologies/instances_test_1>
       rdf:type owl:Ontology ;
-      owl:imports <http://qudt.org/schema/qudt> , <https://whowproject.eu/ontologies/water-monitoring-ontology> ;
+      owl:imports <http://qudt.org/schema/qudt> , <https://w3id.org/environmental-data/onto/hydrography> , <https://whowproject.eu/ontologies/water-monitoring-ontology> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
 <https://whowproject.eu/ontologies/instances_test_1/#MCPA_Acido_2.4_meticlorofenossi_acetico>
