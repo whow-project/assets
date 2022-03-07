@@ -4,9 +4,10 @@
 # imports: http://xmlns.com/foaf/0.1/
 # imports: https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/
 # imports: https://dati.isprambiente.it/ontology/places/
-# imports: https://w3id.org/environmental-data/onto/hydrography
+# imports: https://w3id.org/environmental-data/onto/hydrography-ontology
 
-@prefix :        <https://w3id.org/environmental-data/onto/water-monitoring-ontology> .
+@prefix :        <https://w3id.org/environmental-data/onto/water-monitoring-ontology/> .
+@prefix hydro:   <https://w3id.org/environmental-data/onto/hydrography-ontology/> .
 @prefix inspire-mf:  <https://dati.isprambiente.it/ontology/inspire-mf/> .
 @prefix inspire-mf-ssn-sosa-aligns:  <https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
@@ -15,212 +16,211 @@
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sdo:     <http://schema.org/> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
-@prefix water-adm:  <https://whowproject.eu/ontologies/water-administration-ontology/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.w3.org/ns/sosa/observedProperty>
-      rdfs:domain <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterObservation> ;
+      rdfs:domain :WaterObservation ;
       rdfs:range <http://www.w3.org/ns/sosa/ObservableProperty> .
 
 <https://dati.isprambiente.it/ontology/core/UnitOfMeasure>
       skos:note "TODO: trovare UM esterne a cui puntare"^^xsd:string .
 
+hydro:WaterBody
+      rdfs:subClassOf :WaterFeature .
+
 <https://w3id.org/environmental-data/onto/water-monitoring-ontology>
       rdf:type owl:Ontology ;
-      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2004/02/skos/core> , <http://xmlns.com/foaf/0.1/> , inspire-mf-ssn-sosa-aligns: , places: , <https://w3id.org/environmental-data/onto/hydrography> ;
+      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2004/02/skos/core> , <http://xmlns.com/foaf/0.1/> , inspire-mf-ssn-sosa-aligns: , places: , <https://w3id.org/environmental-data/onto/hydrography-ontology> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
       skos:definition "Ontology for describing WHOW project concepts for the water monitoring domain"@en ;
       skos:note "TODO: valutare di rinominare in water-observation-ontology"^^xsd:string ;
       skos:prefLabel "Water Monitoring Ontology"@en .
 
-water-adm:WaterBody
-      rdfs:subClassOf <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterFeature> .
-
-<https://whowproject.eu/ontologies/water-monitoring-ontology/ChemicalAgent>
+:ChemicalAgent
       rdf:type owl:Class ;
       rdfs:label "Chemical Agent"@en ;
-      rdfs:subClassOf <https://whowproject.eu/ontologies/water-monitoring-ontology/ObservablePropertyObject> .
+      rdfs:subClassOf :ObservablePropertyObject .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/IntervalOfValues>
+:IntervalOfValues
       rdf:type owl:Class ;
       rdfs:label "Interval of values"@en ;
-      rdfs:subClassOf <https://whowproject.eu/ontologies/water-monitoring-ontology/WHOWConcept> ;
+      rdfs:subClassOf :WHOWConcept ;
       skos:note "TODO: da capire se servirà e come per eventuali Observsation con valori range anzichè puntuali."^^xsd:string .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/LTLECOObservation>
+:LTLECOObservation
       rdf:type owl:Class ;
       rdfs:label "LTLECO Observation "@en ;
-      rdfs:subClassOf <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterQualityParameterObservation> ;
+      rdfs:subClassOf :WaterQualityParameterObservation ;
       skos:prefLabel "LTLECO Observation "@en .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/Metadata>
+:Metadata
       rdf:type owl:Class ;
       rdfs:label "Metadata "@en ;
-      rdfs:subClassOf <https://whowproject.eu/ontologies/water-monitoring-ontology/WHOWConcept> .
+      rdfs:subClassOf :WHOWConcept .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/ObservableProperty>
+:ObservableProperty
       rdf:type owl:Class ;
       rdfs:label "Observable Property"^^xsd:string ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Parameter> , <https://whowproject.eu/ontologies/water-monitoring-ontology/WHOWConcept> ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Parameter> , :WHOWConcept ;
       owl:equivalentClass <http://www.w3.org/ns/sosa/ObservableProperty> .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/ObservablePropertyObject>
+:ObservablePropertyObject
       rdf:type owl:Class ;
       rdfs:label "Observable Property Object"@en ;
-      rdfs:subClassOf skos:Concept , <https://whowproject.eu/ontologies/water-monitoring-ontology/WHOWConcept> .
+      rdfs:subClassOf skos:Concept , :WHOWConcept .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/RadioactivtyObject>
+:RadioactivtyObject
       rdf:type owl:Class ;
       rdfs:label "Radioactivity Object"@en ;
-      rdfs:subClassOf <https://whowproject.eu/ontologies/water-monitoring-ontology/ObservablePropertyObject> .
+      rdfs:subClassOf :ObservablePropertyObject .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/WHOWConcept>
+:WHOWConcept
       rdf:type owl:Class ;
       rdfs:comment "An abstract class collecting all the WHOW concepts."@en ;
       rdfs:label "WHOW Concept "@en ;
       rdfs:subClassOf owl:Thing ;
       skos:prefLabel "WHOW Concept "@en .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/WaterBioindicatorObservation>
+:WaterBioindicatorObservation
       rdf:type owl:Class ;
       rdfs:label "Water Bioindicator Observation"@en ;
-      rdfs:subClassOf <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterObservation> .
+      rdfs:subClassOf :WaterObservation .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/WaterBioticIndexObservation>
+:WaterBioticIndexObservation
       rdf:type owl:Class ;
       rdfs:label "Water Biotic Index Observation"@en ;
-      rdfs:subClassOf <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterObservation> .
+      rdfs:subClassOf :WaterObservation .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/WaterChemicalObservation>
+:WaterChemicalObservation
       rdf:type owl:Class ;
       rdfs:label "Water Chemical Observation"@en ;
-      rdfs:subClassOf <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterObservation> .
+      rdfs:subClassOf :WaterObservation .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/WaterFeature>
+:WaterFeature
       rdf:type owl:Class ;
       rdfs:label "Water feature "@en ;
-      rdfs:subClassOf inspire-mf:FeatureOfInterest , <https://whowproject.eu/ontologies/water-monitoring-ontology/WHOWConcept> .
+      rdfs:subClassOf inspire-mf:FeatureOfInterest , :WHOWConcept .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/WaterFeatureType>
+:WaterFeatureType
       rdf:type owl:Class ;
       rdfs:label "Water feature type "@en ;
-      rdfs:subClassOf skos:Concept , <https://whowproject.eu/ontologies/water-monitoring-ontology/WHOWConcept> .
+      rdfs:subClassOf skos:Concept , :WHOWConcept .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/WaterMonitoringStation>
+:WaterMonitoringStation
       rdf:type owl:Class ;
       rdfs:label "Water Monitoring Station"@en ;
-      rdfs:subClassOf inspire-mf:Platform , <https://whowproject.eu/ontologies/water-monitoring-ontology/WHOWConcept> .
+      rdfs:subClassOf inspire-mf:Platform , :WHOWConcept .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/WaterObservation>
+:WaterObservation
       rdf:type owl:Class ;
       rdfs:label "Water Observation "@en ;
-      rdfs:subClassOf inspire-mf:Observation , <https://whowproject.eu/ontologies/water-monitoring-ontology/WHOWConcept> .
+      rdfs:subClassOf inspire-mf:Observation , :WHOWConcept .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/WaterQualityParameterObservation>
+:WaterQualityParameterObservation
       rdf:type owl:Class ;
       rdfs:label "Water Quality Parameter Observation "@en ;
-      rdfs:subClassOf <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterObservation> .
+      rdfs:subClassOf :WaterObservation .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/WaterRadioactivityObservation>
+:WaterRadioactivityObservation
       rdf:type owl:Class ;
       rdfs:label "Water Radioactivity Observation"@en ;
-      rdfs:subClassOf <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterObservation> .
+      rdfs:subClassOf :WaterObservation .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/WaterSample>
+:WaterSample
       rdf:type owl:Class ;
       rdfs:label "Water Sample"@en ;
-      rdfs:subClassOf <https://whowproject.eu/ontologies/water-monitoring-ontology/WHOWConcept> ;
+      rdfs:subClassOf :WHOWConcept ;
       skos:prefLabel "Water Sample"@en .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/depthDescription>
+:depthDescription
       rdf:type owl:DatatypeProperty ;
       rdfs:comment "Es. \"Lago di Como_superficie\" o \"Lago di Como_fondo\" ecc..."@it ;
-      rdfs:domain <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterSample> ;
+      rdfs:domain :WaterSample ;
       rdfs:label "depth description"@en ;
       rdfs:range xsd:string .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/hasMaxValue>
+:hasMaxValue
       rdf:type owl:DatatypeProperty ;
-      rdfs:domain <https://whowproject.eu/ontologies/water-monitoring-ontology/IntervalOfValues> ;
+      rdfs:domain :IntervalOfValues ;
       rdfs:label "has max value"@en .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/hasMinValue>
+:hasMinValue
       rdf:type owl:DatatypeProperty ;
-      rdfs:domain <https://whowproject.eu/ontologies/water-monitoring-ontology/IntervalOfValues> ;
+      rdfs:domain :IntervalOfValues ;
       rdfs:label "has min value"@en .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/hasObservablePropertyObject>
+:hasObservablePropertyObject
       rdf:type owl:ObjectProperty ;
       rdfs:domain inspire-mf:Observation ;
       rdfs:label "has observable property object"@en ;
-      rdfs:range <https://whowproject.eu/ontologies/water-monitoring-ontology/ObservablePropertyObject> .
+      rdfs:range :ObservablePropertyObject .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/hasObservationSample>
+:hasObservationSample
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterObservation> ;
+      rdfs:domain :WaterObservation ;
       rdfs:label "has observation sample"@en ;
-      rdfs:range <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterSample> .
+      rdfs:range :WaterSample .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/hasObservedProperty>
+:hasObservedProperty
       rdf:type owl:ObjectProperty ;
       rdfs:domain inspire-mf:Observation ;
       rdfs:label "Observed property"^^xsd:string ;
-      rdfs:range <https://whowproject.eu/ontologies/water-monitoring-ontology/ObservableProperty> ;
+      rdfs:range :ObservableProperty ;
       owl:equivalentProperty
               <http://www.w3.org/ns/sosa/observedProperty> .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/hasWaterFeature>
+:hasWaterFeature
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterObservation> ;
+      rdfs:domain :WaterObservation ;
       rdfs:label "has water feature"@en ;
-      rdfs:range <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterFeature> ;
+      rdfs:range :WaterFeature ;
       rdfs:subPropertyOf inspire-mf:hasFeatureOfInterest .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/hasWaterFeatureType>
+:hasWaterFeatureType
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterFeature> ;
+      rdfs:domain :WaterFeature ;
       rdfs:label "has water feature type "@en ;
-      rdfs:range <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterFeatureType> ;
+      rdfs:range :WaterFeatureType ;
       skos:prefLabel "has water feature type "@en .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/isMaxValueIncluded>
+:isMaxValueIncluded
       rdf:type owl:DatatypeProperty ;
-      rdfs:domain <https://whowproject.eu/ontologies/water-monitoring-ontology/IntervalOfValues> ;
+      rdfs:domain :IntervalOfValues ;
       rdfs:range xsd:boolean .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/isMinValueIncluded>
+:isMinValueIncluded
       rdf:type owl:DatatypeProperty ;
-      rdfs:domain <https://whowproject.eu/ontologies/water-monitoring-ontology/IntervalOfValues> ;
+      rdfs:domain :IntervalOfValues ;
       rdfs:label "is min value included"@en ;
       rdfs:range xsd:boolean .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/isSampleOf>
+:isSampleOf
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterSample> ;
+      rdfs:domain :WaterSample ;
       rdfs:label "is sample of"@en ;
-      rdfs:range <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterFeature> .
+      rdfs:range :WaterFeature .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/metadata>
+:metadata
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterObservation> ;
+      rdfs:domain :WaterObservation ;
       rdfs:label "metadata "@en ;
       skos:prefLabel "metadata "@en .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/sampleDepth>
+:sampleDepth
       rdf:type owl:DatatypeProperty ;
       rdfs:comment "Es. \"5,7 m\" o \"0-7 m\" ecc..."@it ;
-      rdfs:domain <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterSample> ;
+      rdfs:domain :WaterSample ;
       rdfs:label "sample depth"@en ;
       rdfs:range xsd:string .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/takenFromStation>
+:takenFromStation
       rdf:type owl:ObjectProperty ;
       rdfs:domain inspire-mf:Observation ;
       rdfs:label "taken from station "@en ;
-      rdfs:range <https://whowproject.eu/ontologies/water-monitoring-ontology/WaterMonitoringStation> ;
+      rdfs:range :WaterMonitoringStation ;
       skos:prefLabel "taken from station "@en .
 
-<https://whowproject.eu/ontologies/water-monitoring-ontology/valueSpecification>
+:valueSpecification
       rdf:type owl:DatatypeProperty ;
       rdfs:domain inspire-mf:ObservationValue ;
       rdfs:label "value specification"@en ;
