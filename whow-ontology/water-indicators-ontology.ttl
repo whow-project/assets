@@ -1,0 +1,14 @@
+# baseURI: https://w3id.org/environmental-data/onto/water-indicators-ontology
+# imports: https://w3id.org/italia/onto/Indicator
+
+@prefix :        <https://w3id.org/environmental-data/onto/water-indicators-ontology/> .
+@prefix ind:     <https://w3id.org/italia/onto/Indicator/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/environmental-data/onto/water-indicators-ontology>
+      rdf:type owl:Ontology ;
+      owl:imports <https://w3id.org/italia/onto/Indicator> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .

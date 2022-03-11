@@ -163,7 +163,7 @@ hydro:WaterBody
 
 :hasObservedProperty
       rdf:type owl:ObjectProperty ;
-      rdfs:domain inspire-mf:Observation ;
+      rdfs:domain :WaterObservation ;
       rdfs:label "Observed property"^^xsd:string ;
       rdfs:range :ObservableProperty ;
       owl:equivalentProperty
