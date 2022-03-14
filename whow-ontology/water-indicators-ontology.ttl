@@ -20,6 +20,16 @@
       owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2006/vcard/ns> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/ns/prov> , <http://xmlns.com/foaf/0.1/> , <https://w3id.org/environmental-data/onto/water-monitoring-ontology> , <https://w3id.org/italia/onto/Indicator> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
+:ChemicalStateClass
+      rdf:type owl:Class ;
+      rdfs:label "Chemical state class "@en ;
+      rdfs:subClassOf :WaterQualityClass .
+
+:ChemicalStateIndicator
+      rdf:type owl:Class ;
+      rdfs:label "Chemical state indicator "@en ;
+      rdfs:subClassOf :WaterIndicator .
+
 :LIMecoIndicator
       rdf:type owl:Class ;
       rdfs:label "LIMeco indicator "@en ;
@@ -54,6 +64,18 @@
       rdf:type owl:Class ;
       rdfs:label "Water Quality Class "@en ;
       rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Concept> .
+
+:causeOfBadChemicalState
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :ChemicalStateIndicator ;
+      rdfs:label "cause of bad chemical state "@en ;
+      rdfs:range water-monitoring-ontology:ChemicalAgent .
+
+:hasChemicalStateClass
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :ChemicalStateIndicator ;
+      rdfs:label "has chemical state class "@en ;
+      rdfs:range :ChemicalStateClass .
 
 :hasHypolymnicOxygenCalculation
       rdf:type owl:ObjectProperty ;
