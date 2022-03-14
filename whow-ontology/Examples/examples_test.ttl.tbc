@@ -10,6 +10,178 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 []    rdf:type visual:Graph ;
+      rdfs:label "water-indicators-ontology:WaterIndicator Graph" ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/value_3_m> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "131"^^xsd:int ;
+                visual:x "2315"^^xsd:int ;
+                visual:y "128"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/annual_average> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "166"^^xsd:int ;
+                visual:x "2117"^^xsd:int ;
+                visual:y "128"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/transparency> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "147"^^xsd:int ;
+                visual:x "1938"^^xsd:int ;
+                visual:y "128"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/value-24-microgramsonliter-P> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "262"^^xsd:int ;
+                visual:x "1644"^^xsd:int ;
+                visual:y "128"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/concentration> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "154"^^xsd:int ;
+                visual:x "1458"^^xsd:int ;
+                visual:y "128"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/phosphorus> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "140"^^xsd:int ;
+                visual:x "1286"^^xsd:int ;
+                visual:y "128"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/value-47-percent> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "176"^^xsd:int ;
+                visual:x "418"^^xsd:int ;
+                visual:y "128"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/weighted-average> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "184"^^xsd:int ;
+                visual:x "626"^^xsd:int ;
+                visual:y "128"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/saturation> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "129"^^xsd:int ;
+                visual:x "257"^^xsd:int ;
+                visual:y "128"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/oxygen> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "111"^^xsd:int ;
+                visual:x "114"^^xsd:int ;
+                visual:y "128"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://w3id.org/environmental-data/onto/water-indicators-ontology/WaterIndicatorCalculation> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "412"^^xsd:int ;
+                visual:x "842"^^xsd:int ;
+                visual:y "128"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/monguzzo> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "133"^^xsd:int ;
+                visual:x "2593"^^xsd:int ;
+                visual:y "128"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/CO> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "83"^^xsd:int ;
+                visual:x "2478"^^xsd:int ;
+                visual:y "128"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/monitoring-type-operative> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "241"^^xsd:int ;
+                visual:x "711"^^xsd:int ;
+                visual:y "72"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/alserio-waterbody> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "184"^^xsd:int ;
+                visual:x "2427"^^xsd:int ;
+                visual:y "72"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/transparency-3> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "161"^^xsd:int ;
+                visual:x "1931"^^xsd:int ;
+                visual:y "72"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/ptot-24> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "113"^^xsd:int ;
+                visual:x "1190"^^xsd:int ;
+                visual:y "72"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://w3id.org/environmental-data/onto/water-indicators-ontology/buono> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "283"^^xsd:int ;
+                visual:x "396"^^xsd:int ;
+                visual:y "72"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://whowproject.eu/ontologies/instances_test_1/ossipo-47> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "128"^^xsd:int ;
+                visual:x "984"^^xsd:int ;
+                visual:y "72"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://w3id.org/environmental-data/onto/water-indicators-ontology/LTLecoIndicator12345> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "384"^^xsd:int ;
+                visual:x "856"^^xsd:int ;
+                visual:y "16"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <https://w3id.org/environmental-data/onto/water-indicators-ontology/WaterIndicator> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "338"^^xsd:int ;
+                visual:x "26"^^xsd:int ;
+                visual:y "72"^^xsd:int
+              ] ;
+      visual:depicts <https://w3id.org/environmental-data/onto/water-indicators-ontology/WaterIndicator> .
+
+[]    rdf:type visual:Graph ;
       rdfs:label "Es 2 - Radioactiviti Observation" ;
       visual:child
               [ rdf:type visual:Box ;
