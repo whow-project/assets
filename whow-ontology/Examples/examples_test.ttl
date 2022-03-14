@@ -17,33 +17,28 @@
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix sosa:    <http://www.w3.org/ns/sosa/> .
-@prefix water-indicators-ontology:  <https://w3id.org/environmental-data/onto/water-indicators-ontology/> .
-@prefix water-monitoring-ontology:  <https://w3id.org/environmental-data/onto/water-monitoring-ontology/> .
+@prefix w-ind:   <https://w3id.org/environmental-data/onto/water-indicators-ontology/> .
+@prefix w-mon:   <https://w3id.org/environmental-data/onto/water-monitoring-ontology/> .
 @prefix whow-water:  <https://whowproject.eu/ontologies/water-monitoring-ontology/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 core:UnitOfMeasure
       skos:note "TODO: trovare UM esterne a cui puntare"^^xsd:string .
 
-water-indicators-ontology:LTLecoIndicator12345
-      rdf:type water-indicators-ontology:WaterIndicator ;
+w-ind:LTLecoIndicator12345
+      rdf:type w-ind:WaterIndicator ;
       rdfs:label "LTLeco indicator "@en ;
-      water-indicators-ontology:hasHypolymnicOxygenCalculation
+      w-ind:hasHypolymnicOxygenCalculation
               :ossipo-47 ;
-      water-indicators-ontology:hasLTLecoClass
-              water-indicators-ontology:buono ;
-      water-indicators-ontology:hasPTOTCalculation
+      w-ind:hasLTLecoClass
+              :buono ;
+      w-ind:hasPTOTCalculation
               :ptot-24 ;
-      water-indicators-ontology:hasTransparencyCalculation
+      w-ind:hasTransparencyCalculation
               :transparency-3 ;
-      water-indicators-ontology:hasWaterFeature
+      w-ind:hasWaterFeature
               :alserio-waterbody ;
-      water-monitoring-ontology:metadata
-              :monitoring-type-operative .
-
-water-indicators-ontology:buono
-      rdf:type water-indicators-ontology:LTLecoQualityClass ;
-      rdfs:label "BUONO "@en .
+      w-mon:metadata :monitoring-type-operative .
 
 <https://whowproject.eu/ontologies/instances_test_1>
       rdf:type owl:Ontology ;
@@ -154,7 +149,7 @@ water-indicators-ontology:buono
       places:hasGeometry :Geometry_574903_5063200 .
 
 :WHOWConcept_1
-      rdf:type water-monitoring-ontology:WHOWConcept ;
+      rdf:type w-mon:WHOWConcept ;
       rdfs:label "Geometry lat 516781 lon 5070390 "@en .
 
 :WISE_3133-05-9
@@ -219,6 +214,10 @@ water-indicators-ontology:buono
 :bequerel_on_liter
       rdf:type core:UnitOfMeasure ;
       rdfs:label "BQ/L"^^xsd:string .
+
+:buono
+      rdf:type w-ind:LTLecoQualityClass ;
+      rdfs:label "BUONO "@en .
 
 <https://whowproject.eu/ontologies/instances_test_1/chemical_agent_2.4.5-T>
       rdf:type whow-water:ChemicalAgent ;
@@ -498,39 +497,39 @@ water-indicators-ontology:buono
               :N0080600061lo1 .
 
 :ossipo-47
-      rdf:type water-indicators-ontology:WaterIndicatorCalculation ;
+      rdf:type w-ind:WaterIndicatorCalculation ;
       rdfs:label "Oss. Ipolimnico, 47 "@en ;
       core:value "47"^^xsd:string ;
-      water-monitoring-ontology:hasObservablePropertyObject
+      w-mon:hasObservablePropertyObject
               :oxygen ;
-      water-monitoring-ontology:hasObservedProperty
+      w-mon:hasObservedProperty
               :saturation ;
       ind:basedOnMetric :weighted-average ;
       ind:hasIndicatorValue
               :value-47-percent .
 
 :oxygen
-      rdf:type water-monitoring-ontology:ChemicalAgent ;
+      rdf:type w-mon:ChemicalAgent ;
       rdfs:label "oxygen "@en .
 
 :phosphorus
-      rdf:type water-monitoring-ontology:ChemicalAgent ;
+      rdf:type w-mon:ChemicalAgent ;
       rdfs:label "Phosphorus (P) "@en .
 
 :ptot-24
-      rdf:type water-indicators-ontology:WaterIndicatorCalculation ;
+      rdf:type w-ind:WaterIndicatorCalculation ;
       rdfs:label "P TOT, 24 "@en ;
       core:value "24"^^xsd:string ;
-      water-monitoring-ontology:hasObservablePropertyObject
+      w-mon:hasObservablePropertyObject
               :phosphorus ;
-      water-monitoring-ontology:hasObservedProperty
+      w-mon:hasObservedProperty
               :concentration ;
       ind:basedOnMetric :weighted-average ;
       ind:hasIndicatorValue
               :value-24-microgramsonliter-P .
 
 :saturation
-      rdf:type water-monitoring-ontology:ObservableProperty ;
+      rdf:type w-mon:ObservableProperty ;
       rdfs:label "saturation "@en .
 
 :sublacual_Oglio
@@ -540,14 +539,14 @@ water-indicators-ontology:buono
               :OglioWaterBasin .
 
 :transparency
-      rdf:type water-monitoring-ontology:ObservableProperty ;
+      rdf:type w-mon:ObservableProperty ;
       rdfs:label "Transparency "@en .
 
 :transparency-3
-      rdf:type water-indicators-ontology:WaterIndicatorCalculation ;
+      rdf:type w-ind:WaterIndicatorCalculation ;
       rdfs:label "Transparency, 3 "@en ;
       core:value "3"^^xsd:string ;
-      water-monitoring-ontology:hasObservedProperty
+      w-mon:hasObservedProperty
               :transparency ;
       ind:basedOnMetric :annual_average ;
       ind:hasIndicatorValue
