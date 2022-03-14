@@ -1,4 +1,10 @@
 # baseURI: https://w3id.org/environmental-data/onto/water-indicators-ontology
+# imports: http://purl.org/dc/terms/
+# imports: http://www.w3.org/2006/vcard/ns
+# imports: http://www.w3.org/ns/dcat
+# imports: http://www.w3.org/ns/prov
+# imports: http://xmlns.com/foaf/0.1/
+# imports: https://w3id.org/environmental-data/onto/water-monitoring-ontology
 # imports: https://w3id.org/italia/onto/Indicator
 
 @prefix :        <https://w3id.org/environmental-data/onto/water-indicators-ontology/> .
@@ -6,9 +12,99 @@
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix water-monitoring-ontology:  <https://w3id.org/environmental-data/onto/water-monitoring-ontology/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/environmental-data/onto/water-indicators-ontology>
       rdf:type owl:Ontology ;
-      owl:imports <https://w3id.org/italia/onto/Indicator> ;
+      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2006/vcard/ns> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/ns/prov> , <http://xmlns.com/foaf/0.1/> , <https://w3id.org/environmental-data/onto/water-monitoring-ontology> , <https://w3id.org/italia/onto/Indicator> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:LIMecoIndicator
+      rdf:type owl:Class ;
+      rdfs:label "LIMeco indicator "@en ;
+      rdfs:subClassOf :WaterIndicator .
+
+:LIMecoQualityClass
+      rdf:type owl:Class ;
+      rdfs:label "LIMeco Quality Class "@en ;
+      rdfs:subClassOf :WaterQualityClass .
+
+:LTLecoIndicator
+      rdf:type owl:Class ;
+      rdfs:label "LTLeco indicator "@en ;
+      rdfs:subClassOf :WaterIndicator .
+
+:LTLecoQualityClass
+      rdf:type owl:Class ;
+      rdfs:label "LTLeco Quality Class "@en ;
+      rdfs:subClassOf :WaterQualityClass .
+
+:WaterIndicator
+      rdf:type owl:Class ;
+      rdfs:label "Water indicator "@en ;
+      rdfs:subClassOf ind:Indicator .
+
+:WaterIndicatorCalculation
+      rdf:type owl:Class ;
+      rdfs:label "Water Indicator Calculation "@en ;
+      rdfs:subClassOf ind:IndicatorCalculation .
+
+:WaterQualityClass
+      rdf:type owl:Class ;
+      rdfs:label "Water Quality Class "@en ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Concept> .
+
+:hasHypolymnicOxygenCalculation
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :LTLecoIndicator ;
+      rdfs:label "has hypolymnic oxygen calculation "@en ;
+      rdfs:range :WaterIndicatorCalculation .
+
+:hasLIMecoClass
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :LIMecoIndicator ;
+      rdfs:label "has LIMeco class "@en ;
+      rdfs:range :LIMecoQualityClass .
+
+:hasLTLecoClass
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :LTLecoIndicator ;
+      rdfs:label "has LTLeco class "@en ;
+      rdfs:range :LTLecoQualityClass .
+
+:hasObservablePropertyObject
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterIndicatorCalculation ;
+      rdfs:label "has observable property object "@en ;
+      rdfs:range water-monitoring-ontology:ObservablePropertyObject .
+
+:hasObservedProperty
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterIndicatorCalculation ;
+      rdfs:label "has observed property "@en ;
+      rdfs:range water-monitoring-ontology:ObservableProperty .
+
+:hasPTOTCalculation
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :LTLecoIndicator ;
+      rdfs:label "has PTOT calculation "@en ;
+      rdfs:range :WaterIndicatorCalculation .
+
+:hasTransparencyCalculation
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :LTLecoIndicator ;
+      rdfs:label "has transparency calculation "@en ;
+      rdfs:range :WaterIndicatorCalculation .
+
+:hasWaterFeature
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterIndicator ;
+      rdfs:label "has water feature "@en ;
+      rdfs:range water-monitoring-ontology:WaterFeature .
+
+:hasWaterIndicator
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain water-monitoring-ontology:WaterQualityParameterObservation ;
+      rdfs:label "has water indicator "@en ;
+      rdfs:range :WaterIndicator .
