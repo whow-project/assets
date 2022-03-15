@@ -12,7 +12,8 @@
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix water-monitoring-ontology:  <https://w3id.org/environmental-data/onto/water-monitoring-ontology/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix w-mon:   <https://w3id.org/environmental-data/onto/water-monitoring-ontology/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/environmental-data/onto/water-indicators-ontology>
@@ -38,12 +39,13 @@
 :LIMecoQualityClass
       rdf:type owl:Class ;
       rdfs:label "LIMeco Quality Class "@en ;
-      rdfs:subClassOf water-monitoring-ontology:WaterQualityClass ;
+      rdfs:subClassOf w-mon:WaterQualityClass ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
                 owl:allValuesFrom :Average ;
                 owl:onProperty ind:basedOnMetric
-              ] .
+              ] ;
+      skos:note "Attenzione utilizzata restriction verso il value Average in quanto tutti i parametri di LTLeco quality class hanno una metrica che è la media"^^xsd:string .
 
 :LTLecoIndicator
       rdf:type owl:Class ;
@@ -53,12 +55,13 @@
 :LTLecoQualityClass
       rdf:type owl:Class ;
       rdfs:label "LTLeco Quality Class "@en ;
-      rdfs:subClassOf water-monitoring-ontology:WaterQualityClass ;
+      rdfs:subClassOf w-mon:WaterQualityClass ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
                 owl:allValuesFrom :Average ;
                 owl:onProperty ind:basedOnMetric
-              ] .
+              ] ;
+      skos:note "Attenzione utilizzata restriction verso il value Average in quanto tutti i parametri di LTLeco quality class hanno una metrica che è la media"^^xsd:string .
 
 :WaterIndicator
       rdf:type owl:Class ;
@@ -78,7 +81,7 @@
 
 :hasIndicatorMonitoringType
       rdf:type owl:DatatypeProperty ;
-      rdfs:domain water-monitoring-ontology:Metadata ;
+      rdfs:domain w-mon:Metadata ;
       rdfs:label "has indicator monitoring type "@en ;
       rdfs:range xsd:string .
 
@@ -87,26 +90,26 @@
       rdfs:domain :LIMecoIndicator ;
       rdfs:label "has LIMeco class "@en ;
       rdfs:range :LIMecoQualityClass ;
-      rdfs:subPropertyOf water-monitoring-ontology:hasWaterQualityClass .
+      rdfs:subPropertyOf w-mon:hasWaterQualityClass .
 
 :hasLTLecoClass
       rdf:type owl:ObjectProperty ;
       rdfs:domain :LTLecoIndicator ;
       rdfs:label "has LTLeco class "@en ;
       rdfs:range :LTLecoQualityClass ;
-      rdfs:subPropertyOf water-monitoring-ontology:hasWaterQualityClass .
+      rdfs:subPropertyOf w-mon:hasWaterQualityClass .
 
 :hasObservablePropertyObject
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterIndicatorCalculation ;
       rdfs:label "has observable property object "@en ;
-      rdfs:range water-monitoring-ontology:ObservablePropertyObject .
+      rdfs:range w-mon:ObservablePropertyObject .
 
 :hasObservedProperty
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterIndicatorCalculation ;
       rdfs:label "has observed property "@en ;
-      rdfs:range water-monitoring-ontology:ObservableProperty .
+      rdfs:range w-mon:ObservableProperty .
 
 :hasPTOTCalculation
       rdf:type owl:ObjectProperty ;
@@ -124,13 +127,13 @@
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterIndicator ;
       rdfs:label "has water feature "@en ;
-      rdfs:range water-monitoring-ontology:WaterFeature .
+      rdfs:range w-mon:WaterFeature .
 
 :hasWaterIndicator
       rdf:type owl:ObjectProperty ;
-      rdfs:domain water-monitoring-ontology:WaterQualityParameterObservation ;
+      rdfs:domain w-mon:WaterQualityParameterObservation ;
       rdfs:label "has water indicator "@en ;
       rdfs:range :WaterIndicator .
 
-water-monitoring-ontology:WaterQualityClass
+w-mon:WaterQualityClass
       rdfs:subClassOf :WaterIndicatorCalculation .
