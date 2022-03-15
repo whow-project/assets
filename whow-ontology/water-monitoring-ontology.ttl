@@ -41,6 +41,11 @@ hydro:WaterBody
       rdfs:label "Chemical Agent"@en ;
       rdfs:subClassOf :ObservablePropertyObject .
 
+:ChemicalStateClass
+      rdf:type owl:Class ;
+      rdfs:label "Chemical state class "@en ;
+      rdfs:subClassOf :WaterQualityClass .
+
 :IntervalOfValues
       rdf:type owl:Class ;
       rdfs:label "Interval of values"@en ;
@@ -116,6 +121,11 @@ hydro:WaterBody
       rdfs:label "Water Observation "@en ;
       rdfs:subClassOf inspire-mf:Observation , :WHOWConcept .
 
+:WaterQualityClass
+      rdf:type owl:Class ;
+      rdfs:label "Water Quality Class "@en ;
+      rdfs:subClassOf :WHOWConcept .
+
 :WaterQualityParameterObservation
       rdf:type owl:Class ;
       rdfs:label "Water Quality Parameter Observation "@en ;
@@ -132,12 +142,25 @@ hydro:WaterBody
       rdfs:subClassOf :WHOWConcept ;
       skos:prefLabel "Water Sample"@en .
 
+:causeOfBadChemicalState
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :ChemicalStateClass ;
+      rdfs:label "cause of bad chemical state "@en ;
+      rdfs:range :ChemicalAgent .
+
 :depthDescription
       rdf:type owl:DatatypeProperty ;
       rdfs:comment "Es. \"Lago di Como_superficie\" o \"Lago di Como_fondo\" ecc..."@it ;
       rdfs:domain :WaterSample ;
       rdfs:label "depth description"@en ;
       rdfs:range xsd:string .
+
+:hasChemicalStateClass
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterObservation ;
+      rdfs:label "has chemical state class "@en ;
+      rdfs:range :ChemicalStateClass ;
+      rdfs:subPropertyOf :hasWaterQualityClass .
 
 :hasMaxValue
       rdf:type owl:DatatypeProperty ;
@@ -182,6 +205,12 @@ hydro:WaterBody
       rdfs:label "has water feature type "@en ;
       rdfs:range :WaterFeatureType ;
       skos:prefLabel "has water feature type "@en .
+
+:hasWaterQualityClass
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterObservation ;
+      rdfs:label "has water quality class "@en ;
+      rdfs:range :WaterQualityClass .
 
 :isMaxValueIncluded
       rdf:type owl:DatatypeProperty ;

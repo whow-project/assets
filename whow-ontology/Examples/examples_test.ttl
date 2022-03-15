@@ -30,15 +30,16 @@ w-ind:LTLecoIndicator12345
       rdfs:label "LTLeco indicator "@en ;
       w-ind:hasHypolymnicOxygenCalculation
               :ossipo-47 ;
+      w-ind:hasIndicatorMonitoringType
+              "operative"^^xsd:string ;
       w-ind:hasLTLecoClass
-              :buono ;
+              :ltleco_buono ;
       w-ind:hasPTOTCalculation
               :ptot-24 ;
       w-ind:hasTransparencyCalculation
               :transparency-3 ;
       w-ind:hasWaterFeature
-              :alserio-waterbody ;
-      w-mon:metadata :monitoring-type-operative .
+              :alserio-waterbody .
 
 <https://whowproject.eu/ontologies/instances_test_1>
       rdf:type owl:Ontology ;
@@ -215,10 +216,6 @@ w-ind:LTLecoIndicator12345
       rdf:type core:UnitOfMeasure ;
       rdfs:label "BQ/L"^^xsd:string .
 
-:buono
-      rdf:type w-ind:LTLecoQualityClass ;
-      rdfs:label "BUONO "@en .
-
 <https://whowproject.eu/ontologies/instances_test_1/chemical_agent_2.4.5-T>
       rdf:type whow-water:ChemicalAgent ;
       rdfs:label "2,4,5-T"^^xsd:string .
@@ -307,6 +304,10 @@ w-ind:LTLecoIndicator12345
 :lambro-olona-meridionale-waterbasin
       rdf:type hydro:WaterBasin ;
       rdfs:label "Lambro Olona Meridionale WaterBasin "@en .
+
+:ltleco_buono
+      rdf:type w-ind:LTLecoQualityClass ;
+      rdfs:label "BUONO "@en .
 
 :meter
       rdf:type core:UnitOfMeasure ;

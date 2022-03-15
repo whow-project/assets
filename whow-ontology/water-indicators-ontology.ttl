@@ -20,10 +20,10 @@
       owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2006/vcard/ns> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/ns/prov> , <http://xmlns.com/foaf/0.1/> , <https://w3id.org/environmental-data/onto/water-monitoring-ontology> , <https://w3id.org/italia/onto/Indicator> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
-:ChemicalStateClass
+:Average
       rdf:type owl:Class ;
-      rdfs:label "Chemical state class "@en ;
-      rdfs:subClassOf :WaterQualityClass .
+      rdfs:label "average "@en ;
+      rdfs:subClassOf ind:Metric .
 
 :ChemicalStateIndicator
       rdf:type owl:Class ;
@@ -38,7 +38,12 @@
 :LIMecoQualityClass
       rdf:type owl:Class ;
       rdfs:label "LIMeco Quality Class "@en ;
-      rdfs:subClassOf :WaterQualityClass .
+      rdfs:subClassOf water-monitoring-ontology:WaterQualityClass ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom :Average ;
+                owl:onProperty ind:basedOnMetric
+              ] .
 
 :LTLecoIndicator
       rdf:type owl:Class ;
@@ -48,7 +53,12 @@
 :LTLecoQualityClass
       rdf:type owl:Class ;
       rdfs:label "LTLeco Quality Class "@en ;
-      rdfs:subClassOf :WaterQualityClass .
+      rdfs:subClassOf water-monitoring-ontology:WaterQualityClass ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom :Average ;
+                owl:onProperty ind:basedOnMetric
+              ] .
 
 :WaterIndicator
       rdf:type owl:Class ;
@@ -60,40 +70,31 @@
       rdfs:label "Water Indicator Calculation "@en ;
       rdfs:subClassOf ind:IndicatorCalculation .
 
-:WaterQualityClass
-      rdf:type owl:Class ;
-      rdfs:label "Water Quality Class "@en ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Concept> .
-
-:causeOfBadChemicalState
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :ChemicalStateIndicator ;
-      rdfs:label "cause of bad chemical state "@en ;
-      rdfs:range water-monitoring-ontology:ChemicalAgent .
-
-:hasChemicalStateClass
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :ChemicalStateIndicator ;
-      rdfs:label "has chemical state class "@en ;
-      rdfs:range :ChemicalStateClass .
-
 :hasHypolymnicOxygenCalculation
       rdf:type owl:ObjectProperty ;
       rdfs:domain :LTLecoIndicator ;
       rdfs:label "has hypolymnic oxygen calculation "@en ;
       rdfs:range :WaterIndicatorCalculation .
 
+:hasIndicatorMonitoringType
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain water-monitoring-ontology:Metadata ;
+      rdfs:label "has indicator monitoring type "@en ;
+      rdfs:range xsd:string .
+
 :hasLIMecoClass
       rdf:type owl:ObjectProperty ;
       rdfs:domain :LIMecoIndicator ;
       rdfs:label "has LIMeco class "@en ;
-      rdfs:range :LIMecoQualityClass .
+      rdfs:range :LIMecoQualityClass ;
+      rdfs:subPropertyOf water-monitoring-ontology:hasWaterQualityClass .
 
 :hasLTLecoClass
       rdf:type owl:ObjectProperty ;
       rdfs:domain :LTLecoIndicator ;
       rdfs:label "has LTLeco class "@en ;
-      rdfs:range :LTLecoQualityClass .
+      rdfs:range :LTLecoQualityClass ;
+      rdfs:subPropertyOf water-monitoring-ontology:hasWaterQualityClass .
 
 :hasObservablePropertyObject
       rdf:type owl:ObjectProperty ;
@@ -130,3 +131,6 @@
       rdfs:domain water-monitoring-ontology:WaterQualityParameterObservation ;
       rdfs:label "has water indicator "@en ;
       rdfs:range :WaterIndicator .
+
+water-monitoring-ontology:WaterQualityClass
+      rdfs:subClassOf :WaterIndicatorCalculation .
