@@ -101,6 +101,11 @@ hydro:WaterBody
       rdfs:label "Water Chemical Observation"@en ;
       rdfs:subClassOf :WaterObservation .
 
+:WaterChemicalStateObservation
+      rdf:type owl:Class ;
+      rdfs:label "Water chemical state observation "@en ;
+      rdfs:subClassOf :WaterChemicalObservation .
+
 :WaterFeature
       rdf:type owl:Class ;
       rdfs:label "Water feature "@en ;
@@ -144,7 +149,7 @@ hydro:WaterBody
 
 :causeOfBadChemicalState
       rdf:type owl:ObjectProperty ;
-      rdfs:domain :ChemicalStateClass ;
+      rdfs:domain :WaterChemicalStateObservation ;
       rdfs:label "cause of bad chemical state "@en ;
       rdfs:range :ChemicalAgent .
 
@@ -157,7 +162,7 @@ hydro:WaterBody
 
 :hasChemicalStateClass
       rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterObservation ;
+      rdfs:domain :WaterChemicalStateObservation ;
       rdfs:label "has chemical state class "@en ;
       rdfs:range :ChemicalStateClass ;
       rdfs:subPropertyOf :hasWaterQualityClass .
