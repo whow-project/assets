@@ -64,13 +64,13 @@
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GenericGroupNode configuration="PanelNode">
-              <y:Geometry height="92.8046875" width="626.8515625000001" x="766.1215153769839" y="-238.38368055555543"/>
+              <y:Geometry height="127.76034698996654" width="626.8515625" x="-15.000000000000114" y="-358.0874718390002"/>
               <y:Fill color="#FFFFFF" color2="#B7B69E" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="content" fontFamily="'Arial'" fontSize="15" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="74.87646484375" x="551.9750976562501" xml:space="preserve" y="0.0">Prefixes   <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.5" labelRatioY="-0.5" nodeRatioX="0.5" nodeRatioY="-0.5" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="content" fontFamily="'Arial'" fontSize="15" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="74.87646484375" x="551.97509765625" xml:space="preserve" y="-5.6843418860808015E-14">Prefixes   <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.5" labelRatioY="-0.5" nodeRatioX="0.5" nodeRatioY="-0.5" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:State autoResize="true" closed="false" closedHeight="80.0" closedWidth="100.0"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="1.1368683772161603E-13" right="95" rightF="95.35702341137119" top="15" topF="15.354096989966536"/>
             </y:GenericGroupNode>
             <y:GenericGroupNode configuration="PanelNode">
               <y:Geometry height="80.0" width="100.0" x="443.27522703856584" y="-17.31659939263932"/>
@@ -88,12 +88,13 @@
         <node id="n4::n0">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="22.2421875" width="596.8515625" x="781.1215153769839" y="-203.10243055555543"/>
+              <y:Geometry height="52.95038147993307" width="501.4945390886287" x="0.0" y="-313.0054405890002"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="'Arial'" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.8046875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="487.8125" x="54.51953125" xml:space="preserve" y="-20.28125">: https://w3id.org/environmental-data/onto/water-monitoring-ontology
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="'Arial'" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="82.40625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="487.8125" x="6.841019544314349" xml:space="preserve" y="-14.727934260033464">: https://w3id.org/environmental-data/onto/water-monitoring-ontology
 ind:  https://dati.isprambiente.it/ontology/core/
 ispra-emf: https://dati.isprambiente.it/ontology/inspire-mf/
+mu: https://w3id.org/italia/onto/MU
 <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="rectangle"/>
             </y:ShapeNode>
@@ -374,7 +375,6 @@ ispra-emf: https://dati.isprambiente.it/ontology/inspire-mf/
       </data>
     </edge>
     <edge id="e9" source="n5" target="n3">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="26.2333984375" sy="22.0" tx="0.0" ty="-22.0">
@@ -389,7 +389,6 @@ ispra-emf: https://dati.isprambiente.it/ontology/inspire-mf/
       </data>
     </edge>
     <edge id="e10" source="n5" target="n5">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-104.93359375" sy="0.0" tx="0.0" ty="-22.0">
@@ -405,7 +404,6 @@ ispra-emf: https://dati.isprambiente.it/ontology/inspire-mf/
       </data>
     </edge>
     <edge id="e11" source="n6" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="22.0" tx="23.736328125" ty="-22.0">
@@ -420,7 +418,6 @@ ispra-emf: https://dati.isprambiente.it/ontology/inspire-mf/
       </data>
     </edge>
     <edge id="e12" source="n14" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="10.0" tx="-23.736328125" ty="-22.0">
@@ -435,7 +432,6 @@ ispra-emf: https://dati.isprambiente.it/ontology/inspire-mf/
       </data>
     </edge>
     <edge id="e13" source="n13" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="10.0" tx="71.208984375" ty="-22.0">
@@ -450,7 +446,6 @@ ispra-emf: https://dati.isprambiente.it/ontology/inspire-mf/
       </data>
     </edge>
     <edge id="e14" source="n16" target="n13">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="10.0" tx="6.6666666666667425" ty="-7.46875">
@@ -465,7 +460,6 @@ ispra-emf: https://dati.isprambiente.it/ontology/inspire-mf/
       </data>
     </edge>
     <edge id="e15" source="n15" target="n13">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="10.0" tx="-6.6666666666667425" ty="-7.46875">
@@ -482,7 +476,6 @@ ispra-emf: https://dati.isprambiente.it/ontology/inspire-mf/
       </data>
     </edge>
     <edge id="e16" source="n17" target="n13">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="10.0" tx="0.0" ty="-10.0"/>
@@ -494,7 +487,6 @@ ispra-emf: https://dati.isprambiente.it/ontology/inspire-mf/
       </data>
     </edge>
     <edge id="e17" source="n11" target="n7">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="22.0" tx="-58.1640625" ty="-22.0"/>
