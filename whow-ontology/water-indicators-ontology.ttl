@@ -21,46 +21,21 @@
       owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2006/vcard/ns> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/ns/prov> , <http://xmlns.com/foaf/0.1/> , <https://w3id.org/environmental-data/onto/water-monitoring-ontology> , <https://w3id.org/italia/onto/Indicator> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
-:Average
-      rdf:type owl:Class ;
-      rdfs:label "average "@en ;
-      rdfs:subClassOf ind:Metric .
-
 :ChemicalStateIndicator
       rdf:type owl:Class ;
       rdfs:label "Chemical state indicator "@en ;
-      rdfs:subClassOf :WaterIndicator .
-
-:LIMecoIndicator
-      rdf:type owl:Class ;
-      rdfs:label "LIMeco indicator "@en ;
       rdfs:subClassOf :WaterIndicator .
 
 :LIMecoQualityClass
       rdf:type owl:Class ;
       rdfs:label "LIMeco Quality Class "@en ;
       rdfs:subClassOf w-mon:WaterQualityClass ;
-      rdfs:subClassOf
-              [ rdf:type owl:Restriction ;
-                owl:allValuesFrom :Average ;
-                owl:onProperty ind:basedOnMetric
-              ] ;
       skos:note "Attenzione utilizzata restriction verso il value Average in quanto tutti i parametri di LTLeco quality class hanno una metrica che è la media"^^xsd:string .
-
-:LTLecoIndicator
-      rdf:type owl:Class ;
-      rdfs:label "LTLeco indicator "@en ;
-      rdfs:subClassOf :WaterIndicator .
 
 :LTLecoQualityClass
       rdf:type owl:Class ;
       rdfs:label "LTLeco Quality Class "@en ;
       rdfs:subClassOf w-mon:WaterQualityClass ;
-      rdfs:subClassOf
-              [ rdf:type owl:Restriction ;
-                owl:allValuesFrom :Average ;
-                owl:onProperty ind:basedOnMetric
-              ] ;
       skos:note "Attenzione utilizzata restriction verso il value Average in quanto tutti i parametri di LTLeco quality class hanno una metrica che è la media"^^xsd:string .
 
 :WaterIndicator
@@ -73,12 +48,6 @@
       rdfs:label "Water Indicator Calculation "@en ;
       rdfs:subClassOf ind:IndicatorCalculation .
 
-:hasHypolymnicOxygenCalculation
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :LTLecoIndicator ;
-      rdfs:label "has hypolymnic oxygen calculation "@en ;
-      rdfs:range :WaterIndicatorCalculation .
-
 :hasIndicatorMonitoringType
       rdf:type owl:DatatypeProperty ;
       rdfs:domain w-mon:Metadata ;
@@ -87,40 +56,20 @@
 
 :hasLIMecoClass
       rdf:type owl:ObjectProperty ;
-      rdfs:domain :LIMecoIndicator ;
       rdfs:label "has LIMeco class "@en ;
       rdfs:range :LIMecoQualityClass ;
       rdfs:subPropertyOf w-mon:hasWaterQualityClass .
 
 :hasLTLecoClass
       rdf:type owl:ObjectProperty ;
-      rdfs:domain :LTLecoIndicator ;
       rdfs:label "has LTLeco class "@en ;
       rdfs:range :LTLecoQualityClass ;
       rdfs:subPropertyOf w-mon:hasWaterQualityClass .
 
-:hasObservablePropertyObject
+:hasSubCalculation
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterIndicatorCalculation ;
-      rdfs:label "has observable property object "@en ;
-      rdfs:range w-mon:ObservablePropertyObject .
-
-:hasObservedProperty
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterIndicatorCalculation ;
-      rdfs:label "has observed property "@en ;
-      rdfs:range w-mon:ObservableProperty .
-
-:hasPTOTCalculation
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :LTLecoIndicator ;
-      rdfs:label "has PTOT calculation "@en ;
-      rdfs:range :WaterIndicatorCalculation .
-
-:hasTransparencyCalculation
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :LTLecoIndicator ;
-      rdfs:label "has transparency calculation "@en ;
+      rdfs:label "has sub-calculation "@en ;
       rdfs:range :WaterIndicatorCalculation .
 
 :hasWaterFeature
@@ -135,5 +84,11 @@
       rdfs:label "has water indicator "@en ;
       rdfs:range :WaterIndicator .
 
+:isIndicatorOfWaterFeature
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterIndicatorCalculation ;
+      rdfs:label "is indicator of water feature "@en ;
+      rdfs:range w-mon:WaterFeature .
+
 w-mon:WaterQualityClass
-      rdfs:subClassOf :WaterIndicatorCalculation .
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Value> .
