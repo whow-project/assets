@@ -1,0 +1,47 @@
+# baseURI: https://w3id.org/health-data/onto/CCS-ontology
+# imports: http://www.w3.org/2004/02/skos/core
+# imports: https://w3id.org/health-data/onto/ICD9-CM-ontology
+
+@prefix :        <https://w3id.org/health-data/onto/CCS-ontology/> .
+@prefix icd9:    <https://w3id.org/health-data/onto/ICD9-CM-ontology/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/health-data/onto/CCS-ontology>
+      rdf:type owl:Ontology ;
+      rdfs:comment "Ontologia che modella i codici CCS (Clinical Classifications Software) e il relativo riferimenti ai codici aggregati IDC"@it ;
+      owl:imports <http://www.w3.org/2004/02/skos/core> , <https://w3id.org/health-data/onto/ICD9-CM-ontology> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:CCS  rdf:type owl:Class ;
+      rdfs:comment "Aggregati Clinici di Codici"@it ;
+      rdfs:label "CCS"@it ;
+      rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> .
+
+:CCSd
+      rdf:type owl:Class ;
+      rdfs:comment "Aggregati Clinici di Codici di diagnosi"@it , "Clinical Classifications Software for disease"@en ;
+      rdfs:label "CCSd"@it ;
+      rdfs:subClassOf :CCS .
+
+:CCSp
+      rdf:type owl:Class ;
+      rdfs:comment "Aggregati Clinici di Codici di procedura"@it , "Clinical Classifications Software for procedure"@en ;
+      rdfs:label "CCSp"^^xsd:string ;
+      rdfs:subClassOf :CCS .
+
+:aggregateICD9code
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :CCS ;
+      rdfs:label "aggregate ICD9 code"@en ;
+      rdfs:range icd9:ICD ;
+      owl:inverseOf :isAggregatedInCCScode .
+
+:isAggregatedInCCScode
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain icd9:ICD ;
+      rdfs:label "is aggregated in CCS code"@en ;
+      rdfs:range :CCS ;
+      owl:inverseOf :aggregateICD9code .
