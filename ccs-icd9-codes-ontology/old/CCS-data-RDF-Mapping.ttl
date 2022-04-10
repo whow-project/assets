@@ -1,0 +1,1166 @@
+# baseURI: https://w3id.org/health-data/onto/CCS-data
+# imports: https://w3id.org/health-data/onto/CCS-ontology
+
+@prefix :        <https://w3id.org/health-data/onto/CCS-data/> .
+@prefix ccs-m:   <https://w3id.org/health-data/onto/CCS-ontology/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/health-data/onto/CCS-data>
+      rdf:type owl:Ontology ;
+      owl:imports <https://w3id.org/health-data/onto/CCS-ontology> .
+
+:CCS-
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(.) No diagnosis @en" .
+
+:CCS-1
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(1) Tuberculosis @en" .
+
+:CCS-10
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(10) Immunizations and screening for infectious disease @en" .
+
+:CCS-100
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(100) Acute myocardial infarction @en" .
+
+:CCS-101
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(101) Coronary atherosclerosis and other heart disease @en" .
+
+:CCS-102
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(102) Nonspecific chest pain @en" .
+
+:CCS-103
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(103) Pulmonary heart disease @en" .
+
+:CCS-104
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(104) Other and ill-defined heart disease @en" .
+
+:CCS-105
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(105) Conduction disorders @en" .
+
+:CCS-106
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(106) Cardiac dysrhythmias @en" .
+
+:CCS-107
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(107) Cardiac arrest and ventricular fibrillation @en" .
+
+:CCS-108
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(108) Congestive heart failure; nonhypertensive @en" .
+
+:CCS-109
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(109) Acute cerebrovascular disease @en" .
+
+:CCS-11
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(11) Cancer of head and neck @en" .
+
+:CCS-110
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(110) Occlusion or stenosis of precerebral arteries @en" .
+
+:CCS-111
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(111) Other and ill-defined cerebrovascular disease @en" .
+
+:CCS-112
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(112) Transient cerebral ischemia @en" .
+
+:CCS-113
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(113) Late effects of cerebrovascular disease @en" .
+
+:CCS-114
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(114) Peripheral and visceral atherosclerosis @en" .
+
+:CCS-115
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(115) Aortic; peripheral; and visceral artery aneurysms @en" .
+
+:CCS-116
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(116) Aortic and peripheral arterial embolism or thrombosis @en" .
+
+:CCS-117
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(117) Other circulatory disease @en" .
+
+:CCS-118
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(118) Phlebitis; thrombophlebitis and thromboembolism @en" .
+
+:CCS-119
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(119) Varicose veins of lower extremity @en" .
+
+:CCS-12
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(12) Cancer of esophagus @en" .
+
+:CCS-120
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(120) Hemorrhoids @en" .
+
+:CCS-121
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(121) Other diseases of veins and lymphatics @en" .
+
+:CCS-122
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(122) Pneumonia (except that caused by tuberculosis or sexually transmitted disease) @en" .
+
+:CCS-123
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(123) Influenza @en" .
+
+:CCS-124
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(124) Acute and chronic tonsillitis @en" .
+
+:CCS-125
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(125) Acute bronchitis @en" .
+
+:CCS-126
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(126) Other upper respiratory infections @en" .
+
+:CCS-127
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(127) Chronic obstructive pulmonary disease and bronchiectasis @en" .
+
+:CCS-128
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(128) Asthma @en" .
+
+:CCS-129
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(129) Aspiration pneumonitis; food/vomitus @en" .
+
+:CCS-13
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(13) Cancer of stomach @en" .
+
+:CCS-130
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(130) Pleurisy; pneumothorax; pulmonary collapse @en" .
+
+:CCS-131
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(131) Respiratory failure; insufficiency; arrest (adult) @en" .
+
+:CCS-132
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(132) Lung disease due to external agents @en" .
+
+:CCS-133
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(133) Other lower respiratory disease @en" .
+
+:CCS-134
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(134) Other upper respiratory disease @en" .
+
+:CCS-135
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(135) Intestinal infection @en" .
+
+:CCS-136
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(136) Disorders of teeth and jaw @en" .
+
+:CCS-137
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(137) Diseases of mouth; excluding dental @en" .
+
+:CCS-138
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(138) Esophageal disorders @en" .
+
+:CCS-139
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(139) Gastroduodenal ulcer (except hemorrhage) @en" .
+
+:CCS-14
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(14) Cancer of colon @en" .
+
+:CCS-140
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(140) Gastritis and duodenitis @en" .
+
+:CCS-141
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(141) Other disorders of stomach and duodenum @en" .
+
+:CCS-142
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(142) Appendicitis and other appendiceal conditions @en" .
+
+:CCS-143
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(143) Abdominal hernia @en" .
+
+:CCS-144
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(144) Regional enteritis and ulcerative colitis @en" .
+
+:CCS-145
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(145) Intestinal obstruction without hernia @en" .
+
+:CCS-146
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(146) Diverticulosis and diverticulitis @en" .
+
+:CCS-147
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(147) Anal and rectal conditions @en" .
+
+:CCS-148
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(148) Peritonitis and intestinal abscess @en" .
+
+:CCS-149
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(149) Biliary tract disease @en" .
+
+:CCS-15
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(15) Cancer of rectum and anus @en" .
+
+:CCS-150
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(150) Liver disease; alcohol-related @en" .
+
+:CCS-151
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(151) Other liver diseases @en" .
+
+:CCS-152
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(152) Pancreatic disorders (not diabetes) @en" .
+
+:CCS-153
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(153) Gastrointestinal hemorrhage @en" .
+
+:CCS-154
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(154) Noninfectious gastroenteritis @en" .
+
+:CCS-155
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(155) Other gastrointestinal disorders @en" .
+
+:CCS-156
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(156) Nephritis; nephrosis; renal sclerosis @en" .
+
+:CCS-157
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(157) Acute and unspecified renal failure @en" .
+
+:CCS-158
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(158) Chronic kidney disease @en" .
+
+:CCS-159
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(159) Urinary tract infections @en" .
+
+:CCS-16
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(16) Cancer of liver and intrahepatic bile duct @en" .
+
+:CCS-160
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(160) Calculus of urinary tract @en" .
+
+:CCS-161
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(161) Other diseases of kidney and ureters @en" .
+
+:CCS-162
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(162) Other diseases of bladder and urethra @en" .
+
+:CCS-163
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(163) Genitourinary symptoms and ill-defined conditions @en" .
+
+:CCS-164
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(164) Hyperplasia of prostate @en" .
+
+:CCS-165
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(165) Inflammatory conditions of male genital organs @en" .
+
+:CCS-166
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(166) Other male genital disorders @en" .
+
+:CCS-167
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(167) Nonmalignant breast conditions @en" .
+
+:CCS-168
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(168) Inflammatory diseases of female pelvic organs @en" .
+
+:CCS-169
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(169) Endometriosis @en" .
+
+:CCS-17
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(17) Cancer of pancreas @en" .
+
+:CCS-170
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(170) Prolapse of female genital organs @en" .
+
+:CCS-171
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(171) Menstrual disorders @en" .
+
+:CCS-172
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(172) Ovarian cyst @en" .
+
+:CCS-173
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(173) Menopausal disorders @en" .
+
+:CCS-174
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(174) Female infertility @en" .
+
+:CCS-175
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(175) Other female genital disorders @en" .
+
+:CCS-176
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(176) Contraceptive and procreative management @en" .
+
+:CCS-177
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(177) Spontaneous abortion @en" .
+
+:CCS-178
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(178) Induced abortion @en" .
+
+:CCS-179
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(179) Postabortion complications @en" .
+
+:CCS-18
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(18) Cancer of other GI organs; peritoneum @en" .
+
+:CCS-180
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(180) Ectopic pregnancy @en" .
+
+:CCS-181
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(181) Other complications of pregnancy @en" .
+
+:CCS-182
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(182) Hemorrhage during pregnancy; abruptio placenta; placenta previa @en" .
+
+:CCS-183
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(183) Hypertension complicating pregnancy; childbirth and the puerperium @en" .
+
+:CCS-184
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(184) Early or threatened labor @en" .
+
+:CCS-185
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(185) Prolonged pregnancy @en" .
+
+:CCS-186
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(186) Diabetes or abnormal glucose tolerance complicating pregnancy; childbirth; or the puerperium @en" .
+
+:CCS-187
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(187) Malposition; malpresentation @en" .
+
+:CCS-188
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(188) Fetopelvic disproportion; obstruction @en" .
+
+:CCS-189
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(189) Previous C-section @en" .
+
+:CCS-19
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(19) Cancer of bronchus; lung @en" .
+
+:CCS-190
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(190) Fetal distress and abnormal forces of labor @en" .
+
+:CCS-191
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(191) Polyhydramnios and other problems of amniotic cavity @en" .
+
+:CCS-192
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(192) Umbilical cord complication @en" .
+
+:CCS-193
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(193) OB-related trauma to perineum and vulva @en" .
+
+:CCS-194
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(194) Forceps delivery @en" .
+
+:CCS-195
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(195) Other complications of birth; puerperium affecting management of mother @en" .
+
+:CCS-196
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(196) Other pregnancy and delivery including normal @en" .
+
+:CCS-197
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(197) Skin and subcutaneous tissue infections @en" .
+
+:CCS-198
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(198) Other inflammatory condition of skin @en" .
+
+:CCS-199
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(199) Chronic ulcer of skin @en" .
+
+:CCS-2
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2) Septicemia (except in labor) @en" .
+
+:CCS-20
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(20) Cancer; other respiratory and intrathoracic @en" .
+
+:CCS-200
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(200) Other skin disorders @en" .
+
+:CCS-201
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(201) Infective arthritis and osteomyelitis (except that caused by tuberculosis or sexually transmitted disease) @en" .
+
+:CCS-202
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(202) Rheumatoid arthritis and related disease @en" .
+
+:CCS-203
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(203) Osteoarthritis @en" .
+
+:CCS-204
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(204) Other non-traumatic joint disorders @en" .
+
+:CCS-205
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(205) Spondylosis; intervertebral disc disorders; other back problems @en" .
+
+:CCS-206
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(206) Osteoporosis @en" .
+
+:CCS-207
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(207) Pathological fracture @en" .
+
+:CCS-208
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(208) Acquired foot deformities @en" .
+
+:CCS-209
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(209) Other acquired deformities @en" .
+
+:CCS-21
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(21) Cancer of bone and connective tissue @en" .
+
+:CCS-210
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(210) Systemic lupus erythematosus and connective tissue disorders @en" .
+
+:CCS-211
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(211) Other connective tissue disease @en" .
+
+:CCS-212
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(212) Other bone disease and musculoskeletal deformities @en" .
+
+:CCS-213
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(213) Cardiac and circulatory congenital anomalies @en" .
+
+:CCS-214
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(214) Digestive congenital anomalies @en" .
+
+:CCS-215
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(215) Genitourinary congenital anomalies @en" .
+
+:CCS-216
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(216) Nervous system congenital anomalies @en" .
+
+:CCS-217
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(217) Other congenital anomalies @en" .
+
+:CCS-218
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(218) Liveborn @en" .
+
+:CCS-219
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(219) Short gestation; low birth weight; and fetal growth retardation @en" .
+
+:CCS-22
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(22) Melanomas of skin @en" .
+
+:CCS-220
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(220) Intrauterine hypoxia and birth asphyxia @en" .
+
+:CCS-221
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(221) Respiratory distress syndrome @en" .
+
+:CCS-222
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(222) Hemolytic jaundice and perinatal jaundice @en" .
+
+:CCS-223
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(223) Birth trauma @en" .
+
+:CCS-224
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(224) Other perinatal conditions @en" .
+
+:CCS-225
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(225) Joint disorders and dislocations; trauma-related @en" .
+
+:CCS-226
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(226) Fracture of neck of femur (hip) @en" .
+
+:CCS-227
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(227) Spinal cord injury @en" .
+
+:CCS-228
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(228) Skull and face fractures @en" .
+
+:CCS-229
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(229) Fracture of upper limb @en" .
+
+:CCS-23
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(23) Other non-epithelial cancer of skin @en" .
+
+:CCS-230
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(230) Fracture of lower limb @en" .
+
+:CCS-231
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(231) Other fractures @en" .
+
+:CCS-232
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(232) Sprains and strains @en" .
+
+:CCS-233
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(233) Intracranial injury @en" .
+
+:CCS-234
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(234) Crushing injury or internal injury @en" .
+
+:CCS-235
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(235) Open wounds of head; neck; and trunk @en" .
+
+:CCS-236
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(236) Open wounds of extremities @en" .
+
+:CCS-237
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(237) Complication of device; implant or graft @en" .
+
+:CCS-238
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(238) Complications of surgical procedures or medical care @en" .
+
+:CCS-239
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(239) Superficial injury; contusion @en" .
+
+:CCS-24
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(24) Cancer of breast @en" .
+
+:CCS-240
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(240) Burns @en" .
+
+:CCS-241
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(241) Poisoning by psychotropic agents @en" .
+
+:CCS-242
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(242) Poisoning by other medications and drugs @en" .
+
+:CCS-243
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(243) Poisoning by nonmedicinal substances @en" .
+
+:CCS-244
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(244) Other injuries and conditions due to external causes @en" .
+
+:CCS-245
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(245) Syncope @en" .
+
+:CCS-246
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(246) Fever of unknown origin @en" .
+
+:CCS-247
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(247) Lymphadenitis @en" .
+
+:CCS-248
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(248) Gangrene @en" .
+
+:CCS-249
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(249) Shock @en" .
+
+:CCS-25
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(25) Cancer of uterus @en" .
+
+:CCS-250
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(250) Nausea and vomiting @en" .
+
+:CCS-251
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(251) Abdominal pain @en" .
+
+:CCS-252
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(252) Malaise and fatigue @en" .
+
+:CCS-253
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(253) Allergic reactions @en" .
+
+:CCS-254
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(254) Rehabilitation care; fitting of prostheses; and adjustment of devices @en" .
+
+:CCS-255
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(255) Administrative/social admission @en" .
+
+:CCS-256
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(256) Medical examination/evaluation @en" .
+
+:CCS-257
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(257) Other aftercare @en" .
+
+:CCS-258
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(258) Other screening for suspected conditions (not mental disorders or infectious disease) @en" .
+
+:CCS-259
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(259) Residual codes; unclassified @en" .
+
+:CCS-26
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(26) Cancer of cervix @en" .
+
+:CCS-260
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(260) E Codes: All (external causes of injury and poisoning) @en" .
+
+:CCS-2601
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2601) E Codes: Cut/pierceb @en" .
+
+:CCS-2602
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2602) E Codes: Drowning/submersion @en" .
+
+:CCS-2603
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2603) E Codes: Fall @en" .
+
+:CCS-2604
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2604) E Codes: Fire/burn @en" .
+
+:CCS-2605
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2605) E Codes: Firearm @en" .
+
+:CCS-2606
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2606) E Codes: Machinery @en" .
+
+:CCS-2607
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2607) E Codes: Motor vehicle traffic (MVT) @en" .
+
+:CCS-2608
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2608) E Codes: Pedal cyclist; not MVT @en" .
+
+:CCS-2609
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2609) E Codes: Pedestrian; not MVT @en" .
+
+:CCS-2610
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2610) E Codes: Transport; not MVT @en" .
+
+:CCS-2611
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2611) E Codes: Natural/environment @en" .
+
+:CCS-2612
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2612) E Codes: Overexertion @en" .
+
+:CCS-2613
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2613) E Codes: Poisoning @en" .
+
+:CCS-2614
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2614) E Codes: Struck by; against @en" .
+
+:CCS-2615
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2615) E Codes: Suffocation @en" .
+
+:CCS-2616
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2616) E Codes: Adverse effects of medical care @en" .
+
+:CCS-2617
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2617) E Codes: Adverse effects of medical drugs @en" .
+
+:CCS-2618
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2618) E Codes: Other specified and classifiable @en" .
+
+:CCS-2619
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2619) E Codes: Other specified; NEC @en" .
+
+:CCS-2620
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2620) E Codes: Unspecified @en" .
+
+:CCS-2621
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(2621) E Codes: Place of occurrence @en" .
+
+:CCS-27
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(27) Cancer of ovary @en" .
+
+:CCS-28
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(28) Cancer of other female genital organs @en" .
+
+:CCS-29
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(29) Cancer of prostate @en" .
+
+:CCS-3
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(3) Bacterial infection; unspecified site @en" .
+
+:CCS-30
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(30) Cancer of testis @en" .
+
+:CCS-31
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(31) Cancer of other male genital organs @en" .
+
+:CCS-32
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(32) Cancer of bladder @en" .
+
+:CCS-33
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(33) Cancer of kidney and renal pelvis @en" .
+
+:CCS-34
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(34) Cancer of other urinary organs @en" .
+
+:CCS-35
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(35) Cancer of brain and nervous system @en" .
+
+:CCS-36
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(36) Cancer of thyroid @en" .
+
+:CCS-37
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(37) Hodgkin`s disease @en" .
+
+:CCS-38
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(38) Non-Hodgkin`s lymphoma @en" .
+
+:CCS-39
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(39) Leukemias @en" .
+
+:CCS-4
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(4) Mycoses @en" .
+
+:CCS-40
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(40) Multiple myeloma @en" .
+
+:CCS-41
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(41) Cancer; other and unspecified primary @en" .
+
+:CCS-42
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(42) Secondary malignancies @en" .
+
+:CCS-43
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(43) Malignant neoplasm without specification of site @en" .
+
+:CCS-44
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(44) Neoplasms of unspecified nature or uncertain behavior @en" .
+
+:CCS-45
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(45) Maintenance chemotherapy; radiotherapy @en" .
+
+:CCS-46
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(46) Benign neoplasm of uterus @en" .
+
+:CCS-47
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(47) Other and unspecified benign neoplasm @en" .
+
+:CCS-48
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(48) Thyroid disorders @en" .
+
+:CCS-49
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(49) Diabetes mellitus without complication @en" .
+
+:CCS-5
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(5) HIV infection @en" .
+
+:CCS-50
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(50) Diabetes mellitus with complications @en" .
+
+:CCS-51
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(51) Other endocrine disorders @en" .
+
+:CCS-52
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(52) Nutritional deficiencies @en" .
+
+:CCS-53
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(53) Disorders of lipid metabolism @en" .
+
+:CCS-54
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(54) Gout and other crystal arthropathies @en" .
+
+:CCS-55
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(55) Fluid and electrolyte disorders @en" .
+
+:CCS-56
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(56) Cystic fibrosis @en" .
+
+:CCS-57
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(57) Immunity disorders @en" .
+
+:CCS-58
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(58) Other nutritional; endocrine; and metabolic disorders @en" .
+
+:CCS-59
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(59) Deficiency and other anemia @en" .
+
+:CCS-6
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(6) Hepatitis @en" .
+
+:CCS-60
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(60) Acute posthemorrhagic anemia @en" .
+
+:CCS-61
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(61) Sickle cell anemia @en" .
+
+:CCS-62
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(62) Coagulation and hemorrhagic disorders @en" .
+
+:CCS-63
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(63) Diseases of white blood cells @en" .
+
+:CCS-64
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(64) Other hematologic conditions @en" .
+
+:CCS-650
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(650) Adjustment disorders @en" .
+
+:CCS-651
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(651) Anxiety disorders @en" .
+
+:CCS-652
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(652) Attention-deficit, conduct, and disruptive behavior disorders @en" .
+
+:CCS-653
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(653) Delirium, dementia, and amnestic and other cognitive disorders @en" .
+
+:CCS-654
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(654) Developmental disorders @en" .
+
+:CCS-655
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(655) Disorders usually diagnosed in infancy, childhood, or adolescence @en" .
+
+:CCS-656
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(656) Impulse control disorders, NEC @en" .
+
+:CCS-657
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(657) Mood disorders @en" .
+
+:CCS-658
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(658) Personality disorders @en" .
+
+:CCS-659
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(659) Schizophrenia and other psychotic disorders @en" .
+
+:CCS-660
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(660) Alcohol-related disorders @en" .
+
+:CCS-661
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(661) Substance-related disorders @en" .
+
+:CCS-662
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(662) Suicide and intentional self-inflicted injury @en" .
+
+:CCS-663
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(663) Screening and history of mental health and substance abuse codes @en" .
+
+:CCS-670
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(670) Miscellaneous mental health disorders @en" .
+
+:CCS-7
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(7) Viral infection @en" .
+
+:CCS-76
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(76) Meningitis (except that caused by tuberculosis or sexually transmitted disease) @en" .
+
+:CCS-77
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(77) Encephalitis (except that caused by tuberculosis or sexually transmitted disease) @en" .
+
+:CCS-78
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(78) Other CNS infection and poliomyelitis @en" .
+
+:CCS-79
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(79) Parkinson`s disease @en" .
+
+:CCS-8
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(8) Other infections; including parasitic @en" .
+
+:CCS-80
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(80) Multiple sclerosis @en" .
+
+:CCS-81
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(81) Other hereditary and degenerative nervous system conditions @en" .
+
+:CCS-82
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(82) Paralysis @en" .
+
+:CCS-83
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(83) Epilepsy; convulsions @en" .
+
+:CCS-84
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(84) Headache; including migraine @en" .
+
+:CCS-85
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(85) Coma; stupor; and brain damage @en" .
+
+:CCS-86
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(86) Cataract @en" .
+
+:CCS-87
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(87) Retinal detachments; defects; vascular occlusion; and retinopathy @en" .
+
+:CCS-88
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(88) Glaucoma @en" .
+
+:CCS-89
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(89) Blindness and vision defects @en" .
+
+:CCS-9
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(9) Sexually transmitted infections (not HIV or hepatitis) @en" .
+
+:CCS-90
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(90) Inflammation; infection of eye (except that caused by tuberculosis or sexually transmitteddisease) @en" .
+
+:CCS-91
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(91) Other eye disorders @en" .
+
+:CCS-92
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(92) Otitis media and related conditions @en" .
+
+:CCS-93
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(93) Conditions associated with dizziness or vertigo @en" .
+
+:CCS-94
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(94) Other ear and sense organ disorders @en" .
+
+:CCS-95
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(95) Other nervous system disorders @en" .
+
+:CCS-96
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(96) Heart valve disorders @en" .
+
+:CCS-97
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(97) Peri-; endo-; and myocarditis; cardiomyopathy (except that caused by tuberculosis or sexually transmitted disease) @en" .
+
+:CCS-98
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(98) Essential hypertension @en" .
+
+:CCS-99
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(99) Hypertension with complications and secondary hypertension @en" .
+
+:CCS-a
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(.A) Invalid diagnosis @en" .
+
+:CCS-z
+      rdf:type ccs-m:CCSd ;
+      rdfs:label "(.Z) Overall @en" .
