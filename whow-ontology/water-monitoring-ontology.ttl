@@ -36,15 +36,15 @@ hydro:WaterBody
       skos:note "TODO: valutare di rinominare in water-observation-ontology"^^xsd:string ;
       skos:prefLabel "Water Monitoring Ontology"@en .
 
-:ChemicalAgent
-      rdf:type owl:Class ;
-      rdfs:label "Chemical Agent"@en ;
-      rdfs:subClassOf :ObservablePropertyObject .
-
 :ChemicalStateClass
       rdf:type owl:Class ;
       rdfs:label "Chemical state class "@en ;
       rdfs:subClassOf :WaterQualityClass .
+
+:ChemicalSubstance
+      rdf:type owl:Class ;
+      rdfs:label "Chemical Agent"@en ;
+      rdfs:subClassOf :ObservablePropertyObject .
 
 :IntervalOfValues
       rdf:type owl:Class ;
@@ -151,7 +151,7 @@ hydro:WaterBody
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterChemicalStateObservation ;
       rdfs:label "cause of bad chemical state "@en ;
-      rdfs:range :ChemicalAgent .
+      rdfs:range :ChemicalSubstance .
 
 :depthDescription
       rdf:type owl:DatatypeProperty ;

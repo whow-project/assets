@@ -510,11 +510,11 @@ w-ind:LTLecoIndicator12345
               :value-47-percent .
 
 :oxygen
-      rdf:type w-mon:ChemicalAgent ;
+      rdf:type w-mon:ChemicalSubstance ;
       rdfs:label "oxygen "@en .
 
 :phosphorus
-      rdf:type w-mon:ChemicalAgent ;
+      rdf:type w-mon:ChemicalSubstance ;
       rdfs:label "Phosphorus (P) "@en .
 
 :ptot-24
