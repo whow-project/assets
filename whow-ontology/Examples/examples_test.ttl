@@ -501,10 +501,10 @@ w-ind:LTLecoIndicator12345
       rdf:type w-ind:WaterIndicatorCalculation ;
       rdfs:label "Oss. Ipolimnico, 47 "@en ;
       core:value "47"^^xsd:string ;
-      w-mon:hasObservablePropertyObject
-              :oxygen ;
-      w-mon:hasObservedProperty
+      w-mon:hasWaterObservedProperty
               :saturation ;
+      w-mon:isAssociatedWith
+              :oxygen ;
       ind:basedOnMetric :weighted-average ;
       ind:hasIndicatorValue
               :value-47-percent .
@@ -521,16 +521,16 @@ w-ind:LTLecoIndicator12345
       rdf:type w-ind:WaterIndicatorCalculation ;
       rdfs:label "P TOT, 24 "@en ;
       core:value "24"^^xsd:string ;
-      w-mon:hasObservablePropertyObject
-              :phosphorus ;
-      w-mon:hasObservedProperty
+      w-mon:hasWaterObservedProperty
               :concentration ;
+      w-mon:isAssociatedWith
+              :phosphorus ;
       ind:basedOnMetric :weighted-average ;
       ind:hasIndicatorValue
               :value-24-microgramsonliter-P .
 
 :saturation
-      rdf:type w-mon:ObservableProperty ;
+      rdf:type w-mon:WaterObservableProperty ;
       rdfs:label "saturation "@en .
 
 :sublacual_Oglio
@@ -540,14 +540,14 @@ w-ind:LTLecoIndicator12345
               :OglioWaterBasin .
 
 :transparency
-      rdf:type w-mon:ObservableProperty ;
+      rdf:type w-mon:WaterObservableProperty ;
       rdfs:label "Transparency "@en .
 
 :transparency-3
       rdf:type w-ind:WaterIndicatorCalculation ;
       rdfs:label "Transparency, 3 "@en ;
       core:value "3"^^xsd:string ;
-      w-mon:hasObservedProperty
+      w-mon:hasWaterObservedProperty
               :transparency ;
       ind:basedOnMetric :annual_average ;
       ind:hasIndicatorValue
