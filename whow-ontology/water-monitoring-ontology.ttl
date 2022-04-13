@@ -98,6 +98,11 @@ hydro:WaterBody
       rdfs:label "Water Chemical Observation"@en ;
       rdfs:subClassOf :DrinkingWaterObservation .
 
+:WaterEmergingParameters
+      rdf:type owl:Class ;
+      rdfs:label "emerging parameters "@en ;
+      rdfs:subClassOf :DrinkingWaterObservation .
+
 :WaterFeature
       rdf:type owl:Class ;
       rdfs:label "Water feature "@en ;
