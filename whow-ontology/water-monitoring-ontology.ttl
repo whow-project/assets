@@ -22,6 +22,9 @@
       rdfs:domain :WaterObservation ;
       rdfs:range <http://www.w3.org/ns/sosa/ObservableProperty> .
 
+<http://xmlns.com/foaf/0.1/fundedBy>
+      rdfs:domain :WaterPhysicoChemicalParameterObservation .
+
 <https://dati.isprambiente.it/ontology/core/UnitOfMeasure>
       skos:note "TODO: trovare UM esterne a cui puntare"^^xsd:string .
 
@@ -36,6 +39,12 @@ hydro:WaterBody
       skos:note "TODO: valutare di rinominare in water-observation-ontology"^^xsd:string ;
       skos:prefLabel "Water Monitoring Ontology"@en .
 
+:BiologicalQualityElementsObservation
+      rdf:type owl:Class ;
+      rdfs:label "Biological quality elements Parameter Observation"@en ;
+      rdfs:subClassOf :SurfaceOrGroundwaterObservation ;
+      skos:definition "Observation of biological quality elements according to the European Environmental Agency (EEA): phytoplankton, macrophytes, phytobenthos, benthic invertebrate fauna and fish. The most frequently classified biological  quality elements are, for rivers, benthic invertebrates, phytobenthos/other aquatic flora/macrophytes and fish; for lakes, phytoplankton; and for transitional and coastal waters, phytoplankton and benthic invertebrates. (2018)"@en .
+
 :ChemicalStateClass
       rdf:type owl:Class ;
       rdfs:label "Chemical state class "@en ;
@@ -44,7 +53,12 @@ hydro:WaterBody
 :ChemicalSubstance
       rdf:type owl:Class ;
       rdfs:label "Chemical Agent"@en ;
-      rdfs:subClassOf :ObservablePropertyObject .
+      rdfs:subClassOf :WaterObservablePropertyObject .
+
+:DrinkingWaterObservation
+      rdf:type owl:Class ;
+      rdfs:label "Drinking Water Observation "@en ;
+      rdfs:subClassOf :WaterObservation .
 
 :IntervalOfValues
       rdf:type owl:Class ;
@@ -52,32 +66,25 @@ hydro:WaterBody
       rdfs:subClassOf :WHOWConcept ;
       skos:note "TODO: da capire se servirà e come per eventuali Observsation con valori range anzichè puntuali."^^xsd:string .
 
-:LTLECOObservation
-      rdf:type owl:Class ;
-      rdfs:label "LTLECO Observation "@en ;
-      rdfs:subClassOf :WaterQualityParameterObservation ;
-      skos:prefLabel "LTLECO Observation "@en .
-
 :Metadata
       rdf:type owl:Class ;
       rdfs:label "Metadata "@en ;
       rdfs:subClassOf :WHOWConcept .
 
-:ObservableProperty
+:MicroBiologicalAgent
       rdf:type owl:Class ;
-      rdfs:label "Observable Property"^^xsd:string ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Parameter> , :WHOWConcept ;
-      owl:equivalentClass <http://www.w3.org/ns/sosa/ObservableProperty> .
-
-:ObservablePropertyObject
-      rdf:type owl:Class ;
-      rdfs:label "Observable Property Object"@en ;
-      rdfs:subClassOf skos:Concept , :WHOWConcept .
+      rdfs:label "Microbiological agent "@en ;
+      rdfs:subClassOf :WaterObservablePropertyObject .
 
 :RadioactivtyObject
       rdf:type owl:Class ;
       rdfs:label "Radioactivity Object"@en ;
-      rdfs:subClassOf :ObservablePropertyObject .
+      rdfs:subClassOf :WaterObservablePropertyObject .
+
+:SurfaceOrGroundwaterObservation
+      rdf:type owl:Class ;
+      rdfs:label "Surface or Groundwater observation"@en ;
+      rdfs:subClassOf :WaterObservation .
 
 :WHOWConcept
       rdf:type owl:Class ;
@@ -86,25 +93,10 @@ hydro:WaterBody
       rdfs:subClassOf owl:Thing ;
       skos:prefLabel "WHOW Concept "@en .
 
-:WaterBioindicatorObservation
-      rdf:type owl:Class ;
-      rdfs:label "Water Bioindicator Observation"@en ;
-      rdfs:subClassOf :WaterObservation .
-
-:WaterBioticIndexObservation
-      rdf:type owl:Class ;
-      rdfs:label "Water Biotic Index Observation"@en ;
-      rdfs:subClassOf :WaterObservation .
-
-:WaterChemicalObservation
+:WaterChemicalParameterObservation
       rdf:type owl:Class ;
       rdfs:label "Water Chemical Observation"@en ;
-      rdfs:subClassOf :WaterObservation .
-
-:WaterChemicalStateObservation
-      rdf:type owl:Class ;
-      rdfs:label "Water chemical state observation "@en ;
-      rdfs:subClassOf :WaterChemicalObservation .
+      rdfs:subClassOf :DrinkingWaterObservation .
 
 :WaterFeature
       rdf:type owl:Class ;
@@ -116,42 +108,64 @@ hydro:WaterBody
       rdfs:label "Water feature type "@en ;
       rdfs:subClassOf skos:Concept , :WHOWConcept .
 
-:WaterMonitoringStation
+:WaterHydromorphologicalParameterObservation
       rdf:type owl:Class ;
-      rdfs:label "Water Monitoring Station"@en ;
-      rdfs:subClassOf inspire-mf:Platform , :WHOWConcept .
+      rdfs:label "Water Hydromorphological Parameter Observation "@en ;
+      rdfs:subClassOf :SurfaceOrGroundwaterObservation ;
+      skos:definition "Observation of hydromorphological elements according to the European Environmental Agency (EEA): hydrology, morphology, barriers. (2018)"@en .
+
+:WaterIndicatorParameterObservation
+      rdf:type owl:Class ;
+      rdfs:label "Water Bioindicator Observation"@en ;
+      rdfs:subClassOf :DrinkingWaterObservation .
+
+:WaterMicrobiologicalParameterObservation
+      rdf:type owl:Class ;
+      rdfs:label "Water Biotic Index Observation"@en ;
+      rdfs:subClassOf :DrinkingWaterObservation .
+
+:WaterObservableProperty
+      rdf:type owl:Class ;
+      rdfs:label "Water observable Property"^^xsd:string ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Parameter> , :WHOWConcept ;
+      owl:equivalentClass <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+:WaterObservablePropertyObject
+      rdf:type owl:Class ;
+      rdfs:label "Water observable Property Object"@en ;
+      rdfs:subClassOf skos:Concept , :WHOWConcept .
 
 :WaterObservation
       rdf:type owl:Class ;
       rdfs:label "Water Observation "@en ;
       rdfs:subClassOf inspire-mf:Observation , :WHOWConcept .
 
+:WaterPhysicoChemicalParameterObservation
+      rdf:type owl:Class ;
+      rdfs:label "Water Physico-Chemical Parameter Observation "@en ;
+      rdfs:subClassOf :SurfaceOrGroundwaterObservation ;
+      skos:definition "Observation of physico-chemical elements according to the European Environmental Agency (EEA):  nutrients, organic pollution, acidification. (2018)"@en .
+
 :WaterQualityClass
       rdf:type owl:Class ;
       rdfs:label "Water Quality Class "@en ;
       rdfs:subClassOf :WHOWConcept .
 
-:WaterQualityParameterObservation
-      rdf:type owl:Class ;
-      rdfs:label "Water Quality Parameter Observation "@en ;
-      rdfs:subClassOf :WaterObservation .
-
 :WaterRadioactivityObservation
       rdf:type owl:Class ;
       rdfs:label "Water Radioactivity Observation"@en ;
-      rdfs:subClassOf :WaterObservation .
+      rdfs:subClassOf :DrinkingWaterObservation .
 
 :WaterSample
       rdf:type owl:Class ;
       rdfs:label "Water Sample"@en ;
-      rdfs:subClassOf :WHOWConcept ;
+      rdfs:subClassOf :WaterFeature ;
       skos:prefLabel "Water Sample"@en .
 
-:causeOfBadChemicalState
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterChemicalStateObservation ;
-      rdfs:label "cause of bad chemical state "@en ;
-      rdfs:range :ChemicalSubstance .
+:WaterSampler
+      rdf:type owl:Class ;
+      rdfs:label "WaterSampler"@en ;
+      rdfs:subClassOf inspire-mf:Platform , :WHOWConcept .
 
 :depthDescription
       rdf:type owl:DatatypeProperty ;
@@ -160,28 +174,29 @@ hydro:WaterBody
       rdfs:label "depth description"@en ;
       rdfs:range xsd:string .
 
-:hasChemicalStateClass
+:hasChemicalSubstance
       rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterChemicalStateObservation ;
-      rdfs:label "has chemical state class "@en ;
-      rdfs:range :ChemicalStateClass ;
-      rdfs:subPropertyOf :hasWaterQualityClass .
+      rdfs:domain :WaterChemicalParameterObservation , :WaterPhysicoChemicalParameterObservation ;
+      rdfs:label "has chemical substance "@en ;
+      rdfs:range :ChemicalSubstance ;
+      rdfs:subPropertyOf :isAssociatedWith .
 
 :hasMaxValue
       rdf:type owl:DatatypeProperty ;
       rdfs:domain :IntervalOfValues ;
       rdfs:label "has max value"@en .
 
+:hasMicrobiologicalAgent
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :BiologicalQualityElementsObservation , :WaterMicrobiologicalParameterObservation ;
+      rdfs:label "has microbiological agent "@en ;
+      rdfs:range :MicroBiologicalAgent ;
+      rdfs:subPropertyOf :isAssociatedWith .
+
 :hasMinValue
       rdf:type owl:DatatypeProperty ;
       rdfs:domain :IntervalOfValues ;
       rdfs:label "has min value"@en .
-
-:hasObservablePropertyObject
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain inspire-mf:Observation ;
-      rdfs:label "has observable property object"@en ;
-      rdfs:range :ObservablePropertyObject .
 
 :hasObservationSample
       rdf:type owl:ObjectProperty ;
@@ -189,13 +204,10 @@ hydro:WaterBody
       rdfs:label "has observation sample"@en ;
       rdfs:range :WaterSample .
 
-:hasObservedProperty
+:hasRadioactivityObject
       rdf:type owl:ObjectProperty ;
-      rdfs:domain :WaterObservation ;
-      rdfs:label "Observed property"^^xsd:string ;
-      rdfs:range :ObservableProperty ;
-      owl:equivalentProperty
-              <http://www.w3.org/ns/sosa/observedProperty> .
+      rdfs:domain :WaterRadioactivityObservation ;
+      rdfs:label "has radioactivity object "@en .
 
 :hasWaterFeature
       rdf:type owl:ObjectProperty ;
@@ -211,11 +223,19 @@ hydro:WaterBody
       rdfs:range :WaterFeatureType ;
       skos:prefLabel "has water feature type "@en .
 
-:hasWaterQualityClass
+:hasWaterObservedProperty
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterObservation ;
-      rdfs:label "has water quality class "@en ;
-      rdfs:range :WaterQualityClass .
+      rdfs:label "Has water observed property"^^xsd:string ;
+      rdfs:range :WaterObservableProperty ;
+      owl:equivalentProperty
+              <http://www.w3.org/ns/sosa/observedProperty> .
+
+:isAssociatedWith
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterObservation ;
+      rdfs:label "is associated with"@en ;
+      rdfs:range :WaterObservablePropertyObject .
 
 :isMaxValueIncluded
       rdf:type owl:DatatypeProperty ;
@@ -227,6 +247,12 @@ hydro:WaterBody
       rdfs:domain :IntervalOfValues ;
       rdfs:label "is min value included"@en ;
       rdfs:range xsd:boolean .
+
+:isObtainedBy
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterSample ;
+      rdfs:label "is obtained by"@en ;
+      rdfs:range :WaterSampler .
 
 :isSampleOf
       rdf:type owl:ObjectProperty ;
@@ -240,19 +266,18 @@ hydro:WaterBody
       rdfs:label "metadata "@en ;
       skos:prefLabel "metadata "@en .
 
+:ofPropertyObject
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterObservableProperty ;
+      rdfs:label "of property object "@en ;
+      rdfs:range :WaterObservablePropertyObject .
+
 :sampleDepth
       rdf:type owl:DatatypeProperty ;
       rdfs:comment "Es. \"5,7 m\" o \"0-7 m\" ecc..."@it ;
       rdfs:domain :WaterSample ;
       rdfs:label "sample depth"@en ;
       rdfs:range xsd:string .
-
-:takenFromStation
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain inspire-mf:Observation ;
-      rdfs:label "taken from station "@en ;
-      rdfs:range :WaterMonitoringStation ;
-      skos:prefLabel "taken from station "@en .
 
 :valueSpecification
       rdf:type owl:DatatypeProperty ;
