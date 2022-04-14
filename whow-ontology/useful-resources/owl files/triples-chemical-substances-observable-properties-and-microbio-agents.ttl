@@ -1,0 +1,1068 @@
+@prefix : <https://w3id.org/environmental-data/onto/water-monitoring-ontology> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/10050>
+      rdf:type skos:Concept , :WaterObservableProperty ;
+      rdfs:label "Code for settling solids."@en , "Codice per solidi sedimentabili."@it .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/10062>
+      rdf:type skos:Concept , :WaterObservableProperty ;
+      rdfs:label "Codice per la proprietà Trasparenza (disco di Secchi)."@it , "Water transparency"@en .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/20001>
+      rdf:type skos:Concept , :WaterObservableProperty ;
+      rdfs:label "Code for water hardness property."@en , "Codice per durezza totale dell'acqua."@it .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/LT-00-0>
+      rdf:type skos:Concept , :WaterObservableProperty ;
+      rdfs:label "Code for hydrometric height property."@en , "Codice per altezza idrometrica."@it .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/M-PRT-0>
+      rdf:type skos:Concept , :WaterObservableProperty ;
+      rdfs:label "Code for water flow."@en , "Codice per la proprietà Portata."@it .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/479-61-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 479-61-8 for chemical substance: Magnesium, [(2E,7R,11R)-3,7,11,15-tetramethyl-2-hexadecenyl (3S,4S,21R)-9-ethenyl-14-ethyl-21-(methoxycarbonyl)-4,8,13,18-tetramethyl-20-oxo-3-phorbinepropanoato(2-)-.kappa.N23,.kappa.N24,.kappa.N25,.kappa.N26]-, (SP-4-2)-"@en,"Codice CAS per la sostanza chimica Clorofilla \"a\""@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "479-61-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7440-38-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7440-38-2 for chemical substance: Arsenic"@en,"Codice CAS per la sostanza chimica Arsenico"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7440-38-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7440-43-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7440-43-9 for chemical substance: Cadmium"@en,"Codice CAS per la sostanza chimica Cadmio"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7440-43-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7440-70-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7440-70-2 for chemical substance: Calcium"@en,"Codice CAS per la sostanza chimica Calcio"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7440-70-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7440-47-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7440-47-3 for chemical substance: Chromium"@en,"Codice CAS per la sostanza chimica Cromo totale"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7440-47-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7723-14-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7723-14-0 for chemical substance: Phosphorus"@en,"Codice CAS per la sostanza chimica Fosforo Totale"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7723-14-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7439-95-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7439-95-4 for chemical substance: Magnesium"@en,"Codice CAS per la sostanza chimica Magnesio"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7439-95-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7439-97-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7439-97-6 for chemical substance: Mercury"@en,"Codice CAS per la sostanza chimica Mercurio"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7439-97-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7440-02-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7440-02-0 for chemical substance: Nickel"@en,"Codice CAS per la sostanza chimica Nichel"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7440-02-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/14265-44-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 14265-44-2 for chemical substance: Phosphate"@en,"Codice CAS per la sostanza chimica Ortofosfato"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "14265-44-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7782-44-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7782-44-7 for chemical substance: Oxygen"@en,"Codice CAS per la sostanza chimica Ossigeno disciolto"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7782-44-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7439-92-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7439-92-1 for chemical substance: Lead"@en,"Codice CAS per la sostanza chimica Piombo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7439-92-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7440-09-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7440-09-7 for chemical substance: Potassium"@en,"Codice CAS per la sostanza chimica Potassio"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7440-09-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7440-50-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7440-50-8 for chemical substance: Copper"@en,"Codice CAS per la sostanza chimica Rame"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7440-50-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1344-09-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1344-09-8 for chemical substance: Silicic acid, sodium salt"@en,"Codice CAS per la sostanza chimica Silicati reattivi"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1344-09-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7440-23-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7440-23-5 for chemical substance: Sodium"@en,"Codice CAS per la sostanza chimica Sodio"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7440-23-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7440-66-6> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7440-66-6";
+rdfs:label "CAS code 7440-66-6 for chemical substance: Zinc"@en;
+a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "Codice CAS per la sostanza chimica Zinco"@it .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/50-29-3> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "50-29-3";
+rdfs:label "Codice CAS per la sostanza chimica p,p'-DDT"@it;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 50-29-3 for chemical substance: Benzene, 1,1'-(2,2,2-trichloroethylidene)bis[4-chloro-"@en;
+a skos:Concept .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/50-32-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 50-32-8 for chemical substance: Benzo[a]pyrene"@en,"Codice CAS per la sostanza chimica Benzo (a) pirene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "50-32-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/51-28-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 51-28-5 for chemical substance: Phenol, 2,4-dinitro-"@en,"Codice CAS per la sostanza chimica 2,4-Dinitrofenolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "51-28-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/53-16-7> a skos:Concept;
+rdfs:label "CAS code 53-16-7 for chemical substance: Estra-1,3,5(10)-trien-17-one, 3-hydroxy-"@en;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "Codice CAS per la sostanza chimica Estrone"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "53-16-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/53-70-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 53-70-3 for chemical substance: Dibenz[a,h]anthracene"@en,"Codice CAS per la sostanza chimica Dibenzo(a,h)antracene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "53-70-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/56-23-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 56-23-5 for chemical substance: Methane, tetrachloro-"@en,"Codice CAS per la sostanza chimica Tetracloruro di carbonio"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "56-23-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/56-55-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 56-55-3 for chemical substance: Benz[a]anthracene"@en,"Codice CAS per la sostanza chimica Benzo(a)antracene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "56-55-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/57-12-5> rdfs:label "CAS code 57-12-5 for chemical substance: Cyanide"@en;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "Codice CAS per la sostanza chimica Cianuri liberi"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "57-12-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/57-63-6> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 57-63-6 for chemical substance: 19-Norpregna-1,3,5(10)-trien-20-yne-3,17-diol, (17.alpha.)-"@en,"Codice CAS per la sostanza chimica 17-alfa-etinilestradiolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "57-63-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/58-89-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 58-89-9 for chemical substance: Cyclohexane, 1,2,3,4,5,6-hexachloro-, (1.alpha.,2.alpha.,3.beta.,4.alpha.,5.alpha.,6.beta.)-"@en,"Codice CAS per la sostanza chimica HCH gamma (lindano)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "58-89-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/59-50-7> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 59-50-7 for chemical substance: Phenol, 4-chloro-3-methyl-"@en,"Codice CAS per la sostanza chimica 4-Cloro-3-metilfenolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "59-50-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/60-51-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 60-51-5 for chemical substance: Phosphorodithioic acid, O,O-dimethyl S-[2-(methylamino)-2-oxoethyl] ester"@en,"Codice CAS per la sostanza chimica Dimetoato"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "60-51-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/62-53-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 62-53-3 for chemical substance: Benzenamine"@en,"Codice CAS per la sostanza chimica Anilina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "62-53-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/62-73-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 62-73-7 for chemical substance: Phosphoric acid, 2,2-dichloroethenyl dimethyl ester"@en,"Codice CAS per la sostanza chimica Diclorvos"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "62-73-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/67-66-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 67-66-3 for chemical substance: Methane, trichloro-"@en,"Codice CAS per la sostanza chimica Triclorometano"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "67-66-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/71-43-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 71-43-2 for chemical substance: Benzene"@en,"Codice CAS per la sostanza chimica Benzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "71-43-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/71-55-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 71-55-6 for chemical substance: Ethane, 1,1,1-trichloro-"@en,"Codice CAS per la sostanza chimica Tricloroetano 1,1,1"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "71-55-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/75-01-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 75-01-4 for chemical substance: Ethene, chloro-"@en,"Codice CAS per la sostanza chimica Cloruro di Vinile"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "75-01-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/75-09-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 75-09-2 for chemical substance: Methane, dichloro-"@en,"Codice CAS per la sostanza chimica Diclorometano"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "75-09-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/75-25-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 75-25-2 for chemical substance: Methane, tribromo-"@en,"Codice CAS per la sostanza chimica Tribromometano"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "75-25-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/75-27-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 75-27-4 for chemical substance: Methane, bromodichloro-"@en,"Codice CAS per la sostanza chimica Bromodiclorometano"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "75-27-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/75-34-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 75-34-3 for chemical substance: Ethane, 1,1-dichloro-"@en,"Codice CAS per la sostanza chimica Dicloroetano 1,1"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "75-34-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/75-35-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 75-35-4 for chemical substance: Ethene, 1,1-dichloro-"@en,"Codice CAS per la sostanza chimica 1,1-Dicloroetilene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "75-35-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/78-87-5> rdfs:label "Codice CAS per la sostanza chimica 1,2-dicloropropano"@it;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 78-87-5 for chemical substance: Propane, 1,2-dichloro-"@en;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "78-87-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/79-00-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 79-00-5 for chemical substance: Ethane, 1,1,2-trichloro-"@en,"Codice CAS per la sostanza chimica Tricloroetano 1,1,2"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "79-00-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/79-01-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 79-01-6 for chemical substance: Ethene, 1,1,2-trichloro-"@en,"Codice CAS per la sostanza chimica Tricloroetilene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "79-01-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/79-34-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 79-34-5 for chemical substance: Ethane, 1,1,2,2-tetrachloro-"@en,"Codice CAS per la sostanza chimica Tetracloroetano 1,1,2,2"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "79-34-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/80-05-7> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 80-05-7 for chemical substance: Phenol, 4,4'-(1-methylethylidene)bis-"@en,"Codice CAS per la sostanza chimica Bisfenolo A"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "80-05-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/134-32-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 134-32-7 for chemical substance: 1-Naphthalenamine"@en,"Codice CAS per la sostanza chimica 1-Naftilammina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "134-32-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/375-22-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 375-22-4 for chemical substance: Butanoic acid, 2,2,3,3,4,4,4-heptafluoro-"@en,"Codice CAS per la sostanza chimica PFBA (Perfluoro Butanoic Acid)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "375-22-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/375-73-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 375-73-5 for chemical substance: 1-Butanesulfonic acid, 1,1,2,2,3,3,4,4,4-nonafluoro-"@en,"Codice CAS per la sostanza chimica PFBS (Perfluoro Butane Sulfonate)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "375-73-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/375-85-9> rdfs:label "Codice CAS per la sostanza chimica PFHpA (Perfluoro Heptanoic Acid)"@it;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 375-85-9 for chemical substance: Heptanoic acid, 2,2,3,3,4,4,5,5,6,6,7,7,7-tridecafluoro-"@en;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "375-85-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/83-32-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 83-32-9 for chemical substance: Acenaphthylene, 1,2-dihydro-"@en,"Codice CAS per la sostanza chimica Acenaftene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "83-32-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/84-66-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 84-66-2 for chemical substance: 1,2-Benzenedicarboxylic acid, 1,2-diethyl ester"@en,"Codice CAS per la sostanza chimica Dietil-Ftalato (DEP)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "84-66-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/84-69-5> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "84-69-5";
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 84-69-5 for chemical substance: 1,2-Benzenedicarboxylic acid, 1,2-bis(2-methylpropyl) ester"@en,"Codice CAS per la sostanza chimica Bis(2-metilpropil)ftalato"@it .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/84-74-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 84-74-2 for chemical substance: 1,2-Benzenedicarboxylic acid, 1,2-dibutyl ester"@en,"Codice CAS per la sostanza chimica Dibutil-ftalato"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "84-74-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/85-01-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 85-01-8 for chemical substance: Phenanthrene"@en,"Codice CAS per la sostanza chimica Fenantrene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "85-01-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/85-68-7> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "85-68-7";
+rdfs:label "CAS code 85-68-7 for chemical substance: 1,2-Benzenedicarboxylic acid, 1-butyl 2-(phenylmethyl) ester"@en;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "Codice CAS per la sostanza chimica Benzil-butil-ftalato"@it .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/86-73-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 86-73-7 for chemical substance: 9H-Fluorene"@en,"Codice CAS per la sostanza chimica Fluorene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "86-73-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/87-61-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 87-61-6 for chemical substance: Benzene, 1,2,3-trichloro-"@en,"Codice CAS per la sostanza chimica 1,2,3-Triclorobenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "87-61-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/87-68-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 87-68-3 for chemical substance: 1,3-Butadiene, 1,1,2,3,4,4-hexachloro-"@en,"Codice CAS per la sostanza chimica Esaclorobutadiene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "87-68-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/87-86-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 87-86-5 for chemical substance: Phenol, 2,3,4,5,6-pentachloro-"@en,"Codice CAS per la sostanza chimica Pentaclorofenolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "87-86-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/88-06-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 88-06-2 for chemical substance: Phenol, 2,4,6-trichloro-"@en,"Codice CAS per la sostanza chimica 2,4,6-Triclorofenolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "88-06-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/88-73-3> a skos:Concept;
+rdfs:label "CAS code 88-73-3 for chemical substance: Benzene, 1-chloro-2-nitro-"@en;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "Codice CAS per la sostanza chimica 1-Cloro-2-nitrobenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "88-73-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/88-75-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 88-75-5 for chemical substance: Phenol, 2-nitro-"@en,"Codice CAS per la sostanza chimica 2-Nitrofenolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "88-75-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/89-63-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 89-63-4 for chemical substance: Benzenamine, 4-chloro-2-nitro-"@en,"Codice CAS per la sostanza chimica 4-cloro-2-nitroanilina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "89-63-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/91-20-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 91-20-3 for chemical substance: Naphthalene"@en,"Codice CAS per la sostanza chimica Naftalene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "91-20-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/93-65-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 93-65-2 for chemical substance: Propanoic acid, 2-(4-chloro-2-methylphenoxy)-"@en,"Codice CAS per la sostanza chimica Mecoprop"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "93-65-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/93-76-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 93-76-5 for chemical substance: Acetic acid, 2-(2,4,5-trichlorophenoxy)-"@en,"Codice CAS per la sostanza chimica 2,4,5-T"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "93-76-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/94-74-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 94-74-6 for chemical substance: Acetic acid, 2-(4-chloro-2-methylphenoxy)-"@en,"Codice CAS per la sostanza chimica (MCPA) Acido 2,4 meticlorofenossi acetico"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "94-74-6";
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 94-74-6 for chemical substance: Acetic acid, 2-(4-chloro-2-methylphenoxy)-"@en,"Codice CAS per la sostanza chimica (MCPA) Acido 2,4 meticlorofenossi acetico"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "94-74-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/94-75-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 94-75-7 for chemical substance: Acetic acid, 2-(2,4-dichlorophenoxy)-"@en,"Codice CAS per la sostanza chimica Acido 2,4 diclorofenossi acetico (2,4 D)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "94-75-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/95-47-6> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 95-47-6 for chemical substance: Benzene, 1,2-dimethyl-"@en,"Codice CAS per la sostanza chimica Xilene orto"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "95-47-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/95-49-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 95-49-8 for chemical substance: Benzene, 1-chloro-2-methyl-"@en,"Codice CAS per la sostanza chimica 2-Clorotoluene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "95-49-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/95-50-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 95-50-1 for chemical substance: Benzene, 1,2-dichloro-"@en,"Codice CAS per la sostanza chimica 1,2-Diclorobenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "95-50-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/95-51-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 95-51-2 for chemical substance: Benzenamine, 2-chloro-"@en,"Codice CAS per la sostanza chimica 2-cloroanilina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "95-51-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/95-53-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 95-53-4 for chemical substance: Benzenamine, 2-methyl-"@en,"Codice CAS per la sostanza chimica 2-Metilanilina [o-Toluidina]"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "95-53-4";
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 95-53-4 for chemical substance: Benzenamine, 2-methyl-"@en,"Codice CAS per la sostanza chimica 2-Metilanina [o-Toluidina]"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "95-53-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/95-57-8> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "95-57-8";
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 95-57-8 for chemical substance: Phenol, 2-chloro-"@en,"Codice CAS per la sostanza chimica 2-Clorofenolo"@it .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/95-69-2> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 95-69-2 for chemical substance: Benzenamine, 4-chloro-2-methyl-"@en,"Codice CAS per la sostanza chimica 4-cloro-2-metilanilina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "95-69-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/95-76-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 95-76-1 for chemical substance: Benzenamine, 3,4-dichloro-"@en,"Codice CAS per la sostanza chimica 3,4-dicloroanilina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "95-76-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/95-82-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 95-82-9 for chemical substance: Benzenamine, 2,5-dichloro-"@en,"Codice CAS per la sostanza chimica 2,5-dicloroanilina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "95-82-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/95-94-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 95-94-3 for chemical substance: Benzene, 1,2,4,5-tetrachloro-"@en,"Codice CAS per la sostanza chimica 1,2,4,5-Tetraclorobenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "95-94-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/96-18-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 96-18-4 for chemical substance: Propane, 1,2,3-trichloro-"@en,"Codice CAS per la sostanza chimica 1,2,3-Tricloropropano"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "96-18-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/98-82-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 98-82-8 for chemical substance: Benzene, (1-methylethyl)-"@en,"Codice CAS per la sostanza chimica Isopropilbenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "98-82-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/100-00-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 100-00-5 for chemical substance: Benzene, 1-chloro-4-nitro-"@en,"Codice CAS per la sostanza chimica 1-Cloro-4-nitrobenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "100-00-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/100-02-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 100-02-7 for chemical substance: Phenol, 4-nitro-"@en,"Codice CAS per la sostanza chimica 4-Nitrofenolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "100-02-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/100-41-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 100-41-4 for chemical substance: Benzene, ethyl-"@en,"Codice CAS per la sostanza chimica Etilbenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "100-41-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/100-42-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 100-42-5 for chemical substance: Benzene, ethenyl-"@en,"Codice CAS per la sostanza chimica Stirene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "100-42-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/100-61-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 100-61-8 for chemical substance: Benzenamine, N-methyl-"@en,"Codice CAS per la sostanza chimica N-metil Anilina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "100-61-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/103-69-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 103-69-5 for chemical substance: Benzenamine, N-ethyl-"@en,"Codice CAS per la sostanza chimica N-etil Anilina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "103-69-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/104-40-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 104-40-5 for chemical substance: Phenol, 4-nonyl-"@en,"Codice CAS per la sostanza chimica p-nonilfenolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "104-40-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/105-67-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 105-67-9 for chemical substance: Phenol, 2,4-dimethyl-"@en,"Codice CAS per la sostanza chimica Dimetilfenolo 2,4"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "105-67-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/106-42-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 106-42-3 for chemical substance: Benzene, 1,4-dimethyl-"@en,"Codice CAS per la sostanza chimica Xilene para"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "106-42-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/106-43-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 106-43-4 for chemical substance: Benzene, 1-chloro-4-methyl-"@en,"Codice CAS per la sostanza chimica 4-Clorotoluene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "106-43-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/106-46-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 106-46-7 for chemical substance: Benzene, 1,4-dichloro-"@en,"Codice CAS per la sostanza chimica 1,4-diclorobenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "106-46-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/106-47-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 106-47-8 for chemical substance: Benzenamine, 4-chloro-"@en,"Codice CAS per la sostanza chimica 4-cloroanilina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "106-47-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/106-48-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 106-48-9 for chemical substance: Phenol, 4-chloro-"@en,"Codice CAS per la sostanza chimica 4-Clorofenolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "106-48-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/106-49-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 106-49-0 for chemical substance: Benzenamine, 4-methyl-"@en,"Codice CAS per la sostanza chimica p-toluidina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "106-49-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/106-93-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 106-93-4 for chemical substance: Ethane, 1,2-dibromo-"@en,"Codice CAS per la sostanza chimica 1,2-dibromoetano"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "106-93-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/107-06-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 107-06-2 for chemical substance: Ethane, 1,2-dichloro-"@en,"Codice CAS per la sostanza chimica Dicloroetano 1,2"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "107-06-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/108-38-3> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 108-38-3 for chemical substance: Benzene, 1,3-dimethyl-"@en,"Codice CAS per la sostanza chimica Xilene meta"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "108-38-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/108-41-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 108-41-8 for chemical substance: Benzene, 1-chloro-3-methyl-"@en,"Codice CAS per la sostanza chimica 3-Clorotoluene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "108-41-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/108-42-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 108-42-9 for chemical substance: Benzenamine, 3-chloro-"@en,"Codice CAS per la sostanza chimica 3-cloroanilina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "108-42-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/108-43-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 108-43-0 for chemical substance: Phenol, 3-chloro-"@en,"Codice CAS per la sostanza chimica 3-Clorofenolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "108-43-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/108-44-1> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "108-44-1";
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 108-44-1 for chemical substance: Benzenamine, 3-methyl-"@en,"Codice CAS per la sostanza chimica m-Toluidina"@it .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/108-70-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 108-70-3 for chemical substance: Benzene, 1,3,5-trichloro-"@en,"Codice CAS per la sostanza chimica Triclorobenzene 1,3,5"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "108-70-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/108-88-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 108-88-3 for chemical substance: Benzene, methyl-"@en,"Codice CAS per la sostanza chimica Toluene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "108-88-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/108-90-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 108-90-7 for chemical substance: Benzene, chloro-"@en,"Codice CAS per la sostanza chimica Monoclorobenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "108-90-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/108-95-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 108-95-2 for chemical substance: Phenol"@en,"Codice CAS per la sostanza chimica Fenoli"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "108-95-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/115-96-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 115-96-8 for chemical substance: Ethanol, 2-chloro-, 1,1',1''-phosphate"@en,"Codice CAS per la sostanza chimica TCEP (tris-2cloroetil-fosfato)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "115-96-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/117-81-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 117-81-7 for chemical substance: 1,2-Benzenedicarboxylic acid, 1,2-bis(2-ethylhexyl) ester"@en,"Codice CAS per la sostanza chimica Di-2-etilesilftalato"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "117-81-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/118-74-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 118-74-1 for chemical substance: Benzene, 1,2,3,4,5,6-hexachloro-"@en,"Codice CAS per la sostanza chimica Esaclorobenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "118-74-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/120-12-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 120-12-7 for chemical substance: Anthracene"@en,"Codice CAS per la sostanza chimica Antracene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "120-12-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/120-82-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 120-82-1 for chemical substance: Benzene, 1,2,4-trichloro-"@en,"Codice CAS per la sostanza chimica 1,2,4-Triclorobenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "120-82-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/120-83-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 120-83-2 for chemical substance: Phenol, 2,4-dichloro-"@en,"Codice CAS per la sostanza chimica 2,4-Diclorofenolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "120-83-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/121-73-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 121-73-3 for chemical substance: Benzene, 1-chloro-3-nitro-"@en,"Codice CAS per la sostanza chimica 3 Cloronitrobenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "121-73-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/122-34-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 122-34-9 for chemical substance: 1,3,5-Triazine-2,4-diamine, 6-chloro-N2,N4-diethyl-"@en,"Codice CAS per la sostanza chimica Simazina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "122-34-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/122-39-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 122-39-4 for chemical substance: Benzenamine, N-phenyl-"@en,"Codice CAS per la sostanza chimica Difenilammina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "122-39-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/124-48-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 124-48-1 for chemical substance: Methane, dibromochloro-"@en,"Codice CAS per la sostanza chimica Dibromoclorometano"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "124-48-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/127-18-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 127-18-4 for chemical substance: Ethene, 1,1,2,2-tetrachloro-"@en,"Codice CAS per la sostanza chimica Tetracloroetilene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "127-18-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/129-00-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 129-00-0 for chemical substance: Pyrene"@en,"Codice CAS per la sostanza chimica Pirene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "129-00-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/131-11-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 131-11-3 for chemical substance: 1,2-Benzenedicarboxylic acid, 1,2-dimethyl ester"@en,"Codice CAS per la sostanza chimica Dimetil-ftalato (DMP)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "131-11-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/139-40-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 139-40-2 for chemical substance: 1,3,5-Triazine-2,4-diamine, 6-chloro-N2,N4-bis(1-methylethyl)-"@en,"Codice CAS per la sostanza chimica Propazina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "139-40-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/140-66-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 140-66-9 for chemical substance: Phenol, 4-(1,1,3,3-tetramethylbutyl)-"@en,"Codice CAS per la sostanza chimica para-terz-ottilfenolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "140-66-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/156-59-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 156-59-2 for chemical substance: Ethene, 1,2-dichloro-, (1Z)-"@en,"Codice CAS per la sostanza chimica Dicloroetilene cis"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "156-59-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/156-60-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 156-60-5 for chemical substance: Ethene, 1,2-dichloro-, (1E)-"@en,"Codice CAS per la sostanza chimica Dicloroetilene trans"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "156-60-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/193-39-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 193-39-5 for chemical substance: Indeno[1,2,3-cd]pyrene"@en,"Codice CAS per la sostanza chimica Indeno(1,2,3-cd)pirene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "193-39-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/206-44-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 206-44-0 for chemical substance: Fluoranthene"@en,"Codice CAS per la sostanza chimica Fluorantene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "206-44-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/208-96-8> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "208-96-8";
+rdfs:label "CAS code 208-96-8 for chemical substance: Acenaphthylene"@en,"Codice CAS per la sostanza chimica Acenaftilene"@it;
+a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance> .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/218-01-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 218-01-9 for chemical substance: Chrysene"@en,"Codice CAS per la sostanza chimica Crisene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "218-01-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/288-88-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 288-88-0 for chemical substance: 1H-1,2,4-Triazole"@en,"Codice CAS per la sostanza chimica M.Mt.T.D."@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "288-88-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/307-24-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 307-24-4 for chemical substance: Hexanoic acid, 2,2,3,3,4,4,5,5,6,6,6-undecafluoro-"@en,"Codice CAS per la sostanza chimica PFHxA (Perfluoro Hexanoic Acid)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "307-24-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/307-55-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 307-55-1 for chemical substance: Dodecanoic acid, 2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,12-tricosafluoro-"@en,"Codice CAS per la sostanza chimica PFDoA (Perfluoro Dodecanoic Acid)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "307-55-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/319-84-6> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 319-84-6 for chemical substance: Cyclohexane, 1,2,3,4,5,6-hexachloro-, (1.alpha.,2.alpha.,3.beta.,4.alpha.,5.beta.,6.beta.)-"@en,"Codice CAS per la sostanza chimica HCH alfa"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "319-84-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/319-85-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 319-85-7 for chemical substance: Cyclohexane, 1,2,3,4,5,6-hexachloro-, (1.alpha.,2.beta.,3.alpha.,4.beta.,5.alpha.,6.beta.)-"@en,"Codice CAS per la sostanza chimica HCH-beta"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "319-85-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/319-86-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 319-86-8 for chemical substance: Cyclohexane, 1,2,3,4,5,6-hexachloro-, (1.alpha.,2.alpha.,3.alpha.,4.beta.,5.alpha.,6.beta.)-"@en,"Codice CAS per la sostanza chimica HCH delta"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "319-86-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/330-54-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 330-54-1 for chemical substance: Urea, N'-(3,4-dichlorophenyl)-N,N-dimethyl-"@en,"Codice CAS per la sostanza chimica Diuron"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "330-54-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/330-55-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 330-55-2 for chemical substance: Urea, N'-(3,4-dichlorophenyl)-N-methoxy-N-methyl-"@en,"Codice CAS per la sostanza chimica Linuron"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "330-55-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/333-41-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 333-41-5 for chemical substance: Phosphorothioic acid, O,O-diethyl O-[6-methyl-2-(1-methylethyl)-4-pyrimidinyl] ester"@en,"Codice CAS per la sostanza chimica Diazinone"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "333-41-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/335-67-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 335-67-1 for chemical substance: Octanoic acid, 2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-pentadecafluoro-"@en,"Codice CAS per la sostanza chimica PFOA (Perfluoro Octanoic Acid)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "335-67-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/335-76-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 335-76-2 for chemical substance: Decanoic acid, 2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,10-nonadecafluoro-"@en,"Codice CAS per la sostanza chimica PFDA (Perfluoro Decanoic Acid)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "335-76-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/355-46-4> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 355-46-4 for chemical substance: 1-Hexanesulfonic acid, 1,1,2,2,3,3,4,4,5,5,6,6,6-tridecafluoro-"@en,"Codice CAS per la sostanza chimica PFHxS (Perfluoro Hexane Sulfonate)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "355-46-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/375-95-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 375-95-1 for chemical substance: Nonanoic acid, 2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,9-heptadecafluoro-"@en,"Codice CAS per la sostanza chimica PFNA (Perfluoro Nonanoic Acid)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "375-95-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/465-73-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 465-73-6 for chemical substance: 1,4:5,8-Dimethanonaphthalene, 1,2,3,4,10,10-hexachloro-1,4,4a,5,8,8a-hexahydro-, (1R,4S,4aS,5R,8S,8aR)-rel-"@en,"Codice CAS per la sostanza chimica Isodrin"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "465-73-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/534-52-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 534-52-1 for chemical substance: Phenol, 2-methyl-4,6-dinitro-"@en,"Codice CAS per la sostanza chimica 2-Metil-4,6-dinitrofenolo (DNOC)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "534-52-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/540-59-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 540-59-0 for chemical substance: Ethene, 1,2-dichloro-"@en,"Codice CAS per la sostanza chimica 1,2-dicloroetilene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "540-59-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/541-73-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 541-73-1 for chemical substance: Benzene, 1,3-dichloro-"@en,"Codice CAS per la sostanza chimica 1,3 Diclorobenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "541-73-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1912-24-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1912-24-9 for chemical substance: 1,3,5-Triazine-2,4-diamine, 6-chloro-N2-ethyl-N4-(1-methylethyl)-"@en,"Codice CAS per la sostanza chimica Atrazina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1912-24-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/608-27-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 608-27-5 for chemical substance: Benzenamine, 2,3-dichloro-"@en,"Codice CAS per la sostanza chimica 2,3-Dicloroanilina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "608-27-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/608-93-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 608-93-5 for chemical substance: Benzene, 1,2,3,4,5-pentachloro-"@en,"Codice CAS per la sostanza chimica Pentaclorobenzene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "608-93-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/635-22-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 635-22-3 for chemical substance: Benzenamine, 4-chloro-3-nitro-"@en,"Codice CAS per la sostanza chimica 4-Cloro-3-Nitroanolina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "635-22-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/636-30-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 636-30-6 for chemical substance: Benzenamine, 2,4,5-trichloro-"@en,"Codice CAS per la sostanza chimica 2,4,5-Tricloroanilina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "636-30-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/637-92-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 637-92-3 for chemical substance: Propane, 2-ethoxy-2-methyl-"@en,"Codice CAS per la sostanza chimica ETBE ( etil terbutil etere )"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "637-92-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1330-20-7> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1330-20-7";
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1330-20-7 for chemical substance: Benzene, dimethyl-"@en,"Codice CAS per la sostanza chimica Xilene (somma isomeri)"@it .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1634-04-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1634-04-4 for chemical substance: Propane, 2-methoxy-2-methyl-"@en,"Codice CAS per la sostanza chimica MTBE (metil terbutil etere)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1634-04-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1698-60-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1698-60-8 for chemical substance: 3(2H)-Pyridazinone, 5-amino-4-chloro-2-phenyl-"@en,"Codice CAS per la sostanza chimica Chloridazon"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1698-60-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1717-00-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1717-00-6 for chemical substance: Ethane, 1,1-dichloro-1-fluoro-"@en,"Codice CAS per la sostanza chimica 1,1-Dicloro-1-fluoro-etano (Freon 141)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1717-00-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1763-23-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1763-23-1 for chemical substance: 1-Octanesulfonic acid, 1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-heptadecafluoro-"@en,"Codice CAS per la sostanza chimica PFOS (Perfluoro Octane Sulfonate)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1763-23-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/2706-90-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 2706-90-3 for chemical substance: Pentanoic acid, 2,2,3,3,4,4,5,5,5-nonafluoro-"@en,"Codice CAS per la sostanza chimica PFPeA (Perfluoro Pentanoic Acid)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "2706-90-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7782-49-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7782-49-2 for chemical substance: Selenium"@en,"Codice CAS per la sostanza chimica Selenio"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7782-49-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/5915-41-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 5915-41-3 for chemical substance: 1,3,5-Triazine-2,4-diamine, 6-chloro-N2-(1,1-dimethylethyl)-N4-ethyl-"@en,"Codice CAS per la sostanza chimica Terbutilazina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "5915-41-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7286-69-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7286-69-3 for chemical substance: 1,3,5-Triazine-2,4-diamine, 6-chloro-N2-ethyl-N4-(1-methylpropyl)-"@en,"Codice CAS per la sostanza chimica Secbutilazina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7286-69-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7439-89-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7439-89-6 for chemical substance: Iron"@en,"Codice CAS per la sostanza chimica Ferro"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7439-89-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7440-36-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7440-36-0 for chemical substance: Antimony"@en,"Codice CAS per la sostanza chimica Antimonio"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7440-36-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7440-42-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7440-42-8 for chemical substance: Boron"@en,"Codice CAS per la sostanza chimica Boro"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7440-42-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7440-62-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7440-62-2 for chemical substance: Vanadium"@en,"Codice CAS per la sostanza chimica Vanadio"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7440-62-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7664-41-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7664-41-7 for chemical substance: Ammonia"@en,"Codice CAS per la sostanza chimica Ammoniaca (non ionizzata)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7664-41-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/12002-48-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 12002-48-1 for chemical substance: Benzene, trichloro-"@en,"Codice CAS per la sostanza chimica Triclorobenzeni"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "12002-48-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/25057-89-0> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "25057-89-0";
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 25057-89-0 for chemical substance: 1H-2,1,3-Benzothiadiazin-4(3H)-one, 3-(1-methylethyl)-, 2,2-dioxide"@en,"Codice CAS per la sostanza chimica Bentazone"@it .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/51235-04-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 51235-04-2 for chemical substance: 1,3,5-Triazine-2,4(1H,3H)-dione, 3-cyclohexyl-6-(dimethylamino)-1-methyl-"@en,"Codice CAS per la sostanza chimica Esazinone"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "51235-04-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/114798-03-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 114798-03-9 for chemical substance: Ammonium"@en,"Codice CAS per la sostanza chimica Azoto ammoniacale"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "114798-03-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/214798-03-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 214798-03-9 for chemical substance: Ammonium"@en,"Codice CAS per la sostanza chimica Ammoniaca totale"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "214798-03-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/314797-55-8> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "314797-55-8";
+rdfs:label "Codice CAS per la sostanza chimica Azoto nitrico"@it;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 314797-55-8 for chemical substance: Nitrate"@en;
+a skos:Concept .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/414797-65-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 414797-65-0 for chemical substance: Nitrite"@en,"Codice CAS per la sostanza chimica Azoto nitroso"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "414797-65-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/517778-88-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 517778-88-0 for chemical substance: Nitrogen"@en,"Codice CAS per la sostanza chimica Azoto Totale"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "517778-88-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/616887-00-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 616887-00-6 for chemical substance: Chloride"@en,"Codice CAS per la sostanza chimica Cloruri"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "616887-00-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/816984-48-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 816984-48-8 for chemical substance: Fluoride"@en,"Codice CAS per la sostanza chimica Fluoruri"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "816984-48-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1014808-79-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1014808-79-8 for chemical substance: Sulfate"@en,"Codice CAS per la sostanza chimica Solfati"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1014808-79-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1210606-46-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1210606-46-9 for chemical substance: o,p'-dicofol"@en,"Codice CAS per la sostanza chimica 2,4-Dicofol"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1210606-46-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1372-54-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1372-54-8 for chemical substance: DDD"@en,"Codice CAS per la sostanza chimica 4,4'-DDD"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1372-54-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1472-55-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 1472-55-9 for chemical substance: DDE"@en;
+a skos:Concept;
+rdfs:label "Codice CAS per la sostanza chimica 4,4'-DDE"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1472-55-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/15135410-20-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 15135410-20-7 for chemical substance: (E)-acetamiprid"@en,"Codice CAS per la sostanza chimica Acetamiprid"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "15135410-20-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1674070-46-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1674070-46-5 for chemical substance: Aclonifen"@en,"Codice CAS per la sostanza chimica Aclonifen"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1674070-46-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1715972-60-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1715972-60-8 for chemical substance: Alachlor"@en,"Codice CAS per la sostanza chimica Alachlor"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1715972-60-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/18309-00-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 18309-00-2 for chemical substance: Aldrin"@en,"Codice CAS per la sostanza chimica Aldrin"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "18309-00-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/19834-12-8> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "19834-12-8";
+rdfs:label "Codice CAS per la sostanza chimica Ametrina"@it,"CAS code 19834-12-8 for chemical substance: Ametryn"@en;
+a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance> .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/206190-65-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 206190-65-4 for chemical substance: Deethylatrazine"@en,"Codice CAS per la sostanza chimica Atrazina-desetil"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "206190-65-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/211007-28-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 211007-28-9 for chemical substance: Deisopropylatrazine"@en,"Codice CAS per la sostanza chimica Atrazina-desisopropil"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "211007-28-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/22120162-55-2> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "22120162-55-2";
+a skos:Concept;
+rdfs:label "Codice CAS per la sostanza chimica Azimsulfuron"@it,"CAS code 22120162-55-2 for chemical substance: Azimsulfuron"@en;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance> .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/2383055-99-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 2383055-99-6 for chemical substance: Bensulfuron-methyl"@en,"Codice CAS per la sostanza chimica Bensulfuron Metile"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "2383055-99-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/24314-40-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 24314-40-9 for chemical substance: Bromacil"@en,"Codice CAS per la sostanza chimica Bromacil"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "24314-40-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/25124495-18-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 25124495-18-7 for chemical substance: Quinoxyfen"@en,"Codice CAS per la sostanza chimica Chinossifen"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "25124495-18-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/2657-74-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 2657-74-9 for chemical substance: Chlordane"@en,"Codice CAS per la sostanza chimica Chlordano Totale"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "2657-74-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/27470-90-6> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "27470-90-6";
+a skos:Concept;
+rdfs:label "CAS code 27470-90-6 for chemical substance: Chlorfenvinphos"@en,"Codice CAS per la sostanza chimica Chlorfenvinphos"@it;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance> .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/2821725-46-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 2821725-46-2 for chemical substance: Cyanazine"@en,"Codice CAS per la sostanza chimica Cianazina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "2821725-46-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/2928159-98-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 2928159-98-0 for chemical substance: Irgarol"@en,"Codice CAS per la sostanza chimica Cibutrina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "2928159-98-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/305103-71-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 305103-71-9 for chemical substance: Cis-chlordane"@en,"Codice CAS per la sostanza chimica Clordano cis"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "305103-71-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/315103-74-2> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "315103-74-2";
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 315103-74-2 for chemical substance: Trans-chlordane"@en,"Codice CAS per la sostanza chimica Clordano trans"@it .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/322921-88-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 322921-88-2 for chemical substance: Chlorpyrifos"@en,"Codice CAS per la sostanza chimica Clorpirifos"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "322921-88-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/335598-13-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 335598-13-0 for chemical substance: Chlorpyriphos-methyl"@en,"Codice CAS per la sostanza chimica Clorpirifos Metile"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "335598-13-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/34210880-92-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 34210880-92-5 for chemical substance: Clothianidin"@en,"Codice CAS per la sostanza chimica Clotianidin"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "34210880-92-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/36101205-02-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 36101205-02-1 for chemical substance: Cycloxydim"@en,"Codice CAS per la sostanza chimica Cycloxidim"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "36101205-02-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/3772-54-8-sum> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 3772-54-8-SUM for chemical substance: DDD"@en,"Codice CAS per la sostanza chimica DDD"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "3772-54-8-SUM" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/3872-55-9-sum> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 3872-55-9-SUM for chemical substance: DDE"@en,"Codice CAS per la sostanza chimica DDE"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "3872-55-9-SUM" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/398017-34-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 398017-34-3 for chemical substance: DDT"@en,"Codice CAS per la sostanza chimica DDT"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "398017-34-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/4015307-86-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 4015307-86-5 for chemical substance: Diclofenac"@en,"Codice CAS per la sostanza chimica Diclofenac"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "4015307-86-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/412008-58-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 412008-58-4 for chemical substance: 2,6-Dichlorobenzamide"@en,"Codice CAS per la sostanza chimica Diclorobenzammide 2,6"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "412008-58-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/42115-32-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 42115-32-2 for chemical substance: Dicofol"@en,"Codice CAS per la sostanza chimica Dicofol"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "42115-32-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/4360-57-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 4360-57-1 for chemical substance: Dieldrin"@en,"Codice CAS per la sostanza chimica Dieldrin"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "4360-57-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/44115-29-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 44115-29-7 for chemical substance: Endosulfan"@en,"Codice CAS per la sostanza chimica Endosulfan (isomeri alfa e beta)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "44115-29-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/45959-98-8> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 45959-98-8 for chemical substance: Alpha-endosulfan"@en,"Codice CAS per la sostanza chimica Endosulfan alfa"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "45959-98-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/4633213-65-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 4633213-65-9 for chemical substance: β-Endosulfan"@en,"Codice CAS per la sostanza chimica Endosulfan beta"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "4633213-65-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/471031-07-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 471031-07-8 for chemical substance: Endosulfan Sulfate"@en,"Codice CAS per la sostanza chimica Endosulfan solfato"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "471031-07-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/4872-20-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 4872-20-8 for chemical substance: Endrin"@en,"Codice CAS per la sostanza chimica Endrin"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "4872-20-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/4976-44-8> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 4976-44-8 for chemical substance: Heptachlor"@en,"Codice CAS per la sostanza chimica Eptacloro"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "4976-44-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/501024-57-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 501024-57-3 for chemical substance: Heptachlor epoxide [Isomer B]"@en,"Codice CAS per la sostanza chimica Eptacloro epossido"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "501024-57-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/5128044-83-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 5128044-83-9 for chemical substance: (+/-)-trans-Heptachlorepoxid"@en,"Codice CAS per la sostanza chimica Eptacloro Epossido endo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "5128044-83-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/52608-73-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 52608-73-1 for chemical substance: Hexachlorocyclohexane"@en,"Codice CAS per la sostanza chimica Esaclorocicloesano"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "52608-73-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/54122-14-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 54122-14-5 for chemical substance: Fenitrothion"@en,"Codice CAS per la sostanza chimica Fenitrotion"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "54122-14-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/5555-38-9> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 5555-38-9 for chemical substance: Fenthion"@en,"Codice CAS per la sostanza chimica Fenthion"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "5555-38-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/56142459-58-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 56142459-58-3 for chemical substance: Flufenacet"@en,"Codice CAS per la sostanza chimica Flufenacet"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "56142459-58-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/5781406-37-3> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "5781406-37-3";
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 5781406-37-3 for chemical substance: Fluroxypyr"@en,"Codice CAS per la sostanza chimica Fluroxipir"@it .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/58138261-41-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 58138261-41-3 for chemical substance: Imidacloprid"@en,"Codice CAS per la sostanza chimica Imidacloprid"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "58138261-41-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/5934123-59-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 5934123-59-6 for chemical substance: Isoproturon"@en,"Codice CAS per la sostanza chimica Isoproturon"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "5934123-59-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/60141112-29-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 60141112-29-0 for chemical substance: Isoxaflutole"@en,"Codice CAS per la sostanza chimica Isoxaflutol"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "60141112-29-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/61121-75-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 61121-75-5 for chemical substance: Malathion"@en,"Codice CAS per la sostanza chimica Malathion"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "61121-75-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/6257837-19-1> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 6257837-19-1 for chemical substance: Metalaxyl"@en,"Codice CAS per la sostanza chimica Metalaxyl"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "6257837-19-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/6341394-05-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 6341394-05-2 for chemical substance: Metamitron"@en,"Codice CAS per la sostanza chimica Metamitron"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "6341394-05-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/642032-65-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 642032-65-7 for chemical substance: Methiocarb"@en,"Codice CAS per la sostanza chimica Metiocarb"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "642032-65-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/6551218-45-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 6551218-45-2 for chemical substance: Metolachlor"@en,"Codice CAS per la sostanza chimica Metolachlor"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "6551218-45-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/6621087-64-9> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "6621087-64-9";
+a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 6621087-64-9 for chemical substance: Metribuzin"@en,"Codice CAS per la sostanza chimica Metribuzin"@it .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/677786-34-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 677786-34-7 for chemical substance: Mevinphos"@en,"Codice CAS per la sostanza chimica Mevinfos"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "677786-34-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/682212-67-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 682212-67-1 for chemical substance: Molinate"@en,"Codice CAS per la sostanza chimica Molinate"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "682212-67-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/69111991-09-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 69111991-09-4 for chemical substance: Nicosulfuron"@en,"Codice CAS per la sostanza chimica Nicosulfuron"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "69111991-09-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7053-19-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7053-19-0 for chemical substance: 1-chloro-2-[2,2-dichloro-1-(4-chlorophenyl)ethyl]benzene"@en,"Codice CAS per la sostanza chimica o,p'-DDD"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7053-19-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/713424-82-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 713424-82-6 for chemical substance: 1-chloro-2-[2,2-dichloro-1-(4-chlorophenyl)ethenyl]benzene"@en,"Codice CAS per la sostanza chimica o,p-DDE"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "713424-82-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/72789-02-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 72789-02-6 for chemical substance: O,P'-DDT"@en,"Codice CAS per la sostanza chimica o,p'-DDT"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "72789-02-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/731113-02-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 731113-02-6 for chemical substance: Omethoate"@en,"Codice CAS per la sostanza chimica Ometoato"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "731113-02-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7419666-30-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7419666-30-9 for chemical substance: Oxadiazon"@en,"Codice CAS per la sostanza chimica Oxadiazon"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7419666-30-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7577732-09-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7577732-09-3 for chemical substance: Oxadixyl"@en,"Codice CAS per la sostanza chimica Oxadixyl"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7577732-09-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/76301-12-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 76301-12-2 for chemical substance: Oxydemeton-methyl"@en,"Codice CAS per la sostanza chimica Oxydemeton-metile"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "76301-12-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7756-38-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7756-38-2 for chemical substance: Parathion-ethyl"@en,"Codice CAS per la sostanza chimica Paration etile"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7756-38-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/78298-00-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 78298-00-0 for chemical substance: Parathion methyl"@en,"Codice CAS per la sostanza chimica Paration metile"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "78298-00-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/7940487-42-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 7940487-42-1 for chemical substance: Pendimethalin"@en,"Codice CAS per la sostanza chimica Pendimetalin"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "7940487-42-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/8023103-98-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 8023103-98-2 for chemical substance: Pirimicarb"@en,"Codice CAS per la sostanza chimica Pirimicarb"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "8023103-98-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/8151218-49-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 8151218-49-6 for chemical substance: Pretilachlor"@en,"Codice CAS per la sostanza chimica Pretilachlor"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "8151218-49-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/827287-19-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 827287-19-6 for chemical substance: Prometryn"@en,"Codice CAS per la sostanza chimica Prometrina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "827287-19-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/83709-98-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 83709-98-8 for chemical substance: Propanil"@en,"Codice CAS per la sostanza chimica Propanil"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "83709-98-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/842275-18-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 842275-18-5 for chemical substance: Prothoate"@en,"Codice CAS per la sostanza chimica Protoate"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "842275-18-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/8584087-01-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 8584087-01-4 for chemical substance: Quinclorac"@en,"Codice CAS per la sostanza chimica Quinclorac"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "8584087-01-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/86122931-48-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 86122931-48-0 for chemical substance: Rimsulfuron"@en,"Codice CAS per la sostanza chimica Rimsulfuron"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "86122931-48-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/8799105-77-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 8799105-77-8 for chemical substance: Sulcotrione"@en,"Codice CAS per la sostanza chimica Sulcotrione"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "8799105-77-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/8830125-63-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 8830125-63-4 for chemical substance: Desethyl Terbuthylazine"@en,"Codice CAS per la sostanza chimica Terbutilazina desetil"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "8830125-63-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/89886-50-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 89886-50-0 for chemical substance: Terbutryn"@en,"Codice CAS per la sostanza chimica Terbutrina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "89886-50-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/90111988-49-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 90111988-49-9 for chemical substance: Thiacloprid"@en,"Codice CAS per la sostanza chimica Thiacloprid"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "90111988-49-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/9128249-77-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 9128249-77-6 for chemical substance: Benthiocarb"@en,"Codice CAS per la sostanza chimica Thiobencarb"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "9128249-77-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/92153719-23-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 92153719-23-4 for chemical substance: Thiamethoxam"@en,"Codice CAS per la sostanza chimica Tiametoxam"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "92153719-23-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/932303-17-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 932303-17-5 for chemical substance: Tri-allate"@en,"Codice CAS per la sostanza chimica Triallate"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "932303-17-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/941582-09-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 941582-09-8 for chemical substance: Trifluralin"@en,"Codice CAS per la sostanza chimica Trifluralin"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "941582-09-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/9534256-82-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 9534256-82-1 for chemical substance: Acetochlor"@en,"Codice CAS per la sostanza chimica Acetocloro"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "9534256-82-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/96865318-97-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 96865318-97-4 for chemical substance: Ametoctradin"@en,"Codice CAS per la sostanza chimica Ametoctradina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "96865318-97-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/97131860-33-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 97131860-33-8 for chemical substance: Azoxystrobin"@en,"Codice CAS per la sostanza chimica Azoxistrobina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "97131860-33-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/98188425-85-6> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "98188425-85-6";
+rdfs:label "CAS code 98188425-85-6 for chemical substance: Boscalid"@en,"Codice CAS per la sostanza chimica Boscalid"@it;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/9981777-89-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 9981777-89-1 for chemical substance: Clomazone"@en,"Codice CAS per la sostanza chimica Clomazone"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "9981777-89-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/100110488-70-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 100110488-70-5 for chemical substance: Dimethomorph"@en,"Codice CAS per la sostanza chimica Dimetomorf"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "100110488-70-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/101239110-15-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 101239110-15-7 for chemical substance: Fluopicolide"@en,"Codice CAS per la sostanza chimica Fluopicolide"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "101239110-15-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/102104206-82-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 102104206-82-8 for chemical substance: Mesotrione"@en,"Codice CAS per la sostanza chimica Mesotrione"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "102104206-82-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/10310265-92-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 10310265-92-6 for chemical substance: Methamidophos"@en,"Codice CAS per la sostanza chimica Metamidofos (trifosforamidato di O,S- dimetile)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "10310265-92-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/10466246-88-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 10466246-88-6 for chemical substance: Penconazole"@en,"Codice CAS per la sostanza chimica Penconazolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "10466246-88-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/10553112-28-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 10553112-28-0 for chemical substance: Pyrimethanil"@en,"Codice CAS per la sostanza chimica Pirimetanil"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "10553112-28-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/10767747-09-5> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "10767747-09-5";
+rdfs:label "Codice CAS per la sostanza chimica Procloraz"@it,"CAS code 10767747-09-5 for chemical substance: Plocloraz"@en;
+a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance> .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/108118134-30-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 108118134-30-8 for chemical substance: Spiroxamine"@en,"Codice CAS per la sostanza chimica Spiroxamina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "108118134-30-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/109107534-96-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 109107534-96-3 for chemical substance: Tebuconazole"@en,"Codice CAS per la sostanza chimica Tebuconazolo"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "109107534-96-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/11023564-05-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 11023564-05-8 for chemical substance: Thiophanate-methyl"@en,"Codice CAS per la sostanza chimica Tiofanato metile"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "11023564-05-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1111066-51-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1111066-51-9 for chemical substance: Aminomethylphosphonic acid (AMPA)"@en,"Codice CAS per la sostanza chimica AMPA"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1111066-51-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/11218540-29-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 11218540-29-9 for chemical substance: chromium(6+)"@en,"Codice CAS per la sostanza chimica Cromo VI"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "11218540-29-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1131071-83-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1131071-83-6 for chemical substance: Glyphosate"@en,"Codice CAS per la sostanza chimica Glifosate"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1131071-83-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/116205-99-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 116205-99-2 for chemical substance: Benzo[b]fluoranthene"@en,"Codice CAS per la sostanza chimica Benzo (b) fluorantene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "116205-99-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/117191-24-2> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 117191-24-2 for chemical substance: Benzo[ghi]perylene"@en,"Codice CAS per la sostanza chimica Benzo (g,h,i) perilene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "117191-24-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/118207-08-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 118207-08-9 for chemical substance: Benzo[k]fluoranthene"@en,"Codice CAS per la sostanza chimica Benzo (k) fluorantene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "118207-08-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1192058-94-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1192058-94-8 for chemical substance: Perfluoroundecanoic acid"@en,"Codice CAS per la sostanza chimica PFUdA (Perfluoro Undecanoic Acid)"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1192058-94-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1221918-00-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 1221918-00-9 for chemical substance: Dicamba (3,6-dichloro-2-methoxybenzoic acid)"@en;
+a skos:Concept;
+rdfs:label "Codice CAS per la sostanza chimica Dicamba"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1221918-00-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/123189-64-0> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 123189-64-0 for chemical substance: Dibenzopyrenes"@en,"Codice CAS per la sostanza chimica Dibenzo(a,h)pirene"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "123189-64-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1241190931-27-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1241190931-27-1 for chemical substance: 2,2-difluoro-2-((2,2,4,5-tetrafluoro-5-(trifluoromethoxy)-1,3-dioxolan-4-yl)oxy)acetic acid, ammonia salt"@en,"Codice CAS per la sostanza chimica cC6O4 [Difluoro{[2,2,4,5-tetrafluoro- 5-(trifluoromethoxy)-1,3-dioxolan- 4-yl]oxy} acetic acid]"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1241190931-27-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/12837680-73-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 12837680-73-2 for chemical substance: 2,2',4,5,5'-Pentachlorobiphenyl is a polychlorinated biphenyl (PCB)"@en,"Codice CAS per la sostanza chimica PCB 101"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "12837680-73-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/12932598-14-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 12932598-14-4 for chemical substance: 1,2,3-trichloro-4-(3,4-dichlorophenyl)benzene"@en,"Codice CAS per la sostanza chimica PCB 105"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "12932598-14-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/13038380-03-9> <https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "13038380-03-9";
+rdfs:label "CAS code 13038380-03-9 for chemical substance: 2,3,3',4',6-Pentachlorobiphenyl"@en;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "Codice CAS per la sostanza chimica PCB 110"@it;
+a skos:Concept .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/13174472-37-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 13174472-37-0 for chemical substance: 2,3,4,4',5-Pentachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 114"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "13174472-37-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/13231508-00-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 13231508-00-6 for chemical substance: 1,2,4-trichloro-5-(3,4-dichlorophenyl)benzene"@en,"Codice CAS per la sostanza chimica PCB 118"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "13231508-00-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/13365510-44-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 13365510-44-3 for chemical substance: 2',3,4,4',5-Pentachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 123"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "13365510-44-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/13457465-28-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 13457465-28-8 for chemical substance: 3,3',4,4',5-pentachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 126"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "13457465-28-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/13585760-74-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 13585760-74-3 for chemical substance: (-)-Quinpirole hydrochloride,(4aR-trans)-4,4a,5,6,7,8,8a,9-Octahydro-5-propyl-1H-pyrazolo[3,4-g]quinolinehydrochloride"@en,"Codice CAS per la sostanza chimica PCB 128"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "13585760-74-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/13635065-28-2> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 13635065-28-2 for chemical substance: 1,2,3-trichloro-4-(2,4,5-trichlorophenyl)benzene"@en,"Codice CAS per la sostanza chimica PCB 138"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "13635065-28-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/13751908-16-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 13751908-16-8 for chemical substance: 2,2',3,4',5,5'-Hexachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 146"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "13751908-16-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/13838380-04-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 13838380-04-0 for chemical substance: 2,2',3,4',5',6-Hexachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 149"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "13838380-04-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/13952663-63-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 13952663-63-5 for chemical substance: 2,2',3,5,5',6-Hexachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 151"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "13952663-63-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/14035065-27-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 14035065-27-1 for chemical substance: 2,2',4,4',5,5'-hexachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 153"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "14035065-27-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/14138380-08-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 14138380-08-4 for chemical substance: 2,3,3',4,4',5-Hexachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 156"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "14138380-08-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/14269782-90-7> rdfs:label "CAS code 14269782-90-7 for chemical substance: 2,3,3',4,4',5'-Hexachlorobiphenyl"@en;
+a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "Codice CAS per la sostanza chimica PCB 157"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "14269782-90-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/14352663-72-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 14352663-72-6 for chemical substance: 2,3',4,4',5,5'-Hexachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 167"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "14352663-72-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/14432774-16-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 14432774-16-6 for chemical substance: 3,3',4,4',5,5'-HEXACHLOROBIPHENYL"@en,"Codice CAS per la sostanza chimica PCB 169"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "14432774-16-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/14535065-30-6> a skos:Concept;
+rdfs:label "CAS code 14535065-30-6 for chemical substance: 1,2,3,4-tetrachloro-5-(2,3,4-trichlorophenyl)benzene"@en;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "Codice CAS per la sostanza chimica PCB 170"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "14535065-30-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/14652663-70-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 14652663-70-4 for chemical substance: 2,2',3,3',4',5,6-Heptachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 177"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "14652663-70-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/14735065-29-3> a skos:Concept;
+rdfs:label "CAS code 14735065-29-3 for chemical substance: 1,2,3,4-tetrachloro-5-(2,4,5-trichlorophenyl)benzene"@en;
+a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "Codice CAS per la sostanza chimica PCB 180"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "14735065-29-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/14852663-69-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 14852663-69-1 for chemical substance: 2,2',3,4,4',5',6-Heptachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 183"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "14852663-69-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/14952663-68-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 14952663-68-0 for chemical substance: 2,2',3,4',5,5',6-Heptachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 187"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "14952663-68-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/15039635-31-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 15039635-31-9 for chemical substance: 1,2,3,4-tetrachloro-5-(3,4,5-trichlorophenyl)benzene"@en,"Codice CAS per la sostanza chimica PCB 189"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "15039635-31-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1517012-37-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1517012-37-5 for chemical substance: 2,4,4'-Trichlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 28"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1517012-37-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/15235693-99-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 15235693-99-3 for chemical substance: 2,2',5,5'-tetrachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 52"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "15235693-99-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/15332598-13-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 15332598-13-3 for chemical substance: 3,3',4,4'-tetrachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 77"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "15332598-13-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/15470362-50-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 15470362-50-4 for chemical substance: 3,4,4',5-Tetrachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 81"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "15470362-50-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/15538379-99-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 15538379-99-6 for chemical substance: 2,2',3,5',6-Pentachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 95"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "15538379-99-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/15638380-01-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 15638380-01-7 for chemical substance: 2,2',4,4',5-Pentachlorobiphenyl"@en,"Codice CAS per la sostanza chimica PCB 99"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "15638380-01-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/15850-28-2> rdfs:label "Codice CAS per la sostanza chimica 17-beta-estradiolo"@it,"CAS code 15850-28-2 for chemical substance: 17β-estradiol"@en;
+a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "15850-28-2" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/15926787-78-0> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 15926787-78-0 for chemical substance: Amoxicillin"@en,"Codice CAS per la sostanza chimica Amoxicillina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "15926787-78-0" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/16083905-01-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 16083905-01-5 for chemical substance: Azithromycin"@en,"Codice CAS per la sostanza chimica Azitromicina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "16083905-01-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/16185721-33-1> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 16185721-33-1 for chemical substance: Ciprofloxacin"@en,"Codice CAS per la sostanza chimica Ciprofloxacina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "16185721-33-1" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/16281103-11-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 16281103-11-9 for chemical substance: Clarithromycin"@en,"Codice CAS per la sostanza chimica Claritromicina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "16281103-11-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/163114-07-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 163114-07-8 for chemical substance: Erythromycin"@en,"Codice CAS per la sostanza chimica Eritromicina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "163114-07-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/164139968-49-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 164139968-49-3 for chemical substance: Metaflumizone"@en,"Codice CAS per la sostanza chimica Metaflumizone"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "164139968-49-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/16795-81-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 16795-81-8 for chemical substance: 2-Chloro-5-methylaniline"@en,"Codice CAS per la sostanza chimica 2-cloro-5-metilanilina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "16795-81-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/16891-59-8> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 16891-59-8 for chemical substance: 2-Naphthylamine"@en,"Codice CAS per la sostanza chimica 2-Naftilammina"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "16891-59-8" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/16935822-46-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 16935822-46-9 for chemical substance: 1,2,3,4,6,7,8-HEPTACHLORODIBENZO-P-DIOXIN"@en,"Codice CAS per la sostanza chimica 1,2,3,4,6,7,8 HpCDD"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "16935822-46-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/17067562-39-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 17067562-39-4 for chemical substance: 1,2,3,4,6,7,8-Heptachlorodibenzo[b,d]fur"@en,"Codice CAS per la sostanza chimica 1,2,3,4,6,7,8 HpCDF"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "17067562-39-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/17139227-28-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 17139227-28-6 for chemical substance: 1,2,3,4,7,8-Hexachlorodibenzo-p-dioxin"@en,"Codice CAS per la sostanza chimica 1,2,3,4,7,8 HxCDD"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "17139227-28-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/17270648-26-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 17270648-26-9 for chemical substance: 1,2,3,4,7,8-hexachlorodibenzofuran"@en,"Codice CAS per la sostanza chimica 1,2,3,4,7,8 HxCDF"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "17270648-26-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/17355673-89-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 17355673-89-7 for chemical substance: 1,2,3,4,7,8,9-heptachlorodibenzofuran"@en,"Codice CAS per la sostanza chimica 1,2,3,4,7,8,9 HpCDF"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "17355673-89-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/17457653-85-7> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 17457653-85-7 for chemical substance: 1,2,3,6,7,8-Hexachlorodibenzo-p-dioxin"@en,"Codice CAS per la sostanza chimica 1,2,3,6,7,8 HxCDD"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "17457653-85-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/17557117-44-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 17557117-44-9 for chemical substance: 1,2,3,6,7,8-hexachlorodibenzofuran"@en,"Codice CAS per la sostanza chimica 1,2,3,6,7,8 HxCDF"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "17557117-44-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/17640321-76-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 17640321-76-4 for chemical substance: 1,2,3,7,8-Pentachlorodibenzo-p-dioxin"@en,"Codice CAS per la sostanza chimica 1,2,3,7,8 PeCDD"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "17640321-76-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/17757117-41-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 17757117-41-6 for chemical substance: 1,2,3,7,8-Pentachlorodibenzofuran"@en,"Codice CAS per la sostanza chimica 1,2,3,7,8 PeCDF"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "17757117-41-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/17819408-74-3> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 17819408-74-3 for chemical substance: 1,2,3,7,8,9-Hexachlorodibenzo-p-dioxin"@en,"Codice CAS per la sostanza chimica 1,2,3,7,8,9 HxCDD"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "17819408-74-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/17972918-21-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 17972918-21-9 for chemical substance: 1,2,3,7,8,9-hexachlorodibenzofuran"@en,"Codice CAS per la sostanza chimica 1,2,3,7,8,9 HxCDF"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "17972918-21-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/18060851-34-5> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 18060851-34-5 for chemical substance: 2,3,4,6,7,8-hexachlorodibenzofuran"@en,"Codice CAS per la sostanza chimica 2,3,4,6,7,8 HxCDF"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "18060851-34-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/18157117-31-4> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 18157117-31-4 for chemical substance: 2,3,4,7,8-Pentachlorodibenzofuran"@en,"Codice CAS per la sostanza chimica 2,3,4,7,8 PeCDF"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "18157117-31-4" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1821746-01-6> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1821746-01-6 for chemical substance: 2,3,7,8-tetrachlorodibenzodioxine"@en,"Codice CAS per la sostanza chimica 2,3,7,8 TCDD"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1821746-01-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/18351207-31-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 18351207-31-9 for chemical substance: 2,3,7,8-Tetrachlorodibenzofuran"@en,"Codice CAS per la sostanza chimica 2,3,7,8 TCDF"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "18351207-31-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1843268-87-9> a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>,skos:Concept;
+rdfs:label "CAS code 1843268-87-9 for chemical substance: Octachlorodibenzodioxin"@en,"Codice CAS per la sostanza chimica OCDD"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "1843268-87-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/18539001-02-0> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>;
+rdfs:label "CAS code 18539001-02-0 for chemical substance: 1,2,3,4,6,7,8,9-Octachlorodibenzofuran"@en,"Codice CAS per la sostanza chimica OCDF"@it;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/CAScode> "18539001-02-0" .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/microbiological-agent/BIO-ESC-COL>
+      rdf:type :MicroBiologicalAgent ;
+      rdfs:label "Code for microbiological agent Escherichia Coli."@en , "Codice per agente microbiologico Escherichia Coli."@it .
