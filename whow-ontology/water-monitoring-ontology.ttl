@@ -39,6 +39,21 @@ hydro:WaterBody
       skos:note "TODO: valutare di rinominare in water-observation-ontology"^^xsd:string ;
       skos:prefLabel "Water Monitoring Ontology"@en .
 
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/166HM-2-4-2-5-5-6DCl-TOL>
+      rdf:type skos:Concept , :ChemicalSubstance ;
+      rdfs:label "Code for Dichlorotoluene isomers(2,4 + 2,5 + 5,6)"@en , "Codice per Diclorotolueni isomeri (2,4 + 2,5 + 5,6)"@it ;
+      :CAScode "N/A"^^xsd:string .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/186HM-PCDD-DF>
+      rdf:type skos:Concept , :ChemicalSubstance ;
+      rdfs:label "Code for PCDD, PCDF summation"@en , "Codice per Sommatoria PCDD, PCDF"@it ;
+      :CAScode "N/A"^^xsd:string .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/187HM-HC-C5-C10>
+      rdf:type skos:Concept , :ChemicalSubstance ;
+      rdfs:label "Code for Hydrocarbons C5-C10"@en , "Codice per Idrocarburi C5-C10"@it ;
+      :CAScode "N/A"^^xsd:string .
+
 :BiologicalQualityElementsObservation
       rdf:type owl:Class ;
       rdfs:label "Biological quality elements Parameter Observation"@en ;
@@ -367,10 +382,18 @@ hydro:WaterBody
       rdfs:label "CAS code 114798-03-9 for chemical substance: Ammonium"@en , "Codice CAS per la sostanza chimica Azoto ammoniacale"@it ;
       :CAScode "114798-03-9" .
 
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/114HM-MP-XIL>
+      rdf:type skos:Concept , :ChemicalSubstance ;
+      rdfs:label "Code for m+p-Xilene"@en , "Codice per m+p-Xilene"@it .
+
 <https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/115-96-8>
       rdf:type skos:Concept , :ChemicalSubstance ;
       rdfs:label "CAS code 115-96-8 for chemical substance: Ethanol, 2-chloro-, 1,1',1''-phosphate"@en , "Codice CAS per la sostanza chimica TCEP (tris-2cloroetil-fosfato)"@it ;
       :CAScode "115-96-8" .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/115HM-TNS-N0>
+      rdf:type skos:Concept , :ChemicalSubstance ;
+      rdfs:label "Code for Non-ionic surfactants"@en , "Codice per Tensioattivi non ionici"@it .
 
 <https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/116205-99-2>
       rdf:type skos:Concept , :ChemicalSubstance ;
@@ -432,6 +455,11 @@ hydro:WaterBody
       rdfs:label "CAS code 1210606-46-9 for chemical substance: o,p'-dicofol"@en , "Codice CAS per la sostanza chimica 2,4-Dicofol"@it ;
       :CAScode "1210606-46-9" .
 
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/121HM-IPA-0>
+      rdf:type skos:Concept , :ChemicalSubstance ;
+      rdfs:label "Code for Polycyclic aromatic hydrocarbons"@en , "Codice per Idrocarburi policiclici aromatici"^^xsd:string ;
+      :CAScode "N/A"^^xsd:string .
+
 <https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/122-34-9>
       rdf:type skos:Concept , :ChemicalSubstance ;
       rdfs:label "CAS code 122-34-9 for chemical substance: 1,3,5-Triazine-2,4-diamine, 6-chloro-N2,N4-diethyl-"@en , "Codice CAS per la sostanza chimica Simazina"@it ;
@@ -462,10 +490,25 @@ hydro:WaterBody
       rdfs:label "CAS code 1241190931-27-1 for chemical substance: 2,2-difluoro-2-((2,2,4,5-tetrafluoro-5-(trifluoromethoxy)-1,3-dioxolan-4-yl)oxy)acetic acid, ammonia salt"@en , "Codice CAS per la sostanza chimica cC6O4 [Difluoro{[2,2,4,5-tetrafluoro- 5-(trifluoromethoxy)-1,3-dioxolan- 4-yl]oxy} acetic acid]"@it ;
       :CAScode "1241190931-27-1" .
 
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/125HM-HC-C1-C12>
+      rdf:type skos:Concept , :ChemicalSubstance ;
+      rdfs:label "Code for Volatile Hydrocarbons (expressed as n-hexane)"@en , "Codice per Idrocarburi Volatili (espressi come n-esano)"@it ;
+      :CAScode "N/A"^^xsd:string .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/126HM-HC-C10-C40>
+      rdf:type skos:Concept , :ChemicalSubstance ;
+      rdfs:label "Code for Hydrocarbons C10-C40"@en , "Codice per Idrocarburi C10-C40"@it ;
+      :CAScode "N/A"^^xsd:string .
+
 <https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/127-18-4>
       rdf:type skos:Concept , :ChemicalSubstance ;
       rdfs:label "CAS code 127-18-4 for chemical substance: Ethene, 1,1,2,2-tetrachloro-"@en , "Codice CAS per la sostanza chimica Tetracloroetilene"@it ;
       :CAScode "127-18-4" .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/127HM-HC-TOT>
+      rdf:type skos:Concept , :ChemicalSubstance ;
+      rdfs:label "Code for Tot. Hydrocarbons (expressed as n-exane)"@en , "Codice per Idrocarburi tot. (espressi come n-esano)"@it ;
+      :CAScode "N/A"^^xsd:string .
 
 <https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/12837680-73-2>
       rdf:type skos:Concept , :ChemicalSubstance ;
@@ -677,6 +720,11 @@ hydro:WaterBody
       rdfs:label "CAS code 15638380-01-7 for chemical substance: 2,2',4,4',5-Pentachlorobiphenyl"@en , "Codice CAS per la sostanza chimica PCB 99"@it ;
       :CAScode "15638380-01-7" .
 
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/157HM-PCB-0>
+      rdf:type skos:Concept , :ChemicalSubstance ;
+      rdfs:label "Code for Total PCB"@en , "Codice per PCB totali"@it ;
+      :CAScode "N/A"^^xsd:string .
+
 <https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/15850-28-2>
       rdf:type skos:Concept , :ChemicalSubstance ;
       rdfs:label "CAS code 15850-28-2 for chemical substance: 17β-estradiol"@en , "Codice CAS per la sostanza chimica 17-beta-estradiolo"@it ;
@@ -716,6 +764,14 @@ hydro:WaterBody
       rdf:type skos:Concept , :ChemicalSubstance ;
       rdfs:label "CAS code 164139968-49-3 for chemical substance: Metaflumizone"@en , "Codice CAS per la sostanza chimica Metaflumizone"@it ;
       :CAScode "164139968-49-3" .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/165HM-DCT-23-34>
+      rdf:type skos:Concept , :ChemicalSubstance ;
+      rdfs:label "Code for Dichlorotoluene isomers (2,3 + 3,4 )"@en , "Codice per Diclorotolueni isomeri (2,3 + 3,4 )"@it .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/166HM-2-4-2-5-5-6DCl-TOL>
+      rdf:type skos:Concept , :ChemicalSubstance ;
+      rdfs:label "Code for Dichlorotoluene isomers(2,4 + 2,5 + 5,6)"@en , "Codice per Diclorotolueni isomeri (2,4 + 2,5 + 5,6)"@it .
 
 <https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/1674070-46-5>
       rdf:type skos:Concept , :ChemicalSubstance ;
@@ -1021,6 +1077,11 @@ hydro:WaterBody
       rdf:type skos:Concept , :ChemicalSubstance ;
       rdfs:label "CAS code 34210880-92-5 for chemical substance: Clothianidin"@en , "Codice CAS per la sostanza chimica Clotianidin"@it ;
       :CAScode "34210880-92-5" .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/3510313>
+      rdf:type skos:Concept , :ChemicalSubstance ;
+      rdfs:label "Code for COD"@en , "Codice per COD"@it ;
+      :CAScode "N/A"^^xsd:string .
 
 <https://w3id.org/environmental-data/onto/water-monitoring-ontology/chemical-substance/355-46-4>
       rdf:type skos:Concept , :ChemicalSubstance ;
@@ -1944,6 +2005,10 @@ hydro:WaterBody
 <https://w3id.org/environmental-data/onto/water-monitoring-ontology/microbiological-agent/BIO-ESC-COL>
       rdf:type :MicroBiologicalAgent ;
       rdfs:label "Code for microbiological agent Escherichia Coli."@en , "Codice per agente microbiologico Escherichia Coli."@it .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/071-52-3>
+      rdf:type skos:Concept , :WaterObservableProperty ;
+      rdfs:label "CAS code for Hydrogencarbonate, for the property Alkalinity"@en , "Codice CAS per Idrogeno carbonato, per la proprietà Alcalinità"@it .
 
 <https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/10050>
       rdf:type skos:Concept , :WaterObservableProperty ;
