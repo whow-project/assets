@@ -1,0 +1,35 @@
+@prefix : <https://w3id.org/environmental-data/onto/water-monitoring-ontology> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/3133-05-9> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
+rdfs:label "3133-05-9","WISE code for parameter  DOC"@en;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WISEcode> "3133-05-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/3142-01-6> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
+rdfs:label "3142-01-6","WISE code for parameter  Conducibilità elettrica a 20°C"@en;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WISEcode> "3142-01-6" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/3131-01-9> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
+rdfs:label "3131-01-9","WISE code for parameter  Ossigeno % di saturazione"@en;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WISEcode> "3131-01-9" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/3121-01-5> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
+rdfs:label "3121-01-5","WISE code for parameter  Temperatura acqua"@en;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WISEcode> "3121-01-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/3133-01-5> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
+rdfs:label "3133-01-5","WISE code for parameter  BOD-5"@en;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WISEcode> "3133-01-5" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/31-02-7> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
+rdfs:label "31-02-7","WISE code for parameter  Solidi sospesi totali"@en;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WISEcode> "31-02-7" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/32-02-0> rdfs:label "32-02-0";
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WISEcode> "32-02-0";
+rdfs:label "WISE code for parameter  Sommatoria Antiparassitari ciclodiene"@en;
+a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty> .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/33-28-3> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
+rdfs:label "33-28-3","WISE code for parameter  Tensioattivi totali"@en;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WISEcode> "33-28-3" .
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/observable-property/33-29-4> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
+rdfs:label "33-29-4","WISE code for parameter  Tensioattivi anionici (MBAS)"@en;
+<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WISEcode> "33-29-4" .
