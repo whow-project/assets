@@ -32,10 +32,10 @@
       rdfs:label "CCSp"^^xsd:string ;
       rdfs:subClassOf :CCS .
 
-:aggregateICD9code
+:aggregatesICD9code
       rdf:type owl:ObjectProperty ;
       rdfs:domain :CCS ;
-      rdfs:label "aggregate ICD9 code"@en ;
+      rdfs:label "aggregates ICD9 code"@en ;
       rdfs:range icd9:ICD ;
       owl:inverseOf :isAggregatedInCCScode .
 
@@ -44,4 +44,4 @@
       rdfs:domain icd9:ICD ;
       rdfs:label "is aggregated in CCS code"@en ;
       rdfs:range :CCS ;
-      owl:inverseOf :aggregateICD9code .
+      owl:inverseOf :aggregatesICD9code .
