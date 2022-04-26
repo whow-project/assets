@@ -1,0 +1,1401 @@
+# baseURI: https://w3id.org/environmental-data/data
+# imports: http://www.w3.org/2004/02/skos/core
+# imports: https://dati.isprambiente.it/ontology/core/
+
+@prefix :        <https://w3id.org/environmental-data/data/> .
+@prefix inspire-mf:  <https://dati.isprambiente.it/ontology/inspire-mf/> .
+@prefix ispra-top:  <https://dati.isprambiente.it/ontology/core/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo:     <http://schema.org/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix w-mon:   <https://w3id.org/environmental-data/onto/water-monitoring-ontology/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/environmental-data/data>
+      rdf:type owl:Ontology ;
+      owl:imports <http://www.w3.org/2004/02/skos/core> , ispra-top: .
+
+:     rdf:type owl:Ontology .
+
+<https://w3id.org/environmental-data/data/observable-property/479-61-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Clorofilla \"a\"";
+skos:prefLabel "Clorofilla \"a\"";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-479-61-8> .
+<https://w3id.org/environmental-data/data/observable-property/7440-38-2> a skos:Concept;
+rdfs:label "Concentrazione di Arsenico";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Arsenico";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7440-38-2> .
+<https://w3id.org/environmental-data/data/observable-property/7440-43-9> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Cadmio";
+skos:prefLabel "Cadmio";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7440-43-9> .
+<https://w3id.org/environmental-data/data/observable-property/7440-70-2> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Calcio";
+skos:prefLabel "Calcio";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7440-70-2> .
+<https://w3id.org/environmental-data/data/observable-property/7440-47-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Cromo totale";
+skos:prefLabel "Cromo totale";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7440-47-3> .
+<https://w3id.org/environmental-data/data/observable-property/7723-14-0> skos:prefLabel "Fosforo Totale";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Fosforo Totale";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7723-14-0> .
+<https://w3id.org/environmental-data/data/observable-property/7439-95-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Magnesio";
+skos:prefLabel "Magnesio";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7439-95-4> .
+<https://w3id.org/environmental-data/data/observable-property/7439-97-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Mercurio";
+skos:prefLabel "Mercurio";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7439-97-6> .
+<https://w3id.org/environmental-data/data/observable-property/7440-02-0> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Nichel";
+skos:prefLabel "Nichel";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7440-02-0> .
+<https://w3id.org/environmental-data/data/observable-property/14265-44-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Ortofosfato";
+skos:prefLabel "Ortofosfato";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-14265-44-2> .
+<https://w3id.org/environmental-data/data/observable-property/7782-44-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Ossigeno disciolto";
+skos:prefLabel "Ossigeno disciolto";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7782-44-7> .
+<https://w3id.org/environmental-data/data/observable-property/7439-92-1> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Piombo";
+skos:prefLabel "Piombo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7439-92-1> .
+<https://w3id.org/environmental-data/data/observable-property/7440-09-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Potassio";
+skos:prefLabel "Potassio";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7440-09-7> .
+<https://w3id.org/environmental-data/data/observable-property/7440-50-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Rame";
+skos:prefLabel "Rame";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7440-50-8> .
+<https://w3id.org/environmental-data/data/observable-property/1344-09-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Silicati reattivi";
+skos:prefLabel "Silicati reattivi";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1344-09-8> .
+<https://w3id.org/environmental-data/data/observable-property/7440-23-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Sodio";
+skos:prefLabel "Sodio";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7440-23-5> .
+<https://w3id.org/environmental-data/data/observable-property/7440-66-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Zinco";
+skos:prefLabel "Zinco";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7440-66-6> .
+<https://w3id.org/environmental-data/data/observable-property/50-29-3> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di p,p'-DDT";
+skos:prefLabel "p,p'-DDT";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-50-29-3> .
+<https://w3id.org/environmental-data/data/observable-property/50-32-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Benzo (a) pirene";
+skos:prefLabel "Benzo (a) pirene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-50-32-8> .
+<https://w3id.org/environmental-data/data/observable-property/51-28-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2,4-Dinitrofenolo";
+skos:prefLabel "2,4-Dinitrofenolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-51-28-5> .
+<https://w3id.org/environmental-data/data/observable-property/53-16-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Estrone";
+skos:prefLabel "Estrone";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-53-16-7> .
+<https://w3id.org/environmental-data/data/observable-property/53-70-3> a skos:Concept;
+rdfs:label "Concentrazione di Dibenzo(a,h)antracene";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Dibenzo(a,h)antracene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-53-70-3> .
+<https://w3id.org/environmental-data/data/observable-property/56-23-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Tetracloruro di carbonio";
+skos:prefLabel "Tetracloruro di carbonio";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-56-23-5> .
+<https://w3id.org/environmental-data/data/observable-property/56-55-3> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Benzo(a)antracene";
+skos:prefLabel "Benzo(a)antracene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-56-55-3> .
+<https://w3id.org/environmental-data/data/observable-property/57-12-5> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Cianuri liberi";
+skos:prefLabel "Cianuri liberi";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-57-12-5> .
+<https://w3id.org/environmental-data/data/observable-property/57-63-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 17-alfa-etinilestradiolo";
+skos:prefLabel "17-alfa-etinilestradiolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-57-63-6> .
+<https://w3id.org/environmental-data/data/observable-property/58-89-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di HCH gamma (lindano)";
+skos:prefLabel "HCH gamma (lindano)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-58-89-9> .
+<https://w3id.org/environmental-data/data/observable-property/59-50-7> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 4-Cloro-3-metilfenolo";
+skos:prefLabel "4-Cloro-3-metilfenolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-59-50-7> .
+<https://w3id.org/environmental-data/data/observable-property/60-51-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Dimetoato";
+skos:prefLabel "Dimetoato";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-60-51-5> .
+<https://w3id.org/environmental-data/data/observable-property/62-53-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Anilina";
+skos:prefLabel "Anilina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-62-53-3> .
+<https://w3id.org/environmental-data/data/observable-property/62-73-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Diclorvos";
+skos:prefLabel "Diclorvos";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-62-73-7> .
+<https://w3id.org/environmental-data/data/observable-property/67-66-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Triclorometano";
+skos:prefLabel "Triclorometano";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-67-66-3> .
+<https://w3id.org/environmental-data/data/observable-property/71-43-2> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Benzene";
+skos:prefLabel "Benzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-71-43-2> .
+<https://w3id.org/environmental-data/data/observable-property/71-55-6> rdfs:label "Concentrazione di Tricloroetano 1,1,1";
+skos:prefLabel "Tricloroetano 1,1,1";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-71-55-6> .
+<https://w3id.org/environmental-data/data/observable-property/75-01-4> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Cloruro di Vinile";
+skos:prefLabel "Cloruro di Vinile";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-75-01-4> .
+<https://w3id.org/environmental-data/data/observable-property/75-09-2> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Diclorometano";
+skos:prefLabel "Diclorometano";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-75-09-2> .
+<https://w3id.org/environmental-data/data/observable-property/75-25-2> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Tribromometano";
+skos:prefLabel "Tribromometano";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-75-25-2> .
+<https://w3id.org/environmental-data/data/observable-property/75-27-4> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Bromodiclorometano";
+skos:prefLabel "Bromodiclorometano";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-75-27-4> .
+<https://w3id.org/environmental-data/data/observable-property/75-34-3> skos:prefLabel "Dicloroetano 1,1";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Dicloroetano 1,1";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-75-34-3> .
+<https://w3id.org/environmental-data/data/observable-property/75-35-4> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 1,1-Dicloroetilene";
+skos:prefLabel "1,1-Dicloroetilene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-75-35-4> .
+<https://w3id.org/environmental-data/data/observable-property/78-87-5> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 1,2-dicloropropano";
+skos:prefLabel "1,2-dicloropropano";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-78-87-5> .
+<https://w3id.org/environmental-data/data/observable-property/79-00-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Tricloroetano 1,1,2";
+skos:prefLabel "Tricloroetano 1,1,2";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-79-00-5> .
+<https://w3id.org/environmental-data/data/observable-property/79-01-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Tricloroetilene";
+skos:prefLabel "Tricloroetilene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-79-01-6> .
+<https://w3id.org/environmental-data/data/observable-property/79-34-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Tetracloroetano 1,1,2,2";
+skos:prefLabel "Tetracloroetano 1,1,2,2";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-79-34-5> .
+<https://w3id.org/environmental-data/data/observable-property/80-05-7> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Bisfenolo A";
+skos:prefLabel "Bisfenolo A";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-80-05-7> .
+<https://w3id.org/environmental-data/data/observable-property/134-32-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1-Naftilammina";
+skos:prefLabel "1-Naftilammina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-134-32-7> .
+<https://w3id.org/environmental-data/data/observable-property/375-22-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PFBA (Perfluoro Butanoic Acid)";
+skos:prefLabel "PFBA (Perfluoro Butanoic Acid)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-375-22-4> .
+<https://w3id.org/environmental-data/data/observable-property/375-73-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PFBS (Perfluoro Butane Sulfonate)";
+skos:prefLabel "PFBS (Perfluoro Butane Sulfonate)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-375-73-5> .
+<https://w3id.org/environmental-data/data/observable-property/375-85-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PFHpA (Perfluoro Heptanoic Acid)";
+skos:prefLabel "PFHpA (Perfluoro Heptanoic Acid)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-375-85-9> .
+<https://w3id.org/environmental-data/data/observable-property/83-32-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Acenaftene";
+skos:prefLabel "Acenaftene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-83-32-9> .
+<https://w3id.org/environmental-data/data/observable-property/84-66-2> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Dietil-Ftalato (DEP)";
+skos:prefLabel "Dietil-Ftalato (DEP)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-84-66-2> .
+<https://w3id.org/environmental-data/data/observable-property/84-69-5> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Bis(2-metilpropil)ftalato";
+skos:prefLabel "Bis(2-metilpropil)ftalato";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-84-69-5> .
+<https://w3id.org/environmental-data/data/observable-property/84-74-2> a skos:Concept;
+rdfs:label "Concentrazione di Dibutil-ftalato";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Dibutil-ftalato";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-84-74-2> .
+<https://w3id.org/environmental-data/data/observable-property/85-01-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Fenantrene";
+skos:prefLabel "Fenantrene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-85-01-8> .
+<https://w3id.org/environmental-data/data/observable-property/85-68-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Benzil-butil-ftalato";
+skos:prefLabel "Benzil-butil-ftalato";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-85-68-7> .
+<https://w3id.org/environmental-data/data/observable-property/86-73-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Fluorene";
+skos:prefLabel "Fluorene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-86-73-7> .
+<https://w3id.org/environmental-data/data/observable-property/87-61-6> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 1,2,3-Triclorobenzene";
+skos:prefLabel "1,2,3-Triclorobenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-87-61-6> .
+<https://w3id.org/environmental-data/data/observable-property/87-68-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Esaclorobutadiene";
+skos:prefLabel "Esaclorobutadiene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-87-68-3> .
+<https://w3id.org/environmental-data/data/observable-property/87-86-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Pentaclorofenolo";
+skos:prefLabel "Pentaclorofenolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-87-86-5> .
+<https://w3id.org/environmental-data/data/observable-property/88-06-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2,4,6-Triclorofenolo";
+skos:prefLabel "2,4,6-Triclorofenolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-88-06-2> .
+<https://w3id.org/environmental-data/data/observable-property/88-73-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1-Cloro-2-nitrobenzene";
+skos:prefLabel "1-Cloro-2-nitrobenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-88-73-3> .
+<https://w3id.org/environmental-data/data/observable-property/88-75-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2-Nitrofenolo";
+skos:prefLabel "2-Nitrofenolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-88-75-5> .
+<https://w3id.org/environmental-data/data/observable-property/89-63-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 4-cloro-2-nitroanilina";
+skos:prefLabel "4-cloro-2-nitroanilina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-89-63-4> .
+<https://w3id.org/environmental-data/data/observable-property/91-20-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Naftalene";
+skos:prefLabel "Naftalene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-91-20-3> .
+<https://w3id.org/environmental-data/data/observable-property/93-65-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Mecoprop";
+skos:prefLabel "Mecoprop";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-93-65-2> .
+<https://w3id.org/environmental-data/data/observable-property/93-76-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2,4,5-T";
+skos:prefLabel "2,4,5-T";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-93-76-5> .
+<https://w3id.org/environmental-data/data/observable-property/94-74-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di (MCPA) Acido 2,4 meticlorofenossi acetico";
+skos:prefLabel "(MCPA) Acido 2,4 meticlorofenossi acetico";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-94-74-6>;
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di (MCPA) Acido 2,4 meticlorofenossi acetico";
+skos:prefLabel "(MCPA) Acido 2,4 meticlorofenossi acetico";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-94-74-6> .
+<https://w3id.org/environmental-data/data/observable-property/94-75-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Acido 2,4 diclorofenossi acetico (2,4 D)";
+skos:prefLabel "Acido 2,4 diclorofenossi acetico (2,4 D)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-94-75-7> .
+<https://w3id.org/environmental-data/data/observable-property/95-47-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Xilene orto";
+skos:prefLabel "Xilene orto";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-95-47-6> .
+<https://w3id.org/environmental-data/data/observable-property/95-49-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2-Clorotoluene";
+skos:prefLabel "2-Clorotoluene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-95-49-8> .
+<https://w3id.org/environmental-data/data/observable-property/95-50-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,2-Diclorobenzene";
+skos:prefLabel "1,2-Diclorobenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-95-50-1> .
+<https://w3id.org/environmental-data/data/observable-property/95-51-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2-cloroanilina";
+skos:prefLabel "2-cloroanilina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-95-51-2> .
+<https://w3id.org/environmental-data/data/observable-property/95-53-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2-Metilanilina [o-Toluidina]";
+skos:prefLabel "2-Metilanilina [o-Toluidina]";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-95-53-4>;
+a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 2-Metilanina [o-Toluidina]";
+skos:prefLabel "2-Metilanina [o-Toluidina]";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-95-53-4> .
+<https://w3id.org/environmental-data/data/observable-property/95-57-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2-Clorofenolo";
+skos:prefLabel "2-Clorofenolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-95-57-8> .
+<https://w3id.org/environmental-data/data/observable-property/95-69-2> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 4-cloro-2-metilanilina";
+skos:prefLabel "4-cloro-2-metilanilina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-95-69-2> .
+<https://w3id.org/environmental-data/data/observable-property/95-76-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 3,4-dicloroanilina";
+skos:prefLabel "3,4-dicloroanilina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-95-76-1> .
+<https://w3id.org/environmental-data/data/observable-property/95-82-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2,5-dicloroanilina";
+skos:prefLabel "2,5-dicloroanilina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-95-82-9> .
+<https://w3id.org/environmental-data/data/observable-property/95-94-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,2,4,5-Tetraclorobenzene";
+skos:prefLabel "1,2,4,5-Tetraclorobenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-95-94-3> .
+<https://w3id.org/environmental-data/data/observable-property/96-18-4> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 1,2,3-Tricloropropano";
+skos:prefLabel "1,2,3-Tricloropropano";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-96-18-4> .
+<https://w3id.org/environmental-data/data/observable-property/98-82-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Isopropilbenzene";
+skos:prefLabel "Isopropilbenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-98-82-8> .
+<https://w3id.org/environmental-data/data/observable-property/100-00-5> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 1-Cloro-4-nitrobenzene";
+skos:prefLabel "1-Cloro-4-nitrobenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-100-00-5> .
+<https://w3id.org/environmental-data/data/observable-property/100-02-7> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 4-Nitrofenolo";
+skos:prefLabel "4-Nitrofenolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-100-02-7> .
+<https://w3id.org/environmental-data/data/observable-property/100-41-4> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Etilbenzene";
+skos:prefLabel "Etilbenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-100-41-4> .
+<https://w3id.org/environmental-data/data/observable-property/100-42-5> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Stirene";
+skos:prefLabel "Stirene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-100-42-5> .
+<https://w3id.org/environmental-data/data/observable-property/100-61-8> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di N-metil Anilina";
+skos:prefLabel "N-metil Anilina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-100-61-8> .
+<https://w3id.org/environmental-data/data/observable-property/103-69-5> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di N-etil Anilina";
+skos:prefLabel "N-etil Anilina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-103-69-5> .
+<https://w3id.org/environmental-data/data/observable-property/104-40-5> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di p-nonilfenolo";
+skos:prefLabel "p-nonilfenolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-104-40-5> .
+<https://w3id.org/environmental-data/data/observable-property/105-67-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Dimetilfenolo 2,4";
+skos:prefLabel "Dimetilfenolo 2,4";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-105-67-9> .
+<https://w3id.org/environmental-data/data/observable-property/106-42-3> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Xilene para";
+skos:prefLabel "Xilene para";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-106-42-3> .
+<https://w3id.org/environmental-data/data/observable-property/106-43-4> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 4-Clorotoluene";
+skos:prefLabel "4-Clorotoluene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-106-43-4> .
+<https://w3id.org/environmental-data/data/observable-property/106-46-7> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 1,4-diclorobenzene";
+skos:prefLabel "1,4-diclorobenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-106-46-7> .
+<https://w3id.org/environmental-data/data/observable-property/106-47-8> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 4-cloroanilina";
+skos:prefLabel "4-cloroanilina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-106-47-8> .
+<https://w3id.org/environmental-data/data/observable-property/106-48-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 4-Clorofenolo";
+skos:prefLabel "4-Clorofenolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-106-48-9> .
+<https://w3id.org/environmental-data/data/observable-property/106-49-0> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di p-toluidina";
+skos:prefLabel "p-toluidina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-106-49-0> .
+<https://w3id.org/environmental-data/data/observable-property/106-93-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,2-dibromoetano";
+skos:prefLabel "1,2-dibromoetano";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-106-93-4> .
+<https://w3id.org/environmental-data/data/observable-property/107-06-2> skos:prefLabel "Dicloroetano 1,2";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-107-06-2>;
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Dicloroetano 1,2" .
+<https://w3id.org/environmental-data/data/observable-property/108-38-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Xilene meta";
+skos:prefLabel "Xilene meta";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-108-38-3> .
+<https://w3id.org/environmental-data/data/observable-property/108-41-8> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 3-Clorotoluene";
+skos:prefLabel "3-Clorotoluene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-108-41-8> .
+<https://w3id.org/environmental-data/data/observable-property/108-42-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 3-cloroanilina";
+skos:prefLabel "3-cloroanilina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-108-42-9> .
+<https://w3id.org/environmental-data/data/observable-property/108-43-0> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 3-Clorofenolo";
+skos:prefLabel "3-Clorofenolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-108-43-0> .
+<https://w3id.org/environmental-data/data/observable-property/108-44-1> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di m-Toluidina";
+skos:prefLabel "m-Toluidina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-108-44-1> .
+<https://w3id.org/environmental-data/data/observable-property/108-70-3> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Triclorobenzene 1,3,5";
+skos:prefLabel "Triclorobenzene 1,3,5";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-108-70-3> .
+<https://w3id.org/environmental-data/data/observable-property/108-88-3> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Toluene";
+skos:prefLabel "Toluene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-108-88-3> .
+<https://w3id.org/environmental-data/data/observable-property/108-90-7> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Monoclorobenzene";
+skos:prefLabel "Monoclorobenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-108-90-7> .
+<https://w3id.org/environmental-data/data/observable-property/108-95-2> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Fenoli";
+skos:prefLabel "Fenoli";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-108-95-2> .
+<https://w3id.org/environmental-data/data/observable-property/115-96-8> a skos:Concept;
+rdfs:label "Concentrazione di TCEP (tris-2cloroetil-fosfato)";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "TCEP (tris-2cloroetil-fosfato)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-115-96-8> .
+<https://w3id.org/environmental-data/data/observable-property/117-81-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Di-2-etilesilftalato";
+skos:prefLabel "Di-2-etilesilftalato";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-117-81-7> .
+<https://w3id.org/environmental-data/data/observable-property/118-74-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Esaclorobenzene";
+skos:prefLabel "Esaclorobenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-118-74-1> .
+<https://w3id.org/environmental-data/data/observable-property/120-12-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Antracene";
+skos:prefLabel "Antracene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-120-12-7> .
+<https://w3id.org/environmental-data/data/observable-property/120-82-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,2,4-Triclorobenzene";
+skos:prefLabel "1,2,4-Triclorobenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-120-82-1> .
+<https://w3id.org/environmental-data/data/observable-property/120-83-2> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 2,4-Diclorofenolo";
+skos:prefLabel "2,4-Diclorofenolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-120-83-2> .
+<https://w3id.org/environmental-data/data/observable-property/121-73-3> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 3 Cloronitrobenzene";
+skos:prefLabel "3 Cloronitrobenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-121-73-3> .
+<https://w3id.org/environmental-data/data/observable-property/122-34-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Simazina";
+skos:prefLabel "Simazina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-122-34-9> .
+<https://w3id.org/environmental-data/data/observable-property/122-39-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Difenilammina";
+skos:prefLabel "Difenilammina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-122-39-4> .
+<https://w3id.org/environmental-data/data/observable-property/124-48-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Dibromoclorometano";
+skos:prefLabel "Dibromoclorometano";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-124-48-1> .
+<https://w3id.org/environmental-data/data/observable-property/127-18-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Tetracloroetilene";
+skos:prefLabel "Tetracloroetilene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-127-18-4> .
+<https://w3id.org/environmental-data/data/observable-property/129-00-0> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Pirene";
+skos:prefLabel "Pirene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-129-00-0> .
+<https://w3id.org/environmental-data/data/observable-property/131-11-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Dimetil-ftalato (DMP)";
+skos:prefLabel "Dimetil-ftalato (DMP)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-131-11-3> .
+<https://w3id.org/environmental-data/data/observable-property/139-40-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Propazina";
+skos:prefLabel "Propazina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-139-40-2> .
+<https://w3id.org/environmental-data/data/observable-property/140-66-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di para-terz-ottilfenolo";
+skos:prefLabel "para-terz-ottilfenolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-140-66-9> .
+<https://w3id.org/environmental-data/data/observable-property/156-59-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Dicloroetilene cis";
+skos:prefLabel "Dicloroetilene cis";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-156-59-2> .
+<https://w3id.org/environmental-data/data/observable-property/156-60-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Dicloroetilene trans";
+skos:prefLabel "Dicloroetilene trans";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-156-60-5> .
+<https://w3id.org/environmental-data/data/observable-property/193-39-5> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Indeno(1,2,3-cd)pirene";
+skos:prefLabel "Indeno(1,2,3-cd)pirene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-193-39-5> .
+<https://w3id.org/environmental-data/data/observable-property/206-44-0> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Fluorantene";
+skos:prefLabel "Fluorantene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-206-44-0> .
+<https://w3id.org/environmental-data/data/observable-property/208-96-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Acenaftilene";
+skos:prefLabel "Acenaftilene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-208-96-8> .
+<https://w3id.org/environmental-data/data/observable-property/218-01-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Crisene";
+skos:prefLabel "Crisene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-218-01-9> .
+<https://w3id.org/environmental-data/data/observable-property/288-88-0> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di M.Mt.T.D.";
+skos:prefLabel "M.Mt.T.D.";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-288-88-0> .
+<https://w3id.org/environmental-data/data/observable-property/307-24-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PFHxA (Perfluoro Hexanoic Acid)";
+skos:prefLabel "PFHxA (Perfluoro Hexanoic Acid)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-307-24-4> .
+<https://w3id.org/environmental-data/data/observable-property/307-55-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PFDoA (Perfluoro Dodecanoic Acid)";
+skos:prefLabel "PFDoA (Perfluoro Dodecanoic Acid)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-307-55-1> .
+<https://w3id.org/environmental-data/data/observable-property/319-84-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di HCH alfa";
+skos:prefLabel "HCH alfa";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-319-84-6> .
+<https://w3id.org/environmental-data/data/observable-property/319-85-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di HCH-beta";
+skos:prefLabel "HCH-beta";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-319-85-7> .
+<https://w3id.org/environmental-data/data/observable-property/319-86-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di HCH delta";
+skos:prefLabel "HCH delta";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-319-86-8> .
+<https://w3id.org/environmental-data/data/observable-property/330-54-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Diuron";
+skos:prefLabel "Diuron";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-330-54-1> .
+<https://w3id.org/environmental-data/data/observable-property/330-55-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Linuron";
+skos:prefLabel "Linuron";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-330-55-2> .
+<https://w3id.org/environmental-data/data/observable-property/333-41-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Diazinone";
+skos:prefLabel "Diazinone";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-333-41-5> .
+<https://w3id.org/environmental-data/data/observable-property/335-67-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PFOA (Perfluoro Octanoic Acid)";
+skos:prefLabel "PFOA (Perfluoro Octanoic Acid)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-335-67-1> .
+<https://w3id.org/environmental-data/data/observable-property/335-76-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PFDA (Perfluoro Decanoic Acid)";
+skos:prefLabel "PFDA (Perfluoro Decanoic Acid)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-335-76-2> .
+<https://w3id.org/environmental-data/data/observable-property/355-46-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PFHxS (Perfluoro Hexane Sulfonate)";
+skos:prefLabel "PFHxS (Perfluoro Hexane Sulfonate)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-355-46-4> .
+<https://w3id.org/environmental-data/data/observable-property/375-95-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PFNA (Perfluoro Nonanoic Acid)";
+skos:prefLabel "PFNA (Perfluoro Nonanoic Acid)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-375-95-1> .
+<https://w3id.org/environmental-data/data/observable-property/465-73-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Isodrin";
+skos:prefLabel "Isodrin";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-465-73-6> .
+<https://w3id.org/environmental-data/data/observable-property/534-52-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2-Metil-4,6-dinitrofenolo (DNOC)";
+skos:prefLabel "2-Metil-4,6-dinitrofenolo (DNOC)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-534-52-1> .
+<https://w3id.org/environmental-data/data/observable-property/540-59-0> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,2-dicloroetilene";
+skos:prefLabel "1,2-dicloroetilene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-540-59-0> .
+<https://w3id.org/environmental-data/data/observable-property/541-73-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,3 Diclorobenzene";
+skos:prefLabel "1,3 Diclorobenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-541-73-1> .
+<https://w3id.org/environmental-data/data/observable-property/1912-24-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Atrazina";
+skos:prefLabel "Atrazina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1912-24-9> .
+<https://w3id.org/environmental-data/data/observable-property/608-27-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2,3-Dicloroanilina";
+skos:prefLabel "2,3-Dicloroanilina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-608-27-5> .
+<https://w3id.org/environmental-data/data/observable-property/608-93-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Pentaclorobenzene";
+skos:prefLabel "Pentaclorobenzene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-608-93-5> .
+<https://w3id.org/environmental-data/data/observable-property/635-22-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 4-Cloro-3-Nitroanolina";
+skos:prefLabel "4-Cloro-3-Nitroanolina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-635-22-3> .
+<https://w3id.org/environmental-data/data/observable-property/636-30-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2,4,5-Tricloroanilina";
+skos:prefLabel "2,4,5-Tricloroanilina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-636-30-6> .
+<https://w3id.org/environmental-data/data/observable-property/637-92-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di ETBE ( etil terbutil etere )";
+skos:prefLabel "ETBE ( etil terbutil etere )";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-637-92-3> .
+<https://w3id.org/environmental-data/data/observable-property/1330-20-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Xilene (somma isomeri)";
+skos:prefLabel "Xilene (somma isomeri)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1330-20-7> .
+<https://w3id.org/environmental-data/data/observable-property/1634-04-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di MTBE (metil terbutil etere)";
+skos:prefLabel "MTBE (metil terbutil etere)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1634-04-4> .
+<https://w3id.org/environmental-data/data/observable-property/1698-60-8> a skos:Concept;
+rdfs:label "Concentrazione di Chloridazon";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Chloridazon";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1698-60-8> .
+<https://w3id.org/environmental-data/data/observable-property/1717-00-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,1-Dicloro-1-fluoro-etano (Freon 141)";
+skos:prefLabel "1,1-Dicloro-1-fluoro-etano (Freon 141)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1717-00-6> .
+<https://w3id.org/environmental-data/data/observable-property/1763-23-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PFOS (Perfluoro Octane Sulfonate)";
+skos:prefLabel "PFOS (Perfluoro Octane Sulfonate)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1763-23-1> .
+<https://w3id.org/environmental-data/data/observable-property/2706-90-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PFPeA (Perfluoro Pentanoic Acid)";
+skos:prefLabel "PFPeA (Perfluoro Pentanoic Acid)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-2706-90-3> .
+<https://w3id.org/environmental-data/data/observable-property/7782-49-2> rdfs:label "Concentrazione di Selenio";
+a skos:Concept,w-mon:WaterObservableProperty;
+skos:prefLabel "Selenio";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7782-49-2> .
+<https://w3id.org/environmental-data/data/observable-property/5915-41-3> rdfs:label "Concentrazione di Terbutilazina";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Terbutilazina";
+a skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-5915-41-3> .
+<https://w3id.org/environmental-data/data/observable-property/7286-69-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Secbutilazina";
+skos:prefLabel "Secbutilazina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7286-69-3> .
+<https://w3id.org/environmental-data/data/observable-property/7439-89-6> skos:prefLabel "Ferro";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Ferro";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7439-89-6> .
+<https://w3id.org/environmental-data/data/observable-property/7440-36-0> a skos:Concept;
+rdfs:label "Concentrazione di Antimonio";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Antimonio";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7440-36-0> .
+<https://w3id.org/environmental-data/data/observable-property/7440-42-8> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Boro";
+skos:prefLabel "Boro";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7440-42-8> .
+<https://w3id.org/environmental-data/data/observable-property/7440-62-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Vanadio";
+skos:prefLabel "Vanadio";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7440-62-2> .
+<https://w3id.org/environmental-data/data/observable-property/7664-41-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Ammoniaca (non ionizzata)";
+skos:prefLabel "Ammoniaca (non ionizzata)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7664-41-7> .
+<https://w3id.org/environmental-data/data/observable-property/12002-48-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Triclorobenzeni";
+skos:prefLabel "Triclorobenzeni";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-12002-48-1> .
+<https://w3id.org/environmental-data/data/observable-property/25057-89-0> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Bentazone";
+skos:prefLabel "Bentazone";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-25057-89-0> .
+<https://w3id.org/environmental-data/data/observable-property/51235-04-2> a skos:Concept;
+rdfs:label "Concentrazione di Esazinone";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Esazinone";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-51235-04-2> .
+<https://w3id.org/environmental-data/data/observable-property/114798-03-9> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Azoto ammoniacale";
+skos:prefLabel "Azoto ammoniacale";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-114798-03-9> .
+<https://w3id.org/environmental-data/data/observable-property/214798-03-9> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Ammoniaca totale";
+skos:prefLabel "Ammoniaca totale";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-214798-03-9> .
+<https://w3id.org/environmental-data/data/observable-property/314797-55-8> rdfs:label "Concentrazione di Azoto nitrico";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Azoto nitrico";
+a skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-314797-55-8> .
+<https://w3id.org/environmental-data/data/observable-property/414797-65-0> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Azoto nitroso";
+skos:prefLabel "Azoto nitroso";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-414797-65-0> .
+<https://w3id.org/environmental-data/data/observable-property/517778-88-0> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Azoto Totale";
+skos:prefLabel "Azoto Totale";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-517778-88-0> .
+<https://w3id.org/environmental-data/data/observable-property/616887-00-6> w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-616887-00-6>;
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Cloruri";
+skos:prefLabel "Cloruri" .
+<https://w3id.org/environmental-data/data/observable-property/816984-48-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Fluoruri";
+skos:prefLabel "Fluoruri";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-816984-48-8> .
+<https://w3id.org/environmental-data/data/observable-property/1014808-79-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Solfati";
+skos:prefLabel "Solfati";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1014808-79-8> .
+<https://w3id.org/environmental-data/data/observable-property/1210606-46-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2,4-Dicofol";
+skos:prefLabel "2,4-Dicofol";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1210606-46-9> .
+<https://w3id.org/environmental-data/data/observable-property/1372-54-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 4,4'-DDD";
+skos:prefLabel "4,4'-DDD";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1372-54-8> .
+<https://w3id.org/environmental-data/data/observable-property/1472-55-9> a skos:Concept;
+rdfs:label "Concentrazione di 4,4'-DDE";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "4,4'-DDE";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1472-55-9> .
+<https://w3id.org/environmental-data/data/observable-property/15135410-20-7> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Acetamiprid";
+skos:prefLabel "Acetamiprid";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-15135410-20-7> .
+<https://w3id.org/environmental-data/data/observable-property/1674070-46-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Aclonifen";
+skos:prefLabel "Aclonifen";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1674070-46-5> .
+<https://w3id.org/environmental-data/data/observable-property/1715972-60-8> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Alachlor";
+skos:prefLabel "Alachlor";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1715972-60-8> .
+<https://w3id.org/environmental-data/data/observable-property/18309-00-2> a skos:Concept;
+rdfs:label "Concentrazione di Aldrin";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Aldrin";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-18309-00-2> .
+<https://w3id.org/environmental-data/data/observable-property/19834-12-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Ametrina";
+skos:prefLabel "Ametrina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-19834-12-8> .
+<https://w3id.org/environmental-data/data/observable-property/206190-65-4> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Atrazina-desetil";
+skos:prefLabel "Atrazina-desetil";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-206190-65-4> .
+<https://w3id.org/environmental-data/data/observable-property/211007-28-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Atrazina-desisopropil";
+skos:prefLabel "Atrazina-desisopropil";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-211007-28-9> .
+<https://w3id.org/environmental-data/data/observable-property/22120162-55-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Azimsulfuron";
+skos:prefLabel "Azimsulfuron";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-22120162-55-2> .
+<https://w3id.org/environmental-data/data/observable-property/2383055-99-6> rdfs:label "Concentrazione di Bensulfuron Metile";
+skos:prefLabel "Bensulfuron Metile";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-2383055-99-6> .
+<https://w3id.org/environmental-data/data/observable-property/24314-40-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Bromacil";
+skos:prefLabel "Bromacil";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-24314-40-9> .
+<https://w3id.org/environmental-data/data/observable-property/25124495-18-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Chinossifen";
+skos:prefLabel "Chinossifen";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-25124495-18-7> .
+<https://w3id.org/environmental-data/data/observable-property/2657-74-9> skos:prefLabel "Chlordano Totale";
+a w-mon:WaterObservableProperty;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-2657-74-9>;
+a skos:Concept;
+rdfs:label "Concentrazione di Chlordano Totale" .
+<https://w3id.org/environmental-data/data/observable-property/27470-90-6> skos:prefLabel "Chlorfenvinphos";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Chlorfenvinphos";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-27470-90-6> .
+<https://w3id.org/environmental-data/data/observable-property/2821725-46-2> a skos:Concept;
+rdfs:label "Concentrazione di Cianazina";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Cianazina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-2821725-46-2> .
+<https://w3id.org/environmental-data/data/observable-property/2928159-98-0> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Cibutrina";
+skos:prefLabel "Cibutrina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-2928159-98-0> .
+<https://w3id.org/environmental-data/data/observable-property/305103-71-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Clordano cis";
+skos:prefLabel "Clordano cis";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-305103-71-9> .
+<https://w3id.org/environmental-data/data/observable-property/315103-74-2> w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-315103-74-2>;
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Clordano trans";
+skos:prefLabel "Clordano trans" .
+<https://w3id.org/environmental-data/data/observable-property/322921-88-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Clorpirifos";
+skos:prefLabel "Clorpirifos";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-322921-88-2> .
+<https://w3id.org/environmental-data/data/observable-property/335598-13-0> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Clorpirifos Metile";
+skos:prefLabel "Clorpirifos Metile";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-335598-13-0> .
+<https://w3id.org/environmental-data/data/observable-property/34210880-92-5> skos:prefLabel "Clotianidin";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Clotianidin";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-34210880-92-5> .
+<https://w3id.org/environmental-data/data/observable-property/36101205-02-1> skos:prefLabel "Cycloxidim";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Cycloxidim";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-36101205-02-1> .
+<https://w3id.org/environmental-data/data/observable-property/3772-54-8-sum> skos:prefLabel "DDD";
+rdfs:label "Concentrazione di DDD";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-3772-54-8-sum> .
+<https://w3id.org/environmental-data/data/observable-property/3872-55-9-sum> skos:prefLabel "DDE";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di DDE";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-3872-55-9-sum> .
+<https://w3id.org/environmental-data/data/observable-property/398017-34-3> skos:prefLabel "DDT";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di DDT";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-398017-34-3> .
+<https://w3id.org/environmental-data/data/observable-property/4015307-86-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Diclofenac";
+skos:prefLabel "Diclofenac";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-4015307-86-5> .
+<https://w3id.org/environmental-data/data/observable-property/412008-58-4> rdfs:label "Concentrazione di Diclorobenzammide 2,6";
+skos:prefLabel "Diclorobenzammide 2,6";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-412008-58-4>;
+a w-mon:WaterObservableProperty,skos:Concept .
+<https://w3id.org/environmental-data/data/observable-property/42115-32-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Dicofol";
+skos:prefLabel "Dicofol";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-42115-32-2> .
+<https://w3id.org/environmental-data/data/observable-property/4360-57-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Dieldrin";
+skos:prefLabel "Dieldrin";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-4360-57-1> .
+<https://w3id.org/environmental-data/data/observable-property/44115-29-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Endosulfan (isomeri alfa e beta)";
+skos:prefLabel "Endosulfan (isomeri alfa e beta)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-44115-29-7> .
+<https://w3id.org/environmental-data/data/observable-property/45959-98-8> skos:prefLabel "Endosulfan alfa";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Endosulfan alfa";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-45959-98-8> .
+<https://w3id.org/environmental-data/data/observable-property/4633213-65-9> rdfs:label "Concentrazione di Endosulfan beta";
+a w-mon:WaterObservableProperty,skos:Concept;
+skos:prefLabel "Endosulfan beta";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-4633213-65-9> .
+<https://w3id.org/environmental-data/data/observable-property/471031-07-8> skos:prefLabel "Endosulfan solfato";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Endosulfan solfato";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-471031-07-8> .
+<https://w3id.org/environmental-data/data/observable-property/4872-20-8> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Endrin";
+skos:prefLabel "Endrin";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-4872-20-8> .
+<https://w3id.org/environmental-data/data/observable-property/4976-44-8> skos:prefLabel "Eptacloro";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Eptacloro";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-4976-44-8> .
+<https://w3id.org/environmental-data/data/observable-property/501024-57-3> skos:prefLabel "Eptacloro epossido";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Eptacloro epossido";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-501024-57-3> .
+<https://w3id.org/environmental-data/data/observable-property/5128044-83-9> skos:prefLabel "Eptacloro Epossido endo";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Eptacloro Epossido endo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-5128044-83-9> .
+<https://w3id.org/environmental-data/data/observable-property/52608-73-1> skos:prefLabel "Esaclorocicloesano";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Esaclorocicloesano";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-52608-73-1> .
+<https://w3id.org/environmental-data/data/observable-property/54122-14-5> a skos:Concept;
+rdfs:label "Concentrazione di Fenitrotion";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Fenitrotion";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-54122-14-5> .
+<https://w3id.org/environmental-data/data/observable-property/5555-38-9> a skos:Concept;
+rdfs:label "Concentrazione di Fenthion";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Fenthion";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-5555-38-9> .
+<https://w3id.org/environmental-data/data/observable-property/56142459-58-3> skos:prefLabel "Flufenacet";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Flufenacet";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-56142459-58-3> .
+<https://w3id.org/environmental-data/data/observable-property/5781406-37-3> skos:prefLabel "Fluroxipir";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Fluroxipir";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-5781406-37-3> .
+<https://w3id.org/environmental-data/data/observable-property/58138261-41-3> skos:prefLabel "Imidacloprid";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Imidacloprid";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-58138261-41-3> .
+<https://w3id.org/environmental-data/data/observable-property/5934123-59-6> a skos:Concept;
+rdfs:label "Concentrazione di Isoproturon";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Isoproturon";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-5934123-59-6> .
+<https://w3id.org/environmental-data/data/observable-property/60141112-29-0> skos:prefLabel "Isoxaflutol";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Isoxaflutol";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-60141112-29-0> .
+<https://w3id.org/environmental-data/data/observable-property/61121-75-5> skos:prefLabel "Malathion";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Malathion";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-61121-75-5> .
+<https://w3id.org/environmental-data/data/observable-property/6257837-19-1> rdfs:label "Concentrazione di Metalaxyl";
+skos:prefLabel "Metalaxyl";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-6257837-19-1> .
+<https://w3id.org/environmental-data/data/observable-property/6341394-05-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Metamitron";
+skos:prefLabel "Metamitron";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-6341394-05-2> .
+<https://w3id.org/environmental-data/data/observable-property/642032-65-7> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Metiocarb";
+skos:prefLabel "Metiocarb";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-642032-65-7> .
+<https://w3id.org/environmental-data/data/observable-property/6551218-45-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Metolachlor";
+skos:prefLabel "Metolachlor";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-6551218-45-2> .
+<https://w3id.org/environmental-data/data/observable-property/6621087-64-9> rdfs:label "Concentrazione di Metribuzin";
+skos:prefLabel "Metribuzin";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-6621087-64-9> .
+<https://w3id.org/environmental-data/data/observable-property/677786-34-7> skos:prefLabel "Mevinfos";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Mevinfos";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-677786-34-7> .
+<https://w3id.org/environmental-data/data/observable-property/682212-67-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Molinate";
+skos:prefLabel "Molinate";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-682212-67-1> .
+<https://w3id.org/environmental-data/data/observable-property/69111991-09-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Nicosulfuron";
+skos:prefLabel "Nicosulfuron";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-69111991-09-4> .
+<https://w3id.org/environmental-data/data/observable-property/7053-19-0> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di o,p'-DDD";
+skos:prefLabel "o,p'-DDD";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7053-19-0> .
+<https://w3id.org/environmental-data/data/observable-property/713424-82-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di o,p-DDE";
+skos:prefLabel "o,p-DDE";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-713424-82-6> .
+<https://w3id.org/environmental-data/data/observable-property/72789-02-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di o,p'-DDT";
+skos:prefLabel "o,p'-DDT";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-72789-02-6> .
+<https://w3id.org/environmental-data/data/observable-property/731113-02-6> rdfs:label "Concentrazione di Ometoato";
+skos:prefLabel "Ometoato";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-731113-02-6> .
+<https://w3id.org/environmental-data/data/observable-property/7419666-30-9> a skos:Concept;
+rdfs:label "Concentrazione di Oxadiazon";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Oxadiazon";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7419666-30-9> .
+<https://w3id.org/environmental-data/data/observable-property/7577732-09-3> a skos:Concept;
+rdfs:label "Concentrazione di Oxadixyl";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Oxadixyl";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7577732-09-3> .
+<https://w3id.org/environmental-data/data/observable-property/76301-12-2> skos:prefLabel "Oxydemeton-metile";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Oxydemeton-metile";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-76301-12-2> .
+<https://w3id.org/environmental-data/data/observable-property/7756-38-2> rdfs:label "Concentrazione di Paration etile";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Paration etile";
+a skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7756-38-2> .
+<https://w3id.org/environmental-data/data/observable-property/78298-00-0> skos:prefLabel "Paration metile";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Paration metile";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-78298-00-0> .
+<https://w3id.org/environmental-data/data/observable-property/7940487-42-1> skos:prefLabel "Pendimetalin";
+rdfs:label "Concentrazione di Pendimetalin";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-7940487-42-1> .
+<https://w3id.org/environmental-data/data/observable-property/8023103-98-2> rdfs:label "Concentrazione di Pirimicarb";
+a w-mon:WaterObservableProperty,skos:Concept;
+skos:prefLabel "Pirimicarb";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-8023103-98-2> .
+<https://w3id.org/environmental-data/data/observable-property/8151218-49-6> rdfs:label "Concentrazione di Pretilachlor";
+a w-mon:WaterObservableProperty,skos:Concept;
+skos:prefLabel "Pretilachlor";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-8151218-49-6> .
+<https://w3id.org/environmental-data/data/observable-property/827287-19-6> skos:prefLabel "Prometrina";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Prometrina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-827287-19-6> .
+<https://w3id.org/environmental-data/data/observable-property/83709-98-8> a skos:Concept;
+rdfs:label "Concentrazione di Propanil";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Propanil";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-83709-98-8> .
+<https://w3id.org/environmental-data/data/observable-property/842275-18-5> rdfs:label "Concentrazione di Protoate";
+skos:prefLabel "Protoate";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-842275-18-5> .
+<https://w3id.org/environmental-data/data/observable-property/8584087-01-4> skos:prefLabel "Quinclorac";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Quinclorac";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-8584087-01-4> .
+<https://w3id.org/environmental-data/data/observable-property/86122931-48-0> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Rimsulfuron";
+skos:prefLabel "Rimsulfuron";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-86122931-48-0> .
+<https://w3id.org/environmental-data/data/observable-property/8799105-77-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Sulcotrione";
+skos:prefLabel "Sulcotrione";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-8799105-77-8> .
+<https://w3id.org/environmental-data/data/observable-property/8830125-63-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Terbutilazina desetil";
+skos:prefLabel "Terbutilazina desetil";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-8830125-63-4> .
+<https://w3id.org/environmental-data/data/observable-property/89886-50-0> a skos:Concept;
+rdfs:label "Concentrazione di Terbutrina";
+skos:prefLabel "Terbutrina";
+a w-mon:WaterObservableProperty;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-89886-50-0> .
+<https://w3id.org/environmental-data/data/observable-property/90111988-49-9> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Thiacloprid";
+skos:prefLabel "Thiacloprid";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-90111988-49-9> .
+<https://w3id.org/environmental-data/data/observable-property/9128249-77-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Thiobencarb";
+skos:prefLabel "Thiobencarb";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-9128249-77-6> .
+<https://w3id.org/environmental-data/data/observable-property/92153719-23-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Tiametoxam";
+skos:prefLabel "Tiametoxam";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-92153719-23-4> .
+<https://w3id.org/environmental-data/data/observable-property/932303-17-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Triallate";
+skos:prefLabel "Triallate";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-932303-17-5> .
+<https://w3id.org/environmental-data/data/observable-property/941582-09-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Trifluralin";
+skos:prefLabel "Trifluralin";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-941582-09-8> .
+<https://w3id.org/environmental-data/data/observable-property/9534256-82-1> rdfs:label "Concentrazione di Acetocloro";
+skos:prefLabel "Acetocloro";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-9534256-82-1>;
+a w-mon:WaterObservableProperty,skos:Concept .
+<https://w3id.org/environmental-data/data/observable-property/96865318-97-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Ametoctradina";
+skos:prefLabel "Ametoctradina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-96865318-97-4> .
+<https://w3id.org/environmental-data/data/observable-property/97131860-33-8> rdfs:label "Concentrazione di Azoxistrobina";
+skos:prefLabel "Azoxistrobina";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-97131860-33-8> .
+<https://w3id.org/environmental-data/data/observable-property/98188425-85-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Boscalid";
+skos:prefLabel "Boscalid";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-98188425-85-6> .
+<https://w3id.org/environmental-data/data/observable-property/9981777-89-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Clomazone";
+skos:prefLabel "Clomazone";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-9981777-89-1> .
+<https://w3id.org/environmental-data/data/observable-property/100110488-70-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Dimetomorf";
+skos:prefLabel "Dimetomorf";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-100110488-70-5> .
+<https://w3id.org/environmental-data/data/observable-property/101239110-15-7> w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-101239110-15-7>;
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Fluopicolide";
+skos:prefLabel "Fluopicolide" .
+<https://w3id.org/environmental-data/data/observable-property/102104206-82-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Mesotrione";
+skos:prefLabel "Mesotrione";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-102104206-82-8> .
+<https://w3id.org/environmental-data/data/observable-property/10310265-92-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Metamidofos (trifosforamidato di O,S- dimetile)";
+skos:prefLabel "Metamidofos (trifosforamidato di O,S- dimetile)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-10310265-92-6> .
+<https://w3id.org/environmental-data/data/observable-property/10466246-88-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Penconazolo";
+skos:prefLabel "Penconazolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-10466246-88-6> .
+<https://w3id.org/environmental-data/data/observable-property/10553112-28-0> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Pirimetanil";
+skos:prefLabel "Pirimetanil";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-10553112-28-0> .
+<https://w3id.org/environmental-data/data/observable-property/10767747-09-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Procloraz";
+skos:prefLabel "Procloraz";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-10767747-09-5> .
+<https://w3id.org/environmental-data/data/observable-property/108118134-30-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Spiroxamina";
+skos:prefLabel "Spiroxamina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-108118134-30-8> .
+<https://w3id.org/environmental-data/data/observable-property/109107534-96-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Tebuconazolo";
+skos:prefLabel "Tebuconazolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-109107534-96-3> .
+<https://w3id.org/environmental-data/data/observable-property/11023564-05-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Tiofanato metile";
+skos:prefLabel "Tiofanato metile";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-11023564-05-8> .
+<https://w3id.org/environmental-data/data/observable-property/1111066-51-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di AMPA";
+skos:prefLabel "AMPA";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1111066-51-9> .
+<https://w3id.org/environmental-data/data/observable-property/11218540-29-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Cromo VI";
+skos:prefLabel "Cromo VI";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-11218540-29-9> .
+<https://w3id.org/environmental-data/data/observable-property/1131071-83-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Glifosate";
+skos:prefLabel "Glifosate";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1131071-83-6> .
+<https://w3id.org/environmental-data/data/observable-property/116205-99-2> w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-116205-99-2>;
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Benzo (b) fluorantene";
+skos:prefLabel "Benzo (b) fluorantene" .
+<https://w3id.org/environmental-data/data/observable-property/117191-24-2> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Benzo (g,h,i) perilene";
+skos:prefLabel "Benzo (g,h,i) perilene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-117191-24-2> .
+<https://w3id.org/environmental-data/data/observable-property/118207-08-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Benzo (k) fluorantene";
+skos:prefLabel "Benzo (k) fluorantene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-118207-08-9> .
+<https://w3id.org/environmental-data/data/observable-property/1192058-94-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PFUdA (Perfluoro Undecanoic Acid)";
+skos:prefLabel "PFUdA (Perfluoro Undecanoic Acid)";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1192058-94-8> .
+<https://w3id.org/environmental-data/data/observable-property/1221918-00-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Dicamba";
+skos:prefLabel "Dicamba";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1221918-00-9> .
+<https://w3id.org/environmental-data/data/observable-property/123189-64-0> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di Dibenzo(a,h)pirene";
+skos:prefLabel "Dibenzo(a,h)pirene";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-123189-64-0> .
+<https://w3id.org/environmental-data/data/observable-property/1241190931-27-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di cC6O4 [Difluoro{[2,2,4,5-tetrafluoro- 5-(trifluoromethoxy)-1,3-dioxolan- 4-yl]oxy} acetic acid]";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1241190931-27-1>;
+skos:prefLabel "cC6O4 [Difluoro{[2,2,4,5-tetrafluoro- 5-(trifluoromethoxy)-1,3-dioxolan- 4-yl]oxy} acetic acid]" .
+<https://w3id.org/environmental-data/data/observable-property/12837680-73-2> rdfs:label "Concentrazione di PCB 101";
+skos:prefLabel "PCB 101";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-12837680-73-2> .
+<https://w3id.org/environmental-data/data/observable-property/12932598-14-4> skos:prefLabel "PCB 105";
+rdfs:label "Concentrazione di PCB 105";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-12932598-14-4> .
+<https://w3id.org/environmental-data/data/observable-property/13038380-03-9> rdfs:label "Concentrazione di PCB 110";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "PCB 110";
+a skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-13038380-03-9> .
+<https://w3id.org/environmental-data/data/observable-property/13174472-37-0> skos:prefLabel "PCB 114";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 114";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-13174472-37-0> .
+<https://w3id.org/environmental-data/data/observable-property/13231508-00-6> a skos:Concept;
+rdfs:label "Concentrazione di PCB 118";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "PCB 118";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-13231508-00-6> .
+<https://w3id.org/environmental-data/data/observable-property/13365510-44-3> rdfs:label "Concentrazione di PCB 123";
+a skos:Concept,w-mon:WaterObservableProperty;
+skos:prefLabel "PCB 123";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-13365510-44-3> .
+<https://w3id.org/environmental-data/data/observable-property/13457465-28-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 126";
+skos:prefLabel "PCB 126";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-13457465-28-8> .
+<https://w3id.org/environmental-data/data/observable-property/13585760-74-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 128";
+skos:prefLabel "PCB 128";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-13585760-74-3> .
+<https://w3id.org/environmental-data/data/observable-property/13635065-28-2> a w-mon:WaterObservableProperty,skos:Concept;
+skos:prefLabel "PCB 138";
+rdfs:label "Concentrazione di PCB 138";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-13635065-28-2> .
+<https://w3id.org/environmental-data/data/observable-property/13751908-16-8> a skos:Concept;
+rdfs:label "Concentrazione di PCB 146";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "PCB 146";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-13751908-16-8> .
+<https://w3id.org/environmental-data/data/observable-property/13838380-04-0> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 149";
+skos:prefLabel "PCB 149";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-13838380-04-0> .
+<https://w3id.org/environmental-data/data/observable-property/13952663-63-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 151";
+skos:prefLabel "PCB 151";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-13952663-63-5> .
+<https://w3id.org/environmental-data/data/observable-property/14035065-27-1> skos:prefLabel "PCB 153";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-14035065-27-1>;
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 153" .
+<https://w3id.org/environmental-data/data/observable-property/14138380-08-4> skos:prefLabel "PCB 156";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 156";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-14138380-08-4> .
+<https://w3id.org/environmental-data/data/observable-property/14269782-90-7> a skos:Concept;
+rdfs:label "Concentrazione di PCB 157";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "PCB 157";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-14269782-90-7> .
+<https://w3id.org/environmental-data/data/observable-property/14352663-72-6> a skos:Concept;
+rdfs:label "Concentrazione di PCB 167";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "PCB 167";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-14352663-72-6> .
+<https://w3id.org/environmental-data/data/observable-property/14432774-16-6> skos:prefLabel "PCB 169";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 169";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-14432774-16-6> .
+<https://w3id.org/environmental-data/data/observable-property/14535065-30-6> a skos:Concept;
+rdfs:label "Concentrazione di PCB 170";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "PCB 170";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-14535065-30-6> .
+<https://w3id.org/environmental-data/data/observable-property/14652663-70-4> rdfs:label "Concentrazione di PCB 177";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "PCB 177";
+a skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-14652663-70-4> .
+<https://w3id.org/environmental-data/data/observable-property/14735065-29-3> skos:prefLabel "PCB 180";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 180";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-14735065-29-3> .
+<https://w3id.org/environmental-data/data/observable-property/14852663-69-1> skos:prefLabel "PCB 183";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 183";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-14852663-69-1> .
+<https://w3id.org/environmental-data/data/observable-property/14952663-68-0> skos:prefLabel "PCB 187";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 187";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-14952663-68-0> .
+<https://w3id.org/environmental-data/data/observable-property/15039635-31-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 189";
+skos:prefLabel "PCB 189";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-15039635-31-9> .
+<https://w3id.org/environmental-data/data/observable-property/1517012-37-5> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 28";
+skos:prefLabel "PCB 28";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1517012-37-5> .
+<https://w3id.org/environmental-data/data/observable-property/15235693-99-3> rdfs:label "Concentrazione di PCB 52";
+skos:prefLabel "PCB 52";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-15235693-99-3> .
+<https://w3id.org/environmental-data/data/observable-property/15332598-13-3> skos:prefLabel "PCB 77";
+rdfs:label "Concentrazione di PCB 77";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-15332598-13-3> .
+<https://w3id.org/environmental-data/data/observable-property/15470362-50-4> skos:prefLabel "PCB 81";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di PCB 81";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-15470362-50-4> .
+<https://w3id.org/environmental-data/data/observable-property/15538379-99-6> rdfs:label "Concentrazione di PCB 95";
+a w-mon:WaterObservableProperty,skos:Concept;
+skos:prefLabel "PCB 95";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-15538379-99-6> .
+<https://w3id.org/environmental-data/data/observable-property/15638380-01-7> rdfs:label "Concentrazione di PCB 99";
+a w-mon:WaterObservableProperty,skos:Concept;
+skos:prefLabel "PCB 99";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-15638380-01-7> .
+<https://w3id.org/environmental-data/data/observable-property/15850-28-2> a skos:Concept;
+rdfs:label "Concentrazione di 17-beta-estradiolo";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "17-beta-estradiolo";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-15850-28-2> .
+<https://w3id.org/environmental-data/data/observable-property/15926787-78-0> skos:prefLabel "Amoxicillina";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Amoxicillina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-15926787-78-0> .
+<https://w3id.org/environmental-data/data/observable-property/16083905-01-5> a skos:Concept;
+rdfs:label "Concentrazione di Azitromicina";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Azitromicina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-16083905-01-5> .
+<https://w3id.org/environmental-data/data/observable-property/16185721-33-1> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Ciprofloxacina";
+skos:prefLabel "Ciprofloxacina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-16185721-33-1> .
+<https://w3id.org/environmental-data/data/observable-property/16281103-11-9> a skos:Concept;
+rdfs:label "Concentrazione di Claritromicina";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Claritromicina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-16281103-11-9> .
+<https://w3id.org/environmental-data/data/observable-property/163114-07-8> a skos:Concept;
+rdfs:label "Concentrazione di Eritromicina";
+a w-mon:WaterObservableProperty;
+skos:prefLabel "Eritromicina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-163114-07-8> .
+<https://w3id.org/environmental-data/data/observable-property/164139968-49-3> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di Metaflumizone";
+skos:prefLabel "Metaflumizone";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-164139968-49-3> .
+<https://w3id.org/environmental-data/data/observable-property/16795-81-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2-cloro-5-metilanilina";
+skos:prefLabel "2-cloro-5-metilanilina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-16795-81-8> .
+<https://w3id.org/environmental-data/data/observable-property/16891-59-8> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2-Naftilammina";
+skos:prefLabel "2-Naftilammina";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-16891-59-8> .
+<https://w3id.org/environmental-data/data/observable-property/16935822-46-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,2,3,4,6,7,8 HpCDD";
+skos:prefLabel "1,2,3,4,6,7,8 HpCDD";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-16935822-46-9> .
+<https://w3id.org/environmental-data/data/observable-property/17067562-39-4> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,2,3,4,6,7,8 HpCDF";
+skos:prefLabel "1,2,3,4,6,7,8 HpCDF";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-17067562-39-4> .
+<https://w3id.org/environmental-data/data/observable-property/17139227-28-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,2,3,4,7,8 HxCDD";
+skos:prefLabel "1,2,3,4,7,8 HxCDD";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-17139227-28-6> .
+<https://w3id.org/environmental-data/data/observable-property/17270648-26-9> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,2,3,4,7,8 HxCDF";
+skos:prefLabel "1,2,3,4,7,8 HxCDF";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-17270648-26-9> .
+<https://w3id.org/environmental-data/data/observable-property/17355673-89-7> rdfs:label "Concentrazione di 1,2,3,4,7,8,9 HpCDF";
+skos:prefLabel "1,2,3,4,7,8,9 HpCDF";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-17355673-89-7> .
+<https://w3id.org/environmental-data/data/observable-property/17457653-85-7> rdfs:label "Concentrazione di 1,2,3,6,7,8 HxCDD";
+a w-mon:WaterObservableProperty,skos:Concept;
+skos:prefLabel "1,2,3,6,7,8 HxCDD";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-17457653-85-7> .
+<https://w3id.org/environmental-data/data/observable-property/17557117-44-9> skos:prefLabel "1,2,3,6,7,8 HxCDF";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,2,3,6,7,8 HxCDF";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-17557117-44-9> .
+<https://w3id.org/environmental-data/data/observable-property/17640321-76-4> skos:prefLabel "1,2,3,7,8 PeCDD";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,2,3,7,8 PeCDD";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-17640321-76-4> .
+<https://w3id.org/environmental-data/data/observable-property/17757117-41-6> a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,2,3,7,8 PeCDF";
+skos:prefLabel "1,2,3,7,8 PeCDF";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-17757117-41-6> .
+<https://w3id.org/environmental-data/data/observable-property/17819408-74-3> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 1,2,3,7,8,9 HxCDD";
+skos:prefLabel "1,2,3,7,8,9 HxCDD";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-17819408-74-3> .
+<https://w3id.org/environmental-data/data/observable-property/17972918-21-9> skos:prefLabel "1,2,3,7,8,9 HxCDF";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 1,2,3,7,8,9 HxCDF";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-17972918-21-9> .
+<https://w3id.org/environmental-data/data/observable-property/18060851-34-5> rdfs:label "Concentrazione di 2,3,4,6,7,8 HxCDF";
+a w-mon:WaterObservableProperty,skos:Concept;
+skos:prefLabel "2,3,4,6,7,8 HxCDF";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-18060851-34-5> .
+<https://w3id.org/environmental-data/data/observable-property/18157117-31-4> rdfs:label "Concentrazione di 2,3,4,7,8 PeCDF";
+a w-mon:WaterObservableProperty,skos:Concept;
+skos:prefLabel "2,3,4,7,8 PeCDF";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-18157117-31-4> .
+<https://w3id.org/environmental-data/data/observable-property/1821746-01-6> a skos:Concept,w-mon:WaterObservableProperty;
+rdfs:label "Concentrazione di 2,3,7,8 TCDD";
+skos:prefLabel "2,3,7,8 TCDD";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1821746-01-6> .
+<https://w3id.org/environmental-data/data/observable-property/18351207-31-9> skos:prefLabel "2,3,7,8 TCDF";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di 2,3,7,8 TCDF";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-18351207-31-9> .
+<https://w3id.org/environmental-data/data/observable-property/1843268-87-9> skos:prefLabel "OCDD";
+a w-mon:WaterObservableProperty,skos:Concept;
+rdfs:label "Concentrazione di OCDD";
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-1843268-87-9> .
+<https://w3id.org/environmental-data/data/observable-property/18539001-02-0> skos:prefLabel "OCDF";
+rdfs:label "Concentrazione di OCDF";
+a w-mon:WaterObservableProperty,skos:Concept;
+w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/chemical-substance/cas-18539001-02-0> .
