@@ -1396,7 +1396,7 @@
       a skos:Concept;
       skos:prefLabel "Concentration of Octachlorodibenzodioxin"@en;
       w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/water-observable-properties/chemical-substance/cas-1843268-87-9> .
-      <https://w3id.org/environmental-data/data/water-observable-properties/observable-property/18539001-02-0> a skos:Concept,w-mon:WaterObservableProperty;
+      <https://w3id.org/environmental-data/data/water-observable-properties/observable-property/39001-02-0> a skos:Concept,w-mon:WaterObservableProperty;
       rdfs:label "Concentrazione di OCDF";
       skos:prefLabel "Concentration of 1,2,3,4,6,7,8,9-Octachlorodibenzofuran"@en;
       w-mon:hasChemicalSubstance <https://w3id.org/environmental-data/data/water-observable-properties/chemical-substance/cas-18539001-02-0> .
