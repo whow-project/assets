@@ -64,14 +64,6 @@ rr:predicateObjectMap [
 rr:predicateObjectMap [
   rr:predicate skos:notation;
   rr:objectMap [  rr:template "WISE: {WISE}" ]
-];
-rr:predicateObjectMap [
-  rr:predicate skos:acronym;
-  rr:objectMap [  rr:template "WISE"; rr:datatype xsd:string ]
-];
-rr:predicateObjectMap [
-  rr:predicate core:value;
-  rr:objectMap [  rr:template "{WISE}"; rr:datatype xsd:string ]
 ].
 
 
@@ -86,4 +78,8 @@ rr:subjectMap [
 rr:predicateObjectMap [
   rr:predicate core:identifier;
   rr:objectMap [ rr:template "{WISE}"; rr:datatype xsd:string ]
+];
+rr:predicateObjectMap [
+  rr:predicate skos:acronym;
+  rr:objectMap [  rr:template "WISE"; rr:datatype xsd:string ]
 ].

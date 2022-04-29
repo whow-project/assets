@@ -61,21 +61,3 @@ rr:predicateObjectMap [
   rr:predicate skos:prefLabel;
   rr:objectMap [ rr:template "N/A" rr:language "en"]
 ].
-
-
-
-<#UniqueWISEIDMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceWISECodes> ;
-rr:subjectMap [
-  rr:template "identifier/{CAS}";
-  rr:termType rr:IRI;
-  rr:class w-mon:UniqueIdentifier
-] ;
-rr:predicateObjectMap [
-  rr:predicate core:identifier;
-  rr:objectMap [ rr:template "{CAS}"; rr:datatype xsd:string ]
-];
-rr:predicateObjectMap [
-  rr:predicate core:isIssuedBy;
-  rr:objectMap [ rr:template "Unknown" ]
-].
