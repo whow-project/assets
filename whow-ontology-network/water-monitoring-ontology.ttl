@@ -39,8 +39,6 @@ hydro:WaterBody
       skos:note "TODO: valutare di rinominare in water-observation-ontology"^^xsd:string ;
       skos:prefLabel "Water Monitoring Ontology"@en .
 
-
-
 :BiologicalQualityElementsObservation
       rdf:type owl:Class ;
       rdfs:label "Biological quality elements Parameter Observation"@en ;
@@ -94,11 +92,6 @@ hydro:WaterBody
       rdfs:label "WHOW Concept "@en ;
       rdfs:subClassOf owl:Thing ;
       skos:prefLabel "WHOW Concept "@en .
-
-:WISEcode
-      rdf:type owl:DatatypeProperty ;
-      rdfs:domain :WaterObservableProperty ;
-      rdfs:label "WISE code "@en .
 
 :WaterChemicalParameterObservation
       rdf:type owl:Class ;
@@ -174,7 +167,6 @@ hydro:WaterBody
       rdfs:label "WaterSampler"@en ;
       rdfs:subClassOf inspire-mf:MonitoringFacility , :WHOWConcept .
 
-
 :depthDescription
       rdf:type owl:DatatypeProperty ;
       rdfs:comment "Es. \"Lago di Como_superficie\" o \"Lago di Como_fondo\" ecc..."@it ;
@@ -239,6 +231,12 @@ hydro:WaterBody
       owl:equivalentProperty
               <http://www.w3.org/ns/sosa/observedProperty> .
 
+:identifierType
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain <https://dati.isprambiente.it/ontology/core/UniqueIdentifier> ;
+      rdfs:label "identifier type "@en ;
+      rdfs:range xsd:string .
+
 :isAssociatedWith
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterObservation ;
@@ -273,7 +271,6 @@ hydro:WaterBody
       rdfs:domain :WaterObservation ;
       rdfs:label "metadata "@en ;
       skos:prefLabel "metadata "@en .
-
 
 :ofPropertyObject
       rdf:type owl:ObjectProperty ;

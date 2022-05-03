@@ -46,7 +46,7 @@
 ############# CSMapping ###########
 
 
-<#WISECodesMapping> a rr:TriplesMap ;
+<#OtherCodesMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceWISECodes> ;
 rr:subjectMap [
   rr:template "observable-property/{CAS}";

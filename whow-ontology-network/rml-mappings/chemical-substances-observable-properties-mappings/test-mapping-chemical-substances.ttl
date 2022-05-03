@@ -91,10 +91,9 @@ rr:predicateObjectMap [
   rr:predicate core:identifier;
   rr:objectMap [ rr:template "{CAS}"; rr:datatype xsd:string ]
 ];
-;
 rr:predicateObjectMap [
-  rr:predicate skos:acronym;
-  rr:objectMap [  rr:template "CAS"; rr:datatype xsd:string ]
+  rr:predicate w-mon:identifierType;
+  rr:objectMap [ rr:template "CAS"; rr:datatype xsd:string ]
 ];
 rr:predicateObjectMap [
   rr:predicate core:isIssuedBy;
