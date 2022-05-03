@@ -30,11 +30,11 @@
 ##########################################################
 
 # #LogicalSourceSostanzeChimiche
-<#LogicalSourceWISECodes> a rml:BaseSource ;
+<#LogicalSourceConcentrationOfChemicalSubstances> a rml:BaseSource ;
     rml:source [
       a csvw:Table;
       #csvw:url "Monitoraggio_laghi_dati_puliti.csv";
-      csvw:url "wise-codes-dataset.csv";
+      csvw:url "chemical-substances-complete.csv";
 
       csvw:dialect [
         a csvw:Dialect;
@@ -46,40 +46,22 @@
 ############# CSMapping ###########
 
 
-<#WISECodesMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceWISECodes> ;
+<#ChemicalSubstancesConcentrationMapping> a rr:TriplesMap ;
+rml:logicalSource <#LogicalSourceConcentrationOfChemicalSubstances> ;
 rr:subjectMap [
-  rr:template "observable-property/wise-{WISE}";
+  rr:template "observable-property/{CAS}";
   rr:termType rr:IRI;
   rr:class w-mon:ObservableProperty
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
-  rr:objectMap [ rr:template "{PARAMETER (IT)}- Codice WISE: {WISE}" ; rr:language "it" ]
+  rr:objectMap [ rr:template "Concentrazione di {PARAMETER(IT)}" ; rr:language "it" ]
 ];
 rr:predicateObjectMap [
   rr:predicate skos:prefLabel;
-  rr:objectMap [ rr:constant "N/A" ]
+  rr:objectMap [ rr:template "Concentration of {EC Name}" ; rr:language "en"]
 ];
 rr:predicateObjectMap [
-  rr:predicate skos:notation;
-  rr:objectMap [  rr:template "WISE:{WISE}" ]
+  rr:predicate w-mon:hasChemicalSubstance;
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/chemical-substances/chemical-substance/cas-{CAS}" ; rr:termType rr:IRI;]
 ].
-
-
-
-<#UniqueWISEIDMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceWISECodes> ;
-rr:subjectMap [
-  rr:template "identifier/{WISE}";
-  rr:termType rr:IRI;
-  rr:class w-mon:UniqueIdentifier
-] ;
-rr:predicateObjectMap [
-  rr:predicate core:identifier;
-  rr:objectMap [ rr:template "{WISE}"; rr:datatype xsd:string ]
-];
-rr:predicateObjectMap [
-  rr:predicate w-mon:identifierType;
-  rr:objectMap [ rr:template "WISE"; rr:datatype xsd:string ]
-];.

@@ -55,9 +55,9 @@ rr:subjectMap [
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
-  rr:objectMap [ rr:template "{SOSTANZA}" ; rr:language "it" ]
+  rr:objectMap [ rr:template "Concentrazione di {SOSTANZA}" ; rr:language "it" ]
 ];
 rr:predicateObjectMap [
   rr:predicate skos:prefLabel;
-  rr:objectMap [ rr:template "N/A" rr:language "en"]
+  rr:objectMap [ rr:template "N/A" ; rr:language "en"]
 ].

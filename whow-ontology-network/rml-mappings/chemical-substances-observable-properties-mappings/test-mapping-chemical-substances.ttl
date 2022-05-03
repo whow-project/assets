@@ -69,13 +69,13 @@ rr:predicateObjectMap [
   rr:predicate core:hasUniqueIdentifier;
   rr:objectMap [   rr:template "https://w3id.org/environmental-data/data/chemical-substances/identifier/{CAS}"; rr:termType rr:IRI;]
 ];
-rr:predicateObjectMap [
-  rr:predicate rdfs:seeAlso;
-  rr:objectMap [  rr:template "{Infocard URL}";  rr:termType rr:IRI; ] #link EC alla risorsa
-];
+#rr:predicateObjectMap [
+#  rr:predicate rdfs:seeAlso;
+#  rr:objectMap [  rr:template "{Infocard URL}";  rr:termType rr:IRI; ] #link EC alla risorsa: non funziona come "valid IRI"
+#];
 rr:predicateObjectMap [
   rr:predicate skos:notation;
-  rr:objectMap [  rr:template "CAS: {CAS}" ]
+  rr:objectMap [  rr:template "CAS:{CAS}" ]
 ].
 
 

@@ -30,11 +30,11 @@
 ##########################################################
 
 # #LogicalSourceSostanzeChimiche
-<#LogicalSourceWISECodes> a rml:BaseSource ;
+<#LogicalSourceUnmatchedChemicalSubst> a rml:BaseSource ;
     rml:source [
       a csvw:Table;
       #csvw:url "Monitoraggio_laghi_dati_puliti.csv";
-      csvw:url "wise-codes-dataset.csv";
+      csvw:url "unmatched-chemical-substances-dataset.csv";
 
       csvw:dialect [
         a csvw:Dialect;
@@ -46,40 +46,56 @@
 ############# CSMapping ###########
 
 
-<#WISECodesMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceWISECodes> ;
+<#UnmatchedChemicalSubstancesMapping> a rr:TriplesMap ;
+rml:logicalSource <#LogicalSourceUnmatchedChemicalSubst> ;
 rr:subjectMap [
-  rr:template "observable-property/wise-{WISE}";
+  rr:template "chemical-substance/cas-{CAS}";
   rr:termType rr:IRI;
-  rr:class w-mon:ObservableProperty
+  rr:class w-mon:ChemicalSubstance
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
-  rr:objectMap [ rr:template "{PARAMETER (IT)}- Codice WISE: {WISE}" ; rr:language "it" ]
+  rr:objectMap [ rr:template "{SOSTANZA} — Codice CAS: {CAS}" ; rr:language "it" ]
 ];
 rr:predicateObjectMap [
   rr:predicate skos:prefLabel;
-  rr:objectMap [ rr:constant "N/A" ]
+  rr:objectMap [ rr:constant "N/A" ; rr:language "en"]
 ];
 rr:predicateObjectMap [
+  rr:predicate skos:altLabel;
+  rr:objectMap [ rr:template "{SOSTANZA}" ; rr:language "it"]
+];
+rr:predicateObjectMap [
+  rr:predicate core:hasUniqueIdentifier;
+  rr:objectMap [   rr:template "https://w3id.org/environmental-data/data/chemical-substances/identifier/{CAS}"; rr:termType rr:IRI;]
+];
+#rr:predicateObjectMap [
+#  rr:predicate rdfs:seeAlso;
+#  rr:objectMap [  rr:template "{Infocard URL}";  rr:termType rr:IRI; ] #link EC alla risorsa: non funziona come "valid IRI"
+#];
+rr:predicateObjectMap [
   rr:predicate skos:notation;
-  rr:objectMap [  rr:template "WISE:{WISE}" ]
+  rr:objectMap [  rr:template "CAS:{CAS}" ]
 ].
 
 
 
-<#UniqueWISEIDMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceWISECodes> ;
+<#UniqueIDMapping> a rr:TriplesMap ;
+rml:logicalSource <#LogicalSourceUnmatchedChemicalSubst> ;
 rr:subjectMap [
-  rr:template "identifier/{WISE}";
+  rr:template "identifier/{CAS}";
   rr:termType rr:IRI;
   rr:class w-mon:UniqueIdentifier
 ] ;
 rr:predicateObjectMap [
   rr:predicate core:identifier;
-  rr:objectMap [ rr:template "{WISE}"; rr:datatype xsd:string ]
+  rr:objectMap [ rr:template "{CAS}"; rr:datatype xsd:string ]
 ];
 rr:predicateObjectMap [
   rr:predicate w-mon:identifierType;
-  rr:objectMap [ rr:template "WISE"; rr:datatype xsd:string ]
-];.
+  rr:objectMap [ rr:template "CAS"; rr:datatype xsd:string ]
+];
+rr:predicateObjectMap [
+  rr:predicate core:isIssuedBy;
+  rr:objectMap [ rr:template "American Chemical Society"; rr:datatype xsd:string ]
+].

@@ -12,61 +12,101 @@
 @prefix w-mon:   <https://w3id.org/environmental-data/onto/water-monitoring-ontology/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/environmental-data/data/water-observable-properties>
-      rdf:type owl:Ontology ;
-      owl:imports <http://www.w3.org/2004/02/skos/core> , ispra-top: .
+<https://w3id.org/environmental-data/data/observable-properties/identifier/31-02-7>
+  a w-mon:UniqueIdentifier;
+  core:identifier "31-02-7";
+  w-mon:identifierType "WISE" .
 
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-3133-05-9> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
-rdfs:label "DOC — Codice WISE: 3133-05-9"@it .
-<https://w3id.org/environmental-data/data/water-observable-properties/identifier/3133-05-9> a ispra-top:UniqueIdentifier .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-3133-05-9> ispra-top:hasUniqueIdentifier <https://w3id.org/environmental-data/data/water-observable-properties/identifier/3133-05-9>;
-skos:prefLabel "DOC"@it;
-skos:notation "3133-05-9" .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-3142-01-6> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
-rdfs:label "Conducibilità elettrica a 20°C — Codice WISE: 3142-01-6"@it .
-<https://w3id.org/environmental-data/data/water-observable-properties/identifier/3142-01-6> a ispra-top:UniqueIdentifier .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-3142-01-6> ispra-top:hasUniqueIdentifier <https://w3id.org/environmental-data/data/water-observable-properties/identifier/3142-01-6>;
-skos:prefLabel "Conducibilità elettrica a 20°C"@it;
-skos:notation "3142-01-6" .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-3131-01-9> rdfs:label "Ossigeno % di saturazione — Codice WISE: 3131-01-9"@it;
-a <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>,skos:Concept .
-<https://w3id.org/environmental-data/data/water-observable-properties/identifier/3131-01-9> a ispra-top:UniqueIdentifier .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-3131-01-9> ispra-top:hasUniqueIdentifier <https://w3id.org/environmental-data/data/water-observable-properties/identifier/3131-01-9>;
-skos:prefLabel "Ossigeno % di saturazione"@it;
-skos:notation "3131-01-9" .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-3121-01-5> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
-rdfs:label "Temperatura acqua — Codice WISE: 3121-01-5"@it .
-<https://w3id.org/environmental-data/data/water-observable-properties/identifier/3121-01-5> a ispra-top:UniqueIdentifier .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-3121-01-5> ispra-top:hasUniqueIdentifier <https://w3id.org/environmental-data/data/water-observable-properties/identifier/3121-01-5>;
-skos:prefLabel "Temperatura acqua"@it;
-skos:notation "3121-01-5" .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-3133-01-5> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
-rdfs:label "BOD-5 — Codice WISE: 3133-01-5"@it .
-<https://w3id.org/environmental-data/data/water-observable-properties/identifier/3133-01-5> a ispra-top:UniqueIdentifier .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-3133-01-5> ispra-top:hasUniqueIdentifier <https://w3id.org/environmental-data/data/water-observable-properties/identifier/3133-01-5>;
-skos:prefLabel "BOD-5"@it;
-skos:notation "3133-01-5" .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-31-02-7> rdfs:label "Solidi sospesi totali — Codice WISE: 31-02-7"@it .
-<https://w3id.org/environmental-data/data/water-observable-properties/identifier/31-02-7> a ispra-top:UniqueIdentifier .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-31-02-7> skos:notation "31-02-7";
-ispra-top:hasUniqueIdentifier <https://w3id.org/environmental-data/data/water-observable-properties/identifier/31-02-7>;
-skos:prefLabel "Solidi sospesi totali"@it;
-a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty> .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-32-02-0> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
-rdfs:label "Sommatoria Antiparassitari ciclodiene — Codice WISE: 32-02-0"@it .
-<https://w3id.org/environmental-data/data/water-observable-properties/identifier/32-02-0> a ispra-top:UniqueIdentifier .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-32-02-0> ispra-top:hasUniqueIdentifier <https://w3id.org/environmental-data/data/water-observable-properties/identifier/32-02-0>;
-skos:prefLabel "Sommatoria Antiparassitari ciclodiene"@it;
-skos:notation "32-02-0" .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-33-28-3> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
-rdfs:label "Tensioattivi totali — Codice WISE: 33-28-3"@it .
-<https://w3id.org/environmental-data/data/water-observable-properties/identifier/33-28-3> a ispra-top:UniqueIdentifier .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-33-28-3> ispra-top:hasUniqueIdentifier <https://w3id.org/environmental-data/data/water-observable-properties/identifier/33-28-3>;
-skos:prefLabel "Tensioattivi totali"@it;
-skos:notation "33-28-3" .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-33-29-4> a skos:Concept,<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>;
-rdfs:label "Tensioattivi anionici (MBAS) — Codice WISE: 33-29-4"@it .
-<https://w3id.org/environmental-data/data/water-observable-properties/identifier/33-29-4> a ispra-top:UniqueIdentifier .
-<https://w3id.org/environmental-data/data/water-observable-properties/water-observable-property/wise-33-29-4> ispra-top:hasUniqueIdentifier <https://w3id.org/environmental-data/data/water-observable-properties/identifier/33-29-4>;
-skos:prefLabel "Tensioattivi anionici (MBAS)"@it;
-skos:notation "33-29-4" .
+<https://w3id.org/environmental-data/data/observable-properties/identifier/3121-01-5>
+  a w-mon:UniqueIdentifier;
+  core:identifier "3121-01-5";
+  w-mon:identifierType "WISE" .
+
+<https://w3id.org/environmental-data/data/observable-properties/identifier/3131-01-9>
+  a w-mon:UniqueIdentifier;
+  core:identifier "3131-01-9";
+  w-mon:identifierType "WISE" .
+
+<https://w3id.org/environmental-data/data/observable-properties/identifier/3133-01-5>
+  a w-mon:UniqueIdentifier;
+  core:identifier "3133-01-5";
+  w-mon:identifierType "WISE" .
+
+<https://w3id.org/environmental-data/data/observable-properties/identifier/3133-05-9>
+  a w-mon:UniqueIdentifier;
+  core:identifier "3133-05-9";
+  w-mon:identifierType "WISE" .
+
+<https://w3id.org/environmental-data/data/observable-properties/identifier/3142-01-6>
+  a w-mon:UniqueIdentifier;
+  core:identifier "3142-01-6";
+  w-mon:identifierType "WISE" .
+
+<https://w3id.org/environmental-data/data/observable-properties/identifier/32-02-0>
+  a w-mon:UniqueIdentifier;
+  core:identifier "32-02-0";
+  w-mon:identifierType "WISE" .
+
+<https://w3id.org/environmental-data/data/observable-properties/identifier/33-28-3>
+  a w-mon:UniqueIdentifier;
+  core:identifier "33-28-3";
+  w-mon:identifierType "WISE" .
+
+<https://w3id.org/environmental-data/data/observable-properties/identifier/33-29-4>
+  a w-mon:UniqueIdentifier;
+  core:identifier "33-29-4";
+  w-mon:identifierType "WISE" .
+
+<https://w3id.org/environmental-data/data/observable-properties/observable-property/wise-31-02-7>
+  a w-mon:ObservableProperty;
+  rdfs:label "Solidi sospesi totali- Codice WISE: 31-02-7"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> <WISE:31-02-7>;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "N/A" .
+
+<https://w3id.org/environmental-data/data/observable-properties/observable-property/wise-3121-01-5>
+  a w-mon:ObservableProperty;
+  rdfs:label "Temperatura acqua- Codice WISE: 3121-01-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> <WISE:3121-01-5>;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "N/A" .
+
+<https://w3id.org/environmental-data/data/observable-properties/observable-property/wise-3131-01-9>
+  a w-mon:ObservableProperty;
+  rdfs:label "Ossigeno % di saturazione- Codice WISE: 3131-01-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> <WISE:3131-01-9>;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "N/A" .
+
+<https://w3id.org/environmental-data/data/observable-properties/observable-property/wise-3133-01-5>
+  a w-mon:ObservableProperty;
+  rdfs:label "BOD-5- Codice WISE: 3133-01-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> <WISE:3133-01-5>;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "N/A" .
+
+<https://w3id.org/environmental-data/data/observable-properties/observable-property/wise-3133-05-9>
+  a w-mon:ObservableProperty;
+  rdfs:label "DOC- Codice WISE: 3133-05-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> <WISE:3133-05-9>;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "N/A" .
+
+<https://w3id.org/environmental-data/data/observable-properties/observable-property/wise-3142-01-6>
+  a w-mon:ObservableProperty;
+  rdfs:label "Conducibilità elettrica a 20°C- Codice WISE: 3142-01-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> <WISE:3142-01-6>;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "N/A" .
+
+<https://w3id.org/environmental-data/data/observable-properties/observable-property/wise-32-02-0>
+  a w-mon:ObservableProperty;
+  rdfs:label "Sommatoria Antiparassitari ciclodiene- Codice WISE: 32-02-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> <WISE:32-02-0>;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "N/A" .
+
+<https://w3id.org/environmental-data/data/observable-properties/observable-property/wise-33-28-3>
+  a w-mon:ObservableProperty;
+  rdfs:label "Tensioattivi totali- Codice WISE: 33-28-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> <WISE:33-28-3>;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "N/A" .
+
+<https://w3id.org/environmental-data/data/observable-properties/observable-property/wise-33-29-4>
+  a w-mon:ObservableProperty;
+  rdfs:label "Tensioattivi anionici (MBAS)- Codice WISE: 33-29-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> <WISE:33-29-4>;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "N/A" .
