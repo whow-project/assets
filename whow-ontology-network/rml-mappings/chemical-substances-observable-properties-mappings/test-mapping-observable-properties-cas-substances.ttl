@@ -51,7 +51,7 @@ rml:logicalSource <#LogicalSourceConcentrationOfChemicalSubstances> ;
 rr:subjectMap [
   rr:template "observable-property/{CAS}";
   rr:termType rr:IRI;
-  rr:class w-mon:ObservableProperty
+  rr:class w-mon:WaterObservableProperty
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
