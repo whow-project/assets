@@ -45,11 +45,6 @@ hydro:WaterBody
       rdfs:subClassOf :SurfaceOrGroundwaterObservation ;
       skos:definition "Observation of biological quality elements according to the European Environmental Agency (EEA): phytoplankton, macrophytes, phytobenthos, benthic invertebrate fauna and fish. The most frequently classified biological  quality elements are, for rivers, benthic invertebrates, phytobenthos/other aquatic flora/macrophytes and fish; for lakes, phytoplankton; and for transitional and coastal waters, phytoplankton and benthic invertebrates. (2018)"@en .
 
-:CAScode
-      rdf:type owl:DatatypeProperty ;
-      rdfs:domain :ChemicalSubstance ;
-      rdfs:label "CAS code "@en .
-
 :ChemicalSubstance
       rdf:type owl:Class ;
       rdfs:label "Chemical Agent"@en ;
