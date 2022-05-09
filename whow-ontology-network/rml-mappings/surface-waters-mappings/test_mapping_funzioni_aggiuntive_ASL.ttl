@@ -92,7 +92,7 @@ rr:predicateObjectMap [
   rr:template "https://w3id.org/environmental-data/onto/water-observation/monitoring-station/{Codice Stazione}";]
 ];
 rr:predicateObjectMap [
-  rr:predicate inspire-mf:hasObservationValue;
+  rr:predicate whow-water:hasResult;
   rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/observation-value/{VALORE}-{UM}"; rr:termType rr:IRI; ]
   ];
 
