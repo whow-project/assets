@@ -1,13 +1,16 @@
-# baseURI: https://w3id.org/environmental-data/onto/water-indicators-ontology
+# baseURI: https://w3id.org/environmental-data/onto/hospitalization-ontology
 # imports: http://purl.org/dc/terms/
 # imports: http://www.w3.org/2006/vcard/ns
 # imports: http://www.w3.org/ns/dcat
 # imports: http://www.w3.org/ns/prov
 # imports: http://xmlns.com/foaf/0.1/
+# imports: https://dati.isprambiente.it/ontology/inspire-mf/
 # imports: https://w3id.org/environmental-data/onto/water-monitoring-ontology
+# imports: https://w3id.org/health-data/onto/CCStoICD9-data
 # imports: https://w3id.org/italia/onto/Indicator
 
 @prefix :        <https://w3id.org/environmental-data/onto/hospitalization-ontology/> .
+@prefix CCStoICD9-data:  <https://w3id.org/health-data/onto/CCStoICD9-data/> .
 @prefix ind:     <https://w3id.org/italia/onto/Indicator/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -18,5 +21,38 @@
 
 <https://w3id.org/environmental-data/onto/hospitalization-ontology>
       rdf:type owl:Ontology ;
-      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2006/vcard/ns> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/ns/prov> , <http://xmlns.com/foaf/0.1/> , <https://w3id.org/environmental-data/onto/water-monitoring-ontology> , <https://w3id.org/italia/onto/Indicator> ;
+      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2006/vcard/ns> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/ns/prov> , <http://xmlns.com/foaf/0.1/> , <https://dati.isprambiente.it/ontology/inspire-mf/> , <https://w3id.org/environmental-data/onto/water-monitoring-ontology> , <https://w3id.org/health-data/onto/CCStoICD9-data> , <https://w3id.org/italia/onto/Indicator> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:ATS  rdf:type owl:Class ;
+      rdfs:label "ATS "@en ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> .
+
+:ATScode
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :ATS ;
+      rdfs:label "ATS code "@en ;
+      rdfs:range xsd:string .
+
+:Hospitalization
+      rdf:type owl:Class ;
+      rdfs:label "Hospitalization "@en ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> .
+
+:hasHospitalizationRate
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Hospitalization ;
+      rdfs:label "has hospitalization rate "@en ;
+      rdfs:range xsd:float .
+
+:relatedToATS
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :Hospitalization ;
+      rdfs:label "related to ATS "@en ;
+      rdfs:range :ATS .
+
+:relatedToDiagnosis
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :Hospitalization ;
+      rdfs:label "related to diagnosis "@en ;
+      rdfs:range <https://w3id.org/health-data/onto/CCS-ontology/CCSd> .

@@ -150,7 +150,7 @@ w-ind:LTLecoIndicator12345
       places:hasGeometry :Geometry_574903_5063200 .
 
 :WHOWConcept_1
-      rdf:type w-mon:WHOWConcept ;
+      rdf:type w-mon:WaterConcept ;
       rdfs:label "Geometry lat 516781 lon 5070390 "@en .
 
 :WISE_3133-05-9
