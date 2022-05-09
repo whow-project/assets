@@ -34,5 +34,5 @@ The RDF structure for this example shows as follows:
 
 Please not that:
 
-> Some note here....
+> Some note here (test)....
 
