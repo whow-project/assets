@@ -26,7 +26,7 @@
 
 :ATS  rdf:type owl:Class ;
       rdfs:label "ATS "@en ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> .
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> , :HealthConcept .
 
 :ATScode
       rdf:type owl:DatatypeProperty ;
@@ -34,15 +34,75 @@
       rdfs:label "ATS code "@en ;
       rdfs:range xsd:string .
 
+:DeathCause
+      rdf:type owl:Class ;
+      rdfs:label "Death Cause "@en ;
+      rdfs:subClassOf :HealthConcept .
+
+:HealthConcept
+      rdf:type owl:Class ;
+      rdfs:label "HealthConcept "@en ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> ;
+      skos:note "TODO: Temporaneo"^^xsd:string .
+
+:HealthConditionsDeathCauseObservation
+      rdf:type owl:Class ;
+      rdfs:label "Health Condition Death Cause Observation "@en ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/inspire-mf/Observation> , :HealthConcept .
+
 :Hospitalization
       rdf:type owl:Class ;
       rdfs:label "Hospitalization "@en ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> .
+      rdfs:subClassOf :HealthConcept .
+
+:InfectiousDiseasesObservation
+      rdf:type owl:Class ;
+      rdfs:label "Infectious Diseases Observation "@en ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/inspire-mf/Observation> , :HealthConcept .
+
+:ageRangeOfPatient
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :InfectiousDiseasesObservation ;
+      rdfs:label "age range of patient "@en ;
+      rdfs:range xsd:string .
+
+:existingVaccine
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :InfectiousDiseasesObservation ;
+      rdfs:label "existing vaccine "@en ;
+      rdfs:range xsd:boolean .
+
+:genderOfPatient
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain
+              [ rdf:type owl:Class ;
+                owl:unionOf (:InfectiousDiseasesObservation :HealthConditionsDeathCauseObservation)
+              ] ;
+      rdfs:label "gender of patient "@en ;
+      rdfs:range xsd:string .
+
+:hasDeathCause
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :HealthConditionsDeathCauseObservation ;
+      rdfs:label "has death cause "@en ;
+      rdfs:range :DeathCause .
 
 :hasHospitalizationRate
       rdf:type owl:DatatypeProperty ;
       rdfs:domain :Hospitalization ;
       rdfs:label "has hospitalization rate "@en ;
+      rdfs:range xsd:float .
+
+:hasNumberOfDeaths
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :HealthConditionsDeathCauseObservation ;
+      rdfs:label "has number of deaths "@en ;
+      rdfs:range xsd:float .
+
+:numberOfMedicalPractices
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain :InfectiousDiseasesObservation ;
+      rdfs:label "number of medical practices "@en ;
       rdfs:range xsd:float .
 
 :relatedToATS
