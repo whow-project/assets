@@ -23,6 +23,7 @@
 @prefix ti: <https://w3id.org/italia/onto/TI/>.
 @prefix inspire-mf: <https://dati.isprambiente.it/ontology/inspire-mf/>.
 @prefix whow-adm: <https://w3id.org/environmental-data/onto/water-observation/water-administration-ontology/>.
+@prefix w-health: <https://w3id.org/environmental-data/data/health-monitoring-ontology/>.
 @base <https://w3id.org/environmental-data/data/health-monitoring-ontology/> .
 
 ##########################################################
@@ -34,7 +35,7 @@
     rml:source [
       a csvw:Table;
       #csvw:url "Monitoraggio_laghi_dati_puliti.csv";
-      csvw:url "Dataset_condizioni_di_salute_per_provincia__genere_e_causa.csv";
+      csvw:url "Dataset-condizioni-di-salute-per-provincia-genere-e-causa-csv.csv";
 
       csvw:dialect [
         a csvw:Dialect;
@@ -59,19 +60,19 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
   rr:predicate w-health:hasDeathCause;
-  rr:objectMap <#DeathCauseMapping> 
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/death-cause/{CAUSA DI MORTE}" ]
 ];
 rr:predicateObjectMap [
   rr:predicate ispra-top:hasLocation;
-  rr:objectMap [ rr:template "{PROVINCIA}" ] #attenzione: deve essere uguale agli altri + come mappi ITALIA...
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/{PROVINCIA}" ] #attenzione: deve essere uguale agli altri + come mappi ITALIA...
 ];
 rr:predicateObjectMap [
   rr:predicate w-health:genderOfPatient;
-  rr:objectMap [ rr:template "{GENERE}"; rr:datatype xsd:string ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/{GENERE}"; rr:datatype xsd:string ]
 ];
 rr:predicateObjectMap [
   rr:predicate ispra-top:time;
-  rr:objectMap [ rr:template "{ANNO}"; rr:datatype xsd:date ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/{ANNO}"; rr:datatype xsd:date ]
 ].
 
 
@@ -79,7 +80,7 @@ rr:predicateObjectMap [
 <#DeathCauseMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceHealthCondition> ;
 rr:subjectMap [
-  rr:template "death-cause/{CAUSA DI MORTE}";
+  rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/death-cause/{CAUSA DI MORTE}";
   rr:termType rr:IRI;
   rr:class w-health:DeathCause
 ] .

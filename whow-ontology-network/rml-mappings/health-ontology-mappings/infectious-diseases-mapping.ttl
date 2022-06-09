@@ -23,6 +23,7 @@
 @prefix ti: <https://w3id.org/italia/onto/TI/>.
 @prefix inspire-mf: <https://dati.isprambiente.it/ontology/inspire-mf/>.
 @prefix whow-adm: <https://w3id.org/environmental-data/onto/water-observation/water-administration-ontology/>.
+@prefix w-health: <https://w3id.org/environmental-data/data/health-monitoring-ontology/>.
 @base <https://w3id.org/environmental-data/data/health-monitoring-ontology/> .
 
 ##########################################################
@@ -33,8 +34,7 @@
 <#LogicalSourceInfectiousDiseases> a rml:BaseSource ;
     rml:source [
       a csvw:Table;
-      #csvw:url "Monitoraggio_laghi_dati_puliti.csv";
-      csvw:url "Malattie_infettive_Tassi_Regione_Lombardia_per_sesso_e_et_.csv";
+      csvw:url "Malattie-infettive-Tassi-Regione-Lombardia-per-sesso-e-et-xlsx.csv";
 
       csvw:dialect [
         a csvw:Dialect;
@@ -59,15 +59,15 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
   rr:predicate ispra-top:hasLocation;
-  rr:objectMap [ rr:template "Lombardy" ] #attenzione: deve essere uguale agli altri + come mappi ITALIA...
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/Lombardy" ] #attenzione: deve essere uguale agli altri + come mappi ITALIA...
 ];
-rr:predicateObjectMap [
-  rr:predicate w-health:relatedToDiagnosis;
-  rr:objectMap <#CCSdMapping>
-];
+#rr:predicateObjectMap [
+#  rr:predicate w-health:relatedToDiagnosis;
+#  rr:objectMap <#CCSdMapping>
+#];
 rr:predicateObjectMap [
   rr:predicate w-health:genderOfPatient;
-  rr:objectMap [ rr:template "{GENERE}"; rr:datatype xsd:string ]
+  rr:objectMap [ rr:template "{Sesso}"; rr:datatype xsd:string ]
 ];
 rr:predicateObjectMap [
   rr:predicate w-health:existingVaccine;
@@ -88,10 +88,9 @@ rr:predicateObjectMap [
 
 
 
-<#CCSdMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceHospitalization> ;
-rr:subjectMap [
-  rr:template "CCS-d/{CCS}";#riguardare
-  rr:termType rr:IRI;
-  rr:class w-health:CCSd
-] .
+#<#CCSdMapping> a rr:TriplesMap ;
+#rr:subjectMap [
+#  rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/CCS-d/{CCS}";#riguardare
+#  rr:termType rr:IRI;
+#  rr:class w-health:CCSd
+#] .

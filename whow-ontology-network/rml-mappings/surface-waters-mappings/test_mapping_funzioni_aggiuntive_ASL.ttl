@@ -33,7 +33,6 @@
 <#LogicalSourceLaghi> a rml:BaseSource ;
     rml:source [
       a csvw:Table;
-      #csvw:url "Monitoraggio_laghi_dati_puliti.csv";
       csvw:url "023-ACQUE-SUPERFICIALI-DATI-Laghi.csv";
 
       csvw:dialect [
@@ -175,7 +174,7 @@ rr:predicateObjectMap [
 <#GeometryMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceLaghi> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/geometry/geometry_{COORD X}-{COORD Y}";
+  rr:template "https://w3id.org/environmental-data/data/geometry/{COORD X}-{COORD Y}";
   rr:termType rr:IRI;
   rr:class places:Geometry
 ] ;

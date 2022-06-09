@@ -23,6 +23,8 @@
 @prefix ti: <https://w3id.org/italia/onto/TI/>.
 @prefix inspire-mf: <https://dati.isprambiente.it/ontology/inspire-mf/>.
 @prefix whow-adm: <https://w3id.org/environmental-data/onto/water-observation/water-administration-ontology/>.
+@prefix w-health: <https://w3id.org/environmental-data/data/health-monitoring-ontology/>.
+
 @base <https://w3id.org/environmental-data/data/health-monitoring-ontology/> .
 
 ##########################################################
@@ -34,7 +36,7 @@
     rml:source [
       a csvw:Table;
       #csvw:url "Monitoraggio_laghi_dati_puliti.csv";
-      csvw:url "Dataset_Assistenza_Ospedaliera_per_ACC_e_ATS.csv";
+      csvw:url "Dataset-Assistenza-Ospedaliera-per-ACC-e-ATS-xlsx.csv";
 
       csvw:dialect [
         a csvw:Dialect;
@@ -58,48 +60,32 @@ rr:predicateObjectMap [
   rr:objectMap [ rr:template "Hospitalization for {ANNO}, {CODICE ATS RESIDENZA} in ATS {CODICE ATS RESIDENZA}." ; rr:language "en" ]
 ];
 rr:predicateObjectMap [
-  rr:predicate w-health:relatedToATS;
-  rr:objectMap <#ATSMapping> #da mappare
-];
-rr:predicateObjectMap [
-  rr:predicate w-health:relatedToDiagnosis;
-  rr:objectMap <#CCSdMapping> #da mappare
-];
-rr:predicateObjectMap [
   rr:predicate w-health:hasHospitalizationRate;
   rr:objectMap [ rr:template "{TASSO RICOVERI STESSA ATS}"; rr:datatype xsd:float ]
 ];
 rr:predicateObjectMap [
   rr:predicate ispra-top:time;
   rr:objectMap [ rr:template "{ANNO}"; rr:datatype xsd:date ]
-].
+];
+rr:predicateObjectMap [
+  rr:predicate w-health:relatedToDiagnosis;
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/CCS-d/{CCS}"; rr:termType rr:IRI ] #da vedere uri
+];
+rr:predicateObjectMap [
+  rr:predicate w-health:relatedToATS;
+  rr:objectMap [rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/ATS/{CODICE ATS RESIDENZA}"; rr:termType rr:IRI ]
+  ];
 
+rr:predicateObjectMap [
+  rr:predicate ispra-top:hasLocation;
+  rr:objectMap [ rr:template "{COORDINATA GEOGRAFICA X}-{COORDINATA GEOGRAFICA Y}"; rr:datatype xsd:string ] #da fare riconcil. luoghi? #URI
+].
 
 
 <#ATSMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceHospitalization> ;
 rr:subjectMap [
-  rr:template "ATS/{CODICE ATS}";
-  rr:termType rr:IRI;
-  rr:class w-health:ATS
-] ;
-rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-  rr:objectMap [ rr:template "ATS code for ATS {CODICE ATS RESIDENZA}, {DESCRIZIONE ATS RESIDENZA}." ; rr:language "en" ]
-];
-rr:predicateObjectMap [
-  rr:predicate w-health:ATScode;
-  rr:objectMap [ rr:template "{CODICE ATS}"; rr:datatype xsd:string ]
-];
-rr:predicateObjectMap [
-  rr:predicate ispra-top:hasLocation;
-  rr:objectMap [ rr:template "{COORDINATA GEOGRAFICA X}-{COORDINATA GEOGRAFICA Y}"; rr:termType rr:IRI ] #da fare riconcil. luoghi?
-].
-
-<#CCSdMapping> a rr:TriplesMap ;
-rml:logicalSource <#LogicalSourceHospitalization> ;
-rr:subjectMap [
-  rr:template "CCS-d/{CCS}";#riguardare
-  rr:termType rr:IRI;
-  rr:class w-health:CCSd
-] .
+    rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/ATS/{CODICE ATS RESIDENZA}";
+    rr:termType rr:IRI;
+    rr:class w-health:ATS
+  ] .

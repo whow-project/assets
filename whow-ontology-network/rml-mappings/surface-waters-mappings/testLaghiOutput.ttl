@@ -22,7 +22,7 @@
 @prefix whow-water: <https://w3id.org/environmental-data/onto/water-observation/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/environmental-data/onto/water-observation/geometry/geometry_573578-5070552>
+<https://w3id.org/environmental-data/data/geometry/573578-5070552>
   a places:Geometry;
   rdfs:label "Latitude 573578 and Longitude 5070552"@en;
   places:lat "573578";
