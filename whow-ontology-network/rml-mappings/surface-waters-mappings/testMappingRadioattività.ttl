@@ -18,10 +18,10 @@
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix places: <https://w3id.org/stlab/places/> .
 @prefix core: <https://dati.isprambiente.it/ontology/core/> .
-@prefix whow-water: <https://w3id.org/environmental-data/onto/water-observation/>.
+@prefix whow-water: <https://w3id.org/environmental-data/data/>.
 @prefix ti: <https://w3id.org/italia/onto/TI/>.
 @prefix inspire-mf: <https://dati.isprambiente.it/ontology/inspire-mf/>.
-@prefix whow-adm: <https://w3id.org/environmental-data/onto/water-observation/water-administration-ontology>.
+@prefix whow-adm: <https://w3id.org/environmental-data/data/water-administration-ontology>.
 @base <https://w3id.org/environmental-data/onto/water-observation/> .
 
 ##########################################################
@@ -73,42 +73,42 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
   rr:predicate whow-water:hasWaterFeature;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/water-feature/{DESCRIZIONE MATRICE (2° livello)}-{Comune di prelievo}-{Provincia}"; rr:termType rr:IRI; ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/water-feature/{DESCRIZIONE MATRICE (2° livello)}-{Comune di prelievo}-{Provincia}"; rr:termType rr:IRI; ]
 ] ;
 rr:predicateObjectMap [
   rr:predicate whow-water:hasObservedProperty;
   rr:objectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/observable-property/activity"; rr:termType rr:IRI;]
+  rr:template "https://w3id.org/environmental-data/data/observable-property/activity"; rr:termType rr:IRI;]
 ] ;
 
 rr:predicateObjectMap [
   rr:predicate inspire-mf:hasObservationValue;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/observation-value/{Attività specifica}-{Unità di misura}"; rr:termType rr:IRI; ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/observation-value/{Attività specifica}-{Unità di misura}"; rr:termType rr:IRI; ]
   ];
 
 rr:predicateObjectMap [
   rr:predicate whow-water:hasObservablePropertyObject;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/observable-property-object/radioactivity-object/nuclide-{Nuclide}"; rr:termType rr:IRI; ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/observable-property-object/radioactivity-object/nuclide-{Nuclide}"; rr:termType rr:IRI; ]
 ];
 
 
 rr:predicateObjectMap [
   rr:predicate places:hasProvince;
   rr:objectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/province/{Provincia}";]
+  rr:template "https://w3id.org/environmental-data/data/province/{Provincia}";]
 ].
 
 
 <#HasObservablePropertyMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/observable-property/activity";
+  rr:template "https://w3id.org/environmental-data/data/observable-property/activity";
   rr:termType rr:IRI;
   rr:class whow-water:ObservableProperty
 ] ;
 rr:predicateObjectMap [
   rr:predicate rdfs:label;
-  rr:objectMap [ rr:constant "https://w3id.org/environmental-data/onto/water-observation/observable-property/activity" ; rr:language "en" ]
+  rr:objectMap [ rr:constant "https://w3id.org/environmental-data/data/observable-property/activity" ; rr:language "en" ]
 ];
 rr:predicateObjectMap [
   rr:predicate core:name;
@@ -119,7 +119,7 @@ rr:predicateObjectMap [
 <#ProvinceMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/province/{Provincia}";
+  rr:template "https://w3id.org/environmental-data/data/province/{Provincia}";
   rr:termType rr:IRI;
   rr:class places:Province
 ] ;
@@ -130,7 +130,7 @@ rr:predicateObjectMap [
 <#MunicipalityMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/municipality/{Comune di prelievo}";
+  rr:template "https://w3id.org/environmental-data/data/municipality/{Comune di prelievo}";
   rr:termType rr:IRI;
   rr:class places:Municipality
 ] ;
@@ -144,7 +144,7 @@ rr:predicateObjectMap [
 <#WaterFeatureMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/water-feature/{DESCRIZIONE MATRICE (2° livello)}";
+  rr:template "https://w3id.org/environmental-data/data/water-feature/{DESCRIZIONE MATRICE (2° livello)}";
   rr:termType rr:IRI;
   rr:class whow-water:WaterFeature
 ] ;
@@ -154,7 +154,7 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
   rr:predicate whow-water:hasWaterFeatureType;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/water-feature-type/{DESCRIZIONE MATRICE (1°livello)}" ;  rr:termType rr:IRI]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/water-feature-type/{DESCRIZIONE MATRICE (1°livello)}" ;  rr:termType rr:IRI]
 ].
 
 # #################################
@@ -163,7 +163,7 @@ rr:predicateObjectMap [
 <#WaterFeatureTypeMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/water-feature-type/{DESCRIZIONE MATRICE (1°livello)}";
+  rr:template "https://w3id.org/environmental-data/data/water-feature-type/{DESCRIZIONE MATRICE (1°livello)}";
   rr:termType rr:IRI;
   rr:class whow-water:WaterFeatureType
 ] ;
@@ -178,7 +178,7 @@ rr:predicateObjectMap [
 <#ChemicalAgentMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/observable-property-object/radioactivity-object/nuclide-{Nuclide}";
+  rr:template "https://w3id.org/environmental-data/data/observable-property-object/radioactivity-object/nuclide-{Nuclide}";
   rr:termType rr:IRI;
   rr:class whow-water:RadioactivityObject
 ] ;
@@ -189,7 +189,7 @@ rr:predicateObjectMap [
 
 rr:predicateObjectMap [
   rr:predicate core:hasUniqueIdentifier;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/onto/water-observation/observable-property-object/radioactivity-object-identifier/nuclide-{Nuclide}" ; rr:language "en" ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/observable-property-object/radioactivity-object-identifier/nuclide-{Nuclide}" ; rr:language "en" ]
 ].
 
 
@@ -200,7 +200,7 @@ rr:predicateObjectMap [
 <#ObservationValueMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/observation-value/{Attività specifica}-{Unità di misura}";
+  rr:template "https://w3id.org/environmental-data/data/observation-value/{Attività specifica}-{Unità di misura}";
   rr:termType rr:IRI;
   rr:class inspire-mf:ObservationValue
 
@@ -214,19 +214,19 @@ rr:predicateObjectMap [
 rr:predicateObjectMap [
   rr:predicate core:hasValue;
   rr:objectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/value/{Attività specifica}";]
+  rr:template "https://w3id.org/environmental-data/data/value/{Attività specifica}";]
 ];
 
 rr:predicateObjectMap [
   rr:predicate core:hasUnitOfMeasure;
   rr:objectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/um/{Unità di misura}";]
+  rr:template "https://w3id.org/environmental-data/data/um/{Unità di misura}";]
 ].
 
 <#ObservationValueHasValueMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/value/{Attività specifica}";
+  rr:template "https://w3id.org/environmental-data/data/value/{Attività specifica}";
   rr:termType rr:IRI;
   rr:class core:Value
 ] ;
@@ -244,7 +244,7 @@ rr:predicateObjectMap [
 <#UnitOfMeasureMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceRadioactivity> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/onto/water-observation/um/{Unità di misura}";
+  rr:template "https://w3id.org/environmental-data/data/um/{Unità di misura}";
   rr:termType rr:IRI;
   rr:class core:UnitOfMeasure
 ] ;
@@ -266,7 +266,7 @@ rr:predicateObjectMap [
 
       rr:predicateObjectMap [
         rr:predicate grel:p_array_a ;
-        rr:objectMap [ rr:constant "https://w3id.org/environmental-data/onto/water-observation/municipality"]
+        rr:objectMap [ rr:constant "https://w3id.org/environmental-data/data/municipality"]
       ] ;
       rr:predicateObjectMap [
             rr:predicate grel:p_array_a ;

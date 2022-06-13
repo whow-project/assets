@@ -60,19 +60,19 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
   rr:predicate w-health:hasDeathCause;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/death-cause/{CAUSA DI MORTE}" ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/death-cause/{CAUSA DI MORTE}" ]
 ];
 rr:predicateObjectMap [
   rr:predicate ispra-top:hasLocation;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/{PROVINCIA}" ] #attenzione: deve essere uguale agli altri + come mappi ITALIA...
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/province/{PROVINCIA}" ] #attenzione: deve essere uguale agli altri + come mappi ITALIA...
 ];
 rr:predicateObjectMap [
   rr:predicate w-health:genderOfPatient;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/{GENERE}"; rr:datatype xsd:string ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/gender/{GENERE}"; rr:datatype xsd:string ]
 ];
 rr:predicateObjectMap [
   rr:predicate ispra-top:time;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/{ANNO}"; rr:datatype xsd:date ]
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/year/{ANNO}"; rr:datatype xsd:date ]
 ].
 
 
@@ -80,7 +80,7 @@ rr:predicateObjectMap [
 <#DeathCauseMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceHealthCondition> ;
 rr:subjectMap [
-  rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/death-cause/{CAUSA DI MORTE}";
+  rr:template "https://w3id.org/environmental-data/data/death-cause/{CAUSA DI MORTE}";
   rr:termType rr:IRI;
   rr:class w-health:DeathCause
 ] .

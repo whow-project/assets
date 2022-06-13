@@ -59,7 +59,7 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
   rr:predicate ispra-top:hasLocation;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/Lombardy" ] #attenzione: deve essere uguale agli altri + come mappi ITALIA...
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/location/Lombardy" ] #attenzione: deve essere uguale agli altri + come mappi ITALIA...
 ];
 #rr:predicateObjectMap [
 #  rr:predicate w-health:relatedToDiagnosis;

@@ -69,11 +69,11 @@ rr:predicateObjectMap [
 ];
 rr:predicateObjectMap [
   rr:predicate w-health:relatedToDiagnosis;
-  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/CCS-d/{CCS}"; rr:termType rr:IRI ] #da vedere uri
+  rr:objectMap [ rr:template "https://w3id.org/environmental-data/data/CCS-d/{CCS}"; rr:termType rr:IRI ] #da vedere uri
 ];
 rr:predicateObjectMap [
   rr:predicate w-health:relatedToATS;
-  rr:objectMap [rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/ATS/{CODICE ATS RESIDENZA}"; rr:termType rr:IRI ]
+  rr:objectMap [rr:template "https://w3id.org/environmental-data/data/ATS/{CODICE ATS RESIDENZA}"; rr:termType rr:IRI ]
   ];
 
 rr:predicateObjectMap [
@@ -85,7 +85,7 @@ rr:predicateObjectMap [
 <#ATSMapping> a rr:TriplesMap ;
 rml:logicalSource <#LogicalSourceHospitalization> ;
 rr:subjectMap [
-    rr:template "https://w3id.org/environmental-data/data/health-monitoring-ontology/ATS/{CODICE ATS RESIDENZA}";
+    rr:template "https://w3id.org/environmental-data/data/ATS/{CODICE ATS RESIDENZA}";
     rr:termType rr:IRI;
     rr:class w-health:ATS
   ] .
