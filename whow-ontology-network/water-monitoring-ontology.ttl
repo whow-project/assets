@@ -275,3 +275,8 @@ hydro:WaterBody
       skos:definition "Ontology for describing WHOW project concepts for the water monitoring domain"@en ;
       skos:note "TODO: valutare di rinominare in water-observation-ontology"^^xsd:string ;
       skos:prefLabel "Water Monitoring Ontology"@en .
+
+:MarineWaterObservation
+      rdf:type owl:Class ;
+      rdfs:label "Marine water observation "@en ;
+      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservation> .
