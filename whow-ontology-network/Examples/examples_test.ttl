@@ -1,8 +1,8 @@
 # baseURI: https://whowproject.eu/ontologies/instances_test_1
 # imports: http://qudt.org/schema/qudt
-# imports: https://w3id.org/environmental-data/onto/hydrography-ontology
-# imports: https://w3id.org/environmental-data/onto/water-indicators-ontology
-# imports: https://w3id.org/environmental-data/onto/water-monitoring-ontology
+# imports: https://w3id.org/whow/onto/hydrography-ontology
+# imports: https://w3id.org/whow/onto/water-indicators-ontology
+# imports: https://w3id.org/whow/onto/water-monitoring-ontology
 
 @prefix :        <https://whowproject.eu/ontologies/instances_test_1/> .
 @prefix core:    <https://dati.isprambiente.it/ontology/core/> .
@@ -43,7 +43,7 @@ w-ind:LTLecoIndicator12345
 
 <https://whowproject.eu/ontologies/instances_test_1>
       rdf:type owl:Ontology ;
-      owl:imports <http://qudt.org/schema/qudt> , <https://w3id.org/environmental-data/onto/hydrography-ontology> , <https://w3id.org/environmental-data/onto/water-indicators-ontology> , <https://w3id.org/environmental-data/onto/water-monitoring-ontology> ;
+      owl:imports <http://qudt.org/schema/qudt> , <https://w3id.org/whow/onto/hydrography-ontology> , <https://w3id.org/whow/onto/water-indicators-ontology> , <https://w3id.org/whow/onto/water-monitoring-ontology> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
 <https://whowproject.eu/ontologies/instances_test_1/#MCPA_Acido_2.4_meticlorofenossi_acetico>

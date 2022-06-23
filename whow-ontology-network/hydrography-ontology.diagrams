@@ -9,12 +9,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >195</cd:width>
+        >193</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >305</cd:y>
+        >454</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >918</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/WaterBasin"/>
+        >1043</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/WaterBody"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -22,12 +22,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >281</cd:width>
+        >247</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >603</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >123</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/CoastalWaterBody"/>
+        >747</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/LakeWaterBody"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -48,12 +48,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >247</cd:width>
+        >195</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >603</cd:y>
+        >305</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >747</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/LakeWaterBody"/>
+        >918</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/WaterBasin"/>
       </cd:URINode>
     </cd:nodes>
     <rdfs:label>Overview</rdfs:label>
@@ -62,12 +62,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >193</cd:width>
+        >279</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >454</cd:y>
+        >603</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1043</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/WaterBody"/>
+        >436</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/GroundwaterBody"/>
       </cd:URINode>
     </cd:nodes>
     <cd:nodes>
@@ -101,25 +101,12 @@
         <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >57</cd:height>
         <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >279</cd:width>
+        >281</cd:width>
         <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >603</cd:y>
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >436</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/GroundwaterBody"/>
-      </cd:URINode>
-    </cd:nodes>
-    <cd:nodes>
-      <cd:URINode>
-        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >57</cd:height>
-        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >227</cd:width>
-        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >603</cd:y>
-        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1026</cd:x>
-        <cd:class rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/MarineWaters"/>
+        >123</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/CoastalWaterBody"/>
       </cd:URINode>
     </cd:nodes>
     <cd:selectedResource rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/WaterBasin"/>
@@ -134,6 +121,19 @@
         <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1857</cd:x>
         <cd:class rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/TransitionalWaterBody"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >57</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >227</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >603</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1026</cd:x>
+        <cd:class rdf:resource="https://whowproject.eu/ontologies/water-administration-ontology/MarineWaters"/>
       </cd:URINode>
     </cd:nodes>
   </cd:Diagram>

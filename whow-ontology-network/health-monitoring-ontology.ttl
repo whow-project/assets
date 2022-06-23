@@ -1,15 +1,16 @@
-# baseURI: https://w3id.org/environmental-data/onto/health-monitoring-ontology
+# baseURI: https://w3id.org/whow/onto/health-monitoring-ontology
 # imports: http://purl.org/dc/terms/
 # imports: http://www.w3.org/2006/vcard/ns
 # imports: http://www.w3.org/ns/dcat
 # imports: http://www.w3.org/ns/prov
 # imports: http://xmlns.com/foaf/0.1/
 # imports: https://dati.isprambiente.it/ontology/inspire-mf/
-# imports: https://w3id.org/environmental-data/onto/water-monitoring-ontology
 # imports: https://w3id.org/health-data/onto/CCStoICD9-data
 # imports: https://w3id.org/italia/onto/Indicator
+# imports: https://w3id.org/whow/onto/hydrography-ontology
+# imports: https://w3id.org/whow/onto/water-monitoring-ontology
 
-@prefix :        <https://w3id.org/environmental-data/onto/health-monitoring-ontology/> .
+@prefix :        <https://w3id.org/whow/onto/health-monitoring-ontology/> .
 @prefix CCStoICD9-data:  <https://w3id.org/health-data/onto/CCStoICD9-data/> .
 @prefix ind:     <https://w3id.org/italia/onto/Indicator/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
@@ -18,11 +19,6 @@
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix w-mon:   <https://w3id.org/environmental-data/onto/water-monitoring-ontology/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-
-<https://w3id.org/environmental-data/onto/health-monitoring-ontology>
-      rdf:type owl:Ontology ;
-      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2006/vcard/ns> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/ns/prov> , <http://xmlns.com/foaf/0.1/> , <https://dati.isprambiente.it/ontology/inspire-mf/> , <https://w3id.org/environmental-data/onto/water-monitoring-ontology> , <https://w3id.org/health-data/onto/CCStoICD9-data> , <https://w3id.org/italia/onto/Indicator> ;
-      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
 <https://w3id.org/environmental-data/onto/health-monitoring-ontology/ATS>
       rdf:type owl:Class ;
@@ -117,3 +113,8 @@
       rdfs:domain <https://w3id.org/environmental-data/onto/health-monitoring-ontology/Hospitalization> ;
       rdfs:label "related to diagnosis "@en ;
       rdfs:range <https://w3id.org/health-data/onto/CCS-ontology/CCSd> .
+
+<https://w3id.org/whow/onto/health-monitoring-ontology>
+      rdf:type owl:Ontology ;
+      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2006/vcard/ns> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/ns/prov> , <http://xmlns.com/foaf/0.1/> , <https://dati.isprambiente.it/ontology/inspire-mf/> , <https://w3id.org/health-data/onto/CCStoICD9-data> , <https://w3id.org/italia/onto/Indicator> , <https://w3id.org/whow/onto/hydrography-ontology> , <https://w3id.org/whow/onto/water-monitoring-ontology> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .

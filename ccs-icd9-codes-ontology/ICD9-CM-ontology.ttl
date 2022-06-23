@@ -1,31 +1,32 @@
-# baseURI: https://w3id.org/health-data/onto/ICD9-CM-ontology
+# baseURI: https://w3id.org/whow/onto/ICD9-CM-ontology
 # imports: http://www.w3.org/2004/02/skos/core
 
-@prefix :        <https://w3id.org/health-data/onto/ICD9-CM-ontology/> .
+@prefix :        <https://w3id.org/whow/onto/ICD9-CM-ontology/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/health-data/onto/ICD9-CM-ontology>
-      rdf:type owl:Ontology ;
-      rdfs:comment "Ontologia che modella i codici ICD9 (International Classification of Diseases, 9th Revision, Clinical Modification)"@it ;
-      owl:imports <http://www.w3.org/2004/02/skos/core> ;
-      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
-
-:ICD  rdf:type owl:Class ;
+<https://w3id.org/health-data/onto/ICD9-CM-ontology/ICD>
+      rdf:type owl:Class ;
       rdfs:comment "International Classification of Diseases Code"@it ;
       rdfs:label "ICD"@it ;
       rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> .
 
-:ICDd
+<https://w3id.org/health-data/onto/ICD9-CM-ontology/ICDd>
       rdf:type owl:Class ;
       rdfs:comment "International Classification of Diseases Code - Disease"@it ;
       rdfs:label "ICDd"@it ;
-      rdfs:subClassOf :ICD .
+      rdfs:subClassOf <https://w3id.org/health-data/onto/ICD9-CM-ontology/ICD> .
 
-:ICDp
+<https://w3id.org/health-data/onto/ICD9-CM-ontology/ICDp>
       rdf:type owl:Class ;
       rdfs:comment "International Classification of Diseases Code - Procedures"@it ;
       rdfs:label "ICDp"^^xsd:string ;
-      rdfs:subClassOf :ICD .
+      rdfs:subClassOf <https://w3id.org/health-data/onto/ICD9-CM-ontology/ICD> .
+
+<https://w3id.org/whow/onto/ICD9-CM-ontology>
+      rdf:type owl:Ontology ;
+      rdfs:comment "Ontologia che modella i codici ICD9 (International Classification of Diseases, 9th Revision, Clinical Modification)"@it ;
+      owl:imports <http://www.w3.org/2004/02/skos/core> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
