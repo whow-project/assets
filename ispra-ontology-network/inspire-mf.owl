@@ -273,6 +273,22 @@
     
 
 
+    <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasValidationLevel -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasValidationLevel">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isClassifiedBy"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isValidationLevelOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ValidationLevel"/>
+        <rdfs:comment xml:lang="it">La relazione tra un&apos;entità e il livello di validazione evenutale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation between an entity and a validation level.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/"/>
+        <rdfs:label xml:lang="it">ha livello di validazione</rdfs:label>
+        <rdfs:label xml:lang="en">has validation level</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hosts -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hosts">
@@ -345,6 +361,22 @@
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire/"/>
         <rdfs:label xml:lang="en">is metric used by</rdfs:label>
         <rdfs:label xml:lang="it">è metrica usata da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/inspire-mf/isObservationCollectionMadeBySensor -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isObservationCollectionMadeBySensor">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isCollectionOf"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/makesObservationCollection"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationCollection"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Sensor"/>
+        <rdfs:comment xml:lang="it">La relazione che collega una collezione di osservazioni ad un sensore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation linking an observation collection to a sensor.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/"/>
+        <rdfs:label xml:lang="en">is observation collection made by sensor</rdfs:label>
+        <rdfs:label xml:lang="it">è collezione di osservazioni fatta da sensore</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -517,6 +549,21 @@
     
 
 
+    <!-- https://dati.isprambiente.it/ontology/inspire-mf/isValidationLevelOf -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isValidationLevelOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/classifies"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ValidationLevel"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:comment xml:lang="it">La relazione tra un livello di validazione ed un&apos;entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation between a validation level and its entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/"/>
+        <rdfs:label xml:lang="en">is validation level of</rdfs:label>
+        <rdfs:label xml:lang="it">è livello di validazione di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/makesObservation -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/makesObservation">
@@ -528,6 +575,21 @@
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire/"/>
         <rdfs:label xml:lang="it">emette osservazione</rdfs:label>
         <rdfs:label xml:lang="en">makes observation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/inspire-mf/makesObservationCollection -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/makesObservationCollection">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasCollection"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Sensor"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationCollection"/>
+        <rdfs:comment xml:lang="it">La relazione che permette di dire che un sensore ha generato una certa collezione di osservazioni.</rdfs:comment>
+        <rdfs:comment xml:lang="it">The relation that allows one to assert a sensor made an observation collection.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/"/>
+        <rdfs:label xml:lang="it">fa collezione di osservazioni</rdfs:label>
+        <rdfs:label xml:lang="en">makes observation collection</rdfs:label>
     </owl:ObjectProperty>
     
 
