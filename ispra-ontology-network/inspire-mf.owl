@@ -1,15 +1,32 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://dati.isprambiente.it/ontology/inspire-mf/"
      xml:base="https://dati.isprambiente.it/ontology/inspire-mf/"
-     xmlns:core="https://dati.isprambiente.it/ontology/core/"
+     xmlns:top="https://dati.isprambiente.it/ontology/top/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/">
-        <owl:imports rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
+        <owl:imports rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
     
 
 
@@ -27,9 +44,9 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/basedOnMetric -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/basedOnMetric">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasDescription"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasDescription"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isMetricUsedBy"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Metric"/>
         <rdfs:comment xml:lang="it">La relazione tra un&apos;entità e la metrica utilizzata per eseguire la misurazione.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation between an entity and the metric used for performing the measurement.</rdfs:comment>
@@ -43,10 +60,10 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/generationTime -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/generationTime">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/atTime"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/atTime"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isGenerationTimeOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/TemporalEntity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
         <rdfs:comment xml:lang="it">La relazione che sussiste tra un&apos;osservazione e l&apos;entità temporale in cui essa è stata generata.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between an observation and its generation time.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/"/>
@@ -59,9 +76,9 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasFeatureOfInterest -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasFeatureOfInterest">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isFeatureOfInterestOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra una qualsiasi entità ed una caratteristica di interesse.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship between any entity and a feature of interest.</rdfs:comment>
@@ -75,7 +92,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasObservationParameter -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasObservationParameter">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isParametrisedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isParametrisedBy"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isObservationParameterFor"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationParameter"/>
@@ -91,7 +108,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasObservationValue -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasObservationValue">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasValue"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasValue"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isObservationValueOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue"/>
@@ -107,9 +124,9 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasPlatform -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasPlatform">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isPlatformOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Platform"/>
         <rdfs:comment xml:lang="it">La relazione tra un&apos;entità e una piattaforma.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation between an entity and a platform.</rdfs:comment>
@@ -123,7 +140,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasPlatformModel -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasPlatformModel">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasDescription"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasDescription"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isPlatformModelOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Platform"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/PlatformModel"/>
@@ -139,7 +156,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasPlatformType -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasPlatformType">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isClassifiedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isClassifiedBy"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isPlatformTypeOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Platform"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/PlatformType"/>
@@ -155,7 +172,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasResponsibleParty -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasResponsibleParty">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -172,7 +189,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasSensorModel -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasSensorModel">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasDescription"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasDescription"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isSensorModelOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Sensor"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/SensorModel"/>
@@ -188,7 +205,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasSensorType -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasSensorType">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isClassifiedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isClassifiedBy"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isSensorTypeOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Sensor"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/SensorType"/>
@@ -204,7 +221,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasSubMonitoringObject -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasSubMonitoringObject">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasPart"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/hasSuperMonitoringObject"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringObject"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringObject"/>
@@ -220,7 +237,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasSuperMonitoringObject -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasSuperMonitoringObject">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isPartOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isPartOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringObject"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringObject"/>
         <rdfs:comment xml:lang="it">La relazione per esprimere che un determinato oggetto di monitoraggio è un sottocomponente di un altro oggetto di monitoraggio.</rdfs:comment>
@@ -235,9 +252,9 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasSystemCapability -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasSystemCapability">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasCharacteristic"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasCharacteristic"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isSystemCapabilityOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/System"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/System"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/SystemCapability"/>
         <rdfs:comment xml:lang="it">La proprietà che associa un sistema a una determinata proprietà.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property that associate a system with a certain property.</rdfs:comment>
@@ -251,7 +268,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasSystemDeployment -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasSystemDeployment">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasEventuality"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasEventuality"/>
     </owl:ObjectProperty>
     
 
@@ -259,7 +276,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hosts -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hosts">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isHostedBy"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Platform"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility"/>
@@ -275,9 +292,9 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isFeatureOfInterestOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isFeatureOfInterestOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione che collega una caratteristica di interesse ad una qualsiasi entità possibile.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship that links a feature of interest to any possible entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire/"/>
@@ -290,8 +307,8 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isGenerationTimeOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isGenerationTimeOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isTimeOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/TemporalEntity"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isTimeOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
         <rdfs:comment xml:lang="it">La relazione che sussiste tra un&apos;entità temporale ed un&apos;osservazione. La relazione fornisce l&apos;informazione sul momento in cui l&apos;osservazione è stata generata.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship that exists between a temporal entity and an observation. The relation suggests when the observation was generated.</rdfs:comment>
@@ -305,7 +322,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isHostedBy -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isHostedBy">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Platform"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra un qualsiasi sistema e la piattaforma su cui è ospitato.</rdfs:comment>
@@ -320,9 +337,9 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isMetricUsedBy -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isMetricUsedBy">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isDescriptionOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isDescriptionOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Metric"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione tra una metrica ed l&apos;entità che si basa su tale metrica per una misurazione.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship between a metric and an entity that relies on that metric for a measurement.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire/"/>
@@ -335,7 +352,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isObservationMadeBySensor -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isObservationMadeBySensor">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/makesObservation"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Sensor"/>
@@ -351,7 +368,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isObservationParameterFor -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isObservationParameterFor">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/parametrises"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/parametrises"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationParameter"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
         <rdfs:comment xml:lang="en">Inverse property of hasObservationParameter that links a parameter to its related observation.</rdfs:comment>
@@ -366,7 +383,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isObservationValueOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isObservationValueOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isValueOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isValueOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
         <rdfs:comment xml:lang="it">La proprietà che collega un valore di osservazione alla sua osservazione.</rdfs:comment>
@@ -381,9 +398,9 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isPhenomenonTimeOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isPhenomenonTimeOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isTimeOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isTimeOf"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/phenomenonTime"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/TemporalEntity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
         <rdfs:comment xml:lang="en">La proprietà che collega un&apos;entità temporale ad un osservazione con il valore di fornire l&apos;informazione sul momento in cui il fenomeno oggetto dell&apos;osservazione si è verificato.</rdfs:comment>
         <rdfs:comment xml:lang="it">La proprietà che collega un&apos;entità temporale ad un osservazione con il valore di fornire l&apos;informazione sul momento in cui il fenomeno oggetto dell&apos;osservazione si è verificato.</rdfs:comment>
@@ -397,7 +414,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isPlatformModelOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isPlatformModelOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isDescriptionOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isDescriptionOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/PlatformModel"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Platform"/>
         <rdfs:comment xml:lang="it">La proprietà che consente di associare un modello di piattaforma ad una piattaforma.</rdfs:comment>
@@ -412,9 +429,9 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isPlatformOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isPlatformOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Platform"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione tra una piattaforma ed un&apos;entità  .</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship between a platform and an entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire/"/>
@@ -427,7 +444,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isPlatformTypeOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isPlatformTypeOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/classifies"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/classifies"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/PlatformType"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Platform"/>
         <rdfs:comment xml:lang="it">La proprietà che consente di utilizzare un tipo di piattaforma come concetto che classifica una determinata piattaforma.</rdfs:comment>
@@ -442,7 +459,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isProcedureUsedBy -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isProcedureUsedBy">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isDescriptionOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isDescriptionOf"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/usedProcedure"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Procedure"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
@@ -458,7 +475,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isSensorModelOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isSensorModelOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isDescriptionOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isDescriptionOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/SensorModel"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Sensor"/>
         <rdfs:comment xml:lang="en">La relazione che permette di collegare un modello di sensore al sensore di quel modello.</rdfs:comment>
@@ -473,7 +490,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isSensorTypeOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isSensorTypeOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/classifies"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/classifies"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/SensorType"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Sensor"/>
         <rdfs:comment xml:lang="it">La proprietà che consente di utilizzare un concetto che identifica il tipo di sensore per classificare un sensore.</rdfs:comment>
@@ -488,9 +505,9 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/isSystemCapabilityOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isSystemCapabilityOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isCharacteristicOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isCharacteristicOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/SystemCapability"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/System"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/System"/>
         <rdfs:comment xml:lang="it">La proprietà che associa una determinata abilità ad un sistema.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property that associates a certain capability  with a system.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire/"/>
@@ -503,7 +520,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/makesObservation -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/makesObservation">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Sensor"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
         <rdfs:comment xml:lang="it">La proprietà che collega un sensore a un&apos;osservazione fatta da tale sensore.</rdfs:comment>
@@ -518,9 +535,9 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/phenomenonTime -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/phenomenonTime">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/atTime"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/atTime"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/TemporalEntity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
         <rdfs:comment xml:lang="it">La proprietà che associa ad un&apos;osservazione l&apos;entità temporale che stabilisce quando il fenomeno oggetto dell&apos;osservazione si è manifestato.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property that associates to an observation the temporal entity that establishes when the phenomenon object of the observation occurred.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/"/>
@@ -533,7 +550,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/usedProcedure -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/usedProcedure">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasDescription"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasDescription"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Procedure"/>
         <rdfs:comment xml:lang="it">La relazione che sussiste tra un ente e la procedura utilizzata da tale ente per svolgere alcune attività, ad es. un&apos;osservazione.</rdfs:comment>
@@ -556,23 +573,10 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/System -->
-
-    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/System">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/hasSystemCapability"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/SystemCapability"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="en">It represents the Feature whose Observed Attribute is being observed by a Sensor in order to get an Observed Value. For instance, if we say that the temperature of the kitchen is 28 celsius degrees, the Feature of Interest is the kitchen.</rdfs:comment>
         <rdfs:comment xml:lang="it">Rappresenta la caratteristica di interesse il cui attributo osservato è osservato da un sensor per ottenere un valore osservato. Per esempio, se diciamo che la temperatura della cucina è di 28 gradi celsius, la caratteristica di interesse è la cucina.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire/"/>
@@ -585,7 +589,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/Indicator -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/Indicator">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/basedOnMetric"/>
@@ -600,9 +604,9 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/atTime"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/atTime"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/TemporalEntity"/>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An indicator that reports a certain value typically with its unit of measure. Examples of indicators are those resulting from the measurement of land consumption.</rdfs:comment>
@@ -617,10 +621,10 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/IndicatorCollection -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/IndicatorCollection">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Collection"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Collection"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasMember"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasMember"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Indicator"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -636,11 +640,11 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/Metric -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/Metric">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Description"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/isParametrisedBy"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/Parameter"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isParametrisedBy"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Parameter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A metric, which is used for performing measurements.</rdfs:comment>
@@ -658,8 +662,8 @@
         <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasLocation"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A georeferenced object directly collecting or processing data about objects whose properties (e.g. physical, chemical, biological or other aspects of environmental conditions) are repeatedly observed or measured. A monitoring facility can also host other monitoring facilities.</rdfs:comment>
@@ -682,28 +686,28 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/MonitoringObject -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringObject">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/System"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasLocation"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/System"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/hasResponsibleParty"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/AgentRole"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/AgentRole"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasMember"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasMember"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasPart"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasPart"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringObject"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -714,17 +718,17 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/Observation -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/Observation">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/isParametrisedBy"/>
-                <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationParameter"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/hasFeatureOfInterest"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isParametrisedBy"/>
+                <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationParameter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -736,16 +740,9 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/isParametrisedBy"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationParameter"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/generationTime"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/TemporalEntity"/>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -766,7 +763,14 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/phenomenonTime"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/TemporalEntity"/>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isParametrisedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationParameter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An observation performed by a sensor reporting a certain result about a given feature of interest.</rdfs:comment>
@@ -781,10 +785,10 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/ObservationCollection -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/ObservationCollection">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Collection"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Collection"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasMember"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasMember"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -800,7 +804,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/ObservationParameter -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/ObservationParameter">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Parameter"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Parameter"/>
         <rdfs:comment xml:lang="en">An observation parameter (property, characteristic) of a feature of interest. For instance, if we say that the temperature of the kitchen is 28 clesius degrees, the observed attribute is temperature.</rdfs:comment>
         <rdfs:comment xml:lang="it">Rappresenta un parametro (proprietà) dell&apos;osservazione di una caratteristica di interesse. Per esempio, se diciamo che la temperatura della cucina è di 28 gradi celsius, la temperatura rappresenta l&apos;attributo osservato.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/"/>
@@ -813,7 +817,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Value"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Value"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isObservationValueOf"/>
@@ -822,9 +826,9 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/atTime"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/atTime"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/TemporalEntity"/>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -844,14 +848,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/hosts"/>
-                <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/System"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasLocation"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
+                <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/System"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -859,6 +856,13 @@
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/hasPlatformModel"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/PlatformModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasLocation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</rdfs:comment>
@@ -873,10 +877,10 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/PlatformCollection -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/PlatformCollection">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Collection"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Collection"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasMember"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasMember"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Platform"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -887,7 +891,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/PlatformModel -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/PlatformModel">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Description"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
     </owl:Class>
     
 
@@ -895,7 +899,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/PlatformType -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/PlatformType">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Concept"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
         <rdfs:comment xml:lang="en">A platform type that classified a certain platform, such as &apos;Fixed Buoy&apos;.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un tipo di piattaforma che ha classificato una determinata piattaforma, ad esempio &quot;Boa fissa&quot;.</rdfs:comment>
         <rdfs:label xml:lang="en">PlatformType</rdfs:label>
@@ -907,7 +911,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/Procedure -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/Procedure">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Description"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
         <rdfs:comment xml:lang="en">A workflow, protocol, plan, algorithm, or computational method specifying how to make an Observation or create an Indicator.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un flusso di lavoro, protocollo, piano, algoritmo, per un metodo computazionale che specifica come effettuare un&apos;osservazione o creare un indicatore.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire/"/>
@@ -963,7 +967,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/SensorModel -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/SensorModel">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Description"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
     </owl:Class>
     
 
@@ -971,7 +975,7 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/SensorType -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/SensorType">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Concept"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
         <rdfs:comment xml:lang="it">La classificazione di un sensore rispetto ad un determinato tipo.</rdfs:comment>
         <rdfs:comment xml:lang="en">The classification of a sensor with respect to a certain type.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire/"/>
@@ -984,26 +988,26 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/SystemCapability -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/SystemCapability">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Characteristic"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasSystem"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasSystem"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/System"/>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/System"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasValue"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasValue"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/Value"/>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/Value"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/isParametrisedBy"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isParametrisedBy"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/Parameter"/>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/Parameter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A property that characterizes the system.</rdfs:comment>
@@ -1018,32 +1022,11 @@
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/SystemDeployment -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/SystemDeployment">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/usedProcedure"/>
                 <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Procedure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasSystem"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/System"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasValue"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/Value"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/isParametrisedBy"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/Parameter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1053,12 +1036,68 @@
                 <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Platform"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasSystem"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isParametrisedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Il dislocamento di un sistema in un contesto specifico.</rdfs:comment>
         <rdfs:comment xml:lang="en">The deployment of a system in a specific context.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire/"/>
         <rdfs:label xml:lang="it">Collocamento del sistema</rdfs:label>
         <rdfs:label xml:lang="en">System deployment</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/inspire-mf/ValidationLevel -->
+
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/ValidationLevel">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
+        <rdfs:comment xml:lang="it">La classe per rappresentare i livelli di validazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class for representing a validation level.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/"/>
+        <rdfs:label xml:lang="it">Livello di validazione</rdfs:label>
+        <rdfs:label xml:lang="en">Validation level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/System -->
+
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/hasSystemCapability"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/SystemCapability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
     
 
 
@@ -1073,20 +1112,20 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/AgentRole"/>
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/Indicator"/>
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/SystemDeployment"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/AgentRole"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/Parameter"/>
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/SchemaAttribute"/>
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/UniqueIdentifier"/>
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/Value"/>
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/SystemCapability"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/Parameter"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/SchemaAttribute"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/UniqueIdentifier"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/Value"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

@@ -1,15 +1,32 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://dati.isprambiente.it/ontology/rendis/"
      xml:base="https://dati.isprambiente.it/ontology/rendis/"
-     xmlns:core="https://dati.isprambiente.it/ontology/core/"
+     xmlns:top="https://dati.isprambiente.it/ontology/top/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://dati.isprambiente.it/ontology/rendis/">
-        <owl:imports rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
+        <owl:imports rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
     
 
 
@@ -27,7 +44,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/addressesInstability -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/addressesInstability">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isInstabilityAddressedBy"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/Lot"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/Instability"/>
@@ -42,7 +59,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/addressesInstabilityType -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/addressesInstabilityType">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isClassifiedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isClassifiedBy"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isAddressedByProcedure"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/Procedure"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/InstabilityType"/>
@@ -58,10 +75,10 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/hasAlternativeLocation -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/hasAlternativeLocation">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasLocation"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasLocation"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isAlternativeLocationOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/Procedure"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
         <rdfs:comment xml:lang="it">La relazione tra un una procedura ed un luogo che rappresenta un luogo di intervento secondario.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship between a procedure and a place that represents a secondary intervention site.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -74,9 +91,9 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/hasAmount -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/hasAmount">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasValue"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasValue"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isAmountOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/Amount"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra un&apos;entità ed in suo importo.</rdfs:comment>
         <rdfs:comment xml:lang="en">The association between an entity and its corresponding amount.</rdfs:comment>
@@ -90,7 +107,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/hasCurrency -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/hasCurrency">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isParametrisedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isParametrisedBy"/>
         <rdfs:comment xml:lang="it">La proprietà per collegare un&apos;entità ad una valuta.</rdfs:comment>
         <rdfs:comment xml:lang="en">The association between an entity and a currency.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -151,9 +168,9 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/hasImplementationPlan -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/hasImplementationPlan">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasDescription"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasDescription"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isImplementationPlanOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra un&apos;entità ed un piano di attuazione.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between an entity and an implementation plan.</rdfs:comment>
@@ -167,7 +184,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/hasImplementationPlanAction -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/hasImplementationPlanAction">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasPart"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isImplementationPlanActionOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution"/>
@@ -184,7 +201,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/hasImplementationPlanStep -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/hasImplementationPlanStep">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasPart"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isImplementationPlanStepOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"/>
@@ -235,7 +252,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/hasInstabilityType -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/hasInstabilityType">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isClassifiedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isClassifiedBy"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isInstabilityTypeOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/Instability"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/InstabilityType"/>
@@ -251,9 +268,9 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/hasLegalBasis -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/hasLegalBasis">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isLegalBasisOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/LegalAct"/>
         <rdfs:comment xml:lang="it">La relazione che fornisce la base giuridica ad un&apos;entità collegandola a un atto giuridico.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation that provides legal basis to an entity by linking it to a legal act.</rdfs:comment>
@@ -267,9 +284,9 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/hasLithology -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/hasLithology">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isLithologyOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/Lithology"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra una possibile entità ed una litologia.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between an entity and a lithology.</rdfs:comment>
@@ -283,10 +300,10 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/hasPrimaryLocation -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/hasPrimaryLocation">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasLocation"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasLocation"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isPrimaryLocationOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/Procedure"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
         <rdfs:comment xml:lang="it">La proprietà per associare un luogo ad una procedura e rappresentare questa associazione come primaria.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property for associating a location to a procedure and representing this association as a primary one.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -299,7 +316,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/hasProcedureType -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/hasProcedureType">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isClassifiedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isClassifiedBy"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isProcedureTypeOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/Procedure"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/ProcedureType"/>
@@ -315,9 +332,9 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/hasRepairWorkExecution -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/hasRepairWorkExecution">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasEventuality"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasEventuality"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isRepairWordExecutionOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/RepairWork"/>
         <rdfs:comment xml:lang="it">La relazione valida tra un&apos;entità ed un&apos;opeara di risanamento attesa.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between an entity and an expected repair operation.</rdfs:comment>
@@ -331,7 +348,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/includesLot -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/includesLot">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/rendis/isIncludedInProcedure"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/Procedure"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/Lot"/>
@@ -347,7 +364,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isAddressedByProcedure -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isAddressedByProcedure">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/classifies"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/classifies"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/InstabilityType"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/Procedure"/>
         <rdfs:comment xml:lang="it">La proprietà che associa un tipo di instabilità alla procedura in cui questo è affrontato.</rdfs:comment>
@@ -362,8 +379,8 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isAlternativeLocationOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isAlternativeLocationOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isLocationOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isLocationOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/Procedure"/>
         <rdfs:comment xml:lang="it">La relazione che sussiste tra un luogo e una procedura. Il luogo rappresenta quindi un posto di intervento alternativo per il procedimento.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between a location and procedure. Hence, the location represents an alternative place of intervention for the procedure.</rdfs:comment>
@@ -377,9 +394,9 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isAmountOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isAmountOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isValueOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isValueOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/Amount"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione tra un importo e l&apos;entità a cui si riferisce.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship between an amount and the entity it refers to.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -392,7 +409,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isCurrencyOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isCurrencyOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/parametrises"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/parametrises"/>
         <rdfs:comment xml:lang="it">La proprietà che collega una valuta ad un&apos;entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property that links a currency to an entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -452,7 +469,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isImplementationPlanActionOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isImplementationPlanActionOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isPartOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isPartOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution"/>
@@ -468,9 +485,9 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isImplementationPlanOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isImplementationPlanOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isDescriptionOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isDescriptionOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra un piano di attuazione ed un&apos;entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between an implementation plan and an entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -483,7 +500,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isImplementationPlanStepOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isImplementationPlanStepOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isPartOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isPartOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"/>
@@ -499,7 +516,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isIncludedInProcedure -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isIncludedInProcedure">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/Lot"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/Procedure"/>
         <rdfs:comment xml:lang="en">Inverse property of &quot;includes lot&quot; that links a lot to its procedure</rdfs:comment>
@@ -530,7 +547,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isInstabilityAddressedBy -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isInstabilityAddressedBy">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/Instability"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/Lot"/>
         <rdfs:comment xml:lang="it">La proprietà per rappresentare il fatto che un dissesto è affrontato da un determinato lotto incluso in una procedura.</rdfs:comment>
@@ -545,7 +562,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isInstabilityTypeOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isInstabilityTypeOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/classifies"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/classifies"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/InstabilityType"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/Instability"/>
         <rdfs:comment xml:lang="it">La relazione che permette di affermare che un tipo di instabilità classifica una certa instabilità.</rdfs:comment>
@@ -569,9 +586,9 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isLegalBasisOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isLegalBasisOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/LegalAct"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione che collega un atto giuridico ad un&apos;entità con la funzione di fornire a quest&apos;ultima la base legale.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship that links a legal act to an entity with the function of providing the latter with the legal basis.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -584,9 +601,9 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isLithologyOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isLithologyOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/Lithology"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione sussistente tra una litologia ed una possibile entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between a lithology and a possible entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -599,8 +616,8 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isPrimaryLocationOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isPrimaryLocationOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isLocationOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isLocationOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/Procedure"/>
         <rdfs:comment xml:lang="it">La relazione tra un luogo primario ed una procedura.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property for representing relations between a primary location and a procedure.</rdfs:comment>
@@ -612,7 +629,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isProcedureTypeOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isProcedureTypeOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/classifies"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/classifies"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/ProcedureType"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/rendis/Procedure"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra un concetto che classifica una procedura e la procedura stessa.</rdfs:comment>
@@ -627,9 +644,9 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/isRepairWordExecutionOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/rendis/isRepairWordExecutionOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isEventualityOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isEventualityOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/rendis/RepairWork"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione valida tra un&apos;attività di risanamento ed un&apos;entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between a repair activity and an entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -653,7 +670,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/Amount -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/Amount">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Value"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Value"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/rendis/hasCurrency"/>
@@ -692,7 +709,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/Currency -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/Currency">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/UnitOfMeasure"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/UnitOfMeasure"/>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
         <rdfs:label xml:lang="en">Currency</rdfs:label>
         <rdfs:label xml:lang="it">Questa classe rappresenta una valuta.</rdfs:label>
@@ -705,7 +722,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/Document -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/Document">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="en">A set of interrelated Business Information representing the business facts. Additional Information: Documents may convey information in any language, medium or form, including textual, numerical, graphic, cartographic, audio-visual forms, etc. WG Approval 23/05/2019</rdfs:comment>
         <rdfs:comment xml:lang="it">Un insieme di informazioni aziendali correlate che rappresentano i fatti aziendali. Informazioni aggiuntive: i documenti possono trasmettere informazioni in qualsiasi lingua, supporto o forma, comprese le forme testuali, numeriche, grafiche, cartografiche, audiovisive, ecc. Approvazione WG 23/05/2019.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -718,7 +735,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/EconomicSummary -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/EconomicSummary">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Characteristic"/>
         <rdfs:comment xml:lang="en">An instance of this class represents the economic summary of a lot.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un&apos;istanza di questa classe rappresenta il prospetto economico di un lotto.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -731,7 +748,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/ImplementationPlan -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/ImplementationPlan">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Description"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/rendis/hasFinalImplementationPlanStep"/>
@@ -752,7 +769,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/isSatisfiedBy"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isSatisfiedBy"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -768,40 +785,40 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/satisfies"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/satisfies"/>
                 <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/directlyFollows"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/directlyFollows"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/directlyPrecedes"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/directlyPrecedes"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/follows"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/follows"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/precedes"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/precedes"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/satisfies"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/satisfies"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -817,13 +834,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/satisfies"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/rendis/hasFinalImplementationPlanAction"/>
@@ -844,7 +855,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/satisfies"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/satisfies"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/satisfies"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -860,7 +877,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Description"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/rendis/isImplementationPlanStepOf"/>
@@ -869,31 +886,31 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/directlyFollows"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/directlyFollows"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/directlyPrecedes"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/directlyPrecedes"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/follows"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/follows"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/isSatisfiedBy"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isSatisfiedBy"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/precedes"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/precedes"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -909,7 +926,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/Instability -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/Instability">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/rendis/hasInstabilityType"/>
@@ -928,7 +945,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/InstabilityType -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/InstabilityType">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Concept"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
         <rdfs:comment xml:lang="en">A concept representing a certain instability type.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un concetto che rappresenta un tipo di dissesto.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -953,7 +970,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/Lithology -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/Lithology">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:comment xml:lang="it">La classe per rappresentare una litologia.</rdfs:comment>
         <rdfs:comment xml:lang="en">The class for representing a lithology.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -966,19 +983,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/Lot -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/Lot">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasAgentRole"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/AgentRole"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasLocation"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/rendis/addressesInstability"/>
@@ -989,6 +994,18 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/rendis/hasImplementationPlan"/>
                 <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasAgentRole"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/AgentRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1022,7 +1039,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/Plan -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/Plan">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Description"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
     </owl:Class>
     
 
@@ -1030,19 +1047,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/Procedure -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/Procedure">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasAgentRole"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/AgentRole"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasLocation"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/rendis/addressesInstabilityType"/>
@@ -1075,22 +1080,34 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/rendis/hasAlternativeLocation"/>
-                <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasAgentRole"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/AgentRole"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasUniqueIdentifier"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/UniqueIdentifier"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/rendis/hasAlternativeLocation"/>
+                <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/rendis/hasPrimaryLocation"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasUniqueIdentifier"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/UniqueIdentifier"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">La classe che comprende le attività che una stazione appaltante mette in atto per realizzare un progetto di procurement, ad esempio le attività svolte tramite un contratto di appalto o di concessione, le attività realizzate attraverso amministrazione diretta, parternariato pubblico/privato o adesione ad un accordo quadro. Le attività prevedono step procedurali che possono variare in relazione alla modalità di realizzazione.</rdfs:comment>
@@ -1105,10 +1122,10 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/ProcedureCollection -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/ProcedureCollection">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Collection"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Collection"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasMember"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasMember"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/Procedure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1124,7 +1141,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/ProcedureType -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/ProcedureType">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Concept"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
         <rdfs:comment xml:lang="en">A type of procedure.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un tipo di procedura.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/rendis/"/>
@@ -1137,22 +1154,22 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/RepairWork -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/RepairWork">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Description"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/isSatisfiedBy"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isSatisfiedBy"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/RepairWorkExecution"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/isSpecialisedBy"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isSpecialisedBy"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/RepairWork"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/specialises"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/specialises"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/RepairWork"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1168,13 +1185,7 @@
     <!-- https://dati.isprambiente.it/ontology/rendis/RepairWorkExecution -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/rendis/RepairWorkExecution">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/satisfies"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/RepairWork"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/rendis/isRepairWordExecutionOf"/>
@@ -1183,7 +1194,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/satisfies"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/satisfies"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/RepairWork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/satisfies"/>
                 <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/rendis/RepairWork"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1192,6 +1209,9 @@
         <rdfs:label xml:lang="it">Esecuzione di opere di risanamento</rdfs:label>
         <rdfs:label xml:lang="en">Repair work execution</rdfs:label>
     </owl:Class>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
     
 
 
@@ -1206,18 +1226,18 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/AgentRole"/>
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/rendis/Instability"/>
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/rendis/Lot"/>
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/rendis/Procedure"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/AgentRole"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/AgentRole"/>
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/rendis/Lot"/>
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/rendis/Procedure"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/AgentRole"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

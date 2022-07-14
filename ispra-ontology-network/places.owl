@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://dati.isprambiente.it/ontology/places/"
      xml:base="https://dati.isprambiente.it/ontology/places/"
-     xmlns:core="https://dati.isprambiente.it/ontology/core/"
+     xmlns:top="https://dati.isprambiente.it/ontology/top/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://dati.isprambiente.it/ontology/places/">
-        <owl:imports rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
+        <owl:imports rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
     </owl:Ontology>
     
 
@@ -27,9 +27,9 @@
     <!-- https://dati.isprambiente.it/ontology/places/hasCountry -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/hasCountry">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasLocation"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasLocation"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/places/isCountryOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/places/Country"/>
         <rdfs:comment xml:lang="it">La proprietà per associare un&apos;entità al paese in cui si trova.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property for associating an entity with the country it is located in.</rdfs:comment>
@@ -46,7 +46,7 @@
         <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/places/hasHigherRank"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/places/hasDirectLowerRank"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/places/AdministrativeUnit"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">Questa proprietà mette in relazione componenti dell&apos;indirizzo con un nome, dove la prima è più specifica della seconda in maniera diretta senza transitività.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property relates two named address components, where the first is directly more specific then the second without any transitiveness.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
@@ -60,7 +60,7 @@
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/hasDirectLowerRank">
         <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/places/hasLowerRank"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/places/AdministrativeUnit"/>
         <rdfs:comment xml:lang="it">Questa proprietà mette in relazione componenti dell&apos;indirizzo con un nome, dove la prima è meno specifica della seconda e non esise un&apos;altra componente dell&apos;indirizzo con nome che è sia più specifica della prima che più generale della seconda.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property relates two named address components, where the first is less specific then the second and there is no other named address component that is both more specific than the first and more general than the second.</rdfs:comment>
@@ -74,9 +74,9 @@
     <!-- https://dati.isprambiente.it/ontology/places/hasGeometry -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/hasGeometry">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/places/isGeometryOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/places/Geometry"/>
         <rdfs:comment xml:lang="it">Questa proprietà collega un&apos;entità alla sua geometria.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property links an entity to its geometry.</rdfs:comment>
@@ -90,11 +90,11 @@
     <!-- https://dati.isprambiente.it/ontology/places/hasHigherRank -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/hasHigherRank">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/places/hasLowerRank"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/places/AdministrativeUnit"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">Questa proprietà mette in relazione due componenti dell&apos;indirizzo con nomi, dove la prima è più specifica della seconda.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property relates two named address components, where the first is more specific than the second.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
@@ -107,9 +107,9 @@
     <!-- https://dati.isprambiente.it/ontology/places/hasLowerRank -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/hasLowerRank">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/places/AdministrativeUnit"/>
         <rdfs:comment xml:lang="it">Questa proprietà mette in relazione due componenti dell&apos;indirizzo con nomi, dove la prima è meno specifica della seconda.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property relates two named address components, where the first is less specific than the second.</rdfs:comment>
@@ -123,9 +123,9 @@
     <!-- https://dati.isprambiente.it/ontology/places/hasMetropolitanCity -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/hasMetropolitanCity">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasLocation"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasLocation"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/places/isMetropolitanCityOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/places/MetropolitanCity"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/hasMunicipality"/>
@@ -143,9 +143,9 @@
     <!-- https://dati.isprambiente.it/ontology/places/hasMunicipality -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/hasMunicipality">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasLocation"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasLocation"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/places/isMunicipalityOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/places/Municipality"/>
         <rdfs:comment xml:lang="it">Il caso particolare di localizzazione di un oggetto in cui tale oggetto si trova in un comune.</rdfs:comment>
         <rdfs:comment xml:lang="en">The special case of location associated with an object in which such an object is located in a municipality.</rdfs:comment>
@@ -159,8 +159,8 @@
     <!-- https://dati.isprambiente.it/ontology/places/hasNearbyLocation -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/hasNearbyLocation">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione di vicinanza che può essere utilizzata per associare qualsiasi entità a un luogo secondo una vaga nozione di prossimità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The nearby relation that can be used to associate any entity to a place according to a vague notion of proximity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
@@ -173,9 +173,9 @@
     <!-- https://dati.isprambiente.it/ontology/places/hasProvince -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/hasProvince">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasLocation"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasLocation"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/places/isProvinceOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/places/Province"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/hasMunicipality"/>
@@ -193,9 +193,9 @@
     <!-- https://dati.isprambiente.it/ontology/places/hasRegion -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/hasRegion">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasLocation"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasLocation"/>
         <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/places/isRegionOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/places/Region"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/hasMetropolitanCity"/>
@@ -217,9 +217,9 @@
     <!-- https://dati.isprambiente.it/ontology/places/isCountryOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/isCountryOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isLocationOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isLocationOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/places/Country"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione per associare un paese a un&apos;entità situata in tale paese.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation for associating a country with an entity located in such a country.</rdfs:comment>
         <rdfs:comment xml:lang="en">is country of</rdfs:comment>
@@ -232,7 +232,7 @@
     <!-- https://dati.isprambiente.it/ontology/places/isGeometryOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/isGeometryOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdfs:comment xml:lang="it">La relazione che sussiste tra una geometria e la sua entità corrispondente.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between a geometry and its corresponding entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
@@ -245,9 +245,9 @@
     <!-- https://dati.isprambiente.it/ontology/places/isMetropolitanCityOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/isMetropolitanCityOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isLocationOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isLocationOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/places/MetropolitanCity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">Il caso speciale di &quot;è la posizione di&quot; in cui una città metropolitana è la posizione in cui si trova un oggetto.</rdfs:comment>
         <rdfs:comment xml:lang="en">The special case of &apos;is location of&apos; in which a metropolitan city is the location an object is located in.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
@@ -260,9 +260,9 @@
     <!-- https://dati.isprambiente.it/ontology/places/isMunicipalityOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/isMunicipalityOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isLocationOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isLocationOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/places/Municipality"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">Il caso particolare di &apos;è luogo di&apos; in cui un comune è il luogo in cui si trova un oggetto.</rdfs:comment>
         <rdfs:comment xml:lang="en">The special case of &apos;is location of&apos; in which a municipality is the location an object is located in.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
@@ -275,9 +275,9 @@
     <!-- https://dati.isprambiente.it/ontology/places/isProvinceOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/isProvinceOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isLocationOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isLocationOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/places/Province"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">Il caso particolare di &apos;è luogo di&apos; in cui una provincia è il luogo in cui si trova un oggetto.</rdfs:comment>
         <rdfs:comment xml:lang="en">The special case of &apos;is location of&apos; in which a province is the location an object is located in.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
@@ -290,9 +290,9 @@
     <!-- https://dati.isprambiente.it/ontology/places/isRegionOf -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/isRegionOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isLocationOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isLocationOf"/>
         <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/places/Region"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">Il caso speciale di &quot;è la posizione di&quot; in cui una regione è la posizione in cui si trova un oggetto.</rdfs:comment>
         <rdfs:comment xml:lang="en">The special case of &apos;is location of&apos; in which a region is the location an object is located in.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
@@ -395,13 +395,7 @@
     <!-- https://dati.isprambiente.it/ontology/places/AdministrativeUnit -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/places/AdministrativeUnit">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasUniqueIdentifier"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/UniqueIdentifier"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/places/hasGeometry"/>
@@ -410,16 +404,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/places/hasLowerRank"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/MetropolitanCity"/>
-                            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/Municipality"/>
-                            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/Province"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasUniqueIdentifier"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/UniqueIdentifier"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -430,6 +416,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://dati.isprambiente.it/ontology/places/Geometry"/>
+        <owl:disjointWith rdf:resource="https://dati.isprambiente.it/ontology/places/Sea"/>
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/istat"/>
         </owl:hasKey>
@@ -500,7 +487,13 @@
     <!-- https://dati.isprambiente.it/ontology/places/Geometry -->
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/places/Geometry">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isClassifiedBy"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/places/GeometryType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/places/lat"/>
@@ -519,11 +512,25 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://dati.isprambiente.it/ontology/places/Sea"/>
         <rdfs:comment xml:lang="it">Questa classe rappresenta la geometria di un luogo.</rdfs:comment>
         <rdfs:comment xml:lang="en">This class represents the geometry of a location.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
         <rdfs:label xml:lang="it">Geometria</rdfs:label>
         <rdfs:label xml:lang="en">Geometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/GeometryType -->
+
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/places/GeometryType">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
+        <rdfs:comment xml:lang="en">A geometry type, such as a point, polygon, multipolygon, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un tipo di geometrica, come ad esempio punto, poligono, multipoligono, ecc...</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
+        <rdfs:label xml:lang="en">Geometry type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di geometria</rdfs:label>
     </owl:Class>
     
 
@@ -682,6 +689,25 @@
     
 
 
+    <!-- https://dati.isprambiente.it/ontology/places/Sea -->
+
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/places/Sea">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/places/hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/places/Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe per rappresentare le istanze di mare.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The concept of sea.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
+        <rdfs:label xml:lang="it">Mare</rdfs:label>
+        <rdfs:label xml:lang="en">Sea</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -690,6 +716,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/Country"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/MetropolitanCity"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/Municipality"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/Province"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/Region"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">

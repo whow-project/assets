@@ -1,12 +1,41 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://dati.isprambiente.it/ontology/core/"
-     xml:base="https://dati.isprambiente.it/ontology/core/"
+<rdf:RDF xmlns="https://dati.isprambiente.it/ontology/top/"
+     xml:base="https://dati.isprambiente.it/ontology/top/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://dati.isprambiente.it/ontology/core/"/>
+    <owl:Ontology rdf:about="https://dati.isprambiente.it/ontology/top/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
     
 
 
@@ -21,9 +50,9 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/associatedWith -->
+    <!-- https://dati.isprambiente.it/ontology/top/associatedWith -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/associatedWith">
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/associatedWith">
         <rdfs:comment xml:lang="it">La relazione più generica nella rete di ontologie ISPRA.</rdfs:comment>
         <rdfs:comment xml:lang="en">The most generic relation that can be used within the ISPRA ontonet.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -33,13 +62,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/atTime -->
+    <!-- https://dati.isprambiente.it/ontology/top/atTime -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/atTime">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isTimeOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/TemporalEntity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/atTime">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isTimeOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra una qualsiasi entità ed un&apos;entità temporale.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between an entity ad a temporal entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -49,13 +78,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/classifies -->
+    <!-- https://dati.isprambiente.it/ontology/top/classifies -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/classifies">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isClassifiedBy"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Concept"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/classifies">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isClassifiedBy"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La proprietà utilizzata per affermare che un concetto classificava una certa entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property used to state that a concept classified a certain entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -65,13 +94,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/directlyFollows -->
+    <!-- https://dati.isprambiente.it/ontology/top/directlyFollows -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/directlyFollows">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/follows"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/directlyPrecedes"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/directlyFollows">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/follows"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/directlyPrecedes"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">L&apos;intransitivo segue la relazione. Ad esempio, il martedì segue direttamente il lunedì. L&apos;immediatezza della precedenza dipende dalla concettualizzazione del progettista.</rdfs:comment>
         <rdfs:comment xml:lang="en">The intransitive follows relation. For example, Tuesday directly follows Monday. Directness of precedence depends on the designer conceptualization.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -81,12 +110,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/directlyPrecedes -->
+    <!-- https://dati.isprambiente.it/ontology/top/directlyPrecedes -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/directlyPrecedes">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/precedes"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/directlyPrecedes">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/precedes"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">L&apos;intransitivo precede la relazione. Ad esempio, il lunedì precede direttamente il martedì. L&apos;immediatezza della precedenza dipende dalla concettualizzazione del progettista.</rdfs:comment>
         <rdfs:comment xml:lang="en">The intransitive precedes relation. For example, Monday directly precedes Tuesday. Directness of precedence depends on the designer conceptualization.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -96,14 +125,14 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/follows -->
+    <!-- https://dati.isprambiente.it/ontology/top/follows -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/follows">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/precedes"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/follows">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/precedes"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una relazione tra entità, che esprime uno schema di &apos;sequenza&apos;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -113,13 +142,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasAgentRole -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasAgentRole -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasAgentRole">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasEventuality"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isAgentRoleOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/AgentRole"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasAgentRole">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasEventuality"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isAgentRoleOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/AgentRole"/>
         <rdfs:comment xml:lang="it">La relazione che permette di collegare un&apos;entità alla relazione n-aria che rappresenta il ruolo ricoperto da un agente.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship that allows you to connect an entity to the n-aria relationship that represents the role played by an agent.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -129,13 +158,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasCharacteristic -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasCharacteristic -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasCharacteristic">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isCharacteristicOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Characteristic"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasCharacteristic">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isCharacteristicOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Characteristic"/>
         <rdfs:comment xml:lang="it">La relazione di primo livello che intercorre tra un&apos;entità e una delle sue caratteristiche.</rdfs:comment>
         <rdfs:comment xml:lang="en">The top-level relation holding between an entity and one of its characteristics.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -145,13 +174,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasCollection -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasCollection -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasCollection">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isCollectionOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Collection"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasCollection">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isCollectionOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Collection"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra un&apos;entità ed una collezione.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between an entity and a collection.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -161,13 +190,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasDataSchema -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasDataSchema -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasDataSchema">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasDescription"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isDataSchemaOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Media"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/DataSchema"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasDataSchema">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasDescription"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isDataSchemaOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Media"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/DataSchema"/>
         <rdfs:comment xml:lang="it">La relazione che sussiste tra un media e il suo schema di dati.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between a media and its data schema.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -177,13 +206,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasDescription -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasDescription -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasDescription">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isDescriptionOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Description"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasDescription">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isDescriptionOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
         <rdfs:comment xml:lang="en">Property that associates an entity with its description.</rdfs:comment>
         <rdfs:comment xml:lang="it">Proprietà che associa un&apos;entità alla sua descrizione.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -193,11 +222,11 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasDownloadURL -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasDownloadURL -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasDownloadURL">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Media"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasDownloadURL">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Media"/>
         <rdfs:comment xml:lang="it">Questo è un link diretto al file scaricabile in un dato formato. E.g. un file CSV o un file RDF. Il formato è descritto dal dct:format e/o dal dcat:mediaType della distribuzione.</rdfs:comment>
         <rdfs:comment xml:lang="en">The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution&apos;s dct:format and/or dcat:mediaType.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -207,13 +236,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasEventuality -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasEventuality -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasEventuality">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isEventualityOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasEventuality">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isEventualityOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra una qualsiasi entità ed una di tipo Eventualità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship existing between any entity and another typed as Eventuality.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -223,13 +252,29 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasLocation -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasIdentifierSchema -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasLocation">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isLocationOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasIdentifierSchema">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasDescription"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isIdentifierSchemaOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/UniqueIdentifier"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/IdentifierSchema"/>
+        <rdfs:comment xml:lang="it">La relazione che lega un identificativo unico al suo schema di definizione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation that associates a unique identifier to its defining schema.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
+        <rdfs:label xml:lang="it">ha schema di identificazione</rdfs:label>
+        <rdfs:label xml:lang="en">has identifier schema</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/hasLocation -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasLocation">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isLocationOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra un qualsiasi tipo di entità ed un luogo.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between any kind of entity and a place.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -239,13 +284,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasMedia -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasMedia -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasMedia">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isMediaOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Media"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasMedia">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isMediaOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Media"/>
         <rdfs:comment xml:lang="it">La relazione tra un&apos;entità ed un&apos;istanza della classe Media.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship between an entity and an instance of the middle class.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -255,13 +300,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasMember -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasMember -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasMember">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isMemberOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Collection"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasMember">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isMemberOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Collection"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione di membership.</rdfs:comment>
         <rdfs:comment xml:lang="en">The membership relation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -271,15 +316,15 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasPart -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasPart -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasPart">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isPartOf"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasPart">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isPartOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione di parte definita come proprietà transitiva e riflessiva.</rdfs:comment>
         <rdfs:comment xml:lang="en">The parthood relation defined as a transitive and reflexive property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -289,16 +334,16 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasRole -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasRole -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasRole">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isClassifiedBy"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isRoleOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Role"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasRole">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isClassifiedBy"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isRoleOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Role"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/isAgentInvolvedIn"/>
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/involvesRole"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/isAgentInvolvedIn"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/involvesRole"/>
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="it">La relazione che permette di classificare un&apos;entità in base al ruolo che essa ricopre.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship that allows you to classify an entity based on the role it holds.</rdfs:comment>
@@ -309,13 +354,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasSchemaAttribute -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasSchemaAttribute -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasSchemaAttribute">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasCharacteristic"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isSchemaAttributeOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/DataSchema"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/SchemaAttribute"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasSchemaAttribute">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasCharacteristic"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isSchemaAttributeOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/DataSchema"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/SchemaAttribute"/>
         <rdfs:comment xml:lang="it">La relazione che consente di associare uno schema di dati ai suoi attributi dello schema.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation that allows one to associate a data schema with its schema attributes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -325,13 +370,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasSystem -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasSystem -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasSystem">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isSystemOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/System"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasSystem">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isSystemOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/System"/>
         <rdfs:comment xml:lang="it">La relazione che sussiste tra una qualsiasi entità ed un sistema.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between any entity and a system.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -340,13 +385,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasUniqueIdentifier -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasUniqueIdentifier -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasUniqueIdentifier">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasCharacteristic"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isUniqueIdentifierOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/UniqueIdentifier"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasUniqueIdentifier">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasCharacteristic"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isUniqueIdentifierOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/UniqueIdentifier"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra un&apos;entità e il suo identificatore univoco.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between an entity and its unique identifier.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -356,13 +401,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasUnitOfMeasure -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasUnitOfMeasure -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasUnitOfMeasure">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasCharacteristic"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isUnitOfMeasureOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/UnitOfMeasure"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasUnitOfMeasure">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasCharacteristic"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isUnitOfMeasureOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/UnitOfMeasure"/>
         <rdfs:comment xml:lang="en">Property that links an object that can be measured to its corresponding unit of measure.</rdfs:comment>
         <rdfs:comment xml:lang="it">Proprietà che collega un oggetto misurabile alla sua unità di misura corrispondente.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -372,13 +417,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/hasValue -->
+    <!-- https://dati.isprambiente.it/ontology/top/hasValue -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/hasValue">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasCharacteristic"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isValueOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Value"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasValue">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasCharacteristic"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isValueOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Value"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra un&apos;entità ed il valore ad essa associata.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship between an entity and the value it is associated with.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -388,13 +433,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/involvesAgent -->
+    <!-- https://dati.isprambiente.it/ontology/top/involvesAgent -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/involvesAgent">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isEventualityOf"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isAgentInvolvedIn"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/AgentRole"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Agent"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/involvesAgent">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isEventualityOf"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isAgentInvolvedIn"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/AgentRole"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Agent"/>
         <rdfs:comment xml:lang="it">La relazione che collega una situazione ruolo-agente a un agente coinvolto in tale situazione.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship that links an agent-role situation to an agent involved in such a situation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -404,13 +449,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/involvesRole -->
+    <!-- https://dati.isprambiente.it/ontology/top/involvesRole -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/involvesRole">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isEventualityOf"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/isRoleInvolvedIn"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/AgentRole"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Role"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/involvesRole">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isEventualityOf"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isRoleInvolvedIn"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/AgentRole"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Role"/>
         <rdfs:comment xml:lang="it">La relazione che sussiste tra l&apos;eventualità identificata da un ruolo-agente ed uno o più ruoli ad esso associata.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between an agent-role eventualoty and the one or more roles.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -420,12 +465,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isAgentInvolvedIn -->
+    <!-- https://dati.isprambiente.it/ontology/top/isAgentInvolvedIn -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isAgentInvolvedIn">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasEventuality"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Agent"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/AgentRole"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isAgentInvolvedIn">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasEventuality"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Agent"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/AgentRole"/>
         <rdfs:comment xml:lang="it">La relazione che lega un agente alla situazione ruolo-agente in cui è coinvolto.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship that links an agent to the agent-role situation it is involved in.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -435,12 +480,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isAgentRoleOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isAgentRoleOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isAgentRoleOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isEventualityOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/AgentRole"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isAgentRoleOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isEventualityOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/AgentRole"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione che collega un ruolo-agente ad un&apos;entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation that links an agent-role to an entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -450,12 +495,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isCharacteristicOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isCharacteristicOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isCharacteristicOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Characteristic"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isCharacteristicOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Characteristic"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione che collega una caratteristica all&apos;entità a cui essa può essere associata.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship that links a characteristic to the entity it can be associated with.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -465,12 +510,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isClassifiedBy -->
+    <!-- https://dati.isprambiente.it/ontology/top/isClassifiedBy -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isClassifiedBy">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Concept"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isClassifiedBy">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
         <rdfs:comment xml:lang="it">La proprietà per stabilire che un certo concetto viene usato per classificare una certa entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property to state that a certain concept is used to classify a certain entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -480,12 +525,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isCollectionOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isCollectionOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isCollectionOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Collection"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isCollectionOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Collection"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra una collezione ed una qualsiasi entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between a collection and any possible entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -495,12 +540,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isDataSchemaOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isDataSchemaOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isDataSchemaOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isDescriptionOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/DataSchema"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Media"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isDataSchemaOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isDescriptionOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/DataSchema"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Media"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra uno schema di dati e il supporto.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation existing between a data schema and the media.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -510,12 +555,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isDescriptionOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isDescriptionOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isDescriptionOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Description"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isDescriptionOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra una descrizione e l&apos;entità descritta.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship between a description and the entity described.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -525,12 +570,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isEventualityOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isEventualityOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isEventualityOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isEventualityOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">Il rapporto esistente tra un&apos;eventualità e qualsiasi entità possibile.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship existing between an eventuality and any possible entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -540,13 +585,28 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isIssuedBy -->
+    <!-- https://dati.isprambiente.it/ontology/top/isIdentifierSchemaOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isIssuedBy">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/issues"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Agent"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isIdentifierSchemaOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isDescriptionOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/IdentifierSchema"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/UniqueIdentifier"/>
+        <rdfs:comment xml:lang="it">La relazione che lega uno schema di identificazione ad un identificativo unico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation between an identifier schema and a unique identifier.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
+        <rdfs:label xml:lang="en">is identifier schema of</rdfs:label>
+        <rdfs:label xml:lang="it">è schema identificativo di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/isIssuedBy -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isIssuedBy">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/issues"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Agent"/>
         <rdfs:comment xml:lang="it">La relazione che consente di affermare che un&apos;entità è creata da un determinato agente.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation that allows one to state that an entity is created by a given agent.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -556,12 +616,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isLocationOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isLocationOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isLocationOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Location"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isLocationOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Location"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La proprietà che permette di dire che un determinato luogo è la posizione di un dato oggetto.</rdfs:comment>
         <rdfs:comment xml:lang="it">La relazione esistente tra un luogo ed un&apos;entità di un qualsiasi tipo.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property that allows to say that a certain place is the location of a given object.</rdfs:comment>
@@ -574,12 +634,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isMediaOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isMediaOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isMediaOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Media"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isMediaOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Media"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione tra un&apos;istanza di un&apos;entità di classe Media e un&apos;entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship between an instance Media class entity and an entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -589,12 +649,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isMemberOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isMemberOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isMemberOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Collection"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isMemberOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Collection"/>
         <rdfs:comment xml:lang="it">La relazione inversa di &apos;ha membro&apos;. Come la sua inversa permette di stabilire relazione di memberhip tra un elemento ed la sua collezione.</rdfs:comment>
         <rdfs:comment xml:lang="en">The inverse relation of &apos;has member&apos;. It allows to represent membership relations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -604,13 +664,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isParametrisedBy -->
+    <!-- https://dati.isprambiente.it/ontology/top/isParametrisedBy -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isParametrisedBy">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isClassifiedBy"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/parametrises"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Parameter"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isParametrisedBy">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isClassifiedBy"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/parametrises"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Parameter"/>
         <rdfs:comment xml:lang="it">La relazione che sussiste tra l&apos;entità oggetto della parametrizzazione ed il parametro.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between the entity being object of the parametrisation and a parameter.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -620,14 +680,14 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isPartOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isPartOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isPartOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isPartOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">L&apos;inversa di &apos;ha parte&apos; per rappresentare la relazione di parte dal punto di vista della parte. La proprietà è definita come riflessiva e transitiva.</rdfs:comment>
         <rdfs:comment xml:lang="en">The inverse of &apos;has part&apos; for representing parthood from the perspective of the part. The property is defined as reflexive and transitive.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -637,12 +697,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isRoleInvolvedIn -->
+    <!-- https://dati.isprambiente.it/ontology/top/isRoleInvolvedIn -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isRoleInvolvedIn">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/hasEventuality"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Role"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/AgentRole"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isRoleInvolvedIn">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasEventuality"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Role"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/AgentRole"/>
         <rdfs:comment xml:lang="it">La relazione che collega un ruolo alla situazione ruolo-agente in cui esso partecipa.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship that links a role to the agent-role situation it is involved in.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -652,15 +712,15 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isRoleOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isRoleOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isRoleOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/classifies"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Role"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isRoleOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/classifies"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Role"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/isRoleInvolvedIn"/>
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/involvesAgent"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/isRoleInvolvedIn"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/involvesAgent"/>
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="it">La relazione che consente di utilizzare un ruolo per classificare una determinata entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation that allows you to use a role for classifying a certain entity.</rdfs:comment>
@@ -671,13 +731,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isSatisfiedBy -->
+    <!-- https://dati.isprambiente.it/ontology/top/isSatisfiedBy -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isSatisfiedBy">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/satisfies"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Description"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isSatisfiedBy">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/satisfies"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
         <rdfs:label xml:lang="it">La relazione tra una descrizione ed un&apos;eventualità.</rdfs:label>
         <rdfs:label xml:lang="en">The relation between a description and an eventuality.</rdfs:label>
@@ -687,12 +747,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isSchemaAttributeOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isSchemaAttributeOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isSchemaAttributeOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isCharacteristicOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/SchemaAttribute"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/DataSchema"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isSchemaAttributeOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isCharacteristicOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/SchemaAttribute"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/DataSchema"/>
         <rdfs:comment xml:lang="it">La proprietà che permette di collegare un attributo allo schema di dati.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property that allows you to link an attribute to the data schema.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -702,14 +762,14 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isSpecialisedBy -->
+    <!-- https://dati.isprambiente.it/ontology/top/isSpecialisedBy -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isSpecialisedBy">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/core/specialises"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isSpecialisedBy">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/specialises"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione inverse di &apos;specializza&apos;.</rdfs:comment>
         <rdfs:comment xml:lang="en">The inverse releation of &apos;specialises&apos;</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -719,12 +779,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isSystemOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isSystemOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isSystemOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/System"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isSystemOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/System"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione che sussiste tra un sistema ed una qualsiasi entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship holding between a system and any entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -734,12 +794,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isTimeOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isTimeOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isTimeOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/TemporalEntity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isTimeOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra un&apos;entità temporale ed una qualsiasi altra entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship existing between a time entity and any other entity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -749,10 +809,10 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isUniqueIdentifierOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isUniqueIdentifierOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isUniqueIdentifierOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isCharacteristicOf"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isUniqueIdentifierOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isCharacteristicOf"/>
         <rdfs:comment xml:lang="en">La relazione che sussiste tra un identificatore univoco e l&apos;entità che identifica.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between a unique identifier and the entity it identifies.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -762,12 +822,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isUnitOfMeasureOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isUnitOfMeasureOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isUnitOfMeasureOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isCharacteristicOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/UnitOfMeasure"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isUnitOfMeasureOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isCharacteristicOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/UnitOfMeasure"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="en">Property that links a unit of measure to the object or measured value.</rdfs:comment>
         <rdfs:comment xml:lang="it">Proprietà che collega un&apos;unità di misura all&apos;oggetto o al valore misurato.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -777,12 +837,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/isValueOf -->
+    <!-- https://dati.isprambiente.it/ontology/top/isValueOf -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/isValueOf">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/isCharacteristicOf"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Value"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isValueOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isCharacteristicOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Value"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione esistente tra un valore ed un&apos;entità a cui tale valore è associato.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relationship between a value and an entity to which that value is associated.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -792,12 +852,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/issues -->
+    <!-- https://dati.isprambiente.it/ontology/top/issues -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/issues">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Agent"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/issues">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Agent"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione che consente di affermare che un determinato agente è il creatore di una certa entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property that allows us to state that a certain agent is the creator of a certain entity.</rdfs:comment>
         <rdfs:label xml:lang="en">is creator of</rdfs:label>
@@ -806,12 +866,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/parametrises -->
+    <!-- https://dati.isprambiente.it/ontology/top/parametrises -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/parametrises">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/classifies"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Parameter"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/parametrises">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/classifies"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Parameter"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La relazione che sussiste tra un parametro e l&apos;entità oggetto della parametrizzazione.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between a parameter and the entity being object of the parametrisation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -821,13 +881,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/precedes -->
+    <!-- https://dati.isprambiente.it/ontology/top/precedes -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/precedes">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/precedes">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una relazione tra entità, che esprime uno schema di &apos;sequenza&apos;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -837,12 +897,12 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/satisfies -->
+    <!-- https://dati.isprambiente.it/ontology/top/satisfies -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/satisfies">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Description"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/satisfies">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
         <rdfs:comment xml:lang="it">La proprietà usata per asserire che un&apos;eventualità soddisfa una certa descrizione.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property for asserting that an eventuality satisfies a description.</rdfs:comment>
         <rdfs:label xml:lang="en">satisfies</rdfs:label>
@@ -851,13 +911,13 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/specialises -->
+    <!-- https://dati.isprambiente.it/ontology/top/specialises -->
 
-    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/core/specialises">
-        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/core/associatedWith"/>
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/specialises">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La proprietà per esprimere relazioni di specializzazione.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property for expressing specialisation relations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -878,10 +938,10 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/acronym -->
+    <!-- https://dati.isprambiente.it/ontology/top/acronym -->
 
-    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/core/acronym">
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/top/acronym">
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">A value for the acronym that is used for referring to an entity.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un valore per l&apos;acronimo utilizzato per fare riferimento a un&apos;entità.</rdfs:comment>
@@ -892,9 +952,27 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/identifier -->
+    <!-- https://dati.isprambiente.it/ontology/top/endTime -->
 
-    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/core/identifier">
+    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/top/endTime">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/time"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/TimeInterval"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/identifier -->
+
+    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/top/identifier">
         <rdfs:comment xml:lang="it">Il valore letterale di un identificativo, ex. il codice WMO &apos;6100218&apos;.</rdfs:comment>
         <rdfs:comment xml:lang="en">The literal value of an identifier, e.g. the WMO code &apos;6100218&apos;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -904,10 +982,10 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/mediaType -->
+    <!-- https://dati.isprambiente.it/ontology/top/mediaType -->
 
-    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/core/mediaType">
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Media"/>
+    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/top/mediaType">
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Media"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">A value for the media type, e.g. text/csv, rdf/xml, etc.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un valore per il tipo di supporto, ad es. text/csv, rdf/xml, ecc.</rdfs:comment>
@@ -918,10 +996,10 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/name -->
+    <!-- https://dati.isprambiente.it/ontology/top/name -->
 
-    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/core/name">
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/top/name">
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="it">Il letterale che rappresenta il nome di un&apos;entità.</rdfs:comment>
         <rdfs:comment xml:lang="en">The literal representing the name of an entity.</rdfs:comment>
@@ -932,11 +1010,29 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/time -->
+    <!-- https://dati.isprambiente.it/ontology/top/startTime -->
 
-    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/core/time">
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/top/startTime">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/time"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/TimeInterval"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/time -->
+
+    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/top/time">
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="it">La proprietà per associare la rappresentazione letterale del tempo a un&apos;entità. La rappresentazione letterale deve essere un xsd:dateTime valido.</rdfs:comment>
         <rdfs:comment xml:lang="en">The property for associating the literal representation of time to an entity. The literal representation has to be a valid xsd:dateTime.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">https://dati.isprambiente.it/ontology/core/</rdfs:isDefinedBy>
@@ -946,16 +1042,31 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/value -->
+    <!-- https://dati.isprambiente.it/ontology/top/value -->
 
-    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/core/value">
-        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/top/value">
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="it">La rappresentazione letterale di un valore.</rdfs:comment>
         <rdfs:comment xml:lang="en">The literal representation of a value.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
         <rdfs:label xml:lang="it">valore</rdfs:label>
         <rdfs:label xml:lang="en">value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/year -->
+
+    <owl:DatatypeProperty rdf:about="https://dati.isprambiente.it/ontology/top/year">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/time"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:comment xml:lang="it">La proprietà per collegare il valore in gYear ad un istanza della classe TemporalEntity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that relates a valued expressed a gYear to an instance of the class TemporalEntity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
+        <rdfs:label xml:lang="it">anno</rdfs:label>
+        <rdfs:label xml:lang="en">year</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -971,10 +1082,10 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Agent -->
+    <!-- https://dati.isprambiente.it/ontology/top/Agent -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Agent">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Agent">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">Il concetto astratto di agente. Esempi di agente sono le persone e le organizzazioni.</rdfs:comment>
         <rdfs:comment xml:lang="it">The abstract concept of agent. Examples of agents are people and organisations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -984,36 +1095,36 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/AgentRole -->
+    <!-- https://dati.isprambiente.it/ontology/top/AgentRole -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/AgentRole">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/AgentRole">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/atTime"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/TemporalEntity"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/atTime"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/involvesAgent"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/Agent"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/involvesAgent"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/involvesRole"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/Role"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/involvesRole"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Characteristic -->
+    <!-- https://dati.isprambiente.it/ontology/top/Characteristic -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Characteristic">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Characteristic">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">La classe delle caratteristiche, intese come aspetti, attributi o qualità di un&apos;entità. Ex. una quantità, qualità estetica, colore, etc.</rdfs:comment>
         <rdfs:comment xml:lang="en">The class of characteristics, intended as any aspect, attribuite, or quality of an entity. E.g. a certain size, aesthetic quality, color, etc.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -1023,14 +1134,14 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Collection -->
+    <!-- https://dati.isprambiente.it/ontology/top/Collection -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Collection">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Collection">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasPart"/>
-                <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/Collection"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasPart"/>
+                <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Collection"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">La classe per rappresentare collezioni che rendono possibile l&apos;aggregazione di oggetti.</rdfs:comment>
@@ -1042,10 +1153,10 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Concept -->
+    <!-- https://dati.isprambiente.it/ontology/top/Concept -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Concept">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Concept">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="en">It is an object that is defined in some description. Once defined it can be used in other descriptions</rdfs:comment>
         <rdfs:comment xml:lang="it">È un oggetto che è definito in qualche descrizione. Una volta definito può essere utilizzato in altre descrizioni</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -1055,22 +1166,23 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/DataSchema -->
+    <!-- https://dati.isprambiente.it/ontology/top/DataSchema -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/DataSchema">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Description"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/DataSchema">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasSchemaAttribute"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/SchemaAttribute"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasSchemaAttribute"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/SchemaAttribute"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasSchemaAttribute"/>
-                <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/SchemaAttribute"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasSchemaAttribute"/>
+                <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/SchemaAttribute"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://dati.isprambiente.it/ontology/top/IdentifierSchema"/>
         <rdfs:comment xml:lang="it">La classe per la rappresentazione di schemi di dati.</rdfs:comment>
         <rdfs:comment xml:lang="en">The class for representing data schemata.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -1080,11 +1192,30 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Description -->
+    <!-- https://dati.isprambiente.it/ontology/top/Dataset -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Description">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
-        <owl:disjointWith rdf:resource="https://dati.isprambiente.it/ontology/core/Eventuality"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Dataset">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Collection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasPart"/>
+                <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A collection of data.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una collezione di dati.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
+        <rdfs:label xml:lang="en">Dataset</rdfs:label>
+        <rdfs:label xml:lang="it">Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/Description -->
+
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Description">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <owl:disjointWith rdf:resource="https://dati.isprambiente.it/ontology/top/Eventuality"/>
         <rdfs:comment xml:lang="it">La classe degli oggetti costruiti socialmente (testi, valori, categorie, relazioni, contesti) usati per descrivere qualcos&apos;altro in modo structuratto. Gli esempi includono i piani (come descrizioni strutturate di azioni da eseguire ex. in un processo industriale), le diagnosi (come descrizioni strutturate di situazioni osservate ex. clinicamente), le spiegazioni (come testi strutturati per chiarire ex. un concetto in un sistema normativo), osservazioni oggettive (come insiemi di valori strutturati che identificano una situazione rilevante ex. da un sistema di sensori).</rdfs:comment>
         <rdfs:comment xml:lang="en">The class of socially-created objects (texts, values, categories, relations, contexts) used to describe something else in a structured way. Examples include plans (as structured descriptions of actions to be executed), diagnoses (as structured descriptions of observed situations, explanations (as structured texts clarifying e.g. a concept), objective observations (as structured sets of values that identify a relevant situation).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -1094,9 +1225,9 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Entity -->
+    <!-- https://dati.isprambiente.it/ontology/top/Entity -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Entity">
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Entity">
         <rdfs:comment xml:lang="it">La classe più generica in ISPRA ontonet.</rdfs:comment>
         <rdfs:comment xml:lang="en">The top level class of ISPRA ontonet.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -1106,10 +1237,10 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Eventuality -->
+    <!-- https://dati.isprambiente.it/ontology/top/Eventuality -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Eventuality">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Eventuality">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="en">Any event, situation, activity, event type, etc. Used to abstract from formal criteria that distinguish between event occurrences, their types, and constructed objects (situations, tropes, qua-entities) that provide a setting for multiple entities.
 This is a catch all class to make sense of ambiguous data that cannot be made more precise, e.g. at the lexical level.
 This is the same concept as defined in http://www.ontologydesignpatterns.org/ont/d0.owl.</rdfs:comment>
@@ -1123,10 +1254,23 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Location -->
+    <!-- https://dati.isprambiente.it/ontology/top/IdentifierSchema -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Location">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/IdentifierSchema">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Description"/>
+        <rdfs:comment xml:lang="en">A schema for identifiers.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Uno schema di identificativi.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
+        <rdfs:label xml:lang="en">Identifier schema</rdfs:label>
+        <rdfs:label xml:lang="it">Schema di identificatori</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/Location -->
+
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Location">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="it">Il concetto più generico per rappresentare ad alto livello qualsiasi tipo di oggetto che possa essere identificato come luogo.</rdfs:comment>
         <rdfs:comment xml:lang="en">The most generic concept for any kind of location.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -1136,26 +1280,26 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Media -->
+    <!-- https://dati.isprambiente.it/ontology/top/Media -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Media">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Media">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasDataSchema"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasDataSchema"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/DataSchema"/>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/DataSchema"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasDownloadURL"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasDownloadURL"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/mediaType"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/mediaType"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1168,11 +1312,11 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Organisation -->
+    <!-- https://dati.isprambiente.it/ontology/top/Organisation -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Organisation">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Agent"/>
-        <owl:disjointWith rdf:resource="https://dati.isprambiente.it/ontology/core/Person"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Organisation">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Agent"/>
+        <owl:disjointWith rdf:resource="https://dati.isprambiente.it/ontology/top/Person"/>
         <rdfs:comment xml:lang="en">An organisation.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un&apos;organizzazione.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -1182,11 +1326,11 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Parameter -->
+    <!-- https://dati.isprambiente.it/ontology/top/Parameter -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Parameter">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Characteristic"/>
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Concept"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Parameter">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
         <rdfs:comment xml:lang="en">A paramater.</rdfs:comment>
         <rdfs:comment xml:lang="it">Qualsiasi entità che rappresenti un parametro.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -1196,10 +1340,10 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Person -->
+    <!-- https://dati.isprambiente.it/ontology/top/Person -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Person">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Agent"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Person">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Agent"/>
         <rdfs:comment xml:lang="en">A person</rdfs:comment>
         <rdfs:comment xml:lang="it">Una persona.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -1209,10 +1353,10 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Role -->
+    <!-- https://dati.isprambiente.it/ontology/top/Role -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Role">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Concept"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Role">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
         <rdfs:comment xml:lang="it">La classe per rappresentare i ruoli.</rdfs:comment>
         <rdfs:comment xml:lang="en">The class for representing roles.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -1222,14 +1366,14 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/SchemaAttribute -->
+    <!-- https://dati.isprambiente.it/ontology/top/SchemaAttribute -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/SchemaAttribute">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Characteristic"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/SchemaAttribute">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Characteristic"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/isClassifiedBy"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/Concept"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isClassifiedBy"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A single attribute of a data schema.</rdfs:comment>
@@ -1241,10 +1385,10 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/System -->
+    <!-- https://dati.isprambiente.it/ontology/top/System -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/System">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/System">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:comment xml:lang="en">Any possible kind of system.</rdfs:comment>
         <rdfs:comment xml:lang="it">Ogni possibile tipo di sistema.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -1254,19 +1398,19 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/TemporalEntity -->
+    <!-- https://dati.isprambiente.it/ontology/top/TemporalEntity -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/TemporalEntity">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Entity"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/TemporalEntity">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/time"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/time"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/time"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/time"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1278,31 +1422,80 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/UniqueIdentifier -->
+    <!-- https://dati.isprambiente.it/ontology/top/TimeInterval -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/UniqueIdentifier">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Characteristic"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/TimeInterval">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/isIssuedBy"/>
-                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/Organisation"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/endTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/isIssuedBy"/>
-                <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/core/Organisation"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/startTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe per rappresentare gli intervalli temporali aventi un inizio ed una fine.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class for representing time intervals having a start and end time.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
+        <rdfs:label xml:lang="it">Intervallo di tempo</rdfs:label>
+        <rdfs:label xml:lang="en">Time interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/UniqueIdentifier -->
+
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/UniqueIdentifier">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Characteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasIdentifierSchema"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/IdentifierSchema"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/identifier"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isIssuedBy"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Organisation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isIssuedBy"/>
+                <owl:allValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Organisation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/identifier"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/isIssuedBy"/>
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/identifier"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/isIssuedBy"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/identifier"/>
         </owl:hasKey>
         <rdfs:comment xml:lang="it">La classe per rappresentare identificativi univoci, e.g. codice WMO, codice ISTAT, ecc...</rdfs:comment>
         <rdfs:comment xml:lang="en">The class to represent unique identifiers, eg. WMO code, ISTAT code, etc.</rdfs:comment>
@@ -1313,10 +1506,10 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/UnitOfMeasure -->
+    <!-- https://dati.isprambiente.it/ontology/top/UnitOfMeasure -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/UnitOfMeasure">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Parameter"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/UnitOfMeasure">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Parameter"/>
         <rdfs:comment xml:lang="it">Questa classe viene utilizzata per modellare un&apos;unità di misura, ad es. metro, chilometro, grammo, ecc...</rdfs:comment>
         <rdfs:comment xml:lang="en">This class is used to model a measurement unit, e.g. meter, kilometer, gram, etc.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
@@ -1326,32 +1519,52 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/core/Value -->
+    <!-- https://dati.isprambiente.it/ontology/top/Value -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/core/Value">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Characteristic"/>
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Value">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Characteristic"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/hasUnitOfMeasure"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasUnitOfMeasure"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/core/UnitOfMeasure"/>
+                <owl:onClass rdf:resource="https://dati.isprambiente.it/ontology/top/UnitOfMeasure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/core/value"/>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/value"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/hasUnitOfMeasure"/>
-            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/value"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/hasUnitOfMeasure"/>
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/value"/>
         </owl:hasKey>
         <rdfs:comment xml:lang="it">La classe dei valori. Il valore è descritto con un unico valore come un intero, un float, una stringa (ne deve essere specificata almeno una) e, quando disponibile, un&apos;unità di misura.</rdfs:comment>
         <rdfs:comment xml:lang="en">The class of the values. The value is described with a single value such an integer, a float, a string (at least one has to be specified) and, when available, a unit of measurement.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
         <rdfs:label xml:lang="it">Valore</rdfs:label>
         <rdfs:label xml:lang="en">Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/Year -->
+
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Year">
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/TemporalEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/year"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe per rappresentare un anno.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class for representing a year.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
+        <rdfs:label xml:lang="it">Anno</rdfs:label>
+        <rdfs:label xml:lang="en">Year</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
