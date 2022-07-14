@@ -89,6 +89,22 @@
     
 
 
+    <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasIndicator -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasIndicator">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/isIndicatorOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Indicator"/>
+        <rdfs:comment xml:lang="it">La relazione tra un&apos;entità ed un indicatore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation between an entity and an indicator.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/"/>
+        <rdfs:label xml:lang="it">ha indicatore</rdfs:label>
+        <rdfs:label xml:lang="en">has indicator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://dati.isprambiente.it/ontology/inspire-mf/hasObservationParameter -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/hasObservationParameter">
@@ -346,6 +362,21 @@
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire/"/>
         <rdfs:label xml:lang="en">is hosted by</rdfs:label>
         <rdfs:label xml:lang="it">è ospitato da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/inspire-mf/isIndicatorOf -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/isIndicatorOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Indicator"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:comment xml:lang="it">La relazione tra un indicatore ed un&apos;entità ad esso associata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation holding between an indicator and a possible associated entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/"/>
+        <rdfs:label xml:lang="en">is indicator of</rdfs:label>
+        <rdfs:label xml:lang="it">è indicatore di</rdfs:label>
     </owl:ObjectProperty>
     
 

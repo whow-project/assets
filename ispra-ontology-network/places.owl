@@ -87,6 +87,22 @@
     
 
 
+    <!-- https://dati.isprambiente.it/ontology/places/hasGeometryType -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/hasGeometryType">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/isClassifiedBy"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/places/isGeometryTypeOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/places/Geometry"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/places/GeometryType"/>
+        <rdfs:comment xml:lang="it">La relazione per classificare una geometria con il suo tipo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation for classifying a geometry with its type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
+        <rdfs:label xml:lang="it">ha tipo di geometria</rdfs:label>
+        <rdfs:label xml:lang="en">has geometry type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://dati.isprambiente.it/ontology/places/hasHigherRank -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/hasHigherRank">
@@ -238,6 +254,21 @@
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
         <rdfs:label xml:lang="en">is geometry of</rdfs:label>
         <rdfs:label xml:lang="it">è geometria di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/places/isGeometryTypeOf -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/places/isGeometryTypeOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/classifies"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/places/GeometryType"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/places/Geometry"/>
+        <rdfs:comment xml:lang="it">La relazione per classificare con un tipo di geometria una geometria.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation that can be used for classifying a geometry with a geometry type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
+        <rdfs:label xml:lang="en">is geometry type of</rdfs:label>
+        <rdfs:label xml:lang="it">è tipo di geometria di</rdfs:label>
     </owl:ObjectProperty>
     
 

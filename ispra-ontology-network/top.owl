@@ -158,6 +158,23 @@
     
 
 
+    <!-- https://dati.isprambiente.it/ontology/top/hasBroader -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasBroader">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/hasNarrower"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
+        <rdfs:comment xml:lang="it">La relazione per creare tassonomie di concetti dal più specifico al più generale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation for creating hierarchies of concepts from the most specific to the most general.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
+        <rdfs:label xml:lang="it">ha più generale</rdfs:label>
+        <rdfs:label xml:lang="en">has broader</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://dati.isprambiente.it/ontology/top/hasCharacteristic -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasCharacteristic">
@@ -186,6 +203,22 @@
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
         <rdfs:label xml:lang="it">ha collezione</rdfs:label>
         <rdfs:label xml:lang="en">has collection</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/hasCreator -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasCreator">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isCreatorOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Agent"/>
+        <rdfs:comment xml:lang="it">Relazione per associare ad un&apos;entità un agente creatore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation for associating an entity to an agent being the creator.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
+        <rdfs:label xml:lang="it">ha creatore</rdfs:label>
+        <rdfs:label xml:lang="en">has creator</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -316,6 +349,21 @@
     
 
 
+    <!-- https://dati.isprambiente.it/ontology/top/hasNarrower -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasNarrower">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Concept"/>
+        <rdfs:comment xml:lang="it">La relazione per creare tassonomie di concetti dal più generale al più specifico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation for generating taxonomies of concepts from the most general to the most specific.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha più specifico</rdfs:label>
+        <rdfs:label xml:lang="en">has narrower</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://dati.isprambiente.it/ontology/top/hasPart -->
 
     <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasPart">
@@ -366,6 +414,22 @@
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
         <rdfs:label xml:lang="it">ha attributo di schema di dati</rdfs:label>
         <rdfs:label xml:lang="en">has data schema attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/hasSource -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/hasSource">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <owl:inverseOf rdf:resource="https://dati.isprambiente.it/ontology/top/isSouceOf"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:comment xml:lang="it">La relazione che permette di stabilire che una certa entità è sorgente di un&apos;altra.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation that allows one that a certain entity is the source of another.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
+        <rdfs:label xml:lang="it">ha sorgente</rdfs:label>
+        <rdfs:label xml:lang="en">has source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -536,6 +600,21 @@
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
         <rdfs:label xml:lang="en">is collection of</rdfs:label>
         <rdfs:label xml:lang="it">è collezione di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/isCreatorOf -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isCreatorOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Agent"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:comment xml:lang="it">La relazione per associare un agente creatore ad un&apos;entità creata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation for asserting that a certain agent is the creator of an entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
+        <rdfs:label xml:lang="en">is creator of</rdfs:label>
+        <rdfs:label xml:lang="it">è creatore di</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -758,6 +837,21 @@
         <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/core/"/>
         <rdfs:label xml:lang="en">is data schema attribute of</rdfs:label>
         <rdfs:label xml:lang="it">è attributo di schema di dati di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dati.isprambiente.it/ontology/top/isSouceOf -->
+
+    <owl:ObjectProperty rdf:about="https://dati.isprambiente.it/ontology/top/isSouceOf">
+        <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:range rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:comment xml:lang="en">Inverse object property of hasSource.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Object property inversa di hasSource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://dati.isprambiente.it/ontology/top/"/>
+        <rdfs:label xml:lang="en">is source of</rdfs:label>
+        <rdfs:label xml:lang="it">è sorgente di</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1284,6 +1378,12 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
 
     <owl:Class rdf:about="https://dati.isprambiente.it/ontology/top/Media">
         <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/isSouceOf"/>
+                <owl:someValuesFrom rdf:resource="https://dati.isprambiente.it/ontology/top/Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://dati.isprambiente.it/ontology/top/hasDataSchema"/>
