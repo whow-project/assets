@@ -254,8 +254,7 @@ hydro:WaterBody
 :isClassifiedBy
       rdf:type owl:ObjectProperty ;
       rdfs:domain :WaterObservablePropertyObject ;
-      rdfs:label "is classified by "@en ;
-      rdfs:range :WaterObservablePropertyObjectType .
+      rdfs:label "is classified by "@en .
 
 :isMaxValueIncluded
       rdf:type owl:DatatypeProperty ;
