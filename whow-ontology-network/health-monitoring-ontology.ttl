@@ -3,6 +3,7 @@
 # imports: http://www.w3.org/2006/vcard/ns
 # imports: http://www.w3.org/ns/dcat
 # imports: http://www.w3.org/ns/prov
+# imports: http://www.w3.org/ns/sosa/
 # imports: http://xmlns.com/foaf/0.1/
 # imports: https://dati.isprambiente.it/ontology/inspire-mf/
 # imports: https://w3id.org/health-data/onto/CCStoICD9-data
@@ -23,7 +24,7 @@
 <https://w3id.org/environmental-data/onto/health-monitoring-ontology/ATS>
       rdf:type owl:Class ;
       rdfs:label "ATS "@en ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> , <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConcept> .
+      rdfs:subClassOf <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConcept> , <https://dati.isprambiente.it/ontology/core/Entity> .
 
 <https://w3id.org/environmental-data/onto/health-monitoring-ontology/ATScode>
       rdf:type owl:DatatypeProperty ;
@@ -45,7 +46,7 @@
 <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConditionsDeathCauseObservation>
       rdf:type owl:Class ;
       rdfs:label "Health Condition Death Cause Observation "@en ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/inspire-mf/Observation> , <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConcept> .
+      rdfs:subClassOf <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConcept> , <https://dati.isprambiente.it/ontology/inspire-mf/Observation> .
 
 <https://w3id.org/environmental-data/onto/health-monitoring-ontology/Hospitalization>
       rdf:type owl:Class ;
@@ -55,7 +56,7 @@
 <https://w3id.org/environmental-data/onto/health-monitoring-ontology/InfectiousDiseasesObservation>
       rdf:type owl:Class ;
       rdfs:label "Infectious Diseases Observation "@en ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/inspire-mf/Observation> , <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConcept> .
+      rdfs:subClassOf <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConcept> , <https://dati.isprambiente.it/ontology/inspire-mf/Observation> .
 
 <https://w3id.org/environmental-data/onto/health-monitoring-ontology/ageRangeOfPatient>
       rdf:type owl:DatatypeProperty ;
@@ -116,5 +117,5 @@
 
 <https://w3id.org/whow/onto/health-monitoring-ontology>
       rdf:type owl:Ontology ;
-      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2006/vcard/ns> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/ns/prov> , <http://xmlns.com/foaf/0.1/> , <https://dati.isprambiente.it/ontology/inspire-mf/> , <https://w3id.org/health-data/onto/CCStoICD9-data> , <https://w3id.org/italia/onto/Indicator> , <https://w3id.org/whow/onto/hydrography-ontology> , <https://w3id.org/whow/onto/water-monitoring-ontology> ;
+      owl:imports <https://w3id.org/italia/onto/Indicator> , <http://www.w3.org/ns/prov> , <https://w3id.org/whow/onto/hydrography-ontology> , <http://purl.org/dc/terms/> , <http://www.w3.org/ns/sosa/> , <http://www.w3.org/2006/vcard/ns> , <https://w3id.org/health-data/onto/CCStoICD9-data> , <https://dati.isprambiente.it/ontology/inspire-mf/> , <https://w3id.org/whow/onto/water-monitoring-ontology> , <http://xmlns.com/foaf/0.1/> , <http://www.w3.org/ns/dcat> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .

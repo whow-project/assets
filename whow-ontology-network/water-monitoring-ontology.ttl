@@ -1,6 +1,7 @@
 # baseURI: https://w3id.org/whow/onto/water-monitoring-ontology
 # imports: http://purl.org/dc/terms/
 # imports: http://www.w3.org/2004/02/skos/core
+# imports: http://www.w3.org/ns/sosa/
 # imports: http://xmlns.com/foaf/0.1/
 # imports: https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/
 # imports: https://dati.isprambiente.it/ontology/places/
@@ -19,264 +20,275 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.w3.org/ns/sosa/observedProperty>
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservation> ;
+      rdfs:domain :WaterObservation ;
       rdfs:range <http://www.w3.org/ns/sosa/ObservableProperty> .
 
 <http://xmlns.com/foaf/0.1/fundedBy>
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterPhysicoChemicalParameterObservation> .
+      rdfs:domain :WaterPhysicoChemicalParameterObservation .
 
 <https://dati.isprambiente.it/ontology/core/UnitOfMeasure>
       skos:note "TODO: trovare UM esterne a cui puntare"^^xsd:string .
 
 hydro:WaterBody
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterFeature> .
+      rdfs:subClassOf :WaterFeature .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/BiologicalQualityElementsObservation>
+<https://w3id.org/whow/onto/water-monitoring-ontology>
+      rdf:type owl:Ontology ;
+      owl:imports <http://www.w3.org/ns/sosa/> , <http://xmlns.com/foaf/0.1/> , <http://purl.org/dc/terms/> , <https://w3id.org/whow/onto/hydrography-ontology> , <http://www.w3.org/2004/02/skos/core> , inspire-mf-ssn-sosa-aligns: , places: ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+      skos:definition "Ontology for describing WHOW project concepts for the water monitoring domain"@en ;
+      skos:note "TODO: valutare di rinominare in water-observation-ontology"^^xsd:string ;
+      skos:prefLabel "Water Monitoring Ontology"@en .
+
+:BiologicalQualityElementsObservation
       rdf:type owl:Class ;
       rdfs:label "Biological quality elements Parameter Observation"@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation> ;
+      rdfs:subClassOf :SurfaceOrGroundwaterObservation ;
       skos:definition "Observation of biological quality elements according to the European Environmental Agency (EEA): phytoplankton, macrophytes, phytobenthos, benthic invertebrate fauna and fish. The most frequently classified biological  quality elements are, for rivers, benthic invertebrates, phytobenthos/other aquatic flora/macrophytes and fish; for lakes, phytoplankton; and for transitional and coastal waters, phytoplankton and benthic invertebrates. (2018)"@en .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance>
+:ChemicalSubstance
       rdf:type owl:Class ;
       rdfs:label "Chemical Agent"@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservablePropertyObject> .
+      rdfs:subClassOf :WaterObservablePropertyObject .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/DrinkingWaterObservation>
+:DrinkingWaterObservation
       rdf:type owl:Class ;
       rdfs:label "Drinking Water Observation "@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservation> .
+      rdfs:subClassOf :WaterObservation .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/MicroBiologicalAgent>
+:MarineWaterObservation
+      rdf:type owl:Class ;
+      rdfs:label "Marine water observation "@en ;
+      rdfs:subClassOf :WaterObservation .
+
+:MicroBiologicalAgent
       rdf:type owl:Class ;
       rdfs:label "Microbiological agent "@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservablePropertyObject> .
+      rdfs:subClassOf :WaterObservablePropertyObject .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ObservationValue>
+:ObservationValue
       rdf:type owl:Class ;
       rdfs:label "Observation Value"@en ;
-      rdfs:subClassOf inspire-mf:ObservationValue , <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterConcept> .
+      rdfs:subClassOf inspire-mf:ObservationValue , :WaterConcept .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/RadioactivtyObject>
+:RadioactivityObject
       rdf:type owl:Class ;
       rdfs:label "Radioactivity Object"@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservablePropertyObject> .
+      rdfs:subClassOf :WaterObservablePropertyObject .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation>
+:SurfaceOrGroundwaterObservation
       rdf:type owl:Class ;
       rdfs:label "Surface or Groundwater observation"@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservation> .
+      rdfs:subClassOf :WaterObservation .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterChemicalParameterObservation>
+:WaterChemicalParameterObservation
       rdf:type owl:Class ;
       rdfs:label "Water Chemical Observation"@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/DrinkingWaterObservation> .
+      rdfs:subClassOf :DrinkingWaterObservation .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterConcept>
+:WaterConcept
       rdf:type owl:Class ;
       rdfs:comment "An abstract class collecting all the WHOW concepts."@en ;
       rdfs:label "WHOW Concept "@en ;
       rdfs:subClassOf owl:Thing ;
       skos:prefLabel "WHOW Concept "@en .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterEmergingParameters>
+:WaterEmergingParameters
       rdf:type owl:Class ;
       rdfs:label "emerging parameters "@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/DrinkingWaterObservation> .
+      rdfs:subClassOf :DrinkingWaterObservation .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterFeature>
+:WaterFeature
       rdf:type owl:Class ;
       rdfs:label "Water feature "@en ;
-      rdfs:subClassOf inspire-mf:FeatureOfInterest , <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterConcept> .
+      rdfs:subClassOf inspire-mf:FeatureOfInterest , :WaterConcept .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterFeatureType>
+:WaterFeatureType
       rdf:type owl:Class ;
       rdfs:label "Water feature type "@en ;
-      rdfs:subClassOf skos:Concept , <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterConcept> .
+      rdfs:subClassOf skos:Concept , :WaterConcept .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterHydromorphologicalParameterObservation>
+:WaterHydromorphologicalParameterObservation
       rdf:type owl:Class ;
       rdfs:label "Water Hydromorphological Parameter Observation "@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation> ;
+      rdfs:subClassOf :SurfaceOrGroundwaterObservation ;
       skos:definition "Observation of hydromorphological elements according to the European Environmental Agency (EEA): hydrology, morphology, barriers. (2018)"@en .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterIndicatorParameterObservation>
+:WaterIndicatorParameterObservation
       rdf:type owl:Class ;
       rdfs:label "Water Bioindicator Observation"@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/DrinkingWaterObservation> .
+      rdfs:subClassOf :DrinkingWaterObservation .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterMicrobiologicalParameterObservation>
+:WaterMicrobiologicalParameterObservation
       rdf:type owl:Class ;
       rdfs:label "Water Biotic Index Observation"@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/DrinkingWaterObservation> .
+      rdfs:subClassOf :DrinkingWaterObservation .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty>
+:WaterObservableProperty
       rdf:type owl:Class ;
       rdfs:label "Water observable Property"^^xsd:string ;
-      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Parameter> , <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterConcept> ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Parameter> , :WaterConcept ;
       owl:equivalentClass <http://www.w3.org/ns/sosa/ObservableProperty> .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservablePropertyObject>
+:WaterObservablePropertyObject
       rdf:type owl:Class ;
       rdfs:label "Water observable Property Object"@en ;
-      rdfs:subClassOf skos:Concept , <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterConcept> .
+      rdfs:subClassOf skos:Concept , :WaterConcept .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservation>
+:WaterObservablePropertyObjectType
+      rdf:type owl:Class ;
+      rdfs:label "Water observable property object type "@en ;
+      rdfs:subClassOf :WaterConcept .
+
+:WaterObservation
       rdf:type owl:Class ;
       rdfs:label "Water Observation "@en ;
-      rdfs:subClassOf inspire-mf:Observation , <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterConcept> .
+      rdfs:subClassOf inspire-mf:Observation , :WaterConcept .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterPhysicoChemicalParameterObservation>
+:WaterPhysicoChemicalParameterObservation
       rdf:type owl:Class ;
       rdfs:label "Water Physico-Chemical Parameter Observation "@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation> ;
+      rdfs:subClassOf :SurfaceOrGroundwaterObservation ;
       skos:definition "Observation of physico-chemical elements according to the European Environmental Agency (EEA):  nutrients, organic pollution, acidification. (2018)"@en .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterRadioactivityObservation>
+:WaterRadioactivityObservation
       rdf:type owl:Class ;
       rdfs:label "Water Radioactivity Observation"@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/DrinkingWaterObservation> .
+      rdfs:subClassOf :DrinkingWaterObservation .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterSample>
+:WaterSample
       rdf:type owl:Class ;
       rdfs:label "Water Sample"@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterFeature> ;
+      rdfs:subClassOf :WaterFeature ;
       skos:prefLabel "Water Sample"@en .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterSampler>
+:WaterSampler
       rdf:type owl:Class ;
       rdfs:label "WaterSampler"@en ;
-      rdfs:subClassOf inspire-mf:MonitoringFacility , <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterConcept> .
+      rdfs:subClassOf inspire-mf:MonitoringFacility , :WaterConcept .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/depthDescription>
+:depthDescription
       rdf:type owl:DatatypeProperty ;
       rdfs:comment "Es. \"Lago di Como_superficie\" o \"Lago di Como_fondo\" ecc..."@it ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterSample> ;
+      rdfs:domain :WaterSample ;
       rdfs:label "depth description"@en ;
       rdfs:range xsd:string .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/hasChemicalSubstance>
+:hasChemicalSubstance
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterChemicalParameterObservation> , <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterPhysicoChemicalParameterObservation> ;
+      rdfs:domain :WaterChemicalParameterObservation , :WaterPhysicoChemicalParameterObservation ;
       rdfs:label "has chemical substance "@en ;
-      rdfs:range <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ChemicalSubstance> ;
-      rdfs:subPropertyOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/isAssociatedWith> .
+      rdfs:range :ChemicalSubstance ;
+      rdfs:subPropertyOf :isAssociatedWith .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/hasMaxValue>
+:hasMaxValue
       rdf:type owl:DatatypeProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ObservationValue> ;
+      rdfs:domain :ObservationValue ;
       rdfs:label "has max value"@en ;
       rdfs:range xsd:int .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/hasMicrobiologicalAgent>
+:hasMicrobiologicalAgent
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/BiologicalQualityElementsObservation> , <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterMicrobiologicalParameterObservation> ;
+      rdfs:domain :BiologicalQualityElementsObservation , :WaterMicrobiologicalParameterObservation ;
       rdfs:label "has microbiological agent "@en ;
-      rdfs:range <https://w3id.org/environmental-data/onto/water-monitoring-ontology/MicroBiologicalAgent> ;
-      rdfs:subPropertyOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/isAssociatedWith> .
+      rdfs:range :MicroBiologicalAgent ;
+      rdfs:subPropertyOf :isAssociatedWith .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/hasMinValue>
+:hasMinValue
       rdf:type owl:DatatypeProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ObservationValue> ;
+      rdfs:domain :ObservationValue ;
       rdfs:label "has min value"@en ;
       rdfs:range xsd:int .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/hasObservationSample>
+:hasObservationSample
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservation> ;
+      rdfs:domain :WaterObservation ;
       rdfs:label "has observation sample"@en ;
-      rdfs:range <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterSample> .
+      rdfs:range :WaterSample .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/hasRadioactivityObject>
+:hasRadioactivityObject
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterRadioactivityObservation> ;
+      rdfs:domain :WaterRadioactivityObservation ;
       rdfs:label "has radioactivity object "@en .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/hasResult>
+:hasResult
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservation> ;
+      rdfs:domain :WaterObservation ;
       rdfs:label "has result "@en ;
-      rdfs:range <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ObservationValue> .
+      rdfs:range :ObservationValue .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/hasWaterFeature>
+:hasWaterFeature
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservation> ;
+      rdfs:domain :WaterObservation ;
       rdfs:label "has water feature"@en ;
-      rdfs:range <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterFeature> ;
+      rdfs:range :WaterFeature ;
       rdfs:subPropertyOf inspire-mf:hasFeatureOfInterest .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/hasWaterFeatureType>
+:hasWaterFeatureType
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterFeature> ;
+      rdfs:domain :WaterFeature ;
       rdfs:label "has water feature type "@en ;
-      rdfs:range <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterFeatureType> ;
+      rdfs:range :WaterFeatureType ;
       skos:prefLabel "has water feature type "@en .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/hasWaterObservedProperty>
+:hasWaterObservedProperty
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservation> ;
+      rdfs:domain :WaterObservation ;
       rdfs:label "Has water observed property"^^xsd:string ;
-      rdfs:range <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty> ;
+      rdfs:range :WaterObservableProperty ;
       owl:equivalentProperty
               <http://www.w3.org/ns/sosa/observedProperty> .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/identifierType>
+:identifierType
       rdf:type owl:DatatypeProperty ;
       rdfs:domain <https://dati.isprambiente.it/ontology/core/UniqueIdentifier> ;
       rdfs:label "identifier type "@en ;
       rdfs:range xsd:string .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/isAssociatedWith>
+:isAssociatedWith
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservation> ;
+      rdfs:domain :WaterObservation ;
       rdfs:label "is associated with"@en ;
-      rdfs:range <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservablePropertyObject> .
+      rdfs:range :WaterObservablePropertyObject .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/isMaxValueIncluded>
+:isClassifiedBy
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain :WaterObservablePropertyObject ;
+      rdfs:label "is classified by "@en ;
+      rdfs:range :WaterObservablePropertyObjectType .
+
+:isMaxValueIncluded
       rdf:type owl:DatatypeProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ObservationValue> ;
+      rdfs:domain :ObservationValue ;
       rdfs:range xsd:boolean .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/isMinValueIncluded>
+:isMinValueIncluded
       rdf:type owl:DatatypeProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/ObservationValue> ;
+      rdfs:domain :ObservationValue ;
       rdfs:label "is min value included"@en ;
       rdfs:range xsd:boolean .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/isObtainedBy>
+:isObtainedBy
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterSample> ;
+      rdfs:domain :WaterSample ;
       rdfs:label "is obtained by"@en ;
-      rdfs:range <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterSampler> .
+      rdfs:range :WaterSampler .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/isSampleOf>
+:isSampleOf
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterSample> ;
+      rdfs:domain :WaterSample ;
       rdfs:label "is sample of"@en ;
-      rdfs:range <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterFeature> .
+      rdfs:range :WaterFeature .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/ofPropertyObject>
+:ofPropertyObject
       rdf:type owl:ObjectProperty ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservableProperty> ;
+      rdfs:domain :WaterObservableProperty ;
       rdfs:label "of property object "@en ;
-      rdfs:range <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservablePropertyObject> .
+      rdfs:range :WaterObservablePropertyObject .
 
-<https://w3id.org/environmental-data/onto/water-monitoring-ontology/sampleDepth>
+:sampleDepth
       rdf:type owl:DatatypeProperty ;
       rdfs:comment "Es. \"5,7 m\" o \"0-7 m\" ecc..."@it ;
-      rdfs:domain <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterSample> ;
+      rdfs:domain :WaterSample ;
       rdfs:label "sample depth"@en ;
       rdfs:range xsd:string .
-
-<https://w3id.org/whow/onto/water-monitoring-ontology>
-      rdf:type owl:Ontology ;
-      owl:imports <http://purl.org/dc/terms/> , <http://www.w3.org/2004/02/skos/core> , <http://xmlns.com/foaf/0.1/> , inspire-mf-ssn-sosa-aligns: , places: , <https://w3id.org/whow/onto/hydrography-ontology> ;
-      owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
-      skos:definition "Ontology for describing WHOW project concepts for the water monitoring domain"@en ;
-      skos:note "TODO: valutare di rinominare in water-observation-ontology"^^xsd:string ;
-      skos:prefLabel "Water Monitoring Ontology"@en .
-
-:MarineWaterObservation
-      rdf:type owl:Class ;
-      rdfs:label "Marine water observation "@en ;
-      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-monitoring-ontology/WaterObservation> .
