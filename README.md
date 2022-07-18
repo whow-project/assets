@@ -4,7 +4,9 @@
 
 This repository stores files pertaining to the **WHOW Ontology Network**. It includes imported ontologies such as the SOSA/SSN ontology and the ISPRA ontology network, whereas the thematic ontology modules of the ontology network are stored in the ```whow-ontology-network``` folder. Imports are displayed in the image below.
 
-![alt text]([https://github.com/whow-project/ontology-network/blob/main/whow-ontology-network/images/water-monitoring-ontology-imports.jpg?raw=true](https://github.com/whow-project/ontology-network/blob/main/whow-ontology-network/images/imports.jpg?raw=true) "Imports of the water monitoring ontology, the health monitoring ontology and hydrography ontology")
+![alt text]([Isolated.png](https://github.com/whow-project/ontology-network/blob/main/whow-ontology-network/images/water-monitoring-ontology-imports.jpg?raw=true) ""Imports of the water monitoring ontology, the health monitoring ontology and hydrography ontology"")
+
+
 
 ## Ontology modules of the WHOW ontology network
 
