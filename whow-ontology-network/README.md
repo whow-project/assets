@@ -10,6 +10,7 @@ The **WHOW** models concepts and relations describing water quality monitoring a
 #### Overview
 
 * [Ontology Model overview](#model-overview)
+* [Usage example](#model-instances)
 
 
 ### <a name="model-overview"></a>Ontology Model overview: modules
@@ -40,4 +41,31 @@ The Water indicators ontology module is an extension of the Indicator ontology b
 The Health monitoring ontology module aims to represent health observations with a specific focus on infectious diseases.
 
 ![Figure 4: Health monitoring](images/healthDataModel.jpg )
+
+### <a name="model-instances"></a>Ontology Model usage: instances diagrams
+
+### [Hydrography ontology](https://raw.githubusercontent.com/whow-project/ontology-network/main/whow-ontology-network/hydrography-ontology.ttl)
+
+![Figure 5: Hydrography ontology instance diagram](images/hydrography-ontology-instance-diagram.jpg )
+
+
+### [Water monitoring ontology](https://raw.githubusercontent.com/whow-project/ontology-network/main/whow-ontology-network/water-monitoring-ontology.ttl)
+
+![Figure 6: Water monitoring ontology instance diagram](images/water-monitoring-ontology-instance-diagram.jpg  )
+
+
+### [Water indicators ontology](https://raw.githubusercontent.com/whow-project/ontology-network/main/whow-ontology-network/water-indicators-ontology.ttl)
+
+![Figure 7: Water indicators ontology instance diagram](images/water-indicator-ontology-instance-diagram.jpg .jpg  )
+
+
+### [Health monitoring ontology](https://raw.githubusercontent.com/whow-project/ontology-network/main/whow-ontology-network/health-monitoring-ontology.ttl)
+
+![Figure 8: Health monitoring ontology instance diagram](images/health-ontology-instance-diagram.jpg.jpg  )
+
+
+
+
+
+
 
