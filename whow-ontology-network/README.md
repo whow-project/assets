@@ -11,7 +11,7 @@ The **WHOW** models concepts and relations describing water quality monitoring a
 
 * [Ontology Model overview](#model-overview)
 * [Usage example](#model-instances)
-
+* [Resources](#model-resources)
 
 ### <a name="model-overview"></a>Ontology Model overview: modules
 
@@ -64,6 +64,9 @@ The Health monitoring ontology module aims to represent health observations with
 ![Figure 8: Health monitoring ontology instance diagram](images/health-ontology-instance-diagram.jpg )
 
 
+### <a name="model-resources"></a>Ontology Model overview: resources
+
+Here are linked publications and other resources about the developed ontology modules.
 
 
 
