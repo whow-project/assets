@@ -56,12 +56,12 @@ The Health monitoring ontology module aims to represent health observations with
 
 ### [Water indicators ontology](https://raw.githubusercontent.com/whow-project/ontology-network/main/whow-ontology-network/water-indicators-ontology.ttl)
 
-![Figure 7: Water indicators ontology instance diagram](images/water-indicator-ontology-instance-diagram.jpg .jpg  )
+![Figure 7: Water indicators ontology instance diagram](images/water-indicator-ontology-instance-diagram.jpg  )
 
 
 ### [Health monitoring ontology](https://raw.githubusercontent.com/whow-project/ontology-network/main/whow-ontology-network/health-monitoring-ontology.ttl)
 
-![Figure 8: Health monitoring ontology instance diagram](images/health-ontology-instance-diagram.jpg.jpg  )
+![Figure 8: Health monitoring ontology instance diagram](images/health-ontology-instance-diagram.jpg )
 
 
 
