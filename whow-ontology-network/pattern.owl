@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/observedProperty">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/fundedBy">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterPhysicoChemicalParameterObservation"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/UnitOfMeasure">
+    <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: trovare UM esterne a cui puntare</skos:note>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://w3id.org/environmental-data/onto/hydrography-ontology/WaterBody">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeature"/>
+  </rdf:Description>
+
+  <owl:Ontology rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology">
+    <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
+    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+    <owl:imports rdf:resource="https://w3id.org/whow/onto/hydrography-ontology"/>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/"/>
+    <owl:imports rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Created with TopBraid Composer</owl:versionInfo>
+    <skos:definition xml:lang="en">Ontology for describing WHOW project concepts for the water monitoring domain</skos:definition>
+    <skos:note rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TODO: valutare di rinominare in water-observation-ontology</skos:note>
+    <skos:prefLabel xml:lang="en">Water Monitoring Ontology</skos:prefLabel>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/BiologicalQualityElementsObservation">
+    <rdfs:label xml:lang="en">Biological quality elements Parameter Observation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation"/>
+    <skos:definition xml:lang="en">Observation of biological quality elements according to the European Environmental Agency (EEA): phytoplankton, macrophytes, phytobenthos, benthic invertebrate fauna and fish. The most frequently classified biological  quality elements are, for rivers, benthic invertebrates, phytobenthos/other aquatic flora/macrophytes and fish; for lakes, phytoplankton; and for transitional and coastal waters, phytoplankton and benthic invertebrates. (2018)</skos:definition>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/ChemicalSubstance">
+    <rdfs:label xml:lang="en">Chemical Agent</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/RadioactivityObject"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/MicroBiologicalAgent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation">
+    <rdfs:label xml:lang="en">Drinking Water Observation </rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/MicroBiologicalAgent">
+    <rdfs:label xml:lang="en">Microbiological agent </rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/RadioactivityObject"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/ChemicalSubstance"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/ObservationValue">
+    <rdfs:label xml:lang="en">Observation Value</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/RadioactivityObject">
+    <rdfs:label xml:lang="en">Radioactivity Object</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/MicroBiologicalAgent"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/ChemicalSubstance"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation">
+    <rdfs:label xml:lang="en">Surface or Groundwater observation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterChemicalParameterObservation">
+    <rdfs:label xml:lang="en">Water Chemical Observation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept">
+    <rdfs:comment xml:lang="en">An abstract class collecting all the WHOW concepts.</rdfs:comment>
+    <rdfs:label xml:lang="en">WHOW Concept </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <skos:prefLabel xml:lang="en">WHOW Concept </skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterEmergingParameters">
+    <rdfs:label xml:lang="en">emerging parameters </rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeature">
+    <rdfs:label xml:lang="en">Water feature </rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeatureType">
+    <rdfs:label xml:lang="en">Water feature type </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterHydromorphologicalParameterObservation">
+    <rdfs:label xml:lang="en">Water Hydromorphological Parameter Observation </rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation"/>
+    <skos:definition xml:lang="en">Observation of hydromorphological elements according to the European Environmental Agency (EEA): hydrology, morphology, barriers. (2018)</skos:definition>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterIndicatorParameterObservation">
+    <rdfs:label xml:lang="en">Water Bioindicator Observation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterMicrobiologicalParameterObservation">
+    <rdfs:label xml:lang="en">Water Biotic Index Observation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservableProperty">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water observable Property</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Parameter"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject">
+    <rdfs:label xml:lang="en">Water observable Property Object</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObjectType">
+    <rdfs:label xml:lang="en">Water observable property object type </rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation">
+    <rdfs:label xml:lang="en">Water Observation </rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterPhysicoChemicalParameterObservation">
+    <rdfs:label xml:lang="en">Water Physico-Chemical Parameter Observation </rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation"/>
+    <skos:definition xml:lang="en">Observation of physico-chemical elements according to the European Environmental Agency (EEA):  nutrients, organic pollution, acidification. (2018)</skos:definition>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterRadioactivityObservation">
+    <rdfs:label xml:lang="en">Water Radioactivity Observation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterSample">
+    <rdfs:label xml:lang="en">Water Sample</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeature"/>
+    <skos:prefLabel xml:lang="en">Water Sample</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterSampler">
+    <rdfs:label xml:lang="en">WaterSampler</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
+  </owl:Class>
+
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasChemicalSubstance">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterChemicalParameterObservation"/>
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterPhysicoChemicalParameterObservation"/>
+    <rdfs:label xml:lang="en">has chemical substance </rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/ChemicalSubstance"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/isAssociatedWith"/>
+  </owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasMicrobiologicalAgent">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/BiologicalQualityElementsObservation"/>
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterMicrobiologicalParameterObservation"/>
+    <rdfs:label xml:lang="en">has microbiological agent </rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/MicroBiologicalAgent"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/isAssociatedWith"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasObservationSample">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
+    <rdfs:label xml:lang="en">has observation sample</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterSample"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasRadioactivityObject">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterRadioactivityObservation"/>
+    <rdfs:label xml:lang="en">has radioactivity object </rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasResult">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
+    <rdfs:label xml:lang="en">has result </rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/ObservationValue"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasWaterFeature">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
+    <rdfs:label xml:lang="en">has water feature</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeature"/>
+    <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/hasFeatureOfInterest"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasWaterFeatureType">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeature"/>
+    <rdfs:label xml:lang="en">has water feature type </rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeatureType"/>
+    <skos:prefLabel xml:lang="en">has water feature type </skos:prefLabel>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasWaterObservedProperty">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has water observed property</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservableProperty"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+  </owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/isAssociatedWith">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
+    <rdfs:label xml:lang="en">is associated with</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/isClassifiedBy">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject"/>
+    <rdfs:label xml:lang="en">is classified by </rdfs:label>
+  </owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/isObtainedBy">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterSample"/>
+    <rdfs:label xml:lang="en">is obtained by</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterSampler"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/isSampleOf">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterSample"/>
+    <rdfs:label xml:lang="en">is sample of</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeature"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/ofPropertyObject">
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservableProperty"/>
+    <rdfs:label xml:lang="en">of property object </rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject"/>
+  </owl:ObjectProperty>
+
+
+
+</rdf:RDF>

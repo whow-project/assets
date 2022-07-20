@@ -13,11 +13,11 @@
       rdfs:label "imports" ;
       visual:child
               [ rdf:type visual:Box ;
-                visual:depicts <http://xmlns.com/foaf/0.1/> ;
+                visual:depicts <https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/> ;
                 visual:height "22"^^xsd:int ;
-                visual:width "90"^^xsd:int ;
-                visual:x "242"^^xsd:int ;
-                visual:y "222"^^xsd:int
+                visual:width "237"^^xsd:int ;
+                visual:x "232"^^xsd:int ;
+                visual:y "129"^^xsd:int
               ] ;
       visual:child
               [ rdf:type visual:Box ;
@@ -29,6 +29,14 @@
               ] ;
       visual:child
               [ rdf:type visual:Box ;
+                visual:depicts <https://dati.isprambiente.it/ontology/places/> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "105"^^xsd:int ;
+                visual:x "1065"^^xsd:int ;
+                visual:y "72"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
                 visual:depicts <http://www.w3.org/ns/sosa/> ;
                 visual:height "22"^^xsd:int ;
                 visual:width "92"^^xsd:int ;
@@ -37,11 +45,19 @@
               ] ;
       visual:child
               [ rdf:type visual:Box ;
-                visual:depicts <https://dati.isprambiente.it/ontology/places/> ;
+                visual:depicts <https://w3id.org/whow/onto/hydrography-ontology> ;
                 visual:height "22"^^xsd:int ;
-                visual:width "105"^^xsd:int ;
-                visual:x "1065"^^xsd:int ;
-                visual:y "72"^^xsd:int
+                visual:width "427"^^xsd:int ;
+                visual:x "583"^^xsd:int ;
+                visual:y "241"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://xmlns.com/foaf/0.1/> ;
+                visual:height "22"^^xsd:int ;
+                visual:width "90"^^xsd:int ;
+                visual:x "242"^^xsd:int ;
+                visual:y "222"^^xsd:int
               ] ;
       visual:child
               [ rdf:type visual:Box ;
@@ -58,21 +74,5 @@
                 visual:width "460"^^xsd:int ;
                 visual:x "568"^^xsd:int ;
                 visual:y "16"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/> ;
-                visual:height "22"^^xsd:int ;
-                visual:width "237"^^xsd:int ;
-                visual:x "232"^^xsd:int ;
-                visual:y "129"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <https://w3id.org/whow/onto/hydrography-ontology> ;
-                visual:height "22"^^xsd:int ;
-                visual:width "427"^^xsd:int ;
-                visual:x "583"^^xsd:int ;
-                visual:y "241"^^xsd:int
               ] ;
       visual:depicts <https://w3id.org/whow/onto/water-monitoring-ontology> .
