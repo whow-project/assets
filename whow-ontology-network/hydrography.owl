@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/whow/onto/hydrography"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/whow/onto/hydrography"
+     versionIRI="https://w3id.org/whow/onto/hydrography/0.1">
+    <Prefix name="" IRI="https://w3id.org/whow/onto/hydrography/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="dct" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="inspire-mf" IRI="https://dati.isprambiente.it/ontology/inspire-mf/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>https://raw.githubusercontent.com/whow-project/ontology-network/main/whow-ontology-network/images/hydrography-ontology.jpg</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <Literal xml:lang="en">Ontology for describing the hydrography. It includes concepts such as water basins and the classification of water bodies</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:title"/>
+        <Literal xml:lang="en">Hydrography Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">version 0.1</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="inspire-mf:FeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CoastalWaterBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/GroundwaterBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/LakeWaterBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MarineWater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RiverWaterBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TransitionalWaterBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterBasin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/belongsToWaterBasin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isSubWaterBasin"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="prov:wasDerivedFrom"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/CoastalWaterBody"/>
+        <Class IRI="/WaterBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/GroundwaterBody"/>
+        <Class IRI="/WaterBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/LakeWaterBody"/>
+        <Class IRI="/WaterBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MarineWater"/>
+        <Class IRI="/WaterBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RiverWaterBody"/>
+        <Class IRI="/WaterBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TransitionalWaterBody"/>
+        <Class IRI="/WaterBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterBasin"/>
+        <Class IRI="/WaterFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterBasin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/isSubWaterBasin"/>
+            <Class IRI="/WaterBasin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterBody"/>
+        <Class IRI="/WaterFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterBody"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/belongsToWaterBasin"/>
+            <Class IRI="/WaterBasin"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterBody"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/belongsToWaterBasin"/>
+            <Class IRI="/WaterBasin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterFeature"/>
+        <Class abbreviatedIRI="inspire-mf:FeatureOfInterest"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/belongsToWaterBasin"/>
+        <Class IRI="/WaterBody"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isSubWaterBasin"/>
+        <Class IRI="/WaterBasin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/belongsToWaterBasin"/>
+        <Class IRI="/WaterBasin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isSubWaterBasin"/>
+        <Class IRI="/WaterBasin"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CoastalWaterBody</IRI>
+        <Literal xml:lang="en">The class of coastal water body; that is, a marine water body bordering a coast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/CoastalWaterBody</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/CoastalWaterBody</IRI>
+        <Literal xml:lang="en">Coastal Water Body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:wasDerivedFrom"/>
+        <IRI>/CoastalWaterBody</IRI>
+        <IRI>http://inspire.ec.europa.eu/featureconcept/WFDCoastalWater</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/GroundwaterBody</IRI>
+        <Literal xml:lang="en">A distinct volume of groundwater within an aquifer or system of aquifers, which is hydraulically isolated from nearby groundwater bodies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/GroundwaterBody</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/GroundwaterBody</IRI>
+        <Literal xml:lang="en">Groundwater Body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:wasDerivedFrom"/>
+        <IRI>/GroundwaterBody</IRI>
+        <IRI>http://inspire.ec.europa.eu/featureconcept/GroundWaterBody</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/LakeWaterBody</IRI>
+        <Literal xml:lang="en">A body of standing inland surface water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/LakeWaterBody</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/LakeWaterBody</IRI>
+        <Literal xml:lang="en">Lake Water Body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:wasDerivedFrom"/>
+        <IRI>/LakeWaterBody</IRI>
+        <IRI>http://inspire.ec.europa.eu/featureconcept/WFDLake</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/MarineWater</IRI>
+        <Literal xml:lang="en">The waters, the seabed and subsoil on the seaward side of the baseline from which the extent of territorial waters is measured</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/MarineWater</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/MarineWater</IRI>
+        <Literal xml:lang="en">Marine Water</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/RiverWaterBody</IRI>
+        <Literal xml:lang="en">A body of inland water flowing for the most part on the surface of the land but which may flow underground for part of its course.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/RiverWaterBody</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/RiverWaterBody</IRI>
+        <Literal xml:lang="en">River Water Body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:wasDerivedFrom"/>
+        <IRI>/RiverWaterBody</IRI>
+        <IRI>http://inspire.ec.europa.eu/featureconcept/WFDRiver</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TransitionalWaterBody</IRI>
+        <Literal xml:lang="en">Bodies of surface water in the vicinity of river mouths which are partly saline in character as a result of their proximity to coastal waters but which are substantially influenced by freshwater flows.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/TransitionalWaterBody</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/TransitionalWaterBody</IRI>
+        <Literal xml:lang="en">Transitional Water Body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:wasDerivedFrom"/>
+        <IRI>/TransitionalWaterBody</IRI>
+        <IRI>http://inspire.ec.europa.eu/featureconcept/WFDTransitionalWater</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterBasin</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterBasin</IRI>
+        <Literal xml:lang="en">Water Basin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterBody</IRI>
+        <Literal xml:lang="en">Abstract class representing a WFD - Water Framework Directive body of surface water or body of groundwater</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterBody</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterBody</IRI>
+        <Literal xml:lang="en">Water Body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:wasDerivedFrom"/>
+        <IRI>/WaterBody</IRI>
+        <IRI>http://inspire.ec.europa.eu/featureconcept/WFDWaterBody</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterFeature</IRI>
+        <Literal xml:lang="en">A specific feature of interest in the hydrography context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterFeature</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterFeature</IRI>
+        <Literal xml:lang="en">Water Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/belongsToWaterBasin</IRI>
+        <Literal xml:lang="en">This property links the water body to the water basin it belongs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/belongsToWaterBasin</IRI>
+        <Literal xml:lang="en">belongs to water basin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/isSubWaterBasin</IRI>
+        <Literal xml:lang="en">This property is used to represent hierarchies of water basin since water basins can be formed by other water basins.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/isSubWaterBasin</IRI>
+        <Literal xml:lang="en">is sub water basin</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
