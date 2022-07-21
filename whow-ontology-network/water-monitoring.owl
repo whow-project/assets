@@ -1,254 +1,997 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#">
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/whow/onto/water-monitoring"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/whow/onto/water-monitoring"
+     versionIRI="https://w3id.org/whow/onto/water-monitoring/0.1">
+    <Prefix name="" IRI="https://w3id.org/whow/onto/water-monitoring/"/>
+    <Prefix name="dct" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Import>https://dati.isprambiente.it/ontology/inspire-mf/</Import>
+    <Import>https://w3id.org/whow/onto/hydrography</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <Literal xml:lang="en">The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:title"/>
+        <Literal xml:lang="en">Water Monitoring Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">version 0.1</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/BiologicalAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ChemicalSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DrinkingWaterObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ObservationValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RadioactivityObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SurfaceOrGroundwaterObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterBiologicalQualityParameterObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterChemicalParameterObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterEmergingParametersObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterHydromorphologicalParameterObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterIndicatorParameterObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterMicrobiologicalParameterObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterObservableProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterObservablePropertyObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterObservablePropertyObjectType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterPhysicoChemicalParameterObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterRadioactivityObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterSample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WaterSampler"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://dati.isprambiente.it/ontology/inspire-mf/hasFeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasBiologicalAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasChemicalSubstance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasObservationSample"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasRadioactivityObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasWaterFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasWaterObservableProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasWaterObservablePropertyObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isClassifiedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isObtainedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isSampleOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/ofPropertyObject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/depth"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/BiologicalAgent"/>
+        <Class IRI="/WaterObservablePropertyObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ChemicalSubstance"/>
+        <Class IRI="/WaterObservablePropertyObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DrinkingWaterObservation"/>
+        <Class IRI="/WaterObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ObservationValue"/>
+        <Class IRI="https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RadioactivityObject"/>
+        <Class IRI="/WaterObservablePropertyObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SurfaceOrGroundwaterObservation"/>
+        <Class IRI="/WaterObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterBiologicalQualityParameterObservation"/>
+        <Class IRI="/SurfaceOrGroundwaterObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterBiologicalQualityParameterObservation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasBiologicalAgent"/>
+            <Class IRI="/BiologicalAgent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterBiologicalQualityParameterObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasBiologicalAgent"/>
+            <Class IRI="/BiologicalAgent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterChemicalParameterObservation"/>
+        <Class IRI="/DrinkingWaterObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterChemicalParameterObservation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasChemicalSubstance"/>
+            <Class IRI="/ChemicalSubstance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterChemicalParameterObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasChemicalSubstance"/>
+            <Class IRI="/ChemicalSubstance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterEmergingParametersObservation"/>
+        <Class IRI="/DrinkingWaterObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterHydromorphologicalParameterObservation"/>
+        <Class IRI="/SurfaceOrGroundwaterObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterIndicatorParameterObservation"/>
+        <Class IRI="/DrinkingWaterObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterMicrobiologicalParameterObservation"/>
+        <Class IRI="/DrinkingWaterObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterMicrobiologicalParameterObservation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasBiologicalAgent"/>
+            <Class IRI="/BiologicalAgent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterMicrobiologicalParameterObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasBiologicalAgent"/>
+            <Class IRI="/BiologicalAgent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterObservableProperty"/>
+        <Class IRI="https://dati.isprambiente.it/ontology/inspire-mf/ObservationParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterObservableProperty"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/ofPropertyObject"/>
+            <Class IRI="/WaterObservablePropertyObject"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterObservablePropertyObject"/>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterObservablePropertyObject"/>
+        <Class IRI="https://dati.isprambiente.it/ontology/top/Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterObservablePropertyObject"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/isClassifiedBy"/>
+            <Class IRI="/WaterObservablePropertyObjectType"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterObservablePropertyObjectType"/>
+        <Class IRI="https://dati.isprambiente.it/ontology/top/Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterObservation"/>
+        <Class IRI="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterObservation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasResult"/>
+            <Class IRI="/ObservationValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterObservation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasWaterObservableProperty"/>
+            <Class IRI="/WaterObservableProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasObservationSample"/>
+            <Class IRI="/WaterSample"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasResult"/>
+            <Class IRI="/ObservationValue"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasWaterObservableProperty"/>
+            <Class IRI="/WaterObservableProperty"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasWaterObservablePropertyObject"/>
+            <Class IRI="/WaterObservablePropertyObject"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterPhysicoChemicalParameterObservation"/>
+        <Class IRI="/SurfaceOrGroundwaterObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterPhysicoChemicalParameterObservation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasChemicalSubstance"/>
+            <Class IRI="/ChemicalSubstance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterPhysicoChemicalParameterObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasChemicalSubstance"/>
+            <Class IRI="/ChemicalSubstance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterRadioactivityObservation"/>
+        <Class IRI="/WaterObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterRadioactivityObservation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasRadioactivityObject"/>
+            <Class IRI="/RadioactivityObject"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterRadioactivityObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasRadioactivityObject"/>
+            <Class IRI="/RadioactivityObject"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterSample"/>
+        <Class IRI="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterSample"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isObtainedBy"/>
+            <Class IRI="/WaterSampler"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterSample"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isSampleOf"/>
+            <Class IRI="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterSample"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/isObtainedBy"/>
+            <Class IRI="/WaterSampler"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterSample"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="/depth"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WaterSampler"/>
+        <Class IRI="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/BiologicalAgent"/>
+        <Class IRI="/ChemicalSubstance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/BiologicalAgent"/>
+        <Class IRI="/RadioactivityObject"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/ChemicalSubstance"/>
+        <Class IRI="/RadioactivityObject"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/DrinkingWaterObservation"/>
+        <Class IRI="/SurfaceOrGroundwaterObservation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/WaterBiologicalQualityParameterObservation"/>
+        <Class IRI="/WaterHydromorphologicalParameterObservation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/WaterBiologicalQualityParameterObservation"/>
+        <Class IRI="/WaterPhysicoChemicalParameterObservation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/WaterChemicalParameterObservation"/>
+        <Class IRI="/WaterIndicatorParameterObservation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/WaterChemicalParameterObservation"/>
+        <Class IRI="/WaterMicrobiologicalParameterObservation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/WaterEmergingParametersObservation"/>
+        <Class IRI="/WaterMicrobiologicalParameterObservation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/WaterHydromorphologicalParameterObservation"/>
+        <Class IRI="/WaterPhysicoChemicalParameterObservation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/WaterIndicatorParameterObservation"/>
+        <Class IRI="/WaterMicrobiologicalParameterObservation"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasBiologicalAgent"/>
+        <ObjectProperty IRI="/hasWaterObservablePropertyObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasChemicalSubstance"/>
+        <ObjectProperty IRI="/hasWaterObservablePropertyObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasRadioactivityObject"/>
+        <ObjectProperty IRI="/hasWaterObservablePropertyObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasWaterFeature"/>
+        <ObjectProperty IRI="https://dati.isprambiente.it/ontology/inspire-mf/hasFeatureOfInterest"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasBiologicalAgent"/>
+        <ObjectUnionOf>
+            <Class IRI="/WaterBiologicalQualityParameterObservation"/>
+            <Class IRI="/WaterMicrobiologicalParameterObservation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasChemicalSubstance"/>
+        <ObjectUnionOf>
+            <Class IRI="/WaterChemicalParameterObservation"/>
+            <Class IRI="/WaterPhysicoChemicalParameterObservation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasObservationSample"/>
+        <Class IRI="/WaterObservation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasRadioactivityObject"/>
+        <Class IRI="/WaterRadioactivityObservation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasResult"/>
+        <Class IRI="/WaterObservation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasWaterFeature"/>
+        <Class IRI="/WaterObservation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasWaterObservableProperty"/>
+        <Class IRI="/WaterObservation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasWaterObservablePropertyObject"/>
+        <Class IRI="/WaterObservation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isClassifiedBy"/>
+        <Class IRI="/WaterObservablePropertyObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isObtainedBy"/>
+        <Class IRI="/WaterSample"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isSampleOf"/>
+        <Class IRI="/WaterSample"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/ofPropertyObject"/>
+        <Class IRI="/WaterObservableProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasBiologicalAgent"/>
+        <Class IRI="/BiologicalAgent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasChemicalSubstance"/>
+        <Class IRI="/ChemicalSubstance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasObservationSample"/>
+        <Class IRI="/WaterSample"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasRadioactivityObject"/>
+        <Class IRI="/RadioactivityObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasResult"/>
+        <Class IRI="/ObservationValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasWaterFeature"/>
+        <Class IRI="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasWaterObservableProperty"/>
+        <Class IRI="/WaterObservableProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasWaterObservablePropertyObject"/>
+        <Class IRI="/WaterObservablePropertyObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isClassifiedBy"/>
+        <Class IRI="/WaterObservablePropertyObjectType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isObtainedBy"/>
+        <Class IRI="/WaterSampler"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isSampleOf"/>
+        <Class IRI="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/ofPropertyObject"/>
+        <Class IRI="/WaterObservablePropertyObject"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="/depth"/>
+        <Class IRI="/WaterSample"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="/depth"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/BiologicalAgent</IRI>
+        <Literal xml:lang="en">This class represents all the biological and microbiological agents that are available in the water be it surface and groundwater or drinking water (e.g., phytoplankton, macrophytes, phytobenthos, benthic invertebrate fauna and fish, bacteria such as coliforms).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/BiologicalAgent</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/BiologicalAgent</IRI>
+        <Literal xml:lang="en">Biological Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ChemicalSubstance</IRI>
+        <Literal xml:lang="en">This class represents the chemical substances. A controlled vocabulary can be constructed for this class based on the CAS numbering of the chemical substances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/ChemicalSubstance</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ChemicalSubstance</IRI>
+        <Literal xml:lang="en">Chemical Substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/DrinkingWaterObservation</IRI>
+        <Literal xml:lang="en">The class of observations of water intended for human consumption.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/DrinkingWaterObservation</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/DrinkingWaterObservation</IRI>
+        <Literal xml:lang="en">Drinking Water Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ObservationValue</IRI>
+        <Literal xml:lang="en">The result of an observation. It is a value which is charaterised by the value ifself and , when applicable, by a unit of measure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/ObservationValue</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ObservationValue</IRI>
+        <Literal xml:lang="en">Observation Value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/RadioactivityObject</IRI>
+        <Literal xml:lang="en">This class represents the radioactivity object. Examples are randon 22, nuclide, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/RadioactivityObject</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/RadioactivityObject</IRI>
+        <Literal xml:lang="en">Radioactivity Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SurfaceOrGroundwaterObservation</IRI>
+        <Literal xml:lang="en">The class of observations of surface and ground waters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/SurfaceOrGroundwaterObservation</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/SurfaceOrGroundwaterObservation</IRI>
+        <Literal xml:lang="en">Surface or Groundwater Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterBiologicalQualityParameterObservation</IRI>
+        <Literal xml:lang="en">Observation of biological quality elements parameters according to the European Environmental Agency (EEA): phytoplankton, macrophytes, phytobenthos, benthic invertebrate fauna and fish. The most frequently classified biological  quality elements are, for rivers, benthic invertebrates, phytobenthos/other aquatic flora/macrophytes and fish; for lakes, phytoplankton; and for transitional and coastal waters, phytoplankton and benthic invertebrates. (2018)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterBiologicalQualityParameterObservation</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterBiologicalQualityParameterObservation</IRI>
+        <Literal xml:lang="en">Water Biological Quality Parameter/Element Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterChemicalParameterObservation</IRI>
+        <Literal xml:lang="en">The class of all the observations of chemcal paraemeters of the water. Examples include the observations of the nickel, selenium, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterChemicalParameterObservation</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterChemicalParameterObservation</IRI>
+        <Literal xml:lang="en">Water Chemical Parameter Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterEmergingParametersObservation</IRI>
+        <Literal xml:lang="en">The class of all the observations of emerging paraemeters of the water. They are called emerging because of their interest in recent years.  Examples include the observations of the Thallium, perfluoroalkyl substances etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterEmergingParametersObservation</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterEmergingParametersObservation</IRI>
+        <Literal xml:lang="en">Water Emerging Parameter Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterHydromorphologicalParameterObservation</IRI>
+        <Literal xml:lang="en">Observation of hydromorphological elements according to the European Environmental Agency (EEA): hydrology, morphology, barriers. (2018)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterHydromorphologicalParameterObservation</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterHydromorphologicalParameterObservation</IRI>
+        <Literal xml:lang="en">Water Hydromorphological Parameter Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterIndicatorParameterObservation</IRI>
+        <Literal xml:lang="en">The class of all the observations of indicator paraemeters of the water. Examples include the observations of the colour, taste, conductivity, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterIndicatorParameterObservation</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterIndicatorParameterObservation</IRI>
+        <Literal xml:lang="en">Water Indicator Parameter Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterMicrobiologicalParameterObservation</IRI>
+        <Literal xml:lang="en">The class of all the observations of microbiological paraemeters of the water. Examples include the observations of the Escherichia coli, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterMicrobiologicalParameterObservation</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterMicrobiologicalParameterObservation</IRI>
+        <Literal xml:lang="en">Water Microbiological Parameter Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterObservableProperty</IRI>
+        <Literal xml:lang="en">An observable quality (parameter, characteristic) of the observation for a feature of interest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterObservableProperty</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterObservableProperty</IRI>
+        <Literal xml:lang="en">Water Observable Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterObservablePropertyObject</IRI>
+        <Literal xml:lang="en">The specific object of the property observed. Examples are: biological agents, chemical substances, and radioactivity objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterObservablePropertyObject</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterObservablePropertyObject</IRI>
+        <Literal xml:lang="en">Water Observable Property Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterObservablePropertyObjectType</IRI>
+        <Literal xml:lang="en">The type of the object of the water property observed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterObservablePropertyObjectType</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterObservablePropertyObjectType</IRI>
+        <Literal xml:lang="en">Water Observable Property Object Type </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterObservation</IRI>
+        <Literal xml:lang="en">A specific observation regarding water be it drinking water or surface or graoudwater.  It can be an observation related to quality parameters (e.g., the concentration of a specific chemical substance) or physical parameters (e.g., the level of water in a river) or the concentration of radioactivity that may apply for both drinking and surface/ground waters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterObservation</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterObservation</IRI>
+        <Literal xml:lang="en">Water Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterPhysicoChemicalParameterObservation</IRI>
+        <Literal xml:lang="en">Observation of physico-chemical elements according to the European Environmental Agency (EEA):  nutrients, organic pollution, acidification. (2018)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterPhysicoChemicalParameterObservation</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterPhysicoChemicalParameterObservation</IRI>
+        <Literal xml:lang="en">Water Physico-Chemical Parameter Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterRadioactivityObservation</IRI>
+        <Literal xml:lang="en">The class of observations related to the level of radioactivity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterRadioactivityObservation</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterRadioactivityObservation</IRI>
+        <Literal xml:lang="en">Water Radioactivity Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterSample</IRI>
+        <Literal xml:lang="en">A specific water feature which is intended to be representative of a FeatureOfInterest on which water observations may be made. They are used in situations where observations cannot be made directly on the ultimate feature of interest, either because the entire feature cannot be observed, or because it is more convenient to use a proxy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterSample</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterSample</IRI>
+        <Literal xml:lang="en">Water Sample</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WaterSampler</IRI>
+        <Literal xml:lang="en">Any device or monitoring object that is used to obtain a water sample.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/WaterSampler</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WaterSampler</IRI>
+        <Literal xml:lang="en">Water Sampler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/depth</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/depth</IRI>
+        <Literal xml:lang="en">depth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/hasBiologicalAgent</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasBiologicalAgent</IRI>
+        <Literal xml:lang="en">has biological agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/hasChemicalSubstance</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasChemicalSubstance</IRI>
+        <Literal xml:lang="en">has chemical substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/hasObservationSample</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasObservationSample</IRI>
+        <Literal xml:lang="en">has observation sample</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/hasRadioactivityObject</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasRadioactivityObject</IRI>
+        <Literal xml:lang="en">has radioactivity object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/hasResult</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasResult</IRI>
+        <Literal xml:lang="en">has result</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/hasWaterFeature</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasWaterFeature</IRI>
+        <Literal xml:lang="en">has water feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <IRI>/hasWaterFeature</IRI>
+        <Literal xml:lang="en">we are planning to move it in hydrography ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/hasWaterObservableProperty</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasWaterObservableProperty</IRI>
+        <Literal xml:lang="en">has water observable property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/hasWaterObservablePropertyObject</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>/hasWaterObservablePropertyObject</IRI>
+        <Literal xml:lang="en">has water observable property object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/isClassifiedBy</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/isClassifiedBy</IRI>
+        <Literal xml:lang="en">is classified by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/isObtainedBy</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/isObtainedBy</IRI>
+        <Literal xml:lang="en">is obtained by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/isSampleOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/isSampleOf</IRI>
+        <Literal xml:lang="en">is sample of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>/ofPropertyObject</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ofPropertyObject</IRI>
+        <Literal xml:lang="en">of property object</Literal>
+    </AnnotationAssertion>
+</Ontology>
 
 
-  <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/core/UnitOfMeasure">
-  </rdf:Description>
 
-  <rdf:Description rdf:about="https://w3id.org/environmental-data/onto/hydrography-ontology/WaterBody">
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeature"/>
-  </rdf:Description>
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
-  <owl:Ontology rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology">
-    <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
-    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
-    <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
-    <owl:imports rdf:resource="https://w3id.org/whow/onto/hydrography-ontology"/>
-    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-    <owl:imports rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/"/>
-    <owl:imports rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Created with TopBraid Composer</owl:versionInfo>
-    <skos:definition xml:lang="en">Ontology for describing WHOW project concepts for the water monitoring domain</skos:definition>
-    <skos:prefLabel xml:lang="en">Water Monitoring Ontology</skos:prefLabel>
-  </owl:Ontology>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/BiologicalQualityElementsParameterObservation">
-    <rdfs:label xml:lang="en">Biological quality elements Parameter Observation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation"/>
-    <skos:definition xml:lang="en">Observation of biological quality elements parameters according to the European Environmental Agency (EEA): phytoplankton, macrophytes, phytobenthos, benthic invertebrate fauna and fish. The most frequently classified biological  quality elements are, for rivers, benthic invertebrates, phytobenthos/other aquatic flora/macrophytes and fish; for lakes, phytoplankton; and for transitional and coastal waters, phytoplankton and benthic invertebrates. (2018)</skos:definition>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/ChemicalSubstance">
-    <rdfs:label xml:lang="en">Chemical Agent</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/RadioactivityObject"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/MicroBiologicalAgent"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation">
-    <rdfs:label xml:lang="en">Drinking Water Observation </rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/MicroBiologicalAgent">
-    <rdfs:label xml:lang="en">Microbiological agent </rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/RadioactivityObject"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/ChemicalSubstance"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/ObservationValue">
-    <rdfs:label xml:lang="en">Observation Value</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/RadioactivityObject">
-    <rdfs:label xml:lang="en">Radioactivity Object</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/MicroBiologicalAgent"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/ChemicalSubstance"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation">
-    <rdfs:label xml:lang="en">Surface or Groundwater observation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterChemicalParameterObservation">
-    <rdfs:label xml:lang="en">Water Chemical Observation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept">
-    <rdfs:comment xml:lang="en">An abstract class collecting all the WHOW concepts.</rdfs:comment>
-    <rdfs:label xml:lang="en">WHOW Concept </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <skos:prefLabel xml:lang="en">WHOW Concept </skos:prefLabel>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterEmergingParameters">
-    <rdfs:label xml:lang="en">Emerging parameters </rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeature">
-    <rdfs:label xml:lang="en">Water feature </rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeatureType">
-    <rdfs:label xml:lang="en">Water feature type </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterHydromorphologicalParameterObservation">
-    <rdfs:label xml:lang="en">Water Hydromorphological Parameter Observation </rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation"/>
-    <skos:definition xml:lang="en">Observation of hydromorphological elements according to the European Environmental Agency (EEA): hydrology, morphology, barriers. (2018)</skos:definition>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterIndicatorParameterObservation">
-    <rdfs:label xml:lang="en">Water Bioindicator Observation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterMicrobiologicalParameterObservation">
-    <rdfs:label xml:lang="en">Water Biotic Index Observation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservableProperty">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water observable Property</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/core/Parameter"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
-    <owl:equivalentClass rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject">
-    <rdfs:label xml:lang="en">Water observable Property Object</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObjectType">
-    <rdfs:label xml:lang="en">Water observable property object type </rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation">
-    <rdfs:label xml:lang="en">Water Observation </rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterPhysicoChemicalParameterObservation">
-    <rdfs:label xml:lang="en">Water Physico-Chemical Parameter Observation </rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/SurfaceOrGroundwaterObservation"/>
-    <skos:definition xml:lang="en">Observation of physico-chemical elements according to the European Environmental Agency (EEA):  nutrients, organic pollution, acidification. (2018)</skos:definition>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterRadioactivityObservation">
-    <rdfs:label xml:lang="en">Water Radioactivity Observation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/DrinkingWaterObservation"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterSample">
-    <rdfs:label xml:lang="en">Water Sample</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeature"/>
-    <skos:prefLabel xml:lang="en">Water Sample</skos:prefLabel>
-  </owl:Class>
-
-  <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/WaterSampler">
-    <rdfs:label xml:lang="en">WaterSampler</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterConcept"/>
-  </owl:Class>
-
-
-  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasChemicalSubstance">
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterChemicalParameterObservation"/>
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterPhysicoChemicalParameterObservation"/>
-    <rdfs:label xml:lang="en">has chemical substance </rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/ChemicalSubstance"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/isAssociatedWith"/>
-  </owl:ObjectProperty>
-
-
-  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasMicrobiologicalAgent">
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/BiologicalQualityElementsParameterObservation"/>
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterMicrobiologicalParameterObservation"/>
-    <rdfs:label xml:lang="en">has microbiological agent </rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/MicroBiologicalAgent"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/isAssociatedWith"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasObservationSample">
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
-    <rdfs:label xml:lang="en">has observation sample</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterSample"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasRadioactivityObject">
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterRadioactivityObservation"/>
-    <rdfs:label xml:lang="en">has radioactivity object </rdfs:label>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasResult">
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
-    <rdfs:label xml:lang="en">has result </rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/ObservationValue"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasWaterFeature">
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
-    <rdfs:label xml:lang="en">has water feature</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeature"/>
-    <rdfs:subPropertyOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/hasFeatureOfInterest"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasWaterFeatureType">
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeature"/>
-    <rdfs:label xml:lang="en">has water feature type </rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeatureType"/>
-    <skos:prefLabel xml:lang="en">has water feature type </skos:prefLabel>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/hasWaterObservedProperty">
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has water observed property</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservableProperty"/>
-    <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
-  </owl:ObjectProperty>
-
-
-  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/isAssociatedWith">
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservation"/>
-    <rdfs:label xml:lang="en">is associated with</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/isClassifiedBy">
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject"/>
-    <rdfs:label xml:lang="en">is classified by </rdfs:label>
-  </owl:ObjectProperty>
-
-
-  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/isObtainedBy">
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterSample"/>
-    <rdfs:label xml:lang="en">is obtained by</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterSampler"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/isSampleOf">
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterSample"/>
-    <rdfs:label xml:lang="en">is sample of</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterFeature"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring-ontology/ofPropertyObject">
-    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservableProperty"/>
-    <rdfs:label xml:lang="en">of property object </rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring-ontology/WaterObservablePropertyObject"/>
-  </owl:ObjectProperty>
-
-
-
-</rdf:RDF>
