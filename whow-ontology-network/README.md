@@ -30,7 +30,7 @@ The Hydrography ontology module represents a taxonomy of water bodies and the re
 
 The Water monitoring ontology module is an extension of the SOSA/SSN ontology for the water domain: it contributes to the water quality observational monitoring process, allowing to relate taxonomies derived from European Directives of parameters observed in water features with domain-specific value bounds and measurement units, along with monitoring facilities.
 
-![Figure 2: Water monitoring](images/water-monitoring-ontology-diagram.jpg)
+![Figure 2: Water monitoring](https://github.com/whow-project/ontology-network/blob/919432cc6a0ea1b17234c32305715fddce6fe9ce/whow-ontology-network/images/pattern%20solution%20images/water-observation_v2.jpg)
 
 ### [Water indicators ontology](https://raw.githubusercontent.com/whow-project/ontology-network/main/whow-ontology-network/water-indicators-ontology.ttl)
 
