@@ -8,7 +8,7 @@
 # imports: https://w3id.org/whow/onto/hydrography-ontology
 
 @prefix :        <https://w3id.org/whow/onto/water-monitoring-ontology/> .
-@prefix hydro:   <https://w3id.org/environmental-data/onto/hydrography-ontology/> .
+@prefix hydro:   <https://w3id.org/whow/onto/hydrography/> .
 @prefix inspire-mf:  <https://dati.isprambiente.it/ontology/inspire-mf/> .
 @prefix inspire-mf-ssn-sosa-aligns:  <https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
