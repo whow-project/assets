@@ -12,7 +12,7 @@
 # imports: https://w3id.org/whow/onto/water-monitoring-ontology
 
 @prefix :        <https://w3id.org/whow/onto/health-monitoring-ontology/> .
-@prefix CCStoICD9-data:  <https://w3id.org/health-data/onto/CCStoICD9-data/> .
+@prefix CCStoICD9-data:  <https://w3id.org/whow/data/CCStoICD9-data/>.
 @prefix ind:     <https://w3id.org/italia/onto/Indicator/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

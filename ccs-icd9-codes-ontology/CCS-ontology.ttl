@@ -1,15 +1,15 @@
-# baseURI: https://w3id.org/health-data/onto/CCS-ontology
+# baseURI: https://w3id.org/whow/onto/CCS-ontology
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: https://w3id.org/whow/onto/ICD9-CM-ontology
 
-@prefix :        <https://w3id.org/health-data/onto/CCS-ontology/> .
-@prefix icd9:    <https://w3id.org/health-data/onto/ICD9-CM-ontology/> .
+@prefix :        <https://w3id.org/whow/onto/CCS-ontology/> .
+@prefix icd9:    <https://w3id.org/whow/onto/ICD9-CM-ontology/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/health-data/onto/CCS-ontology>
+<https://w3id.org/whow/onto/CCS-ontology>
       rdf:type owl:Ontology ;
       rdfs:comment "Ontologia che modella i codici CCS (Clinical Classifications Software) e il relativo riferimenti ai codici aggregati IDC"@it ;
       owl:imports <http://www.w3.org/2004/02/skos/core> , <https://w3id.org/whow/onto/ICD9-CM-ontology> ;

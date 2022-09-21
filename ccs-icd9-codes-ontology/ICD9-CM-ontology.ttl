@@ -7,23 +7,23 @@
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/health-data/onto/ICD9-CM-ontology/ICD>
+<https://w3id.org/whow/onto/ICD9-CM-ontology/ICD>
       rdf:type owl:Class ;
       rdfs:comment "International Classification of Diseases Code"@it ;
       rdfs:label "ICD"@it ;
       rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> .
 
-<https://w3id.org/health-data/onto/ICD9-CM-ontology/ICDd>
+<https://w3id.org/whow/onto/ICD9-CM-ontology/ICDd>
       rdf:type owl:Class ;
       rdfs:comment "International Classification of Diseases Code - Disease"@it ;
       rdfs:label "ICDd"@it ;
-      rdfs:subClassOf <https://w3id.org/health-data/onto/ICD9-CM-ontology/ICD> .
+      rdfs:subClassOf <https://w3id.org/whow/onto/ICD9-CM-ontology/ICD> .
 
-<https://w3id.org/health-data/onto/ICD9-CM-ontology/ICDp>
+<https://w3id.org/whow/onto/ICD9-CM-ontology/ICDp>
       rdf:type owl:Class ;
       rdfs:comment "International Classification of Diseases Code - Procedures"@it ;
       rdfs:label "ICDp"^^xsd:string ;
-      rdfs:subClassOf <https://w3id.org/health-data/onto/ICD9-CM-ontology/ICD> .
+      rdfs:subClassOf <https://w3id.org/whow/onto/ICD9-CM-ontology/ICD> .
 
 <https://w3id.org/whow/onto/ICD9-CM-ontology>
       rdf:type owl:Ontology ;

@@ -3,20 +3,20 @@
 # imports: https://w3id.org/health-data/onto/CCS-ontology
 # imports: https://w3id.org/health-data/onto/ICD9-CM-data
 
-@prefix :        <https://w3id.org/health-data/onto/CCStoICD9-data/> .
-@prefix ccs-d:   <https://w3id.org/health-data/onto/CCS-data/> .
-@prefix ccs-m:   <https://w3id.org/health-data/onto/CCS-ontology/> .
+@prefix :        <https://w3id.org/whow/data/CCStoICD9-data/> .
+@prefix ccs-d:   <https://w3id.org/whow/data/CCS-data/> .
+@prefix ccs-m:   <https://w3id.org/whow/onto/CCS-ontology/> .
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
-@prefix icd9-d:  <https://w3id.org/health-data/onto/ICD9-CM-data/> .
-@prefix icd9-m:  <https://w3id.org/health-data/onto/ICD9-CM-ontology/> .
+@prefix icd9-d:  <https://w3id.org/whow/data/ICD9-CM-data/> .
+@prefix icd9-m:  <https://w3id.org/whow/onto/ICD9-CM-ontology/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/health-data/onto/CCStoICD9-data>
+<https://w3id.org/whow/data/CCStoICD9-data/>
       rdf:type owl:Ontology ;
-      owl:imports <https://w3id.org/health-data/onto/CCS-data> , <https://w3id.org/health-data/onto/CCS-ontology> , <https://w3id.org/health-data/onto/ICD9-CM-data> .
+      owl:imports <https://w3id.org/whow/data/CCS-data/> , <https://w3id.org/whow/onto/CCS-ontology/> , <https://w3id.org/whow/data/ICD9-CM-data/> .
 
 
 icd9-d:icd9- ccs-m:isAggregatedInCCScode ccs-d:CCS-0 .
