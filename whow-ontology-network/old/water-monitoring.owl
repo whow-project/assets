@@ -16,7 +16,6 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Import>https://dati.isprambiente.it/ontology/inspire-mf/</Import>
-    <Import>https://dati.isprambiente.it/ontology/places/</Import>
     <Import>https://w3id.org/whow/onto/hydrography</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:description"/>
@@ -30,9 +29,6 @@
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
         <Literal xml:lang="en">version 0.1</Literal>
     </Annotation>
-    <Declaration>
-        <Class abbreviatedIRI="skos:Concept"/>
-    </Declaration>
     <Declaration>
         <Class IRI="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest"/>
     </Declaration>
@@ -146,6 +142,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="/depth"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="skos:Concept"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="/BiologicalAgent"/>
@@ -384,20 +383,6 @@
     <SubClassOf>
         <Class IRI="/WaterSampler"/>
         <Class IRI="https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/WaterSampler"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://dati.isprambiente.it/ontology/places/hasMunicipality"/>
-            <Class IRI="https://dati.isprambiente.it/ontology/places/Municipality"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/WaterSampler"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://dati.isprambiente.it/ontology/places/hasProvince"/>
-            <Class IRI="https://dati.isprambiente.it/ontology/places/Province"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="/BiologicalAgent"/>
