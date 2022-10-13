@@ -1,0 +1,252 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":belongsToWaterBasin",
+    "someValuesFrom" : ":WaterBasin"
+  }, {
+    "@id" : "_:b1",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":WaterBasin",
+    "onProperty" : ":belongsToWaterBasin"
+  }, {
+    "@id" : "_:b2",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":WaterBasin",
+    "onProperty" : ":isSubWaterBasin"
+  }, {
+    "@id" : "dc:description",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dct:description",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dct:title",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "prov:wasDerivedFrom",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "inspire-mf:FeatureOfInterest",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "./",
+    "@type" : "owl:Ontology",
+    "dc:description" : {
+      "@id" : "https://raw.githubusercontent.com/whow-project/ontology-network/main/whow-ontology-network/images/hydrography-ontology.jpg"
+    },
+    "description" : {
+      "@language" : "en",
+      "@value" : "Ontology for describing the hydrography. It includes concepts such as water basins and the classification of water bodies"
+    },
+    "title" : {
+      "@language" : "en",
+      "@value" : "Hydrography Ontology"
+    },
+    "versionIRI" : ":0.1",
+    "versionInfo" : {
+      "@language" : "en",
+      "@value" : "version 0.1"
+    }
+  }, {
+    "@id" : ":CoastalWaterBody",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The class of coastal water body; that is, a marine water body bordering a coast"
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Coastal Water Body"
+    },
+    "subClassOf" : ":WaterBody",
+    "wasDerivedFrom" : "http://inspire.ec.europa.eu/featureconcept/WFDCoastalWater"
+  }, {
+    "@id" : ":GroundwaterBody",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A distinct volume of groundwater within an aquifer or system of aquifers, which is hydraulically isolated from nearby groundwater bodies."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Groundwater Body"
+    },
+    "subClassOf" : ":WaterBody",
+    "wasDerivedFrom" : "http://inspire.ec.europa.eu/featureconcept/GroundWaterBody"
+  }, {
+    "@id" : ":LakeWaterBody",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A body of standing inland surface water."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Lake Water Body"
+    },
+    "subClassOf" : ":WaterBody",
+    "wasDerivedFrom" : "http://inspire.ec.europa.eu/featureconcept/WFDLake"
+  }, {
+    "@id" : ":MarineWater",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The waters, the seabed and subsoil on the seaward side of the baseline from which the extent of territorial waters is measured"
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Marine Water"
+    },
+    "subClassOf" : ":WaterBody"
+  }, {
+    "@id" : ":RiverWaterBody",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A body of inland water flowing for the most part on the surface of the land but which may flow underground for part of its course."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "River Water Body"
+    },
+    "subClassOf" : ":WaterBody",
+    "wasDerivedFrom" : "http://inspire.ec.europa.eu/featureconcept/WFDRiver"
+  }, {
+    "@id" : ":TransitionalWaterBody",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Bodies of surface water in the vicinity of river mouths which are partly saline in character as a result of their proximity to coastal waters but which are substantially influenced by freshwater flows."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Transitional Water Body"
+    },
+    "subClassOf" : ":WaterBody",
+    "wasDerivedFrom" : "http://inspire.ec.europa.eu/featureconcept/WFDTransitionalWater"
+  }, {
+    "@id" : ":WaterBasin",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Basin"
+    },
+    "subClassOf" : [ "_:b2", ":WaterFeature" ]
+  }, {
+    "@id" : ":WaterBody",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Abstract class representing a WFD - Water Framework Directive body of surface water or body of groundwater"
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Body"
+    },
+    "subClassOf" : [ "_:b1", "_:b0", ":WaterFeature" ],
+    "wasDerivedFrom" : "http://inspire.ec.europa.eu/featureconcept/WFDWaterBody"
+  }, {
+    "@id" : ":WaterFeature",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A specific feature of interest in the hydrography context."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Feature"
+    },
+    "subClassOf" : "inspire-mf:FeatureOfInterest"
+  }, {
+    "@id" : ":belongsToWaterBasin",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "This property links the water body to the water basin it belongs"
+    },
+    "domain" : ":WaterBody",
+    "label" : {
+      "@language" : "en",
+      "@value" : "belongs to water basin"
+    },
+    "range" : ":WaterBasin"
+  }, {
+    "@id" : ":isSubWaterBasin",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "This property is used to represent hierarchies of water basin since water basins can be formed by other water basins."
+    },
+    "domain" : ":WaterBasin",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is sub water basin"
+    },
+    "range" : ":WaterBasin"
+  } ],
+  "@id" : "urn:x-arq:DefaultGraphNode",
+  "@context" : {
+    "someValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
+      "@type" : "@id"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "wasDerivedFrom" : {
+      "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+      "@type" : "@id"
+    },
+    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "allValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
+    "title" : "http://purl.org/dc/terms/title",
+    "description" : "http://purl.org/dc/terms/description",
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
+    "@base" : "https://w3id.org/whow/onto/hydrography/",
+    "" : "https://w3id.org/whow/onto/hydrography/",
+    "dct" : "http://purl.org/dc/terms/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "inspire-mf" : "https://dati.isprambiente.it/ontology/inspire-mf/",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "prov" : "http://www.w3.org/ns/prov#",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}

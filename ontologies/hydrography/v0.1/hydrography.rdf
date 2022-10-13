@@ -1,0 +1,134 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="https://w3id.org/whow/onto/hydrography/"
+    xmlns:inspire-mf="https://dati.isprambiente.it/ontology/inspire-mf/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" >
+  <rdf:Description rdf:about="https://w3id.org/whow/onto/hydrography/LakeWaterBody">
+    <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/WFDLake"/>
+    <rdfs:label xml:lang="en">Lake Water Body</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/hydrography"/>
+    <rdfs:comment xml:lang="en">A body of standing inland surface water.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/hydrography/WaterBody"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/onto/hydrography">
+    <owl:versionInfo xml:lang="en">version 0.1</owl:versionInfo>
+    <dct:title xml:lang="en">Hydrography Ontology</dct:title>
+    <dct:description xml:lang="en">Ontology for describing the hydrography. It includes concepts such as water basins and the classification of water bodies</dct:description>
+    <dc:description rdf:resource="https://raw.githubusercontent.com/whow-project/ontology-network/main/whow-ontology-network/images/hydrography-ontology.jpg"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/whow/onto/hydrography/0.1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/onto/hydrography/WaterBody">
+    <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/WFDWaterBody"/>
+    <rdfs:label xml:lang="en">Water Body</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/hydrography"/>
+    <rdfs:comment xml:lang="en">Abstract class representing a WFD - Water Framework Directive body of surface water or body of groundwater</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/onto/hydrography/isSubWaterBasin">
+    <rdfs:label xml:lang="en">is sub water basin</rdfs:label>
+    <rdfs:comment xml:lang="en">This property is used to represent hierarchies of water basin since water basins can be formed by other water basins.</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/whow/onto/hydrography/WaterBasin"/>
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/hydrography/WaterBasin"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/onto/hydrography/MarineWater">
+    <rdfs:label xml:lang="en">Marine Water</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/hydrography"/>
+    <rdfs:comment xml:lang="en">The waters, the seabed and subsoil on the seaward side of the baseline from which the extent of territorial waters is measured</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/hydrography/WaterBody"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/onto/hydrography/belongsToWaterBasin">
+    <rdfs:label xml:lang="en">belongs to water basin</rdfs:label>
+    <rdfs:comment xml:lang="en">This property links the water body to the water basin it belongs</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/whow/onto/hydrography/WaterBasin"/>
+    <rdfs:domain rdf:resource="https://w3id.org/whow/onto/hydrography/WaterBody"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/hydrography/WaterBasin"/>
+    <owl:onProperty rdf:resource="https://w3id.org/whow/onto/hydrography/belongsToWaterBasin"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/onto/hydrography/CoastalWaterBody">
+    <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/WFDCoastalWater"/>
+    <rdfs:label xml:lang="en">Coastal Water Body</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/hydrography"/>
+    <rdfs:comment xml:lang="en">The class of coastal water body; that is, a marine water body bordering a coast</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/hydrography/WaterBody"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/onto/hydrography/RiverWaterBody">
+    <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/WFDRiver"/>
+    <rdfs:label xml:lang="en">River Water Body</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/hydrography"/>
+    <rdfs:comment xml:lang="en">A body of inland water flowing for the most part on the surface of the land but which may flow underground for part of its course.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/hydrography/WaterBody"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/onto/hydrography/WaterBasin">
+    <rdfs:label xml:lang="en">Water Basin</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/hydrography"/>
+    <rdfs:subClassOf rdf:nodeID="A2"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/onto/hydrography/TransitionalWaterBody">
+    <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/WFDTransitionalWater"/>
+    <rdfs:label xml:lang="en">Transitional Water Body</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/hydrography"/>
+    <rdfs:comment xml:lang="en">Bodies of surface water in the vicinity of river mouths which are partly saline in character as a result of their proximity to coastal waters but which are substantially influenced by freshwater flows.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/hydrography/WaterBody"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/whow/onto/hydrography/WaterBasin"/>
+    <owl:onProperty rdf:resource="https://w3id.org/whow/onto/hydrography/belongsToWaterBasin"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/onto/hydrography/WaterFeature">
+    <rdfs:label xml:lang="en">Water Feature</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/hydrography"/>
+    <rdfs:comment xml:lang="en">A specific feature of interest in the hydrography context.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/onto/hydrography/GroundwaterBody">
+    <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/GroundWaterBody"/>
+    <rdfs:label xml:lang="en">Groundwater Body</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/hydrography"/>
+    <rdfs:comment xml:lang="en">A distinct volume of groundwater within an aquifer or system of aquifers, which is hydraulically isolated from nearby groundwater bodies.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/hydrography/WaterBody"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/hydrography/WaterBasin"/>
+    <owl:onProperty rdf:resource="https://w3id.org/whow/onto/hydrography/isSubWaterBasin"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+</rdf:RDF>
