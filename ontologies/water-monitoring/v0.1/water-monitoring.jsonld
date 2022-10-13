@@ -1,0 +1,650 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":hasWaterObservableProperty",
+    "someValuesFrom" : ":WaterObservableProperty"
+  }, {
+    "@id" : "_:b10",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":RadioactivityObject",
+    "onProperty" : ":hasRadioactivityObject"
+  }, {
+    "@id" : "_:b11",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ ":WaterBiologicalQualityParameterObservation", ":WaterMicrobiologicalParameterObservation" ]
+    }
+  }, {
+    "@id" : "_:b12",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":isSampleOf",
+    "someValuesFrom" : "../../hydrography/WaterFeature"
+  }, {
+    "@id" : "_:b13",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":isObtainedBy",
+    "someValuesFrom" : ":WaterSampler"
+  }, {
+    "@id" : "_:b14",
+    "@type" : "owl:Restriction",
+    "onProperty" : "https://dati.isprambiente.it/ontology/places/hasMunicipality",
+    "someValuesFrom" : "https://dati.isprambiente.it/ontology/places/Municipality"
+  }, {
+    "@id" : "_:b15",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":WaterObservableProperty",
+    "onProperty" : ":hasWaterObservableProperty"
+  }, {
+    "@id" : "_:b16",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":hasChemicalSubstance",
+    "someValuesFrom" : ":ChemicalSubstance"
+  }, {
+    "@id" : "_:b17",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":BiologicalAgent",
+    "onProperty" : ":hasBiologicalAgent"
+  }, {
+    "@id" : "_:b18",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":hasBiologicalAgent",
+    "someValuesFrom" : ":BiologicalAgent"
+  }, {
+    "@id" : "_:b19",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":WaterObservablePropertyObject",
+    "onProperty" : ":ofPropertyObject"
+  }, {
+    "@id" : "_:b20",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":hasResult",
+    "someValuesFrom" : ":ObservationValue"
+  }, {
+    "@id" : "_:b21",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":WaterObservablePropertyObjectType",
+    "onProperty" : ":isClassifiedBy"
+  }, {
+    "@id" : "_:b22",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":WaterSample",
+    "onProperty" : ":hasObservationSample"
+  }, {
+    "@id" : "_:b23",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":ObservationValue",
+    "onProperty" : ":hasResult"
+  }, {
+    "@id" : "_:b24",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":hasRadioactivityObject",
+    "someValuesFrom" : ":RadioactivityObject"
+  }, {
+    "@id" : "_:b25",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ ":WaterChemicalParameterObservation", ":WaterPhysicoChemicalParameterObservation" ]
+    }
+  }, {
+    "@id" : "_:b26",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":WaterObservablePropertyObject",
+    "onProperty" : ":hasWaterObservablePropertyObject"
+  }, {
+    "@id" : "_:b27",
+    "@type" : "owl:Restriction",
+    "onProperty" : "https://dati.isprambiente.it/ontology/places/hasProvince",
+    "someValuesFrom" : "https://dati.isprambiente.it/ontology/places/Province"
+  }, {
+    "@id" : "_:b3",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":WaterSampler",
+    "onProperty" : ":isObtainedBy"
+  }, {
+    "@id" : "_:b4",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "rdfs:Literal",
+    "onProperty" : ":depth"
+  }, {
+    "@id" : "_:b5",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":BiologicalAgent",
+    "onProperty" : ":hasBiologicalAgent"
+  }, {
+    "@id" : "_:b6",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":hasBiologicalAgent",
+    "someValuesFrom" : ":BiologicalAgent"
+  }, {
+    "@id" : "_:b7",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":ChemicalSubstance",
+    "onProperty" : ":hasChemicalSubstance"
+  }, {
+    "@id" : "_:b8",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":ChemicalSubstance",
+    "onProperty" : ":hasChemicalSubstance"
+  }, {
+    "@id" : "_:b9",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":hasChemicalSubstance",
+    "someValuesFrom" : ":ChemicalSubstance"
+  }, {
+    "@id" : "skos:Concept",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/Observation",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/hasFeatureOfInterest",
+    "@type" : "owl:ObjectProperty"
+  }, {
+    "@id" : "./",
+    "@type" : "owl:Ontology",
+    "description" : {
+      "@language" : "en",
+      "@value" : "The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements."
+    },
+    "title" : {
+      "@language" : "en",
+      "@value" : "Water Monitoring Ontology"
+    },
+    "imports" : [ "../../hydrography", "https://dati.isprambiente.it/ontology/places/", "https://dati.isprambiente.it/ontology/inspire-mf/" ],
+    "versionIRI" : ":0.1",
+    "versionInfo" : {
+      "@language" : "en",
+      "@value" : "version 0.1"
+    }
+  }, {
+    "@id" : ":BiologicalAgent",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "This class represents all the biological and microbiological agents that are available in the water be it surface and groundwater or drinking water (e.g., phytoplankton, macrophytes, phytobenthos, benthic invertebrate fauna and fish, bacteria such as coliforms)."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Biological Agent"
+    },
+    "subClassOf" : ":WaterObservablePropertyObject",
+    "disjointWith" : [ ":RadioactivityObject", ":ChemicalSubstance" ]
+  }, {
+    "@id" : ":ChemicalSubstance",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "This class represents the chemical substances. A controlled vocabulary can be constructed for this class based on the CAS numbering of the chemical substances."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Chemical Substance"
+    },
+    "subClassOf" : ":WaterObservablePropertyObject",
+    "disjointWith" : ":RadioactivityObject"
+  }, {
+    "@id" : ":DrinkingWaterObservation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The class of observations of water intended for human consumption."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Drinking Water Observation"
+    },
+    "subClassOf" : ":WaterObservation",
+    "disjointWith" : ":SurfaceOrGroundwaterObservation"
+  }, {
+    "@id" : ":ObservationValue",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The result of an observation. It is a value which is charaterised by the value ifself and , when applicable, by a unit of measure."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Observation Value"
+    },
+    "subClassOf" : "https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue"
+  }, {
+    "@id" : ":RadioactivityObject",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "This class represents the radioactivity object. Examples are randon 22, nuclide, etc."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Radioactivity Object"
+    },
+    "subClassOf" : ":WaterObservablePropertyObject"
+  }, {
+    "@id" : ":SurfaceOrGroundwaterObservation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The class of observations of surface and ground waters."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Surface or Groundwater Observation"
+    },
+    "subClassOf" : ":WaterObservation"
+  }, {
+    "@id" : ":WaterBiologicalQualityParameterObservation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Observation of biological quality elements parameters according to the European Environmental Agency (EEA): phytoplankton, macrophytes, phytobenthos, benthic invertebrate fauna and fish. The most frequently classified biological  quality elements are, for rivers, benthic invertebrates, phytobenthos/other aquatic flora/macrophytes and fish; for lakes, phytoplankton; and for transitional and coastal waters, phytoplankton and benthic invertebrates. (2018)"
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Biological Quality Parameter/Element Observation"
+    },
+    "subClassOf" : [ "_:b17", "_:b18", ":SurfaceOrGroundwaterObservation" ],
+    "disjointWith" : [ ":WaterPhysicoChemicalParameterObservation", ":WaterHydromorphologicalParameterObservation" ]
+  }, {
+    "@id" : ":WaterChemicalParameterObservation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The class of all the observations of chemcal paraemeters of the water. Examples include the observations of the nickel, selenium, etc."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Chemical Parameter Observation"
+    },
+    "subClassOf" : [ "_:b8", "_:b9", ":DrinkingWaterObservation" ],
+    "disjointWith" : [ ":WaterMicrobiologicalParameterObservation", ":WaterIndicatorParameterObservation" ]
+  }, {
+    "@id" : ":WaterEmergingParametersObservation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The class of all the observations of emerging paraemeters of the water. They are called emerging because of their interest in recent years.  Examples include the observations of the Thallium, perfluoroalkyl substances etc."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Emerging Parameter Observation"
+    },
+    "subClassOf" : ":DrinkingWaterObservation",
+    "disjointWith" : ":WaterMicrobiologicalParameterObservation"
+  }, {
+    "@id" : ":WaterHydromorphologicalParameterObservation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Observation of hydromorphological elements according to the European Environmental Agency (EEA): hydrology, morphology, barriers. (2018)"
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Hydromorphological Parameter Observation"
+    },
+    "subClassOf" : ":SurfaceOrGroundwaterObservation",
+    "disjointWith" : ":WaterPhysicoChemicalParameterObservation"
+  }, {
+    "@id" : ":WaterIndicatorParameterObservation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The class of all the observations of indicator paraemeters of the water. Examples include the observations of the colour, taste, conductivity, etc."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Indicator Parameter Observation"
+    },
+    "subClassOf" : ":DrinkingWaterObservation",
+    "disjointWith" : ":WaterMicrobiologicalParameterObservation"
+  }, {
+    "@id" : ":WaterMicrobiologicalParameterObservation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The class of all the observations of microbiological paraemeters of the water. Examples include the observations of the Escherichia coli, etc."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Microbiological Parameter Observation"
+    },
+    "subClassOf" : [ "_:b5", "_:b6", ":DrinkingWaterObservation" ]
+  }, {
+    "@id" : ":WaterObservableProperty",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An observable quality (parameter, characteristic) of the observation for a feature of interest."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Observable Property"
+    },
+    "subClassOf" : [ "_:b19", "https://dati.isprambiente.it/ontology/inspire-mf/ObservationParameter" ]
+  }, {
+    "@id" : ":WaterObservablePropertyObject",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The specific object of the property observed. Examples are: biological agents, chemical substances, and radioactivity objects"
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Observable Property Object"
+    },
+    "subClassOf" : [ "_:b21", "https://dati.isprambiente.it/ontology/top/Concept", "skos:Concept" ]
+  }, {
+    "@id" : ":WaterObservablePropertyObjectType",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The type of the object of the water property observed."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Observable Property Object Type "
+    },
+    "subClassOf" : "https://dati.isprambiente.it/ontology/top/Characteristic"
+  }, {
+    "@id" : ":WaterObservation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A specific observation regarding water be it drinking water or surface or graoudwater.  It can be an observation related to quality parameters (e.g., the concentration of a specific chemical substance) or physical parameters (e.g., the level of water in a river) or the concentration of radioactivity that may apply for both drinking and surface/ground waters"
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Observation"
+    },
+    "subClassOf" : [ "_:b20", "_:b15", "_:b26", "https://dati.isprambiente.it/ontology/inspire-mf/Observation", "_:b0", "_:b22", "_:b23" ]
+  }, {
+    "@id" : ":WaterPhysicoChemicalParameterObservation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Observation of physico-chemical elements according to the European Environmental Agency (EEA):  nutrients, organic pollution, acidification. (2018)"
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Physico-Chemical Parameter Observation"
+    },
+    "subClassOf" : [ "_:b7", "_:b16", ":SurfaceOrGroundwaterObservation" ]
+  }, {
+    "@id" : ":WaterRadioactivityObservation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The class of observations related to the level of radioactivity."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Radioactivity Observation"
+    },
+    "subClassOf" : [ "_:b10", "_:b24", ":WaterObservation" ]
+  }, {
+    "@id" : ":WaterSample",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A specific water feature which is intended to be representative of a FeatureOfInterest on which water observations may be made. They are used in situations where observations cannot be made directly on the ultimate feature of interest, either because the entire feature cannot be observed, or because it is more convenient to use a proxy"
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Sample"
+    },
+    "subClassOf" : [ "_:b4", "_:b3", "_:b12", "_:b13", "../../hydrography/WaterFeature" ]
+  }, {
+    "@id" : ":WaterSampler",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Any device or monitoring object that is used to obtain a water sample."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Water Sampler"
+    },
+    "subClassOf" : [ "_:b27", "_:b14", "https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility" ]
+  }, {
+    "@id" : ":depth",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : ":WaterSample",
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "depth"
+    },
+    "range" : "rdfs:Literal"
+  }, {
+    "@id" : ":hasBiologicalAgent",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "_:b11",
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has biological agent"
+    },
+    "range" : ":BiologicalAgent",
+    "subPropertyOf" : ":hasWaterObservablePropertyObject"
+  }, {
+    "@id" : ":hasChemicalSubstance",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "_:b25",
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has chemical substance"
+    },
+    "range" : ":ChemicalSubstance",
+    "subPropertyOf" : ":hasWaterObservablePropertyObject"
+  }, {
+    "@id" : ":hasObservationSample",
+    "@type" : "owl:ObjectProperty",
+    "domain" : ":WaterObservation",
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has observation sample"
+    },
+    "range" : ":WaterSample"
+  }, {
+    "@id" : ":hasRadioactivityObject",
+    "@type" : "owl:ObjectProperty",
+    "domain" : ":WaterRadioactivityObservation",
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has radioactivity object"
+    },
+    "range" : ":RadioactivityObject",
+    "subPropertyOf" : ":hasWaterObservablePropertyObject"
+  }, {
+    "@id" : ":hasResult",
+    "@type" : "owl:ObjectProperty",
+    "domain" : ":WaterObservation",
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has result"
+    },
+    "range" : ":ObservationValue"
+  }, {
+    "@id" : ":hasWaterFeature",
+    "@type" : "owl:ObjectProperty",
+    "domain" : ":WaterObservation",
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has water feature"
+    },
+    "range" : "../../hydrography/WaterFeature",
+    "subPropertyOf" : "https://dati.isprambiente.it/ontology/inspire-mf/hasFeatureOfInterest",
+    "versionInfo" : {
+      "@language" : "en",
+      "@value" : "we are planning to move it in hydrography ontology"
+    }
+  }, {
+    "@id" : ":hasWaterObservableProperty",
+    "@type" : "owl:ObjectProperty",
+    "domain" : ":WaterObservation",
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has water observable property"
+    },
+    "range" : ":WaterObservableProperty"
+  }, {
+    "@id" : ":hasWaterObservablePropertyObject",
+    "@type" : "owl:ObjectProperty",
+    "domain" : ":WaterObservation",
+    "isDefinedBy" : "./",
+    "range" : ":WaterObservablePropertyObject",
+    "seeAlso" : {
+      "@language" : "en",
+      "@value" : "has water observable property object"
+    }
+  }, {
+    "@id" : ":isClassifiedBy",
+    "@type" : "owl:ObjectProperty",
+    "domain" : ":WaterObservablePropertyObject",
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is classified by"
+    },
+    "range" : ":WaterObservablePropertyObjectType"
+  }, {
+    "@id" : ":isObtainedBy",
+    "@type" : "owl:ObjectProperty",
+    "domain" : ":WaterSample",
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is obtained by"
+    },
+    "range" : ":WaterSampler"
+  }, {
+    "@id" : ":isSampleOf",
+    "@type" : "owl:ObjectProperty",
+    "domain" : ":WaterSample",
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is sample of"
+    },
+    "range" : "../../hydrography/WaterFeature"
+  }, {
+    "@id" : ":ofPropertyObject",
+    "@type" : "owl:ObjectProperty",
+    "domain" : ":WaterObservableProperty",
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "of property object"
+    },
+    "range" : ":WaterObservablePropertyObject"
+  } ],
+  "@id" : "urn:x-arq:DefaultGraphNode",
+  "@context" : {
+    "someValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
+      "@type" : "@id"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
+    "allValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "@type" : "@id"
+    },
+    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "disjointWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#disjointWith",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
+    "seeAlso" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+      "@type" : "@id"
+    },
+    "title" : "http://purl.org/dc/terms/title",
+    "description" : "http://purl.org/dc/terms/description",
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
+    "@base" : "https://w3id.org/whow/onto/water-monitoring/",
+    "" : "https://w3id.org/whow/onto/water-monitoring/",
+    "dct" : "http://purl.org/dc/terms/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+  }
+}
