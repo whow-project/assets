@@ -1,0 +1,121 @@
+# baseURI: https://w3id.org/whow/onto/health-monitoring-ontology
+# imports: http://purl.org/dc/terms/
+# imports: http://www.w3.org/2006/vcard/ns
+# imports: http://www.w3.org/ns/dcat
+# imports: http://www.w3.org/ns/prov
+# imports: http://www.w3.org/ns/sosa/
+# imports: http://xmlns.com/foaf/0.1/
+# imports: https://dati.isprambiente.it/ontology/inspire-mf/
+# imports: https://w3id.org/health-data/onto/CCStoICD9-data
+# imports: https://w3id.org/italia/onto/Indicator
+# imports: https://w3id.org/whow/onto/hydrography-ontology
+# imports: https://w3id.org/whow/onto/water-monitoring-ontology
+
+@prefix :        <https://w3id.org/whow/onto/health-monitoring-ontology/> .
+@prefix CCStoICD9-data:  <https://w3id.org/whow/data/CCStoICD9-data/>.
+@prefix ind:     <https://w3id.org/italia/onto/Indicator/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix w-mon:   <https://w3id.org/whow/onto/water-monitoring-ontology/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/ATS>
+      rdf:type owl:Class ;
+      rdfs:label "ATS "@en ;
+      rdfs:subClassOf <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConcept> , <https://dati.isprambiente.it/ontology/core/Entity> .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/ATScode>
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain <https://w3id.org/environmental-data/onto/health-monitoring-ontology/ATS> ;
+      rdfs:label "ATS code "@en ;
+      rdfs:range xsd:string .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/DeathCause>
+      rdf:type owl:Class ;
+      rdfs:label "Death Cause "@en ;
+      rdfs:subClassOf <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConcept> .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConcept>
+      rdf:type owl:Class ;
+      rdfs:label "HealthConcept "@en ;
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Entity> ;
+      skos:note "TODO: Temporaneo"^^xsd:string .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConditionsDeathCauseObservation>
+      rdf:type owl:Class ;
+      rdfs:label "Health Condition Death Cause Observation "@en ;
+      rdfs:subClassOf <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConcept> , <https://dati.isprambiente.it/ontology/inspire-mf/Observation> .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/Hospitalization>
+      rdf:type owl:Class ;
+      rdfs:label "Hospitalization "@en ;
+      rdfs:subClassOf <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConcept> .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/InfectiousDiseasesObservation>
+      rdf:type owl:Class ;
+      rdfs:label "Infectious Diseases Observation "@en ;
+      rdfs:subClassOf <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConcept> , <https://dati.isprambiente.it/ontology/inspire-mf/Observation> .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/ageRangeOfPatient>
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain <https://w3id.org/environmental-data/onto/health-monitoring-ontology/InfectiousDiseasesObservation> ;
+      rdfs:label "age range of patient "@en ;
+      rdfs:range xsd:string .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/existingVaccine>
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain <https://w3id.org/environmental-data/onto/health-monitoring-ontology/InfectiousDiseasesObservation> ;
+      rdfs:label "existing vaccine "@en ;
+      rdfs:range xsd:boolean .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/genderOfPatient>
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain
+              [ rdf:type owl:Class ;
+                owl:unionOf (<https://w3id.org/environmental-data/onto/health-monitoring-ontology/InfectiousDiseasesObservation> <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConditionsDeathCauseObservation>)
+              ] ;
+      rdfs:label "gender of patient "@en ;
+      rdfs:range xsd:string .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/hasDeathCause>
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConditionsDeathCauseObservation> ;
+      rdfs:label "has death cause "@en ;
+      rdfs:range <https://w3id.org/environmental-data/onto/health-monitoring-ontology/DeathCause> .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/hasHospitalizationRate>
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain <https://w3id.org/environmental-data/onto/health-monitoring-ontology/Hospitalization> ;
+      rdfs:label "has hospitalization rate "@en ;
+      rdfs:range xsd:float .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/hasNumberOfDeaths>
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain <https://w3id.org/environmental-data/onto/health-monitoring-ontology/HealthConditionsDeathCauseObservation> ;
+      rdfs:label "has number of deaths "@en ;
+      rdfs:range xsd:float .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/numberOfMedicalPractices>
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain <https://w3id.org/environmental-data/onto/health-monitoring-ontology/InfectiousDiseasesObservation> ;
+      rdfs:label "number of medical practices "@en ;
+      rdfs:range xsd:float .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/relatedToATS>
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain <https://w3id.org/environmental-data/onto/health-monitoring-ontology/Hospitalization> ;
+      rdfs:label "related to ATS "@en ;
+      rdfs:range <https://w3id.org/environmental-data/onto/health-monitoring-ontology/ATS> .
+
+<https://w3id.org/environmental-data/onto/health-monitoring-ontology/relatedToDiagnosis>
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain <https://w3id.org/environmental-data/onto/health-monitoring-ontology/Hospitalization> ;
+      rdfs:label "related to diagnosis "@en ;
+      rdfs:range <https://w3id.org/health-data/onto/CCS-ontology/CCSd> .
+
+<https://w3id.org/whow/onto/health-monitoring-ontology>
+      rdf:type owl:Ontology ;
+      owl:imports <https://w3id.org/italia/onto/Indicator> , <http://www.w3.org/ns/prov> , <https://w3id.org/whow/onto/hydrography-ontology> , <http://purl.org/dc/terms/> , <http://www.w3.org/ns/sosa/> , <http://www.w3.org/2006/vcard/ns> , <https://w3id.org/health-data/onto/CCStoICD9-data> , <https://dati.isprambiente.it/ontology/inspire-mf/> , <https://w3id.org/whow/onto/water-monitoring-ontology> , <http://xmlns.com/foaf/0.1/> , <http://www.w3.org/ns/dcat> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .

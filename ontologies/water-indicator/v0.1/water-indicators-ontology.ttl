@@ -1,0 +1,96 @@
+# baseURI: https://w3id.org/whow/onto/water-indicators-ontology
+# imports: http://purl.org/dc/terms/
+# imports: http://www.w3.org/2006/vcard/ns
+# imports: http://www.w3.org/ns/dcat
+# imports: http://www.w3.org/ns/prov
+# imports: http://www.w3.org/ns/sosa/
+# imports: http://xmlns.com/foaf/0.1/
+# imports: https://w3id.org/italia/onto/Indicator
+# imports: https://w3id.org/whow/onto/hydrography-ontology
+# imports: https://w3id.org/whow/onto/water-monitoring-ontology
+
+@prefix :        <https://w3id.org/whow/onto/water-indicators-ontology/> .
+@prefix ind:     <https://w3id.org/italia/onto/Indicator/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix w-mon:   <https://w3id.org/whow/onto/water-monitoring-ontology/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/environmental-data/onto/water-indicators-ontology/ChemicalStateIndicator>
+      rdf:type owl:Class ;
+      rdfs:label "Chemical state indicator "@en ;
+      rdfs:subClassOf <https://w3id.org/environmental-data/onto/water-indicators-ontology/WaterIndicator> .
+
+<https://w3id.org/environmental-data/onto/water-indicators-ontology/LIMecoQualityClass>
+      rdf:type owl:Class ;
+      rdfs:label "LIMeco Quality Class "@en ;
+      rdfs:subClassOf w-mon:WaterQualityClass ;
+      skos:note "Attenzione utilizzata restriction verso il value Average in quanto tutti i parametri di LTLeco quality class hanno una metrica che è la media"^^xsd:string .
+
+<https://w3id.org/environmental-data/onto/water-indicators-ontology/LTLecoQualityClass>
+      rdf:type owl:Class ;
+      rdfs:label "LTLeco Quality Class "@en ;
+      rdfs:subClassOf w-mon:WaterQualityClass ;
+      skos:note "Attenzione utilizzata restriction verso il value Average in quanto tutti i parametri di LTLeco quality class hanno una metrica che è la media"^^xsd:string .
+
+<https://w3id.org/environmental-data/onto/water-indicators-ontology/WaterIndicator>
+      rdf:type owl:Class ;
+      rdfs:label "Water indicator "@en ;
+      rdfs:subClassOf ind:Indicator .
+
+<https://w3id.org/environmental-data/onto/water-indicators-ontology/WaterIndicatorCalculation>
+      rdf:type owl:Class ;
+      rdfs:label "Water Indicator Calculation "@en ;
+      rdfs:subClassOf ind:IndicatorCalculation .
+
+<https://w3id.org/environmental-data/onto/water-indicators-ontology/hasIndicatorMonitoringType>
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain w-mon:Metadata ;
+      rdfs:label "has indicator monitoring type "@en ;
+      rdfs:range xsd:string .
+
+<https://w3id.org/environmental-data/onto/water-indicators-ontology/hasLIMecoClass>
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has LIMeco class "@en ;
+      rdfs:range <https://w3id.org/environmental-data/onto/water-indicators-ontology/LIMecoQualityClass> ;
+      rdfs:subPropertyOf w-mon:hasWaterQualityClass .
+
+<https://w3id.org/environmental-data/onto/water-indicators-ontology/hasLTLecoClass>
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "has LTLeco class "@en ;
+      rdfs:range <https://w3id.org/environmental-data/onto/water-indicators-ontology/LTLecoQualityClass> ;
+      rdfs:subPropertyOf w-mon:hasWaterQualityClass .
+
+<https://w3id.org/environmental-data/onto/water-indicators-ontology/hasSubCalculation>
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain <https://w3id.org/environmental-data/onto/water-indicators-ontology/WaterIndicatorCalculation> ;
+      rdfs:label "has sub-calculation "@en ;
+      rdfs:range <https://w3id.org/environmental-data/onto/water-indicators-ontology/WaterIndicatorCalculation> .
+
+<https://w3id.org/environmental-data/onto/water-indicators-ontology/hasWaterFeature>
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain <https://w3id.org/environmental-data/onto/water-indicators-ontology/WaterIndicator> ;
+      rdfs:label "has water feature "@en ;
+      rdfs:range w-mon:WaterFeature .
+
+<https://w3id.org/environmental-data/onto/water-indicators-ontology/hasWaterIndicator>
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain w-mon:WaterQualityParameterObservation ;
+      rdfs:label "has water indicator "@en ;
+      rdfs:range <https://w3id.org/environmental-data/onto/water-indicators-ontology/WaterIndicator> .
+
+<https://w3id.org/environmental-data/onto/water-indicators-ontology/isIndicatorOfWaterFeature>
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain <https://w3id.org/environmental-data/onto/water-indicators-ontology/WaterIndicatorCalculation> ;
+      rdfs:label "is indicator of water feature "@en ;
+      rdfs:range w-mon:WaterFeature .
+
+w-mon:WaterQualityClass
+      rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Value> .
+
+<https://w3id.org/whow/onto/water-indicators-ontology>
+      rdf:type owl:Ontology ;
+      owl:imports <http://xmlns.com/foaf/0.1/> , <https://w3id.org/whow/onto/hydrography-ontology> , <http://purl.org/dc/terms/> , <https://w3id.org/whow/onto/water-monitoring-ontology> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/2006/vcard/ns> , <http://www.w3.org/ns/prov> , <https://w3id.org/italia/onto/Indicator> , <http://www.w3.org/ns/sosa/> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
