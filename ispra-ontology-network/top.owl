@@ -1594,6 +1594,7 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/hasIdentifierSchema"/>
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/isIssuedBy"/>
             <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/top/identifier"/>
         </owl:hasKey>

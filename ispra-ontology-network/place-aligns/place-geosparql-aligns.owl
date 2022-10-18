@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://dati.isprambiente.it/ontology/places-geosparql-aligns/"
-     xml:base="https://dati.isprambiente.it/ontology/places-geosparql-aligns/"
+<rdf:RDF xmlns="https://dati.isprambiente.it/ontology/place-geosparql-aligns/"
+     xml:base="https://dati.isprambiente.it/ontology/place-geosparql-aligns/"
      xmlns:core="https://dati.isprambiente.it/ontology/core/"
      xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
-     xmlns:places="https://dati.isprambiente.it/ontology/places/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://dati.isprambiente.it/ontology/places-geosparql-aligns/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:place="https://dati.isprambiente.it/ontology/place/">
+    <owl:Ontology rdf:about="https://dati.isprambiente.it/ontology/place-geosparql-aligns/">
         <owl:imports rdf:resource="https://dati.isprambiente.it/ontology/places/"/>
     </owl:Ontology>
     
@@ -28,15 +28,7 @@
 
     <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
 
-    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
-        <owl:equivalentProperty rdf:resource="https://dati.isprambiente.it/ontology/places/hasGeometry"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://dati.isprambiente.it/ontology/places/hasGeometry -->
-
-    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/hasGeometry"/>
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry"/>
     
 
 
@@ -53,15 +45,7 @@
 
     <!-- http://www.opengis.net/ont/geosparql#hasSerialization -->
 
-    <owl:DatatypeProperty rdf:about="http://www.opengis.net/ont/geosparql#hasSerialization">
-        <owl:equivalentProperty rdf:resource="https://dati.isprambiente.it/ontology/places/geometry"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://dati.isprambiente.it/ontology/places/geometry -->
-
-    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/geometry"/>
+    <owl:DatatypeProperty rdf:about="http://www.opengis.net/ont/geosparql#hasSerialization"/>
     
 
 
@@ -87,7 +71,7 @@
     <!-- http://www.opengis.net/ont/geosparql#Geometry -->
 
     <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry">
-        <owl:equivalentClass rdf:resource="https://dati.isprambiente.it/ontology/places/Geometry"/>
+        <owl:equivalentClass rdf:resource="https://dati.isprambiente.it/ontology/place/Geometry"/>
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
     </owl:Class>
     
@@ -99,17 +83,17 @@
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/places/AdministrativeUnit -->
+    <!-- https://dati.isprambiente.it/ontology/place/AdministrativeUnit -->
 
-    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/AdministrativeUnit">
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/place/AdministrativeUnit">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
     </rdf:Description>
     
 
 
-    <!-- https://dati.isprambiente.it/ontology/places/Geometry -->
+    <!-- https://dati.isprambiente.it/ontology/place/Geometry -->
 
-    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/places/Geometry"/>
+    <rdf:Description rdf:about="https://dati.isprambiente.it/ontology/place/Geometry"/>
 </rdf:RDF>
 
 
