@@ -152,6 +152,9 @@
   }, {
     "@id" : "./",
     "@type" : "owl:Ontology",
+    "dc:description" : {
+      "@id" : "https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/pattern-solution-water-observation_v2.jpg"
+    },
     "description" : {
       "@language" : "en",
       "@value" : "The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements."

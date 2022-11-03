@@ -21,7 +21,7 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:description"/>
         <Literal xml:lang="en">The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements.</Literal>
-        <IRI>https://github.com/whow-project/semantic-assets/blob/main/ontologies/images/pattern-solution-water-observation_v2.jpg</IRI>
+        <IRI>https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/pattern-solution-water-observation_v2.jpg</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:title"/>

@@ -13,7 +13,7 @@
                                                owl:imports <https://dati.isprambiente.it/ontology/inspire-mf/> ,
                                                            <https://dati.isprambiente.it/ontology/places/> ,
                                                            <https://w3id.org/whow/onto/hydrography> ;
-                                              dc:description <https://github.com/whow-project/semantic-assets/blob/main/ontologies/images/pattern-solution-water-observation_v2.jpg>
+                                              dc:description <https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/pattern-solution-water-observation_v2.jpg>
                                                dct:description "The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements."@en ;
                                                dct:title "Water Monitoring Ontology"@en ;
                                                owl:versionInfo "version 0.1"@en .
