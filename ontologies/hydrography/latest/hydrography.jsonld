@@ -33,7 +33,7 @@
     "@id" : "./",
     "@type" : "owl:Ontology",
     "dc:description" : {
-      "@id" : "https://raw.githubusercontent.com/whow-project/ontology-network/main/whow-ontology-network/images/hydrography-ontology.jpg"
+      "@id" : "https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/hydrography-ontology.jpg"
     },
     "description" : {
       "@language" : "en",

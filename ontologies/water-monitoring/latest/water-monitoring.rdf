@@ -19,6 +19,7 @@
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
     <rdfs:range rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
     <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSample"/>
+    <dc:description rdf:resource="https://github.com/whow-project/semantic-assets/blob/main/ontologies/images/pattern-solution-water-observation_v2.jpg"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A0">
