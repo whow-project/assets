@@ -4,6 +4,10 @@
 # imports: https://w3id.org/whow/onto/water-monitoring-ontology
 
 @prefix :        <https://w3id.org/whow/data/chemical-substances> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix adms:    <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix core:    <https://dati.isprambiente.it/ontology/core/value/> .
 @prefix inspire-mf:  <https://dati.isprambiente.it/ontology/inspire-mf/> .
 @prefix ispra-top:  <https://dati.isprambiente.it/ontology/core/> .
@@ -15,11 +19,104 @@
 @prefix w-mon:   <https://w3id.org/whow/onto/water-monitoring-ontology/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/whow/data/chemical-substances>
-      rdf:type owl:Ontology ;
-      owl:imports <http://www.w3.org/2004/02/skos/core> , <https://w3id.org/whow/onto/hydrography-ontology> , <https://w3id.org/whow/onto/water-monitoring-ontology> .
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances>
+      a       skos:ConceptScheme ;
+      dct:title "Chemical Substances Controlled Vocabulary"@en , "Vocabolario Controllato delle sostanze chimiche"@it ;
+      dct:description "This is the Chemical Substances controlled vocabulary."@en , "Questo è il vocabolario controllato delle sostanze chimiche."@it ;
+      rdfs:comment "This is the Chemical Substances controlled vocabulary"@en , "Questo è il vocabolario controllato delle sostanze chimiche."@it ;
+      rdfs:label "Chemical Substances Controlled Vocabulary"@en , "Vocabolario Controllato delle sostanze chimiche"@it ;
+      ndc:keyConcept "chemical-substances" ;
+      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "https://w3id.org/whow/controlled-vocabulary/chemical-substances";
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL> , <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      rdfs:isDefinedBy <https://w3id.org/whow/controlled-vocabulary/chemical-substances> ;
+      dcat:keyword "Sostanze chimiche"@it ;
+      dcat:distribution <https://w3id.org/italia/data/distribution/INDTYPE_RDF_Turtle>,
+      dct:issued "2022-04-11"^^xsd:date ;
+      owl:versionInfo "0.1" .
 
-<https://w3id.org/whow/data/chemical/chemical-substance/cas-0100-02-07>
+      skos:Concept a rdfs:Class .
+
+      skos:inScheme a rdfs:Property .
+
+      skos:prefLabel a rdfs:Property .
+
+      skos:altLabel a rdfs:Property .
+
+      dcatapit:Distribution
+            a       rdfs:Class .
+
+      dcatapit:Standard
+            a        rdfs:Class .
+
+      skos:prefLabel
+            a       rdfs:Property .
+
+      skos:definition
+      	  a		  rdfs:Property .
+
+      dct:identifier
+      	  a       rdfs:Property .
+
+      dct:title
+          a       rdfs:Property .
+
+      dct:type
+          a       rdfs:Property .
+
+      dct:description
+          a       rdfs:Property .
+
+      dct:conformsTo
+          a       rdfs:Property .
+
+      dct:subject
+          a       rdfs:Property .
+
+      dct:language
+          a       rdfs:Property .
+
+      dct:format
+          a       rdfs:Property .
+
+      dct:issued
+          a       rdfs:Property .
+
+      dct:modified
+          a       rdfs:Property .
+
+      dcat:theme
+          a     rdfs:Property .
+
+      dcat:distribution
+          a     rdfs:Property .
+
+      foaf:name
+          a     rdfs:Property .
+
+      dcat:keyword
+          a     rdfs:Property .
+
+      dcat:contactPoint
+          a     rdfs:Property .
+
+      owl:versionInfo
+          a     rdfs:Property .
+
+    skos:notation
+          a       rdfs:Property .
+
+    core:hasUniqueIdentifier
+          a       rdfs:Property .
+
+      ndc:keyConcept
+          a     rdfs:Property .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-0100-02-07>
       rdf:type w-mon:ChemicalSubstance ;
       rdfs:label "4-Nitrofenolo — Codice CAS: 0100-02-07"@it ;
       skos:altLabel "4-Nitrofenolo"@it ;

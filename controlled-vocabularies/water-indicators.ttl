@@ -2,9 +2,32 @@
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix adms:    <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix w-ind:    <https://w3id.org/whow/onto/water-indicators-ontology/> .
 
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://w3id.org/whow/controlled-vocabulary/water-quality-indicators>
+      a       skos:ConceptScheme ;
+      dct:title "Water quality indicators controlled vocabulary"@en , "Vocabolario Controllato degli indicatori della qualità dell'acqua"@it ;
+      dct:description "This is the water quality indicators controlled vocabulary."@en , "Questo è il vocabolario controllato degli indicatori della qualità dell'acqua."@it ;
+      rdfs:comment "This is the water quality indicators controlled vocabulary."@en , "Questo è il vocabolario controllato degli indicatori della qualità dell'acqua."@it ;
+      rdfs:label "Water quality indicators controlled vocabulary"@en , "Vocabolario Controllato degli indicatori della qualità dell'acqua"@it ;
+      ndc:keyConcept "water-quality-indicators" ;
+      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "https://w3id.org/whow/controlled-vocabulary/water-quality-indicators";
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL> , <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      rdfs:isDefinedBy <https://w3id.org/whow/controlled-vocabulary/water-quality-indicators> ;
+      dcat:keyword "Indicatori qualità acqua"@it ;
+      dcat:distribution <https://w3id.org/italia/data/distribution/INDTYPE_RDF_Turtle>,
+      dct:issued "2022-04-11"^^xsd:date ;
+      owl:versionInfo "0.1" .
 
 skos:Concept a rdfs:Class .
 
@@ -15,6 +38,69 @@ skos:inScheme a rdfs:Property .
 skos:prefLabel a rdfs:Property .
 
 skos:altLabel a rdfs:Property .
+
+dcatapit:Distribution
+      a       rdfs:Class .
+
+dcatapit:Standard
+      a        rdfs:Class .
+
+skos:prefLabel
+      a       rdfs:Property .
+
+skos:definition
+	  a		  rdfs:Property .
+
+dct:identifier
+	  a       rdfs:Property .
+
+dct:title
+    a       rdfs:Property .
+
+dct:type
+    a       rdfs:Property .
+
+dct:description
+    a       rdfs:Property .
+
+dct:conformsTo
+    a       rdfs:Property .
+
+dct:subject
+    a       rdfs:Property .
+
+dct:language
+    a       rdfs:Property .
+
+dct:format
+    a       rdfs:Property .
+
+dct:issued
+    a       rdfs:Property .
+
+dct:modified
+    a       rdfs:Property .
+
+dcat:theme
+    a     rdfs:Property .
+
+dcat:distribution
+    a     rdfs:Property .
+
+foaf:name
+    a     rdfs:Property .
+
+dcat:keyword
+    a     rdfs:Property .
+
+dcat:contactPoint
+    a     rdfs:Property .
+
+owl:versionInfo
+    a     rdfs:Property .
+
+ndc:keyConcept
+    a     rdfs:Property .
 
 
 
