@@ -41,6 +41,8 @@
 
       skos:Concept a rdfs:Class .
 
+      w-mon:ChemicalSubstance a rdfs:Class .
+
       skos:inScheme a rdfs:Property .
 
       skos:prefLabel a rdfs:Property .
