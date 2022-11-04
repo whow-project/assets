@@ -1,0 +1,47 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix w-ind:    <https://w3id.org/whow/onto/water-indicators-ontology/> .
+
+
+skos:Concept a rdfs:Class .
+
+w-ind:WaterIndicator a rdfs:Class .
+
+skos:inScheme a rdfs:Property .
+
+skos:prefLabel a rdfs:Property .
+
+skos:altLabel a rdfs:Property .
+
+
+
+<https://w3id.org/whow/controlled-vocabulary/water-quality-indicators/ltleco-indicator>
+	  a  	skos:Concept ;
+    a  	w-ind:WaterIndicator ;
+	  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/water-quality-indicators> ;
+	  skos:prefLabel "Indicatore LTLeco per la qualità delle acque superficiali. "@it ; "LTLeco indicator for surface waters quality."@en ;
+    skos:altLabel "Indicatore LTLeco"@it , "LTLeco"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/water-quality-indicators/limeco-indicator>
+    a  	skos:Concept ;
+    a  	w-ind:WaterIndicator ;
+    skos:inScheme <https://w3id.org/whow/controlled-vocabulary/water-quality-indicators> ;
+    skos:prefLabel "Indicatore LIMeco per la qualità delle acque superficiali. "@it ; "LIMeco indicator for surface waters quality."@en ;
+    skos:altLabel "Indicatore LIMeco"@it , "LIMeco"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/water-quality-indicators/groundwaters-chemical-status-indicator>
+    a  	skos:Concept ;
+    a  	w-ind:WaterIndicator ;
+    skos:inScheme <https://w3id.org/whow/controlled-vocabulary/water-quality-indicators> ;
+    skos:prefLabel "Indicatore dello stato chimico per la qualità delle acque sotterranee. "@it ; "Groundwaters chemical status indicator."@en ;
+    skos:altLabel "Indicatore Stato Chimico acque sotterranee"@it , "Stato Chimico acque sotterranee"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/water-quality-indicators/bathing-waters-quality-indicator>
+    a  	skos:Concept ;
+    a  	w-ind:WaterIndicator ;
+    skos:inScheme <https://w3id.org/whow/controlled-vocabulary/water-quality-indicators> ;
+    skos:prefLabel "Indicatore per la qualità delle acque di balneazione. "@it ; "Bathing waters quality indicator."@en ;
+    skos:altLabel "Indicatore qualità acque di balneazione."@it .
