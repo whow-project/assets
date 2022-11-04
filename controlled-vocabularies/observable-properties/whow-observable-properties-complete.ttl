@@ -49,7 +49,6 @@
 
             skos:prefLabel a rdfs:Property .
 
-            skos:altLabel a rdfs:Property .
 
             dcatapit:Distribution
                   a       rdfs:Class .
