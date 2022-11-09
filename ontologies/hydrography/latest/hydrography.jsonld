@@ -2,13 +2,13 @@
   "@graph" : [ {
     "@id" : "_:b0",
     "@type" : "owl:Restriction",
-    "onProperty" : ":belongsToWaterBasin",
-    "someValuesFrom" : ":WaterBasin"
+    "allValuesFrom" : ":WaterBasin",
+    "onProperty" : ":belongsToWaterBasin"
   }, {
     "@id" : "_:b1",
     "@type" : "owl:Restriction",
-    "allValuesFrom" : ":WaterBasin",
-    "onProperty" : ":belongsToWaterBasin"
+    "onProperty" : ":belongsToWaterBasin",
+    "someValuesFrom" : ":WaterBasin"
   }, {
     "@id" : "_:b2",
     "@type" : "owl:Restriction",
@@ -35,11 +35,30 @@
     "dc:description" : {
       "@id" : "https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/hydrography-ontology.jpg"
     },
-    "description" : {
+    "description" : [ {
+      "@language" : "it",
+      "@value" : "Ontologia per la descrizione dell'idrografia. Include concetti quali i bacini idrici e la classificazione dei corpi idrici. È semanticamente allineata a concetti definiti nell'INSPIRE registry."
+    }, {
       "@language" : "en",
       "@value" : "Ontology for describing the hydrography. It includes concepts such as water basins and the classification of water bodies"
-    },
-    "title" : {
+    } ],
+    "issued" : "2022-03-01",
+    "modified" : "2022-11-09",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Hydrography Ontology"
+    }, {
+      "@language" : "it",
+      "@value" : "Ontologia dell'Idrografia"
+    } ],
+    "comment" : [ {
+      "@language" : "en",
+      "@value" : "Ontology for describing the hydrography. It includes concepts such as water basins and the classification of water bodies"
+    }, {
+      "@language" : "it",
+      "@value" : "Ontologia per la descrizione dell'idrografia. Include concetti quali i bacini idrici e la classificazione dei corpi idrici. È semanticamente allineata a concetti definiti nell'INSPIRE registry."
+    } ],
+    "label" : {
       "@language" : "en",
       "@value" : "Hydrography Ontology"
     },
@@ -152,7 +171,7 @@
       "@language" : "en",
       "@value" : "Water Body"
     },
-    "subClassOf" : [ "_:b1", "_:b0", ":WaterFeature" ],
+    "subClassOf" : [ "_:b0", "_:b1", ":WaterFeature" ],
     "wasDerivedFrom" : "http://inspire.ec.europa.eu/featureconcept/WFDWaterBody"
   }, {
     "@id" : ":WaterFeature",
@@ -196,14 +215,6 @@
   } ],
   "@id" : "urn:x-arq:DefaultGraphNode",
   "@context" : {
-    "someValuesFrom" : {
-      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
-      "@type" : "@id"
-    },
-    "onProperty" : {
-      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
-      "@type" : "@id"
-    },
     "wasDerivedFrom" : {
       "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
       "@type" : "@id"
@@ -218,8 +229,12 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
       "@type" : "@id"
     },
-    "allValuesFrom" : {
-      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
+    "someValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
+      "@type" : "@id"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
       "@type" : "@id"
     },
     "range" : {
@@ -230,13 +245,25 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
       "@type" : "@id"
     },
-    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
-    "title" : "http://purl.org/dc/terms/title",
+    "allValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "@type" : "@id"
+    },
     "description" : "http://purl.org/dc/terms/description",
+    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
     "versionIRI" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
       "@type" : "@id"
     },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "title" : "http://purl.org/dc/terms/title",
     "@base" : "https://w3id.org/whow/onto/hydrography/",
     "" : "https://w3id.org/whow/onto/hydrography/",
     "dct" : "http://purl.org/dc/terms/",
