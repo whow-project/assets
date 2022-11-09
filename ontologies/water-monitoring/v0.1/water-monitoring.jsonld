@@ -2,39 +2,43 @@
   "@graph" : [ {
     "@id" : "_:b0",
     "@type" : "owl:Restriction",
-    "onProperty" : ":hasWaterObservableProperty",
-    "someValuesFrom" : ":WaterObservableProperty"
+    "allValuesFrom" : ":BiologicalAgent",
+    "onProperty" : ":hasBiologicalAgent"
+  }, {
+    "@id" : "_:b1",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":hasBiologicalAgent",
+    "someValuesFrom" : ":BiologicalAgent"
   }, {
     "@id" : "_:b10",
-    "@type" : "owl:Restriction",
-    "allValuesFrom" : ":RadioactivityObject",
-    "onProperty" : ":hasRadioactivityObject"
-  }, {
-    "@id" : "_:b11",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ ":WaterBiologicalQualityParameterObservation", ":WaterMicrobiologicalParameterObservation" ]
-    }
-  }, {
-    "@id" : "_:b12",
-    "@type" : "owl:Restriction",
-    "onProperty" : ":isSampleOf",
-    "someValuesFrom" : "../../hydrography/WaterFeature"
-  }, {
-    "@id" : "_:b13",
     "@type" : "owl:Restriction",
     "onProperty" : ":isObtainedBy",
     "someValuesFrom" : ":WaterSampler"
   }, {
+    "@id" : "_:b11",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":hasResult",
+    "someValuesFrom" : ":ObservationValue"
+  }, {
+    "@id" : "_:b12",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":ObservationValue",
+    "onProperty" : ":hasResult"
+  }, {
+    "@id" : "_:b13",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":BiologicalAgent",
+    "onProperty" : ":hasBiologicalAgent"
+  }, {
     "@id" : "_:b14",
     "@type" : "owl:Restriction",
-    "onProperty" : "https://dati.isprambiente.it/ontology/places/hasMunicipality",
-    "someValuesFrom" : "https://dati.isprambiente.it/ontology/places/Municipality"
+    "onProperty" : ":hasBiologicalAgent",
+    "someValuesFrom" : ":BiologicalAgent"
   }, {
     "@id" : "_:b15",
     "@type" : "owl:Restriction",
-    "allValuesFrom" : ":WaterObservableProperty",
-    "onProperty" : ":hasWaterObservableProperty"
+    "allValuesFrom" : ":ChemicalSubstance",
+    "onProperty" : ":hasChemicalSubstance"
   }, {
     "@id" : "_:b16",
     "@type" : "owl:Restriction",
@@ -43,94 +47,90 @@
   }, {
     "@id" : "_:b17",
     "@type" : "owl:Restriction",
-    "allValuesFrom" : ":BiologicalAgent",
-    "onProperty" : ":hasBiologicalAgent"
-  }, {
-    "@id" : "_:b18",
-    "@type" : "owl:Restriction",
-    "onProperty" : ":hasBiologicalAgent",
-    "someValuesFrom" : ":BiologicalAgent"
-  }, {
-    "@id" : "_:b19",
-    "@type" : "owl:Restriction",
     "allValuesFrom" : ":WaterObservablePropertyObject",
     "onProperty" : ":ofPropertyObject"
   }, {
+    "@id" : "_:b2",
+    "@type" : "owl:Restriction",
+    "onProperty" : "https://dati.isprambiente.it/ontology/places/hasMunicipality",
+    "someValuesFrom" : "https://dati.isprambiente.it/ontology/places/Municipality"
+  }, {
     "@id" : "_:b20",
     "@type" : "owl:Restriction",
-    "onProperty" : ":hasResult",
-    "someValuesFrom" : ":ObservationValue"
+    "allValuesFrom" : ":RadioactivityObject",
+    "onProperty" : ":hasRadioactivityObject"
   }, {
     "@id" : "_:b21",
     "@type" : "owl:Restriction",
-    "allValuesFrom" : ":WaterObservablePropertyObjectType",
-    "onProperty" : ":isClassifiedBy"
+    "allValuesFrom" : ":WaterObservableProperty",
+    "onProperty" : ":hasWaterObservableProperty"
   }, {
     "@id" : "_:b22",
-    "@type" : "owl:Restriction",
-    "allValuesFrom" : ":WaterSample",
-    "onProperty" : ":hasObservationSample"
-  }, {
-    "@id" : "_:b23",
-    "@type" : "owl:Restriction",
-    "allValuesFrom" : ":ObservationValue",
-    "onProperty" : ":hasResult"
-  }, {
-    "@id" : "_:b24",
-    "@type" : "owl:Restriction",
-    "onProperty" : ":hasRadioactivityObject",
-    "someValuesFrom" : ":RadioactivityObject"
-  }, {
-    "@id" : "_:b25",
     "@type" : "owl:Class",
     "unionOf" : {
       "@list" : [ ":WaterChemicalParameterObservation", ":WaterPhysicoChemicalParameterObservation" ]
     }
   }, {
-    "@id" : "_:b26",
-    "@type" : "owl:Restriction",
-    "allValuesFrom" : ":WaterObservablePropertyObject",
-    "onProperty" : ":hasWaterObservablePropertyObject"
-  }, {
-    "@id" : "_:b27",
+    "@id" : "_:b24",
     "@type" : "owl:Restriction",
     "onProperty" : "https://dati.isprambiente.it/ontology/places/hasProvince",
     "someValuesFrom" : "https://dati.isprambiente.it/ontology/places/Province"
   }, {
+    "@id" : "_:b25",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":hasRadioactivityObject",
+    "someValuesFrom" : ":RadioactivityObject"
+  }, {
+    "@id" : "_:b26",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":WaterObservablePropertyObjectType",
+    "onProperty" : ":isClassifiedBy"
+  }, {
+    "@id" : "_:b27",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":WaterObservablePropertyObject",
+    "onProperty" : ":hasWaterObservablePropertyObject"
+  }, {
+    "@id" : "_:b29",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : ":WaterSample",
+    "onProperty" : ":hasObservationSample"
+  }, {
     "@id" : "_:b3",
     "@type" : "owl:Restriction",
-    "allValuesFrom" : ":WaterSampler",
-    "onProperty" : ":isObtainedBy"
+    "allValuesFrom" : ":ChemicalSubstance",
+    "onProperty" : ":hasChemicalSubstance"
   }, {
     "@id" : "_:b4",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":hasChemicalSubstance",
+    "someValuesFrom" : ":ChemicalSubstance"
+  }, {
+    "@id" : "_:b5",
+    "@type" : "owl:Restriction",
+    "onProperty" : ":hasWaterObservableProperty",
+    "someValuesFrom" : ":WaterObservableProperty"
+  }, {
+    "@id" : "_:b6",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ ":WaterBiologicalQualityParameterObservation", ":WaterMicrobiologicalParameterObservation" ]
+    }
+  }, {
+    "@id" : "_:b7",
     "@type" : "owl:Restriction",
     "allValuesFrom" : "rdfs:Literal",
     "onProperty" : ":depth"
   }, {
-    "@id" : "_:b5",
-    "@type" : "owl:Restriction",
-    "allValuesFrom" : ":BiologicalAgent",
-    "onProperty" : ":hasBiologicalAgent"
-  }, {
-    "@id" : "_:b6",
-    "@type" : "owl:Restriction",
-    "onProperty" : ":hasBiologicalAgent",
-    "someValuesFrom" : ":BiologicalAgent"
-  }, {
-    "@id" : "_:b7",
-    "@type" : "owl:Restriction",
-    "allValuesFrom" : ":ChemicalSubstance",
-    "onProperty" : ":hasChemicalSubstance"
-  }, {
     "@id" : "_:b8",
     "@type" : "owl:Restriction",
-    "allValuesFrom" : ":ChemicalSubstance",
-    "onProperty" : ":hasChemicalSubstance"
+    "allValuesFrom" : ":WaterSampler",
+    "onProperty" : ":isObtainedBy"
   }, {
     "@id" : "_:b9",
     "@type" : "owl:Restriction",
-    "onProperty" : ":hasChemicalSubstance",
-    "someValuesFrom" : ":ChemicalSubstance"
+    "onProperty" : ":isSampleOf",
+    "someValuesFrom" : "../../hydrography/WaterFeature"
   }, {
     "@id" : "skos:Concept",
     "@type" : "owl:Class"
@@ -155,15 +155,37 @@
     "dc:description" : {
       "@id" : "https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/pattern-solution-water-observation_v2.jpg"
     },
-    "description" : {
+    "description" : [ {
+      "@language" : "it",
+      "@value" : "L'ontologia utilizzata nel progetto WHOW per rappresentare le osservazioni relative a diversi aspetti dell'acqua: qualità/inquinamento ed elementi fisici."
+    }, {
       "@language" : "en",
       "@value" : "The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements."
-    },
-    "title" : {
+    } ],
+    "issued" : "2022-07-20",
+    "modified" : "2022-11-09",
+    "title" : [ {
       "@language" : "en",
       "@value" : "Water Monitoring Ontology"
-    },
-    "imports" : [ "../../hydrography", "https://dati.isprambiente.it/ontology/places/", "https://dati.isprambiente.it/ontology/inspire-mf/" ],
+    }, {
+      "@language" : "it",
+      "@value" : "Ontologia del Monitoraggio delle Acque"
+    } ],
+    "comment" : [ {
+      "@language" : "it",
+      "@value" : "L'ontologia utilizzata nel progetto WHOW per rappresentare le osservazioni relative a diversi aspetti dell'acqua: qualità/inquinamento ed elementi fisici."
+    }, {
+      "@language" : "en",
+      "@value" : "The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements."
+    } ],
+    "label" : [ {
+      "@language" : "en",
+      "@value" : "Water Monitoring Ontology"
+    }, {
+      "@language" : "it",
+      "@value" : "Ontologia del Monitoraggio delle Acque"
+    } ],
+    "imports" : [ "../../hydrography", "https://dati.isprambiente.it/ontology/inspire-mf/", "https://dati.isprambiente.it/ontology/places/" ],
     "versionIRI" : ":0.1",
     "versionInfo" : {
       "@language" : "en",
@@ -262,7 +284,7 @@
       "@language" : "en",
       "@value" : "Water Biological Quality Parameter/Element Observation"
     },
-    "subClassOf" : [ "_:b17", "_:b18", ":SurfaceOrGroundwaterObservation" ],
+    "subClassOf" : [ "_:b13", "_:b14", ":SurfaceOrGroundwaterObservation" ],
     "disjointWith" : [ ":WaterPhysicoChemicalParameterObservation", ":WaterHydromorphologicalParameterObservation" ]
   }, {
     "@id" : ":WaterChemicalParameterObservation",
@@ -276,7 +298,7 @@
       "@language" : "en",
       "@value" : "Water Chemical Parameter Observation"
     },
-    "subClassOf" : [ "_:b8", "_:b9", ":DrinkingWaterObservation" ],
+    "subClassOf" : [ "_:b3", "_:b4", ":DrinkingWaterObservation" ],
     "disjointWith" : [ ":WaterMicrobiologicalParameterObservation", ":WaterIndicatorParameterObservation" ]
   }, {
     "@id" : ":WaterEmergingParametersObservation",
@@ -332,7 +354,7 @@
       "@language" : "en",
       "@value" : "Water Microbiological Parameter Observation"
     },
-    "subClassOf" : [ "_:b5", "_:b6", ":DrinkingWaterObservation" ]
+    "subClassOf" : [ "_:b0", "_:b1", ":DrinkingWaterObservation" ]
   }, {
     "@id" : ":WaterObservableProperty",
     "@type" : "owl:Class",
@@ -345,7 +367,7 @@
       "@language" : "en",
       "@value" : "Water Observable Property"
     },
-    "subClassOf" : [ "_:b19", "https://dati.isprambiente.it/ontology/inspire-mf/ObservationParameter" ]
+    "subClassOf" : [ "_:b17", "https://dati.isprambiente.it/ontology/inspire-mf/ObservationParameter" ]
   }, {
     "@id" : ":WaterObservablePropertyObject",
     "@type" : "owl:Class",
@@ -358,7 +380,7 @@
       "@language" : "en",
       "@value" : "Water Observable Property Object"
     },
-    "subClassOf" : [ "_:b21", "https://dati.isprambiente.it/ontology/top/Concept", "skos:Concept" ]
+    "subClassOf" : [ "_:b26", "https://dati.isprambiente.it/ontology/top/Concept", "skos:Concept" ]
   }, {
     "@id" : ":WaterObservablePropertyObjectType",
     "@type" : "owl:Class",
@@ -384,7 +406,7 @@
       "@language" : "en",
       "@value" : "Water Observation"
     },
-    "subClassOf" : [ "_:b20", "_:b15", "_:b26", "https://dati.isprambiente.it/ontology/inspire-mf/Observation", "_:b0", "_:b22", "_:b23" ]
+    "subClassOf" : [ "_:b5", "https://dati.isprambiente.it/ontology/inspire-mf/Observation", "_:b27", "_:b12", "_:b21", "_:b11", "_:b29" ]
   }, {
     "@id" : ":WaterPhysicoChemicalParameterObservation",
     "@type" : "owl:Class",
@@ -397,7 +419,7 @@
       "@language" : "en",
       "@value" : "Water Physico-Chemical Parameter Observation"
     },
-    "subClassOf" : [ "_:b7", "_:b16", ":SurfaceOrGroundwaterObservation" ]
+    "subClassOf" : [ "_:b15", "_:b16", ":SurfaceOrGroundwaterObservation" ]
   }, {
     "@id" : ":WaterRadioactivityObservation",
     "@type" : "owl:Class",
@@ -410,7 +432,7 @@
       "@language" : "en",
       "@value" : "Water Radioactivity Observation"
     },
-    "subClassOf" : [ "_:b10", "_:b24", ":WaterObservation" ]
+    "subClassOf" : [ "_:b20", "_:b25", ":WaterObservation" ]
   }, {
     "@id" : ":WaterSample",
     "@type" : "owl:Class",
@@ -423,7 +445,7 @@
       "@language" : "en",
       "@value" : "Water Sample"
     },
-    "subClassOf" : [ "_:b4", "_:b3", "_:b12", "_:b13", "../../hydrography/WaterFeature" ]
+    "subClassOf" : [ "_:b7", "_:b8", "_:b9", "_:b10", "../../hydrography/WaterFeature" ]
   }, {
     "@id" : ":WaterSampler",
     "@type" : "owl:Class",
@@ -436,7 +458,7 @@
       "@language" : "en",
       "@value" : "Water Sampler"
     },
-    "subClassOf" : [ "_:b27", "_:b14", "https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility" ]
+    "subClassOf" : [ "_:b24", "_:b2", "https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility" ]
   }, {
     "@id" : ":depth",
     "@type" : "owl:DatatypeProperty",
@@ -450,7 +472,7 @@
   }, {
     "@id" : ":hasBiologicalAgent",
     "@type" : "owl:ObjectProperty",
-    "domain" : "_:b11",
+    "domain" : "_:b6",
     "isDefinedBy" : "./",
     "label" : {
       "@language" : "en",
@@ -461,7 +483,7 @@
   }, {
     "@id" : ":hasChemicalSubstance",
     "@type" : "owl:ObjectProperty",
-    "domain" : "_:b25",
+    "domain" : "_:b22",
     "isDefinedBy" : "./",
     "label" : {
       "@language" : "en",
@@ -578,14 +600,6 @@
   } ],
   "@id" : "urn:x-arq:DefaultGraphNode",
   "@context" : {
-    "someValuesFrom" : {
-      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
-      "@type" : "@id"
-    },
-    "onProperty" : {
-      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
-      "@type" : "@id"
-    },
     "label" : "http://www.w3.org/2000/01/rdf-schema#label",
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -599,18 +613,6 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
       "@type" : "@id"
     },
-    "rest" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
-      "@type" : "@id"
-    },
-    "first" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
-      "@type" : "@id"
-    },
-    "allValuesFrom" : {
-      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
-      "@type" : "@id"
-    },
     "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
     "subClassOf" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
@@ -620,21 +622,49 @@
       "@id" : "http://www.w3.org/2002/07/owl#disjointWith",
       "@type" : "@id"
     },
+    "someValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
+      "@type" : "@id"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
     "subPropertyOf" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
       "@type" : "@id"
     },
-    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
-    "seeAlso" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "allValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "@type" : "@id"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
     "unionOf" : {
       "@id" : "http://www.w3.org/2002/07/owl#unionOf",
       "@type" : "@id"
     },
-    "title" : "http://purl.org/dc/terms/title",
+    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
+    "seeAlso" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
     "description" : "http://purl.org/dc/terms/description",
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
     "imports" : {
       "@id" : "http://www.w3.org/2002/07/owl#imports",
       "@type" : "@id"
+    },
+    "title" : "http://purl.org/dc/terms/title",
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
     "versionIRI" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
@@ -648,6 +678,7 @@
     "xml" : "http://www.w3.org/XML/1998/namespace",
     "xsd" : "http://www.w3.org/2001/XMLSchema#",
     "skos" : "http://www.w3.org/2004/02/skos/core#",
-    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "dc" : "http://purl.org/dc/elements/1.1/"
   }
 }

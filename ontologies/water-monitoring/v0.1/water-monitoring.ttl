@@ -1,5 +1,6 @@
 @prefix : <https://w3id.org/whow/onto/water-monitoring/> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -13,9 +14,13 @@
                                                owl:imports <https://dati.isprambiente.it/ontology/inspire-mf/> ,
                                                            <https://dati.isprambiente.it/ontology/places/> ,
                                                            <https://w3id.org/whow/onto/hydrography> ;
-                                              dc:description <https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/pattern-solution-water-observation_v2.jpg>
-                                               dct:description "The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements."@en ;
-                                               dct:title "Water Monitoring Ontology"@en ;
+                                               dc:description <https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/pattern-solution-water-observation_v2.jpg> ;
+                                               dct:description "The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements."@en , "L'ontologia utilizzata nel progetto WHOW per rappresentare le osservazioni relative a diversi aspetti dell'acqua: qualità/inquinamento ed elementi fisici."@it ;
+                                               rdfs:comment "The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements."@en , "L'ontologia utilizzata nel progetto WHOW per rappresentare le osservazioni relative a diversi aspetti dell'acqua: qualità/inquinamento ed elementi fisici."@it ;
+                                               dct:title "Water Monitoring Ontology"@en , "Ontologia del Monitoraggio delle Acque"@it ;
+                                               rdfs:label "Water Monitoring Ontology"@en , "Ontologia del Monitoraggio delle Acque"@it ;
+                                               dct:modified "2022-11-09"^^xsd:date ;
+                                               dct:issued "2022-07-20"^^xsd:date ;
                                                owl:versionInfo "version 0.1"@en .
 
 #################################################################
