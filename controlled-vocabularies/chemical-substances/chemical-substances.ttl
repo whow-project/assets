@@ -5331,3 +5331,2010 @@
       core:isIssuedBy "American Chemical Society" ;
       w-mon:identifierType
               "CAS" .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1007-28-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Atrazina-desisopropil — Codice CAS: 1007-28-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:1007-28-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Atrazina-desisopropil"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1007-28-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-101205-02-1>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Cycloxidim — Codice CAS: 101205-02-1"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:101205-02-1";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Cycloxidim"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/101205-02-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1024-57-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Eptacloro epossido — Codice CAS: 1024-57-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:1024-57-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Eptacloro epossido"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1024-57-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-10265-92-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Metamidofos (trifosforamidato di O,S- dimetile) — Codice CAS: 10265-92-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:10265-92-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Metamidofos (trifosforamidato di O,S- dimetile)"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/10265-92-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1031-07-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Endosulfan solfato — Codice CAS: 1031-07-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:1031-07-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Endosulfan solfato"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1031-07-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-10313> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "COD — Codice CAS: 10313"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:10313";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "COD"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/10313> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-104206-82-8>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Mesotrione — Codice CAS: 104206-82-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:104206-82-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Mesotrione"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/104206-82-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-10606-46-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "2,4-Dicofol — Codice CAS: 10606-46-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:10606-46-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "2,4-Dicofol"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/10606-46-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1066-51-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "AMPA — Codice CAS: 1066-51-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:1066-51-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "AMPA"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1066-51-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1071-83-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Glifosate — Codice CAS: 1071-83-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:1071-83-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Glifosate"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1071-83-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-107534-96-3>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Tebuconazolo — Codice CAS: 107534-96-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:107534-96-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Tebuconazolo"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/107534-96-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-110488-70-5>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Dimetomorf — Codice CAS: 110488-70-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:110488-70-5";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Dimetomorf"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/110488-70-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1113-02-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Ometoato — Codice CAS: 1113-02-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:1113-02-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Ometoato"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1113-02-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-111988-49-9>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Thiacloprid — Codice CAS: 111988-49-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:111988-49-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Thiacloprid"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/111988-49-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-111991-09-4>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Nicosulfuron — Codice CAS: 111991-09-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:111991-09-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Nicosulfuron"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/111991-09-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-114-07-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Eritromicina — Codice CAS: 114-07-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:114-07-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Eritromicina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/114-07-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-115-29-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Endosulfan (isomeri alfa e beta) — Codice CAS: 115-29-7"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:115-29-7";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Endosulfan (isomeri alfa e beta)"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/115-29-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-115-32-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Dicofol — Codice CAS: 115-32-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:115-32-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Dicofol"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/115-32-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-118134-30-8>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Spiroxamina — Codice CAS: 118134-30-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:118134-30-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Spiroxamina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/118134-30-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1190931-27-1>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "cC6O4 [Difluoro{[2,2,4,5-tetrafluoro- 5-(trifluoromethoxy)-1,3-dioxolan- 4-yl]oxy} acetic acid] — Codice CAS: 1190931-27-1"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:1190931-27-1";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "cC6O4 [Difluoro{[2,2,4,5-tetrafluoro- 5-(trifluoromethoxy)-1,3-dioxolan- 4-yl]oxy} acetic acid]"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1190931-27-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-120162-55-2>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Azimsulfuron — Codice CAS: 120162-55-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:120162-55-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Azimsulfuron"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/120162-55-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-121-75-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Malathion — Codice CAS: 121-75-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:121-75-5";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Malathion"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/121-75-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-122-14-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Fenitrotion — Codice CAS: 122-14-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:122-14-5";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Fenitrotion"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/122-14-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-122931-48-0>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Rimsulfuron — Codice CAS: 122931-48-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:122931-48-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Rimsulfuron"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/122931-48-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-124495-18-7>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Chinossifen — Codice CAS: 124495-18-7"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:124495-18-7";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Chinossifen"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/124495-18-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-131860-33-8>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Azoxistrobina — Codice CAS: 131860-33-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:131860-33-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Azoxistrobina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/131860-33-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-135410-20-7>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Acetamiprid — Codice CAS: 135410-20-7"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:135410-20-7";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Acetamiprid"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/135410-20-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-138261-41-3>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Imidacloprid — Codice CAS: 138261-41-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:138261-41-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Imidacloprid"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/138261-41-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-139968-49-3>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Metaflumizone — Codice CAS: 139968-49-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:139968-49-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Metaflumizone"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/139968-49-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-141112-29-0>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Isoxaflutol — Codice CAS: 141112-29-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:141112-29-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Isoxaflutol"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/141112-29-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-142459-58-3>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Flufenacet — Codice CAS: 142459-58-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:142459-58-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Flufenacet"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/142459-58-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14797-55-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Azoto nitrico — Codice CAS: 14797-55-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:14797-55-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Azoto nitrico"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/14797-55-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14797-65-0> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Azoto nitroso — Codice CAS: 14797-65-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:14797-65-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Azoto nitroso"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/14797-65-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14798-03-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Ammoniaca totale — Codice CAS: 14798-03-9"@it, "Azoto ammoniacale — Codice CAS: 14798-03-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:14798-03-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Ammoniaca totale"@it, "Azoto ammoniacale"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/14798-03-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14808-79-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Solfati — Codice CAS: 14808-79-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:14808-79-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Solfati"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/14808-79-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-15307-86-5> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Diclofenac — Codice CAS: 15307-86-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:15307-86-5";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Diclofenac"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/15307-86-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-153719-23-4>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Tiametoxam — Codice CAS: 153719-23-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:153719-23-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Tiametoxam"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/153719-23-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1582-09-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Trifluralin — Codice CAS: 1582-09-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:1582-09-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Trifluralin"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1582-09-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-15972-60-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Alachlor — Codice CAS: 15972-60-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:15972-60-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Alachlor"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/15972-60-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-16887-00-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Cloruri — Codice CAS: 16887-00-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:16887-00-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Cloruri"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/16887-00-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-16984-48-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Fluoruri — Codice CAS: 16984-48-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:16984-48-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Fluoruri"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/16984-48-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1746-01-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "2,3,7,8 TCDD — Codice CAS: 1746-01-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:1746-01-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "2,3,7,8 TCDD"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1746-01-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-17778-88-0> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Azoto Totale — Codice CAS: 17778-88-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:17778-88-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Azoto Totale"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/17778-88-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-18540-29-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Cromo VI — Codice CAS: 18540-29-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:18540-29-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Cromo VI"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/18540-29-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-188425-85-6>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Boscalid — Codice CAS: 188425-85-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:188425-85-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Boscalid"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/188425-85-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-189-64-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Dibenzo(a,h)pirene — Codice CAS: 189-64-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:189-64-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Dibenzo(a,h)pirene"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/189-64-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-191-24-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Benzo (g,h,i) perilene — Codice CAS: 191-24-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:191-24-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Benzo (g,h,i) perilene"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/191-24-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1918-00-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Dicamba — Codice CAS: 1918-00-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:1918-00-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Dicamba"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1918-00-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-19408-74-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "1,2,3,7,8,9 HxCDD — Codice CAS: 19408-74-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:19408-74-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "1,2,3,7,8,9 HxCDD"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/19408-74-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-19666-30-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Oxadiazon — Codice CAS: 19666-30-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:19666-30-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Oxadiazon"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/19666-30-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2008-58-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Diclorobenzammide 2,6 — Codice CAS: 2008-58-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:2008-58-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Diclorobenzammide 2,6"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/2008-58-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2032-65-7> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Metiocarb — Codice CAS: 2032-65-7"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:2032-65-7";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Metiocarb"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/2032-65-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-205-99-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Benzo (b) fluorantene — Codice CAS: 205-99-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:205-99-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Benzo (b) fluorantene"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/205-99-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2058-94-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PFUdA (Perfluoro Undecanoic Acid) — Codice CAS: 2058-94-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:2058-94-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PFUdA (Perfluoro Undecanoic Acid)"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/2058-94-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-207-08-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Benzo (k) fluorantene — Codice CAS: 207-08-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:207-08-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Benzo (k) fluorantene"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/207-08-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-21087-64-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Metribuzin — Codice CAS: 21087-64-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:21087-64-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Metribuzin"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/21087-64-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-210880-92-5>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Clotianidin — Codice CAS: 210880-92-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:210880-92-5";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Clotianidin"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/210880-92-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-21725-46-2> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Cianazina — Codice CAS: 21725-46-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:21725-46-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Cianazina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/21725-46-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2212-67-1> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Molinate — Codice CAS: 2212-67-1"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:2212-67-1";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Molinate"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/2212-67-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2275-18-5> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Protoate — Codice CAS: 2275-18-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:2275-18-5";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Protoate"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/2275-18-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2303-17-5> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Triallate — Codice CAS: 2303-17-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:2303-17-5";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Triallate"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/2303-17-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-23103-98-2> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Pirimicarb — Codice CAS: 23103-98-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:23103-98-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Pirimicarb"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/23103-98-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-23564-05-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Tiofanato metile — Codice CAS: 23564-05-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:23564-05-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Tiofanato metile"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/23564-05-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-239110-15-7>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Fluopicolide — Codice CAS: 239110-15-7"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:239110-15-7";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Fluopicolide"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/239110-15-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-26787-78-0> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Amoxicillina — Codice CAS: 26787-78-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:26787-78-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Amoxicillina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/26787-78-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-28044-83-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Eptacloro Epossido endo — Codice CAS: 28044-83-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:28044-83-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Eptacloro Epossido endo"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/28044-83-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-28159-98-0> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Cibutrina — Codice CAS: 28159-98-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:28159-98-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Cibutrina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/28159-98-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-28249-77-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Thiobencarb — Codice CAS: 28249-77-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:28249-77-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Thiobencarb"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/28249-77-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2921-88-2> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Clorpirifos — Codice CAS: 2921-88-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:2921-88-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Clorpirifos"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/2921-88-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-298-00-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Paration metile — Codice CAS: 298-00-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:298-00-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Paration metile"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/298-00-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-301-12-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Oxydemeton-metile — Codice CAS: 301-12-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:301-12-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Oxydemeton-metile"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/301-12-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-30125-63-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Terbutilazina desetil — Codice CAS: 30125-63-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:30125-63-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Terbutilazina desetil"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/30125-63-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-309-00-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Aldrin — Codice CAS: 309-00-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:309-00-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Aldrin"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/309-00-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-314-40-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Bromacil — Codice CAS: 314-40-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:314-40-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Bromacil"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/314-40-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-31508-00-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 118 — Codice CAS: 31508-00-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:31508-00-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 118"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/31508-00-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-32598-13-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 77 — Codice CAS: 32598-13-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:32598-13-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 77"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/32598-13-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-32598-14-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 105 — Codice CAS: 32598-14-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:32598-14-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 105"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/32598-14-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-3268-87-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "OCDD — Codice CAS: 3268-87-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:3268-87-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "OCDD"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/3268-87-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-32774-16-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 169 — Codice CAS: 32774-16-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:32774-16-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 169"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/32774-16-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-33213-65-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Endosulfan beta — Codice CAS: 33213-65-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:33213-65-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Endosulfan beta"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/33213-65-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-34123-59-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Isoproturon — Codice CAS: 34123-59-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:34123-59-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Isoproturon"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/34123-59-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-3424-82-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "o,p-DDE — Codice CAS: 3424-82-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:3424-82-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "o,p-DDE"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/3424-82-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-34256-82-1> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Acetocloro — Codice CAS: 34256-82-1"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:34256-82-1";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Acetocloro"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/34256-82-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-35065-27-1> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 153 — Codice CAS: 35065-27-1"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:35065-27-1";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 153"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/35065-27-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-35065-28-2> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 138 — Codice CAS: 35065-28-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:35065-28-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 138"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/35065-28-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-35065-29-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 180 — Codice CAS: 35065-29-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:35065-29-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 180"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/35065-29-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-35065-30-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 170 — Codice CAS: 35065-30-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:35065-30-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 170"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/35065-30-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-35693-99-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 52 — Codice CAS: 35693-99-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:35693-99-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 52"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/35693-99-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-35822-46-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "1,2,3,4,6,7,8 HpCDD — Codice CAS: 35822-46-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:35822-46-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "1,2,3,4,6,7,8 HpCDD"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/35822-46-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-37680-73-2> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 101 — Codice CAS: 37680-73-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:37680-73-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 101"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/37680-73-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-38379-99-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 95 — Codice CAS: 38379-99-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:38379-99-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 95"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/38379-99-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-38380-01-7> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 99 — Codice CAS: 38380-01-7"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:38380-01-7";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 99"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/38380-01-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-38380-03-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 110 — Codice CAS: 38380-03-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:38380-03-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 110"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/38380-03-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-38380-04-0> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 149 — Codice CAS: 38380-04-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:38380-04-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 149"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/38380-04-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-38380-08-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 156 — Codice CAS: 38380-08-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:38380-08-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 156"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/38380-08-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-39001-02-0> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "OCDF — Codice CAS: 39001-02-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:39001-02-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "OCDF"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/39001-02-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-39227-28-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "1,2,3,4,7,8 HxCDD — Codice CAS: 39227-28-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:39227-28-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "1,2,3,4,7,8 HxCDD"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/39227-28-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-39635-31-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 189 — Codice CAS: 39635-31-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:39635-31-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 189"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/39635-31-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-40321-76-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "1,2,3,7,8 PeCDD — Codice CAS: 40321-76-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:40321-76-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "1,2,3,7,8 PeCDD"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/40321-76-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-40487-42-1> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Pendimetalin — Codice CAS: 40487-42-1"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:40487-42-1";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Pendimetalin"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/40487-42-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-41394-05-2> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Metamitron — Codice CAS: 41394-05-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:41394-05-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Metamitron"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/41394-05-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-470-90-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Chlorfenvinphos — Codice CAS: 470-90-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:470-90-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Chlorfenvinphos"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/470-90-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-50-28-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "17-beta-estradiolo — Codice CAS: 50-28-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:50-28-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "17-beta-estradiolo"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/50-28-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-5103-71-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Clordano cis — Codice CAS: 5103-71-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:5103-71-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Clordano cis"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/5103-71-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-5103-74-2> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Clordano trans — Codice CAS: 5103-74-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:5103-74-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Clordano trans"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/5103-74-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-51207-31-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "2,3,7,8 TCDF — Codice CAS: 51207-31-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:51207-31-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "2,3,7,8 TCDF"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/51207-31-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-51218-45-2> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Metolachlor — Codice CAS: 51218-45-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:51218-45-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Metolachlor"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/51218-45-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-51218-49-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Pretilachlor — Codice CAS: 51218-49-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:51218-49-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Pretilachlor"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/51218-49-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-51908-16-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 146 — Codice CAS: 51908-16-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:51908-16-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 146"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/51908-16-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52663-63-5> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 151 — Codice CAS: 52663-63-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:52663-63-5";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 151"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/52663-63-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52663-68-0> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 187 — Codice CAS: 52663-68-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:52663-68-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 187"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/52663-68-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52663-69-1> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 183 — Codice CAS: 52663-69-1"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:52663-69-1";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 183"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/52663-69-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52663-70-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 177 — Codice CAS: 52663-70-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:52663-70-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 177"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/52663-70-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52663-72-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 167 — Codice CAS: 52663-72-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:52663-72-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 167"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/52663-72-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-53-19-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "o,p'-DDD — Codice CAS: 53-19-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:53-19-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "o,p'-DDD"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/53-19-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-53122-28-0> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Pirimetanil — Codice CAS: 53122-28-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:53122-28-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Pirimetanil"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/53122-28-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-55-38-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Fenthion — Codice CAS: 55-38-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:55-38-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Fenthion"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/55-38-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-55673-89-7> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "1,2,3,4,7,8,9 HpCDF — Codice CAS: 55673-89-7"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:55673-89-7";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "1,2,3,4,7,8,9 HpCDF"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/55673-89-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-5598-13-0> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Clorpirifos Metile — Codice CAS: 5598-13-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:5598-13-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Clorpirifos Metile"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/5598-13-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-56-38-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Paration etile — Codice CAS: 56-38-2"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:56-38-2";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Paration etile"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/56-38-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57-74-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Chlordano Totale — Codice CAS: 57-74-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:57-74-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Chlordano Totale"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/57-74-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57117-31-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "2,3,4,7,8 PeCDF — Codice CAS: 57117-31-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:57117-31-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "2,3,4,7,8 PeCDF"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/57117-31-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57117-41-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "1,2,3,7,8 PeCDF — Codice CAS: 57117-41-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:57117-41-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "1,2,3,7,8 PeCDF"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/57117-41-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57117-44-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "1,2,3,6,7,8 HxCDF — Codice CAS: 57117-44-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:57117-44-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "1,2,3,6,7,8 HxCDF"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/57117-44-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57465-28-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 126 — Codice CAS: 57465-28-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:57465-28-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 126"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/57465-28-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57653-85-7> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "1,2,3,6,7,8 HxCDD — Codice CAS: 57653-85-7"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:57653-85-7";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "1,2,3,6,7,8 HxCDD"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/57653-85-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57837-19-1> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Metalaxyl — Codice CAS: 57837-19-1"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:57837-19-1";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Metalaxyl"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/57837-19-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-60-57-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Dieldrin — Codice CAS: 60-57-1"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:60-57-1";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Dieldrin"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/60-57-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-608-73-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Esaclorocicloesano — Codice CAS: 608-73-1"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:608-73-1";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Esaclorocicloesano"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/608-73-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-60851-34-5> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "2,3,4,6,7,8 HxCDF — Codice CAS: 60851-34-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:60851-34-5";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "2,3,4,6,7,8 HxCDF"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/60851-34-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-6190-65-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Atrazina-desetil — Codice CAS: 6190-65-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:6190-65-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Atrazina-desetil"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/6190-65-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-65510-44-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 123 — Codice CAS: 65510-44-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:65510-44-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 123"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/65510-44-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-66246-88-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Penconazolo — Codice CAS: 66246-88-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:66246-88-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Penconazolo"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/66246-88-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-67562-39-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "1,2,3,4,6,7,8 HpCDF — Codice CAS: 67562-39-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:67562-39-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "1,2,3,4,6,7,8 HpCDF"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/67562-39-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-67747-09-5> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Procloraz — Codice CAS: 67747-09-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:67747-09-5";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Procloraz"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/67747-09-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-69782-90-7> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 157 — Codice CAS: 69782-90-7"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:69782-90-7";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 157"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/69782-90-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7012-37-5> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 28 — Codice CAS: 7012-37-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:7012-37-5";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 28"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/7012-37-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-70362-50-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 81 — Codice CAS: 70362-50-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:70362-50-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 81"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/70362-50-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-70648-26-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "1,2,3,4,7,8 HxCDF — Codice CAS: 70648-26-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:70648-26-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "1,2,3,4,7,8 HxCDF"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/70648-26-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-709-98-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Propanil — Codice CAS: 709-98-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:709-98-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Propanil"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/709-98-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-72-20-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Endrin — Codice CAS: 72-20-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:72-20-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Endrin"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/72-20-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-72-54-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "4,4'-DDD — Codice CAS: 72-54-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:72-54-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "4,4'-DDD"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/72-54-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-72-55-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "4,4'-DDE — Codice CAS: 72-55-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:72-55-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "4,4'-DDE"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/72-55-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7287-19-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Prometrina — Codice CAS: 7287-19-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:7287-19-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Prometrina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/7287-19-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-72918-21-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "1,2,3,7,8,9 HxCDF — Codice CAS: 72918-21-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:72918-21-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "1,2,3,7,8,9 HxCDF"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/72918-21-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-74070-46-5> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Aclonifen — Codice CAS: 74070-46-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:74070-46-5";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Aclonifen"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/74070-46-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-74472-37-0> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 114 — Codice CAS: 74472-37-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:74472-37-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 114"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/74472-37-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-44-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Eptacloro — Codice CAS: 76-44-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:76-44-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Eptacloro"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/76-44-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-77732-09-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Oxadixyl — Codice CAS: 77732-09-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:77732-09-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Oxadixyl"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/77732-09-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7786-34-7> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Mevinfos — Codice CAS: 7786-34-7"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:7786-34-7";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Mevinfos"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/7786-34-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-789-02-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "o,p'-DDT — Codice CAS: 789-02-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:789-02-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "o,p'-DDT"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/789-02-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-8017-34-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "DDT — Codice CAS: 8017-34-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:8017-34-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "DDT"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/8017-34-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-81103-11-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Claritromicina — Codice CAS: 81103-11-9"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:81103-11-9";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Claritromicina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/81103-11-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-81406-37-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Fluroxipir — Codice CAS: 81406-37-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:81406-37-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Fluroxipir"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/81406-37-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-81777-89-1> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Clomazone — Codice CAS: 81777-89-1"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:81777-89-1";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Clomazone"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/81777-89-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-83055-99-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Bensulfuron Metile — Codice CAS: 83055-99-6"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:83055-99-6";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Bensulfuron Metile"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/83055-99-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-834-12-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Ametrina — Codice CAS: 834-12-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:834-12-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Ametrina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/834-12-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-83905-01-5> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Azitromicina — Codice CAS: 83905-01-5"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:83905-01-5";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Azitromicina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/83905-01-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-84087-01-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Quinclorac — Codice CAS: 84087-01-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:84087-01-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Quinclorac"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/84087-01-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-85721-33-1> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Ciprofloxacina — Codice CAS: 85721-33-1"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:85721-33-1";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Ciprofloxacina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/85721-33-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-85760-74-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "PCB 128 — Codice CAS: 85760-74-3"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:85760-74-3";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB 128"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/85760-74-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-865318-97-4>
+  a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Ametoctradina — Codice CAS: 865318-97-4"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:865318-97-4";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Ametoctradina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/865318-97-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-886-50-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Terbutrina — Codice CAS: 886-50-0"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:886-50-0";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Terbutrina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/886-50-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-91-59-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "2-Naftilammina — Codice CAS: 91-59-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:91-59-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "2-Naftilammina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/91-59-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-81-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "2-cloro-5-metilanilina — Codice CAS: 95-81-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:95-81-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "2-cloro-5-metilanilina"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/95-81-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-959-98-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Endosulfan alfa — Codice CAS: 959-98-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:959-98-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Endosulfan alfa"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/959-98-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-99105-77-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
+  rdfs:label "Sulcotrione — Codice CAS: 99105-77-8"@it;
+  <http://www.w3.org/2004/02/skos/core#notation> "CAS:99105-77-8";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Sulcotrione"@it;
+  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/99105-77-8> .
+
+<https://w3id.org/whow/data/identifier/1007-28-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 1007-28-9"@en, "Identificativo CAS — 1007-28-9"@it;
+  top:identifier "1007-28-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/101205-02-1> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 101205-02-1"@en, "Identificativo CAS — 101205-02-1"@it;
+  top:identifier "101205-02-1";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/1024-57-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 1024-57-3"@en, "Identificativo CAS — 1024-57-3"@it;
+  top:identifier "1024-57-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/10265-92-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 10265-92-6"@en, "Identificativo CAS — 10265-92-6"@it;
+  top:identifier "10265-92-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/1031-07-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 1031-07-8"@en, "Identificativo CAS — 1031-07-8"@it;
+  top:identifier "1031-07-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/10313> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 10313"@en, "Identificativo CAS — 10313"@it;
+  top:identifier "10313";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/104206-82-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 104206-82-8"@en, "Identificativo CAS — 104206-82-8"@it;
+  top:identifier "104206-82-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/10606-46-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 10606-46-9"@en, "Identificativo CAS — 10606-46-9"@it;
+  top:identifier "10606-46-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/1066-51-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 1066-51-9"@en, "Identificativo CAS — 1066-51-9"@it;
+  top:identifier "1066-51-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/1071-83-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 1071-83-6"@en, "Identificativo CAS — 1071-83-6"@it;
+  top:identifier "1071-83-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/107534-96-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 107534-96-3"@en, "Identificativo CAS — 107534-96-3"@it;
+  top:identifier "107534-96-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/110488-70-5> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 110488-70-5"@en, "Identificativo CAS — 110488-70-5"@it;
+  top:identifier "110488-70-5";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/1113-02-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 1113-02-6"@en, "Identificativo CAS — 1113-02-6"@it;
+  top:identifier "1113-02-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/111988-49-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 111988-49-9"@en, "Identificativo CAS — 111988-49-9"@it;
+  top:identifier "111988-49-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/111991-09-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 111991-09-4"@en, "Identificativo CAS — 111991-09-4"@it;
+  top:identifier "111991-09-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/114-07-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 114-07-8"@en, "Identificativo CAS — 114-07-8"@it;
+  top:identifier "114-07-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/115-29-7> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 115-29-7"@en, "Identificativo CAS — 115-29-7"@it;
+  top:identifier "115-29-7";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/115-32-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 115-32-2"@en, "Identificativo CAS — 115-32-2"@it;
+  top:identifier "115-32-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/118134-30-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 118134-30-8"@en, "Identificativo CAS — 118134-30-8"@it;
+  top:identifier "118134-30-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/1190931-27-1> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 1190931-27-1"@en, "Identificativo CAS — 1190931-27-1"@it;
+  top:identifier "1190931-27-1";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/120162-55-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 120162-55-2"@en, "Identificativo CAS — 120162-55-2"@it;
+  top:identifier "120162-55-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/121-75-5> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 121-75-5"@en, "Identificativo CAS — 121-75-5"@it;
+  top:identifier "121-75-5";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/122-14-5> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 122-14-5"@en, "Identificativo CAS — 122-14-5"@it;
+  top:identifier "122-14-5";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/122931-48-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 122931-48-0"@en, "Identificativo CAS — 122931-48-0"@it;
+  top:identifier "122931-48-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/124495-18-7> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 124495-18-7"@en, "Identificativo CAS — 124495-18-7"@it;
+  top:identifier "124495-18-7";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/131860-33-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 131860-33-8"@en, "Identificativo CAS — 131860-33-8"@it;
+  top:identifier "131860-33-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/135410-20-7> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 135410-20-7"@en, "Identificativo CAS — 135410-20-7"@it;
+  top:identifier "135410-20-7";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/138261-41-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 138261-41-3"@en, "Identificativo CAS — 138261-41-3"@it;
+  top:identifier "138261-41-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/139968-49-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 139968-49-3"@en, "Identificativo CAS — 139968-49-3"@it;
+  top:identifier "139968-49-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/141112-29-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 141112-29-0"@en, "Identificativo CAS — 141112-29-0"@it;
+  top:identifier "141112-29-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/142459-58-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 142459-58-3"@en, "Identificativo CAS — 142459-58-3"@it;
+  top:identifier "142459-58-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/14797-55-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 14797-55-8"@en, "Identificativo CAS — 14797-55-8"@it;
+  top:identifier "14797-55-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/14797-65-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 14797-65-0"@en, "Identificativo CAS — 14797-65-0"@it;
+  top:identifier "14797-65-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/14798-03-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 14798-03-9"@en, "Identificativo CAS — 14798-03-9"@it;
+  top:identifier "14798-03-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/14808-79-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 14808-79-8"@en, "Identificativo CAS — 14808-79-8"@it;
+  top:identifier "14808-79-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/15307-86-5> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 15307-86-5"@en, "Identificativo CAS — 15307-86-5"@it;
+  top:identifier "15307-86-5";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/153719-23-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 153719-23-4"@en, "Identificativo CAS — 153719-23-4"@it;
+  top:identifier "153719-23-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/1582-09-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 1582-09-8"@en, "Identificativo CAS — 1582-09-8"@it;
+  top:identifier "1582-09-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/15972-60-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 15972-60-8"@en, "Identificativo CAS — 15972-60-8"@it;
+  top:identifier "15972-60-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/16887-00-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 16887-00-6"@en, "Identificativo CAS — 16887-00-6"@it;
+  top:identifier "16887-00-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/16984-48-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 16984-48-8"@en, "Identificativo CAS — 16984-48-8"@it;
+  top:identifier "16984-48-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/1746-01-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 1746-01-6"@en, "Identificativo CAS — 1746-01-6"@it;
+  top:identifier "1746-01-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/17778-88-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 17778-88-0"@en, "Identificativo CAS — 17778-88-0"@it;
+  top:identifier "17778-88-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/18540-29-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 18540-29-9"@en, "Identificativo CAS — 18540-29-9"@it;
+  top:identifier "18540-29-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/188425-85-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 188425-85-6"@en, "Identificativo CAS — 188425-85-6"@it;
+  top:identifier "188425-85-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/189-64-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 189-64-0"@en, "Identificativo CAS — 189-64-0"@it;
+  top:identifier "189-64-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/191-24-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 191-24-2"@en, "Identificativo CAS — 191-24-2"@it;
+  top:identifier "191-24-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/1918-00-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 1918-00-9"@en, "Identificativo CAS — 1918-00-9"@it;
+  top:identifier "1918-00-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/19408-74-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 19408-74-3"@en, "Identificativo CAS — 19408-74-3"@it;
+  top:identifier "19408-74-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/19666-30-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 19666-30-9"@en, "Identificativo CAS — 19666-30-9"@it;
+  top:identifier "19666-30-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/2008-58-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 2008-58-4"@en, "Identificativo CAS — 2008-58-4"@it;
+  top:identifier "2008-58-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/2032-65-7> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 2032-65-7"@en, "Identificativo CAS — 2032-65-7"@it;
+  top:identifier "2032-65-7";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/205-99-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 205-99-2"@en, "Identificativo CAS — 205-99-2"@it;
+  top:identifier "205-99-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/2058-94-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 2058-94-8"@en, "Identificativo CAS — 2058-94-8"@it;
+  top:identifier "2058-94-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/207-08-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 207-08-9"@en, "Identificativo CAS — 207-08-9"@it;
+  top:identifier "207-08-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/21087-64-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 21087-64-9"@en, "Identificativo CAS — 21087-64-9"@it;
+  top:identifier "21087-64-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/210880-92-5> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 210880-92-5"@en, "Identificativo CAS — 210880-92-5"@it;
+  top:identifier "210880-92-5";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/21725-46-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 21725-46-2"@en, "Identificativo CAS — 21725-46-2"@it;
+  top:identifier "21725-46-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/2212-67-1> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 2212-67-1"@en, "Identificativo CAS — 2212-67-1"@it;
+  top:identifier "2212-67-1";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/2275-18-5> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 2275-18-5"@en, "Identificativo CAS — 2275-18-5"@it;
+  top:identifier "2275-18-5";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/2303-17-5> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 2303-17-5"@en, "Identificativo CAS — 2303-17-5"@it;
+  top:identifier "2303-17-5";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/23103-98-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 23103-98-2"@en, "Identificativo CAS — 23103-98-2"@it;
+  top:identifier "23103-98-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/23564-05-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 23564-05-8"@en, "Identificativo CAS — 23564-05-8"@it;
+  top:identifier "23564-05-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/239110-15-7> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 239110-15-7"@en, "Identificativo CAS — 239110-15-7"@it;
+  top:identifier "239110-15-7";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/26787-78-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 26787-78-0"@en, "Identificativo CAS — 26787-78-0"@it;
+  top:identifier "26787-78-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/28044-83-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 28044-83-9"@en, "Identificativo CAS — 28044-83-9"@it;
+  top:identifier "28044-83-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/28159-98-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 28159-98-0"@en, "Identificativo CAS — 28159-98-0"@it;
+  top:identifier "28159-98-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/28249-77-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 28249-77-6"@en, "Identificativo CAS — 28249-77-6"@it;
+  top:identifier "28249-77-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/2921-88-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 2921-88-2"@en, "Identificativo CAS — 2921-88-2"@it;
+  top:identifier "2921-88-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/298-00-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 298-00-0"@en, "Identificativo CAS — 298-00-0"@it;
+  top:identifier "298-00-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/301-12-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 301-12-2"@en, "Identificativo CAS — 301-12-2"@it;
+  top:identifier "301-12-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/30125-63-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 30125-63-4"@en, "Identificativo CAS — 30125-63-4"@it;
+  top:identifier "30125-63-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/309-00-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 309-00-2"@en, "Identificativo CAS — 309-00-2"@it;
+  top:identifier "309-00-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/314-40-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 314-40-9"@en, "Identificativo CAS — 314-40-9"@it;
+  top:identifier "314-40-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/31508-00-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 31508-00-6"@en, "Identificativo CAS — 31508-00-6"@it;
+  top:identifier "31508-00-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/32598-13-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 32598-13-3"@en, "Identificativo CAS — 32598-13-3"@it;
+  top:identifier "32598-13-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/32598-14-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 32598-14-4"@en, "Identificativo CAS — 32598-14-4"@it;
+  top:identifier "32598-14-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/3268-87-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 3268-87-9"@en, "Identificativo CAS — 3268-87-9"@it;
+  top:identifier "3268-87-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/32774-16-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 32774-16-6"@en, "Identificativo CAS — 32774-16-6"@it;
+  top:identifier "32774-16-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/33213-65-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 33213-65-9"@en, "Identificativo CAS — 33213-65-9"@it;
+  top:identifier "33213-65-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/34123-59-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 34123-59-6"@en, "Identificativo CAS — 34123-59-6"@it;
+  top:identifier "34123-59-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/3424-82-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 3424-82-6"@en, "Identificativo CAS — 3424-82-6"@it;
+  top:identifier "3424-82-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/34256-82-1> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 34256-82-1"@en, "Identificativo CAS — 34256-82-1"@it;
+  top:identifier "34256-82-1";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/35065-27-1> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 35065-27-1"@en, "Identificativo CAS — 35065-27-1"@it;
+  top:identifier "35065-27-1";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/35065-28-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 35065-28-2"@en, "Identificativo CAS — 35065-28-2"@it;
+  top:identifier "35065-28-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/35065-29-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 35065-29-3"@en, "Identificativo CAS — 35065-29-3"@it;
+  top:identifier "35065-29-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/35065-30-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 35065-30-6"@en, "Identificativo CAS — 35065-30-6"@it;
+  top:identifier "35065-30-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/35693-99-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 35693-99-3"@en, "Identificativo CAS — 35693-99-3"@it;
+  top:identifier "35693-99-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/35822-46-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 35822-46-9"@en, "Identificativo CAS — 35822-46-9"@it;
+  top:identifier "35822-46-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/37680-73-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 37680-73-2"@en, "Identificativo CAS — 37680-73-2"@it;
+  top:identifier "37680-73-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/38379-99-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 38379-99-6"@en, "Identificativo CAS — 38379-99-6"@it;
+  top:identifier "38379-99-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/38380-01-7> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 38380-01-7"@en, "Identificativo CAS — 38380-01-7"@it;
+  top:identifier "38380-01-7";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/38380-03-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 38380-03-9"@en, "Identificativo CAS — 38380-03-9"@it;
+  top:identifier "38380-03-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/38380-04-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 38380-04-0"@en, "Identificativo CAS — 38380-04-0"@it;
+  top:identifier "38380-04-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/38380-08-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 38380-08-4"@en, "Identificativo CAS — 38380-08-4"@it;
+  top:identifier "38380-08-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/39001-02-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 39001-02-0"@en, "Identificativo CAS — 39001-02-0"@it;
+  top:identifier "39001-02-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/39227-28-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 39227-28-6"@en, "Identificativo CAS — 39227-28-6"@it;
+  top:identifier "39227-28-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/39635-31-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 39635-31-9"@en, "Identificativo CAS — 39635-31-9"@it;
+  top:identifier "39635-31-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/40321-76-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 40321-76-4"@en, "Identificativo CAS — 40321-76-4"@it;
+  top:identifier "40321-76-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/40487-42-1> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 40487-42-1"@en, "Identificativo CAS — 40487-42-1"@it;
+  top:identifier "40487-42-1";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/41394-05-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 41394-05-2"@en, "Identificativo CAS — 41394-05-2"@it;
+  top:identifier "41394-05-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/470-90-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 470-90-6"@en, "Identificativo CAS — 470-90-6"@it;
+  top:identifier "470-90-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/50-28-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 50-28-2"@en, "Identificativo CAS — 50-28-2"@it;
+  top:identifier "50-28-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/5103-71-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 5103-71-9"@en, "Identificativo CAS — 5103-71-9"@it;
+  top:identifier "5103-71-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/5103-74-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 5103-74-2"@en, "Identificativo CAS — 5103-74-2"@it;
+  top:identifier "5103-74-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/51207-31-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 51207-31-9"@en, "Identificativo CAS — 51207-31-9"@it;
+  top:identifier "51207-31-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/51218-45-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 51218-45-2"@en, "Identificativo CAS — 51218-45-2"@it;
+  top:identifier "51218-45-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/51218-49-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 51218-49-6"@en, "Identificativo CAS — 51218-49-6"@it;
+  top:identifier "51218-49-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/51908-16-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 51908-16-8"@en, "Identificativo CAS — 51908-16-8"@it;
+  top:identifier "51908-16-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/52663-63-5> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 52663-63-5"@en, "Identificativo CAS — 52663-63-5"@it;
+  top:identifier "52663-63-5";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/52663-68-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 52663-68-0"@en, "Identificativo CAS — 52663-68-0"@it;
+  top:identifier "52663-68-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/52663-69-1> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 52663-69-1"@en, "Identificativo CAS — 52663-69-1"@it;
+  top:identifier "52663-69-1";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/52663-70-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 52663-70-4"@en, "Identificativo CAS — 52663-70-4"@it;
+  top:identifier "52663-70-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/52663-72-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 52663-72-6"@en, "Identificativo CAS — 52663-72-6"@it;
+  top:identifier "52663-72-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/53-19-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 53-19-0"@en, "Identificativo CAS — 53-19-0"@it;
+  top:identifier "53-19-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/53122-28-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 53122-28-0"@en, "Identificativo CAS — 53122-28-0"@it;
+  top:identifier "53122-28-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/55-38-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 55-38-9"@en, "Identificativo CAS — 55-38-9"@it;
+  top:identifier "55-38-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/55673-89-7> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 55673-89-7"@en, "Identificativo CAS — 55673-89-7"@it;
+  top:identifier "55673-89-7";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/5598-13-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 5598-13-0"@en, "Identificativo CAS — 5598-13-0"@it;
+  top:identifier "5598-13-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/56-38-2> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 56-38-2"@en, "Identificativo CAS — 56-38-2"@it;
+  top:identifier "56-38-2";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/57-74-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 57-74-9"@en, "Identificativo CAS — 57-74-9"@it;
+  top:identifier "57-74-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/57117-31-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 57117-31-4"@en, "Identificativo CAS — 57117-31-4"@it;
+  top:identifier "57117-31-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/57117-41-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 57117-41-6"@en, "Identificativo CAS — 57117-41-6"@it;
+  top:identifier "57117-41-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/57117-44-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 57117-44-9"@en, "Identificativo CAS — 57117-44-9"@it;
+  top:identifier "57117-44-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/57465-28-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 57465-28-8"@en, "Identificativo CAS — 57465-28-8"@it;
+  top:identifier "57465-28-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/57653-85-7> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 57653-85-7"@en, "Identificativo CAS — 57653-85-7"@it;
+  top:identifier "57653-85-7";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/57837-19-1> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 57837-19-1"@en, "Identificativo CAS — 57837-19-1"@it;
+  top:identifier "57837-19-1";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/60-57-1> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 60-57-1"@en, "Identificativo CAS — 60-57-1"@it;
+  top:identifier "60-57-1";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/608-73-1> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 608-73-1"@en, "Identificativo CAS — 608-73-1"@it;
+  top:identifier "608-73-1";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/60851-34-5> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 60851-34-5"@en, "Identificativo CAS — 60851-34-5"@it;
+  top:identifier "60851-34-5";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/6190-65-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 6190-65-4"@en, "Identificativo CAS — 6190-65-4"@it;
+  top:identifier "6190-65-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/65510-44-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 65510-44-3"@en, "Identificativo CAS — 65510-44-3"@it;
+  top:identifier "65510-44-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/66246-88-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 66246-88-6"@en, "Identificativo CAS — 66246-88-6"@it;
+  top:identifier "66246-88-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/67562-39-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 67562-39-4"@en, "Identificativo CAS — 67562-39-4"@it;
+  top:identifier "67562-39-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/67747-09-5> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 67747-09-5"@en, "Identificativo CAS — 67747-09-5"@it;
+  top:identifier "67747-09-5";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/69782-90-7> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 69782-90-7"@en, "Identificativo CAS — 69782-90-7"@it;
+  top:identifier "69782-90-7";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/7012-37-5> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 7012-37-5"@en, "Identificativo CAS — 7012-37-5"@it;
+  top:identifier "7012-37-5";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/70362-50-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 70362-50-4"@en, "Identificativo CAS — 70362-50-4"@it;
+  top:identifier "70362-50-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/70648-26-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 70648-26-9"@en, "Identificativo CAS — 70648-26-9"@it;
+  top:identifier "70648-26-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/709-98-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 709-98-8"@en, "Identificativo CAS — 709-98-8"@it;
+  top:identifier "709-98-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/72-20-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 72-20-8"@en, "Identificativo CAS — 72-20-8"@it;
+  top:identifier "72-20-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/72-54-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 72-54-8"@en, "Identificativo CAS — 72-54-8"@it;
+  top:identifier "72-54-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/72-55-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 72-55-9"@en, "Identificativo CAS — 72-55-9"@it;
+  top:identifier "72-55-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/7287-19-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 7287-19-6"@en, "Identificativo CAS — 7287-19-6"@it;
+  top:identifier "7287-19-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/72918-21-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 72918-21-9"@en, "Identificativo CAS — 72918-21-9"@it;
+  top:identifier "72918-21-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/74070-46-5> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 74070-46-5"@en, "Identificativo CAS — 74070-46-5"@it;
+  top:identifier "74070-46-5";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/74472-37-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 74472-37-0"@en, "Identificativo CAS — 74472-37-0"@it;
+  top:identifier "74472-37-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/76-44-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 76-44-8"@en, "Identificativo CAS — 76-44-8"@it;
+  top:identifier "76-44-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/77732-09-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 77732-09-3"@en, "Identificativo CAS — 77732-09-3"@it;
+  top:identifier "77732-09-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/7786-34-7> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 7786-34-7"@en, "Identificativo CAS — 7786-34-7"@it;
+  top:identifier "7786-34-7";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/789-02-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 789-02-6"@en, "Identificativo CAS — 789-02-6"@it;
+  top:identifier "789-02-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/8017-34-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 8017-34-3"@en, "Identificativo CAS — 8017-34-3"@it;
+  top:identifier "8017-34-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/81103-11-9> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 81103-11-9"@en, "Identificativo CAS — 81103-11-9"@it;
+  top:identifier "81103-11-9";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/81406-37-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 81406-37-3"@en, "Identificativo CAS — 81406-37-3"@it;
+  top:identifier "81406-37-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/81777-89-1> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 81777-89-1"@en, "Identificativo CAS — 81777-89-1"@it;
+  top:identifier "81777-89-1";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/83055-99-6> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 83055-99-6"@en, "Identificativo CAS — 83055-99-6"@it;
+  top:identifier "83055-99-6";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/834-12-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 834-12-8"@en, "Identificativo CAS — 834-12-8"@it;
+  top:identifier "834-12-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/83905-01-5> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 83905-01-5"@en, "Identificativo CAS — 83905-01-5"@it;
+  top:identifier "83905-01-5";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/84087-01-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 84087-01-4"@en, "Identificativo CAS — 84087-01-4"@it;
+  top:identifier "84087-01-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/85721-33-1> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 85721-33-1"@en, "Identificativo CAS — 85721-33-1"@it;
+  top:identifier "85721-33-1";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/85760-74-3> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 85760-74-3"@en, "Identificativo CAS — 85760-74-3"@it;
+  top:identifier "85760-74-3";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/865318-97-4> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 865318-97-4"@en, "Identificativo CAS — 865318-97-4"@it;
+  top:identifier "865318-97-4";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/886-50-0> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 886-50-0"@en, "Identificativo CAS — 886-50-0"@it;
+  top:identifier "886-50-0";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/91-59-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 91-59-8"@en, "Identificativo CAS — 91-59-8"@it;
+  top:identifier "91-59-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/95-81-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 95-81-8"@en, "Identificativo CAS — 95-81-8"@it;
+  top:identifier "95-81-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/959-98-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 959-98-8"@en, "Identificativo CAS — 959-98-8"@it;
+  top:identifier "959-98-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/99105-77-8> a top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 99105-77-8"@en, "Identificativo CAS — 99105-77-8"@it;
+  top:identifier "99105-77-8";
+  top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/organisation/american-chemical-society> a top:Organisation;
+  rdfs:label "American Chemical Society."@en .
