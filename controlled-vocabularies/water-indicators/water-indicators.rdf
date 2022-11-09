@@ -1,0 +1,276 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:w-ind="https://w3id.org/whow/onto/water-indicator/"
+    xmlns:ndc="https://w3id.org/italia/onto/NDC/"
+    xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
+    xmlns:adms="http://www.w3.org/ns/adms#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" >
+  <rdf:Description rdf:about="https://w3id.org/italia/onto/NDC/keyConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/controlled-vocabulary/water-indicators/limeco">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel xml:lang="it">LIMeco</skos:altLabel>
+    <skos:altLabel xml:lang="en">LIMeco</skos:altLabel>
+    <skos:notation>limeco</skos:notation>
+    <skos:prefLabel xml:lang="en">Level of River Pollution from Macrodescriptors for the Ecological State</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/whow/controlled-vocabulary/water-indicators"/>
+    <skos:definition xml:lang="it">L'indicatore LIMeco per la qualità delle acque superficiali (fiumi). È un descrittore che integra i valori di 4 parametri rilevati su un corso d'acqua: azoto ammoniacale, azoto nitrico, fosforo totale e ossigeno disciolto (100 - % di saturazione). Nel caso di monitoraggio operativo il valore di LIMeco da attribuire al sito è dato dalla media dei valori di LIMeco ottenuti per ciascuno dei 3 anni di campionamento. Per il monitoraggio di sorveglianza, si fa riferimento al LIMeco dell’anno di controllo o, qualora il monitoraggio venisse effettuato per periodi più lunghi, alla media dei LIMeco dei vari anni. L'indice viene calcolato annualmente, ma non ha valore di classificazione nel monitoraggio operativo e di sorveglianza</skos:definition>
+    <skos:note xml:lang="it">LIMeco concorre alla definizione dello Stato Ecologico dei corsi d’acqua, in quanto indicatore sintetico dei parametri fisico-chimici a sostegno degli Elementi di Qualità Biologica. Non considera alcuni parametri indicatori di inquinamento da acque reflue (BOD5, COD, Escherichia coli).</skos:note>
+    <skos:prefLabel xml:lang="it">Livello di Inquinamento da Macrodescrittori per lo Stato Ecologico (LIMeco)</skos:prefLabel>
+    <rdf:type rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dati.gov.it/onto/dcatapit#Dataset">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/conformsTo">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dati.gov.it/onto/dcatapit#Standard">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#fn">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/dcat#contactPoint">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/data/contact-point/stlab">
+    <vcard:hasEmail rdf:resource="mailto:stlab@CNR.IT"/>
+    <rdfs:label xml:lang="it">Semantic Technology Laboratory - STLab</rdfs:label>
+    <vcard:fn xml:lang="it">Semantic Technology Laboratory - STLab</vcard:fn>
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/accrualPeriodicity">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broaderTransitive">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/controlled-vocabulary/water-indicators/ltleco">
+    <skos:definition xml:lang="it">L'indicatore LTLeco per la qualità delle acque superficiali (laghi). LTLeco è un descrittore che integra i valori di 3 parametri rilevati su lago: fosforo totale, trasparenza e ossigeno ipolimnico. Nel caso di monitoraggio operativo, per la classificazione si utilizzano le medie dei valori misurati nei tre anni per ogni singolo parametro.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/whow/controlled-vocabulary/water-indicators"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">Indicatore LTLeco (Livello Trofico Laghi per lo stato ecologico)</skos:prefLabel>
+    <skos:note xml:lang="it">Concorrere alla definizione dello stato ecologico dei laghi, valutandone i differenti stati trofici. Si precisa che, diversamente da quanto avviene per i corsi d'acqua, in questo caso sono previste solo tre classi di qualità (elevato, buono e sufficiente).</skos:note>
+    <skos:prefLabel xml:lang="en">Lake Trophic State Index (TSI)</skos:prefLabel>
+    <rdf:type rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicator"/>
+    <skos:altLabel xml:lang="en">LTLeco</skos:altLabel>
+    <skos:altLabel xml:lang="it">LTLeco</skos:altLabel>
+    <skos:notation>ltleco</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/format">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dati.gov.it/onto/dcatapit#Distribution">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/controlled-vocabulary/water-indicators/bwq">
+    <skos:definition xml:lang="en">The indicator describes the changes over time in the quality of identified bathing waters (inland and coastal) in EU in terms of compliance with standards for parameters introduced by the EU Bathing Water Directive (76/160/EEC) , i.e. microbiological parameters (total coliforms and faecal coliforms) and physicochemical parameters (mineral oils, surface-active substances and phenols), as well as in terms of meeting standards for parameters introduced by the New Bathing Water Directive (2006/7/EC), i.e. microbiological parameters (intestinal enterococci and Escherichia coli).</skos:definition>
+    <skos:definition xml:lang="it">Indicatore utilizzato per monitorare lo stato delle acque di balneazione ai sensi del D. Lgs. 152/2006, del D. Lgs. 116/2008 e del D.M. 30 Marzo 2010</skos:definition>
+    <skos:prefLabel xml:lang="en">Bathing water quality indicator.</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Indicatore per la qualità delle acque di balneazione. </skos:prefLabel>
+    <skos:notation>bwq</skos:notation>
+    <skos:inScheme rdf:resource="https://w3id.org/whow/controlled-vocabulary/water-indicators"/>
+    <rdf:type rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicator"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/data/distribution/wi-RDF-Turtle">
+    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+    <dct:title xml:lang="en">RDF/Turtle distribution of the water (quality) indicators controlled vocabulary</dct:title>
+    <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato sugli indicatori per la qualità delle acque</dct:description>
+    <dct:description xml:lang="en">This is the distribution in RDF/turtle of the Linked Open Dataset of the water (quality) indicators controlled vocabulary</dct:description>
+    <dcat:accessURL rdf:resource="https://github.com/whow-project/semantic-assets/tree/main/controlled-vocabularies/water-indicators"/>
+    <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+    <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/whow-project/semantic-assets/main/controlled-vocabularies/water-indicators/water-indicators.ttl"/>
+    <dct:title xml:lang="it">Distribuzione RDF/Turtle del vocabolario controllato sugli indicatori per la qualità delle acque</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Kind">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/onto/water-indicator/WaterIndicator">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/controlled-vocabulary/water-indicators/scas">
+    <skos:definition xml:lang="it">L'indice di stato chimico delle acque sotterranee (SCAS) evidenzia i corpi idrici nei quali sono presenti sostanze chimiche contaminanti derivanti dalle attività antropiche e, insieme allo stato quantitativo (disponibilità della risorsa idrica), permette la definizione dello stato complessivo del corpo idrico.</skos:definition>
+    <skos:prefLabel xml:lang="en">Groundwater chemical status.</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Indice di Qualità Stato Chimico delle Acque Sotterranee (SCAS)</skos:prefLabel>
+    <skos:notation>gcs</skos:notation>
+    <skos:inScheme rdf:resource="https://w3id.org/whow/controlled-vocabulary/water-indicators"/>
+    <rdf:type rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicator"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/dcat#theme">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dati.gov.it/onto/dcatapit#Agent">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/dcat#accessURL">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dati.gov.it/onto/dcatapit#LicenseDocument">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#notation">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/type">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/rightsHolder">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/LicenseDocument">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/whow/controlled-vocabulary/water-indicators">
+    <dct:description xml:lang="en">This is the water quality indicators controlled vocabulary.</dct:description>
+    <dcat:distribution rdf:resource="https://w3id.org/whow/data/distribution/wi-RDF-Turtle"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/whow/controlled-vocabulary/water-indicators/bwq"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/whow/controlled-vocabulary/water-indicators/limeco"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+    <dcat:keyword xml:lang="it">Indicatori</dcat:keyword>
+    <dct:creator rdf:resource="https://w3id.org/italia/data/support-unit/cnr-Z6HZEH/stlab"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI"/>
+    <rdfs:comment xml:lang="en">This is the water quality indicators controlled vocabulary.</rdfs:comment>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+    <dct:conformsTo rdf:resource="https://w3id.org/italia/data/standard/SKOS"/>
+    <dcat:keyword xml:lang="it">Qualità acqua</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-04-11</dct:issued>
+    <rdfs:label xml:lang="it">Vocabolario Controllato degli indicatori della qualità dell'acqua</rdfs:label>
+    <dct:type rdf:resource="http://purl.org/adms/assettype/CodeList"/>
+    <dcat:keyword xml:lang="it">Acqua</dcat:keyword>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/controlled-vocabulary/water-indicators"/>
+    <dcat:contactPoint rdf:resource="https://w3id.org/whow/data/contact-point/stlab"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:title xml:lang="it">Vocabolario Controllato degli indicatori della qualità dell'acqua</dct:title>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+    <dct:identifier>https://w3id.org/whow/controlled-vocabulary/water-indicators</dct:identifier>
+    <dct:publisher rdf:resource="https://w3id.org/italia/data/support-unit/cnr-Z6HZEH/stlab"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/whow/controlled-vocabulary/water-indicators/ltleco"/>
+    <adms:representationTechnique rdf:resource="http://purl.org/adms/representationtechnique/SKOS"/>
+    <xkos:numberOfLevels>1</xkos:numberOfLevels>
+    <dct:description xml:lang="it">Questo è il vocabolario controllato degli indicatori della qualità dell'acqua.</dct:description>
+    <dct:rightsHolder rdf:resource="https://w3id.org/italia/data/support-unit/cnr-Z6HZEH/stlab"/>
+    <owl:versionInfo>0.1</owl:versionInfo>
+    <dct:title xml:lang="en">Water quality indicators controlled vocabulary</dct:title>
+    <rdfs:comment xml:lang="it">Questo è il vocabolario controllato degli indicatori della qualità dell'acqua.</rdfs:comment>
+    <ndc:keyConcept>water-indicators</ndc:keyConcept>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-11-09</dct:modified>
+    <rdfs:label xml:lang="en">Water quality indicators controlled vocabulary</rdfs:label>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/whow/controlled-vocabulary/water-indicators/scas"/>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dcat:keyword xml:lang="it">Indice</dcat:keyword>
+    <dcat:keyword xml:lang="it">Indicatore</dcat:keyword>
+    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Dataset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/adms#representationTechnique">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/Standard">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/language">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dati.gov.it/onto/dcatapit#referenceDoc">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/dcat#keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dati.gov.it/onto/dcatapit#Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/dcat#downloadURL">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowerTransitive">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/dcat#distribution">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Property"/>
+  </rdf:Description>
+</rdf:RDF>

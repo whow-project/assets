@@ -1,0 +1,461 @@
+{
+  "@graph" : [ {
+    "@id" : "dcatapit:Agent",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "dcatapit:Dataset",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "dcatapit:Distribution",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "dcatapit:LicenseDocument",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "dcatapit:Organization",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "dcatapit:Standard",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "dcatapit:referenceDoc",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:LicenseDocument",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "dct:Standard",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "dct:accrualPeriodicity",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:conformsTo",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:creator",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:description",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:format",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:identifier",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:issued",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:language",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:license",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:modified",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:publisher",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:rightsHolder",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:subject",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:title",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dct:type",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "xkos:numberOfLevels",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "owl:versionInfo",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "skos:Concept",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "skos:ConceptScheme",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "skos:broader",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "skos:broaderTransitive",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "skos:definition",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "skos:inScheme",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "skos:narrower",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "skos:narrowerTransitive",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "skos:notation",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "skos:prefLabel",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "vcard:Kind",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "vcard:Organization",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "vcard:fn",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "vcard:hasEmail",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "adms:representationTechnique",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dcat:accessURL",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dcat:contactPoint",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dcat:distribution",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dcat:downloadURL",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dcat:keyword",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "dcat:theme",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "foaf:Agent",
+    "@type" : "rdfs:Class"
+  }, {
+    "@id" : "foaf:name",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "ndc:keyConcept",
+    "@type" : "rdfs:Property"
+  }, {
+    "@id" : "https://w3id.org/whow/controlled-vocabulary/water-indicators",
+    "@type" : [ "adms:Asset", "skos:ConceptScheme", "dcat:Dataset", "dcatapit:Dataset" ],
+    "accrualPeriodicity" : "http://publications.europa.eu/resource/authority/frequency/IRREG",
+    "conformsTo" : "https://w3id.org/italia/data/standard/SKOS",
+    "creator" : "https://w3id.org/italia/data/support-unit/cnr-Z6HZEH/stlab",
+    "description" : [ {
+      "@language" : "en",
+      "@value" : "This is the water quality indicators controlled vocabulary."
+    }, {
+      "@language" : "it",
+      "@value" : "Questo è il vocabolario controllato degli indicatori della qualità dell'acqua."
+    } ],
+    "identifier" : "https://w3id.org/whow/controlled-vocabulary/water-indicators",
+    "issued" : "2022-04-11",
+    "language" : [ "http://publications.europa.eu/resource/authority/language/ENG", "http://publications.europa.eu/resource/authority/language/ITA" ],
+    "modified" : "2022-11-09",
+    "publisher" : "https://w3id.org/italia/data/support-unit/cnr-Z6HZEH/stlab",
+    "rightsHolder" : "https://w3id.org/italia/data/support-unit/cnr-Z6HZEH/stlab",
+    "title" : [ {
+      "@language" : "it",
+      "@value" : "Vocabolario Controllato degli indicatori della qualità dell'acqua"
+    }, {
+      "@language" : "en",
+      "@value" : "Water quality indicators controlled vocabulary"
+    } ],
+    "type" : "http://purl.org/adms/assettype/CodeList",
+    "numberOfLevels" : "1",
+    "comment" : [ {
+      "@language" : "en",
+      "@value" : "This is the water quality indicators controlled vocabulary."
+    }, {
+      "@language" : "it",
+      "@value" : "Questo è il vocabolario controllato degli indicatori della qualità dell'acqua."
+    } ],
+    "isDefinedBy" : "https://w3id.org/whow/controlled-vocabulary/water-indicators",
+    "label" : [ {
+      "@language" : "it",
+      "@value" : "Vocabolario Controllato degli indicatori della qualità dell'acqua"
+    }, {
+      "@language" : "en",
+      "@value" : "Water quality indicators controlled vocabulary"
+    } ],
+    "versionInfo" : "0.1",
+    "hasTopConcept" : [ "https://w3id.org/whow/controlled-vocabulary/water-indicators/bwq", "https://w3id.org/whow/controlled-vocabulary/water-indicators/limeco", "https://w3id.org/whow/controlled-vocabulary/water-indicators/ltleco", "https://w3id.org/whow/controlled-vocabulary/water-indicators/scas" ],
+    "representationTechnique" : "http://purl.org/adms/representationtechnique/SKOS",
+    "contactPoint" : "https://w3id.org/whow/data/contact-point/stlab",
+    "distribution" : "https://w3id.org/whow/data/distribution/wi-RDF-Turtle",
+    "keyword" : [ {
+      "@language" : "it",
+      "@value" : "Indicatori"
+    }, {
+      "@language" : "it",
+      "@value" : "Qualità acqua"
+    }, {
+      "@language" : "it",
+      "@value" : "Acqua"
+    }, {
+      "@language" : "it",
+      "@value" : "Indice"
+    }, {
+      "@language" : "it",
+      "@value" : "Indicatore"
+    } ],
+    "theme" : [ "http://publications.europa.eu/resource/authority/data-theme/ENVI", "http://publications.europa.eu/resource/authority/data-theme/HEAL" ],
+    "keyConcept" : "water-indicators"
+  }, {
+    "@id" : "https://w3id.org/whow/controlled-vocabulary/water-indicators/bwq",
+    "@type" : [ "w-ind:WaterIndicator", "skos:Concept" ],
+    "definition" : [ {
+      "@language" : "en",
+      "@value" : "The indicator describes the changes over time in the quality of identified bathing waters (inland and coastal) in EU in terms of compliance with standards for parameters introduced by the EU Bathing Water Directive (76/160/EEC) , i.e. microbiological parameters (total coliforms and faecal coliforms) and physicochemical parameters (mineral oils, surface-active substances and phenols), as well as in terms of meeting standards for parameters introduced by the New Bathing Water Directive (2006/7/EC), i.e. microbiological parameters (intestinal enterococci and Escherichia coli)."
+    }, {
+      "@language" : "it",
+      "@value" : "Indicatore utilizzato per monitorare lo stato delle acque di balneazione ai sensi del D. Lgs. 152/2006, del D. Lgs. 116/2008 e del D.M. 30 Marzo 2010"
+    } ],
+    "inScheme" : "https://w3id.org/whow/controlled-vocabulary/water-indicators",
+    "notation" : "bwq",
+    "prefLabel" : [ {
+      "@language" : "en",
+      "@value" : "Bathing water quality indicator."
+    }, {
+      "@language" : "it",
+      "@value" : "Indicatore per la qualità delle acque di balneazione. "
+    } ]
+  }, {
+    "@id" : "https://w3id.org/whow/controlled-vocabulary/water-indicators/limeco",
+    "@type" : [ "skos:Concept", "w-ind:WaterIndicator" ],
+    "altLabel" : [ {
+      "@language" : "it",
+      "@value" : "LIMeco"
+    }, {
+      "@language" : "en",
+      "@value" : "LIMeco"
+    } ],
+    "definition" : {
+      "@language" : "it",
+      "@value" : "L'indicatore LIMeco per la qualità delle acque superficiali (fiumi). È un descrittore che integra i valori di 4 parametri rilevati su un corso d'acqua: azoto ammoniacale, azoto nitrico, fosforo totale e ossigeno disciolto (100 - % di saturazione). Nel caso di monitoraggio operativo il valore di LIMeco da attribuire al sito è dato dalla media dei valori di LIMeco ottenuti per ciascuno dei 3 anni di campionamento. Per il monitoraggio di sorveglianza, si fa riferimento al LIMeco dell’anno di controllo o, qualora il monitoraggio venisse effettuato per periodi più lunghi, alla media dei LIMeco dei vari anni. L'indice viene calcolato annualmente, ma non ha valore di classificazione nel monitoraggio operativo e di sorveglianza"
+    },
+    "inScheme" : "https://w3id.org/whow/controlled-vocabulary/water-indicators",
+    "notation" : "limeco",
+    "note" : {
+      "@language" : "it",
+      "@value" : "LIMeco concorre alla definizione dello Stato Ecologico dei corsi d’acqua, in quanto indicatore sintetico dei parametri fisico-chimici a sostegno degli Elementi di Qualità Biologica. Non considera alcuni parametri indicatori di inquinamento da acque reflue (BOD5, COD, Escherichia coli)."
+    },
+    "prefLabel" : [ {
+      "@language" : "en",
+      "@value" : "Level of River Pollution from Macrodescriptors for the Ecological State"
+    }, {
+      "@language" : "it",
+      "@value" : "Livello di Inquinamento da Macrodescrittori per lo Stato Ecologico (LIMeco)"
+    } ]
+  }, {
+    "@id" : "https://w3id.org/whow/controlled-vocabulary/water-indicators/ltleco",
+    "@type" : [ "skos:Concept", "w-ind:WaterIndicator" ],
+    "altLabel" : [ {
+      "@language" : "en",
+      "@value" : "LTLeco"
+    }, {
+      "@language" : "it",
+      "@value" : "LTLeco"
+    } ],
+    "definition" : {
+      "@language" : "it",
+      "@value" : "L'indicatore LTLeco per la qualità delle acque superficiali (laghi). LTLeco è un descrittore che integra i valori di 3 parametri rilevati su lago: fosforo totale, trasparenza e ossigeno ipolimnico. Nel caso di monitoraggio operativo, per la classificazione si utilizzano le medie dei valori misurati nei tre anni per ogni singolo parametro."
+    },
+    "inScheme" : "https://w3id.org/whow/controlled-vocabulary/water-indicators",
+    "notation" : "ltleco",
+    "note" : {
+      "@language" : "it",
+      "@value" : "Concorrere alla definizione dello stato ecologico dei laghi, valutandone i differenti stati trofici. Si precisa che, diversamente da quanto avviene per i corsi d'acqua, in questo caso sono previste solo tre classi di qualità (elevato, buono e sufficiente)."
+    },
+    "prefLabel" : [ {
+      "@language" : "it",
+      "@value" : "Indicatore LTLeco (Livello Trofico Laghi per lo stato ecologico)"
+    }, {
+      "@language" : "en",
+      "@value" : "Lake Trophic State Index (TSI)"
+    } ]
+  }, {
+    "@id" : "https://w3id.org/whow/controlled-vocabulary/water-indicators/scas",
+    "@type" : [ "w-ind:WaterIndicator", "skos:Concept" ],
+    "definition" : {
+      "@language" : "it",
+      "@value" : "L'indice di stato chimico delle acque sotterranee (SCAS) evidenzia i corpi idrici nei quali sono presenti sostanze chimiche contaminanti derivanti dalle attività antropiche e, insieme allo stato quantitativo (disponibilità della risorsa idrica), permette la definizione dello stato complessivo del corpo idrico."
+    },
+    "inScheme" : "https://w3id.org/whow/controlled-vocabulary/water-indicators",
+    "notation" : "gcs",
+    "prefLabel" : [ {
+      "@language" : "en",
+      "@value" : "Groundwater chemical status."
+    }, {
+      "@language" : "it",
+      "@value" : "Indice di Qualità Stato Chimico delle Acque Sotterranee (SCAS)"
+    } ]
+  }, {
+    "@id" : "https://w3id.org/whow/data/contact-point/stlab",
+    "@type" : [ "vcard:Kind", "vcard:Organization", "dcatapit:Organization" ],
+    "label" : {
+      "@language" : "it",
+      "@value" : "Semantic Technology Laboratory - STLab"
+    },
+    "fn" : {
+      "@language" : "it",
+      "@value" : "Semantic Technology Laboratory - STLab"
+    },
+    "hasEmail" : "mailto:stlab@CNR.IT"
+  }, {
+    "@id" : "https://w3id.org/whow/data/distribution/wi-RDF-Turtle",
+    "@type" : [ "dcatapit:Distribution", "dcat:Distribution" ],
+    "description" : [ {
+      "@language" : "it",
+      "@value" : "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato sugli indicatori per la qualità delle acque"
+    }, {
+      "@language" : "en",
+      "@value" : "This is the distribution in RDF/turtle of the Linked Open Dataset of the water (quality) indicators controlled vocabulary"
+    } ],
+    "format" : "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE",
+    "license" : "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "RDF/Turtle distribution of the water (quality) indicators controlled vocabulary"
+    }, {
+      "@language" : "it",
+      "@value" : "Distribuzione RDF/Turtle del vocabolario controllato sugli indicatori per la qualità delle acque"
+    } ],
+    "accessURL" : "https://github.com/whow-project/semantic-assets/tree/main/controlled-vocabularies/water-indicators",
+    "downloadURL" : "https://raw.githubusercontent.com/whow-project/semantic-assets/main/controlled-vocabularies/water-indicators/water-indicators.ttl"
+  }, {
+    "@id" : "w-ind:WaterIndicator",
+    "@type" : "rdfs:Class"
+  } ],
+  "@id" : "urn:x-arq:DefaultGraphNode",
+  "@context" : {
+    "definition" : "http://www.w3.org/2004/02/skos/core#definition",
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "note" : "http://www.w3.org/2004/02/skos/core#note",
+    "altLabel" : "http://www.w3.org/2004/02/skos/core#altLabel",
+    "notation" : "http://www.w3.org/2004/02/skos/core#notation",
+    "hasEmail" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#hasEmail",
+      "@type" : "@id"
+    },
+    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "fn" : "http://www.w3.org/2006/vcard/ns#fn",
+    "description" : "http://purl.org/dc/terms/description",
+    "distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#distribution",
+      "@type" : "@id"
+    },
+    "hasTopConcept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type" : "@id"
+    },
+    "keyword" : "http://www.w3.org/ns/dcat#keyword",
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "theme" : {
+      "@id" : "http://www.w3.org/ns/dcat#theme",
+      "@type" : "@id"
+    },
+    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
+    "language" : {
+      "@id" : "http://purl.org/dc/terms/language",
+      "@type" : "@id"
+    },
+    "conformsTo" : {
+      "@id" : "http://purl.org/dc/terms/conformsTo",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "type" : {
+      "@id" : "http://purl.org/dc/terms/type",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "contactPoint" : {
+      "@id" : "http://www.w3.org/ns/dcat#contactPoint",
+      "@type" : "@id"
+    },
+    "title" : "http://purl.org/dc/terms/title",
+    "accrualPeriodicity" : {
+      "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
+      "@type" : "@id"
+    },
+    "identifier" : "http://purl.org/dc/terms/identifier",
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "representationTechnique" : {
+      "@id" : "http://www.w3.org/ns/adms#representationTechnique",
+      "@type" : "@id"
+    },
+    "numberOfLevels" : "http://rdf-vocabulary.ddialliance.org/xkos#numberOfLevels",
+    "rightsHolder" : {
+      "@id" : "http://purl.org/dc/terms/rightsHolder",
+      "@type" : "@id"
+    },
+    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
+    "keyConcept" : "https://w3id.org/italia/onto/NDC/keyConcept",
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "format" : {
+      "@id" : "http://purl.org/dc/terms/format",
+      "@type" : "@id"
+    },
+    "accessURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#accessURL",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "downloadURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#downloadURL",
+      "@type" : "@id"
+    },
+    "adms" : "http://www.w3.org/ns/adms#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard" : "http://www.w3.org/2006/vcard/ns#",
+    "w-ind" : "https://w3id.org/whow/onto/water-indicator/",
+    "ndc" : "https://w3id.org/italia/onto/NDC/",
+    "xkos" : "http://rdf-vocabulary.ddialliance.org/xkos#",
+    "dct" : "http://purl.org/dc/terms/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcatapit" : "http://dati.gov.it/onto/dcatapit#",
+    "dcat" : "http://www.w3.org/ns/dcat#",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}

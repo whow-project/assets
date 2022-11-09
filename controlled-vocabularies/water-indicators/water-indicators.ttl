@@ -1,0 +1,249 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix ndc:     <https://w3id.org/italia/onto/NDC/> .
+@prefix adms:    <http://www.w3.org/ns/adms#> .
+@prefix dcat:     <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix vcard:    <http://www.w3.org/2006/vcard/ns#> .
+@prefix w-ind:    <https://w3id.org/whow/onto/water-indicator/> .
+
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://w3id.org/whow/controlled-vocabulary/water-indicators>
+      a       skos:ConceptScheme , dcat:Dataset , dcatapit:Dataset , adms:Asset ;
+      dct:title "Water quality indicators controlled vocabulary"@en , "Vocabolario Controllato degli indicatori della qualità dell'acqua"@it ;
+      dct:description "This is the water quality indicators controlled vocabulary."@en , "Questo è il vocabolario controllato degli indicatori della qualità dell'acqua."@it ;
+      rdfs:comment "This is the water quality indicators controlled vocabulary."@en , "Questo è il vocabolario controllato degli indicatori della qualità dell'acqua."@it ;
+      rdfs:label "Water quality indicators controlled vocabulary"@en , "Vocabolario Controllato degli indicatori della qualità dell'acqua"@it ;
+      ndc:keyConcept "water-indicators" ;
+      xkos:numberOfLevels "1" ;
+      dct:type <http://purl.org/adms/assettype/CodeList> ;
+      dct:rightsHolder <https://w3id.org/italia/data/support-unit/cnr-Z6HZEH/stlab> ;
+      dct:creator <https://w3id.org/italia/data/support-unit/cnr-Z6HZEH/stlab>  ;
+      dct:publisher <https://w3id.org/italia/data/support-unit/cnr-Z6HZEH/stlab> ;
+      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "https://w3id.org/whow/controlled-vocabulary/water-indicators";
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL> , <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> , <http://publications.europa.eu/resource/authority/language/ENG> ;
+      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      rdfs:isDefinedBy <https://w3id.org/whow/controlled-vocabulary/water-indicators> ;
+      dcat:keyword "Qualità acqua"@it , "Acqua"@it, "Indicatori"@it , "Indicatore"@it , "Indice"@it ;
+      dcat:distribution <https://w3id.org/whow/data/distribution/wi-RDF-Turtle> ;
+      dcat:contactPoint <https://w3id.org/whow/data/contact-point/stlab> ;
+      skos:hasTopConcept <https://w3id.org/whow/controlled-vocabulary/water-indicators/ltleco> , <https://w3id.org/whow/controlled-vocabulary/water-indicators/limeco> , <https://w3id.org/whow/controlled-vocabulary/water-indicators/scas> , <https://w3id.org/whow/controlled-vocabulary/water-indicators/bwq> ;
+      dct:issued "2022-04-11"^^xsd:date ;
+      dct:modified "2022-11-09"^^xsd:date ;
+      owl:versionInfo "0.1" .
+
+w-ind:WaterIndicator a rdfs:Class .
+
+skos:ConceptScheme
+      a       rdfs:Class .
+
+skos:Concept
+      a       rdfs:Class .
+
+dcatapit:Dataset
+      a       rdfs:Class .
+
+dcatapit:Distribution
+      a       rdfs:Class .
+
+dcatapit:Standard
+      a        rdfs:Class .
+
+dcatapit:Organization
+      a        rdfs:Class .
+
+dcatapit:LicenseDocument
+      a        rdfs:Class .
+
+vcard:Organization
+      a        rdfs:Class .
+
+vcard:Kind
+      a        rdfs:Class .
+
+dcatapit:Agent
+      a       rdfs:Class .
+
+foaf:Agent
+      a       rdfs:Class .
+
+dct:Standard
+      a       rdfs:Class .
+
+dct:LicenseDocument
+      a       rdfs:Class .
+
+skos:prefLabel
+      a       rdfs:Property .
+
+skos:notation
+      a       rdfs:Property .
+
+skos:inScheme
+      a       rdfs:Property .
+
+skos:narrower
+	  a 	  rdfs:Property .
+
+skos:broader
+	  a		  rdfs:Property .
+
+skos:broaderTransitive
+      a 	  rdfs:Property .
+
+skos:narrowerTransitive
+      a       rdfs:Property .
+
+skos:definition
+	  a		  rdfs:Property .
+
+dct:identifier
+	  a       rdfs:Property .
+
+dct:title
+    a       rdfs:Property .
+
+dct:type
+    a       rdfs:Property .
+
+dct:description
+    a       rdfs:Property .
+
+dct:creator
+    a       rdfs:Property .
+
+dct:publisher
+    a       rdfs:Property .
+
+dct:rightsHolder
+    a       rdfs:Property .
+
+dct:conformsTo
+    a       rdfs:Property .
+
+dct:subject
+    a       rdfs:Property .
+
+dct:accrualPeriodicity
+    a       rdfs:Property .
+
+dct:language
+    a       rdfs:Property .
+
+dct:format
+    a       rdfs:Property .
+
+dct:issued
+    a       rdfs:Property .
+
+dct:modified
+    a       rdfs:Property .
+
+dct:license
+    a       rdfs:Property .
+
+dct:type
+    a       rdfs:Property .
+
+dcatapit:referenceDoc
+    a       rdfs:Property .
+
+dcat:theme
+    a     rdfs:Property .
+
+dcat:distribution
+    a     rdfs:Property .
+
+foaf:name
+    a       rdfs:Property .
+
+dcat:keyword
+    a     rdfs:Property .
+
+dcat:contactPoint
+    a     rdfs:Property .
+
+dcat:accessURL
+    a     rdfs:Property .
+
+dcat:downloadURL
+    a     rdfs:Property .
+
+owl:versionInfo
+    a     rdfs:Property .
+
+adms:representationTechnique
+    a       rdfs:Property .
+
+xkos:numberOfLevels
+    a       rdfs:Property .
+
+vcard:fn
+    a     rdfs:Property .
+
+vcard:hasEmail
+    a     rdfs:Property .
+
+ndc:keyConcept
+    a     rdfs:Property .
+
+
+<https://w3id.org/whow/data/distribution/wi-RDF-Turtle>
+a						dcatapit:Distribution  , dcat:Distribution ;
+     dct:title				"Distribuzione RDF/Turtle del vocabolario controllato sugli indicatori per la qualità delle acque"@it , "RDF/Turtle distribution of the water (quality) indicators controlled vocabulary"@en ;
+     dct:description			"Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato sugli indicatori per la qualità delle acque"@it , "This is the distribution in RDF/turtle of the Linked Open Dataset of the water (quality) indicators controlled vocabulary"@en ;
+     dct:format 				<http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+     dcat:downloadURL		<https://raw.githubusercontent.com/whow-project/semantic-assets/main/controlled-vocabularies/water-indicators/water-indicators.ttl> ;
+     dcat:accessURL <https://github.com/whow-project/semantic-assets/tree/main/controlled-vocabularies/water-indicators> .
+
+
+<https://w3id.org/whow/data/contact-point/stlab>
+a						dcatapit:Organization , vcard:Organization, vcard:Kind ;
+     vcard:fn		"Semantic Technology Laboratory - STLab"@it ;
+     rdfs:label  "Semantic Technology Laboratory - STLab"@it ;
+     vcard:hasEmail <mailto:stlab@CNR.IT> .
+
+
+#Controlled vocabulary content
+<https://w3id.org/whow/controlled-vocabulary/water-indicators/ltleco>
+	  a  	skos:Concept , w-ind:WaterIndicator ;
+	  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/water-indicators> ;
+    skos:notation "ltleco" ;
+    skos:prefLabel "Indicatore LTLeco (Livello Trofico Laghi per lo stato ecologico)"@it , "Lake Trophic State Index (TSI)"@en ;
+	  skos:definition "L'indicatore LTLeco per la qualità delle acque superficiali (laghi). LTLeco è un descrittore che integra i valori di 3 parametri rilevati su lago: fosforo totale, trasparenza e ossigeno ipolimnico. Nel caso di monitoraggio operativo, per la classificazione si utilizzano le medie dei valori misurati nei tre anni per ogni singolo parametro."@it ;
+    skos:note "Concorrere alla definizione dello stato ecologico dei laghi, valutandone i differenti stati trofici. Si precisa che, diversamente da quanto avviene per i corsi d'acqua, in questo caso sono previste solo tre classi di qualità (elevato, buono e sufficiente)."@it ;
+    skos:altLabel "LTLeco"@it , "LTLeco"@en .
+
+<https://w3id.org/whow/controlled-vocabulary/water-indicators/limeco>
+    a  	skos:Concept ,	w-ind:WaterIndicator ;
+    skos:inScheme <https://w3id.org/whow/controlled-vocabulary/water-indicators> ;
+    skos:notation "limeco" ;
+    skos:prefLabel "Livello di Inquinamento da Macrodescrittori per lo Stato Ecologico (LIMeco)"@it , "Level of River Pollution from Macrodescriptors for the Ecological State"@en ;
+    skos:definition "L'indicatore LIMeco per la qualità delle acque superficiali (fiumi). È un descrittore che integra i valori di 4 parametri rilevati su un corso d'acqua: azoto ammoniacale, azoto nitrico, fosforo totale e ossigeno disciolto (100 - % di saturazione). Nel caso di monitoraggio operativo il valore di LIMeco da attribuire al sito è dato dalla media dei valori di LIMeco ottenuti per ciascuno dei 3 anni di campionamento. Per il monitoraggio di sorveglianza, si fa riferimento al LIMeco dell’anno di controllo o, qualora il monitoraggio venisse effettuato per periodi più lunghi, alla media dei LIMeco dei vari anni. L'indice viene calcolato annualmente, ma non ha valore di classificazione nel monitoraggio operativo e di sorveglianza"@it ;
+    skos:note "LIMeco concorre alla definizione dello Stato Ecologico dei corsi d’acqua, in quanto indicatore sintetico dei parametri fisico-chimici a sostegno degli Elementi di Qualità Biologica. Non considera alcuni parametri indicatori di inquinamento da acque reflue (BOD5, COD, Escherichia coli)."@it ;
+    skos:altLabel "LIMeco"@it , "LIMeco"@en .
+
+<https://w3id.org/whow/controlled-vocabulary/water-indicators/scas>
+    a  	skos:Concept , w-ind:WaterIndicator ;
+    skos:inScheme <https://w3id.org/whow/controlled-vocabulary/water-indicators> ;
+    skos:notation "gcs" ;
+    skos:prefLabel "Indice di Qualità Stato Chimico delle Acque Sotterranee (SCAS)"@it , "Groundwater chemical status."@en ;
+    skos:definition "L'indice di stato chimico delle acque sotterranee (SCAS) evidenzia i corpi idrici nei quali sono presenti sostanze chimiche contaminanti derivanti dalle attività antropiche e, insieme allo stato quantitativo (disponibilità della risorsa idrica), permette la definizione dello stato complessivo del corpo idrico."@it .
+
+<https://w3id.org/whow/controlled-vocabulary/water-indicators/bwq>
+    a  	skos:Concept , w-ind:WaterIndicator ;
+    skos:inScheme <https://w3id.org/whow/controlled-vocabulary/water-indicators> ;
+    skos:notation "bwq" ;
+    skos:prefLabel "Indicatore per la qualità delle acque di balneazione. "@it , "Bathing water quality indicator."@en ;
+    skos:definition "Indicatore utilizzato per monitorare lo stato delle acque di balneazione ai sensi del D. Lgs. 152/2006, del D. Lgs. 116/2008 e del D.M. 30 Marzo 2010"@it , "The indicator describes the changes over time in the quality of identified bathing waters (inland and coastal) in EU in terms of compliance with standards for parameters introduced by the EU Bathing Water Directive (76/160/EEC) , i.e. microbiological parameters (total coliforms and faecal coliforms) and physicochemical parameters (mineral oils, surface-active substances and phenols), as well as in terms of meeting standards for parameters introduced by the New Bathing Water Directive (2006/7/EC), i.e. microbiological parameters (intestinal enterococci and Escherichia coli)."@en .
