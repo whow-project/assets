@@ -11,7 +11,56 @@
 @prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
 @prefix top: <https://dati.isprambiente.it/ontology/top/> .
 @prefix w-mon: <https://w3id.org/whow/onto/water-monitoring/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix ndc:     <https://w3id.org/italia/onto/NDC/> .
+@prefix adms:    <http://www.w3.org/ns/adms#> .
+@prefix dcat:     <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix vcard:    <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances>
+      a       skos:ConceptScheme , dcat:Dataset , dcatapit:Dataset , adms:Asset ;
+      dct:title "Chemical substances controlled vocabulary"@en , "Vocabolario Controllato delle Sostanze Chimiche"@it ;
+      dct:description "This is the chemical substances controlled vocabulary."@en , "Questo è il vocabolario controllato delle sostanze chimiche."@it ;
+      rdfs:comment "This is the chemical substances controlled vocabulary."@en , "Questo è il vocabolario controllato delle sostanze chimiche."@it ;
+      rdfs:label "Chemical substances controlled vocabulary"@en , "Vocabolario Controllato delle Sostanze Chimiche"@it ;
+      ndc:keyConcept "chemical-substancess" ;
+      xkos:numberOfLevels "1" ;
+      dct:type <http://purl.org/adms/assettype/CodeList> ;
+      dct:rightsHolder <https://w3id.org/italia/data/support-unit/cnr-Z6HZEH/stlab> ;
+      dct:creator <https://w3id.org/italia/data/support-unit/cnr-Z6HZEH/stlab>  ;
+      dct:publisher <https://w3id.org/italia/data/support-unit/cnr-Z6HZEH/stlab> ;
+      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "https://w3id.org/whow/controlled-vocabulary/chemical-substances";
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TECH> , <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> , <http://publications.europa.eu/resource/authority/language/ENG> ;
+      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      rdfs:isDefinedBy <https://w3id.org/whow/controlled-vocabulary/chemical-substances> ;
+      dcat:keyword "Sostanze chimiche"@it , "Chimica"@it, "Sostanze"@it , "Chemical substances"@en ;
+      dcat:distribution <https://w3id.org/whow/data/distribution/cs-RDF-Turtle> ;
+      dcat:contactPoint <https://w3id.org/whow/data/contact-point/stlab> ;
+      dct:issued "2022-11-10"^^xsd:date ;
+      dct:modified "2022-11-11"^^xsd:date ;
+      owl:versionInfo "0.1" .
+
+<https://w3id.org/whow/data/distribution/cs-RDF-Turtle>
+a						dcatapit:Distribution  , dcat:Distribution ;
+     dct:title				"Distribuzione RDF/Turtle del vocabolario controllato sulle sostanze chimiche"@it , "RDF/Turtle distribution of the chemical substances controlled vocabulary"@en ;
+     dct:description			"Questa è la distribuzione RDF/Turtle del dataset Linked Open Data del vocabolario controllato sulle sostanze chimiche"@it , "This is the distribution in RDF/turtle of the Linked Open Dataset of the chemical substances controlled vocabulary"@en ;
+     dct:format 				<http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+     dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+     dcat:downloadURL		<https://raw.githubusercontent.com/whow-project/semantic-assets/main/controlled-vocabularies/chemical-substances/chemical-substances.ttl> ;
+     dcat:accessURL <https://github.com/whow-project/semantic-assets/tree/main/controlled-vocabularies/chemical-substances> .
+
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-0100-02-07> a
     <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
@@ -4048,9 +4097,6 @@
   rdfs:label "CAS Identifier — 99105-77-8"@en, "Identificativo CAS — 99105-77-8"@it;
   top:identifier "99105-77-8";
   top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
-
-<https://w3id.org/whow/data/organisation/american-chemical-society> a top:Organisation;
-  rdfs:label "American Chemical Society."@en .
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1007-28-9> a
     <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:ChemicalSubstance;
