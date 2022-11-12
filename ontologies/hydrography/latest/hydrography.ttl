@@ -13,8 +13,12 @@
 <https://w3id.org/whow/onto/hydrography> rdf:type owl:Ontology ;
                                           owl:versionIRI <https://w3id.org/whow/onto/hydrography/0.1> ;
                                           dc:description <https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/hydrography-ontology.jpg> ;
-                                          dct:description "Ontology for describing the hydrography. It includes concepts such as water basins and the classification of water bodies"@en ;
-                                          dct:title "Hydrography Ontology"@en ;
+                                          dct:description "Ontology for describing the hydrography. It includes concepts such as water basins and the classification of water bodies"@en , "Ontologia per la descrizione dell'idrografia. Include concetti quali i bacini idrici e la classificazione dei corpi idrici. È semanticamente allineata a concetti definiti nell'INSPIRE registry."@it ;
+                                          dct:title "Hydrography Ontology"@en , "Ontologia dell'Idrografia"@it ;
+                                          rdfs:comment "Ontology for describing the hydrography. It includes concepts such as water basins and the classification of water bodies"@en , "Ontologia per la descrizione dell'idrografia. Include concetti quali i bacini idrici e la classificazione dei corpi idrici. È semanticamente allineata a concetti definiti nell'INSPIRE registry."@it ;
+                                          rdfs:label "Hydrography Ontology"@en ;
+                                          dct:issued "2022-03-01"^^xsd:date ;
+                                          dct:modified "2022-11-09"^^xsd:date ;
                                           owl:versionInfo "version 0.1"@en .
 
 #################################################################

@@ -1,0 +1,2180 @@
+# baseURI: https://w3id.org/environmental-data/data/water-observable-properties
+# imports: http://www.w3.org/2004/02/skos/core
+# imports: https://dati.isprambiente.it/ontology/core/
+# imports: https://w3id.org/whow/onto/hydrography-ontology
+# imports: https://w3id.org/whow/onto/water-monitoring-ontology
+
+@prefix :        <https://w3id.org/whow/controlled-vocabulary/observable-properties> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix adms:    <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix core:    <https://dati.isprambiente.it/ontology/core/value/> .
+@prefix inspire-mf:  <https://dati.isprambiente.it/ontology/inspire-mf/> .
+@prefix ispra-top:  <https://dati.isprambiente.it/ontology/core/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo:     <http://schema.org/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix w-mon:   <https://w3id.org/whow/onto/water-monitoring-ontology/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://w3id.org/whow/controlled-vocabulary/observable-properties>
+      a       skos:ConceptScheme ;
+      dct:title "Observable properties Controlled Vocabulary"@en , "Vocabolario Controllato delle proprietà osservate"@it ;
+      dct:description "This is the Observable Properties controlled vocabulary."@en , "Questo è il vocabolario controllato delle proprietà osservate."@it ;
+      rdfs:comment "This is the Observable Properties controlled vocabulary"@en , "Questo è il vocabolario controllato delle proprietà osservate."@it ;
+      rdfs:label "Observable properties Controlled Vocabulary"@en , "Vocabolario Controllato delle proprietà osservate"@it ;
+      ndc:keyConcept "observable-properties" ;
+      adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+      dct:identifier "https://w3id.org/whow/controlled-vocabulary/observable-propertoes";
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL> , <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+      dct:conformsTo  <https://w3id.org/italia/data/standard/SKOS> ;
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+      dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      rdfs:isDefinedBy <https://w3id.org/whow/controlled-vocabulary/chemical-substances> ;
+      dcat:keyword "Proprietà osservate"@it ;
+      dcat:distribution <https://w3id.org/italia/data/distribution/INDTYPE_RDF_Turtle>,
+      dct:issued "2022-04-11"^^xsd:date ;
+      owl:versionInfo "0.1" .
+
+
+            skos:Concept a rdfs:Class .
+
+            w-mon:WaterObservableProperty a rdfs:Class .
+
+            skos:inScheme a rdfs:Property .
+
+            skos:prefLabel a rdfs:Property .
+
+
+            dcatapit:Distribution
+                  a       rdfs:Class .
+
+            dcatapit:Standard
+                  a        rdfs:Class .
+
+            skos:prefLabel
+                  a       rdfs:Property .
+
+            skos:definition
+            	  a		  rdfs:Property .
+
+            dct:identifier
+            	  a       rdfs:Property .
+
+            dct:title
+                a       rdfs:Property .
+
+            dct:type
+                a       rdfs:Property .
+
+            dct:description
+                a       rdfs:Property .
+
+            dct:conformsTo
+                a       rdfs:Property .
+
+            dct:subject
+                a       rdfs:Property .
+
+            dct:language
+                a       rdfs:Property .
+
+            dct:format
+                a       rdfs:Property .
+
+            dct:issued
+                a       rdfs:Property .
+
+            dct:modified
+                a       rdfs:Property .
+
+            dcat:theme
+                a     rdfs:Property .
+
+            dcat:distribution
+                a     rdfs:Property .
+
+            foaf:name
+                a     rdfs:Property .
+
+            dcat:keyword
+                a     rdfs:Property .
+
+            dcat:contactPoint
+                a     rdfs:Property .
+
+            owl:versionInfo
+                a     rdfs:Property .
+
+          skos:notation
+                a       rdfs:Property .
+
+          core:hasUniqueIdentifier
+                a       rdfs:Property .
+          core:identifier
+                a       rdfs:Property .
+
+          w-mon:identifierType
+                a       rdfs:Property .
+
+            ndc:keyConcept
+                a     rdfs:Property .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/0100-02-07> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 4-Nitrofenolo"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-0100-02-07> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/0107-06-02> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dicloroetano 1,2"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-0107-06-02> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/0120-12-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Antracene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-0120-12-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/0131-11-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dimetil-ftalato (DMP)"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-0131-11-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/0218-01-09> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Crisene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-0218-01-09> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/100-00-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1-Cloro-4-nitrobenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1-chloro-4-nitrobenzene"@en,
+    "Concentrazione di 1-chloro-4-nitrobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-100-00-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/100-41-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Etilbenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Ethylbenzene"@en,
+    "Concentrazione di Ethylbenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-100-41-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/100-42-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Stirene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Styrene"@en, "Concentrazione di Styrene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-100-42-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/100-61-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di N-metil Anilina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of N-methylaniline"@en,
+    "Concentrazione di N-methylaniline"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-100-61-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1007-28-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Atrazina-desisopropil"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1007-28-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/101205-02-1> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Cycloxidim"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-101205-02-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1024-57-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Eptacloro epossido"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Heptachlor epoxide"@en,
+    "Concentrazione di Heptachlor epoxide"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1024-57-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/10265-92-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Metamidofos (trifosforamidato di O,S- dimetile)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Methamidophos"@en,
+    "Concentrazione di Methamidophos"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-10265-92-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/103-69-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di N-etil Anilina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of N-ethylaniline"@en,
+    "Concentrazione di N-ethylaniline"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-103-69-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1031-07-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Endosulfan solfato"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1031-07-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/10313> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di COD"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-10313> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/104-40-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di p-nonilfenolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of p-nonylphenol"@en,
+    "Concentrazione di p-nonylphenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-104-40-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/104206-82-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Mesotrione"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-104206-82-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/105-67-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dimetilfenolo 2,4"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,4-xylenol"@en,
+    "Concentrazione di 2,4-xylenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-105-67-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/106-42-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Xilene para"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of p-xylene"@en, "Concentrazione di p-xylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-106-42-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/106-43-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 4-Clorotoluene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 4-chlorotoluene"@en,
+    "Concentrazione di 4-chlorotoluene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-106-43-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/106-46-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,4-diclorobenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,4-dichlorobenzene"@en,
+    "Concentrazione di 1,4-dichlorobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-106-46-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/106-47-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 4-cloroanilina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 4-chloroaniline"@en,
+    "Concentrazione di 4-chloroaniline"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-106-47-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/106-48-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 4-Clorofenolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 4-chlorophenol"@en,
+    "Concentrazione di 4-chlorophenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-106-48-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/106-49-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di p-toluidina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of p-toluidine"@en,
+    "Concentrazione di p-toluidine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-106-49-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/106-93-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2-dibromoetano"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,2-dibromoethane"@en,
+    "Concentrazione di 1,2-dibromoethane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-106-93-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/10606-46-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2,4-Dicofol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-10606-46-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1066-51-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di AMPA"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1066-51-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1071-83-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Glifosate"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Glyphosate"@en,
+    "Concentrazione di Glyphosate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1071-83-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/107534-96-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Tebuconazolo"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-107534-96-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/108-38-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Xilene meta"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of m-xylene"@en, "Concentrazione di m-xylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-38-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/108-41-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 3-Clorotoluene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 3-chlorotoluene"@en,
+    "Concentrazione di 3-chlorotoluene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-41-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/108-42-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 3-cloroanilina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 3-chloroaniline"@en,
+    "Concentrazione di 3-chloroaniline"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-42-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/108-43-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 3-Clorofenolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 3-chlorophenol"@en,
+    "Concentrazione di 3-chlorophenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-43-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/108-44-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di m-Toluidina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of m-toluidine"@en,
+    "Concentrazione di m-toluidine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-44-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/108-70-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Triclorobenzene 1,3,5"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,3,5-trichlorobenzene"@en,
+    "Concentrazione di 1,3,5-trichlorobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-70-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/108-88-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Toluene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Toluene"@en, "Concentrazione di Toluene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-88-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/108-90-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Monoclorobenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Chlorobenzene"@en,
+    "Concentrazione di Chlorobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-90-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/108-95-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Fenoli"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Phenol"@en, "Concentrazione di Phenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-95-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/110488-70-5> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dimetomorf"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-110488-70-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1113-02-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Ometoato"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Omethoate"@en, "Concentrazione di Omethoate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1113-02-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/111988-49-9> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Thiacloprid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-111988-49-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/111991-09-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Nicosulfuron"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-111991-09-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/114-07-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Eritromicina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Erythromycin"@en,
+    "Concentrazione di Erythromycin"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-114-07-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/115-29-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Endosulfan (isomeri alfa e beta)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Endosulfan"@en,
+    "Concentrazione di Endosulfan"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-115-29-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/115-32-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dicofol"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Dicofol"@en, "Concentrazione di Dicofol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-115-32-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/115-96-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di TCEP (tris-2cloroetil-fosfato)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Tris(2-chloroethyl) phosphate"@en,
+    "Concentrazione di Tris(2-chloroethyl) phosphate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-115-96-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/117-81-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Di-2-etilesilftalato"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Bis(2-ethylhexyl) phthalate"@en,
+    "Concentrazione di Bis(2-ethylhexyl) phthalate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-117-81-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/118-74-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Esaclorobenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Hexachlorobenzene"@en,
+    "Concentrazione di Hexachlorobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-118-74-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/118134-30-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Spiroxamina"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-118134-30-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1190931-27-1> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di cC6O4 [Difluoro{[2,2,4,5-tetrafluoro- 5-(trifluoromethoxy)-1,3-dioxolan- 4-yl]oxy} acetic acid]"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1190931-27-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/120-82-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,4-Triclorobenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,2,4-trichlorobenzene"@en,
+    "Concentrazione di 1,2,4-trichlorobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-120-82-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/120-83-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2,4-Diclorofenolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,4-dichlorophenol"@en,
+    "Concentrazione di 2,4-dichlorophenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-120-83-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/12002-48-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Triclorobenzeni"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Trichlorobenzene"@en,
+    "Concentrazione di Trichlorobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-12002-48-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/120162-55-2> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Azimsulfuron"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-120162-55-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/121-73-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 3 Cloronitrobenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1-chloro-3-nitrobenzene"@en,
+    "Concentrazione di 1-chloro-3-nitrobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-121-73-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/121-75-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Malathion"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Malathion"@en, "Concentrazione di Malathion"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-121-75-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/122-14-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Fenitrotion"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Fenitrothion"@en,
+    "Concentrazione di Fenitrothion"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-122-14-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/122-34-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Simazina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Simazine"@en, "Concentrazione di Simazine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-122-34-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/122-39-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Difenilammina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Diphenylamine"@en,
+    "Concentrazione di Diphenylamine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-122-39-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/122931-48-0> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Rimsulfuron"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-122931-48-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/124-48-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dibromoclorometano"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Dibromochloromethane"@en,
+    "Concentrazione di Dibromochloromethane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-124-48-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/124495-18-7> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Chinossifen"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-124495-18-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/127-18-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Tetracloroetilene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Tetrachloroethylene"@en,
+    "Concentrazione di Tetrachloroethylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-127-18-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/129-00-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Pirene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Pyrene"@en, "Concentrazione di Pyrene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-129-00-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/131860-33-8> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Azoxistrobina"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-131860-33-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1330-20-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Xilene (somma isomeri)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Xylene"@en, "Concentrazione di Xylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1330-20-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/134-32-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1-Naftilammina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1-naphthylamine"@en,
+    "Concentrazione di 1-naphthylamine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-134-32-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1344-09-08> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Silicati reattivi"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1344-09-08> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/135410-20-7> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Acetamiprid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-135410-20-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/138261-41-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Imidacloprid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-138261-41-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/139-40-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Propazina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Propazine"@en, "Concentrazione di Propazine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-139-40-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/139968-49-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Metaflumizone"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-139968-49-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/140-66-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di para-terz-ottilfenolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 4-(1,1,3,3-tetramethylbutyl)phenol"@en,
+    "Concentrazione di 4-(1,1,3,3-tetramethylbutyl)phenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-140-66-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/141112-29-0> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Isoxaflutol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-141112-29-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/142459-58-3> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Flufenacet"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-142459-58-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/14265-44-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Ortofosfato"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14265-44-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/14797-55-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Azoto nitrico"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14797-55-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/14797-65-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Azoto nitroso"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14797-65-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/14798-03-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Ammoniaca totale"@it, "Concentrazione di Azoto ammoniacale"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14798-03-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/14808-79-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Solfati"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14808-79-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/15307-86-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Diclofenac"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Diclofenac"@en,
+    "Concentrazione di Diclofenac"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-15307-86-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/153719-23-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Tiametoxam"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-153719-23-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/156-59-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dicloroetilene cis"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of cis-dichloroethylene"@en,
+    "Concentrazione di cis-dichloroethylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-156-59-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/156-60-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dicloroetilene trans"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of trans-dichloroethylene"@en,
+    "Concentrazione di trans-dichloroethylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-156-60-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1582-09-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Trifluralin"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Trifluralin"@en,
+    "Concentrazione di Trifluralin"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1582-09-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/15972-60-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Alachlor"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Alachlor"@en, "Concentrazione di Alachlor"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-15972-60-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1634-04-04> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di MTBE (metil terbutil etere)"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1634-04-04> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/16887-00-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Cloruri"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-16887-00-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1698-60-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Chloridazon"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Chloridazon"@en,
+    "Concentrazione di Chloridazon"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1698-60-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/16984-48-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Fluoruri"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-16984-48-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1717-00-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,1-Dicloro-1-fluoro-etano (Freon 141)"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1717-00-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1746-01-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2,3,7,8 TCDD"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,3,7,8-tetrachlorodibenzo[b,e][1,4]dioxin"@en,
+    "Concentrazione di 2,3,7,8-tetrachlorodibenzo[b,e][1,4]dioxin"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1746-01-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1763-23-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PFOS (Perfluoro Octane Sulfonate)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Heptadecafluorooctane-1-sulphonic acid"@en,
+    "Concentrazione di Heptadecafluorooctane-1-sulphonic acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1763-23-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/17778-88-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Azoto Totale"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-17778-88-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/18540-29-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Cromo VI"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-18540-29-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/188425-85-6> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Boscalid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-188425-85-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/189-64-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dibenzo(a,h)pirene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Dibenzo[b,def]chrysene"@en,
+    "Concentrazione di Dibenzo[b,def]chrysene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-189-64-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/191-24-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Benzo (g,h,i) perilene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Benzo[ghi]perylene"@en,
+    "Concentrazione di Benzo[ghi]perylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-191-24-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1912-24-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Atrazina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Atrazine"@en, "Concentrazione di Atrazine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1912-24-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/1918-00-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dicamba"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Dicamba"@en, "Concentrazione di Dicamba"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1918-00-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/193-39-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Indeno(1,2,3-cd)pirene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Indeno[1,2,3-cd]pyrene"@en,
+    "Concentrazione di Indeno[1,2,3-cd]pyrene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-193-39-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/19408-74-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,3,7,8,9 HxCDD"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-19408-74-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/19666-30-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Oxadiazon"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 3-[2,4-dichloro-5-(1-methylethoxy)phenyl]-5-(1,1-dimethylethyl)-1,3,4-oxadiazol-2(3H)-one"@en,
+    "Concentrazione di 3-[2,4-dichloro-5-(1-methylethoxy)phenyl]-5-(1,1-dimethylethyl)-1,3,4-oxadiazol-2(3H)-one"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-19666-30-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/2008-58-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Diclorobenzammide 2,6"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,6-dichlorobenzamide"@en,
+    "Concentrazione di 2,6-dichlorobenzamide"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2008-58-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/2032-65-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Metiocarb"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Mercaptodimethur"@en,
+    "Concentrazione di Mercaptodimethur"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2032-65-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/205-99-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Benzo (b) fluorantene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Benzo[e]acephenanthrylene"@en,
+    "Concentrazione di Benzo[e]acephenanthrylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-205-99-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/2058-94-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PFUdA (Perfluoro Undecanoic Acid)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Henicosafluoroundecanoic acid"@en,
+    "Concentrazione di Henicosafluoroundecanoic acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2058-94-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/206-44-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Fluorantene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Fluoranthene"@en,
+    "Concentrazione di Fluoranthene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-206-44-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/207-08-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Benzo (k) fluorantene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Benzo[k]fluoranthene"@en,
+    "Concentrazione di Benzo[k]fluoranthene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-207-08-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/208-96-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Acenaftilene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Acenaphthylene"@en,
+    "Concentrazione di Acenaphthylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-208-96-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/21087-64-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Metribuzin"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Metribuzin"@en,
+    "Concentrazione di Metribuzin"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-21087-64-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/210880-92-5> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Clotianidin"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-210880-92-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/21725-46-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Cianazina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Cyanazine"@en, "Concentrazione di Cyanazine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-21725-46-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/2212-67-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Molinate"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Molinate"@en, "Concentrazione di Molinate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2212-67-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/2275-18-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Protoate"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Prothoate"@en, "Concentrazione di Prothoate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2275-18-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/2303-17-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Triallate"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Tri-allate"@en,
+    "Concentrazione di Tri-allate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2303-17-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/23103-98-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Pirimicarb"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Pirimicarb"@en,
+    "Concentrazione di Pirimicarb"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-23103-98-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/23564-05-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Tiofanato metile"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Thiophanate-methyl"@en,
+    "Concentrazione di Thiophanate-methyl"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-23564-05-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/239110-15-7> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Fluopicolide"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-239110-15-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/25057-89-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Bentazone"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Bentazone"@en, "Concentrazione di Bentazone"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-25057-89-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/26787-78-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Amoxicillina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Amoxicillin"@en,
+    "Concentrazione di Amoxicillin"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-26787-78-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/2706-90-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PFPeA (Perfluoro Pentanoic Acid)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Perfluorovaleric acid"@en,
+    "Concentrazione di Perfluorovaleric acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2706-90-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/28044-83-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Eptacloro Epossido endo"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-28044-83-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/28159-98-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Cibutrina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of N'-tert-butyl-N-cyclopropyl-6-(methylthio)-1,3,5-triazine-2,4-diamine"@en,
+    "Concentrazione di N'-tert-butyl-N-cyclopropyl-6-(methylthio)-1,3,5-triazine-2,4-diamine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-28159-98-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/28249-77-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Thiobencarb"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of S-4-chlorobenzyl diethylthiocarbamate"@en,
+    "Concentrazione di S-4-chlorobenzyl diethylthiocarbamate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-28249-77-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/288-88-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di M.Mt.T.D."@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,2,4-triazole"@en,
+    "Concentrazione di 1,2,4-triazole"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-288-88-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/2921-88-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Clorpirifos"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Chlorpyrifos"@en,
+    "Concentrazione di Chlorpyrifos"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2921-88-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/298-00-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Paration metile"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Parathion-methyl"@en,
+    "Concentrazione di Parathion-methyl"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-298-00-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/301-12-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Oxydemeton-metile"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Oxydemeton-methyl"@en,
+    "Concentrazione di Oxydemeton-methyl"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-301-12-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/30125-63-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Terbutilazina desetil"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-30125-63-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/307-24-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PFHxA (Perfluoro Hexanoic Acid)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Undecafluorohexanoic acid"@en,
+    "Concentrazione di Undecafluorohexanoic acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-307-24-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/307-55-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PFDoA (Perfluoro Dodecanoic Acid)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Tricosafluorododecanoic acid"@en,
+    "Concentrazione di Tricosafluorododecanoic acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-307-55-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/309-00-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Aldrin"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Aldrin"@en, "Concentrazione di Aldrin"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-309-00-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/314-40-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Bromacil"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Bromacil"@en, "Concentrazione di Bromacil"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-314-40-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/31508-00-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 118"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-31508-00-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/319-84-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di HCH alfa"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of (1?,2?,3?,4?,5?,6?)-1,2,3,4,5,6-hexachlorocyclohexane"@en,
+    "Concentrazione di (1?,2?,3?,4?,5?,6?)-1,2,3,4,5,6-hexachlorocyclohexane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-319-84-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/319-85-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di HCH-beta"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of (1?,2?,3?,4?,5?,6?)-1,2,3,4,5,6-hexachlorocyclohexane"@en,
+    "Concentrazione di (1?,2?,3?,4?,5?,6?)-1,2,3,4,5,6-hexachlorocyclohexane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-319-85-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/319-86-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di HCH delta"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of (1?,2?,3?,4?,5?,6?)-1,2,3,4,5,6-hexachlorocyclohexane"@en,
+    "Concentrazione di (1?,2?,3?,4?,5?,6?)-1,2,3,4,5,6-hexachlorocyclohexane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-319-86-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/32598-13-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 77"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-32598-13-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/32598-14-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 105"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-32598-14-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/3268-87-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di OCDD"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-3268-87-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/32774-16-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 169"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-32774-16-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/330-54-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Diuron"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Diuron"@en, "Concentrazione di Diuron"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-330-54-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/330-55-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Linuron"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Linuron"@en, "Concentrazione di Linuron"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-330-55-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/33213-65-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Endosulfan beta"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-33213-65-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/333-41-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Diazinone"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Diazinon"@en, "Concentrazione di Diazinon"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-333-41-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/335-67-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PFOA (Perfluoro Octanoic Acid)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Pentadecafluorooctanoic acid"@en,
+    "Concentrazione di Pentadecafluorooctanoic acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-335-67-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/335-76-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PFDA (Perfluoro Decanoic Acid)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Nonadecafluorodecanoic acid"@en,
+    "Concentrazione di Nonadecafluorodecanoic acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-335-76-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/34123-59-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Isoproturon"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 3-(4-isopropylphenyl)-1,1-dimethylurea"@en,
+    "Concentrazione di 3-(4-isopropylphenyl)-1,1-dimethylurea"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-34123-59-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/3424-82-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di o,p-DDE"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,2,o,p'-tetrachlorovinylidenebisbenzene"@en,
+    "Concentrazione di 2,2,o,p'-tetrachlorovinylidenebisbenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-3424-82-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/34256-82-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Acetocloro"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2-chloro-N-(ethoxymethyl)-N-(2-ethyl-6-methylphenyl)acetamide"@en,
+    "Concentrazione di 2-chloro-N-(ethoxymethyl)-N-(2-ethyl-6-methylphenyl)acetamide"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-34256-82-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/35065-27-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 153"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-35065-27-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/35065-28-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 138"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-35065-28-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/35065-29-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 180"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-35065-29-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/35065-30-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 170"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-35065-30-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/355-46-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PFHxS (Perfluoro Hexane Sulfonate)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Perfluorohexane-1-sulphonic acid"@en,
+    "Concentrazione di Perfluorohexane-1-sulphonic acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-355-46-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/35693-99-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 52"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-35693-99-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/35822-46-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,3,4,6,7,8 HpCDD"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-35822-46-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/375-22-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PFBA (Perfluoro Butanoic Acid)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Heptafluorobutyric acid"@en,
+    "Concentrazione di Heptafluorobutyric acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-375-22-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/375-73-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PFBS (Perfluoro Butane Sulfonate)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,1,2,2,3,3,4,4,4-nonafluorobutane-1-sulphonic acid"@en,
+    "Concentrazione di 1,1,2,2,3,3,4,4,4-nonafluorobutane-1-sulphonic acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-375-73-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/375-85-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PFHpA (Perfluoro Heptanoic Acid)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Perfluoroheptanoic acid"@en,
+    "Concentrazione di Perfluoroheptanoic acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-375-85-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/375-95-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PFNA (Perfluoro Nonanoic Acid)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Perfluorononan-1-oic acid"@en,
+    "Concentrazione di Perfluorononan-1-oic acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-375-95-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/37680-73-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 101"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-37680-73-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/38379-99-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 95"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-38379-99-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/38380-01-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 99"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-38380-01-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/38380-03-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 110"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-38380-03-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/38380-04-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 149"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-38380-04-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/38380-08-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 156"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-38380-08-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/39001-02-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di OCDF"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-39001-02-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/39227-28-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,3,4,7,8 HxCDD"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-39227-28-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/39635-31-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 189"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-39635-31-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/40321-76-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,3,7,8 PeCDD"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-40321-76-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/40487-42-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Pendimetalin"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of N-(1-ethylpropyl)-2,6-dinitro-3,4-xylidine"@en,
+    "Concentrazione di N-(1-ethylpropyl)-2,6-dinitro-3,4-xylidine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-40487-42-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/41394-05-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Metamitron"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 4-amino-3-methyl-6-phenyl-1,2,4-triazin-5-one"@en,
+    "Concentrazione di 4-amino-3-methyl-6-phenyl-1,2,4-triazin-5-one"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-41394-05-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/465-73-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Isodrin"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of (1?,4?,4a?,5?,8?8a?)-1,2,3,4,10,10-hexachloro-1,4,4a,5,8,8a-hexahydro-1,4:5,8-dimethanonaphthalene"@en,
+    "Concentrazione di (1?,4?,4a?,5?,8?8a?)-1,2,3,4,10,10-hexachloro-1,4,4a,5,8,8a-hexahydro-1,4:5,8-dimethanonaphthalene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-465-73-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/470-90-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Chlorfenvinphos"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Chlorfenvinphos"@en,
+    "Concentrazione di Chlorfenvinphos"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-470-90-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/479-61-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Clorofilla \"a\""@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Magnesium, [3,7,11,15-tetramethyl-2-hexadecenyl 9-ethenyl-14-ethyl-21-(methoxycarbonyl)-4,8,13,18-tetramethyl-20-oxo-3-phorbinepropanoato(2-)-N23,N24,N25,N26]-, [SP-4-2-[3S-[3?(2E,7S*,11S*),4?,21?]]]-"@en,
+    "Concentrazione di Magnesium, [3,7,11,15-tetramethyl-2-hexadecenyl 9-ethenyl-14-ethyl-21-(methoxycarbonyl)-4,8,13,18-tetramethyl-20-oxo-3-phorbinepropanoato(2-)-N23,N24,N25,N26]-, [SP-4-2-[3S-[3?(2E,7S*,11S*),4?,21?]]]-"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-479-61-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/50-28-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 17-beta-estradiolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Estradiol"@en, "Concentrazione di Estradiol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-50-28-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/50-29-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di p,p'-DDT"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Clofenotane"@en,
+    "Concentrazione di Clofenotane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-50-29-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/50-32-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Benzo (a) pirene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Benzo[def]chrysene"@en,
+    "Concentrazione di Benzo[def]chrysene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-50-32-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/51-28-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2,4-Dinitrofenolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,4-dinitrophenol"@en,
+    "Concentrazione di 2,4-dinitrophenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-51-28-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/5103-71-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Clordano cis"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of (1?,2?,3a?,4?,7?,7a?)-1,2,4,5,6,7,8,8-octachloro-2,3,3a,4,7,7a-hexahydro-4,7-methano-1H-indene"@en,
+    "Concentrazione di (1?,2?,3a?,4?,7?,7a?)-1,2,4,5,6,7,8,8-octachloro-2,3,3a,4,7,7a-hexahydro-4,7-methano-1H-indene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-5103-71-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/5103-74-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Clordano trans"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of (1?,2?,3a?,4?,7?,7a?)-1,2,4,5,6,7,8,8-octachloro-2,3,3a,4,7,7a-hexahydro-4,7-methano-1H-indene"@en,
+    "Concentrazione di (1?,2?,3a?,4?,7?,7a?)-1,2,4,5,6,7,8,8-octachloro-2,3,3a,4,7,7a-hexahydro-4,7-methano-1H-indene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-5103-74-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/51207-31-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2,3,7,8 TCDF"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-51207-31-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/51218-45-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Metolachlor"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2-chloro-2'-ethyl-N-(2-methoxy-1-methylethyl)-6'-methylacetanilide"@en,
+    "Concentrazione di 2-chloro-2'-ethyl-N-(2-methoxy-1-methylethyl)-6'-methylacetanilide"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-51218-45-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/51218-49-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Pretilachlor"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-51218-49-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/51235-04-02> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Esazinone"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-51235-04-02> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/51908-16-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 146"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-51908-16-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/52663-63-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 151"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52663-63-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/52663-68-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 187"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52663-68-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/52663-69-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 183"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52663-69-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/52663-70-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 177"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52663-70-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/52663-72-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 167"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52663-72-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/53-16-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Estrone"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Estrone"@en, "Concentrazione di Estrone"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-53-16-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/53-19-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di o,p'-DDD"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Mitotane"@en, "Concentrazione di Mitotane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-53-19-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/53-70-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dibenzo(a,h)antracene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Dibenz[a,h]anthracene"@en,
+    "Concentrazione di Dibenz[a,h]anthracene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-53-70-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/53122-28-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Pirimetanil"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-53122-28-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/534-52-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2-Metil-4,6-dinitrofenolo (DNOC)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2-methyl-4,6-dinitro-phenol"@en,
+    "Concentrazione di 2-methyl-4,6-dinitro-phenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-534-52-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/540-59-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2-dicloroetilene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,2-dichloroethylene"@en,
+    "Concentrazione di 1,2-dichloroethylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-540-59-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/541-73-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,3 Diclorobenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,3-dichlorobenzene"@en,
+    "Concentrazione di 1,3-dichlorobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-541-73-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/55-38-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Fenthion"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Fenthion"@en, "Concentrazione di Fenthion"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-55-38-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/55673-89-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,3,4,7,8,9 HpCDF"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-55673-89-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/5598-13-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Clorpirifos Metile"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Chlorpyrifos-methyl"@en,
+    "Concentrazione di Chlorpyrifos-methyl"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-5598-13-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/56-23-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Tetracloruro di carbonio"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Carbon tetrachloride"@en,
+    "Concentrazione di Carbon tetrachloride"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-56-23-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/56-38-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Paration etile"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Parathion"@en, "Concentrazione di Parathion"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-56-38-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/56-55-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Benzo(a)antracene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Benz[a]anthracene"@en,
+    "Concentrazione di Benz[a]anthracene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-56-55-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/57-12-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Cianuri liberi"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57-12-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/57-63-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 17-alfa-etinilestradiolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Ethinylestradiol"@en,
+    "Concentrazione di Ethinylestradiol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57-63-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/57-74-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Chlordano Totale"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Chlordane , pur"@en,
+    "Concentrazione di Chlordane , pur"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57-74-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/57117-31-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2,3,4,7,8 PeCDF"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57117-31-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/57117-41-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,3,7,8 PeCDF"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57117-41-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/57117-44-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,3,6,7,8 HxCDF"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57117-44-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/57465-28-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 126"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57465-28-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/57653-85-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,3,6,7,8 HxCDD"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57653-85-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/57837-19-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Metalaxyl"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Methyl N-(2,6-dimethylphenyl)-N-(methoxyacetyl)-DL-alaninate"@en,
+    "Concentrazione di Methyl N-(2,6-dimethylphenyl)-N-(methoxyacetyl)-DL-alaninate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-57837-19-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/58-89-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di HCH gamma (lindano)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of ?-HCH or ?-BHC"@en,
+    "Concentrazione di ?-HCH or ?-BHC"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-58-89-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/59-50-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 4-Cloro-3-metilfenolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Chlorocresol"@en,
+    "Concentrazione di Chlorocresol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-59-50-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/5915-41-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Terbutilazina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Terbuthylazine"@en,
+    "Concentrazione di Terbuthylazine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-5915-41-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/60-51-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dimetoato"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Dimethoate"@en,
+    "Concentrazione di Dimethoate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-60-51-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/60-57-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dieldrin"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Dieldrin"@en, "Concentrazione di Dieldrin"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-60-57-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/608-27-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2,3-Dicloroanilina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,3-dichloroaniline"@en,
+    "Concentrazione di 2,3-dichloroaniline"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-608-27-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/608-73-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Esaclorocicloesano"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of BHC or HCH"@en,
+    "Concentrazione di BHC or HCH"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-608-73-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/608-93-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Pentaclorobenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Pentachlorobenzene"@en,
+    "Concentrazione di Pentachlorobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-608-93-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/60851-34-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2,3,4,6,7,8 HxCDF"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-60851-34-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/6190-65-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Atrazina-desetil"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-6190-65-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/62-53-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Anilina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Aniline"@en, "Concentrazione di Aniline"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-62-53-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/62-73-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Diclorvos"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Dichlorvos"@en,
+    "Concentrazione di Dichlorvos"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-62-73-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/635-22-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 4-Cloro-3-Nitroanolina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 4-chloro-3-nitroaniline"@en,
+    "Concentrazione di 4-chloro-3-nitroaniline"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-635-22-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/636-30-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2,4,5-Tricloroanilina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,4,5-trichloroaniline"@en,
+    "Concentrazione di 2,4,5-trichloroaniline"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-636-30-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/637-92-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di ETBE ( etil terbutil etere )"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2-ethoxy-2-methylpropane"@en,
+    "Concentrazione di 2-ethoxy-2-methylpropane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-637-92-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/65510-44-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 123"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-65510-44-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/66246-88-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Penconazolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1-[2-(2,4-dichlorophenyl)pentyl]-1H-1,2,4-triazole"@en,
+    "Concentrazione di 1-[2-(2,4-dichlorophenyl)pentyl]-1H-1,2,4-triazole"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-66246-88-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/67-66-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Triclorometano"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Chloroform"@en,
+    "Concentrazione di Chloroform"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-67-66-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/67562-39-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,3,4,6,7,8 HpCDF"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-67562-39-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/67747-09-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Procloraz"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of N-propyl-N-[2-(2,4,6-trichlorophenoxy)ethyl]-1H-imidazole-1-carboxamide"@en,
+    "Concentrazione di N-propyl-N-[2-(2,4,6-trichlorophenoxy)ethyl]-1H-imidazole-1-carboxamide"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-67747-09-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/69782-90-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 157"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-69782-90-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7012-37-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 28"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,4,4'-trichlorobiphenyl"@en,
+    "Concentrazione di 2,4,4'-trichlorobiphenyl"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7012-37-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/70362-50-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 81"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-70362-50-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/70648-26-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,3,4,7,8 HxCDF"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-70648-26-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/709-98-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Propanil"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Propanil"@en, "Concentrazione di Propanil"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-709-98-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/71-43-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Benzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Benzene"@en, "Concentrazione di Benzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-71-43-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/71-55-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Tricloroetano 1,1,1"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,1,1-trichloroethane"@en,
+    "Concentrazione di 1,1,1-trichloroethane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-71-55-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/72-20-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Endrin"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Endrin"@en, "Concentrazione di Endrin"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-72-20-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/72-54-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 4,4'-DDD"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of TDE"@en, "Concentrazione di TDE"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-72-54-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/72-55-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 4,4'-DDE"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,2-bis(p-chlorophenyl)-1,1-dichloroethylene"@en,
+    "Concentrazione di 2,2-bis(p-chlorophenyl)-1,1-dichloroethylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-72-55-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7286-69-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Secbutilazina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Sebuthylazine"@en,
+    "Concentrazione di Sebuthylazine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7286-69-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7287-19-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Prometrina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Prometryn"@en, "Concentrazione di Prometryn"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7287-19-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/72918-21-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,3,7,8,9 HxCDF"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-72918-21-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/74070-46-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Aclonifen"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2-chloro-6-nitro-3-phenoxyaniline"@en,
+    "Concentrazione di 2-chloro-6-nitro-3-phenoxyaniline"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-74070-46-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7439-89-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Ferro"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Iron"@en, "Concentrazione di Iron"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7439-89-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7439-92-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Piombo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Lead"@en, "Concentrazione di Lead"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7439-92-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7439-95-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Magnesio"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Magnesium"@en, "Concentrazione di Magnesium"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7439-95-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7439-97-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Mercurio"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Mercury"@en, "Concentrazione di Mercury"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7439-97-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7440-02-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Nichel"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Nickel"@en, "Concentrazione di Nickel"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-02-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7440-09-07> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Potassio"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-09-07> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7440-23-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Sodio"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Sodium"@en, "Concentrazione di Sodium"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-23-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7440-36-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Antimonio"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Antimony"@en, "Concentrazione di Antimony"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-36-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7440-38-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Arsenico"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Arsenic"@en, "Concentrazione di Arsenic"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-38-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7440-42-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Boro"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Boron"@en, "Concentrazione di Boron"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-42-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7440-43-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Cadmio"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Cadmium"@en, "Concentrazione di Cadmium"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-43-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7440-47-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Cromo totale"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Chromium"@en, "Concentrazione di Chromium"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-47-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7440-50-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Rame"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Copper"@en, "Concentrazione di Copper"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-50-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7440-62-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Vanadio"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Vanadium"@en, "Concentrazione di Vanadium"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-62-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7440-66-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Zinco"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Zinc"@en, "Concentrazione di Zinc"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-66-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7440-70-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Calcio"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Calcium"@en, "Concentrazione di Calcium"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-70-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/74472-37-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 114"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-74472-37-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/75-01-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Cloruro di Vinile"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Chloroethylene"@en,
+    "Concentrazione di Chloroethylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-01-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/75-09-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Diclorometano"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Dichloromethane"@en,
+    "Concentrazione di Dichloromethane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-09-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/75-25-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Tribromometano"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Bromoform"@en, "Concentrazione di Bromoform"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-25-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/75-27-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Bromodiclorometano"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Bromodichloromethane"@en,
+    "Concentrazione di Bromodichloromethane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-27-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/75-34-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dicloroetano 1,1"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,1-dichloroethane"@en,
+    "Concentrazione di 1,1-dichloroethane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-34-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/75-35-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,1-Dicloroetilene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,1-dichloroethylene"@en,
+    "Concentrazione di 1,1-dichloroethylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-35-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/76-44-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Eptacloro"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Heptachlor"@en,
+    "Concentrazione di Heptachlor"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-44-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7664-41-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Ammoniaca (non ionizzata)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Ammonia, anhydrous"@en,
+    "Concentrazione di Ammonia, anhydrous"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7664-41-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7723-14-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Fosforo Totale"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Phosphorus"@en,
+    "Concentrazione di Phosphorus"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7723-14-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/77732-09-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Oxadixyl"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-77732-09-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7782-44-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Ossigeno disciolto"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Oxygen"@en, "Concentrazione di Oxygen"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7782-44-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7782-49-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Selenio"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Selenium"@en, "Concentrazione di Selenium"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7782-49-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/7786-34-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Mevinfos"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Mevinphos"@en, "Concentrazione di Mevinphos"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7786-34-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/78-87-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2-dicloropropano"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,2-dichloropropane"@en,
+    "Concentrazione di 1,2-dichloropropane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-78-87-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/789-02-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di o,p'-DDT"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,2,2,o,p'-pentachloroethylidenebisbenzene"@en,
+    "Concentrazione di 2,2,2,o,p'-pentachloroethylidenebisbenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-789-02-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/79-00-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Tricloroetano 1,1,2"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,1,2-trichloroethane"@en,
+    "Concentrazione di 1,1,2-trichloroethane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-79-00-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/79-01-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Tricloroetilene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Trichloroethylene"@en,
+    "Concentrazione di Trichloroethylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-79-01-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/79-34-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Tetracloroetano 1,1,2,2"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,1,2,2-tetrachloroethane"@en,
+    "Concentrazione di 1,1,2,2-tetrachloroethane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-79-34-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/80-05-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Bisfenolo A"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 4,4'-isopropylidenediphenol"@en,
+    "Concentrazione di 4,4'-isopropylidenediphenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-80-05-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/8017-34-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di DDT"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-8017-34-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/81103-11-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Claritromicina"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-81103-11-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/81406-37-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Fluroxipir"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1-methylheptyl [(4-amino-3,5-dichloro-6-fluoropyridin-2-yl)oxy]acetate"@en,
+    "Concentrazione di 1-methylheptyl [(4-amino-3,5-dichloro-6-fluoropyridin-2-yl)oxy]acetate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-81406-37-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/81777-89-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Clomazone"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-81777-89-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/83-32-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Acenaftene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Acenaphthene"@en,
+    "Concentrazione di Acenaphthene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-83-32-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/83055-99-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Bensulfuron Metile"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-83055-99-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/834-12-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Ametrina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Ametryn"@en, "Concentrazione di Ametryn"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-834-12-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/83905-01-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Azitromicina"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-83905-01-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/84-66-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dietil-Ftalato (DEP)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Diethyl phthalate"@en,
+    "Concentrazione di Diethyl phthalate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-84-66-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/84-69-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Bis(2-metilpropil)ftalato"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Diisobutyl phthalate"@en,
+    "Concentrazione di Diisobutyl phthalate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-84-69-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/84-74-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Dibutil-ftalato"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Dibutyl phthalate"@en,
+    "Concentrazione di Dibutyl phthalate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-84-74-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/84087-01-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Quinclorac"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-84087-01-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/85-01-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Fenantrene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Phenanthrene"@en,
+    "Concentrazione di Phenanthrene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-85-01-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/85-68-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Benzil-butil-ftalato"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Benzyl butyl phthalate"@en,
+    "Concentrazione di Benzyl butyl phthalate"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-85-68-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/85721-33-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Ciprofloxacina"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-85721-33-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/85760-74-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di PCB 128"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-85760-74-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/86-73-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Fluorene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Fluorene"@en, "Concentrazione di Fluorene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-86-73-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/865318-97-4> a
+    <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Ametoctradina"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-865318-97-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/87-61-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,3-Triclorobenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,2,3-trichlorobenzene"@en,
+    "Concentrazione di 1,2,3-trichlorobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-87-61-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/87-68-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Esaclorobutadiene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Hexachlorobuta-1,3-diene"@en,
+    "Concentrazione di Hexachlorobuta-1,3-diene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-87-68-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/87-86-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Pentaclorofenolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Pentachlorophenol"@en,
+    "Concentrazione di Pentachlorophenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-87-86-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/88-06-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2,4,6-Triclorofenolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,4,6-trichlorophenol"@en,
+    "Concentrazione di 2,4,6-trichlorophenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-88-06-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/88-73-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1-Cloro-2-nitrobenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1-chloro-2-nitrobenzene"@en,
+    "Concentrazione di 1-chloro-2-nitrobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-88-73-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/88-75-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2-Nitrofenolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2-nitrophenol"@en,
+    "Concentrazione di 2-nitrophenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-88-75-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/886-50-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Terbutrina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Terbutryn"@en, "Concentrazione di Terbutryn"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-886-50-0> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/89-63-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 4-cloro-2-nitroanilina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 4-chloro-2-nitroaniline"@en,
+    "Concentrazione di 4-chloro-2-nitroaniline"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-89-63-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/91-20-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Naftalene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Naphthalene"@en,
+    "Concentrazione di Naphthalene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-91-20-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/91-59-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2-Naftilammina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2-naphthylamine"@en,
+    "Concentrazione di 2-naphthylamine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-91-59-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/93-65-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Mecoprop"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2-(4-chloro-2-methylphenoxy)propionic acid"@en,
+    "Concentrazione di 2-(4-chloro-2-methylphenoxy)propionic acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-93-65-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/93-76-5> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2,4,5-T"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,4,5-T"@en, "Concentrazione di 2,4,5-T"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-93-76-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/94-74-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di (MCPA) Acido 2,4 meticlorofenossi acetico"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of (4-chloro-2-methylphenoxy)acetic acid"@en,
+    "Concentrazione di (4-chloro-2-methylphenoxy)acetic acid"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-94-74-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/94-75-7> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Acido 2,4 diclorofenossi acetico (2,4 D)"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,4-D"@en, "Concentrazione di 2,4-D"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-94-75-7> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/95-47-6> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Xilene orto"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of o-xylene"@en, "Concentrazione di o-xylene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-47-6> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/95-49-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2-Clorotoluene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2-chlorotoluene"@en,
+    "Concentrazione di 2-chlorotoluene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-49-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/95-50-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2-Diclorobenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,2-dichlorobenzene"@en,
+    "Concentrazione di 1,2-dichlorobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-50-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/95-51-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2-cloroanilina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2-chloroaniline"@en,
+    "Concentrazione di 2-chloroaniline"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-51-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/95-53-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2-Metilanilina [o-Toluidina]"@it, "Concentrazione di 2-Metilanina [o-Toluidina]"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of o-toluidine"@en,
+    "Concentrazione di o-toluidine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-53-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/95-57-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2-Clorofenolo"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2-chlorophenol"@en,
+    "Concentrazione di 2-chlorophenol"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-57-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/95-69-2> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 4-cloro-2-metilanilina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 4-chloro-o-toluidine"@en,
+    "Concentrazione di 4-chloro-o-toluidine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-69-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/95-76-1> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 3,4-dicloroanilina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 3,4-dichloroaniline"@en,
+    "Concentrazione di 3,4-dichloroaniline"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-76-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/95-81-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2-cloro-5-metilanilina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 6-chloro-m-toluidine"@en,
+    "Concentrazione di 6-chloro-m-toluidine"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-81-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/95-82-9> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 2,5-dicloroanilina"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 2,5-dichloroaniline"@en,
+    "Concentrazione di 2,5-dichloroaniline"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-82-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/95-94-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,4,5-Tetraclorobenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,2,4,5-tetrachlorobenzene"@en,
+    "Concentrazione di 1,2,4,5-tetrachlorobenzene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-94-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/959-98-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Endosulfan alfa"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-959-98-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/96-18-4> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di 1,2,3-Tricloropropano"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of 1,2,3-trichloropropane"@en,
+    "Concentrazione di 1,2,3-trichloropropane"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-96-18-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/98-82-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Isopropilbenzene"@it;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentration of Cumene"@en, "Concentrazione di Cumene"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-98-82-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/observable-properties/99105-77-8> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    w-mon:WaterObservableProperty;
+  rdfs:label "Concentrazione di Sulcotrione"@it;
+  w-mon:hasChemicalSubstance <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-99105-77-8> .
