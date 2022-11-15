@@ -2649,7 +2649,7 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>hasLocation</IRI>
-        <Literal xml:lang="en">The relation holding between any kind of entity and a place.</Literal>
+        <Literal xml:lang="en">The relation holding between any kind of entity and a location.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -2664,7 +2664,7 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>hasLocation</IRI>
-        <Literal xml:lang="en">has place</Literal>
+        <Literal xml:lang="en">has location</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
