@@ -373,13 +373,6 @@
         <Class IRI="MonitoringObject"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="MonitoringFacility"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="top:hasLocation"/>
-            <Class abbreviatedIRI="top:Location"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="MonitoringNetwork"/>
         <Class IRI="MonitoringObject"/>
     </SubClassOf>
