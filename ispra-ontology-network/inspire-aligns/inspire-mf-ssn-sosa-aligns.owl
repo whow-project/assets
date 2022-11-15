@@ -325,41 +325,6 @@
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/observation-x -->
-
-    <owl:NamedIndividual rdf:about="https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/observation-x">
-        <rdf:type rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Observation"/>
-        <core:atTime rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/time-x"/>
-        <inspire-mf:isObservationMadeBySensor rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/sensor-x"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/sensor-x -->
-
-    <owl:NamedIndividual rdf:about="https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/sensor-x">
-        <rdf:type rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/Sensor"/>
-        <inspire-mf:makesObservation rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/observation-x"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/time-x -->
-
-    <owl:NamedIndividual rdf:about="https://dati.isprambiente.it/ontology/inspire-mf-ssn-sosa-aligns/time-x">
-        <rdf:type rdf:resource="https://dati.isprambiente.it/ontology/core/TemporalEntity"/>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
