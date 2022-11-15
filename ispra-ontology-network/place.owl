@@ -367,6 +367,10 @@
         <Class IRI="Region"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="Feature"/>
+        <Class IRI="Geometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="Geometry"/>
         <Class IRI="Sea"/>
     </DisjointClasses>
