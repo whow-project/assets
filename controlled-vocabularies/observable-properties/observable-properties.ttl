@@ -222,7 +222,7 @@
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/HM-PCDD-DF> a
     <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
-  rdfs:label "Concentrazione di Sommatoria PCDD, PCDF"@it;
+  rdfs:label "Sommatoria PCDD, PCDF"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Sommatoria PCDD, PCDF"@it;
   top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-PCDD-DF> .
 
@@ -234,13 +234,13 @@
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/LT-00-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
     w-mon:WaterObservableProperty;
-  rdfs:label "Concentrazione di Altezza idrometrica"@it;
+  rdfs:label "Altezza idrometrica"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Altezza idrometrica"@it;
   top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/LT-00-0> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/M-PRT-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
     w-mon:WaterObservableProperty;
-  rdfs:label "Concentrazione di Portata"@it;
+  rdfs:label "Portata"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Portata"@it;
   top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/M-PRT-0> .
 
