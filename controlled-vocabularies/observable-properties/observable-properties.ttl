@@ -352,6 +352,12 @@
   <http://www.w3.org/2004/02/skos/core#prefLabel> "BOD-5"@it;
   top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/3133-01-5> .
 
+  <https://w3id.org/whow/controlled-vocabularies/observable-properties/concentrazione-di-ostreopsis-ovata>
+    a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
+    rdfs:label "Concentrazione di ostreopsis ovata."@it;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentrazione di ostreopsis ovata."@it.
+
+
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/wise-3133-05-9>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "DOC- Codice WISE: 3133-05-9"@it;
