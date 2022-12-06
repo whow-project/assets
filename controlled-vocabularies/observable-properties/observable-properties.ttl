@@ -355,8 +355,8 @@
   <https://w3id.org/whow/controlled-vocabularies/observable-properties/concentrazione-di-ostreopsis-ovata>
     a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
     rdfs:label "Concentrazione di ostreopsis ovata. Codice AlgaeBase: 52502; Codice Worms: 110068. "@it;
-    <http://www.w3.org/2004/02/skos/core#notation> <AlgaeBase:52502>;
-    <http://www.w3.org/2004/02/skos/core#notation> <Worms:110068>;
+    <http://www.w3.org/2004/02/skos/core#notation> "AlgaeBase:52502";
+    <http://www.w3.org/2004/02/skos/core#notation> "Worms:110068";
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentrazione di ostreopsis ovata."@it;
     owl:sameAs <http://www.wikidata.org/entity/Q1462884>;
     top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/52502> ;
