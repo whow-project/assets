@@ -27,7 +27,7 @@
     "@id" : "prov:wasDerivedFrom",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "inspire-mf:FeatureOfInterest",
+    "@id" : "ispra-emf:FeatureOfInterest",
     "@type" : "owl:Class"
   }, {
     "@id" : "./",
@@ -185,7 +185,7 @@
       "@language" : "en",
       "@value" : "Water Feature"
     },
-    "subClassOf" : "inspire-mf:FeatureOfInterest"
+    "subClassOf" : "ispra-emf:FeatureOfInterest"
   }, {
     "@id" : ":belongsToWaterBasin",
     "@type" : "owl:ObjectProperty",
@@ -270,7 +270,7 @@
     "owl" : "http://www.w3.org/2002/07/owl#",
     "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "xml" : "http://www.w3.org/XML/1998/namespace",
-    "inspire-mf" : "https://dati.isprambiente.it/ontology/inspire-mf/",
+    "ispra-emf" : "https://dati.isprambiente.it/ontology/ispra-emf/",
     "xsd" : "http://www.w3.org/2001/XMLSchema#",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
     "prov" : "http://www.w3.org/ns/prov#",

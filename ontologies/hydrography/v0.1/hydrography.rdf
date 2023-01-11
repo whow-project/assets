@@ -9,7 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:inspire-mf="https://dati.isprambiente.it/ontology/inspire-mf/">
+     xmlns:ispra-emf="https://dati.isprambiente.it/ontology/ispra-emf/">
     <owl:Ontology rdf:about="https://w3id.org/whow/onto/hydrography">
         <owl:versionIRI rdf:resource="https://w3id.org/whow/onto/hydrography/0.1"/>
         <dc:description rdf:resource="https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/hydrography-ontology.jpg"/>
@@ -23,10 +23,10 @@
         <rdfs:label xml:lang="en">Hydrography Ontology</rdfs:label>
         <owl:versionInfo xml:lang="en">version 0.1</owl:versionInfo>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -34,40 +34,40 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -75,7 +75,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/whow/onto/hydrography/belongsToWaterBasin -->
@@ -86,7 +86,7 @@
         <rdfs:comment xml:lang="en">This property links the water body to the water basin it belongs</rdfs:comment>
         <rdfs:label xml:lang="en">belongs to water basin</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/hydrography/isSubWaterBasin -->
@@ -97,10 +97,10 @@
         <rdfs:comment xml:lang="en">This property is used to represent hierarchies of water basin since water basins can be formed by other water basins.</rdfs:comment>
         <rdfs:label xml:lang="en">is sub water basin</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -108,13 +108,13 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-    <!-- https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest -->
 
-    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest"/>
-    
+    <!-- https://dati.isprambiente.it/ontology/ispra-emf/FeatureOfInterest -->
+
+    <owl:Class rdf:about="https://dati.isprambiente.it/ontology/ispra-emf/FeatureOfInterest"/>
+
 
 
     <!-- https://w3id.org/whow/onto/hydrography/CoastalWaterBody -->
@@ -126,7 +126,7 @@
         <rdfs:label xml:lang="en">Coastal Water Body</rdfs:label>
         <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/WFDCoastalWater"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/hydrography/GroundwaterBody -->
@@ -138,7 +138,7 @@
         <rdfs:label xml:lang="en">Groundwater Body</rdfs:label>
         <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/GroundWaterBody"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/hydrography/LakeWaterBody -->
@@ -150,7 +150,7 @@
         <rdfs:label xml:lang="en">Lake Water Body</rdfs:label>
         <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/WFDLake"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/hydrography/MarineWater -->
@@ -161,7 +161,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/hydrography"/>
         <rdfs:label xml:lang="en">Marine Water</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/hydrography/RiverWaterBody -->
@@ -173,7 +173,7 @@
         <rdfs:label xml:lang="en">River Water Body</rdfs:label>
         <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/WFDRiver"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/hydrography/TransitionalWaterBody -->
@@ -185,7 +185,7 @@
         <rdfs:label xml:lang="en">Transitional Water Body</rdfs:label>
         <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/WFDTransitionalWater"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/hydrography/WaterBasin -->
@@ -201,7 +201,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/hydrography"/>
         <rdfs:label xml:lang="en">Water Basin</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/hydrography/WaterBody -->
@@ -225,13 +225,13 @@
         <rdfs:label xml:lang="en">Water Body</rdfs:label>
         <prov:wasDerivedFrom rdf:resource="http://inspire.ec.europa.eu/featureconcept/WFDWaterBody"/>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/hydrography/WaterFeature -->
 
     <owl:Class rdf:about="https://w3id.org/whow/onto/hydrography/WaterFeature">
-        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest"/>
+        <rdfs:subClassOf rdf:resource="https://dati.isprambiente.it/ontology/ispra-emf/FeatureOfInterest"/>
         <rdfs:comment xml:lang="en">A specific feature of interest in the hydrography context.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/hydrography"/>
         <rdfs:label xml:lang="en">Water Feature</rdfs:label>
@@ -241,4 +241,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
