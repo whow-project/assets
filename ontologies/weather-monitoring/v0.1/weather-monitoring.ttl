@@ -1,7 +1,7 @@
 @prefix : <http://www.w3id.com/whow/onto/weather-monitoring> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -16,6 +16,22 @@
                                                     dct:modified "2023-01-30"^^xsd:date ;
                                                     rdfs:label "Ontologia per il monitoraggio meteo"@it ,
                                                                "Weather Monitoring Ontology"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dct:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dct:modified rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Object Properties
@@ -76,13 +92,48 @@
                                                                                                "stable"@en .
 
 
+###  https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest
+<https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter
+<https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/hasSensorType
+<https://w3id.org/italia/env/onto/inspire-mf/hasSensorType> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isHostedBy
+<https://w3id.org/italia/env/onto/inspire-mf/isHostedBy> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/isObservationMadeBySensor
+<https://w3id.org/italia/env/onto/inspire-mf/isObservationMadeBySensor> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/place/hasGeometry
+<https://w3id.org/italia/env/onto/place/hasGeometry> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/atTime
+<https://w3id.org/italia/env/onto/top/atTime> rdf:type owl:ObjectProperty .
+
+
 #################################################################
 #    Classes
 #################################################################
 
 ###  http://www.w3id.com/whow/onto/weather-monitoring/WeatherFeatureOfInterest
 <http://www.w3id.com/whow/onto/weather-monitoring/WeatherFeatureOfInterest> rdf:type owl:Class ;
-                                                                            rdfs:subClassOf <https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest> .
+                                                                            rdfs:subClassOf <https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest> ;
+                                                                            rdfs:comment "La classe delle caratteristiche di interesse per il meteo. Esempi includono: aria, pioggia, livello del suolo, neve, ecc."@it ,
+                                                                                         "The class of feature of interest specific for the meteo domain. Examples include: Air, Wind, Rainfall, Snow, etc."@en ;
+                                                                            rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+                                                                            rdfs:label "Caratteristica di Interesse Meteorologica"@it ,
+                                                                                       "Weather Feature of Interest"@en ;
+                                                                            owl:versionInfo "stabile"@it ,
+                                                                                            "stable"@en .
 
 
 ###  http://www.w3id.com/whow/onto/weather-monitoring/WeatherObservableProperty
@@ -148,6 +199,11 @@
                                                                                    owl:onProperty <http://www.w3id.com/whow/onto/weather-monitoring/hasValidityPeriod> ;
                                                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                                    owl:onClass <https://w3id.org/italia/env/onto/top/TimeInterval>
+                                                                                 ] ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <https://w3id.org/italia/env/onto/inspire-mf/hasSensorType> ;
+                                                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                   owl:onClass <http://www.w3id.com/whow/onto/weather-monitoring/WeatherSensorType>
                                                                                  ] ;
                                                                  rdfs:comment "La classe dei sensori meteo utilizzati per le rilevazioni meteorologiche."@it ,
                                                                               "The class of the weather sensor used to detect specific weather property."@en ;
@@ -160,7 +216,14 @@
 
 ###  http://www.w3id.com/whow/onto/weather-monitoring/WeatherSensorType
 <http://www.w3id.com/whow/onto/weather-monitoring/WeatherSensorType> rdf:type owl:Class ;
-                                                                     rdfs:subClassOf <https://w3id.org/italia/env/onto/top/Concept> .
+                                                                     rdfs:subClassOf <https://w3id.org/italia/env/onto/top/Concept> ;
+                                                                     rdfs:comment "La classe dei tipi di sensori meteo. Per esempio: termometro, pluviometro ecc."@it ,
+                                                                                  "The class of the various types of weather sensor. For instance: pluviometer , thermometer etc."@en ;
+                                                                     rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+                                                                     rdfs:label "Tipo di Sensore Meteo"@it ,
+                                                                                "Weather Sensor Type"@en ;
+                                                                     owl:versionInfo "stabile"@it ,
+                                                                                     "stable"@en .
 
 
 ###  http://www.w3id.com/whow/onto/weather-monitoring/WeatherStation
@@ -178,6 +241,38 @@
                                                                              "Weather Station"@en ;
                                                                   owl:versionInfo "stabile"@it ,
                                                                                   "stable"@en .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest
+<https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/Observation
+<https://w3id.org/italia/env/onto/inspire-mf/Observation> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter
+<https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/Platform
+<https://w3id.org/italia/env/onto/inspire-mf/Platform> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/inspire-mf/Sensor
+<https://w3id.org/italia/env/onto/inspire-mf/Sensor> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/place/Geometry
+<https://w3id.org/italia/env/onto/place/Geometry> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Concept
+<https://w3id.org/italia/env/onto/top/Concept> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/TimeInterval
+<https://w3id.org/italia/env/onto/top/TimeInterval> rdf:type owl:Class .
 
 
 ###  https://w3id.orgitalia/onto/TI/TimeInstant
