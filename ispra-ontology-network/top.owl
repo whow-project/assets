@@ -295,9 +295,6 @@
         <DataProperty IRI="startTime"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="symbol"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="time"/>
     </Declaration>
     <Declaration>
@@ -485,20 +482,14 @@
         <Class IRI="TemporalEntity"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="time"/>
-            <DataUnionOf>
-                <Datatype abbreviatedIRI="xsd:date"/>
-                <Datatype abbreviatedIRI="xsd:dateTime"/>
-            </DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="TemporalEntity"/>
         <DataAllValuesFrom>
             <DataProperty IRI="time"/>
-            <DataUnionOf>
-                <Datatype abbreviatedIRI="xsd:date"/>
-                <Datatype abbreviatedIRI="xsd:dateTime"/>
-            </DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
         </DataAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1519,10 +1510,6 @@
         <Class IRI="TimeInterval"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="symbol"/>
-        <Class IRI="Entity"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="time"/>
         <Class IRI="Entity"/>
     </DataPropertyDomain>
@@ -1563,15 +1550,8 @@
         </DataUnionOf>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="symbol"/>
-        <Datatype abbreviatedIRI="rdf:PlainLiteral"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="time"/>
-        <DataUnionOf>
-            <Datatype abbreviatedIRI="xsd:date"/>
-            <Datatype abbreviatedIRI="xsd:dateTime"/>
-        </DataUnionOf>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="value"/>
@@ -1948,31 +1928,6 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Parameter</IRI>
-        <Literal xml:lang="en">A paramater.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Parameter</IRI>
-        <Literal xml:lang="it">Qualsiasi entità che rappresenti un parametro.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>Parameter</IRI>
-        <IRI>https://w3id.org/italia/env/onto/top</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Parameter</IRI>
-        <Literal xml:lang="en">Parameter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Parameter</IRI>
-        <Literal xml:lang="it">Parametro</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Person</IRI>
         <Literal xml:lang="en">A person</Literal>
     </AnnotationAssertion>
@@ -2020,31 +1975,6 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Role</IRI>
         <Literal xml:lang="it">Ruolo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>SchemaAttribute</IRI>
-        <Literal xml:lang="en">A single attribute of a data schema.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>SchemaAttribute</IRI>
-        <Literal xml:lang="it">Un singolo attributo di uno schema di dati.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>SchemaAttribute</IRI>
-        <IRI>https://w3id.org/italia/env/onto/top</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>SchemaAttribute</IRI>
-        <Literal xml:lang="it">Attributo di schema di dati.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>SchemaAttribute</IRI>
-        <Literal xml:lang="en">Data schema attribute</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2118,31 +2048,6 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>UniqueIdentifier</IRI>
-        <Literal xml:lang="it">La classe per rappresentare identificativi univoci, e.g. codice WMO, codice ISTAT, ecc...</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>UniqueIdentifier</IRI>
-        <Literal xml:lang="en">The class to represent unique identifiers, eg. WMO code, ISTAT code, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>UniqueIdentifier</IRI>
-        <IRI>https://w3id.org/italia/env/onto/top</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>UniqueIdentifier</IRI>
-        <Literal xml:lang="it">Identificativo univoco</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>UniqueIdentifier</IRI>
-        <Literal xml:lang="en">Unique identifier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>UnitOfMeasure</IRI>
         <Literal xml:lang="it">Questa classe viene utilizzata per modellare un&apos;unità di misura, ad es. metro, chilometro, grammo, ecc...</Literal>
     </AnnotationAssertion>
@@ -2165,31 +2070,6 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>UnitOfMeasure</IRI>
         <Literal xml:lang="it">Unità di misura</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Value</IRI>
-        <Literal xml:lang="it">La classe dei valori. Il valore è descritto con un unico valore come un intero, un float, una stringa (ne deve essere specificata almeno una) e, quando disponibile, un&apos;unità di misura.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Value</IRI>
-        <Literal xml:lang="en">The class of the values. The value is described with a single value such an integer, a float, a string (at least one has to be specified) and, when available, a unit of measurement.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>Value</IRI>
-        <IRI>https://w3id.org/italia/env/onto/top</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Value</IRI>
-        <Literal xml:lang="it">Valore</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>Value</IRI>
-        <Literal xml:lang="en">Value</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2649,7 +2529,7 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>hasLocation</IRI>
-        <Literal xml:lang="en">The relation holding between any kind of entity and a location.</Literal>
+        <Literal xml:lang="en">The relation holding between any kind of entity and a place.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -2664,7 +2544,7 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>hasLocation</IRI>
-        <Literal xml:lang="en">has location</Literal>
+        <Literal xml:lang="en">has place</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3860,31 +3740,6 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>specialises</IRI>
         <Literal xml:lang="it">specializza</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>symbol</IRI>
-        <Literal xml:lang="en">Property used to specify a symbol. For instance the symbol of a unit of measure.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>symbol</IRI>
-        <Literal xml:lang="it">Proprietà utilizzata per specificare un simbolo. Ad esempio il simbolo dell&apos;unità di misura</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>symbol</IRI>
-        <IRI>https://w3id.org/italia/env/onto/top</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>symbol</IRI>
-        <Literal xml:lang="it">simbolo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>symbol</IRI>
-        <Literal xml:lang="en">symbol</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
