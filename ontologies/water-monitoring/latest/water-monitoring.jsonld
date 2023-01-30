@@ -346,7 +346,7 @@
     "@id" : "https://w3id.org/whow/onto/hydrography"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/whow/onto/water-monitoring/0.2"
+    "@id" : "https://w3id.org/whow/onto/water-monitoring/0.3"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
