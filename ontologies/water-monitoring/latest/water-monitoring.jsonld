@@ -201,19 +201,19 @@
   "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/places/hasMunicipality"
+    "@id" : "https://dati.isprambiente.it/ontology/ispra-plc/hasMunicipality"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/places/Municipality"
+    "@id" : "https://dati.isprambiente.it/ontology/ispra-plc/Municipality"
   } ]
 }, {
   "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/places/hasProvince"
+    "@id" : "https://dati.isprambiente.it/ontology/ispra-plc/hasProvince"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/places/Province"
+    "@id" : "https://dati.isprambiente.it/ontology/ispra-plc/Province"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -242,19 +242,19 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest",
+  "@id" : "https://dati.isprambiente.it/ontology/ispra-emf/FeatureOfInterest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility",
+  "@id" : "https://dati.isprambiente.it/ontology/ispra-emf/MonitoringFacility",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/Observation",
+  "@id" : "https://dati.isprambiente.it/ontology/ispra-emf/Observation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/ObservationValue",
+  "@id" : "https://dati.isprambiente.it/ontology/ispra-emf/ObservationValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/hasFeatureOfInterest",
+  "@id" : "https://dati.isprambiente.it/ontology/ispra-emf/hasFeatureOfInterest",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/whow/onto/water-monitoring",
@@ -299,9 +299,9 @@
     "@value" : "Water Monitoring Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/"
+    "@id" : "https://dati.isprambiente.it/ontology/ispra-emf/"
   }, {
-    "@id" : "https://dati.isprambiente.it/ontology/places/"
+    "@id" : "https://dati.isprambiente.it/ontology/ispra-plc/"
   }, {
     "@id" : "https://w3id.org/whow/onto/hydrography"
   } ],
@@ -590,7 +590,7 @@
     "@value" : "Water Observable Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/ObservationParameter"
+    "@id" : "https://dati.isprambiente.it/ontology/ispra-emf/ObservationParameter"
   }, {
     "@id" : "_:genid16"
   } ]
@@ -647,7 +647,7 @@
     "@value" : "Water Observation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/Observation"
+    "@id" : "https://dati.isprambiente.it/ontology/ispra-emf/Observation"
   }, {
     "@id" : "_:genid18"
   }, {
@@ -741,7 +741,7 @@
     "@value" : "Water Sampler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/MonitoringFacility"
+    "@id" : "https://dati.isprambiente.it/ontology/ispra-emf/MonitoringFacility"
   }, {
     "@id" : "_:genid31"
   }, {
@@ -873,7 +873,7 @@
     "@id" : "https://w3id.org/whow/onto/hydrography/WaterFeature"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/inspire-mf/hasFeatureOfInterest"
+    "@id" : "https://dati.isprambiente.it/ontology/ispra-emf/hasFeatureOfInterest"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",

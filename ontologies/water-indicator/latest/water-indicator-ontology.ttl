@@ -91,6 +91,5 @@ w-mon:WaterQualityClass
       rdfs:subClassOf <https://dati.isprambiente.it/ontology/core/Value> .
 
 <https://w3id.org/whow/onto/water-indicators-ontology>
-      rdf:type owl:Ontology ;
-      owl:imports <http://xmlns.com/foaf/0.1/> , <https://w3id.org/whow/onto/hydrography-ontology> , <http://purl.org/dc/terms/> , <https://w3id.org/whow/onto/water-monitoring-ontology> , <http://www.w3.org/ns/dcat> , <http://www.w3.org/2006/vcard/ns> , <http://www.w3.org/ns/prov> , <https://w3id.org/italia/onto/Indicator> , <http://www.w3.org/ns/sosa/> ;
-      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+      rdf:type owl:Ontology
+      .

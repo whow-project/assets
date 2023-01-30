@@ -7,7 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix inspire-mf: <https://dati.isprambiente.it/ontology/inspire-mf/> .
+@prefix ispra-emf: <https://dati.isprambiente.it/ontology/ispra-emf/> .
 @base <https://w3id.org/whow/onto/hydrography> .
 
 <https://w3id.org/whow/onto/hydrography> rdf:type owl:Ontology ;
@@ -65,8 +65,8 @@ prov:wasDerivedFrom rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  https://dati.isprambiente.it/ontology/inspire-mf/FeatureOfInterest
-inspire-mf:FeatureOfInterest rdf:type owl:Class .
+###  https://dati.isprambiente.it/ontology/ispra-emf/FeatureOfInterest
+ispra-emf:FeatureOfInterest rdf:type owl:Class .
 
 
 ###  https://w3id.org/whow/onto/hydrography/CoastalWaterBody
@@ -152,7 +152,7 @@ inspire-mf:FeatureOfInterest rdf:type owl:Class .
 
 ###  https://w3id.org/whow/onto/hydrography/WaterFeature
 :WaterFeature rdf:type owl:Class ;
-              rdfs:subClassOf inspire-mf:FeatureOfInterest ;
+              rdfs:subClassOf ispra-emf:FeatureOfInterest ;
               rdfs:comment "A specific feature of interest in the hydrography context."@en ;
               rdfs:isDefinedBy <https://w3id.org/whow/onto/hydrography> ;
               rdfs:label "Water Feature"@en .
