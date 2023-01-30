@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="https://w3id.org/italia/env/onto/place/" uri="file:/Users/giorgialodi/Dropbox/WHOW/GitWHOW/semantic-assets/ispra-ontology-network/place/v0.2/place.ttl"/>
+    <uri id="User Entered Import Resolution" name="https://w3id.org/italia/env/onto/top/" uri="file:/Users/giorgialodi/Dropbox/WHOW/GitWHOW/semantic-assets/ispra-ontology-network/top/v0.2/top.ttl"/>
+    <uri id="User Entered Import Resolution" name="https://w3id.org/italia/env/onto/inspire-mf/" uri="file:/Users/giorgialodi/Dropbox/WHOW/GitWHOW/semantic-assets/ispra-ontology-network/inspire-mf/v0.2/inspire-mf.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
 </catalog>
