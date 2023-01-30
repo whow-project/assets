@@ -1,4 +1,4 @@
-@prefix : <http://www.w3id.com/whow/onto/weather-monitoring> .
+@prefix : <https://w3id.org/whow/onto/weather-monitoring> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -6,9 +6,9 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://www.w3id.org/whow/onto/weather-monitoring> .
+@base <https://w3id.org/whow/onto/weather-monitoring> .
 
-<https://www.w3id.org/whow/onto/weather-monitoring> rdf:type owl:Ontology ;
+<https://w3id.org/whow/onto/weather-monitoring> rdf:type owl:Ontology ;
                                                      owl:versionIRI <https://w3id.org/whow/onto/weather-monitoring/0.1> ;
                                                      owl:imports <https://w3id.org/italia/env/onto/inspire-mf/> ,
                                                                  <https://w3id.org/italia/env/onto/place/> ;
@@ -66,55 +66,55 @@ dct:modified rdf:type owl:AnnotationProperty .
 <https://w3id.org/italia/env/onto/top/atTime> rdf:type owl:ObjectProperty .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/hasObservedWeatherProperty
-<https://www.w3id.org/whow/onto/weather-monitoring/hasObservedWeatherProperty> rdf:type owl:ObjectProperty ;
+###  https://w3id.org/whow/onto/weather-monitoring/hasObservedWeatherProperty
+<https://w3id.org/whow/onto/weather-monitoring/hasObservedWeatherProperty> rdf:type owl:ObjectProperty ;
                                                                                rdfs:subPropertyOf <https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter> ;
-                                                                               rdfs:domain <https://www.w3id.org/whow/onto/weather-monitoring/WeatherObservation> ;
-                                                                               rdfs:range <https://www.w3id.org/whow/onto/weather-monitoring/WeatherObservableProperty> ;
+                                                                               rdfs:domain <https://w3id.org/whow/onto/weather-monitoring/WeatherObservation> ;
+                                                                               rdfs:range <https://w3id.org/whow/onto/weather-monitoring/WeatherObservableProperty> ;
                                                                                rdfs:comment "Property that links the weather observation to its weather property (e.g., global radiation, temperature, etc.)"@en ,
                                                                                             "Proprietà che collega l'osservazione meteorologica alla sua proprietà meteorologica osservata (e.g., radiazione globale, temperatura, precipazione, ecc.)"@it ;
-                                                                               rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+                                                                               rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                                                rdfs:label "ha proprietà meteorologica osservata"@it ,
                                                                                           "has observed weather property"@en ;
                                                                                owl:versionInfo "stabile"@it ,
                                                                                                "stable"@en .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/hasResultTime
-<https://www.w3id.org/whow/onto/weather-monitoring/hasResultTime> rdf:type owl:ObjectProperty ;
+###  https://w3id.org/whow/onto/weather-monitoring/hasResultTime
+<https://w3id.org/whow/onto/weather-monitoring/hasResultTime> rdf:type owl:ObjectProperty ;
                                                                   rdfs:subPropertyOf <https://w3id.org/italia/env/onto/top/atTime> ;
-                                                                  rdfs:domain <https://www.w3id.org/whow/onto/weather-monitoring/WeatherObservation> ;
+                                                                  rdfs:domain <https://w3id.org/whow/onto/weather-monitoring/WeatherObservation> ;
                                                                   rdfs:range <https://w3id.orgitalia/onto/TI/TimeInstant> ;
                                                                   rdfs:comment "Property used to model the time instant in which the (weather) observation is done."@en ,
                                                                                "Proprietà utilizzata per modellare l'istante temporale in cui viene fatta l'osservazione (meteorologica)."@it ;
-                                                                  rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+                                                                  rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                                   rdfs:label "ha tempo del risultato"@it ,
                                                                              "has result time"@en ;
                                                                   owl:versionInfo "provvisorio"@it ,
                                                                                   "unstable"@en .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/hasValidityPeriod
-<https://www.w3id.org/whow/onto/weather-monitoring/hasValidityPeriod> rdf:type owl:ObjectProperty ;
-                                                                      rdfs:domain <https://www.w3id.org/whow/onto/weather-monitoring/WeatherSensor> ;
+###  https://w3id.org/whow/onto/weather-monitoring/hasValidityPeriod
+<https://w3id.org/whow/onto/weather-monitoring/hasValidityPeriod> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain <https://w3id.org/whow/onto/weather-monitoring/WeatherSensor> ;
                                                                       rdfs:range <https://w3id.org/italia/env/onto/top/TimeInterval> ;
                                                                       rdfs:comment "Property used to model a period of time of validity of a sensor"@en ,
                                                                                    "Proprietà utilizzata per modellare un periodo di tempo di validità di un sensore"@en ;
-                                                                      rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+                                                                      rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                                       rdfs:label "ha periodo di validità"@it ,
                                                                                  "has validity period"@en ;
                                                                       owl:versionInfo "stabile"@it ,
                                                                                       "stable"@en .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/hasWeatherFeatureOfInterest
-<https://www.w3id.org/whow/onto/weather-monitoring/hasWeatherFeatureOfInterest> rdf:type owl:ObjectProperty ;
+###  https://w3id.org/whow/onto/weather-monitoring/hasWeatherFeatureOfInterest
+<https://w3id.org/whow/onto/weather-monitoring/hasWeatherFeatureOfInterest> rdf:type owl:ObjectProperty ;
                                                                                 rdfs:subPropertyOf <https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest> ;
-                                                                                rdfs:domain <https://www.w3id.org/whow/onto/weather-monitoring/WeatherObservation> ;
-                                                                                rdfs:range <https://www.w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> ;
+                                                                                rdfs:domain <https://w3id.org/whow/onto/weather-monitoring/WeatherObservation> ;
+                                                                                rdfs:range <https://w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> ;
                                                                                 rdfs:comment "Property that links a meteorological observation to its meteorological characteristic of interest. Example: If the observed property is 'precipitation' then the meteorological observation can be linked to rainfall as a characteristic of interest."@en ,
                                                                                              "Proprietà che collega un'osservazione meteorologica alla propria caratteristica di interesse meteorologica. Esempio: se la proprietà osservata è la precipitazione allora l'osservazione meteorologica può essere collegata alla pioggia come caratteristica di interesse."@it ;
-                                                                                rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+                                                                                rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                                                 rdfs:label "ha caratteristica di interesse meteorologica"@it ,
                                                                                            "has weather feature of interest"@en ;
                                                                                 owl:versionInfo "stabile"@it ,
@@ -161,110 +161,110 @@ dct:modified rdf:type owl:AnnotationProperty .
 <https://w3id.orgitalia/onto/TI/TimeInstant> rdf:type owl:Class .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest
-<https://www.w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> rdf:type owl:Class ;
+###  https://w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest
+<https://w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> rdf:type owl:Class ;
                                                                              rdfs:subClassOf <https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest> ;
                                                                              rdfs:comment "La classe delle caratteristiche di interesse per il meteo. Esempi includono: aria, pioggia, livello del suolo, neve, ecc."@it ,
                                                                                           "The class of feature of interest specific for the meteo domain. Examples include: Air, Wind, Rainfall, Snow, etc."@en ;
-                                                                             rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+                                                                             rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                                              rdfs:label "Caratteristica di Interesse Meteorologica"@it ,
                                                                                         "Weather Feature of Interest"@en ;
                                                                              owl:versionInfo "stabile"@it ,
                                                                                              "stable"@en .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/WeatherObservableProperty
-<https://www.w3id.org/whow/onto/weather-monitoring/WeatherObservableProperty> rdf:type owl:Class ;
+###  https://w3id.org/whow/onto/weather-monitoring/WeatherObservableProperty
+<https://w3id.org/whow/onto/weather-monitoring/WeatherObservableProperty> rdf:type owl:Class ;
                                                                               rdfs:subClassOf <https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter> ;
                                                                               rdfs:comment "La classe di tutte le possibile proprietà osservabili relative alle rilevazioni meteorologiche. Per esempio, sono proprietà osservabili le precipitazioni, la radiazione globale, la temperatura dell'aria, l'altezza della neve, ecc."@it ,
                                                                                            "The class of all the possible weather observable properties. Examples include: global radiation, the quantity of rainfall, the temperature of the air,, the level of snow, etc."@en ;
-                                                                              rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+                                                                              rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                                               rdfs:label "Proprietà Meteorologica Osservabile"@it ,
                                                                                          "Weather Observable Property"@en ;
                                                                               owl:versionInfo "stabile"@it ,
                                                                                               "stable"@en .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/WeatherObservation
-<https://www.w3id.org/whow/onto/weather-monitoring/WeatherObservation> rdf:type owl:Class ;
+###  https://w3id.org/whow/onto/weather-monitoring/WeatherObservation
+<https://w3id.org/whow/onto/weather-monitoring/WeatherObservation> rdf:type owl:Class ;
                                                                        rdfs:subClassOf <https://w3id.org/italia/env/onto/inspire-mf/Observation> ,
                                                                                        [ rdf:type owl:Restriction ;
-                                                                                         owl:onProperty <https://www.w3id.org/whow/onto/weather-monitoring/hasObservedWeatherProperty> ;
-                                                                                         owl:allValuesFrom <https://www.w3id.org/whow/onto/weather-monitoring/WeatherObservableProperty>
+                                                                                         owl:onProperty <https://w3id.org/whow/onto/weather-monitoring/hasObservedWeatherProperty> ;
+                                                                                         owl:allValuesFrom <https://w3id.org/whow/onto/weather-monitoring/WeatherObservableProperty>
                                                                                        ] ,
                                                                                        [ rdf:type owl:Restriction ;
-                                                                                         owl:onProperty <https://www.w3id.org/whow/onto/weather-monitoring/hasWeatherFeatureOfInterest> ;
-                                                                                         owl:allValuesFrom <https://www.w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest>
+                                                                                         owl:onProperty <https://w3id.org/whow/onto/weather-monitoring/hasWeatherFeatureOfInterest> ;
+                                                                                         owl:allValuesFrom <https://w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest>
                                                                                        ] ,
                                                                                        [ rdf:type owl:Restriction ;
                                                                                          owl:onProperty <https://w3id.org/italia/env/onto/inspire-mf/isObservationMadeBySensor> ;
                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                         owl:onClass <https://www.w3id.org/whow/onto/weather-monitoring/WeatherSensor>
+                                                                                         owl:onClass <https://w3id.org/whow/onto/weather-monitoring/WeatherSensor>
                                                                                        ] ,
                                                                                        [ rdf:type owl:Restriction ;
-                                                                                         owl:onProperty <https://www.w3id.org/whow/onto/weather-monitoring/hasObservedWeatherProperty> ;
+                                                                                         owl:onProperty <https://w3id.org/whow/onto/weather-monitoring/hasObservedWeatherProperty> ;
                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                         owl:onClass <https://www.w3id.org/whow/onto/weather-monitoring/WeatherObservableProperty>
+                                                                                         owl:onClass <https://w3id.org/whow/onto/weather-monitoring/WeatherObservableProperty>
                                                                                        ] ,
                                                                                        [ rdf:type owl:Restriction ;
-                                                                                         owl:onProperty <https://www.w3id.org/whow/onto/weather-monitoring/hasResultTime> ;
+                                                                                         owl:onProperty <https://w3id.org/whow/onto/weather-monitoring/hasResultTime> ;
                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                                          owl:onClass <https://w3id.orgitalia/onto/TI/TimeInstant>
                                                                                        ] ,
                                                                                        [ rdf:type owl:Restriction ;
-                                                                                         owl:onProperty <https://www.w3id.org/whow/onto/weather-monitoring/hasWeatherFeatureOfInterest> ;
+                                                                                         owl:onProperty <https://w3id.org/whow/onto/weather-monitoring/hasWeatherFeatureOfInterest> ;
                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                         owl:onClass <https://www.w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest>
+                                                                                         owl:onClass <https://w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest>
                                                                                        ] ;
                                                                        rdfs:comment "A specific type of observation obtained in the context of meteorogical measurements."@en ,
                                                                                     "Una specifica osservazione fatta nel contesto delle rilevazioni meteorologiche."@it ;
-                                                                       rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+                                                                       rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                                        rdfs:label "Osservazione Meteo"@it ,
                                                                                   "Weather Observation"@en ;
                                                                        owl:versionInfo "stabile"@it ,
                                                                                        "stable"@en .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/WeatherSensor
-<https://www.w3id.org/whow/onto/weather-monitoring/WeatherSensor> rdf:type owl:Class ;
+###  https://w3id.org/whow/onto/weather-monitoring/WeatherSensor
+<https://w3id.org/whow/onto/weather-monitoring/WeatherSensor> rdf:type owl:Class ;
                                                                   rdfs:subClassOf <https://w3id.org/italia/env/onto/inspire-mf/Sensor> ,
                                                                                   [ rdf:type owl:Restriction ;
                                                                                     owl:onProperty <https://w3id.org/italia/env/onto/inspire-mf/isHostedBy> ;
-                                                                                    owl:allValuesFrom <https://www.w3id.org/whow/onto/weather-monitoring/WeatherStation>
+                                                                                    owl:allValuesFrom <https://w3id.org/whow/onto/weather-monitoring/WeatherStation>
                                                                                   ] ,
                                                                                   [ rdf:type owl:Restriction ;
                                                                                     owl:onProperty <https://w3id.org/italia/env/onto/inspire-mf/hasSensorType> ;
                                                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                    owl:onClass <https://www.w3id.org/whow/onto/weather-monitoring/WeatherSensorType>
+                                                                                    owl:onClass <https://w3id.org/whow/onto/weather-monitoring/WeatherSensorType>
                                                                                   ] ,
                                                                                   [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty <https://www.w3id.org/whow/onto/weather-monitoring/hasValidityPeriod> ;
+                                                                                    owl:onProperty <https://w3id.org/whow/onto/weather-monitoring/hasValidityPeriod> ;
                                                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                                     owl:onClass <https://w3id.org/italia/env/onto/top/TimeInterval>
                                                                                   ] ;
                                                                   rdfs:comment "La classe dei sensori meteo utilizzati per le rilevazioni meteorologiche."@it ,
                                                                                "The class of the weather sensor used to detect specific weather property."@en ;
-                                                                  rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+                                                                  rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                                   rdfs:label "Sensore Meteo"@it ,
                                                                              "Weather Sensor"@en ;
                                                                   owl:versionInfo "stabile"@it ,
                                                                                   "stable"@en .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/WeatherSensorType
-<https://www.w3id.org/whow/onto/weather-monitoring/WeatherSensorType> rdf:type owl:Class ;
+###  https://w3id.org/whow/onto/weather-monitoring/WeatherSensorType
+<https://w3id.org/whow/onto/weather-monitoring/WeatherSensorType> rdf:type owl:Class ;
                                                                       rdfs:subClassOf <https://w3id.org/italia/env/onto/top/Concept> ;
                                                                       rdfs:comment "La classe dei tipi di sensori meteo. Per esempio: termometro, pluviometro ecc."@it ,
                                                                                    "The class of the various types of weather sensor. For instance: pluviometer , thermometer etc."@en ;
-                                                                      rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+                                                                      rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                                       rdfs:label "Tipo di Sensore Meteo"@it ,
                                                                                  "Weather Sensor Type"@en ;
                                                                       owl:versionInfo "stabile"@it ,
                                                                                       "stable"@en .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/WeatherStation
-<https://www.w3id.org/whow/onto/weather-monitoring/WeatherStation> rdf:type owl:Class ;
+###  https://w3id.org/whow/onto/weather-monitoring/WeatherStation
+<https://w3id.org/whow/onto/weather-monitoring/WeatherStation> rdf:type owl:Class ;
                                                                    rdfs:subClassOf <https://w3id.org/italia/env/onto/inspire-mf/Platform> ,
                                                                                    [ rdf:type owl:Restriction ;
                                                                                      owl:onProperty <https://w3id.org/italia/env/onto/place/hasGeometry> ;
@@ -273,7 +273,7 @@ dct:modified rdf:type owl:AnnotationProperty .
                                                                                    ] ;
                                                                    rdfs:comment "A specific type of platform hosting also different sensors that are used to detect weather conditions."@en ,
                                                                                 "Una specifica piattaforma che ospita sensori per le rilevazioni meteorologiche."@it ;
-                                                                   rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+                                                                   rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                                    rdfs:label "Stazione Meteo"@it ,
                                                                               "Weather Station"@en ;
                                                                    owl:versionInfo "stabile"@it ,
@@ -284,50 +284,50 @@ dct:modified rdf:type owl:AnnotationProperty .
 #    Individuals
 #################################################################
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/Air
-<https://www.w3id.org/whow/onto/weather-monitoring/Air> rdf:type owl:NamedIndividual ,
-                                                                 <https://www.w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> ;
-                                                        rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+###  https://w3id.org/whow/onto/weather-monitoring/Air
+<https://w3id.org/whow/onto/weather-monitoring/Air> rdf:type owl:NamedIndividual ,
+                                                                 <https://w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> ;
+                                                        rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                         rdfs:label "Air"@en ,
                                                                    "Aria"@it ;
                                                         owl:versionInfo "provvisoria"@it ,
                                                                         "unstable"@en .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/GroundLevelSoil
-<https://www.w3id.org/whow/onto/weather-monitoring/GroundLevelSoil> rdf:type owl:NamedIndividual ,
-                                                                             <https://www.w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> ;
-                                                                    rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+###  https://w3id.org/whow/onto/weather-monitoring/GroundLevelSoil
+<https://w3id.org/whow/onto/weather-monitoring/GroundLevelSoil> rdf:type owl:NamedIndividual ,
+                                                                             <https://w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> ;
+                                                                    rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                                     rdfs:label "All'altezza del suolo"@it ,
                                                                                "Ground Level Soil"@en ;
                                                                     owl:versionInfo "provvisoria"@it ,
                                                                                     "unstable"@en .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/Rainfall
-<https://www.w3id.org/whow/onto/weather-monitoring/Rainfall> rdf:type owl:NamedIndividual ,
-                                                                      <https://www.w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> ;
-                                                             rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+###  https://w3id.org/whow/onto/weather-monitoring/Rainfall
+<https://w3id.org/whow/onto/weather-monitoring/Rainfall> rdf:type owl:NamedIndividual ,
+                                                                      <https://w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> ;
+                                                             rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                              rdfs:label "Pioggia"@it ,
                                                                         "Rainfall"@en ;
                                                              owl:versionInfo "provvisoria"@it ,
                                                                              "unstable"@en .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/Snow
-<https://www.w3id.org/whow/onto/weather-monitoring/Snow> rdf:type owl:NamedIndividual ,
-                                                                  <https://www.w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> ;
-                                                         rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+###  https://w3id.org/whow/onto/weather-monitoring/Snow
+<https://w3id.org/whow/onto/weather-monitoring/Snow> rdf:type owl:NamedIndividual ,
+                                                                  <https://w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> ;
+                                                         rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                          rdfs:label "Neve"@it ,
                                                                     "Snow"@en ;
                                                          owl:versionInfo "provvisoria"@it ,
                                                                          "unstable"@en .
 
 
-###  https://www.w3id.org/whow/onto/weather-monitoring/Wind
-<https://www.w3id.org/whow/onto/weather-monitoring/Wind> rdf:type owl:NamedIndividual ,
-                                                                  <https://www.w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> ;
-                                                         rdfs:isDefinedBy <http://www.w3id.com/whow/onto/weather-monitoring> ;
+###  https://w3id.org/whow/onto/weather-monitoring/Wind
+<https://w3id.org/whow/onto/weather-monitoring/Wind> rdf:type owl:NamedIndividual ,
+                                                                  <https://w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest> ;
+                                                         rdfs:isDefinedBy <https://w3id.org/whow/onto/weather-monitoring> ;
                                                          rdfs:label "Vento"@it ,
                                                                     "Wind"@en ;
                                                          owl:versionInfo "provvisoria"@it ,
