@@ -1,0 +1,541 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherObservableProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/hasObservedWeatherProperty"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherFeatureOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/hasWeatherFeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherObservableProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/hasObservedWeatherProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.orgitalia/onto/TI/TimeInstant"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/hasResultTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherFeatureOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/hasWeatherFeatureOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherSensor"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isObservationMadeBySensor"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherStation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isHostedBy"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TimeInterval"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/hasValidityPeriod"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/Geometry"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/place/hasGeometry"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@id" : "https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/weather-monitoring.png"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-01-30"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-01-30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Ontologia per il monitoraggio meteo"
+  }, {
+    "@language" : "en",
+    "@value" : "Weather Monitoring Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/"
+  }, {
+    "@id" : "https://w3id.org/italia/env/onto/place/"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/Air",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.com/whow/onto/weather-monitoring/WeatherFeatureOfInterest" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Air"
+  }, {
+    "@language" : "it",
+    "@value" : "Aria"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/GroundLevelSoil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.com/whow/onto/weather-monitoring/WeatherFeatureOfInterest" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "All'altezza del suolo"
+  }, {
+    "@language" : "en",
+    "@value" : "Ground Level Soil"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/Rainfall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.com/whow/onto/weather-monitoring/WeatherFeatureOfInterest" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Pioggia"
+  }, {
+    "@language" : "en",
+    "@value" : "Rainfall"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/Snow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.com/whow/onto/weather-monitoring/WeatherFeatureOfInterest" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Neve"
+  }, {
+    "@language" : "en",
+    "@value" : "Snow"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherFeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherObservableProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe di tutte le possibile proprietà osservabili relative alle rilevazioni meteorologiche. Per esempio, sono proprietà osservabili le precipitazioni, la radiazione globale, la temperatura dell'aria, l'altezza della neve, ecc."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of all the possible weather observable properties. Examples include: global radiation, the quantity of rainfall, the temperature of the air,, the level of snow, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Proprietà Meteorologica Osservabile"
+  }, {
+    "@language" : "en",
+    "@value" : "Weather Observable Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific type of observation obtained in the context of meteorogical measurements."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specifica osservazione fatta nel contesto delle rilevazioni meteorologiche."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Osservazione Meteo"
+  }, {
+    "@language" : "en",
+    "@value" : "Weather Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe dei sensori meteo utilizzati per le rilevazioni meteorologiche."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of the weather sensor used to detect specific weather property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Sensore Meteo"
+  }, {
+    "@language" : "en",
+    "@value" : "Weather Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sensor"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherSensorType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific type of platform hosting also different sensors that are used to detect weather conditions."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specifica piattaforma che ospita sensori per le rilevazioni meteorologiche."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Stazione Meteo"
+  }, {
+    "@language" : "en",
+    "@value" : "Weather Station"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  }, {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/Wind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3id.com/whow/onto/weather-monitoring/WeatherFeatureOfInterest" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Vento"
+  }, {
+    "@language" : "en",
+    "@value" : "Wind"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/hasObservedWeatherProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that links the weather observation to its weather property (e.g., global radiation, temperature, etc.)"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che collega l'osservazione meteorologica alla sua proprietà meteorologica osservata (e.g., radiazione globale, temperatura, precipazione, ecc.)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherObservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha proprietà meteorologica osservata"
+  }, {
+    "@language" : "en",
+    "@value" : "has observed weather property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/hasResultTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to model the time instant in which the (weather) observation is done."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per modellare l'istante temporale in cui viene fatta l'osservazione (meteorologica)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherObservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha tempo del risultato"
+  }, {
+    "@language" : "en",
+    "@value" : "has result time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.orgitalia/onto/TI/TimeInstant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/atTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisorio"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/hasValidityPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to model a period of time of validity of a sensor"
+  }, {
+    "@language" : "en",
+    "@value" : "Proprietà utilizzata per modellare un periodo di tempo di validità di un sensore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha periodo di validità"
+  }, {
+    "@language" : "en",
+    "@value" : "has validity period"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TimeInterval"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/hasWeatherFeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that links a meteorological observation to its meteorological characteristic of interest. Example: If the observed property is 'precipitation' then the meteorological observation can be linked to rainfall as a characteristic of interest."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che collega un'osservazione meteorologica alla propria caratteristica di interesse meteorologica. Esempio: se la proprietà osservata è la precipitazione allora l'osservazione meteorologica può essere collegata alla pioggia come caratteristica di interesse."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherObservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha caratteristica di interesse meteorologica"
+  }, {
+    "@language" : "en",
+    "@value" : "has weather feature of interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.com/whow/onto/weather-monitoring/WeatherFeatureOfInterest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/Geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/place/hasGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.orgitalia/onto/TI/TimeInstant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

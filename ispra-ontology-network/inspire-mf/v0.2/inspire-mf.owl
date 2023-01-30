@@ -1,0 +1,2853 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/italia/env/onto/inspire-mf/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/italia/env/onto/inspire-mf/">
+    <Prefix name="" IRI="https://w3id.org/italia/env/onto/inspire-mf/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="top" IRI="https://w3id.org/italia/env/onto/top/"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://w3id.org/italia/env/onto/top/</Import>
+    <Declaration>
+        <Class IRI="FeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IndicatorCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Metric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MonitoringFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MonitoringNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MonitoringObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ObservationCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ObservationParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ObservationValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Platform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PlatformCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PlatformModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PlatformType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SensorModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SensorType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SystemCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SystemDeployment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ValidationLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:AgentRole"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:Description"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:Eventuality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:Location"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:Organisation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:Parameter"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:SchemaAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:System"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:TemporalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:UniqueIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="top:Value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="basedOnMetric"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="generationTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasIndicator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasObservationParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasObservationValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOperationalStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPlatform"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPlatformModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPlatformType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasResponsibleParty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSensorModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSensorType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSubMonitoringObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSuperMonitoringObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSystemCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSystemDeployment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasValidationLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hosts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="implementsProcedure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isFeatureOfInterestOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isGenerationTimeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isHostedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isIndicatorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isMetricUsedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isObservationCollectionMadeBySensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isObservationMadeBySensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isObservationParameterFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isObservationValueOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPhenomenonTimeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPlatformModelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPlatformOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPlatformTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isProcedureImplòementedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSensorModelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSensorTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSystemCapabilityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isValidationLevelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="makesObservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="makesObservationCollection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="phenomenonTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:atTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:classifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:hasCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:hasCollection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:hasEventuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:hasMember"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:hasSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:hasValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:isCharacteristicOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:isClassifiedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:isCollectionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:isDescriptionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:isParametrisedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:isTimeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:isValueOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="top:parametrises"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="FeatureOfInterest"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Indicator"/>
+        <Class abbreviatedIRI="top:Eventuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Indicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="basedOnMetric"/>
+            <Class IRI="Metric"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Indicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasFeatureOfInterest"/>
+            <Class IRI="FeatureOfInterest"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Indicator"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="top:atTime"/>
+            <Class abbreviatedIRI="top:TemporalEntity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IndicatorCollection"/>
+        <Class abbreviatedIRI="top:Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IndicatorCollection"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="top:hasMember"/>
+            <Class IRI="Indicator"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Metric"/>
+        <Class abbreviatedIRI="top:Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Metric"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="top:isParametrisedBy"/>
+            <Class abbreviatedIRI="top:Parameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MonitoringFacility"/>
+        <Class IRI="MonitoringObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MonitoringNetwork"/>
+        <Class IRI="MonitoringObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MonitoringObject"/>
+        <Class abbreviatedIRI="top:System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MonitoringObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasResponsibleParty"/>
+            <Class abbreviatedIRI="top:AgentRole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MonitoringObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="top:hasLocation"/>
+            <Class abbreviatedIRI="top:Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MonitoringObject"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="top:hasMember"/>
+            <Class IRI="MonitoringFacility"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MonitoringObject"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="top:hasPart"/>
+            <Class IRI="MonitoringObject"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Observation"/>
+        <Class abbreviatedIRI="top:Eventuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Observation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasFeatureOfInterest"/>
+            <Class IRI="FeatureOfInterest"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Observation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="top:isParametrisedBy"/>
+            <Class IRI="ObservationParameter"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Observation"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasObservationValue"/>
+            <Class IRI="ObservationValue"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Observation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="generationTime"/>
+            <Class abbreviatedIRI="top:TemporalEntity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Observation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="hasFeatureOfInterest"/>
+            <Class IRI="FeatureOfInterest"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Observation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="isObservationMadeBySensor"/>
+            <Class IRI="Sensor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Observation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="phenomenonTime"/>
+            <Class abbreviatedIRI="top:TemporalEntity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Observation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="top:isParametrisedBy"/>
+            <Class IRI="ObservationParameter"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ObservationCollection"/>
+        <Class abbreviatedIRI="top:Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ObservationCollection"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="top:hasMember"/>
+            <Class IRI="Observation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ObservationParameter"/>
+        <Class abbreviatedIRI="top:Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ObservationValue"/>
+        <Class abbreviatedIRI="top:Value"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ObservationValue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isObservationValueOf"/>
+            <Class IRI="Observation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ObservationValue"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="top:atTime"/>
+            <Class abbreviatedIRI="top:TemporalEntity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Platform"/>
+        <Class IRI="MonitoringFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Platform"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasPlatformType"/>
+            <Class IRI="PlatformType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Platform"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hosts"/>
+            <Class abbreviatedIRI="top:System"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Platform"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="hasPlatformModel"/>
+            <Class IRI="PlatformModel"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Platform"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="top:hasLocation"/>
+            <Class abbreviatedIRI="top:Location"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PlatformCollection"/>
+        <Class abbreviatedIRI="top:Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PlatformCollection"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="top:hasMember"/>
+            <Class IRI="Platform"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PlatformModel"/>
+        <Class abbreviatedIRI="top:Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PlatformType"/>
+        <Class abbreviatedIRI="top:Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Procedure"/>
+        <Class abbreviatedIRI="top:Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sensor"/>
+        <Class IRI="MonitoringFacility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasSensorModel"/>
+            <Class IRI="SensorModel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasSensorType"/>
+            <Class IRI="SensorType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isHostedBy"/>
+            <Class IRI="Platform"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sensor"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isHostedBy"/>
+            <Class IRI="Platform"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sensor"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="makesObservation"/>
+            <Class IRI="Observation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SensorModel"/>
+        <Class abbreviatedIRI="top:Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SensorType"/>
+        <Class abbreviatedIRI="top:Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemCapability"/>
+        <Class abbreviatedIRI="top:Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemCapability"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="top:hasSystem"/>
+            <Class abbreviatedIRI="top:System"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemCapability"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="top:hasValue"/>
+            <Class abbreviatedIRI="top:Value"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemCapability"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="top:isParametrisedBy"/>
+            <Class abbreviatedIRI="top:Parameter"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemDeployment"/>
+        <Class abbreviatedIRI="top:Eventuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemDeployment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="implementsProcedure"/>
+            <Class IRI="Procedure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemDeployment"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="hasPlatform"/>
+            <Class IRI="Platform"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemDeployment"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="top:hasSystem"/>
+            <Class abbreviatedIRI="top:System"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemDeployment"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="top:hasValue"/>
+            <Class abbreviatedIRI="top:Value"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemDeployment"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="top:isParametrisedBy"/>
+            <Class abbreviatedIRI="top:Parameter"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ValidationLevel"/>
+        <Class abbreviatedIRI="top:Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="top:System"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasSystemCapability"/>
+            <Class IRI="SystemCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Indicator"/>
+        <Class IRI="Observation"/>
+        <Class IRI="SystemDeployment"/>
+        <Class abbreviatedIRI="top:AgentRole"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="SystemCapability"/>
+        <Class abbreviatedIRI="top:Parameter"/>
+        <Class abbreviatedIRI="top:SchemaAttribute"/>
+        <Class abbreviatedIRI="top:UniqueIdentifier"/>
+        <Class abbreviatedIRI="top:Value"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="basedOnMetric"/>
+        <ObjectProperty abbreviatedIRI="top:hasDescription"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="generationTime"/>
+        <ObjectProperty abbreviatedIRI="top:atTime"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFeatureOfInterest"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasIndicator"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasManufacturer"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasObservationParameter"/>
+        <ObjectProperty abbreviatedIRI="top:isParametrisedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasObservationValue"/>
+        <ObjectProperty abbreviatedIRI="top:hasValue"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasOperationalStatus"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPlatform"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPlatformModel"/>
+        <ObjectProperty abbreviatedIRI="top:hasDescription"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPlatformType"/>
+        <ObjectProperty abbreviatedIRI="top:isClassifiedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasResponsibleParty"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSensorModel"/>
+        <ObjectProperty abbreviatedIRI="top:hasDescription"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSensorType"/>
+        <ObjectProperty abbreviatedIRI="top:isClassifiedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSubMonitoringObject"/>
+        <ObjectProperty abbreviatedIRI="top:hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSuperMonitoringObject"/>
+        <ObjectProperty abbreviatedIRI="top:isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSystemCapability"/>
+        <ObjectProperty abbreviatedIRI="top:hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSystemDeployment"/>
+        <ObjectProperty abbreviatedIRI="top:hasEventuality"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasValidationLevel"/>
+        <ObjectProperty abbreviatedIRI="top:isClassifiedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hosts"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="implementsProcedure"/>
+        <ObjectProperty abbreviatedIRI="top:hasDescription"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isFeatureOfInterestOf"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isGenerationTimeOf"/>
+        <ObjectProperty abbreviatedIRI="top:isTimeOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isHostedBy"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isIndicatorOf"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isMetricUsedBy"/>
+        <ObjectProperty abbreviatedIRI="top:isDescriptionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isObservationCollectionMadeBySensor"/>
+        <ObjectProperty abbreviatedIRI="top:isCollectionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isObservationMadeBySensor"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isObservationParameterFor"/>
+        <ObjectProperty abbreviatedIRI="top:parametrises"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isObservationValueOf"/>
+        <ObjectProperty abbreviatedIRI="top:isValueOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isPhenomenonTimeOf"/>
+        <ObjectProperty abbreviatedIRI="top:isTimeOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isPlatformModelOf"/>
+        <ObjectProperty abbreviatedIRI="top:isDescriptionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isPlatformOf"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isPlatformTypeOf"/>
+        <ObjectProperty abbreviatedIRI="top:classifies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isProcedureImplòementedBy"/>
+        <ObjectProperty abbreviatedIRI="top:isDescriptionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isSensorModelOf"/>
+        <ObjectProperty abbreviatedIRI="top:isDescriptionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isSensorTypeOf"/>
+        <ObjectProperty abbreviatedIRI="top:classifies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isSystemCapabilityOf"/>
+        <ObjectProperty abbreviatedIRI="top:isCharacteristicOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isValidationLevelOf"/>
+        <ObjectProperty abbreviatedIRI="top:classifies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="makesObservation"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="makesObservationCollection"/>
+        <ObjectProperty abbreviatedIRI="top:hasCollection"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="phenomenonTime"/>
+        <ObjectProperty abbreviatedIRI="top:atTime"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="basedOnMetric"/>
+        <ObjectProperty IRI="isMetricUsedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="generationTime"/>
+        <ObjectProperty IRI="isGenerationTimeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasFeatureOfInterest"/>
+        <ObjectProperty IRI="isFeatureOfInterestOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasIndicator"/>
+        <ObjectProperty IRI="isIndicatorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasObservationParameter"/>
+        <ObjectProperty IRI="isObservationParameterFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasObservationValue"/>
+        <ObjectProperty IRI="isObservationValueOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPlatform"/>
+        <ObjectProperty IRI="isPlatformOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPlatformModel"/>
+        <ObjectProperty IRI="isPlatformModelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPlatformType"/>
+        <ObjectProperty IRI="isPlatformTypeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasSensorModel"/>
+        <ObjectProperty IRI="isSensorModelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasSensorType"/>
+        <ObjectProperty IRI="isSensorTypeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasSubMonitoringObject"/>
+        <ObjectProperty IRI="hasSuperMonitoringObject"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasSystemCapability"/>
+        <ObjectProperty IRI="isSystemCapabilityOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasValidationLevel"/>
+        <ObjectProperty IRI="isValidationLevelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hosts"/>
+        <ObjectProperty IRI="isHostedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="implementsProcedure"/>
+        <ObjectProperty IRI="isProcedureImplòementedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isObservationCollectionMadeBySensor"/>
+        <ObjectProperty IRI="makesObservationCollection"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isObservationMadeBySensor"/>
+        <ObjectProperty IRI="makesObservation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isPhenomenonTimeOf"/>
+        <ObjectProperty IRI="phenomenonTime"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="basedOnMetric"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="generationTime"/>
+        <Class IRI="Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFeatureOfInterest"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasIndicator"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasManufacturer"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasObservationParameter"/>
+        <Class IRI="Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasObservationValue"/>
+        <Class IRI="Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasOperationalStatus"/>
+        <Class IRI="Platform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPlatform"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPlatformModel"/>
+        <Class IRI="Platform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPlatformType"/>
+        <Class IRI="Platform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasResponsibleParty"/>
+        <ObjectUnionOf>
+            <Class IRI="MonitoringFacility"/>
+            <Class IRI="MonitoringNetwork"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSensorModel"/>
+        <Class IRI="Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSensorType"/>
+        <Class IRI="Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSubMonitoringObject"/>
+        <Class IRI="MonitoringObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSuperMonitoringObject"/>
+        <Class IRI="MonitoringObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSystemCapability"/>
+        <Class abbreviatedIRI="top:System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSystemDeployment"/>
+        <Class abbreviatedIRI="top:System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasValidationLevel"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hosts"/>
+        <Class IRI="Platform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="implementsProcedure"/>
+        <ObjectUnionOf>
+            <Class IRI="MonitoringFacility"/>
+            <Class IRI="Observation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isFeatureOfInterestOf"/>
+        <Class IRI="FeatureOfInterest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isGenerationTimeOf"/>
+        <Class abbreviatedIRI="top:TemporalEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isHostedBy"/>
+        <Class IRI="MonitoringFacility"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isIndicatorOf"/>
+        <Class IRI="Indicator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isMetricUsedBy"/>
+        <Class IRI="Metric"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isObservationCollectionMadeBySensor"/>
+        <Class IRI="ObservationCollection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isObservationMadeBySensor"/>
+        <Class IRI="Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isObservationParameterFor"/>
+        <Class IRI="ObservationParameter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isObservationValueOf"/>
+        <Class IRI="ObservationValue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPhenomenonTimeOf"/>
+        <Class abbreviatedIRI="top:TemporalEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPlatformModelOf"/>
+        <Class IRI="PlatformModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPlatformOf"/>
+        <Class IRI="Platform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPlatformTypeOf"/>
+        <Class IRI="PlatformType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isProcedureImplòementedBy"/>
+        <Class IRI="Procedure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isSensorModelOf"/>
+        <Class IRI="SensorModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isSensorTypeOf"/>
+        <Class IRI="SensorType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isSystemCapabilityOf"/>
+        <Class IRI="SystemCapability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isValidationLevelOf"/>
+        <Class IRI="ValidationLevel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="makesObservation"/>
+        <Class IRI="Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="makesObservationCollection"/>
+        <Class IRI="Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="phenomenonTime"/>
+        <Class IRI="Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="basedOnMetric"/>
+        <Class IRI="Metric"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="generationTime"/>
+        <Class abbreviatedIRI="top:TemporalEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFeatureOfInterest"/>
+        <Class IRI="FeatureOfInterest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasIndicator"/>
+        <Class IRI="Indicator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasManufacturer"/>
+        <Class abbreviatedIRI="top:Organisation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasObservationParameter"/>
+        <Class IRI="ObservationParameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasObservationValue"/>
+        <Class IRI="ObservationValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasOperationalStatus"/>
+        <Class abbreviatedIRI="top:Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPlatform"/>
+        <Class IRI="Platform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPlatformModel"/>
+        <Class IRI="PlatformModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPlatformType"/>
+        <Class IRI="PlatformType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasResponsibleParty"/>
+        <Class abbreviatedIRI="top:Organisation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSensorModel"/>
+        <Class IRI="SensorModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSensorType"/>
+        <Class IRI="SensorType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSubMonitoringObject"/>
+        <Class IRI="MonitoringObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSuperMonitoringObject"/>
+        <Class IRI="MonitoringObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSystemCapability"/>
+        <Class IRI="SystemCapability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSystemDeployment"/>
+        <Class IRI="SystemDeployment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasValidationLevel"/>
+        <Class IRI="ValidationLevel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hosts"/>
+        <Class IRI="MonitoringFacility"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="implementsProcedure"/>
+        <Class IRI="Procedure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isFeatureOfInterestOf"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isGenerationTimeOf"/>
+        <Class IRI="Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isHostedBy"/>
+        <Class IRI="Platform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isIndicatorOf"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isMetricUsedBy"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isObservationCollectionMadeBySensor"/>
+        <Class IRI="Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isObservationMadeBySensor"/>
+        <Class IRI="Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isObservationParameterFor"/>
+        <Class IRI="Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isObservationValueOf"/>
+        <Class IRI="Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPhenomenonTimeOf"/>
+        <Class IRI="Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPlatformModelOf"/>
+        <Class IRI="Platform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPlatformOf"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPlatformTypeOf"/>
+        <Class IRI="Platform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isProcedureImplòementedBy"/>
+        <ObjectUnionOf>
+            <Class IRI="MonitoringFacility"/>
+            <Class IRI="Observation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isSensorModelOf"/>
+        <Class IRI="Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isSensorTypeOf"/>
+        <Class IRI="Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isSystemCapabilityOf"/>
+        <Class abbreviatedIRI="top:System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isValidationLevelOf"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="makesObservation"/>
+        <Class IRI="Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="makesObservationCollection"/>
+        <Class IRI="ObservationCollection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="phenomenonTime"/>
+        <Class abbreviatedIRI="top:TemporalEntity"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>FeatureOfInterest</IRI>
+        <Literal xml:lang="en">It represents the Feature whose Observed Attribute is being observed by a Sensor in order to get an Observed Value. For instance, if we say that the temperature of the kitchen is 28 celsius degrees, the Feature of Interest is the kitchen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>FeatureOfInterest</IRI>
+        <Literal xml:lang="it">Rappresenta la caratteristica di interesse il cui attributo osservato è osservato da un sensor per ottenere un valore osservato. Per esempio, se diciamo che la temperatura della cucina è di 28 gradi celsius, la caratteristica di interesse è la cucina.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>FeatureOfInterest</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>FeatureOfInterest</IRI>
+        <Literal xml:lang="it">Caratteristica di Interesse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>FeatureOfInterest</IRI>
+        <Literal xml:lang="en">Feature of interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Indicator</IRI>
+        <Literal xml:lang="en">An indicator that reports a certain value typically with its unit of measure. Examples of indicators are those resulting from the measurement of land consumption.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Indicator</IRI>
+        <Literal xml:lang="it">Un indicatore che riporta un certo valore tipicamente con la sua unità di misura. Esempi di indicatori sono quelli risultanti dalla misurazione del consumo di suolo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Indicator</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Indicator</IRI>
+        <Literal xml:lang="en">Indicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Indicator</IRI>
+        <Literal xml:lang="it">Indicatore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IndicatorCollection</IRI>
+        <Literal xml:lang="en">A collection whose members are indicators only.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IndicatorCollection</IRI>
+        <Literal xml:lang="it">Una collezione i cui membri sono solo indicatori.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>IndicatorCollection</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IndicatorCollection</IRI>
+        <Literal xml:lang="it">Collezione di indicatori</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IndicatorCollection</IRI>
+        <Literal xml:lang="en">Indicator collection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Metric</IRI>
+        <Literal xml:lang="en">A metric, which is used for performing measurements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Metric</IRI>
+        <Literal xml:lang="it">Una metrica utilizzata per eseguire misurazioni.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Metric</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Metric</IRI>
+        <Literal xml:lang="en">Metric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Metric</IRI>
+        <Literal xml:lang="it">Metrica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MonitoringFacility</IRI>
+        <Literal xml:lang="en">A georeferenced object directly collecting or processing data about objects whose properties (e.g. physical, chemical, biological or other aspects of environmental conditions) are repeatedly observed or measured. A monitoring facility can also host other monitoring facilities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MonitoringFacility</IRI>
+        <Literal xml:lang="it">Oggetto georeferenziato che collega direttamente o elabora i dati su oggetti le cui proprietà (per esempio, fisiche, chimiche, biologiche o altri aspetti delle condizioni ambientali) sono ripetutamente osservate o misurate. Un impianto di monitoraggio può ospitare altri impianti di monitoraggio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>MonitoringFacility</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MonitoringFacility</IRI>
+        <Literal xml:lang="it">Impianto di Monitoraggio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MonitoringFacility</IRI>
+        <Literal xml:lang="en">Monitoring Facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MonitoringNetwork</IRI>
+        <Literal xml:lang="it">Insieme di piattaforme di monitoraggio collegate dallo stesso programma di monitoraggio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>MonitoringNetwork</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MonitoringNetwork</IRI>
+        <Literal xml:lang="en">Monitoring Network</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MonitoringNetwork</IRI>
+        <Literal xml:lang="it">Rete di Monitoraggio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>MonitoringObject</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MonitoringObject</IRI>
+        <Literal xml:lang="en">Monitoring Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MonitoringObject</IRI>
+        <Literal xml:lang="it">Oggetto per il Monitoraggio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Observation</IRI>
+        <Literal xml:lang="en">An observation performed by a sensor reporting a certain result about a given feature of interest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Observation</IRI>
+        <Literal xml:lang="it">Un&apos;osservazione eseguita da un sensore che riporta un determinato risultato su una determinata caratteristica di interesse.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Observation</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Observation</IRI>
+        <Literal xml:lang="en">Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Observation</IRI>
+        <Literal xml:lang="it">Osservazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ObservationCollection</IRI>
+        <Literal xml:lang="en">A collection containing only observations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ObservationCollection</IRI>
+        <Literal xml:lang="it">Una collezione i cui membri sono solo osservazioni.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ObservationCollection</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ObservationCollection</IRI>
+        <Literal xml:lang="en">Collection of observations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ObservationCollection</IRI>
+        <Literal xml:lang="it">Collezione di osservazioni</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ObservationParameter</IRI>
+        <Literal xml:lang="en">An observation parameter (property, characteristic) of a feature of interest. For instance, if we say that the temperature of the kitchen is 28 clesius degrees, the observed attribute is temperature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ObservationParameter</IRI>
+        <Literal xml:lang="it">Rappresenta un parametro (proprietà) dell&apos;osservazione di una caratteristica di interesse. Per esempio, se diciamo che la temperatura della cucina è di 28 gradi celsius, la temperatura rappresenta l&apos;attributo osservato.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ObservationParameter</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ObservationParameter</IRI>
+        <Literal xml:lang="en">Observation parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ObservationParameter</IRI>
+        <Literal xml:lang="it">Parametro di osservazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ObservationValue</IRI>
+        <Literal xml:lang="it">La classe dei risultati dell&apos;osservazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ObservationValue</IRI>
+        <Literal xml:lang="en">The class of the result of an observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ObservationValue</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ObservationValue</IRI>
+        <Literal xml:lang="en">Observation Value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ObservationValue</IRI>
+        <Literal xml:lang="it">Valore dell&apos;Osservazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Platform</IRI>
+        <Literal xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Platform</IRI>
+        <Literal xml:lang="it">Una piattaforma è un&apos;entità che ospita altre entità, in particolare sensori, attuatori, campionatori e altre piattaforme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Platform</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Platform</IRI>
+        <Literal xml:lang="it">Piattaforma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Platform</IRI>
+        <Literal xml:lang="en">Platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PlatformCollection</IRI>
+        <Literal xml:lang="it">Una raggruppamento di piattaforme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>PlatformCollection</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PlatformCollection</IRI>
+        <Literal xml:lang="it">Collezione di Piattaforme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PlatformCollection</IRI>
+        <Literal xml:lang="en">Platform Collection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>PlatformModel</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PlatformModel</IRI>
+        <Literal xml:lang="it">Modello della Piattaforma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PlatformModel</IRI>
+        <Literal xml:lang="en">Platform Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PlatformType</IRI>
+        <Literal xml:lang="en">A platform type that classified a certain platform, such as &apos;Fixed Buoy&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PlatformType</IRI>
+        <Literal xml:lang="it">Un tipo di piattaforma che ha classificato una determinata piattaforma, ad esempio &quot;Boa fissa&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>PlatformType</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PlatformType</IRI>
+        <Literal xml:lang="en">Platform Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PlatformType</IRI>
+        <Literal xml:lang="it">Tipo di piattaforma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Procedure</IRI>
+        <Literal xml:lang="en">A workflow, protocol, plan, algorithm, or computational method specifying how to make an Observation or create an Indicator.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Procedure</IRI>
+        <Literal xml:lang="it">Un flusso di lavoro, protocollo, piano, algoritmo, per un metodo computazionale che specifica come effettuare un&apos;osservazione o creare un indicatore.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Procedure</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Procedure</IRI>
+        <Literal xml:lang="it">Procedura</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Procedure</IRI>
+        <Literal xml:lang="en">Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Sensor</IRI>
+        <Literal xml:lang="it">La classe per i sensori.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Sensor</IRI>
+        <Literal xml:lang="en">The class for sensors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Sensor</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Sensor</IRI>
+        <Literal xml:lang="en">Sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Sensor</IRI>
+        <Literal xml:lang="it">Sensore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>SensorModel</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SensorModel</IRI>
+        <Literal xml:lang="it">Modello del Sensore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SensorModel</IRI>
+        <Literal xml:lang="en">Sensor Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>SensorType</IRI>
+        <Literal xml:lang="it">La classificazione di un sensore rispetto ad un determinato tipo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>SensorType</IRI>
+        <Literal xml:lang="en">The classification of a sensor with respect to a certain type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>SensorType</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SensorType</IRI>
+        <Literal xml:lang="en">Sensor Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SensorType</IRI>
+        <Literal xml:lang="it">Tipo di Sensore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>SystemCapability</IRI>
+        <Literal xml:lang="en">A property that characterizes the system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>SystemCapability</IRI>
+        <Literal xml:lang="it">Una proprietà che caratterizza il sistema.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>SystemCapability</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SystemCapability</IRI>
+        <Literal xml:lang="it">Abilità del sistema</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SystemCapability</IRI>
+        <Literal xml:lang="en">System capability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>SystemDeployment</IRI>
+        <Literal xml:lang="it">Il dislocamento di un sistema in un contesto specifico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>SystemDeployment</IRI>
+        <Literal xml:lang="en">The deployment of a system in a specific context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>SystemDeployment</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SystemDeployment</IRI>
+        <Literal xml:lang="it">Collocamento del sistema</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SystemDeployment</IRI>
+        <Literal xml:lang="en">System deployment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ValidationLevel</IRI>
+        <Literal xml:lang="it">La classe per rappresentare i livelli di validazione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ValidationLevel</IRI>
+        <Literal xml:lang="en">The class for representing a validation level.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ValidationLevel</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ValidationLevel</IRI>
+        <Literal xml:lang="it">Livello di Validazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ValidationLevel</IRI>
+        <Literal xml:lang="en">Validation Level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>basedOnMetric</IRI>
+        <Literal xml:lang="it">La relazione tra un&apos;entità e la metrica utilizzata per eseguire la misurazione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>basedOnMetric</IRI>
+        <Literal xml:lang="en">The relation between an entity and the metric used for performing the measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>basedOnMetric</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>basedOnMetric</IRI>
+        <Literal xml:lang="it">basato sulla metrica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>basedOnMetric</IRI>
+        <Literal xml:lang="en">based on metric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>generationTime</IRI>
+        <Literal xml:lang="it">La relazione che sussiste tra un&apos;osservazione e l&apos;entità temporale in cui essa è stata generata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>generationTime</IRI>
+        <Literal xml:lang="en">The relation holding between an observation and its generation time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>generationTime</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>generationTime</IRI>
+        <Literal xml:lang="it">entità temporale di generazione dell&apos;osservazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>generationTime</IRI>
+        <Literal xml:lang="en">temporal entity of observation generation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasFeatureOfInterest</IRI>
+        <Literal xml:lang="it">La relazione esistente tra una qualsiasi entità ed una caratteristica di interesse.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasFeatureOfInterest</IRI>
+        <Literal xml:lang="en">The relationship between any entity and a feature of interest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasFeatureOfInterest</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasFeatureOfInterest</IRI>
+        <Literal xml:lang="it">ha caratteristica di interesse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasFeatureOfInterest</IRI>
+        <Literal xml:lang="en">has feature of interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasIndicator</IRI>
+        <Literal xml:lang="it">La relazione tra un&apos;entità ed un indicatore.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasIndicator</IRI>
+        <Literal xml:lang="en">The relation between an entity and an indicator.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasIndicator</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasIndicator</IRI>
+        <Literal xml:lang="it">ha indicatore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasIndicator</IRI>
+        <Literal xml:lang="en">has indicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasManufacturer</IRI>
+        <Literal xml:lang="en">Property used to link the platform model to its manufacturer (intended as an organisation)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasManufacturer</IRI>
+        <Literal xml:lang="it">Proprietà utilizzata per collegare il modello della piattaforma al relativo costruttore (inteso come organizzazione)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasManufacturer</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasManufacturer</IRI>
+        <Literal xml:lang="it">ha costruttore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasManufacturer</IRI>
+        <Literal xml:lang="en">has manufacturer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasObservationParameter</IRI>
+        <Literal xml:lang="en">Property that links an observation to its parameter being observed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasObservationParameter</IRI>
+        <Literal xml:lang="it">Proprietà che collega un&apos;osservazione al suo parametro osservato.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasObservationParameter</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasObservationParameter</IRI>
+        <Literal xml:lang="it">ha parametro di osservazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasObservationParameter</IRI>
+        <Literal xml:lang="en">has observation parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasObservationValue</IRI>
+        <Literal xml:lang="it">La proprietà che collega un&apos;osservazione al suo valore.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasObservationValue</IRI>
+        <Literal xml:lang="en">The property that links an observation to its value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasObservationValue</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasObservationValue</IRI>
+        <Literal xml:lang="it">ha valore di osservazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasObservationValue</IRI>
+        <Literal xml:lang="en">has observation value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasOperationalStatus</IRI>
+        <Literal xml:lang="en">Property used to link the platform at its operational status.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasOperationalStatus</IRI>
+        <Literal xml:lang="it">Proprietà utilizzata per collegare lo stato operativo alla piattaforma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasOperationalStatus</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasOperationalStatus</IRI>
+        <Literal xml:lang="it">ha stato operativo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasOperationalStatus</IRI>
+        <Literal xml:lang="en">has operational status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPlatform</IRI>
+        <Literal xml:lang="it">La relazione tra un&apos;entità e una piattaforma.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPlatform</IRI>
+        <Literal xml:lang="en">The relation between an entity and a platform.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasPlatform</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasPlatform</IRI>
+        <Literal xml:lang="it">ha piattaforma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasPlatform</IRI>
+        <Literal xml:lang="en">has platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPlatformModel</IRI>
+        <Literal xml:lang="it">La proprietà che consente di associare una piattaforma al modello di piattaforma corrispondente.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPlatformModel</IRI>
+        <Literal xml:lang="en">The property that allows one to associate a platform with its corresponding platform model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasPlatformModel</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasPlatformModel</IRI>
+        <Literal xml:lang="it">ha modello di piattaforma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasPlatformModel</IRI>
+        <Literal xml:lang="en">has platform model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPlatformType</IRI>
+        <Literal xml:lang="it">La proprietà che consente di classificare un piattaforma utilizzando il concetto rappresentato dal tipo di piattaforma.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPlatformType</IRI>
+        <Literal xml:lang="en">The property that allows you to classify a platform using the concept represented by the type of platform.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasPlatformType</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasPlatformType</IRI>
+        <Literal xml:lang="it">ha tipo di piattaforma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasPlatformType</IRI>
+        <Literal xml:lang="en">has platform type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasResponsibleParty</IRI>
+        <Literal>The relation holding between a monitiroring facility or network and the agent is in charge of some responsibility role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasResponsibleParty</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasResponsibleParty</IRI>
+        <Literal xml:lang="it">ha parte responsabile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasResponsibleParty</IRI>
+        <Literal xml:lang="en">has responsible party</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSensorModel</IRI>
+        <Literal xml:lang="it">La relazione tra un sensore e la descrizione del sensore rappresentata dal suo modello.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSensorModel</IRI>
+        <Literal xml:lang="en">The relation between a sensor and the sensor description represented by its model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasSensorModel</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSensorModel</IRI>
+        <Literal xml:lang="it">ha modello di sensore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSensorModel</IRI>
+        <Literal xml:lang="en">has sensor model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSensorType</IRI>
+        <Literal xml:lang="it">La proprietà che permette di classificare un sensore rispetto ad un concetto che identifica il tipo di sensore.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSensorType</IRI>
+        <Literal xml:lang="en">The property that allows you to classify a sensor with respect to a concept that identifies the type of sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasSensorType</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSensorType</IRI>
+        <Literal xml:lang="it">ha tipo di sensore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSensorType</IRI>
+        <Literal xml:lang="en">has sensor type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSubMonitoringObject</IRI>
+        <Literal xml:lang="it">La relazione per esprimere che un determinato oggetto di monitoraggio ha un altro oggetto di monitoraggio come uno dei suoi sottocomponenti.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSubMonitoringObject</IRI>
+        <Literal xml:lang="en">The relation for expressing that a certain monitoring object has another monitoring object as on of its sub-components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasSubMonitoringObject</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSubMonitoringObject</IRI>
+        <Literal xml:lang="it">ha sotto-oggetto di monitoraggio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSubMonitoringObject</IRI>
+        <Literal xml:lang="en">has sub-monitoring object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSuperMonitoringObject</IRI>
+        <Literal xml:lang="it">La relazione per esprimere che un determinato oggetto di monitoraggio è un sottocomponente di un altro oggetto di monitoraggio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSuperMonitoringObject</IRI>
+        <Literal xml:lang="en">The relationship to express that a given monitoring object is a sub-component of another monitoring object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasSuperMonitoringObject</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSuperMonitoringObject</IRI>
+        <Literal xml:lang="it">ha oggetto di monitoraggio superiore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSuperMonitoringObject</IRI>
+        <Literal xml:lang="en">has super monitoring object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSystemCapability</IRI>
+        <Literal xml:lang="it">La proprietà che associa un sistema a una determinata proprietà.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSystemCapability</IRI>
+        <Literal xml:lang="en">The property that associate a system with a certain property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasSystemCapability</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSystemCapability</IRI>
+        <Literal xml:lang="it">ha proprietà del sistema</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSystemCapability</IRI>
+        <Literal xml:lang="en">has system property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSystemDeployment</IRI>
+        <Literal xml:lang="it">Proprietà utilizzata per collegare il sistema al suo dislocamento in un contesto specifico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasSystemDeployment</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSystemDeployment</IRI>
+        <Literal xml:lang="it">ha dislocamento del sistema</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSystemDeployment</IRI>
+        <Literal xml:lang="en">has system deployment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasValidationLevel</IRI>
+        <Literal xml:lang="it">La relazione tra un&apos;entità e il livello di validazione evenutale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasValidationLevel</IRI>
+        <Literal xml:lang="en">The relation between an entity and a validation level.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasValidationLevel</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasValidationLevel</IRI>
+        <Literal xml:lang="it">ha livello di validazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasValidationLevel</IRI>
+        <Literal xml:lang="en">has validation level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hosts</IRI>
+        <Literal xml:lang="it">La relazione che sussiste tra una piattaforma e un eventuale sistema ospitato dalla prima.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hosts</IRI>
+        <Literal xml:lang="en">The relation holding between a platform and any possible system hosted by the former.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hosts</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hosts</IRI>
+        <Literal xml:lang="en">hosts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hosts</IRI>
+        <Literal xml:lang="it">ospita</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>implementsProcedure</IRI>
+        <Literal xml:lang="it">La relazione che sussiste tra un ente e la procedura utilizzata da tale ente per svolgere alcune attività, ad es. un&apos;osservazione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>implementsProcedure</IRI>
+        <Literal xml:lang="en">The relation holding between an entity and the procedure used by such an entity for performing some activity, e.g. an observation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>implementsProcedure</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>implementsProcedure</IRI>
+        <Literal xml:lang="it">implementa procedura</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>implementsProcedure</IRI>
+        <Literal xml:lang="en">implements procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isFeatureOfInterestOf</IRI>
+        <Literal xml:lang="it">La relazione che collega una caratteristica di interesse ad una qualsiasi entità possibile.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isFeatureOfInterestOf</IRI>
+        <Literal xml:lang="en">The relationship that links a feature of interest to any possible entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isFeatureOfInterestOf</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isFeatureOfInterestOf</IRI>
+        <Literal xml:lang="en">is feature of interest of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isFeatureOfInterestOf</IRI>
+        <Literal xml:lang="it">è caratteristica di interesse di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isGenerationTimeOf</IRI>
+        <Literal xml:lang="it">La relazione che sussiste tra un&apos;entità temporale ed un&apos;osservazione. La relazione fornisce l&apos;informazione sul momento in cui l&apos;osservazione è stata generata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isGenerationTimeOf</IRI>
+        <Literal xml:lang="en">The relationship that exists between a temporal entity and an observation. The relation suggests when the observation was generated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isGenerationTimeOf</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isGenerationTimeOf</IRI>
+        <Literal xml:lang="en">is generation time of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isGenerationTimeOf</IRI>
+        <Literal xml:lang="it">è tempo di generazione di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isHostedBy</IRI>
+        <Literal xml:lang="it">La relazione esistente tra un qualsiasi sistema e la piattaforma su cui è ospitato.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isHostedBy</IRI>
+        <Literal xml:lang="en">The relationship between any system and the platform it is hosted by.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isHostedBy</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isHostedBy</IRI>
+        <Literal xml:lang="en">is hosted by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isHostedBy</IRI>
+        <Literal xml:lang="it">è ospitato da</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isIndicatorOf</IRI>
+        <Literal xml:lang="it">La relazione tra un indicatore ed un&apos;entità ad esso associata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isIndicatorOf</IRI>
+        <Literal xml:lang="en">The relation holding between an indicator and a possible associated entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isIndicatorOf</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isIndicatorOf</IRI>
+        <Literal xml:lang="en">is indicator of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isIndicatorOf</IRI>
+        <Literal xml:lang="it">è indicatore di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isMetricUsedBy</IRI>
+        <Literal xml:lang="it">La relazione tra una metrica ed l&apos;entità che si basa su tale metrica per una misurazione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isMetricUsedBy</IRI>
+        <Literal xml:lang="en">The relationship between a metric and an entity that relies on that metric for a measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isMetricUsedBy</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isMetricUsedBy</IRI>
+        <Literal xml:lang="en">is metric used by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isMetricUsedBy</IRI>
+        <Literal xml:lang="it">è metrica usata da</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isObservationCollectionMadeBySensor</IRI>
+        <Literal xml:lang="it">La relazione che collega una collezione di osservazioni ad un sensore.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isObservationCollectionMadeBySensor</IRI>
+        <Literal xml:lang="en">The relation linking an observation collection to a sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isObservationCollectionMadeBySensor</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isObservationCollectionMadeBySensor</IRI>
+        <Literal xml:lang="en">is observation collection made by sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isObservationCollectionMadeBySensor</IRI>
+        <Literal xml:lang="it">è collezione di osservazioni fatta da sensore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isObservationMadeBySensor</IRI>
+        <Literal xml:lang="it">La proprietà che collega un&apos;osservazione al sensore che effettua tale osservazione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isObservationMadeBySensor</IRI>
+        <Literal xml:lang="en">The property that links an observation to the sensor making such an observation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isObservationMadeBySensor</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isObservationMadeBySensor</IRI>
+        <Literal xml:lang="en">is observation made by sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isObservationMadeBySensor</IRI>
+        <Literal xml:lang="it">è osservazione emessa da sensore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isObservationParameterFor</IRI>
+        <Literal xml:lang="en">Inverse property of hasObservationParameter that links a parameter to its related observation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isObservationParameterFor</IRI>
+        <Literal xml:lang="it">Proprietà inversa di hasObservationParameter che collega un parametro alla relativa osservazione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isObservationParameterFor</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isObservationParameterFor</IRI>
+        <Literal xml:lang="en">is observation parameter for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isObservationParameterFor</IRI>
+        <Literal xml:lang="it">è parametro di osservazione per</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isObservationValueOf</IRI>
+        <Literal xml:lang="it">La proprietà che collega un valore di osservazione alla sua osservazione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isObservationValueOf</IRI>
+        <Literal xml:lang="en">The property that links an observation value to its observation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isObservationValueOf</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isObservationValueOf</IRI>
+        <Literal xml:lang="en">is observation value of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isObservationValueOf</IRI>
+        <Literal xml:lang="it">è valore di osservazione di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPhenomenonTimeOf</IRI>
+        <Literal xml:lang="en">La proprietà che collega un&apos;entità temporale ad un osservazione con il valore di fornire l&apos;informazione sul momento in cui il fenomeno oggetto dell&apos;osservazione si è verificato.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPhenomenonTimeOf</IRI>
+        <Literal xml:lang="it">La proprietà che collega un&apos;entità temporale ad un osservazione con il valore di fornire l&apos;informazione sul momento in cui il fenomeno oggetto dell&apos;osservazione si è verificato.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isPhenomenonTimeOf</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPhenomenonTimeOf</IRI>
+        <Literal xml:lang="en">is phenomenon time of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPhenomenonTimeOf</IRI>
+        <Literal xml:lang="it">è il tempo in cui si è verificato il fenomeno di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPlatformModelOf</IRI>
+        <Literal xml:lang="it">La proprietà che consente di associare un modello di piattaforma ad una piattaforma.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPlatformModelOf</IRI>
+        <Literal xml:lang="en">The property that allows you to associate a platform model to a platform.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isPlatformModelOf</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPlatformModelOf</IRI>
+        <Literal xml:lang="en">is platform model of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPlatformModelOf</IRI>
+        <Literal xml:lang="it">è modello di piattaforma di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPlatformOf</IRI>
+        <Literal xml:lang="it">La relazione tra una piattaforma ed un&apos;entità  .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPlatformOf</IRI>
+        <Literal xml:lang="en">The relationship between a platform and an entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isPlatformOf</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPlatformOf</IRI>
+        <Literal xml:lang="en">is platform of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPlatformOf</IRI>
+        <Literal xml:lang="it">è piattaforma di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPlatformTypeOf</IRI>
+        <Literal xml:lang="it">La proprietà che consente di utilizzare un tipo di piattaforma come concetto che classifica una determinata piattaforma.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPlatformTypeOf</IRI>
+        <Literal xml:lang="en">The property that allows to use a platform type as the concept that classifies a certain platform.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isPlatformTypeOf</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPlatformTypeOf</IRI>
+        <Literal xml:lang="en">is platform type of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPlatformTypeOf</IRI>
+        <Literal xml:lang="it">è tipo di piattaforma di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isProcedureImplòementedBy</IRI>
+        <Literal xml:lang="it">La relazione tra una procedura e l&apos;entità utilizza tale procedura per svolgere un&apos;attività, ad es. un&apos;osservazione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isProcedureImplòementedBy</IRI>
+        <Literal xml:lang="en">The relation holding by a procedure and the entity is using such a procedure for performing an activity, e.g. an observation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isProcedureImplòementedBy</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isProcedureImplòementedBy</IRI>
+        <Literal xml:lang="en">is procedure implemented by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isProcedureImplòementedBy</IRI>
+        <Literal xml:lang="it">è procedura implementata da</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isSensorModelOf</IRI>
+        <Literal xml:lang="en">La relazione che permette di collegare un modello di sensore al sensore di quel modello.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isSensorModelOf</IRI>
+        <Literal xml:lang="it">La relazione che permette di collegare un modello di sensore al sensore di quel modello.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isSensorModelOf</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isSensorModelOf</IRI>
+        <Literal xml:lang="en">is sensor model of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isSensorModelOf</IRI>
+        <Literal xml:lang="it">è modello di sensore di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isSensorTypeOf</IRI>
+        <Literal xml:lang="it">La proprietà che consente di utilizzare un concetto che identifica il tipo di sensore per classificare un sensore.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isSensorTypeOf</IRI>
+        <Literal xml:lang="en">The property that allows you to use a concept that identifies the type of sensor to classify a sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isSensorTypeOf</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isSensorTypeOf</IRI>
+        <Literal xml:lang="en">is sensor type of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isSensorTypeOf</IRI>
+        <Literal xml:lang="it">è tipo di sensore di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isSystemCapabilityOf</IRI>
+        <Literal xml:lang="it">La proprietà che associa una determinata abilità ad un sistema.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isSystemCapabilityOf</IRI>
+        <Literal xml:lang="en">The property that associates a certain capability  with a system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isSystemCapabilityOf</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isSystemCapabilityOf</IRI>
+        <Literal xml:lang="en">is system capability of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isSystemCapabilityOf</IRI>
+        <Literal xml:lang="it">è capability di sistema di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isValidationLevelOf</IRI>
+        <Literal xml:lang="it">La relazione tra un livello di validazione ed un&apos;entità.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isValidationLevelOf</IRI>
+        <Literal xml:lang="en">The relation between a validation level and its entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isValidationLevelOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isValidationLevelOf</IRI>
+        <Literal xml:lang="en">is validation level of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isValidationLevelOf</IRI>
+        <Literal xml:lang="it">è livello di validazione di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>makesObservation</IRI>
+        <Literal xml:lang="it">La proprietà che collega un sensore a un&apos;osservazione fatta da tale sensore.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>makesObservation</IRI>
+        <Literal xml:lang="en">The property that links a sensor to an observation made by such a sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>makesObservation</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>makesObservation</IRI>
+        <Literal xml:lang="it">emette osservazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>makesObservation</IRI>
+        <Literal xml:lang="en">makes observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>makesObservationCollection</IRI>
+        <Literal xml:lang="it">La relazione che permette di dire che un sensore ha generato una certa collezione di osservazioni.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>makesObservationCollection</IRI>
+        <Literal xml:lang="it">The relation that allows one to assert a sensor made an observation collection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>makesObservationCollection</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>makesObservationCollection</IRI>
+        <Literal xml:lang="it">fa collezione di osservazioni</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>makesObservationCollection</IRI>
+        <Literal xml:lang="en">makes observation collection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>phenomenonTime</IRI>
+        <Literal xml:lang="it">La proprietà che associa ad un&apos;osservazione l&apos;entità temporale che stabilisce quando il fenomeno oggetto dell&apos;osservazione si è manifestato.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>phenomenonTime</IRI>
+        <Literal xml:lang="en">The property that associates to an observation the temporal entity that establishes when the phenomenon object of the observation occurred.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>phenomenonTime</IRI>
+        <IRI>https://w3id.org/italia/env/onto/inspire-mf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>phenomenonTime</IRI>
+        <Literal xml:lang="it">entità temporale in cui si è verificato il fenomeno</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>phenomenonTime</IRI>
+        <Literal xml:lang="en">phenomenon time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147484751"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147484752"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147484753"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

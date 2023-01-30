@@ -1,0 +1,1646 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/italia/env/onto/place/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/italia/env/onto/place/">
+    <Prefix name="" IRI="https://w3id.org/italia/env/onto/place/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="top" IRI="https://w3id.org/italia/env/onto/top/"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://w3id.org/italia/env/onto/top/</Import>
+    <Declaration>
+        <Class IRI="AdministrativeUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Geometry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GeometryType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MetropolitanCity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Municipality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDirectHigherRank"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDirectLowerRank"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGeometry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGeometryType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasHigherRank"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasLowerRank"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMetropolitanCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMunicipality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasNearbyLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasProvince"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCountryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isFeatureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isGeometryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isGeometryTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isMetropolitanCityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isMunicipalityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isProvinceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRegionOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="coordinateSystem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="geometry"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="istat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="lat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="long"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="AdministrativeUnit"/>
+        <Class IRI="Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AdministrativeUnit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasGeometry"/>
+            <Class IRI="Geometry"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AdministrativeUnit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="top:hasUniqueIdentifier"/>
+            <Class abbreviatedIRI="top:UniqueIdentifier"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AdministrativeUnit"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="istat"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Country"/>
+        <Class IRI="AdministrativeUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Country"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasDirectLowerRank"/>
+            <Class IRI="Region"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Country"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasLowerRank"/>
+            <ObjectUnionOf>
+                <Class IRI="MetropolitanCity"/>
+                <Class IRI="Municipality"/>
+                <Class IRI="Province"/>
+                <Class IRI="Region"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Country"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasDirectLowerRank"/>
+            <Class IRI="Region"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Country"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasLowerRank"/>
+            <ObjectUnionOf>
+                <Class IRI="MetropolitanCity"/>
+                <Class IRI="Municipality"/>
+                <Class IRI="Province"/>
+                <Class IRI="Region"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Feature"/>
+        <Class abbreviatedIRI="top:Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Geometry"/>
+        <Class abbreviatedIRI="top:Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Geometry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="top:isClassifiedBy"/>
+            <Class IRI="GeometryType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Geometry"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="lat"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Geometry"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="long"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Geometry"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="geometry"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GeometryType"/>
+        <Class abbreviatedIRI="top:Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MetropolitanCity"/>
+        <Class IRI="AdministrativeUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MetropolitanCity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasDirectLowerRank"/>
+            <Class IRI="Municipality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MetropolitanCity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasLowerRank"/>
+            <Class IRI="Municipality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MetropolitanCity"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasDirectLowerRank"/>
+            <Class IRI="Municipality"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MetropolitanCity"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasLowerRank"/>
+            <Class IRI="Municipality"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Municipality"/>
+        <Class IRI="AdministrativeUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Province"/>
+        <Class IRI="AdministrativeUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Province"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasDirectLowerRank"/>
+            <Class IRI="Municipality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Province"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasLowerRank"/>
+            <Class IRI="Municipality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Province"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasDirectLowerRank"/>
+            <Class IRI="Municipality"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Province"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasLowerRank"/>
+            <Class IRI="Municipality"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Region"/>
+        <Class IRI="AdministrativeUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Region"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasDirectLowerRank"/>
+            <ObjectUnionOf>
+                <Class IRI="MetropolitanCity"/>
+                <Class IRI="Province"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Region"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasLowerRank"/>
+            <ObjectUnionOf>
+                <Class IRI="MetropolitanCity"/>
+                <Class IRI="Municipality"/>
+                <Class IRI="Province"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Region"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasDirectLowerRank"/>
+            <ObjectUnionOf>
+                <Class IRI="MetropolitanCity"/>
+                <Class IRI="Province"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Region"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasLowerRank"/>
+            <ObjectUnionOf>
+                <Class IRI="MetropolitanCity"/>
+                <Class IRI="Municipality"/>
+                <Class IRI="Province"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sea"/>
+        <Class abbreviatedIRI="top:Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sea"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasGeometry"/>
+            <Class IRI="Geometry"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="AdministrativeUnit"/>
+        <Class IRI="Geometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="AdministrativeUnit"/>
+        <Class IRI="Sea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Country"/>
+        <Class IRI="MetropolitanCity"/>
+        <Class IRI="Municipality"/>
+        <Class IRI="Province"/>
+        <Class IRI="Region"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Feature"/>
+        <Class IRI="Geometry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Geometry"/>
+        <Class IRI="Sea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="MetropolitanCity"/>
+        <Class IRI="Municipality"/>
+        <Class IRI="Province"/>
+        <Class IRI="Region"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCountry"/>
+        <ObjectProperty IRI="hasFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDirectHigherRank"/>
+        <ObjectProperty IRI="hasHigherRank"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDirectLowerRank"/>
+        <ObjectProperty IRI="hasLowerRank"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFeature"/>
+        <ObjectProperty abbreviatedIRI="top:hasLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGeometry"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGeometryType"/>
+        <ObjectProperty abbreviatedIRI="top:isClassifiedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasHigherRank"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasLowerRank"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMetropolitanCity"/>
+        <ObjectProperty IRI="hasFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMunicipality"/>
+        <ObjectProperty IRI="hasFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasNearbyLocation"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasProvince"/>
+        <ObjectProperty IRI="hasFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasRegion"/>
+        <ObjectProperty IRI="hasFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isCountryOf"/>
+        <ObjectProperty IRI="isFeatureOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isFeatureOf"/>
+        <ObjectProperty abbreviatedIRI="top:isLocationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isGeometryOf"/>
+        <ObjectProperty abbreviatedIRI="top:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isGeometryTypeOf"/>
+        <ObjectProperty abbreviatedIRI="top:classifies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isMetropolitanCityOf"/>
+        <ObjectProperty IRI="isFeatureOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isMunicipalityOf"/>
+        <ObjectProperty IRI="isFeatureOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isProvinceOf"/>
+        <ObjectProperty IRI="isFeatureOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isRegionOf"/>
+        <ObjectProperty IRI="isFeatureOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasCountry"/>
+        <ObjectProperty IRI="isCountryOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasDirectHigherRank"/>
+        <ObjectProperty IRI="hasDirectLowerRank"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasFeature"/>
+        <ObjectProperty IRI="isFeatureOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasGeometry"/>
+        <ObjectProperty IRI="isGeometryOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasGeometryType"/>
+        <ObjectProperty IRI="isGeometryTypeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasHigherRank"/>
+        <ObjectProperty IRI="hasLowerRank"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasMetropolitanCity"/>
+        <ObjectProperty IRI="isMetropolitanCityOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasMunicipality"/>
+        <ObjectProperty IRI="isMunicipalityOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasProvince"/>
+        <ObjectProperty IRI="isProvinceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasRegion"/>
+        <ObjectProperty IRI="isRegionOf"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="hasHigherRank"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="hasLowerRank"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCountry"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDirectHigherRank"/>
+        <Class IRI="AdministrativeUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDirectLowerRank"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFeature"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGeometry"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGeometryType"/>
+        <Class IRI="Geometry"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasHigherRank"/>
+        <Class IRI="AdministrativeUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasLowerRank"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMetropolitanCity"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMunicipality"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasNearbyLocation"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasProvince"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRegion"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCountryOf"/>
+        <Class IRI="Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isFeatureOf"/>
+        <Class IRI="Feature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isGeometryTypeOf"/>
+        <Class IRI="GeometryType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isMetropolitanCityOf"/>
+        <Class IRI="MetropolitanCity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isMunicipalityOf"/>
+        <Class IRI="Municipality"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isProvinceOf"/>
+        <Class IRI="Province"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRegionOf"/>
+        <Class IRI="Region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCountry"/>
+        <Class IRI="Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDirectHigherRank"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDirectLowerRank"/>
+        <Class IRI="AdministrativeUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFeature"/>
+        <Class IRI="Feature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGeometry"/>
+        <Class IRI="Geometry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGeometryType"/>
+        <Class IRI="GeometryType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasHigherRank"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasLowerRank"/>
+        <Class IRI="AdministrativeUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMetropolitanCity"/>
+        <Class IRI="MetropolitanCity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMunicipality"/>
+        <Class IRI="Municipality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasProvince"/>
+        <Class IRI="Province"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRegion"/>
+        <Class IRI="Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCountryOf"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isFeatureOf"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isGeometryTypeOf"/>
+        <Class IRI="Geometry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isMetropolitanCityOf"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isMunicipalityOf"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isProvinceOf"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRegionOf"/>
+        <Class abbreviatedIRI="top:Entity"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasMetropolitanCity"/>
+            <ObjectProperty IRI="hasRegion"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasRegion"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasMunicipality"/>
+            <ObjectProperty IRI="hasMetropolitanCity"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasMetropolitanCity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasMunicipality"/>
+            <ObjectProperty IRI="hasProvince"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasProvince"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasProvince"/>
+            <ObjectProperty IRI="hasRegion"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasRegion"/>
+    </SubObjectPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="coordinateSystem"/>
+        <Class IRI="Geometry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="geometry"/>
+        <Class IRI="Geometry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="istat"/>
+        <Class IRI="AdministrativeUnit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="lat"/>
+        <Class IRI="Geometry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="long"/>
+        <Class IRI="Geometry"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="coordinateSystem"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="geometry"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="istat"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="lat"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="long"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <HasKey>
+        <Class IRI="AdministrativeUnit"/>
+        <DataProperty IRI="istat"/>
+    </HasKey>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AdministrativeUnit</IRI>
+        <Literal xml:lang="en">A place meant as administrative unit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AdministrativeUnit</IRI>
+        <Literal xml:lang="it">Un luogo inteso come unità amministrativa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>AdministrativeUnit</IRI>
+        <IRI>https://w3id.org/italia/env/onto/place</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AdministrativeUnit</IRI>
+        <Literal xml:lang="en">Administrative unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AdministrativeUnit</IRI>
+        <Literal xml:lang="it">Unità amministrativa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Country</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta lo Stato. Esempio: &quot;Italia - Italy&quot; oppure &quot;United Kingdom&quot;, ecc. E&apos; l&apos;unità amministrativa più alta nella gerarchia di contenimento territoriale dell&apos;indirizzo. Nel Core Location Vocabulary del programma ISA2 essa è modellata con la proprietà dell&apos;indirizzo nominata adminUnit1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Country</IRI>
+        <Literal xml:lang="en">This class represents the uppermost administrative unit for the address, almost always a country. &quot;United Kingdom&quot;, &quot;Italy&quot;, etc. In the Core Location Vocabulary this is modelled as adminUnit1.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Country</IRI>
+        <IRI>https://w3id.org/italia/env/onto/place</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Country</IRI>
+        <Literal xml:lang="en">Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Country</IRI>
+        <Literal xml:lang="it">Stato</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Feature</IRI>
+        <Literal xml:lang="en">A feature meant as a location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Feature</IRI>
+        <Literal xml:lang="it">Una feature intesa come luogo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Feature</IRI>
+        <IRI>https://w3id.org/italia/env/onto/place</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Feature</IRI>
+        <Literal xml:lang="en">Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Feature</IRI>
+        <Literal xml:lang="it">Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Geometry</IRI>
+        <Literal xml:lang="it">Questa classe rappresenta la geometria di un luogo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Geometry</IRI>
+        <Literal xml:lang="en">This class represents the geometry of a location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Geometry</IRI>
+        <IRI>https://w3id.org/italia/env/onto/place</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Geometry</IRI>
+        <Literal xml:lang="it">Geometria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Geometry</IRI>
+        <Literal xml:lang="en">Geometry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>GeometryType</IRI>
+        <Literal xml:lang="en">A geometry type, such as a point, polygon, multipolygon, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>GeometryType</IRI>
+        <Literal xml:lang="it">Un tipo di geometrica, come ad esempio punto, poligono, multipoligono, ecc...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>GeometryType</IRI>
+        <IRI>https://w3id.org/italia/env/onto/place</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GeometryType</IRI>
+        <Literal xml:lang="en">Geometry type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GeometryType</IRI>
+        <Literal xml:lang="it">Tipo di geometria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MetropolitanCity</IRI>
+        <Literal xml:lang="it">Le città metropolitane d&apos;Italia sono divisioni amministrative dell&apos;Italia, operative dal 2015, che sono un tipo speciale di provincia. La città metropolitana, così come definita dalla legge, comprende un grande nucleo urbano e i centri minori circostanti che sono ad esso strettamente collegati per quanto riguarda le attività economiche e i servizi pubblici essenziali, nonché le relazioni culturali e le caratteristiche territoriali.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MetropolitanCity</IRI>
+        <Literal xml:lang="en">The metropolitan cities of Italy are administrative divisions of Italy, operative since 2015, which are a special type of province. The metropolitan city, as defined by law, includes a large core city and the smaller surrounding towns that are closely related to it with regard to economic activities and essential public services, as well as to cultural relations and to territorial features.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>MetropolitanCity</IRI>
+        <IRI>https://w3id.org/italia/env/onto/place</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MetropolitanCity</IRI>
+        <Literal xml:lang="it">Città Metropolitana</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MetropolitanCity</IRI>
+        <Literal xml:lang="en">Metropolitan City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Municipality</IRI>
+        <Literal xml:lang="it">La classe per rappresentare comuni come Roma o Milano.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Municipality</IRI>
+        <Literal xml:lang="en">The class for representing municipalities such as Rome or Milan.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Municipality</IRI>
+        <IRI>https://w3id.org/italia/env/onto/place</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Municipality</IRI>
+        <Literal xml:lang="en">Municipality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Municipality</IRI>
+        <Literal xml:lang="it">Municipalità (Comune)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Province</IRI>
+        <Literal xml:lang="it">La classe per rappresentare province come la Provincia di Ancona o L&apos;Aquila.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Province</IRI>
+        <Literal xml:lang="en">The class for representing provinces such as the Province of Ancona or L&apos;Aquila.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Province</IRI>
+        <IRI>https://w3id.org/italia/env/onto/place</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Province</IRI>
+        <Literal xml:lang="en">Province</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Province</IRI>
+        <Literal xml:lang="it">Provincia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Region</IRI>
+        <Literal xml:lang="en">A region is the first-level constituent entity of a country, constituting its second NUTS administrative level.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Region</IRI>
+        <Literal xml:lang="it">Una regione è l&apos;entità costituente di primo livello di un paese, che costituisce il suo secondo livello amministrativo NUTS.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Region</IRI>
+        <IRI>https://w3id.org/italia/env/onto/place</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Region</IRI>
+        <Literal xml:lang="en">Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Region</IRI>
+        <Literal xml:lang="it">Regione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Sea</IRI>
+        <Literal xml:lang="it">La classe per rappresentare le istanze di mare.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Sea</IRI>
+        <Literal xml:lang="en">The concept of sea.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Sea</IRI>
+        <IRI>https://w3id.org/italia/env/onto/place</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Sea</IRI>
+        <Literal xml:lang="it">Mare</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Sea</IRI>
+        <Literal xml:lang="en">Sea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>coordinateSystem</IRI>
+        <Literal xml:lang="en">Property used to indicate the coordinate system or reference system (e.g., WGS84, ETRS89, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>coordinateSystem</IRI>
+        <Literal xml:lang="it">Proprietà utilizzata per indicare il sistema di coordinate o sistema di riferimento (e.g., WGS84, ETRS89, ecc,.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>coordinateSystem</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>coordinateSystem</IRI>
+        <Literal xml:lang="en">coordinate system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>coordinateSystem</IRI>
+        <Literal xml:lang="it">sistema di coordinate di riferimento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>geometry</IRI>
+        <Literal xml:lang="en">This property represents the serialization of the geometry object (e.g., kml, gml, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>geometry</IRI>
+        <Literal xml:lang="it">This property represents the serialization of the geometry object (e.g., kml, gml, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>geometry</IRI>
+        <IRI>https://w3id.org/italia/env/onto/place</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>geometry</IRI>
+        <Literal xml:lang="en">geometry serialisation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>geometry</IRI>
+        <Literal xml:lang="it">serializzazione della geometria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasCountry</IRI>
+        <Literal xml:lang="it">La proprietà per associare un&apos;entità al paese in cui si trova.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasCountry</IRI>
+        <Literal xml:lang="en">The property for associating an entity with the country it is located in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasCountry</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasCountry</IRI>
+        <Literal xml:lang="it">ha paese</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasCountry</IRI>
+        <Literal xml:lang="en">has country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasDirectHigherRank</IRI>
+        <Literal xml:lang="it">Questa proprietà mette in relazione componenti dell&apos;indirizzo con un nome, dove la prima è più specifica della seconda in maniera diretta senza transitività.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasDirectHigherRank</IRI>
+        <Literal xml:lang="en">This property relates two named address components, where the first is directly more specific then the second without any transitiveness.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasDirectHigherRank</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasDirectHigherRank</IRI>
+        <Literal xml:lang="en">is direct lower rank of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasDirectHigherRank</IRI>
+        <Literal xml:lang="it">è il livello diretto più basso di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasDirectLowerRank</IRI>
+        <Literal xml:lang="it">Questa proprietà mette in relazione componenti dell&apos;indirizzo con un nome, dove la prima è meno specifica della seconda e non esise un&apos;altra componente dell&apos;indirizzo con nome che è sia più specifica della prima che più generale della seconda.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasDirectLowerRank</IRI>
+        <Literal xml:lang="en">This property relates two named address components, where the first is less specific then the second and there is no other named address component that is both more specific than the first and more general than the second.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasDirectLowerRank</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasDirectLowerRank</IRI>
+        <Literal xml:lang="it">ha livello diretto più basso</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasDirectLowerRank</IRI>
+        <Literal xml:lang="en">has direct lower rank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasFeature</IRI>
+        <Literal xml:lang="it">La relazione esistente tra un&apos;entità ed una feature geografica.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasFeature</IRI>
+        <Literal xml:lang="en">The relation holding between any possible entity an a feature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasFeature</IRI>
+        <Literal xml:lang="it">ha feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasFeature</IRI>
+        <Literal xml:lang="en">has feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasFeature</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasGeometry</IRI>
+        <Literal xml:lang="it">Questa proprietà collega un&apos;entità alla sua geometria.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasGeometry</IRI>
+        <Literal xml:lang="en">This property links an entity to its geometry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasGeometry</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasGeometry</IRI>
+        <Literal xml:lang="it">ha geometria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasGeometry</IRI>
+        <Literal xml:lang="en">has geometry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasGeometryType</IRI>
+        <Literal xml:lang="it">La relazione per classificare una geometria con il suo tipo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasGeometryType</IRI>
+        <Literal xml:lang="en">The relation for classifying a geometry with its type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasGeometryType</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasGeometryType</IRI>
+        <Literal xml:lang="it">ha tipo di geometria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasGeometryType</IRI>
+        <Literal xml:lang="en">has geometry type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasHigherRank</IRI>
+        <Literal xml:lang="it">Questa proprietà mette in relazione due componenti dell&apos;indirizzo con nomi, dove la prima è più specifica della seconda.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasHigherRank</IRI>
+        <Literal xml:lang="en">This property relates two named address components, where the first is more specific than the second.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasHigherRank</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasHigherRank</IRI>
+        <Literal xml:lang="en">is lower rank of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasHigherRank</IRI>
+        <Literal xml:lang="it">è il livello più basso di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasLowerRank</IRI>
+        <Literal xml:lang="it">Questa proprietà mette in relazione due componenti dell&apos;indirizzo con nomi, dove la prima è meno specifica della seconda.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasLowerRank</IRI>
+        <Literal xml:lang="en">This property relates two named address components, where the first is less specific than the second.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasLowerRank</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasLowerRank</IRI>
+        <Literal xml:lang="it">ha livello più basso</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasLowerRank</IRI>
+        <Literal xml:lang="en">has lower rank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasMetropolitanCity</IRI>
+        <Literal xml:lang="it">Il caso particolare di localizzazione di un oggetto in cui tale oggetto si trova in una città metropolitana.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasMetropolitanCity</IRI>
+        <Literal xml:lang="en">The special case of location associated with an object in which such an object is located in a metropolitan city.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasMetropolitanCity</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMetropolitanCity</IRI>
+        <Literal xml:lang="it">ha città metropolitana</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMetropolitanCity</IRI>
+        <Literal xml:lang="en">has metropolitan city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasMunicipality</IRI>
+        <Literal xml:lang="it">Il caso particolare di localizzazione di un oggetto in cui tale oggetto si trova in un comune.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasMunicipality</IRI>
+        <Literal xml:lang="en">The special case of location associated with an object in which such an object is located in a municipality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasMunicipality</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMunicipality</IRI>
+        <Literal xml:lang="it">ha municipalità</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMunicipality</IRI>
+        <Literal xml:lang="en">has municipality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasNearbyLocation</IRI>
+        <Literal xml:lang="it">La relazione di vicinanza che può essere utilizzata per associare qualsiasi entità a un luogo secondo una vaga nozione di prossimità.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasNearbyLocation</IRI>
+        <Literal xml:lang="en">The nearby relation that can be used to associate any entity to a place according to a vague notion of proximity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasNearbyLocation</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasNearbyLocation</IRI>
+        <Literal xml:lang="it">ha luogo nelle vicinanze</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasNearbyLocation</IRI>
+        <Literal xml:lang="en">has nearby location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasProvince</IRI>
+        <Literal xml:lang="it">Il caso particolare di localizzazione di un oggetto in cui tale oggetto si trova in una provincia.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasProvince</IRI>
+        <Literal xml:lang="en">The special case of location associated with an object in which such an object is located in a province.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasProvince</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasProvince</IRI>
+        <Literal xml:lang="it">ha provincia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasProvince</IRI>
+        <Literal xml:lang="en">has province</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasRegion</IRI>
+        <Literal xml:lang="it">ha regione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasRegion</IRI>
+        <Literal xml:lang="en">has region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasRegion</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasRegion</IRI>
+        <Literal xml:lang="it">Il caso speciale di posizione associata a un oggetto in cui tale oggetto si trova in una regione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasRegion</IRI>
+        <Literal xml:lang="en">The special case of location associated with an object in which such an object is located in a region.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCountryOf</IRI>
+        <Literal xml:lang="it">La relazione per associare un paese a un&apos;entità situata in tale paese.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCountryOf</IRI>
+        <Literal xml:lang="en">The relation for associating a country with an entity located in such a country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCountryOf</IRI>
+        <Literal xml:lang="en">is country of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCountryOf</IRI>
+        <Literal xml:lang="it">è paese di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isCountryOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isFeatureOf</IRI>
+        <Literal xml:lang="it">La relazione esistente tra una feature geografica e una qualsiasi entità.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isFeatureOf</IRI>
+        <Literal xml:lang="en">The relation holding between a feature and any entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isFeatureOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isFeatureOf</IRI>
+        <Literal xml:lang="en">is feature of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isFeatureOf</IRI>
+        <Literal xml:lang="it">è feature di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isGeometryOf</IRI>
+        <Literal xml:lang="it">La relazione che sussiste tra una geometria e la sua entità corrispondente.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isGeometryOf</IRI>
+        <Literal xml:lang="en">The relation holding between a geometry and its corresponding entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isGeometryOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isGeometryOf</IRI>
+        <Literal xml:lang="en">is geometry of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isGeometryOf</IRI>
+        <Literal xml:lang="it">è geometria di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isGeometryTypeOf</IRI>
+        <Literal xml:lang="it">La relazione per classificare con un tipo di geometria una geometria.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isGeometryTypeOf</IRI>
+        <Literal xml:lang="en">The relation that can be used for classifying a geometry with a geometry type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isGeometryTypeOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isGeometryTypeOf</IRI>
+        <Literal xml:lang="en">is geometry type of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isGeometryTypeOf</IRI>
+        <Literal xml:lang="it">è tipo di geometria di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isMetropolitanCityOf</IRI>
+        <Literal xml:lang="it">Il caso speciale di &quot;è la posizione di&quot; in cui una città metropolitana è la posizione in cui si trova un oggetto.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isMetropolitanCityOf</IRI>
+        <Literal xml:lang="en">The special case of &apos;is location of&apos; in which a metropolitan city is the location an object is located in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isMetropolitanCityOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isMetropolitanCityOf</IRI>
+        <Literal xml:lang="en">is metropolitan city of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isMetropolitanCityOf</IRI>
+        <Literal xml:lang="it">è città metropolitana di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isMunicipalityOf</IRI>
+        <Literal xml:lang="it">Il caso particolare di &apos;è luogo di&apos; in cui un comune è il luogo in cui si trova un oggetto.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isMunicipalityOf</IRI>
+        <Literal xml:lang="en">The special case of &apos;is location of&apos; in which a municipality is the location an object is located in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isMunicipalityOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isMunicipalityOf</IRI>
+        <Literal xml:lang="en">is municipality of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isMunicipalityOf</IRI>
+        <Literal xml:lang="it">è municipalità di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isProvinceOf</IRI>
+        <Literal xml:lang="it">Il caso particolare di &apos;è luogo di&apos; in cui una provincia è il luogo in cui si trova un oggetto.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isProvinceOf</IRI>
+        <Literal xml:lang="en">The special case of &apos;is location of&apos; in which a province is the location an object is located in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isProvinceOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isProvinceOf</IRI>
+        <Literal xml:lang="en">is province of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isProvinceOf</IRI>
+        <Literal xml:lang="it">è provincia di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRegionOf</IRI>
+        <Literal xml:lang="it">Il caso speciale di &quot;è la posizione di&quot; in cui una regione è la posizione in cui si trova un oggetto.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRegionOf</IRI>
+        <Literal xml:lang="en">The special case of &apos;is location of&apos; in which a region is the location an object is located in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isRegionOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isRegionOf</IRI>
+        <Literal xml:lang="en">is region of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isRegionOf</IRI>
+        <Literal xml:lang="it">è regione di</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>istat</IRI>
+        <Literal xml:lang="it">Il codice identificativo dei luoghi previsto dall&apos;ISTAT.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>istat</IRI>
+        <Literal xml:lang="en">The identification code for places as provided by ISTAT.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>istat</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>istat</IRI>
+        <Literal xml:lang="en">ISTAT code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>istat</IRI>
+        <Literal xml:lang="it">codice ISTAT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>lat</IRI>
+        <Literal xml:lang="it">La proprietà per la latitudine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>lat</IRI>
+        <Literal xml:lang="en">This property represents the latitude.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>lat</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>lat</IRI>
+        <Literal xml:lang="en">latitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>lat</IRI>
+        <Literal xml:lang="it">latitudine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>long</IRI>
+        <Literal xml:lang="it">Questa proprietà rappresenta la longitudine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>long</IRI>
+        <Literal xml:lang="en">This property represents longitude.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>long</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>long</IRI>
+        <Literal xml:lang="en">longitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>long</IRI>
+        <Literal xml:lang="it">longitudine</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
