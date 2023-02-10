@@ -200,6 +200,26 @@
   } ]
 }, {
   "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+    }, {
+      "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationCollection"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/timedObservationValue"
+  } ]
+}, {
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isObservationValueOf"
@@ -208,7 +228,7 @@
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
@@ -221,7 +241,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid30",
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasPlatformType"
@@ -230,7 +250,7 @@
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/PlatformType"
   } ]
 }, {
-  "@id" : "_:genid31",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/System"
@@ -239,7 +259,7 @@
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hosts"
   } ]
 }, {
-  "@id" : "_:genid32",
+  "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/PlatformModel"
@@ -252,7 +272,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Location"
@@ -265,7 +285,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
@@ -274,49 +294,13 @@
     "@id" : "https://w3id.org/italia/env/onto/top/hasMember"
   } ]
 }, {
-  "@id" : "_:genid35",
+  "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSensorModel"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorModel"
-  } ]
-}, {
-  "@id" : "_:genid36",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSensorType"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorType"
-  } ]
-}, {
-  "@id" : "_:genid37",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isHostedBy"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
-  } ]
-}, {
-  "@id" : "_:genid38",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isHostedBy"
-  } ]
-}, {
-  "@id" : "_:genid39",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/makesObservation"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -331,6 +315,42 @@
 }, {
   "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSensorType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorType"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isHostedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isHostedBy"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/makesObservation"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/System"
   } ],
@@ -342,7 +362,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid41",
+  "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Value"
@@ -355,7 +375,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid42",
+  "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
@@ -368,7 +388,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid43",
+  "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/implementsProcedure"
@@ -377,7 +397,7 @@
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Procedure"
   } ]
 }, {
-  "@id" : "_:genid44",
+  "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform"
@@ -390,7 +410,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid45",
+  "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/System"
@@ -403,7 +423,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid46",
+  "@id" : "_:genid50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Value"
@@ -416,7 +436,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
@@ -429,7 +449,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid48",
+  "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasSystemCapability"
@@ -438,25 +458,25 @@
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SystemCapability"
   } ]
 }, {
-  "@id" : "_:genid49",
+  "@id" : "_:genid53",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid50",
+  "@id" : "_:genid54",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid51",
+  "@id" : "_:genid55",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid52",
+  "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -470,7 +490,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid57",
+  "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -761,6 +781,14 @@
     "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
   } ]
 }, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid28"
+  }, {
+    "@id" : "_:genid31"
+  } ]
+}, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -783,9 +811,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Value"
   }, {
-    "@id" : "_:genid28"
+    "@id" : "_:genid32"
   }, {
-    "@id" : "_:genid29"
+    "@id" : "_:genid33"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Platform",
@@ -810,13 +838,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"
   }, {
-    "@id" : "_:genid30"
+    "@id" : "_:genid34"
   }, {
-    "@id" : "_:genid31"
+    "@id" : "_:genid35"
   }, {
-    "@id" : "_:genid32"
+    "@id" : "_:genid36"
   }, {
-    "@id" : "_:genid33"
+    "@id" : "_:genid37"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/PlatformCollection",
@@ -838,7 +866,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Collection"
   }, {
-    "@id" : "_:genid34"
+    "@id" : "_:genid38"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/PlatformModel",
@@ -925,15 +953,15 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"
   }, {
-    "@id" : "_:genid35"
-  }, {
-    "@id" : "_:genid36"
-  }, {
-    "@id" : "_:genid37"
-  }, {
-    "@id" : "_:genid38"
-  }, {
     "@id" : "_:genid39"
+  }, {
+    "@id" : "_:genid40"
+  }, {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  }, {
+    "@id" : "_:genid43"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SensorModel",
@@ -997,11 +1025,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
   }, {
-    "@id" : "_:genid40"
+    "@id" : "_:genid44"
   }, {
-    "@id" : "_:genid41"
+    "@id" : "_:genid45"
   }, {
-    "@id" : "_:genid42"
+    "@id" : "_:genid46"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/SystemDeployment",
@@ -1026,15 +1054,15 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
   }, {
-    "@id" : "_:genid43"
-  }, {
-    "@id" : "_:genid44"
-  }, {
-    "@id" : "_:genid45"
-  }, {
-    "@id" : "_:genid46"
-  }, {
     "@id" : "_:genid47"
+  }, {
+    "@id" : "_:genid48"
+  }, {
+    "@id" : "_:genid49"
+  }, {
+    "@id" : "_:genid50"
+  }, {
+    "@id" : "_:genid51"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ValidationLevel",
@@ -2328,6 +2356,15 @@
     "@id" : "https://w3id.org/italia/env/onto/top/atTime"
   } ]
 }, {
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/timedObservationValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
   "@id" : "https://w3id.org/italia/env/onto/top/AgentRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -2364,7 +2401,7 @@
   "@id" : "https://w3id.org/italia/env/onto/top/System",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid48"
+    "@id" : "_:genid52"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity",
