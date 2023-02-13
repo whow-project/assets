@@ -1,0 +1,355 @@
+@prefix : <http://www.w3id.com/whow/onto/health-ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/whow/onto/health-monitoring/> .
+
+<https://w3id.org/whow/onto/health-monitoring/> rdf:type owl:Ontology ;
+                                                 owl:versionIRI <urn:absolute:https//w3id.org/whow/onto/health-monitoring/0.2> ;
+                                                 owl:imports <https://w3id.org/italia/env/onto/top/> ;
+                                                 rdfs:label "Health Care Indicator Monitoring Ontology"@en ,
+                                                            "Ontologia di Monitoraggio di Indicatori della Salute"@it .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/italia/env/onto/top/isClassifiedBy
+<https://w3id.org/italia/env/onto/top/isClassifiedBy> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/affectedBy
+:affectedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :ClinicalCohort ;
+            rdfs:range :Disease ;
+            rdfs:comment "Property that links the clinical cohort with the disease they are affected by."@en ,
+                         "Proprietà che consente di collegare la coorte clinica con la malattia  di cui sono affetti."@it ;
+            rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+            rdfs:label "affected by"@en ,
+                       "affetta da"@it ;
+            owl:versionInfo "stabile"@it ,
+                            "stable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/hasCohortCriteriaDescription
+:hasCohortCriteriaDescription rdf:type owl:ObjectProperty ;
+                              rdfs:domain :ClinicalCohort ;
+                              rdfs:range :CohortCriteriaDescription ;
+                              rdfs:comment "Property that links the clinical cohort with the description of the criteria that determine the dimension of the cohort."@en ,
+                                           "Proprietà che lega la coorte clinica con la descrizioni dei criteri che ne determinano la sua dimensione."@it ;
+                              rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+                              rdfs:label "ha descrizione criteri coorte clinica"@it ,
+                                         "has clinical cohort criteria description"@en ;
+                              owl:versionInfo "provvisoria"@it ,
+                                              "unstable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/hasCriterion
+:hasCriterion rdf:type owl:ObjectProperty ;
+              rdfs:domain :CohortCriteriaDescription ;
+              rdfs:range :Criterion ;
+              rdfs:comment "Property that links the description of the criteria for the dimension of the clinical cohort to each single criterion."@en ,
+                           "Proprietà che collega la descrizione dei criteri per la dimensione della coorte clinica a ogni singolo criterio."@it ;
+              rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+              rdfs:label "ha criterio"@it ,
+                         "has criterion"@en ;
+              owl:versionInfo "provvisoria"@it ,
+                              "unstable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/hasHealthcareIndicatorValue
+:hasHealthcareIndicatorValue rdf:type owl:ObjectProperty ;
+                             rdfs:domain :HealthcareIndicatorCalculation ;
+                             rdfs:range <https://w3id.org/italia/env/onto/top/Value> ;
+                             rdfs:comment "Property used to link the healthcare indicator calculation with the related value."@en ,
+                                          "Proprietà utilizzata per collegare il calcolo dell'indicatore di salute con il relativo valore."@it ;
+                             rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+                             rdfs:label "ha valore indicatore di salute"@it ,
+                                        "has healthcare indicator value"@en ;
+                             owl:versionInfo "stabile"@it ,
+                                             "stable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/isResponsibleFor
+:isResponsibleFor rdf:type owl:ObjectProperty ;
+                  rdfs:domain :HealthAgency ;
+                  rdfs:range <https://w3id.org/italia/env/onto/top/Location> ;
+                  rdfs:comment "Property used to indicate the responsibility of a health organisation with respect to a certain territorial area. The jurisdiction of the health organisation."@en ,
+                               "Proprietà utilizzata per indicare la responsabilità di un'organizzazione sanitaria rispetto a una certa area territoriale. La giurisdizione dell'azienda sanitaria."@it ;
+                  rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+                  rdfs:label "is responsible for"@en ,
+                             "è responsabile di"@it ;
+                  owl:versionInfo "provvisoria"@it ,
+                                  "unstable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/narrower
+:narrower rdf:type owl:ObjectProperty ;
+          rdfs:domain :DiseaseType ;
+          rdfs:range :DiseaseType ;
+          rdfs:comment "Property used to create a taxonomy of different types of diseases."@en ,
+                       "Proprietà che consente di modellare una tassonomia di tipi di malattie."@it ;
+          rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+          rdfs:label "narrower"@en ,
+                     "sotto insieme"@it ;
+          owl:versionInfo "stabile"@it ,
+                          "stable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/ofClinicalCohort
+:ofClinicalCohort rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain :HealthcareIndicatorCalculation ;
+                  rdfs:range :ClinicalCohort ;
+                  rdfs:comment "Property used to specify the clinical cohort for the healthcare indicator calculation."@en ,
+                               "Proprietà utilizzata per indicare la coorte clinica considerata nel calcolo dell'indicatore di salute."@it ;
+                  rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+                  rdfs:label "di coorte clinica"@it ,
+                             "of clinical cohort"@en ;
+                  owl:versionInfo "stabile"@it ,
+                                  "stable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/subIndicator
+:subIndicator rdf:type owl:ObjectProperty ;
+              rdfs:domain :HealthcareIndicatorCalculation ;
+              rdfs:range :HealthcareIndicatorCalculation ;
+              rdfs:comment "Property used to create a taxonomy of the calculation of healthcare indicators."@en ,
+                           "Proprietà utilizzata per creare tassonomie dei calcoli degli indicatori di salute. Utile quando alcuni calcoli dipendono da altri."@it ;
+              rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+              rdfs:label "sotto indicatore"@it ,
+                         "sub indicator"@en ;
+              owl:versionInfo "stabile"@it ,
+                              "stable"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/whow/onto/health-monitoring/totalValue
+:totalValue rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Population ;
+            rdfs:range xsd:float ;
+            rdfs:comment "Property that indicates the total popolation of a certain area of reference."@en ,
+                         "Proprietà che indica il valore totale della popolazione in una certa area di riferimento."@it ;
+            rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+            rdfs:label "total value"@en ,
+                       "valore totale"@it ;
+            owl:versionInfo "stabile"@it ,
+                            "stable"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/italia/env/onto/top/Characteristic
+<https://w3id.org/italia/env/onto/top/Characteristic> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Concept
+<https://w3id.org/italia/env/onto/top/Concept> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Description
+<https://w3id.org/italia/env/onto/top/Description> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Entity
+<https://w3id.org/italia/env/onto/top/Entity> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Eventuality
+<https://w3id.org/italia/env/onto/top/Eventuality> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Location
+<https://w3id.org/italia/env/onto/top/Location> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Organisation
+<https://w3id.org/italia/env/onto/top/Organisation> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Value
+<https://w3id.org/italia/env/onto/top/Value> rdf:type owl:Class .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/ClinicalCohort
+:ClinicalCohort rdf:type owl:Class ;
+                rdfs:subClassOf :Population ;
+                rdfs:comment "L'insieme della sola popolazione clinica (è infatti sotto classe della popolazione generale) che rappresenta la popolazione su cui si calcola l'indicatore di salute."@it ,
+                             "The class of the sole clinical cohort (actually a subclass of the general population) on which the health indicator is calculated."@en ;
+                rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+                rdfs:label "Clinical Cohort"@en ,
+                           "Coorte Clinica"@it ;
+                owl:versionInfo "stabile"@it ,
+                                "stable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/CohortCriteriaDescription
+:CohortCriteriaDescription rdf:type owl:Class ;
+                           rdfs:subClassOf <https://w3id.org/italia/env/onto/top/Description> ;
+                           rdfs:comment "La classe rappresenta una reificazione e implementa il design pattern dell'ontologia Description. Grazie a questo pattern è possibile descrivere  la dimensione della coorte clinica sulla base di criteri, non sempre noti a priori, e dei relativi valori."@it ,
+                                        "The class represents a reification and implements the ontology design pattern named Description. With this pattern it is possible to describe the dimension of the clinical cohort on the basis of criteria, not always known a priori, and their values,"@en ;
+                           rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+                           rdfs:label "Cohort Criteria Description"@en ,
+                                      "Descrizione dei Criteri per Dimensione Popolazione Clinica"@it ;
+                           owl:versionInfo "provvisoria"@it ,
+                                           "unstable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/Criterion
+:Criterion rdf:type owl:Class ;
+           rdfs:subClassOf <https://w3id.org/italia/env/onto/top/Characteristic> ;
+           rdfs:comment "La classe che rappresenta criteri. Nello specifico contesto di questa ontologia sono i criteri attraverso cui viene descritta la dimensione della popolazione clinica che concorre al calcolo dell'indicatore di salute. Esempi di criteri includono: età. sesso, anno di inizio sintomi per una malattia infettiva, ecc."@it ,
+                        "The class representing criteria. In the specific context of this ontology, these are the criteria by which the  dimension of the clinical population contributing to the calculation of the health indicator is described. Examples of criteria include: age. gender, year of start of symptoms for an infectious disease, etc."@en ;
+           rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+           rdfs:label "Criterio"@it ,
+                      "Criterion"@en ;
+           owl:versionInfo "provvisoria"@it ,
+                           "unstable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/Disease
+:Disease rdf:type owl:Class ;
+         rdfs:subClassOf <https://w3id.org/italia/env/onto/top/Entity> ;
+         rdfs:comment "La classe che rappresenta una malattia (e.g., COVID-19)"@it ,
+                      "The class that represents the disease (e.g., COVID-19)."@en ;
+         rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+         rdfs:label "Disease"@en ,
+                    "Malattia"@it ;
+         owl:versionInfo "stabile"@it ,
+                         "stable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/DiseaseType
+:DiseaseType rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/italia/env/onto/top/Characteristic> ,
+                             <https://w3id.org/italia/env/onto/top/Concept> ;
+             rdfs:comment "La classe dei tipi di malattia."@it ,
+                          "The class of the types of diseases"@en ;
+             rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+             rdfs:label "Disease Type"@en ,
+                        "Tipo di Malattia"@it ;
+             owl:versionInfo "stabile"@it ,
+                             "stable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/DrugDistributionIndicatorCalculation
+:DrugDistributionIndicatorCalculation rdf:type owl:Class ;
+                                      rdfs:subClassOf :HealthcareIndicatorCalculation ;
+                                      rdfs:comment "La classe del calcolo dell'indicatore relativo alla distribuzione dei farmaci. Questa classe è equivalente al 'calcolo dell'indicatore di salute quando l'indicatore sanitario è  'distribuzione farmaci'.'"@it ,
+                                                   "The class of the drug distribution indicator calculation. This class is equivalent to the 'health indicator calculation when the health indicator is 'drug distribution'.'"@en ;
+                                      rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+                                      rdfs:label "Calcolo dell'Indicatore Distribuzione Farmaci"@it ,
+                                                 "Drug Distribution Indicator Calculation"@en ;
+                                      owl:versionInfo "provvisoria"@it ,
+                                                      "unstable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/HealthAgency
+:HealthAgency rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/italia/env/onto/top/Organisation> ;
+              rdfs:comment "La classe delle organizzazioni specifiche che si occupano di assistenza sanitaria (nel caso di Regione Lombardia sono le ATS)."@it ,
+                           "The class of specific organisations operating in the health care sector."@en ;
+              rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+              rdfs:label "Agenzia Sanitaria"@it ,
+                         "Health Agency"@en ;
+              owl:versionInfo "stabile"@it ,
+                              "stable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/HealthCareIndicator
+:HealthCareIndicator rdf:type owl:Class ;
+                     rdfs:subClassOf <https://w3id.org/italia/env/onto/top/Entity> ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://w3id.org/italia/env/onto/top/isClassifiedBy> ;
+                                       owl:allValuesFrom :IndicatorType
+                                     ] ;
+                     rdfs:comment "La classe degli indicatori di salute. Utilizzata per poter creare un vocabolario controllato di indicatori in questo settore applicativo."@it ,
+                                  "The class of the health care indicator. It is used to create a controlled list of possible indicators to be used in the health sector."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+                     rdfs:label "Health Care Indicator"@en ,
+                                "Indicatore di Salute"@it ;
+                     owl:versionInfo "provvisoria"@it ,
+                                     "unstable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/HealthConditionIndicatorCalculation
+:HealthConditionIndicatorCalculation rdf:type owl:Class ;
+                                     rdfs:subClassOf :HealthcareIndicatorCalculation ;
+                                     rdfs:comment "La classe del calcolo dell'indicatore relativo alle condizioni generali di salute della popolazione. Questa classe è equivalente al 'calcolo dell'indicatore di salute quando l'indicatore sanitario è  'condizioni di salute generali'.'"@it ,
+                                                  "The class of the indicator calculation related to the general health condition of the population. This class is equivalent to the 'health indicator calculation when the health indicator is 'general health conditions'.'"@en ;
+                                     rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+                                     rdfs:label "Calcolo dell'Indicatore Condizioni di Salute Generali"@it ,
+                                                "Health Condition Indicator Calculation"@en ;
+                                     owl:versionInfo "provvisoria"@it ,
+                                                     "unstable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation
+:HealthcareIndicatorCalculation rdf:type owl:Class ;
+                                rdfs:subClassOf <https://w3id.org/italia/env/onto/top/Eventuality> ;
+                                rdfs:comment "La classe che rappresenta il calcolo dell'indicatore di salute e che quindi mette insieme l'indicatore che viene calcolato, il valore risultante dal calcolo, la coorte clinica utilizzata in base a determinati criteri di suddivisione della popolazione e l'area territoriale di pertinenza."@it ,
+                                             "The class that represents the calculation of the health care indicator and thus brings together the indicator being calculated, the value resulting from the calculation, the clinical cohort used according to certain population breakdown criteria and the relevant territorial area."@en ;
+                                rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+                                rdfs:label "Calcolo dell'Indicatore di Salute"@it ,
+                                           "Healthcare Indicator Calculation"@en ;
+                                owl:versionInfo "stabile"@it ,
+                                                "stable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/HospitalCareIndicatorCalculation
+:HospitalCareIndicatorCalculation rdf:type owl:Class ;
+                                  rdfs:subClassOf :HealthcareIndicatorCalculation ;
+                                  rdfs:comment "La classe del calcolo dell'indicatore relativo all'assistenza ospedaliera. Questa classe è equivalente al 'calcolo dell'indicatore di salute quando l'indicatore sanitario è  'assistenza ospedaliera'.'"@it ,
+                                               "The class of the hospital care indicator calculation. This class is equivalent to the 'health indicator calculation when the health indicator is 'hospital care'.'"@en ;
+                                  rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+                                  rdfs:label "Calcolo Indicatore Assistenza Ospedaliera"@it ,
+                                             "Hospital Care Indicator Calculation"@en ;
+                                  owl:versionInfo "provvisoria"@it ,
+                                                  "unstable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/IndicatorType
+:IndicatorType rdf:type owl:Class ;
+               rdfs:subClassOf <https://w3id.org/italia/env/onto/top/Characteristic> ,
+                               <https://w3id.org/italia/env/onto/top/Concept> ;
+               rdfs:comment "La classe dei diversi tipi di indicatori. Tipicamente nel settore sanitario, i tipi di indicatori sono: indicatore di processo, indicatore di risultato, indicatore di struttura."@it ,
+                            "The class of the different types of indicators. Typically in the health care sector, types of indicators are: process indicator, outcome indicator, structure indicator."@en ;
+               rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+               rdfs:label "Indicator Type"@en ,
+                          "Tipo di Indicatore"@it ;
+               owl:versionInfo "provvisoria"@it ,
+                               "unstable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/InfectiousDiseaseIndicatorCalculation
+:InfectiousDiseaseIndicatorCalculation rdf:type owl:Class ;
+                                       rdfs:subClassOf :HealthcareIndicatorCalculation ;
+                                       rdfs:comment "La classe del calcolo dell'indicatore relativo alla distribuzione delle malattie infettive. Questa classe è equivalente al 'calcolo dell'indicatore di salute quando l'indicatore sanitario è  'diffusione delle malattie infettive'.'"@en ,
+                                                    "The class of the specific calculation related to infectious diseases distribution. This class is equivalent to the Healthcare Indicator Calculation when the Healthcare Indicator is diffusion of infectious diseases."@en ;
+                                       rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+                                       rdfs:label "Calcolo dell'Indicatore Malattie Infettive"@it ,
+                                                  "Infectious Disease Indicator Calculation"@en ;
+                                       owl:versionInfo "provvisoria"@it ,
+                                                       "unstable"@en .
+
+
+###  https://w3id.org/whow/onto/health-monitoring/Population
+:Population rdf:type owl:Class ;
+            rdfs:subClassOf <https://w3id.org/italia/env/onto/top/Entity> ;
+            rdfs:comment "La classe che rappresenta la popolazione (di una regione in questa ontologia) totale, utilizzata nel calcolo degli indicatori di salute."@it ,
+                         "The class of the entire popolation considered when computing specific healthcare indicator calculation operations"@en ;
+            rdfs:isDefinedBy <https://w3id.org/whow/onto/health-monitoring> ;
+            rdfs:label "Popolazione"@it ,
+                       "Population"@en ;
+            owl:versionInfo "stabile"@it ,
+                            "stable"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

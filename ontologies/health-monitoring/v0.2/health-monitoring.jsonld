@@ -1,0 +1,779 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/IndicatorType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Characteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Eventuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Organisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Health Care Indicator Monitoring Ontology"
+  }, {
+    "@language" : "it",
+    "@value" : "Ontologia di Monitoraggio di Indicatori della Salute"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "urn:absolute:https//w3id.org/whow/onto/health-monitoring/0.2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/ClinicalCohort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "L'insieme della sola popolazione clinica (è infatti sotto classe della popolazione generale) che rappresenta la popolazione su cui si calcola l'indicatore di salute."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of the sole clinical cohort (actually a subclass of the general population) on which the health indicator is calculated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Clinical Cohort"
+  }, {
+    "@language" : "it",
+    "@value" : "Coorte Clinica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/Population"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/CohortCriteriaDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe rappresenta una reificazione e implementa il design pattern dell'ontologia Description. Grazie a questo pattern è possibile descrivere  la dimensione della coorte clinica sulla base di criteri, non sempre noti a priori, e dei relativi valori."
+  }, {
+    "@language" : "en",
+    "@value" : "The class represents a reification and implements the ontology design pattern named Description. With this pattern it is possible to describe the dimension of the clinical cohort on the basis of criteria, not always known a priori, and their values,"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cohort Criteria Description"
+  }, {
+    "@language" : "it",
+    "@value" : "Descrizione dei Criteri per Dimensione Popolazione Clinica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/Criterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe che rappresenta criteri. Nello specifico contesto di questa ontologia sono i criteri attraverso cui viene descritta la dimensione della popolazione clinica che concorre al calcolo dell'indicatore di salute. Esempi di criteri includono: età. sesso, anno di inizio sintomi per una malattia infettiva, ecc."
+  }, {
+    "@language" : "en",
+    "@value" : "The class representing criteria. In the specific context of this ontology, these are the criteria by which the  dimension of the clinical population contributing to the calculation of the health indicator is described. Examples of criteria include: age. gender, year of start of symptoms for an infectious disease, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Criterio"
+  }, {
+    "@language" : "en",
+    "@value" : "Criterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/Disease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe che rappresenta una malattia (e.g., COVID-19)"
+  }, {
+    "@language" : "en",
+    "@value" : "The class that represents the disease (e.g., COVID-19)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Disease"
+  }, {
+    "@language" : "it",
+    "@value" : "Malattia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/DiseaseType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe dei tipi di malattia."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of the types of diseases"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Disease Type"
+  }, {
+    "@language" : "it",
+    "@value" : "Tipo di Malattia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
+  }, {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/DrugDistributionIndicatorCalculation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe del calcolo dell'indicatore relativo alla distribuzione dei farmaci. Questa classe è equivalente al 'calcolo dell'indicatore di salute quando l'indicatore sanitario è  'distribuzione farmaci'.'"
+  }, {
+    "@language" : "en",
+    "@value" : "The class of the drug distribution indicator calculation. This class is equivalent to the 'health indicator calculation when the health indicator is 'drug distribution'.'"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Calcolo dell'Indicatore Distribuzione Farmaci"
+  }, {
+    "@language" : "en",
+    "@value" : "Drug Distribution Indicator Calculation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthAgency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe delle organizzazioni specifiche che si occupano di assistenza sanitaria (nel caso di Regione Lombardia sono le ATS)."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of specific organisations operating in the health care sector."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Agenzia Sanitaria"
+  }, {
+    "@language" : "en",
+    "@value" : "Health Agency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Organisation"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthCareIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe degli indicatori di salute. Utilizzata per poter creare un vocabolario controllato di indicatori in questo settore applicativo."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of the health care indicator. It is used to create a controlled list of possible indicators to be used in the health sector."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Health Care Indicator"
+  }, {
+    "@language" : "it",
+    "@value" : "Indicatore di Salute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  }, {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthConditionIndicatorCalculation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe del calcolo dell'indicatore relativo alle condizioni generali di salute della popolazione. Questa classe è equivalente al 'calcolo dell'indicatore di salute quando l'indicatore sanitario è  'condizioni di salute generali'.'"
+  }, {
+    "@language" : "en",
+    "@value" : "The class of the indicator calculation related to the general health condition of the population. This class is equivalent to the 'health indicator calculation when the health indicator is 'general health conditions'.'"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Calcolo dell'Indicatore Condizioni di Salute Generali"
+  }, {
+    "@language" : "en",
+    "@value" : "Health Condition Indicator Calculation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe che rappresenta il calcolo dell'indicatore di salute e che quindi mette insieme l'indicatore che viene calcolato, il valore risultante dal calcolo, la coorte clinica utilizzata in base a determinati criteri di suddivisione della popolazione e l'area territoriale di pertinenza."
+  }, {
+    "@language" : "en",
+    "@value" : "The class that represents the calculation of the health care indicator and thus brings together the indicator being calculated, the value resulting from the calculation, the clinical cohort used according to certain population breakdown criteria and the relevant territorial area."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Calcolo dell'Indicatore di Salute"
+  }, {
+    "@language" : "en",
+    "@value" : "Healthcare Indicator Calculation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/HospitalCareIndicatorCalculation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe del calcolo dell'indicatore relativo all'assistenza ospedaliera. Questa classe è equivalente al 'calcolo dell'indicatore di salute quando l'indicatore sanitario è  'assistenza ospedaliera'.'"
+  }, {
+    "@language" : "en",
+    "@value" : "The class of the hospital care indicator calculation. This class is equivalent to the 'health indicator calculation when the health indicator is 'hospital care'.'"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Calcolo Indicatore Assistenza Ospedaliera"
+  }, {
+    "@language" : "en",
+    "@value" : "Hospital Care Indicator Calculation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/IndicatorType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe dei diversi tipi di indicatori. Tipicamente nel settore sanitario, i tipi di indicatori sono: indicatore di processo, indicatore di risultato, indicatore di struttura."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of the different types of indicators. Typically in the health care sector, types of indicators are: process indicator, outcome indicator, structure indicator."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Indicator Type"
+  }, {
+    "@language" : "it",
+    "@value" : "Tipo di Indicatore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
+  }, {
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/InfectiousDiseaseIndicatorCalculation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "La classe del calcolo dell'indicatore relativo alla distribuzione delle malattie infettive. Questa classe è equivalente al 'calcolo dell'indicatore di salute quando l'indicatore sanitario è  'diffusione delle malattie infettive'.'"
+  }, {
+    "@language" : "en",
+    "@value" : "The class of the specific calculation related to infectious diseases distribution. This class is equivalent to the Healthcare Indicator Calculation when the Healthcare Indicator is diffusion of infectious diseases."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Calcolo dell'Indicatore Malattie Infettive"
+  }, {
+    "@language" : "en",
+    "@value" : "Infectious Disease Indicator Calculation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/Population",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe che rappresenta la popolazione (di una regione in questa ontologia) totale, utilizzata nel calcolo degli indicatori di salute."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of the entire popolation considered when computing specific healthcare indicator calculation operations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Popolazione"
+  }, {
+    "@language" : "en",
+    "@value" : "Population"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/affectedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that links the clinical cohort with the disease they are affected by."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che consente di collegare la coorte clinica con la malattia  di cui sono affetti."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/ClinicalCohort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "affected by"
+  }, {
+    "@language" : "it",
+    "@value" : "affetta da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/Disease"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/hasCohortCriteriaDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that links the clinical cohort with the description of the criteria that determine the dimension of the cohort."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che lega la coorte clinica con la descrizioni dei criteri che ne determinano la sua dimensione."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/ClinicalCohort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha descrizione criteri coorte clinica"
+  }, {
+    "@language" : "en",
+    "@value" : "has clinical cohort criteria description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/CohortCriteriaDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/hasCriterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that links the description of the criteria for the dimension of the clinical cohort to each single criterion."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che collega la descrizione dei criteri per la dimensione della coorte clinica a ogni singolo criterio."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/CohortCriteriaDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha criterio"
+  }, {
+    "@language" : "en",
+    "@value" : "has criterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/Criterion"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/hasHealthcareIndicatorValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to link the healthcare indicator calculation with the related value."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per collegare il calcolo dell'indicatore di salute con il relativo valore."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha valore indicatore di salute"
+  }, {
+    "@language" : "en",
+    "@value" : "has healthcare indicator value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Value"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/isResponsibleFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to indicate the responsibility of a health organisation with respect to a certain territorial area. The jurisdiction of the health organisation."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per indicare la responsabilità di un'organizzazione sanitaria rispetto a una certa area territoriale. La giurisdizione dell'azienda sanitaria."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthAgency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is responsible for"
+  }, {
+    "@language" : "it",
+    "@value" : "è responsabile di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "provvisoria"
+  }, {
+    "@language" : "en",
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to create a taxonomy of different types of diseases."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che consente di modellare una tassonomia di tipi di malattie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/DiseaseType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "narrower"
+  }, {
+    "@language" : "it",
+    "@value" : "sotto insieme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/DiseaseType"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/ofClinicalCohort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to specify the clinical cohort for the healthcare indicator calculation."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per indicare la coorte clinica considerata nel calcolo dell'indicatore di salute."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "di coorte clinica"
+  }, {
+    "@language" : "en",
+    "@value" : "of clinical cohort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/ClinicalCohort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/subIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to create a taxonomy of the calculation of healthcare indicators."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà utilizzata per creare tassonomie dei calcoli degli indicatori di salute. Utile quando alcuni calcoli dipendono da altri."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "sotto indicatore"
+  }, {
+    "@language" : "en",
+    "@value" : "sub indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring/totalValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that indicates the total popolation of a certain area of reference."
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà che indica il valore totale della popolazione in una certa area di riferimento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/Population"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "total value"
+  }, {
+    "@language" : "it",
+    "@value" : "valore totale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+} ]
