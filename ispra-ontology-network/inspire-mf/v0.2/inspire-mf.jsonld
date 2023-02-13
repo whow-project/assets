@@ -1735,7 +1735,7 @@
     "@id" : "https://w3id.org/italia/env/onto/top/hasDescription"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isProcedureImplòementedBy"
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isProcedureImplementedBy"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isFeatureOfInterestOf",
@@ -2124,7 +2124,7 @@
     "@id" : "https://w3id.org/italia/env/onto/top/classifies"
   } ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isProcedureImplòementedBy",
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isProcedureImplementedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",

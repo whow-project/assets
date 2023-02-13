@@ -890,15 +890,28 @@ xsd:time rdf:type rdfs:Datatype .
                       "tempo di inizio"@it .
 
 
+###  https://w3id.org/italia/env/onto/top/symbol
+:symbol rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Entity ;
+        rdfs:range rdf:PlainLiteral ;
+        rdfs:comment "Property used to specify a symbol. For instance the symbol of a unit of measure"@en ,
+                     "Proprietà  utilizzata per specificare un simbolo. Ad esempio il simbolo dell'unità di misura"@it ;
+        rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+        rdfs:label "simbolo"@it ,
+                   "symbol"@en ;
+        owl:versionInfo "stabile"@it ,
+                        "stable"@en .
+
+
 ###  https://w3id.org/italia/env/onto/top/time
 :time rdf:type owl:DatatypeProperty ;
       rdfs:domain :Entity ;
       rdfs:range rdfs:Literal ;
-      rdfs:comment "La proprietà per associare la rappresentazione letterale del tempo a un'entità. La rappresentazione letterale deve essere un xsd:dateTime valido."@it ,
-                   "The property for associating the literal representation of time to an entity. The literal representation has to be a valid xsd:dateTime."@en ;
+      rdfs:comment "La proprietà per associare la rappresentazione letterale del tempo a un'entità."@it ,
+                   "The property for associating the literal representation of time to an entity."@en ;
       rdfs:isDefinedBy "https://w3id.org/italia/env/onto/top"@en ;
-      rdfs:label "data e ora"@it ,
-                 "date time"@en .
+      rdfs:label "tempo"@it ,
+                 "time"@en .
 
 
 ###  https://w3id.org/italia/env/onto/top/value
@@ -1127,7 +1140,14 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
 ###  https://w3id.org/italia/env/onto/top/Parameter
 :Parameter rdf:type owl:Class ;
            rdfs:subClassOf :Characteristic ,
-                           :Concept .
+                           :Concept ;
+           rdfs:comment "La classe dei parametri. Esempio, il parametro di un'osservazione."@it ,
+                        "The class of parameters. Example, the parameter of an observation."@en ;
+           rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+           rdfs:label "Parameter"@en ,
+                      "Parametro"@it ;
+           owl:versionInfo "stabile"@it ,
+                           "stable"@en .
 
 
 ###  https://w3id.org/italia/env/onto/top/Person
@@ -1156,7 +1176,14 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty :isClassifiedBy ;
                                    owl:someValuesFrom :Concept
-                                 ] .
+                                 ] ;
+                 rdfs:comment "La classe degli attributi di uno schema dati"@it ,
+                              "The class of the attributes of a data schema."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                 rdfs:label "Attributo dello Schema"@it ,
+                            "Schema Attribute"@en ;
+                 owl:versionInfo "stabile"@it ,
+                                 "stable"@en .
 
 
 ###  https://w3id.org/italia/env/onto/top/System
@@ -1239,7 +1266,14 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
                   owl:hasKey ( :hasIdentifierSchema
                                :isIssuedBy
                                :identifier
-                             ) .
+                             ) ;
+                  rdfs:comment "La classe per rappresentare identificativi univoci su cui poi specificare altre proprietà (e.g., chi li ha rilasciati, la validità, il valore assunto dall'identificativo stesso)"@it ,
+                               "The class to represent unique identifiers on which to specify other properties (e.g., who issued them, validity, the value assumed by the identifier itself)"@en ;
+                  rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+                  rdfs:label "Identificativo Univoco"@it ,
+                             "Unique Identifier"@en ;
+                  owl:versionInfo "stabile"@it ,
+                                  "stable"@en .
 
 
 ###  https://w3id.org/italia/env/onto/top/UnitOfMeasure
@@ -1266,7 +1300,14 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
                        ] ;
        owl:hasKey ( :hasUnitOfMeasure
                     :value
-                  ) .
+                  ) ;
+       rdfs:comment "La classe che modella generici valori che tipicamente hanno un'unità di misura e il valore stesso."@it ,
+                    "The generic class for the values that typically have the unit of measure and the value itself."@en ;
+       rdfs:isDefinedBy <https://w3id.org/italia/env/onto/top> ;
+       rdfs:label "Valore"@it ,
+                  "Value"@en ;
+       owl:versionInfo "stabile"@it ,
+                       "stable"@en .
 
 
 ###  https://w3id.org/italia/env/onto/top/Year

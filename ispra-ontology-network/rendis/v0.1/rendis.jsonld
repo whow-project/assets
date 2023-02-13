@@ -11,97 +11,97 @@
   "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/directlyFollows"
+    "@id" : "https://w3id.org/italia/env/onto/top/directlyFollows"
   } ]
 }, {
   "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/directlyPrecedes"
+    "@id" : "https://w3id.org/italia/env/onto/top/directlyPrecedes"
   } ]
 }, {
   "@id" : "_:genid12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/follows"
+    "@id" : "https://w3id.org/italia/env/onto/top/follows"
   } ]
 }, {
   "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/precedes"
+    "@id" : "https://w3id.org/italia/env/onto/top/precedes"
   } ]
 }, {
   "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/satisfies"
+    "@id" : "https://w3id.org/italia/env/onto/top/satisfies"
   } ]
 }, {
   "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasFinalImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/top/satisfies"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
   } ]
 }, {
   "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanAction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ]
 }, {
   "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasInitialImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ]
 }, {
   "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/satisfies"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanAction"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ]
 }, {
   "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/satisfies"
+    "@id" : "https://w3id.org/italia/env/onto/top/satisfies"
   } ]
 }, {
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasAlternativeLocation"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasAlternativeLocation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Location"
@@ -110,100 +110,100 @@
   "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isImplementationPlanStepOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
   } ]
 }, {
   "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/directlyFollows"
+    "@id" : "https://w3id.org/italia/env/onto/top/directlyFollows"
   } ]
 }, {
   "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/directlyPrecedes"
+    "@id" : "https://w3id.org/italia/env/onto/top/directlyPrecedes"
   } ]
 }, {
   "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/follows"
+    "@id" : "https://w3id.org/italia/env/onto/top/follows"
   } ]
 }, {
   "@id" : "_:genid24",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isSatisfiedBy"
+    "@id" : "https://w3id.org/italia/env/onto/top/isSatisfiedBy"
   } ]
 }, {
   "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/precedes"
+    "@id" : "https://w3id.org/italia/env/onto/top/precedes"
   } ]
 }, {
   "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasInstabilityType"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasInstabilityType"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/InstabilityType"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType"
   } ]
 }, {
   "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/addressesInstability"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasAgentRole"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Instability"
+    "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
   } ]
 }, {
   "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasImplementationPlan"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasLocation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
   } ]
 }, {
   "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasInstability"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/addressesInstability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Instability"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
   } ]
 }, {
   "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Currency"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Currency"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasCurrency"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasCurrency"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -213,46 +213,46 @@
   "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasAgentRole"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlan"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/AgentRole"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
   } ]
 }, {
   "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasLocation"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasInstability"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Location"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
   } ]
 }, {
   "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Lithology"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lithology"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasLithology"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasLithology"
   } ]
 }, {
   "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/RepairWork"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasRepairWorkExecution"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasRepairWorkExecution"
   } ]
 }, {
   "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isIncludedInProcedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isIncludedInProcedure"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -271,7 +271,7 @@
   "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasPrimaryLocation"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasPrimaryLocation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Location"
@@ -280,163 +280,163 @@
   "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/addressesInstabilityType"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasAgentRole"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/InstabilityType"
+    "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
   } ]
 }, {
   "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasFinancedAmount"
+    "@id" : "https://w3id.org/italia/env/onto/top/isPartOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Amount"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/PrimaryLocProcedureCollection"
   } ]
 }, {
   "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasLegalBasis"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/addressesInstabilityType"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/LegalAct"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType"
   } ]
 }, {
   "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasRepairWorkExecution"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasRepairWorkExecution"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/RepairWork"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
   } ]
 }, {
   "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasProcedureType"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasFinancedAmount"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ProcedureType"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Amount"
   } ]
 }, {
   "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/includesLot"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasLegalBasis"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Lot"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/LegalAct"
   } ]
 }, {
   "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasAgentRole"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasProcedureType"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/AgentRole"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureType"
   } ]
 }, {
   "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isPartOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/includesLot"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/PrimaryLocProcedureCollection"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
   } ]
 }, {
   "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Location"
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasLocation"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasLocation"
   } ]
 }, {
   "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/AlternativeLocProcedureCollection"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/AlternativeLocProcedureCollection"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isPartOf"
+    "@id" : "https://w3id.org/italia/env/onto/top/isPartOf"
   } ]
 }, {
   "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasMember"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasMember"
   } ]
 }, {
   "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/RepairWorkExecution"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWorkExecution"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isSatisfiedBy"
+    "@id" : "https://w3id.org/italia/env/onto/top/isSatisfiedBy"
   } ]
 }, {
   "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/RepairWork"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isSpecialisedBy"
+    "@id" : "https://w3id.org/italia/env/onto/top/isSpecialisedBy"
   } ]
 }, {
   "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/RepairWork"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/specialises"
+    "@id" : "https://w3id.org/italia/env/onto/top/specialises"
   } ]
 }, {
   "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasFinalImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanStep"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ]
 }, {
   "@id" : "_:genid50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isRepairWorkExecutionOf"
+    "@id" : "https://w3id.org/italia/env/onto/top/satisfies"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Lot"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
   } ]
 }, {
   "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/satisfies"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isRepairWorkExecutionOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/RepairWork"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
   } ]
 }, {
   "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/RepairWork"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/satisfies"
+    "@id" : "https://w3id.org/italia/env/onto/top/satisfies"
   } ]
 }, {
   "@id" : "_:genid53",
@@ -455,62 +455,62 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://dati.isprambiente.it/ontology/rendis/Instability"
+      "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
     }, {
-      "@id" : "https://dati.isprambiente.it/ontology/rendis/Lot"
+      "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
     }, {
-      "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+      "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
     }, {
-      "@id" : "https://dati.isprambiente.it/ontology/top/AgentRole"
+      "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
     } ]
   } ]
 }, {
   "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ]
 }, {
   "@id" : "_:genid60",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://dati.isprambiente.it/ontology/rendis/Lot"
+      "@id" : "https://w3id.org/italia/env/onto/top/AgentRole"
     }, {
-      "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+      "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
     }, {
-      "@id" : "https://dati.isprambiente.it/ontology/top/AgentRole"
+      "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
     } ]
   } ]
 }, {
   "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasInitialImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanStep"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ]
 }, {
   "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isSatisfiedBy"
+    "@id" : "https://w3id.org/italia/env/onto/top/isSatisfiedBy"
   } ]
 }, {
   "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/satisfies"
+    "@id" : "https://w3id.org/italia/env/onto/top/satisfies"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ]
 }, {
   "@id" : "http://org.semanticweb.owlapi/error#Error1",
@@ -519,16 +519,121 @@
   "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis",
+  "@id" : "https://w3id.org/italia/env/onto/top/AgentRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Characteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Eventuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/UnitOfMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/associatedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/classifies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/directlyFollows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/directlyPrecedes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/follows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasAgentRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isDescriptionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isEventualityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isLocationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isParametrisedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isSatisfiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isSpecialisedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isValueOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/parametrises",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/precedes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/satisfies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/specialises",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/"
+    "@id" : "https://w3id.org/italia/env/onto/top/"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/AlternativeLocProcedureCollection",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/AlternativeLocProcedureCollection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -538,12 +643,12 @@
     "@value" : "Collezione di Interventi con Assegnato Comune Secondario"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ProcedureCollection"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureCollection"
   }, {
     "@id" : "_:genid1"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/Amount",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Amount",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -553,7 +658,7 @@
     "@value" : "Un importo."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -563,12 +668,12 @@
     "@value" : "Importo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Value"
+    "@id" : "https://w3id.org/italia/env/onto/top/Value"
   }, {
     "@id" : "_:genid3"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/Contract",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Contract",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -578,7 +683,7 @@
     "@value" : "Una istanza di questa classe rappresenta un contratto realizzato tra due o più agenti: ad esempio, tra una stazione appaltante ed un fornitore."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -588,15 +693,15 @@
     "@value" : "Contratto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Document"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Document"
   }, {
     "@id" : "_:genid4"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/Currency",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Currency",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -612,10 +717,10 @@
     "@value" : "Valuta"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/UnitOfMeasure"
+    "@id" : "https://w3id.org/italia/env/onto/top/UnitOfMeasure"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/Document",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Document",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -625,7 +730,7 @@
     "@value" : "Un insieme di informazioni aziendali correlate che rappresentano i fatti aziendali. Informazioni aggiuntive: i documenti possono trasmettere informazioni in qualsiasi lingua, supporto o forma, comprese le forme testuali, numeriche, grafiche, cartografiche, audiovisive, ecc. Approvazione WG 23/05/2019."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -635,10 +740,10 @@
     "@value" : "Documento"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/EconomicSummary",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/EconomicSummary",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -648,7 +753,7 @@
     "@value" : "Un'istanza di questa classe rappresenta il prospetto economico di un lotto."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -658,10 +763,10 @@
     "@value" : "Prospette economico"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Characteristic"
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlan",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -671,7 +776,7 @@
     "@value" : "Un piano di attuazione. Per esempio il piano di attuazione di un determinato lotto associato ad una procedura."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -681,7 +786,7 @@
     "@value" : "Piano di attuazione"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Description"
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
   }, {
     "@id" : "_:genid5"
   }, {
@@ -692,7 +797,7 @@
     "@id" : "_:genid8"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -702,7 +807,7 @@
     "@value" : "The execution of a single step part of an implementation plan."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -712,7 +817,7 @@
     "@value" : "Implementation plan step execution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Eventuality"
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
   }, {
     "@id" : "_:genid9"
   }, {
@@ -727,7 +832,7 @@
     "@id" : "_:genid14"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -737,7 +842,7 @@
     "@value" : "The class for representing the execution of an implementation plan."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -747,7 +852,7 @@
     "@value" : "Implementation plan execution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Eventuality"
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
   }, {
     "@id" : "_:genid15"
   }, {
@@ -760,7 +865,7 @@
     "@id" : "_:genid19"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -770,7 +875,7 @@
     "@value" : "The class that represents a step of an implementation plan."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -780,7 +885,7 @@
     "@value" : "Passo di piano di attuazione"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Description"
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
   }, {
     "@id" : "_:genid20"
   }, {
@@ -795,14 +900,14 @@
     "@id" : "_:genid25"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/Instability",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Instability",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
     "@value" : "La classe per rappresentare un dissesto."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -815,12 +920,12 @@
     "@value" : "The class for representing instability."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Eventuality"
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
   }, {
     "@id" : "_:genid26"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/InstabilityType",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -830,7 +935,7 @@
     "@value" : "Un concetto che rappresenta un tipo di dissesto."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -840,10 +945,10 @@
     "@value" : "Type of instability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Concept"
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/LegalAct",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/LegalAct",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -851,6 +956,9 @@
   }, {
     "@language" : "it",
     "@value" : "Qualsiasi legge o provvedimento normativo a supporto di una procedura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -860,10 +968,10 @@
     "@value" : "Legal act"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Document"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Document"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/Lithology",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Lithology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -873,7 +981,7 @@
     "@value" : "The class for representing a lithology."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -883,10 +991,10 @@
     "@value" : "Litologia"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Eventuality"
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/LithologyType",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/LithologyType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -896,7 +1004,7 @@
     "@value" : "The class for representing lithology types as concepts."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -906,10 +1014,10 @@
     "@value" : "Tipo di litologia"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Concept"
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/Lot",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Lot",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -919,7 +1027,7 @@
     "@value" : "Una delle parti di un progetto di appalto che viene suddivisa per consentire all'acquirente di aggiudicare lotti diversi a operatori economici diversi nell'ambito di contratti diversi."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -929,7 +1037,7 @@
     "@value" : "Lotto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Eventuality"
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
   }, {
     "@id" : "_:genid27"
   }, {
@@ -948,16 +1056,19 @@
     "@id" : "_:genid34"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/Plan",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Description"
-  } ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/PrimaryLocProcedureCollection",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Plan",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/rendis/PrimaryLocProcedureCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -967,12 +1078,12 @@
     "@value" : "Primary Location Procedure Collection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ProcedureCollection"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureCollection"
   }, {
     "@id" : "_:genid35"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -982,7 +1093,7 @@
     "@value" : "The class that represents the activities that a contracting authority carries out in order to actualize a procurement project, such as those carried out through public procurement, concession, direct administration, public/private partnership or framework agreement. The steps of the procedure may vary according to the type of the procedure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -994,7 +1105,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://org.semanticweb.owlapi/error#Error1"
   }, {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Eventuality"
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
   }, {
     "@id" : "_:genid37"
   }, {
@@ -1015,7 +1126,7 @@
     "@id" : "_:genid45"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/ProcedureCollection",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureCollection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1025,7 +1136,7 @@
     "@value" : "Una collezione i cui membri sono esclusivamente istanze di procedura."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1035,12 +1146,12 @@
     "@value" : "Procedure Collection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Collection"
+    "@id" : "https://w3id.org/italia/env/onto/top/Collection"
   }, {
     "@id" : "_:genid46"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/ProcedureType",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1050,7 +1161,7 @@
     "@value" : "Un tipo di procedura amministrativa o intervento."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1060,10 +1171,10 @@
     "@value" : "Tipo di Procedura Amministrativa"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Concept"
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/RepairWork",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1073,7 +1184,7 @@
     "@value" : "The description of a work for repairing instabilities."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1083,7 +1194,7 @@
     "@value" : "Repair work"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Description"
+    "@id" : "https://w3id.org/italia/env/onto/top/Description"
   }, {
     "@id" : "_:genid47"
   }, {
@@ -1092,7 +1203,7 @@
     "@id" : "_:genid49"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/RepairWorkExecution",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWorkExecution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1100,6 +1211,9 @@
   }, {
     "@language" : "it",
     "@value" : "L'esacuzione di un'opera di risanamento nell'ambito delle iniziative di riisanamento di un dissesto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1109,7 +1223,7 @@
     "@value" : "Repair work execution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Eventuality"
+    "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
   }, {
     "@id" : "_:genid50"
   }, {
@@ -1118,7 +1232,7 @@
     "@id" : "_:genid52"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/addressesInstability",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/addressesInstability",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1128,7 +1242,10 @@
     "@value" : "The relationship allowing you to state that a lot of a procedure is aimed at facing a certain instability."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Lot"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1138,16 +1255,16 @@
     "@value" : "affronta instabilità"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Instability"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/associatedWith"
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isInstabilityAddressedBy"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isInstabilityAddressedBy"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/addressesInstabilityType",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/addressesInstabilityType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1157,10 +1274,10 @@
     "@value" : "The relation that allows you to state that a procedure addresses a certain instability type."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1170,16 +1287,16 @@
     "@value" : "affronta tipo di instabilità"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/InstabilityType"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isClassifiedBy"
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isAddressedByProcedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isAddressedByProcedure"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasAlternativeLocation",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasAlternativeLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1189,10 +1306,10 @@
     "@value" : "The relationship between a procedure and a place that represents a secondary intervention site."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1202,16 +1319,16 @@
     "@value" : "has alternative location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Location"
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasLocation"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasLocation"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isAlternativeLocationOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isAlternativeLocationOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasAmount",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasAmount",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1221,10 +1338,10 @@
     "@value" : "The association between an entity and its corresponding amount."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1234,16 +1351,16 @@
     "@value" : "has amount"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Amount"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Amount"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasValue"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasValue"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isAmountOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isAmountOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasCurrency",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasCurrency",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1253,7 +1370,7 @@
     "@value" : "The association between an entity and a currency."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1263,10 +1380,10 @@
     "@value" : "has currency"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isParametrisedBy"
+    "@id" : "https://w3id.org/italia/env/onto/top/isParametrisedBy"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasFinalImplementationPlanAction",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1276,10 +1393,10 @@
     "@value" : "The relation holding between an implementation plan execution and one of its final actions. The final actions might be multiple."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1289,19 +1406,19 @@
     "@value" : "has final implementation plan action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasFinalImplementationPlanStep",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasFinalImplementationPlanStep",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1317,13 +1434,13 @@
     "@value" : "has last implementation plan step"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasFinancedAmount",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasFinancedAmount",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1333,10 +1450,10 @@
     "@value" : "The property that is used to indicate the amount financed for a procedure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1346,16 +1463,16 @@
     "@value" : "has financed amount"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Amount"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Amount"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasAmount"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasAmount"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isFinancedAmountOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isFinancedAmountOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasImplementationPlan",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlan",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1365,10 +1482,10 @@
     "@value" : "The relation holding between an entity and an implementation plan."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1378,16 +1495,16 @@
     "@value" : "has implementation plan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasDescription"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasDescription"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isImplementationPlanOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasImplementationPlanAction",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1397,10 +1514,10 @@
     "@value" : "The relation holding between an implementation plan execution and one of its actions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1410,16 +1527,16 @@
     "@value" : "has implementation plan action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasPart"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasPart"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isImplementationPlanActionOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasImplementationPlanExecution",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanExecution",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1429,10 +1546,10 @@
     "@value" : "The relation between an entity and a plan execution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1442,16 +1559,16 @@
     "@value" : "has implementation plan execution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasEventuality"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isImplementationPlanExecutionOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanExecutionOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasImplementationPlanStep",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1461,10 +1578,10 @@
     "@value" : "The relation holding between an implementation plan and one of its steps."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1474,16 +1591,16 @@
     "@value" : "has implementation plan step"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasPart"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasPart"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isImplementationPlanStepOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasInitialImplementationPlanAction",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1493,10 +1610,10 @@
     "@value" : "The relation holding between an implementation plan execution and its initial action. The initial actions might be multiple."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1506,16 +1623,16 @@
     "@value" : "has initial implementation plan action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanAction"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isInitialImplementationPlanActionOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isInitialImplementationPlanActionOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasInitialImplementationPlanStep",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasInitialImplementationPlanStep",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1525,10 +1642,10 @@
     "@value" : "The property that links an implementation plan to its first plan step."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1538,16 +1655,16 @@
     "@value" : "has first implementation plan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/hasImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/hasImplementationPlanStep"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isFirstImplementationPlanStepOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isFirstImplementationPlanStepOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasInstability",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasInstability",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1557,10 +1674,10 @@
     "@value" : "The relation between an entity and an instability."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1570,16 +1687,16 @@
     "@value" : "has instability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Instability"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasEventuality"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isInstabilityOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isInstabilityOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasInstabilityType",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasInstabilityType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1589,10 +1706,10 @@
     "@value" : "The relation used for classifying an instability with an instability type."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Instability"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1602,16 +1719,16 @@
     "@value" : "has instability type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/InstabilityType"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isClassifiedBy"
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isInstabilityTypeOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isInstabilityTypeOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasLegalBasis",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasLegalBasis",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1621,10 +1738,10 @@
     "@value" : "The relation that provides legal basis to an entity by linking it to a legal act."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1634,16 +1751,16 @@
     "@value" : "has legal basis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/LegalAct"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/LegalAct"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/associatedWith"
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isLegalBasisOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isLegalBasisOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasLithology",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasLithology",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1659,22 +1776,22 @@
     "@value" : "has lithology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Lithology"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lithology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/associatedWith"
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isLithologyOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isLithologyOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasLithologyType",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasLithologyType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1684,10 +1801,10 @@
     "@value" : "The relation that allows one to classify a lithology individual with its type."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Lithology"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lithology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1697,16 +1814,16 @@
     "@value" : "has lithology type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/LithologyType"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/LithologyType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isClassifiedBy"
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isLithologyTypeOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isLithologyTypeOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasPrimaryLocation",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasPrimaryLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1716,10 +1833,10 @@
     "@value" : "The property for associating a location to a procedure or a procedure collection and representing this association as a primary one."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1729,16 +1846,16 @@
     "@value" : "has primary location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Location"
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasLocation"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasLocation"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isPrimaryLocationOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isPrimaryLocationOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasProcedureType",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasProcedureType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1748,10 +1865,10 @@
     "@value" : "The relation holding between a procedure and its type."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1761,16 +1878,16 @@
     "@value" : "has procedure type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ProcedureType"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isClassifiedBy"
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isProcedureTypeOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isProcedureTypeOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/hasRepairWorkExecution",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/hasRepairWorkExecution",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1780,10 +1897,10 @@
     "@value" : "The relation holding between an entity and an expected repair operation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1793,16 +1910,16 @@
     "@value" : "has expected repair operation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/RepairWork"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/hasEventuality"
+    "@id" : "https://w3id.org/italia/env/onto/top/hasEventuality"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isRepairWorkExecutionOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isRepairWorkExecutionOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/includesLot",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/includesLot",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1818,22 +1935,22 @@
     "@value" : "includes lot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Lot"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/associatedWith"
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isIncludedInProcedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isIncludedInProcedure"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isAddressedByProcedure",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isAddressedByProcedure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1843,10 +1960,10 @@
     "@value" : "The property that associates a type of instability with the procedure in which it is addressed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/InstabilityType"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1856,13 +1973,13 @@
     "@value" : "è affrontato dalla procedura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/classifies"
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isAlternativeLocationOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isAlternativeLocationOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1872,10 +1989,10 @@
     "@value" : "The relation holding between a location and procedure. Hence, the location represents an alternative place of intervention for the procedure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Location"
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1885,13 +2002,13 @@
     "@value" : "è luogo alternativo di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isLocationOf"
+    "@id" : "https://w3id.org/italia/env/onto/top/isLocationOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isAmountOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isAmountOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1901,10 +2018,10 @@
     "@value" : "The relationship between an amount and the entity it refers to."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Amount"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Amount"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1914,13 +2031,13 @@
     "@value" : "è importo di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isValueOf"
+    "@id" : "https://w3id.org/italia/env/onto/top/isValueOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isCurrencyOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isCurrencyOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1930,7 +2047,7 @@
     "@value" : "The property that links a currency to an entity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1940,10 +2057,10 @@
     "@value" : "è valuta di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/parametrises"
+    "@id" : "https://w3id.org/italia/env/onto/top/parametrises"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isFinalImplementationPlanActionOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isFinalImplementationPlanActionOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1953,10 +2070,10 @@
     "@value" : "The relation holding between an action and the implementation plan execution it is part of. The relation means that the action in one of the final actions of the plan execution, i.e. the plan execution has more than one final action)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1966,13 +2083,13 @@
     "@value" : "è azione finale dell'esecuzione del piano di attuazione"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isImplementationPlanActionOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isFinancedAmountOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isFinancedAmountOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -1982,10 +2099,10 @@
     "@value" : "The property that is used to associate an amount that has been financed for a procedure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Amount"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Amount"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1995,13 +2112,13 @@
     "@value" : "è importo finanziato di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isAmountOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isAmountOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isFirstImplementationPlanStepOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isFirstImplementationPlanStepOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -2011,10 +2128,10 @@
     "@value" : "The property that represents a step as the first step of the target implementation plan."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2024,13 +2141,13 @@
     "@value" : "è promo passo di piano di attuzione"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isImplementationPlanStepOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isImplementationPlanActionOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -2040,10 +2157,10 @@
     "@value" : "The relationship between the actiob and an implementation plan the former is a part of."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2053,13 +2170,13 @@
     "@value" : "è azione in piano di attuazione"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isPartOf"
+    "@id" : "https://w3id.org/italia/env/onto/top/isPartOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isImplementationPlanExecutionOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanExecutionOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2069,10 +2186,10 @@
     "@value" : "Relazione tra un'esecuzione di piano di implementazione ed un entità ad essa associata."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2082,13 +2199,13 @@
     "@value" : "è esecuzione di piano di implementazione di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isEventualityOf"
+    "@id" : "https://w3id.org/italia/env/onto/top/isEventualityOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isImplementationPlanOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -2098,10 +2215,10 @@
     "@value" : "The relation holding between an implementation plan and an entity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2111,13 +2228,13 @@
     "@value" : "è piano di attuazione di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isDescriptionOf"
+    "@id" : "https://w3id.org/italia/env/onto/top/isDescriptionOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isImplementationPlanStepOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -2127,10 +2244,10 @@
     "@value" : "The relation for linking a step to an implementation plan."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanStep"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanStep"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2140,13 +2257,13 @@
     "@value" : "è fase implementativa del piano"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlan"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isPartOf"
+    "@id" : "https://w3id.org/italia/env/onto/top/isPartOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isIncludedInProcedure",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isIncludedInProcedure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2156,10 +2273,10 @@
     "@value" : "Proprietà inversa di \"include lotto\" che lega il lotto alla sua procedura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Lot"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2169,13 +2286,13 @@
     "@value" : "è incluso in procedura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/associatedWith"
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isInitialImplementationPlanActionOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isInitialImplementationPlanActionOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -2188,23 +2305,23 @@
     "@value" : "is initial implementation plan action of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanAction"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
     "@value" : "è azione iniziale dell'esecuzione del piano di attuazione"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ImplementationPlanExecution"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ImplementationPlanExecution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isImplementationPlanActionOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanActionOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isInstabilityAddressedBy",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isInstabilityAddressedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -2214,10 +2331,10 @@
     "@value" : "The property for representing the fact that an instability is addressed by a certain lot included in a procedure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Instability"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2227,13 +2344,13 @@
     "@value" : "è instabilità affrontata da"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Lot"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/associatedWith"
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isInstabilityOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isInstabilityOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2243,10 +2360,10 @@
     "@value" : "Relazione tra un'instabilità ed un'entità ad essa collegata."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Instability"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2256,13 +2373,13 @@
     "@value" : "è instabilità di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isEventualityOf"
+    "@id" : "https://w3id.org/italia/env/onto/top/isEventualityOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isInstabilityTypeOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isInstabilityTypeOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -2272,10 +2389,10 @@
     "@value" : "The relation that allows you to state that an instability type classifies a certain instability."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/InstabilityType"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/InstabilityType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2285,19 +2402,22 @@
     "@value" : "è tipo di instabilità di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Instability"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Instability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/classifies"
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isLastImplementationStepOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isLastImplementationStepOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/isImplementationPlanStepOf"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/isImplementationPlanStepOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isLegalBasisOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isLegalBasisOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -2307,10 +2427,10 @@
     "@value" : "The relationship that links a legal act to an entity with the function of providing the latter with the legal basis."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/LegalAct"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/LegalAct"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2320,13 +2440,13 @@
     "@value" : "è base legale di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/associatedWith"
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isLithologyOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isLithologyOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -2336,10 +2456,10 @@
     "@value" : "The relation holding between a lithology and a possible entity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Lithology"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lithology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2349,13 +2469,13 @@
     "@value" : "è litologia di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/associatedWith"
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isLithologyTypeOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isLithologyTypeOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2365,10 +2485,10 @@
     "@value" : "Proprietà per associare un concetto di tipo di litologia ad una litologia specifica."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/LithologyType"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/LithologyType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2378,13 +2498,13 @@
     "@value" : "è tipo di litologia di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Lithology"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Lithology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/classifies"
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isPrimaryLocationOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isPrimaryLocationOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -2394,19 +2514,19 @@
     "@value" : "The property for representing relations between a primary location and a procedure or procedure collection."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Location"
+    "@id" : "https://w3id.org/italia/env/onto/top/Location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isLocationOf"
+    "@id" : "https://w3id.org/italia/env/onto/top/isLocationOf"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isProcedureTypeOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isProcedureTypeOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -2416,10 +2536,10 @@
     "@value" : "The relationship between a concept that classifies a procedure and the procedure itself."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/ProcedureType"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/ProcedureType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2429,13 +2549,13 @@
     "@value" : "è tipo di procedura di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/Procedure"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/Procedure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/classifies"
+    "@id" : "https://w3id.org/italia/env/onto/top/classifies"
   } ]
 }, {
-  "@id" : "https://dati.isprambiente.it/ontology/rendis/isRepairWorkExecutionOf",
+  "@id" : "https://w3id.org/italia/env/onto/rendis/isRepairWorkExecutionOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -2445,10 +2565,10 @@
     "@value" : "The relation holding between a repair activity and an entity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/RepairWork"
+    "@id" : "https://w3id.org/italia/env/onto/rendis/RepairWork"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/rendis/"
+    "@id" : "https://w3id.org/italia/env/onto/rendis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2458,116 +2578,11 @@
     "@value" : "è attività di risanemento di"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/Entity"
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://dati.isprambiente.it/ontology/top/isEventualityOf"
+    "@id" : "https://w3id.org/italia/env/onto/top/isEventualityOf"
   } ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/AgentRole",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/Characteristic",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/Collection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/Concept",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/Description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/Entity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/Eventuality",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/Location",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/UnitOfMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/Value",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/associatedWith",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/classifies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/directlyFollows",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/directlyPrecedes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/follows",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/hasAgentRole",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/hasDescription",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/hasEventuality",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/hasLocation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/hasMember",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/hasPart",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/hasValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/isClassifiedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/isDescriptionOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/isEventualityOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/isLocationOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/isParametrisedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/isPartOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/isSatisfiedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/isSpecialisedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/isValueOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/parametrises",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/precedes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/satisfies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://dati.isprambiente.it/ontology/top/specialises",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/top/Location",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]

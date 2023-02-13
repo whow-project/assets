@@ -1131,16 +1131,32 @@
     
 
 
+    <!-- https://w3id.org/italia/env/onto/top/symbol -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/top/symbol">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">Property used to specify a symbol. For instance the symbol of a unit of measure</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà  utilizzata per specificare un simbolo. Ad esempio il simbolo dell&apos;unità di misura</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/top"/>
+        <rdfs:label xml:lang="it">simbolo</rdfs:label>
+        <rdfs:label xml:lang="en">symbol</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/italia/env/onto/top/time -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/env/onto/top/time">
         <rdfs:domain rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="it">La proprietà per associare la rappresentazione letterale del tempo a un&apos;entità. La rappresentazione letterale deve essere un xsd:dateTime valido.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The property for associating the literal representation of time to an entity. The literal representation has to be a valid xsd:dateTime.</rdfs:comment>
+        <rdfs:comment xml:lang="it">La proprietà per associare la rappresentazione letterale del tempo a un&apos;entità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property for associating the literal representation of time to an entity.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">https://w3id.org/italia/env/onto/top</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="it">data e ora</rdfs:label>
-        <rdfs:label xml:lang="en">date time</rdfs:label>
+        <rdfs:label xml:lang="it">tempo</rdfs:label>
+        <rdfs:label xml:lang="en">time</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1453,6 +1469,13 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Parameter">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Characteristic"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Concept"/>
+        <rdfs:comment xml:lang="it">La classe dei parametri. Esempio, il parametro di un&apos;osservazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of parameters. Example, the parameter of an observation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/top"/>
+        <rdfs:label xml:lang="en">Parameter</rdfs:label>
+        <rdfs:label xml:lang="it">Parametro</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
     
 
@@ -1493,6 +1516,13 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
                 <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/top/Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe degli attributi di uno schema dati</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of the attributes of a data schema.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/top"/>
+        <rdfs:label xml:lang="it">Attributo dello Schema</rdfs:label>
+        <rdfs:label xml:lang="en">Schema Attribute</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
     
 
@@ -1611,6 +1641,13 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
             <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/isIssuedBy"/>
             <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/identifier"/>
         </owl:hasKey>
+        <rdfs:comment xml:lang="it">La classe per rappresentare identificativi univoci su cui poi specificare altre proprietà (e.g., chi li ha rilasciati, la validità, il valore assunto dall&apos;identificativo stesso)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class to represent unique identifiers on which to specify other properties (e.g., who issued them, validity, the value assumed by the identifier itself)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/top"/>
+        <rdfs:label xml:lang="it">Identificativo Univoco</rdfs:label>
+        <rdfs:label xml:lang="en">Unique Identifier</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
     
 
@@ -1649,6 +1686,13 @@ Questo è lo stesso concetto definito in http://www.ontologydesignpatterns.org/o
             <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/hasUnitOfMeasure"/>
             <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/value"/>
         </owl:hasKey>
+        <rdfs:comment xml:lang="it">La classe che modella generici valori che tipicamente hanno un&apos;unità di misura e il valore stesso.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The generic class for the values that typically have the unit of measure and the value itself.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/env/onto/top"/>
+        <rdfs:label xml:lang="it">Valore</rdfs:label>
+        <rdfs:label xml:lang="en">Value</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
     
 

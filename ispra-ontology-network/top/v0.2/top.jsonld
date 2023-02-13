@@ -648,10 +648,34 @@
 }, {
   "@id" : "https://w3id.org/italia/env/onto/top/Parameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe dei parametri. Esempio, il parametro di un'osservazione."
+  }, {
+    "@language" : "en",
+    "@value" : "The class of parameters. Example, the parameter of an observation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Parameter"
+  }, {
+    "@language" : "it",
+    "@value" : "Parametro"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
   }, {
     "@id" : "https://w3id.org/italia/env/onto/top/Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/top/Person",
@@ -702,10 +726,34 @@
 }, {
   "@id" : "https://w3id.org/italia/env/onto/top/SchemaAttribute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe degli attributi di uno schema dati"
+  }, {
+    "@language" : "en",
+    "@value" : "The class of the attributes of a data schema."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Attributo dello Schema"
+  }, {
+    "@language" : "en",
+    "@value" : "Schema Attribute"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
   }, {
     "@id" : "_:genid24"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/top/System",
@@ -787,6 +835,23 @@
 }, {
   "@id" : "https://w3id.org/italia/env/onto/top/UniqueIdentifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare identificativi univoci su cui poi specificare altre proprietà (e.g., chi li ha rilasciati, la validità, il valore assunto dall'identificativo stesso)"
+  }, {
+    "@language" : "en",
+    "@value" : "The class to represent unique identifiers on which to specify other properties (e.g., who issued them, validity, the value assumed by the identifier itself)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Identificativo Univoco"
+  }, {
+    "@language" : "en",
+    "@value" : "Unique Identifier"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
   }, {
@@ -806,6 +871,13 @@
     }, {
       "@id" : "https://w3id.org/italia/env/onto/top/identifier"
     } ]
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/top/UnitOfMeasure",
@@ -833,6 +905,23 @@
 }, {
   "@id" : "https://w3id.org/italia/env/onto/top/Value",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe che modella generici valori che tipicamente hanno un'unità di misura e il valore stesso."
+  }, {
+    "@language" : "en",
+    "@value" : "The generic class for the values that typically have the unit of measure and the value itself."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Valore"
+  }, {
+    "@language" : "en",
+    "@value" : "Value"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
   }, {
@@ -846,6 +935,13 @@
     }, {
       "@id" : "https://w3id.org/italia/env/onto/top/value"
     } ]
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/top/Year",
@@ -2904,14 +3000,47 @@
     "@id" : "https://w3id.org/italia/env/onto/top/time"
   } ]
 }, {
+  "@id" : "https://w3id.org/italia/env/onto/top/symbol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property used to specify a symbol. For instance the symbol of a unit of measure"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà  utilizzata per specificare un simbolo. Ad esempio il simbolo dell'unità di misura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "simbolo"
+  }, {
+    "@language" : "en",
+    "@value" : "symbol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "it",
+    "@value" : "stabile"
+  }, {
+    "@language" : "en",
+    "@value" : "stable"
+  } ]
+}, {
   "@id" : "https://w3id.org/italia/env/onto/top/time",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
-    "@value" : "La proprietà per associare la rappresentazione letterale del tempo a un'entità. La rappresentazione letterale deve essere un xsd:dateTime valido."
+    "@value" : "La proprietà per associare la rappresentazione letterale del tempo a un'entità."
   }, {
     "@language" : "en",
-    "@value" : "The property for associating the literal representation of time to an entity. The literal representation has to be a valid xsd:dateTime."
+    "@value" : "The property for associating the literal representation of time to an entity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Entity"
@@ -2922,10 +3051,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
-    "@value" : "data e ora"
+    "@value" : "tempo"
   }, {
     "@language" : "en",
-    "@value" : "date time"
+    "@value" : "time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"

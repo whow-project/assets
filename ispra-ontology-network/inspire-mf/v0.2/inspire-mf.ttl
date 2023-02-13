@@ -282,7 +282,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/italia/env/onto/inspire-mf/implementsProcedure
 :implementsProcedure rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf top:hasDescription ;
-                     owl:inverseOf :isProcedureImplòementedBy ;
+                     owl:inverseOf :isProcedureImplementedBy ;
                      rdfs:domain [ rdf:type owl:Class ;
                                    owl:unionOf ( :MonitoringFacility
                                                  :Observation
@@ -455,8 +455,8 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                              "è tipo di piattaforma di"@it .
 
 
-###  https://w3id.org/italia/env/onto/inspire-mf/isProcedureImplòementedBy
-:isProcedureImplòementedBy rdf:type owl:ObjectProperty ;
+###  https://w3id.org/italia/env/onto/inspire-mf/isProcedureImplementedBy
+:isProcedureImplementedBy rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf top:isDescriptionOf ;
                            rdfs:domain :Procedure ;
                            rdfs:range [ rdf:type owl:Class ;
