@@ -35,6 +35,9 @@
   "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -47,7 +50,7 @@
   "@id" : "https://w3id.org/whow/onto/hydrography",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@id" : "https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/hydrography-ontology.jpg"
+    "@id" : "https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/hydrography-ontology.png"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "it",
@@ -57,7 +60,12 @@
     "@value" : "Ontology for describing the hydrography. It includes concepts such as water basins and the classification of water bodies"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@value" : "2023-01-30"
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-02-13"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-01-10"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",

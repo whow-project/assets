@@ -174,7 +174,7 @@
   "@id" : "https://w3id.org/whow/onto/weather-monitoring",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@id" : "https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/weather-monitoring.png"
+    "@id" : "https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/weather-monitoring.png"
   } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -182,7 +182,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-01-30"
+    "@value" : "2023-02-13"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",

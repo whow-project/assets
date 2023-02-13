@@ -12,16 +12,16 @@
         <owl:versionIRI rdf:resource="https://w3id.org/whow/onto/weather-monitoring/0.1"/>
         <owl:imports rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/"/>
         <owl:imports rdf:resource="https://w3id.org/italia/env/onto/place/"/>
-        <dc:description rdf:resource="https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/weather-monitoring.png"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/weather-monitoring.png"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-01-30</dct:issued>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-01-30</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-13</dct:modified>
         <rdfs:label xml:lang="it">Ontologia per il monitoraggio meteo</rdfs:label>
         <rdfs:label xml:lang="en">Weather Monitoring Ontology</rdfs:label>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -29,28 +29,28 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -58,49 +58,49 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest"/>
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter"/>
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/hasSensorType -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/inspire-mf/hasSensorType"/>
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isHostedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/inspire-mf/isHostedBy"/>
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isObservationMadeBySensor -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/inspire-mf/isObservationMadeBySensor"/>
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/place/hasGeometry -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasGeometry"/>
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/top/atTime -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/atTime"/>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/hasObservedWeatherProperty -->
@@ -117,7 +117,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/hasResultTime -->
@@ -134,7 +134,7 @@
         <owl:versionInfo xml:lang="it">provvisorio</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/hasValidityPeriod -->
@@ -150,7 +150,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/hasWeatherFeatureOfInterest -->
@@ -167,10 +167,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -178,55 +178,55 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest"/>
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/Observation -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/Observation"/>
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter"/>
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/Platform -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/Platform"/>
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/Sensor -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/Sensor"/>
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/place/Geometry -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Geometry"/>
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/top/Concept -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Concept"/>
-    
+
 
 
     <!-- https://w3id.org/italia/env/onto/top/TimeInterval -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/TimeInterval"/>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/WeatherFeatureOfInterest -->
@@ -241,7 +241,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/WeatherObservableProperty -->
@@ -256,7 +256,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/WeatherObservation -->
@@ -311,7 +311,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/WeatherSensor -->
@@ -346,7 +346,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/WeatherSensorType -->
@@ -361,7 +361,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/WeatherStation -->
@@ -383,16 +383,16 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-    
+
 
 
     <!-- https://w3id.orgitalia/onto/TI/TimeInstant -->
 
     <owl:Class rdf:about="https://w3id.orgitalia/onto/TI/TimeInstant"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -400,7 +400,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/Air -->
@@ -413,7 +413,7 @@
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/GroundLevelSoil -->
@@ -426,7 +426,7 @@
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/Rainfall -->
@@ -439,7 +439,7 @@
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/Snow -->
@@ -452,7 +452,7 @@
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://w3id.org/whow/onto/weather-monitoring/Wind -->
@@ -470,4 +470,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-

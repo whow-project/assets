@@ -15,11 +15,11 @@
         <owl:imports rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/"/>
         <owl:imports rdf:resource="https://w3id.org/italia/env/onto/place/"/>
         <owl:imports rdf:resource="https://w3id.org/whow/onto/hydrography"/>
-        <dc:description rdf:resource="https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/pattern-solution-water-observation_v2.jpg"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/water-monitoring.png"/>
         <dct:description xml:lang="it">L&apos;ontologia utilizzata nel progetto WHOW per rappresentare le osservazioni relative a diversi aspetti dell&apos;acqua: qualità/inquinamento ed elementi fisici.</dct:description>
         <dct:description xml:lang="en">The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements.</dct:description>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-20</dct:issued>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-01-30</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-13</dct:modified>
         <dct:title xml:lang="it">Ontologia del Monitoraggio delle Acque</dct:title>
         <dct:title xml:lang="en">Water Monitoring Ontology</dct:title>
         <rdfs:comment xml:lang="it">L&apos;ontologia utilizzata nel progetto WHOW per rappresentare le osservazioni relative a diversi aspetti dell&apos;acqua: qualità/inquinamento ed elementi fisici.</rdfs:comment>
@@ -28,10 +28,10 @@
         <rdfs:label xml:lang="en">Water Monitoring Ontology</rdfs:label>
         <owl:versionInfo xml:lang="en">version 0.3 - revision of some imported ontologies; revision of some OWL restrictions</owl:versionInfo>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -39,16 +39,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -56,49 +56,31 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
 
 
+    <!-- https://w3id.org/italia/env/onto/ispra-mf/hasFeatureOfInterest -->
 
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest"/>
-
-
-
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter"/>
-
-
-
-    <!-- https://w3id.org/italia/env/onto/place/hasGeometry -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasGeometry"/>
-
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/ispra-mf/hasFeatureOfInterest"/>
+    
 
 
     <!-- https://w3id.org/italia/env/onto/place/hasMunicipality -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasMunicipality"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/place/hasProvince -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasProvince"/>
-
-
-
-    <!-- https://w3id.org/italia/env/onto/top/associatedWith -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/associatedWith"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/isClassifiedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/hasBiologicalAgent -->
@@ -117,7 +99,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">has biological agent</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/hasChemicalSubstance -->
@@ -136,31 +118,30 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">has chemical substance</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/hasDepth -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasDepth">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSample"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/too/Value"/>
         <rdfs:comment xml:lang="en">Property used to represent the depth of a water body, typically of a lake.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">has depth</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/hasObservationSample -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasObservationSample">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
         <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSample"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">has observation sample</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/hasRadioactivityObject -->
@@ -172,95 +153,89 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">has radioactivity object</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/hasResult -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasResult">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
         <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/ObservationValue"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">has result</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/hasWaterFeature -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasWaterFeature">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/ispra-mf/hasFeatureOfInterest"/>
         <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
         <rdfs:range rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">has water feature</rdfs:label>
         <owl:versionInfo xml:lang="en">we are planning to move it in hydrography ontology</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/hasWaterObservableProperty -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasWaterObservableProperty">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/hasObservationParameter"/>
         <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
         <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservableProperty"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">has water observable property</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/hasWaterObservablePropertyObject -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasWaterObservablePropertyObject">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
         <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:seeAlso xml:lang="en">has water observable property object</rdfs:seeAlso>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/isObtainedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/isObtainedBy">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSample"/>
         <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSampler"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">is obtained by</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/isSampleOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/isSampleOf">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSample"/>
         <rdfs:range rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">is sample of</rdfs:label>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/ofPropertyObject -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/ofPropertyObject">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
         <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservableProperty"/>
         <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">of property object</rdfs:label>
     </owl:ObjectProperty>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -268,7 +243,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/lowerBound -->
@@ -280,7 +255,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">lower bound</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/lowerBoundIncluded -->
@@ -292,7 +267,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">lower bound included</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/upperBound -->
@@ -304,7 +279,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">upper bound</rdfs:label>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/upperBoundIncluded -->
@@ -316,10 +291,10 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">upper bound included</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -327,67 +302,79 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
 
 
+    <!-- https://w3id.org/italia/env/onto/ispra-mf/FeatureOfInterest -->
 
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"/>
-
-
-
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/Observation -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/Observation"/>
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/ispra-mf/FeatureOfInterest"/>
+    
 
 
+    <!-- https://w3id.org/italia/env/onto/ispra-mf/MonitoringFacility -->
 
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter"/>
-
-
-
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/ObservationValue -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/ObservationValue"/>
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/ispra-mf/MonitoringFacility"/>
+    
 
 
+    <!-- https://w3id.org/italia/env/onto/ispra-mf/Observation -->
 
-    <!-- https://w3id.org/italia/env/onto/place/Geometry -->
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/ispra-mf/Observation"/>
+    
 
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Geometry"/>
 
+    <!-- https://w3id.org/italia/env/onto/ispra-mf/ObservationParameter -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/ispra-mf/ObservationParameter"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/ispra-mf/ObservationValue -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/ispra-mf/ObservationValue"/>
+    
 
 
     <!-- https://w3id.org/italia/env/onto/place/Municipality -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Municipality"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/place/Province -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Province"/>
+    
 
 
+    <!-- https://w3id.org/italia/env/onto/too/Characteristic -->
 
-    <!-- https://w3id.org/italia/env/onto/top/Characteristic -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Characteristic"/>
-
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/too/Characteristic"/>
+    
 
 
-    <!-- https://w3id.org/italia/env/onto/top/Concept -->
+    <!-- https://w3id.org/italia/env/onto/too/Concept -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Concept"/>
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/too/Concept"/>
+    
 
+
+    <!-- https://w3id.org/italia/env/onto/too/Value -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/too/Value"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Entity -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Entity"/>
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/BiologicalAgent -->
@@ -400,7 +387,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Biological Agent</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/ChemicalSubstance -->
@@ -412,7 +399,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Chemical Substance</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/DrinkingWaterObservation -->
@@ -424,18 +411,25 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Drinking Water Observation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/ObservationValue -->
 
     <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/ObservationValue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/ObservationValue"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/italia/env/onto/too/Value"/>
+                    <rdf:Description rdf:about="https://w3id.org/whow/onto/water-monitoring/Range"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The result of an observation. It is a value  or a range of values which is charaterised by the value(s) ifself(themselves) and , when applicable, by a unit of measure.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Observation Value</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/RadioactivityObject -->
@@ -446,18 +440,18 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Radioactivity Object</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/Range -->
 
     <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/Range">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/too/Characteristic"/>
         <rdfs:comment xml:lang="en">The class of value intervals. Examples: the value of the observation of the concentration of copepr is &lt;10, meaning between 0 and 10, etc.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Range (of Values)</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/SurfaceOrGroundwaterObservation -->
@@ -468,7 +462,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Surface or Groundwater Observation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterBiologicalQualityParameterObservation -->
@@ -493,7 +487,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Biological Quality Parameter/Element Observation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterChemicalParameterObservation -->
@@ -518,7 +512,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Chemical Parameter Observation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterEmergingParametersObservation -->
@@ -530,7 +524,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Emerging Parameter Observation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterHydromorphologicalParameterObservation -->
@@ -542,7 +536,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Hydromorphological Parameter Observation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterIndicatorParameterObservation -->
@@ -554,7 +548,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Indicator Parameter Observation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterMicrobiologicalParameterObservation -->
@@ -577,13 +571,13 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Microbiological Parameter Observation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterObservableProperty -->
 
     <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterObservableProperty">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/ispra-mf/ObservationParameter"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/ofPropertyObject"/>
@@ -594,44 +588,43 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Observable Property</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject -->
 
     <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Concept"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObjectType"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObjectType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The specific object of the property observed. Examples are: biological agents, chemical substances, and radioactivity objects</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Observable Property Object</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObjectType -->
 
     <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObjectType">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Characteristic"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Concept"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/too/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/too/Concept"/>
         <rdfs:comment xml:lang="en">The type of the object of the water property observed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Observable Property Object Type </rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterObservation -->
 
     <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterObservation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/Observation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/ispra-mf/Observation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasResult"/>
@@ -672,7 +665,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Observation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterPhysicoChemicalParameterObservation -->
@@ -695,7 +688,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Physico-Chemical Parameter Observation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterRadioactivityObservation -->
@@ -718,7 +711,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Radioactivity Observation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterSample -->
@@ -747,13 +740,13 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Sample</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterSampler -->
 
     <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterSampler">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/ispra-mf/MonitoringFacility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasMunicipality"/>
@@ -766,13 +759,6 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Province"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasGeometry"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/italia/env/onto/place/Geometry"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Any device or monitoring object that is used to obtain a water sample.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Sampler</rdfs:label>
@@ -782,3 +768,4 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

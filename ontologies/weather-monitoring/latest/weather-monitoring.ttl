@@ -12,9 +12,9 @@
                                                      owl:versionIRI <https://w3id.org/whow/onto/weather-monitoring/0.1> ;
                                                      owl:imports <https://w3id.org/italia/env/onto/inspire-mf/> ,
                                                                  <https://w3id.org/italia/env/onto/place/> ;
-                                                     dc:description <https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/weather-monitoring.png> ;
+                                                     dc:description <https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/weather-monitoring.png> ;
                                                      dct:issued "2023-01-30"^^xsd:date ;
-                                                     dct:modified "2023-01-30"^^xsd:date ;
+                                                     dct:modified "2023-02-13"^^xsd:date ;
                                                      rdfs:label "Ontologia per il monitoraggio meteo"@it ,
                                                                 "Weather Monitoring Ontology"@en .
 

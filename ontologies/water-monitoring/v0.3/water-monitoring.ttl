@@ -14,11 +14,11 @@
                                                owl:imports <https://w3id.org/italia/env/onto/inspire-mf/> ,
                                                            <https://w3id.org/italia/env/onto/place/> ,
                                                            <https://w3id.org/whow/onto/hydrography> ;
-                                               dc:description <https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/images/pattern-solution-water-observation_v2.jpg> ;
+                                               dc:description <https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/water-monitoring.png> ;
                                                dct:description "L'ontologia utilizzata nel progetto WHOW per rappresentare le osservazioni relative a diversi aspetti dell'acqua: qualità/inquinamento ed elementi fisici."@it ,
                                                                "The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements."@en ;
                                                dct:issued "2022-07-20"^^xsd:date ;
-                                               dct:modified "2023-01-30"^^xsd:date ;
+                                               dct:modified "2023-02-13"^^xsd:date ;
                                                dct:title "Ontologia del Monitoraggio delle Acque"@it ,
                                                          "Water Monitoring Ontology"@en ;
                                                rdfs:comment "L'ontologia utilizzata nel progetto WHOW per rappresentare le osservazioni relative a diversi aspetti dell'acqua: qualità/inquinamento ed elementi fisici."@it ,
@@ -41,6 +41,18 @@ dct:issued rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/italia/env/onto/ispra-mf/hasFeatureOfInterest
 <https://w3id.org/italia/env/onto/ispra-mf/hasFeatureOfInterest> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/place/hasMunicipality
+<https://w3id.org/italia/env/onto/place/hasMunicipality> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/place/hasProvince
+<https://w3id.org/italia/env/onto/place/hasProvince> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/italia/env/onto/top/isClassifiedBy
+<https://w3id.org/italia/env/onto/top/isClassifiedBy> rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/whow/onto/water-monitoring/hasBiologicalAgent
@@ -129,14 +141,6 @@ dct:issued rdf:type owl:AnnotationProperty .
                                   rdfs:seeAlso "has water observable property object"@en .
 
 
-###  https://w3id.org/whow/onto/water-monitoring/isClassifiedBy
-:isClassifiedBy rdf:type owl:ObjectProperty ;
-                rdfs:domain :WaterObservablePropertyObject ;
-                rdfs:range :WaterObservablePropertyObjectType ;
-                rdfs:isDefinedBy <https://w3id.org/whow/onto/water-monitoring> ;
-                rdfs:label "is classified by"@en .
-
-
 ###  https://w3id.org/whow/onto/water-monitoring/isObtainedBy
 :isObtainedBy rdf:type owl:ObjectProperty ;
               rdfs:domain :WaterSample ;
@@ -221,8 +225,36 @@ skos:Concept rdf:type owl:Class .
 <https://w3id.org/italia/env/onto/ispra-mf/Observation> rdf:type owl:Class .
 
 
+###  https://w3id.org/italia/env/onto/ispra-mf/ObservationParameter
+<https://w3id.org/italia/env/onto/ispra-mf/ObservationParameter> rdf:type owl:Class .
+
+
 ###  https://w3id.org/italia/env/onto/ispra-mf/ObservationValue
 <https://w3id.org/italia/env/onto/ispra-mf/ObservationValue> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/place/Municipality
+<https://w3id.org/italia/env/onto/place/Municipality> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/place/Province
+<https://w3id.org/italia/env/onto/place/Province> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/too/Characteristic
+<https://w3id.org/italia/env/onto/too/Characteristic> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/too/Concept
+<https://w3id.org/italia/env/onto/too/Concept> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/too/Value
+<https://w3id.org/italia/env/onto/too/Value> rdf:type owl:Class .
+
+
+###  https://w3id.org/italia/env/onto/top/Entity
+<https://w3id.org/italia/env/onto/top/Entity> rdf:type owl:Class .
 
 
 ###  https://w3id.org/whow/onto/water-monitoring/BiologicalAgent
@@ -383,9 +415,9 @@ skos:Concept rdf:type owl:Class .
 ###  https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject
 :WaterObservablePropertyObject rdf:type owl:Class ;
                                rdfs:subClassOf skos:Concept ,
-                                               <https://w3id.org/italia/env/onto/too/Concept> ,
+                                               <https://w3id.org/italia/env/onto/top/Entity> ,
                                                [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :isClassifiedBy ;
+                                                 owl:onProperty <https://w3id.org/italia/env/onto/top/isClassifiedBy> ;
                                                  owl:allValuesFrom :WaterObservablePropertyObjectType
                                                ] ;
                                rdfs:comment "The specific object of the property observed. Examples are: biological agents, chemical substances, and radioactivity objects"@en ;
@@ -395,7 +427,8 @@ skos:Concept rdf:type owl:Class .
 
 ###  https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObjectType
 :WaterObservablePropertyObjectType rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/italia/env/onto/too/Characteristic> , <https://w3id.org/italia/env/onto/too/Concept> ;
+                                   rdfs:subClassOf <https://w3id.org/italia/env/onto/too/Characteristic> ,
+                                                   <https://w3id.org/italia/env/onto/too/Concept> ;
                                    rdfs:comment "The type of the object of the water property observed."@en ;
                                    rdfs:isDefinedBy <https://w3id.org/whow/onto/water-monitoring> ;
                                    rdfs:label "Water Observable Property Object Type "@en .
