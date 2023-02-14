@@ -7,7 +7,7 @@ At the time being the following ontological modules are part of the network. We 
 
 ### [Hydrography ontology](https://w3id.org/whow/onto/hydrography)
 
-![Graphical representation of the hydrography ontology](https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/health-monitoring.png)
+![Graphical representation of the hydrography ontology](https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/hydrography-ontology.png)
 
 The Hydrography ontological module represents a taxonomy of water bodies and the relationships between them. The ontology concepts are semantically aligned with INSPIRE defined concepts.
 
