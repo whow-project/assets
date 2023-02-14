@@ -1,28 +1,22 @@
-# baseURI: https://w3id.org/environmental-data/data/water-observable-properties
-# imports: http://www.w3.org/2004/02/skos/core
-# imports: https://dati.isprambiente.it/ontology/core/
-# imports: https://w3id.org/whow/onto/hydrography-ontology
-# imports: https://w3id.org/whow/onto/water-monitoring-ontology
-
-@prefix :        <https://w3id.org/whow/controlled-vocabulary/observable-properties> .
 @prefix dct:     <http://purl.org/dc/terms/> .
-@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix ndc:     <https://w3id.org/italia/onto/NDC/> .
 @prefix adms:    <http://www.w3.org/ns/adms#> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix core:    <https://dati.isprambiente.it/ontology/core/value/> .
-@prefix inspire-mf:  <https://dati.isprambiente.it/ontology/inspire-mf/> .
-@prefix ispra-top:  <https://dati.isprambiente.it/ontology/core/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix ispra-emf:  <https://w3id.org/italia/env/onto/inspire-mf/> .
+@prefix ispra-ispra-top:  <https://w3id.org/italia/env/onto/top/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sdo:     <http://schema.org/> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
-@prefix w-mon:   <https://w3id.org/whow/onto/water-monitoring-ontology/> .
+@prefix w-mon:   <https://w3id.org/whow/onto/water-monitoring/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcard:    <http://www.w3.org/2006/vcard/ns#> .
 
 #Metadata DCAT-AP_IT for the controlled vocabulary
 <https://w3id.org/whow/controlled-vocabulary/observable-properties>
-      a       skos:ConceptScheme ;
+      a       skos:ConceptScheme , dcat:Dataset , dcatapit:Dataset , adms:Asset ;
       dct:title "Observable properties Controlled Vocabulary"@en , "Vocabolario Controllato delle proprietà osservate"@it ;
       dct:description "This is the Observable Properties controlled vocabulary."@en , "Questo è il vocabolario controllato delle proprietà osservate."@it ;
       rdfs:comment "This is the Observable Properties controlled vocabulary"@en , "Questo è il vocabolario controllato delle proprietà osservate."@it ;
@@ -113,9 +107,9 @@
           skos:notation
                 a       rdfs:Property .
 
-          core:hasUniqueIdentifier
+          ispra-ispra-top:hasUniqueIdentifier
                 a       rdfs:Property .
-          core:identifier
+          ispra-ispra-top:identifier
                 a       rdfs:Property .
 
           w-mon:identifierType
@@ -128,229 +122,229 @@
     w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di Solidi sedimentabili"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Solidi sedimentabili"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/10050> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/10050> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/10062> a <http://www.w3.org/2004/02/skos/core#Concept>,
     w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di Trasparenza (disco di Secchi)"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Trasparenza (disco di Secchi)"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/10062> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/10062> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/10313> a <http://www.w3.org/2004/02/skos/core#Concept>,
     w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di COD"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "COD"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/10313> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/10313> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/12408-02-5> a
     <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di pH"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "pH"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/12408-02-5> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/12408-02-5> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/20001> a <http://www.w3.org/2004/02/skos/core#Concept>,
     w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di Durezza (totale)"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Durezza (totale)"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/20001> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/20001> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/71-52-3> a <http://www.w3.org/2004/02/skos/core#Concept>,
     w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di Alcalinità"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Alcalinità"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/71-52-3> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/71-52-3> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/BIO-ESC-COL>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di Escherichia coli"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Escherichia coli"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/BIO-ESC-COL> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/BIO-ESC-COL> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/HM-2%2C4-2%2C5-5%2C6DCl-TOL>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di Diclorotolueni isomeri (2,4 + 2,5 + 5,6)"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Diclorotolueni isomeri (2,4 + 2,5 + 5,6)"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-2%2C4-2%2C5-5%2C6DCl-TOL> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-2%2C4-2%2C5-5%2C6DCl-TOL> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/HM-DCT-23-34>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di Diclorotolueni isomeri (2,3 + 3,4 )"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Diclorotolueni isomeri (2,3 + 3,4 )"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-DCT-23-34> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-DCT-23-34> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/HM-HC-C1-C12>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di Idrocarburi  Volatili (espressi come n-esano)"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Idrocarburi  Volatili (espressi come n-esano)"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-HC-C1-C12> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-HC-C1-C12> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/HM-HC-C10-C40>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di Idrocarburi C10-C40"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Idrocarburi C10-C40"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-HC-C10-C40> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-HC-C10-C40> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/HM-HC-C5-C10>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di Idrocarburi C5-C10"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Idrocarburi C5-C10"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-HC-C5-C10> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-HC-C5-C10> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/HM-HC-TOT> a
     <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di Idrocarburi tot. (espressi come n-esano)"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Idrocarburi tot. (espressi come n-esano)"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-HC-TOT> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-HC-TOT> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/HM-IPA-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
     w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di Idrocarburi policiclici aromatici"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Idrocarburi policiclici aromatici"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-IPA-0> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-IPA-0> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/HM-MP-XIL> a
     <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di m+p-Xilene"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "m+p-Xilene"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-MP-XIL> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-MP-XIL> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/HM-PCB-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
     w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di PCB totali"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "PCB totali"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-PCB-0> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-PCB-0> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/HM-PCDD-DF> a
     <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Sommatoria PCDD, PCDF"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Sommatoria PCDD, PCDF"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-PCDD-DF> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-PCDD-DF> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/HM-TNS-N0> a
     <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Concentrazione di Tensioattivi non ionici"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Tensioattivi non ionici"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-TNS-N0> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/HM-TNS-N0> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/LT-00-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
     w-mon:WaterObservableProperty;
   rdfs:label "Altezza idrometrica"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Altezza idrometrica"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/LT-00-0> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/LT-00-0> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/M-PRT-0> a <http://www.w3.org/2004/02/skos/core#Concept>,
     w-mon:WaterObservableProperty;
   rdfs:label "Portata"@it;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Portata"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/M-PRT-0> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/M-PRT-0> .
 
-<https://w3id.org/whow/data/identifier/10050> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/10050> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo 10050."@it, "Identifier 10050"@en;
-  top:identifier "10050" .
+  ispra-top:identifier "10050" .
 
-<https://w3id.org/whow/data/identifier/10062> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/10062> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo 10062."@it, "Identifier 10062"@en;
-  top:identifier "10062" .
+  ispra-top:identifier "10062" .
 
-<https://w3id.org/whow/data/identifier/10313> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/10313> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo 10313."@it, "Identifier 10313"@en;
-  top:identifier "10313" .
+  ispra-top:identifier "10313" .
 
-<https://w3id.org/whow/data/identifier/12408-02-5> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/12408-02-5> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo 12408-02-5."@it, "Identifier 12408-02-5"@en;
-  top:identifier "12408-02-5" .
+  ispra-top:identifier "12408-02-5" .
 
-<https://w3id.org/whow/data/identifier/20001> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/20001> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo 20001."@it, "Identifier 20001"@en;
-  top:identifier "20001" .
+  ispra-top:identifier "20001" .
 
-<https://w3id.org/whow/data/identifier/71-52-3> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/71-52-3> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo 71-52-3."@it, "Identifier 71-52-3"@en;
-  top:identifier "71-52-3" .
+  ispra-top:identifier "71-52-3" .
 
-<https://w3id.org/whow/data/identifier/BIO-ESC-COL> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/BIO-ESC-COL> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo BIO-ESC-COL."@it, "Identifier BIO-ESC-COL"@en;
-  top:identifier "BIO-ESC-COL" .
+  ispra-top:identifier "BIO-ESC-COL" .
 
-<https://w3id.org/whow/data/identifier/HM-2%2C4-2%2C5-5%2C6DCl-TOL> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/HM-2%2C4-2%2C5-5%2C6DCl-TOL> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo HM-2,4-2,5-5,6DCl-TOL."@it, "Identifier HM-2,4-2,5-5,6DCl-TOL"@en;
-  top:identifier "HM-2,4-2,5-5,6DCl-TOL" .
+  ispra-top:identifier "HM-2,4-2,5-5,6DCl-TOL" .
 
-<https://w3id.org/whow/data/identifier/HM-DCT-23-34> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/HM-DCT-23-34> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo HM-DCT-23-34."@it, "Identifier HM-DCT-23-34"@en;
-  top:identifier "HM-DCT-23-34" .
+  ispra-top:identifier "HM-DCT-23-34" .
 
-<https://w3id.org/whow/data/identifier/HM-HC-C1-C12> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/HM-HC-C1-C12> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo HM-HC-C1-C12."@it, "Identifier HM-HC-C1-C12"@en;
-  top:identifier "HM-HC-C1-C12" .
+  ispra-top:identifier "HM-HC-C1-C12" .
 
-<https://w3id.org/whow/data/identifier/HM-HC-C10-C40> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/HM-HC-C10-C40> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo HM-HC-C10-C40."@it, "Identifier HM-HC-C10-C40"@en;
-  top:identifier "HM-HC-C10-C40" .
+  ispra-top:identifier "HM-HC-C10-C40" .
 
-<https://w3id.org/whow/data/identifier/HM-HC-C5-C10> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/HM-HC-C5-C10> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo HM-HC-C5-C10."@it, "Identifier HM-HC-C5-C10"@en;
-  top:identifier "HM-HC-C5-C10" .
+  ispra-top:identifier "HM-HC-C5-C10" .
 
-<https://w3id.org/whow/data/identifier/HM-HC-TOT> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/HM-HC-TOT> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo HM-HC-TOT."@it, "Identifier HM-HC-TOT"@en;
-  top:identifier "HM-HC-TOT" .
+  ispra-top:identifier "HM-HC-TOT" .
 
-<https://w3id.org/whow/data/identifier/HM-IPA-0> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/HM-IPA-0> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo HM-IPA-0."@it, "Identifier HM-IPA-0"@en;
-  top:identifier "HM-IPA-0" .
+  ispra-top:identifier "HM-IPA-0" .
 
-<https://w3id.org/whow/data/identifier/HM-MP-XIL> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/HM-MP-XIL> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo HM-MP-XIL."@it, "Identifier HM-MP-XIL"@en;
-  top:identifier "HM-MP-XIL" .
+  ispra-top:identifier "HM-MP-XIL" .
 
-<https://w3id.org/whow/data/identifier/HM-PCB-0> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/HM-PCB-0> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo HM-PCB-0."@it, "Identifier HM-PCB-0"@en;
-  top:identifier "HM-PCB-0" .
+  ispra-top:identifier "HM-PCB-0" .
 
-<https://w3id.org/whow/data/identifier/HM-PCDD-DF> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/HM-PCDD-DF> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo HM-PCDD-DF."@it, "Identifier HM-PCDD-DF"@en;
-  top:identifier "HM-PCDD-DF" .
+  ispra-top:identifier "HM-PCDD-DF" .
 
-<https://w3id.org/whow/data/identifier/HM-TNS-N0> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/HM-TNS-N0> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo HM-TNS-N0."@it, "Identifier HM-TNS-N0"@en;
-  top:identifier "HM-TNS-N0" .
+  ispra-top:identifier "HM-TNS-N0" .
 
-<https://w3id.org/whow/data/identifier/LT-00-0> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/LT-00-0> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo LT-00-0."@it, "Identifier LT-00-0"@en;
-  top:identifier "LT-00-0" .
+  ispra-top:identifier "LT-00-0" .
 
-<https://w3id.org/whow/data/identifier/M-PRT-0> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/M-PRT-0> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo M-PRT-0."@it, "Identifier M-PRT-0"@en;
-  top:identifier "M-PRT-0" .
+  ispra-top:identifier "M-PRT-0" .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/wise-31-02-7>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Solidi sospesi totali- Codice WISE: 31-02-7"@it;
   <http://www.w3.org/2004/02/skos/core#notation> <WISE:31-02-7>;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Solidi sospesi totali"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/31-02-7> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/31-02-7> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/wise-3121-01-5>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Temperatura acqua- Codice WISE: 3121-01-5"@it;
   <http://www.w3.org/2004/02/skos/core#notation> <WISE:3121-01-5>;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Temperatura acqua"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/3121-01-5> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/3121-01-5> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/wise-3131-01-9>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Ossigeno % di saturazione- Codice WISE: 3131-01-9"@it;
   <http://www.w3.org/2004/02/skos/core#notation> <WISE:3131-01-9>;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Ossigeno % di saturazione"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/3131-01-9> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/3131-01-9> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/wise-3133-01-5>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "BOD-5- Codice WISE: 3133-01-5"@it;
   <http://www.w3.org/2004/02/skos/core#notation> <WISE:3133-01-5>;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "BOD-5"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/3133-01-5> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/3133-01-5> .
 
   <https://w3id.org/whow/controlled-vocabularies/observable-properties/concentrazione-di-ostreopsis-ovata>
     a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
@@ -359,88 +353,88 @@
     <http://www.w3.org/2004/02/skos/core#notation> "Worms:110068";
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Concentrazione di ostreopsis ovata."@it;
     owl:sameAs <http://www.wikidata.org/entity/Q1462884>;
-    top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/52502> ;
-    top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/110068> .
+    ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/52502> ;
+    ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/110068> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/wise-3133-05-9>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "DOC- Codice WISE: 3133-05-9"@it;
   <http://www.w3.org/2004/02/skos/core#notation> <WISE:3133-05-9>;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "DOC"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/3133-05-9> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/3133-05-9> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/wise-3142-01-6>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Conducibilità elettrica a 20°C- Codice WISE: 3142-01-6"@it;
   <http://www.w3.org/2004/02/skos/core#notation> <WISE:3142-01-6>;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Conducibilità elettrica a 20°C"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/3142-01-6> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/3142-01-6> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/wise-32-02-0>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Sommatoria Antiparassitari ciclodiene- Codice WISE: 32-02-0"@it;
   <http://www.w3.org/2004/02/skos/core#notation> <WISE:32-02-0>;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Sommatoria Antiparassitari ciclodiene"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/32-02-0> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/32-02-0> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/wise-33-28-3>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Tensioattivi totali- Codice WISE: 33-28-3"@it;
   <http://www.w3.org/2004/02/skos/core#notation> <WISE:33-28-3>;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Tensioattivi totali"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/33-28-3> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/33-28-3> .
 
 <https://w3id.org/whow/controlled-vocabularies/observable-properties/wise-33-29-4>
   a <http://www.w3.org/2004/02/skos/core#Concept>, w-mon:WaterObservableProperty;
   rdfs:label "Tensioattivi anionici (MBAS)- Codice WISE: 33-29-4"@it;
   <http://www.w3.org/2004/02/skos/core#notation> <WISE:33-29-4>;
   <http://www.w3.org/2004/02/skos/core#prefLabel> "Tensioattivi anionici (MBAS)"@it;
-  top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/33-29-4> .
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/33-29-4> .
 
-<https://w3id.org/whow/data/identifier/31-02-7> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/31-02-7> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo WISE — 31-02-7"@it, "WISE Identifier — 31-02-7"@en;
-  top:identifier "31-02-7";
-  top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
+  ispra-top:identifier "31-02-7";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
 
-<https://w3id.org/whow/data/identifier/3121-01-5> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/3121-01-5> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo WISE — 3121-01-5"@it, "WISE Identifier — 3121-01-5"@en;
-  top:identifier "3121-01-5";
-  top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
+  ispra-top:identifier "3121-01-5";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
 
-<https://w3id.org/whow/data/identifier/3131-01-9> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/3131-01-9> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo WISE — 3131-01-9"@it, "WISE Identifier — 3131-01-9"@en;
-  top:identifier "3131-01-9";
-  top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
+  ispra-top:identifier "3131-01-9";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
 
-<https://w3id.org/whow/data/identifier/3133-01-5> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/3133-01-5> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo WISE — 3133-01-5"@it, "WISE Identifier — 3133-01-5"@en;
-  top:identifier "3133-01-5";
-  top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
+  ispra-top:identifier "3133-01-5";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
 
-<https://w3id.org/whow/data/identifier/3133-05-9> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/3133-05-9> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo WISE — 3133-05-9"@it, "WISE Identifier — 3133-05-9"@en;
-  top:identifier "3133-05-9";
-  top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
+  ispra-top:identifier "3133-05-9";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
 
-<https://w3id.org/whow/data/identifier/3142-01-6> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/3142-01-6> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo WISE — 3142-01-6"@it, "WISE Identifier — 3142-01-6"@en;
-  top:identifier "3142-01-6";
-  top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
+  ispra-top:identifier "3142-01-6";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
 
-<https://w3id.org/whow/data/identifier/32-02-0> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/32-02-0> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo WISE — 32-02-0"@it, "WISE Identifier — 32-02-0"@en;
-  top:identifier "32-02-0";
-  top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
+  ispra-top:identifier "32-02-0";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
 
-<https://w3id.org/whow/data/identifier/33-28-3> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/33-28-3> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo WISE — 33-28-3"@it, "WISE Identifier — 33-28-3"@en;
-  top:identifier "33-28-3";
-  top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
+  ispra-top:identifier "33-28-3";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
 
-<https://w3id.org/whow/data/identifier/33-29-4> a top:UniqueIdentifier;
+<https://w3id.org/whow/data/identifier/33-29-4> a ispra-top:UniqueIdentifier;
   rdfs:label "Identificativo WISE — 33-29-4"@it, "WISE Identifier — 33-29-4"@en;
-  top:identifier "33-29-4";
-  top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
+  ispra-top:identifier "33-29-4";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/european-environmental-agency> .
 
 <https://w3id.org/whow/controlled-vocabulary/observable-properties/0100-02-07> a <http://www.w3.org/2004/02/skos/core#Concept>,
     w-mon:WaterObservableProperty;
