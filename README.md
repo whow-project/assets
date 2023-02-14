@@ -7,9 +7,13 @@ At the time being the following ontological modules are part of the network. We 
 
 ### [Hydrography ontology](https://w3id.org/whow/onto/hydrography)
 
+![Graphical representation of the hydrography ontology](https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/health-monitoring.png)
+
 The Hydrography ontological module represents a taxonomy of water bodies and the relationships between them. The ontology concepts are semantically aligned with INSPIRE defined concepts.
 
 ### [Water monitoring ontology](https://w3id.org/whow/onto/water-monitoring)
+
+![Graphical representation of the water monitoring ontology](https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/water-monitoring.png)
 
 The Water monitoring ontological module is an extension of the SOSA/SSN ontology and of the ISPRA ontology INSPIRE-MF for the water domain. It contributes to represent the monitoring of the various types of waters and to capture the different parameters that characterise the quality of the water, according to the different related European Directives. The ontology uses the Hydrography module above in order to model the Water Feature being observed.
 
