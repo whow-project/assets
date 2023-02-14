@@ -18,11 +18,14 @@ The Hydrography ontological module represents a taxonomy of water bodies and the
 The Water monitoring ontological module is an extension of the SOSA/SSN ontology and of the ISPRA ontology INSPIRE-MF for the water domain. It contributes to represent the monitoring of the various types of waters and to capture the different parameters that characterise the quality of the water, according to the different related European Directives. The ontology uses the Hydrography module above in order to model the Water Feature being observed.
 
 ### [Weather monitoring ontology](https://w3id.org/whow/onto/weather-monitoring)
+![Graphical representation of the water monitoring ontology](https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/weather-monitoring.png)
 
 The Weather monitoring ontological module is used in WHOW to support the extreme event use case. In particular, it is an ontology that is capable of representing meteorological observations. It can be used in general for this type of high value datasets.
 
 
 ### [Health monitoring ontology](https://w3id.org/whow/onto/health-monitoring)
+
+![Graphical representation of the water monitoring ontology](https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/health-monitoring.png)
 
 The Health monitoring ontological module aims to represent health indicators with a specific focus on infectious diseases.
 
