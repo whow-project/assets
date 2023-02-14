@@ -4,13 +4,20 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/whow/onto/health-monitoring/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@base <https://w3id.org/whow/onto/health-monitoring> .
 
-<https://w3id.org/whow/onto/health-monitoring/> rdf:type owl:Ontology ;
+<https://w3id.org/whow/onto/health-monitoring> rdf:type owl:Ontology ;
                                                  owl:versionIRI <urn:absolute:https//w3id.org/whow/onto/health-monitoring/0.2> ;
                                                  owl:imports <https://w3id.org/italia/env/onto/top/> ;
+                                                 dct:issued "2022-10-03"^^xsd:date ;
+                                                 dct:modified "2023-02-14"^^xsd:date ;
+                                                 dc:description <https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/health-monitoring.png> ;
                                                  rdfs:label "Health Care Indicator Monitoring Ontology"@en ,
-                                                            "Ontologia di Monitoraggio di Indicatori della Salute"@it .
+                                                            "Ontologia di Monitoraggio di Indicatori della Salute"@it ;
+                                                 dct:title "Health Care Indicator Monitoring Ontology"@en ,
+                                                           "Ontologia di Monitoraggio di Indicatori della Salute"@it .
 
 #################################################################
 #    Object Properties

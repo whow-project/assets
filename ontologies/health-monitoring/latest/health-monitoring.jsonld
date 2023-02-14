@@ -2,56 +2,25 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/IndicatorType"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/IndicatorType"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
   } ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/top/Characteristic",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/top/Concept",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/top/Description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/top/Entity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/top/Eventuality",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/italia/env/onto/top/Location",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/italia/env/onto/top/Organisation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/italia/env/onto/top/Value",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Health Care Indicator Monitoring Ontology"
-  }, {
-    "@language" : "it",
-    "@value" : "Ontologia di Monitoraggio di Indicatori della Salute"
-  } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/top/"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "urn:absolute:https//w3id.org/whow/onto/health-monitoring/0.2"
-  } ]
-}, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/ClinicalCohort",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/ClinicalCohort",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -71,7 +40,7 @@
     "@value" : "Coorte Clinica"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/Population"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/Population"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -81,7 +50,7 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/CohortCriteriaDescription",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/CohortCriteriaDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -111,7 +80,7 @@
     "@value" : "unstable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/Criterion",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/Criterion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -141,7 +110,7 @@
     "@value" : "unstable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/Disease",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/Disease",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -171,7 +140,7 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/DiseaseType",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/DiseaseType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -203,7 +172,7 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/DrugDistributionIndicatorCalculation",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/DrugDistributionIndicatorCalculation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -223,7 +192,7 @@
     "@value" : "Drug Distribution Indicator Calculation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/HealthcareIndicatorCalculation"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -233,7 +202,7 @@
     "@value" : "unstable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthAgency",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/HealthAgency",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -263,7 +232,7 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthCareIndicator",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/HealthCareIndicator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -295,7 +264,7 @@
     "@value" : "unstable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthConditionIndicatorCalculation",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/HealthConditionIndicatorCalculation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -315,7 +284,7 @@
     "@value" : "Health Condition Indicator Calculation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/HealthcareIndicatorCalculation"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -325,7 +294,7 @@
     "@value" : "unstable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/HealthcareIndicatorCalculation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -355,7 +324,7 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/HospitalCareIndicatorCalculation",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/HospitalCareIndicatorCalculation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -375,7 +344,7 @@
     "@value" : "Hospital Care Indicator Calculation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/HealthcareIndicatorCalculation"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -385,7 +354,7 @@
     "@value" : "unstable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/IndicatorType",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/IndicatorType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -417,7 +386,7 @@
     "@value" : "unstable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/InfectiousDiseaseIndicatorCalculation",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/InfectiousDiseaseIndicatorCalculation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -437,7 +406,7 @@
     "@value" : "Infectious Disease Indicator Calculation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/HealthcareIndicatorCalculation"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -447,7 +416,7 @@
     "@value" : "unstable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/Population",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/Population",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
@@ -477,7 +446,7 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/affectedBy",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/affectedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -487,7 +456,7 @@
     "@value" : "Proprietà che consente di collegare la coorte clinica con la malattia  di cui sono affetti."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/ClinicalCohort"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/ClinicalCohort"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring"
@@ -500,7 +469,7 @@
     "@value" : "affetta da"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/Disease"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/Disease"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -510,7 +479,7 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/hasCohortCriteriaDescription",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/hasCohortCriteriaDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -520,7 +489,7 @@
     "@value" : "Proprietà che lega la coorte clinica con la descrizioni dei criteri che ne determinano la sua dimensione."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/ClinicalCohort"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/ClinicalCohort"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring"
@@ -533,7 +502,7 @@
     "@value" : "has clinical cohort criteria description"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/CohortCriteriaDescription"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/CohortCriteriaDescription"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -543,7 +512,7 @@
     "@value" : "unstable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/hasCriterion",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/hasCriterion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -553,7 +522,7 @@
     "@value" : "Proprietà che collega la descrizione dei criteri per la dimensione della coorte clinica a ogni singolo criterio."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/CohortCriteriaDescription"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/CohortCriteriaDescription"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring"
@@ -566,7 +535,7 @@
     "@value" : "has criterion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/Criterion"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/Criterion"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -576,7 +545,7 @@
     "@value" : "unstable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/hasHealthcareIndicatorValue",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/hasHealthcareIndicatorValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -586,7 +555,7 @@
     "@value" : "Proprietà utilizzata per collegare il calcolo dell'indicatore di salute con il relativo valore."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/HealthcareIndicatorCalculation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring"
@@ -609,7 +578,7 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/isResponsibleFor",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/isResponsibleFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -619,7 +588,7 @@
     "@value" : "Proprietà utilizzata per indicare la responsabilità di un'organizzazione sanitaria rispetto a una certa area territoriale. La giurisdizione dell'azienda sanitaria."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthAgency"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/HealthAgency"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring"
@@ -642,7 +611,7 @@
     "@value" : "unstable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/narrower",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/narrower",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -652,7 +621,7 @@
     "@value" : "Proprietà che consente di modellare una tassonomia di tipi di malattie."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/DiseaseType"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/DiseaseType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring"
@@ -665,7 +634,7 @@
     "@value" : "sotto insieme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/DiseaseType"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/DiseaseType"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -675,7 +644,7 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/ofClinicalCohort",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/ofClinicalCohort",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -685,7 +654,7 @@
     "@value" : "Proprietà utilizzata per indicare la coorte clinica considerata nel calcolo dell'indicatore di salute."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/HealthcareIndicatorCalculation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring"
@@ -698,7 +667,7 @@
     "@value" : "of clinical cohort"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/ClinicalCohort"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/ClinicalCohort"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
@@ -711,7 +680,7 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/subIndicator",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/subIndicator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -721,7 +690,7 @@
     "@value" : "Proprietà utilizzata per creare tassonomie dei calcoli degli indicatori di salute. Utile quando alcuni calcoli dipendono da altri."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/HealthcareIndicatorCalculation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring"
@@ -734,7 +703,7 @@
     "@value" : "sub indicator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/HealthcareIndicatorCalculation"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -744,7 +713,7 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/health-monitoring/totalValue",
+  "@id" : "http://www.w3id.com/whow/onto/health-ontology/totalValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -754,7 +723,7 @@
     "@value" : "Proprietà che indica il valore totale della popolazione in una certa area di riferimento."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/Population"
+    "@id" : "http://www.w3id.com/whow/onto/health-ontology/Population"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring"
@@ -775,5 +744,66 @@
   }, {
     "@language" : "en",
     "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Characteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Eventuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Organisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/Value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/health-monitoring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@id" : "https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/health-monitoring.png"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-10-03"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-02-14"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Health Care Indicator Monitoring Ontology"
+  }, {
+    "@language" : "it",
+    "@value" : "Ontologia di Monitoraggio di Indicatori della Salute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Health Care Indicator Monitoring Ontology"
+  }, {
+    "@language" : "it",
+    "@value" : "Ontologia di Monitoraggio di Indicatori della Salute"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "urn:absolute:https//w3id.org/whow/onto/health-monitoring/0.2"
   } ]
 } ]
