@@ -193,17 +193,6 @@
     <node id="n16">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="44.0" width="300.109375" x="942.1168687737943" y="23.601897199379437"/>
-          <y:Fill color="#FFFF00" transparent="false"/>
-          <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="290.109375" x="5.0" xml:space="preserve" y="10.578125">:HealthConditionIndicatorCalculation</y:NodeLabel>
-          <y:Shape type="roundrectangle"/>
-        </y:ShapeNode>
-      </data>
-    </node>
-    <node id="n17">
-      <data key="d6">
-        <y:ShapeNode>
           <y:Geometry height="44.0" width="273.421875" x="955.4606187737943" y="97.60189719937944"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
@@ -212,7 +201,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n18">
+    <node id="n17">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="304.8984375" x="939.7223375237943" y="162.97732823461433"/>
@@ -223,7 +212,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n19">
+    <node id="n18">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="173.1015625" x="448.976556316655" y="173.58973131166636"/>
@@ -234,7 +223,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n20">
+    <node id="n19">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="125.1484375" x="439.3591474808768" y="300.0160475628468"/>
@@ -245,7 +234,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n21" yfiles.foldertype="group">
+    <node id="n20" yfiles.foldertype="group">
       <data key="d4" xml:space="preserve"/>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
@@ -275,8 +264,8 @@
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n21:">
-        <node id="n21::n0">
+      <graph edgedefault="directed" id="n20:">
+        <node id="n20::n0">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="22.2421875" width="487.8203125" x="332.4015385669459" y="-421.3455149381084"/>
@@ -293,7 +282,7 @@ rdfs:           http://www.w3.org/2000/01/rdf-schema#</y:NodeLabel>
         </node>
       </graph>
     </node>
-    <node id="n22">
+    <node id="n21">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="209.8671875" x="394.4235491071428" y="-190.68771410789418"/>
@@ -304,7 +293,7 @@ rdfs:           http://www.w3.org/2000/01/rdf-schema#</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n23">
+    <node id="n22">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="126.703125" x="436.00558035714266" y="-285.6904426480013"/>
@@ -525,17 +514,6 @@ rdfs:           http://www.w3.org/2000/01/rdf-schema#</y:NodeLabel>
     <edge id="e17" source="n16" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="-137.21773116472252" sy="0.6229310238582002" tx="125.99599912591418" ty="11.322692696694276"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="127.03125" x="-164.86899425550837" xml:space="preserve" y="-11.711585811462783">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e18" source="n17" target="n2">
-      <data key="d10">
-        <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="116.35798847627336" ty="22.009326896087117">
             <y:Point x="727.3886292383374" y="119.60189719937944"/>
           </y:Path>
@@ -546,7 +524,7 @@ rdfs:           http://www.w3.org/2000/01/rdf-schema#</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e19" source="n18" target="n2">
+    <edge id="e18" source="n17" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="77.04572645935639" ty="3.7733542747614592">
@@ -559,7 +537,7 @@ rdfs:           http://www.w3.org/2000/01/rdf-schema#</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e20" source="n2" target="n19">
+    <edge id="e19" source="n2" target="n18">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-54.962832200585694" sy="6.65416172819161" tx="20.54047099482341" ty="-21.99607528895615"/>
@@ -570,7 +548,7 @@ rdfs:           http://www.w3.org/2000/01/rdf-schema#</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e21" source="n19" target="n20">
+    <edge id="e20" source="n18" target="n19">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-33.59397133577818" sy="6.705914943119126" tx="0.0" ty="0.0"/>
@@ -581,7 +559,7 @@ rdfs:           http://www.w3.org/2000/01/rdf-schema#</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e22" source="n2" target="n22">
+    <edge id="e21" source="n2" target="n21">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-111.6734979049213" sy="-21.99893106518511" tx="0.0" ty="0.0"/>
@@ -592,7 +570,7 @@ rdfs:           http://www.w3.org/2000/01/rdf-schema#</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e23" source="n23" target="n22">
+    <edge id="e22" source="n22" target="n21">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
