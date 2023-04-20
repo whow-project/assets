@@ -252,7 +252,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/italia/env/onto/too/Value"
+      "@id" : "https://w3id.org/italia/env/onto/top/Value"
     }, {
       "@id" : "https://w3id.org/whow/onto/water-monitoring/Range"
     } ]
@@ -264,22 +264,22 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/ispra-mf/FeatureOfInterest",
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/ispra-mf/MonitoringFacility",
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/ispra-mf/Observation",
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/ispra-mf/ObservationParameter",
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/ispra-mf/ObservationValue",
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/italia/env/onto/ispra-mf/hasFeatureOfInterest",
+  "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/place/Municipality",
@@ -293,15 +293,6 @@
 }, {
   "@id" : "https://w3id.org/italia/env/onto/place/hasProvince",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://w3id.org/italia/env/onto/too/Characteristic",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/italia/env/onto/too/Concept",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/italia/env/onto/too/Value",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/italia/env/onto/top/Entity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -446,6 +437,8 @@
     "@value" : "Observation Value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationValue"
+  }, {
     "@id" : "_:genid7"
   } ]
 }, {
@@ -480,7 +473,7 @@
     "@value" : "Range (of Values)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/too/Characteristic"
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
   } ]
 }, {
   "@id" : "https://w3id.org/whow/onto/water-monitoring/SamplingPoint",
@@ -668,7 +661,7 @@
     "@value" : "Water Observable Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/ispra-mf/ObservationParameter"
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter"
   }, {
     "@id" : "_:genid17"
   } ]
@@ -708,9 +701,9 @@
     "@value" : "Water Observable Property Object Type "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/too/Characteristic"
+    "@id" : "https://w3id.org/italia/env/onto/top/Characteristic"
   }, {
-    "@id" : "https://w3id.org/italia/env/onto/too/Concept"
+    "@id" : "https://w3id.org/italia/env/onto/top/Concept"
   } ]
 }, {
   "@id" : "https://w3id.org/whow/onto/water-monitoring/WaterObservation",
@@ -727,7 +720,7 @@
     "@value" : "Water Observation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/ispra-mf/Observation"
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Observation"
   }, {
     "@id" : "_:genid19"
   }, {
@@ -823,7 +816,7 @@
     "@value" : "Water Sampler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/ispra-mf/MonitoringFacility"
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"
   }, {
     "@id" : "_:genid33"
   }, {
@@ -885,7 +878,7 @@
     "@value" : "has depth"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/too/Value"
+    "@id" : "https://w3id.org/italia/env/onto/top/Value"
   } ]
 }, {
   "@id" : "https://w3id.org/whow/onto/water-monitoring/hasObservationSample",
@@ -955,7 +948,7 @@
     "@id" : "https://w3id.org/whow/onto/hydrography/WaterFeature"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/ispra-mf/hasFeatureOfInterest"
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
