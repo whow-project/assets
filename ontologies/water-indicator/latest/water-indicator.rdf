@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/whow/onto/water-indicator#"
+     xml:base="https://w3id.org/whow/onto/water-indicator"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/whow/onto/water-indicator">
+        <owl:versionIRI rdf:resource="https://w3id.org/whow/onto/water-indicator/0.2"/>
+        <owl:imports rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/water-indicator.png"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-indicator"/>
+        <rdfs:label xml:lang="en">Water Indicator Ontology</rdfs:label>
+        <owl:versionInfo xml:lang="en">version 0.2 - overall revision of the ontology</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/onto/Indicator/forIndicator -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/Indicator/forIndicator"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/Indicator/isIndicatorCalculationOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/Indicator/isIndicatorCalculationOf"/>
+    
+
+
+    <!-- https://w3id.org/iwhow/onto/water-indicator/isWaterIndicatorCalculationOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/iwhow/onto/water-indicator/isWaterIndicatorCalculationOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/Indicator/isIndicatorCalculationOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicatorCalculation"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
+        <rdfs:comment rdf:resource="https://w3id.org/whow/onto/water-indicator"/>
+        <rdfs:comment xml:lang="en">Property used to indicate the water body for which the indicator is calculated.</rdfs:comment>
+        <rdfs:label xml:lang="en">is water indicator calculation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/water-indicator/forWaterIndicator -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-indicator/forWaterIndicator">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/Indicator/forIndicator"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/whow/onto/water-indicator/isWaterIndicatorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicatorCalculation"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicator"/>
+        <rdfs:comment rdf:resource="https://w3id.org/whow/onto/water-indicator"/>
+        <rdfs:comment xml:lang="en">Property that allows one to specify the indicator that is being calculated.</rdfs:comment>
+        <rdfs:label xml:lang="en">for water indicator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/water-indicator/hasWaterIndicatorParameter -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-indicator/hasWaterIndicatorParameter">
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicator"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicatorParameter"/>
+        <rdfs:comment rdf:resource="https://w3id.org/whow/onto/water-indicator"/>
+        <rdfs:comment xml:lang="en">Property used to specify a characteristic for the a water indicator</rdfs:comment>
+        <rdfs:label xml:lang="en">has water indicator parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/water-indicator/isWaterIndicatorOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-indicator/isWaterIndicatorOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicator"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicatorCalculation"/>
+        <rdfs:comment xml:lang="en">Inverse property of for water indicator that links the water indicator to its calculation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-indicator"/>
+        <rdfs:label xml:lang="en">is water indicator of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/water-indicator/parametrizes -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-indicator/parametrizes">
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicatorParameter"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Value"/>
+        <rdfs:comment rdf:resource="https://w3id.org/whow/onto/water-indicator"/>
+        <rdfs:comment xml:lang="en">Property used to link a water indicator parameter to the values it parametrizes.</rdfs:comment>
+        <rdfs:label xml:lang="en">parametrizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/onto/Indicator/Indicator -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/Indicator/Indicator"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/Indicator/IndicatorCalculation -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/Indicator/IndicatorCalculation"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/Indicator/Parameter -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/Indicator/Parameter"/>
+    
+
+
+    <!-- https://w3id.org/whow/onto/water-indicator/WaterIndicator -->
+
+    <owl:Class rdf:about="https://w3id.org/whow/onto/water-indicator/WaterIndicator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/Indicator/Indicator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-indicator/hasWaterIndicatorParameter"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicatorParameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-indicator/isWaterIndicatorOf"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicatorCalculation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class of the different types of indicator defined for calculate the quality of the water. Examples are LTLeco, LIMeco, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-indicator"/>
+        <rdfs:label xml:lang="en">Water Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/whow/onto/water-indicator/WaterIndicatorCalculation -->
+
+    <owl:Class rdf:about="https://w3id.org/whow/onto/water-indicator/WaterIndicatorCalculation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/Indicator"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/Indicator/IndicatorCalculation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/hasValue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/top/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/iwhow/onto/water-indicator/isWaterIndicatorCalculationOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/hasValue"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/top/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/iwhow/onto/water-indicator/isWaterIndicatorCalculationOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-indicator/forWaterIndicator"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/whow/onto/water-indicator/WaterIndicator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class represents the situation of computing an indicator related to the quality of the water. It allows to represent the value of the calculation in a certain time period for an indicator.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-indicator"/>
+        <rdfs:label xml:lang="en">Water Indicator Calculation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/whow/onto/water-indicator/WaterIndicatorParameter -->
+
+    <owl:Class rdf:about="https://w3id.org/whow/onto/water-indicator/WaterIndicatorParameter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Parameter"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/Indicator/Parameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-indicator/parametrizes"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/env/onto/top/Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This class represents a specific parameter of the water indicator used when degrees of values are to be indicated. An example can be the case of an indicator that can be good, sufficient or insufficient according to range of values.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-indicator"/>
+        <rdfs:label xml:lang="en">Water Indicator Parameter</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
