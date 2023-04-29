@@ -259,7 +259,7 @@
               <y:DropShadow color="#D2D2D2" offsetX="4" offsetY="4"/>
               <y:State closed="false" closedHeight="74.509765625" closedWidth="387.8295898437501" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="5" leftF="5.0625" right="6" rightF="6.2358992061635945" top="0" topF="0.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="1" rightF="1.1733992061635945" top="0" topF="0.0"/>
             </y:GroupNode>
             <y:GroupNode>
               <y:Geometry height="50.0" width="50.0" x="246.99999999999966" y="145.83333333333667"/>
@@ -279,16 +279,16 @@
         <node id="n21::n0">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="22.2421875" width="511.1796875" x="191.92858942972342" y="-30.899964483118424"/>
+              <y:Geometry height="22.2421875" width="521.3046875" x="186.86608942972342" y="-30.899964483118424"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="135.90625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="501.1796875" x="5.0" xml:space="preserve" y="-56.83203125">:                  https://w3id.org/whow/onto/weather-monitoring/
-ispra-emf:  https://w3id.org/italia/env/onto/inspire-mf/
-ispra-top:  https://w3id.org/italia/env/onto/inspire-top/
-ispra-plc    https://w3id.org/italia/env/onto/place/
-rdfs:            http://www.w3.org/2000/01/rdf-schema#
-rdf:              http://www.w3.org/1999/02/22-rdf-syntax-ns#
-ti:                 https://w3id.org/italia/onto/TI/</y:NodeLabel>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="135.90625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="511.3046875" x="5.0" xml:space="preserve" y="-56.83203125">:                    https://w3id.org/whow/onto/weather-monitoring/
+ispra-emf:     https://w3id.org/italia/env/onto/inspire-mf/
+ispra-top:      https://w3id.org/italia/env/onto/top/
+ispra-plc        https://w3id.org/italia/env/onto/place/
+rdfs:               http://www.w3.org/2000/01/rdf-schema#
+rdf:                 http://www.w3.org/1999/02/22-rdf-syntax-ns#
+ti:                   https://w3id.org/italia/onto/TI/</y:NodeLabel>
               <y:Shape type="rectangle"/>
             </y:ShapeNode>
           </data>
