@@ -18,7 +18,7 @@ The Hydrography ontological module represents a taxonomy of water bodies and the
 The Water monitoring ontological module is an extension of the SOSA/SSN ontology and of the ISPRA ontology INSPIRE-MF for the water domain. It contributes to represent the monitoring of the various types of waters and to capture the different parameters that characterise the quality of the water, according to the different related European Directives. The ontology uses the Hydrography module above in order to model the Water Feature being observed.
 
 ### [Water indicator ontology](https://w3id.org/whow/onto/water-indicator)
-[Graphical representation of the water indicator ontology](https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/water-indicator.png)
+![Graphical representation of the water indicator ontology](https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/water-indicator.png)
 
 The Water indicator ontological module is an extension of the Italian ontology on Indicator and it is used to represent a set of indicators used to measure the quality of different types of water bodies. Examples of indicators are: 1) LTLeco; that is, a descriptor that integrates the values of three parameters: total phosphorus measured at spring circulation, annual mean transparency and hypolimnic oxygen at the end of the period of maximum stratification; 2) LIMeco; that is, a synthetic index describing the quality of stream water with regard to nutrients and oxygenation.
 
