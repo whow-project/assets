@@ -9,7 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/whow/onto/health-monitoring">
-        <owl:versionIRI rdf:resource="urn:absolute:https//w3id.org/whow/onto/health-monitoring/0.2"/>
+        <owl:versionIRI rdf:resource="https//w3id.org/whow/onto/health-monitoring/0.2"/>
         <owl:imports rdf:resource="https://w3id.org/italia/env/onto/top/"/>
         <dc:description rdf:resource="https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/health-monitoring.png"/>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-03</dct:issued>

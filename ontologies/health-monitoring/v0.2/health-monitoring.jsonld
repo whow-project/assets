@@ -804,6 +804,6 @@
     "@id" : "https://w3id.org/italia/env/onto/top/"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "urn:absolute:https//w3id.org/whow/onto/health-monitoring/0.2"
+    "@id" : "https//w3id.org/whow/onto/health-monitoring/0.2"
   } ]
 } ]
