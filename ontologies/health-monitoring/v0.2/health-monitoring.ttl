@@ -1,4 +1,4 @@
-@prefix : <http://www.w3id.com/whow/onto/health-monitoring/> .
+@prefix : <https://w3id.org/whow/onto/health-monitoring/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -9,7 +9,7 @@
 @base <https://w3id.org/whow/onto/health-monitoring> .
 
 <https://w3id.org/whow/onto/health-monitoring> rdf:type owl:Ontology ;
-                                                 owl:versionIRI <urn:absolute:https//w3id.org/whow/onto/health-monitoring/0.2> ;
+                                                 owl:versionIRI <https//w3id.org/whow/onto/health-monitoring/0.2> ;
                                                  owl:imports <https://w3id.org/italia/env/onto/top/> ;
                                                  dct:issued "2022-10-03"^^xsd:date ;
                                                  dct:modified "2023-02-14"^^xsd:date ;
