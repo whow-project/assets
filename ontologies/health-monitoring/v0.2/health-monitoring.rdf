@@ -1,32 +1,23 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/whow/onto/water-monitoring/"
-     xml:base="https://w3id.org/whow/onto/water-monitoring/"
+<rdf:RDF xmlns="http://www.w3id.com/whow/onto/health-monitoring/"
+     xml:base="http://www.w3id.com/whow/onto/health-monitoring/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-    <owl:Ontology rdf:about="https://w3id.org/whow/onto/water-monitoring">
-        <owl:versionIRI rdf:resource="https://w3id.org/whow/onto/water-monitoring/0.4"/>
-        <owl:imports rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/"/>
-        <owl:imports rdf:resource="https://w3id.org/italia/env/onto/place/"/>
-        <owl:imports rdf:resource="https://w3id.org/whow/onto/hydrography"/>
-        <dc:description rdf:resource="https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/water-monitoring.png"/>
-        <dct:description xml:lang="it">L&apos;ontologia utilizzata nel progetto WHOW per rappresentare le osservazioni relative a diversi aspetti dell&apos;acqua: qualità/inquinamento ed elementi fisici.</dct:description>
-        <dct:description xml:lang="en">The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements.</dct:description>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-20</dct:issued>
-        <dct:modified>2023-03-01</dct:modified>
-        <dct:title xml:lang="it">Ontologia del Monitoraggio delle Acque</dct:title>
-        <dct:title xml:lang="en">Water Monitoring Ontology</dct:title>
-        <rdfs:comment xml:lang="it">L&apos;ontologia utilizzata nel progetto WHOW per rappresentare le osservazioni relative a diversi aspetti dell&apos;acqua: qualità/inquinamento ed elementi fisici.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements.</rdfs:comment>
-        <rdfs:label xml:lang="it">Ontologia del Monitoraggio delle Acque</rdfs:label>
-        <rdfs:label xml:lang="en">Water Monitoring Ontology</rdfs:label>
-        <owl:versionInfo xml:lang="en">version 0.4 - added Sampling Point and the related property for linking it to WaterSample</owl:versionInfo>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/whow/onto/health-monitoring">
+        <owl:versionIRI rdf:resource="urn:absolute:https//w3id.org/whow/onto/health-monitoring/0.2"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/env/onto/top/"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/health-monitoring.png"/>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-03</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-14</dct:modified>
+        <dct:title xml:lang="en">Health Care Indicator Monitoring Ontology</dct:title>
+        <dct:title xml:lang="it">Ontologia di Monitoraggio di Indicatori della Salute</dct:title>
+        <rdfs:label xml:lang="en">Health Care Indicator Monitoring Ontology</rdfs:label>
+        <rdfs:label xml:lang="it">Ontologia di Monitoraggio di Indicatori della Salute</rdfs:label>
     </owl:Ontology>
     
 
@@ -42,9 +33,27 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -59,212 +68,138 @@
     
 
 
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest -->
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/affectedBy -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.com/whow/onto/health-monitoring/affectedBy">
+        <rdfs:domain rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/ClinicalCohort"/>
+        <rdfs:range rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/Disease"/>
+        <rdfs:comment xml:lang="en">Property that links the clinical cohort with the disease they are affected by.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che consente di collegare la coorte clinica con la malattia  di cui sono affetti.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="en">affected by</rdfs:label>
+        <rdfs:label xml:lang="it">affetta da</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/italia/env/onto/place/hasMunicipality -->
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/hasCohortCriteriaDescription -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasMunicipality"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.com/whow/onto/health-monitoring/hasCohortCriteriaDescription">
+        <rdfs:domain rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/ClinicalCohort"/>
+        <rdfs:range rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/CohortCriteriaDescription"/>
+        <rdfs:comment xml:lang="en">Property that links the clinical cohort with the description of the criteria that determine the dimension of the cohort.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che lega la coorte clinica con la descrizioni dei criteri che ne determinano la sua dimensione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="it">ha descrizione criteri coorte clinica</rdfs:label>
+        <rdfs:label xml:lang="en">has clinical cohort criteria description</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/italia/env/onto/place/hasProvince -->
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/hasCriterion -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/place/hasProvince"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.com/whow/onto/health-monitoring/hasCriterion">
+        <rdfs:domain rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/CohortCriteriaDescription"/>
+        <rdfs:range rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/Criterion"/>
+        <rdfs:comment xml:lang="en">Property that links the description of the criteria for the dimension of the clinical cohort to each single criterion.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che collega la descrizione dei criteri per la dimensione della coorte clinica a ogni singolo criterio.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="it">ha criterio</rdfs:label>
+        <rdfs:label xml:lang="en">has criterion</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/italia/env/onto/top/associatedWith -->
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/hasHealthcareIndicatorValue -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/associatedWith"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.com/whow/onto/health-monitoring/hasHealthcareIndicatorValue">
+        <rdfs:domain rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/HealthcareIndicatorCalculation"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Value"/>
+        <rdfs:comment xml:lang="en">Property used to link the healthcare indicator calculation with the related value.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per collegare il calcolo dell&apos;indicatore di salute con il relativo valore.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="it">ha valore indicatore di salute</rdfs:label>
+        <rdfs:label xml:lang="en">has healthcare indicator value</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/isResponsibleFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.com/whow/onto/health-monitoring/isResponsibleFor">
+        <rdfs:domain rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/HealthAgency"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Location"/>
+        <rdfs:comment xml:lang="en">Property used to indicate the responsibility of a health organisation with respect to a certain territorial area. The jurisdiction of the health organisation.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per indicare la responsabilità di un&apos;organizzazione sanitaria rispetto a una certa area territoriale. La giurisdizione dell&apos;azienda sanitaria.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="en">is responsible for</rdfs:label>
+        <rdfs:label xml:lang="it">è responsabile di</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/narrower -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.com/whow/onto/health-monitoring/narrower">
+        <rdfs:domain rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/DiseaseType"/>
+        <rdfs:range rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/DiseaseType"/>
+        <rdfs:comment xml:lang="en">Property used to create a taxonomy of different types of diseases.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che consente di modellare una tassonomia di tipi di malattie.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="en">narrower</rdfs:label>
+        <rdfs:label xml:lang="it">sotto insieme</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/ofClinicalCohort -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.com/whow/onto/health-monitoring/ofClinicalCohort">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/HealthcareIndicatorCalculation"/>
+        <rdfs:range rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/ClinicalCohort"/>
+        <rdfs:comment xml:lang="en">Property used to specify the clinical cohort for the healthcare indicator calculation.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per indicare la coorte clinica considerata nel calcolo dell&apos;indicatore di salute.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="it">di coorte clinica</rdfs:label>
+        <rdfs:label xml:lang="en">of clinical cohort</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/subIndicator -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.com/whow/onto/health-monitoring/subIndicator">
+        <rdfs:domain rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/HealthcareIndicatorCalculation"/>
+        <rdfs:range rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/HealthcareIndicatorCalculation"/>
+        <rdfs:comment xml:lang="en">Property used to create a taxonomy of the calculation of healthcare indicators.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà utilizzata per creare tassonomie dei calcoli degli indicatori di salute. Utile quando alcuni calcoli dipendono da altri.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="it">sotto indicatore</rdfs:label>
+        <rdfs:label xml:lang="en">sub indicator</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/italia/env/onto/top/isClassifiedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/hasBiologicalAgent -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasBiologicalAgent">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasWaterObservablePropertyObject"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterBiologicalQualityParameterObservation"/>
-                    <rdf:Description rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterMicrobiologicalParameterObservation"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/BiologicalAgent"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">has biological agent</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/hasChemicalSubstance -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasChemicalSubstance">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasWaterObservablePropertyObject"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterChemicalParameterObservation"/>
-                    <rdf:Description rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterPhysicoChemicalParameterObservation"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/ChemicalSubstance"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">has chemical substance</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/hasDepth -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasDepth">
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSample"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Value"/>
-        <rdfs:comment xml:lang="en">Property used to represent the depth of a water body, typically of a lake.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">has depth</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/hasObservationSample -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasObservationSample">
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSample"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">has observation sample</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/hasRadioactivityObject -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasRadioactivityObject">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasWaterObservablePropertyObject"/>
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterRadioactivityObservation"/>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/RadioactivityObject"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">has radioactivity object</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/hasResult -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasResult">
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/ObservationValue"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">has result</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/hasWaterFeature -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasWaterFeature">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/hasFeatureOfInterest"/>
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">has water feature</rdfs:label>
-        <owl:versionInfo xml:lang="en">we are planning to move it in hydrography ontology</owl:versionInfo>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/hasWaterObservableProperty -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasWaterObservableProperty">
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservableProperty"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">has water observable property</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/hasWaterObservablePropertyObject -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasWaterObservablePropertyObject">
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:seeAlso xml:lang="en">has water observable property object</rdfs:seeAlso>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/isObtainedBy -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/isObtainedBy">
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSample"/>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSampler"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">is obtained by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/isSampleOf -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/isSampleOf">
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSample"/>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">is sample of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/isSamplingPointOfWaterSample -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/isSamplingPointOfWaterSample">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/isTakenAt"/>
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/SamplingPoint"/>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSample"/>
-        <rdfs:comment xml:lang="en">Inverse property of &apos;is taken at&apos; used to link the sampling point to the related water sample collected in that point.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">is sampling point of water sample</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/isTakenAt -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/isTakenAt">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSample"/>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/SamplingPoint"/>
-        <rdfs:comment xml:lang="en">The property is used to link the water sample to the sampling point where it was taken or collected.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">is taken at</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/ofPropertyObject -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/ofPropertyObject">
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservableProperty"/>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">of property object</rdfs:label>
-    </owl:ObjectProperty>
     
 
 
@@ -279,50 +214,18 @@
     
 
 
-    <!-- https://w3id.org/whow/onto/water-monitoring/lowerBound -->
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/totalValue -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/lowerBound">
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/Range"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdfs:comment xml:lang="en">The lower bound in a range of values</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">lower bound</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/lowerBoundIncluded -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/lowerBoundIncluded">
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/Range"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdfs:comment xml:lang="en">The property represents the lower bound in an interval of values that is included in the interval itself</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">lower bound included</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/upperBound -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/upperBound">
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/Range"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdfs:comment xml:lang="en">The upper bound in a range of values</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">upper bound</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/upperBoundIncluded -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/upperBoundIncluded">
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/Range"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdfs:comment xml:lang="en">The property represents the upper bound in an interval of values that is included in the interval itself</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">upper bound included</rdfs:label>
+    <owl:DatatypeProperty rdf:about="http://www.w3id.com/whow/onto/health-monitoring/totalValue">
+        <rdfs:domain rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/Population"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Property that indicates the total popolation of a certain area of reference.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che indica il valore totale della popolazione in una certa area di riferimento.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="en">total value</rdfs:label>
+        <rdfs:label xml:lang="it">valore totale</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
     
 
@@ -338,51 +241,239 @@
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/ClinicalCohort -->
 
-    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/ClinicalCohort">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/Population"/>
+        <rdfs:comment xml:lang="it">L&apos;insieme della sola popolazione clinica (è infatti sotto classe della popolazione generale) che rappresenta la popolazione su cui si calcola l&apos;indicatore di salute.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of the sole clinical cohort (actually a subclass of the general population) on which the health indicator is calculated.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="en">Clinical Cohort</rdfs:label>
+        <rdfs:label xml:lang="it">Coorte Clinica</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
     
 
 
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest -->
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/CohortCriteriaDescription -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/FeatureOfInterest"/>
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/CohortCriteriaDescription">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Description"/>
+        <rdfs:comment xml:lang="it">La classe rappresenta una reificazione e implementa il design pattern dell&apos;ontologia Description. Grazie a questo pattern è possibile descrivere  la dimensione della coorte clinica sulla base di criteri, non sempre noti a priori, e dei relativi valori.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class represents a reification and implements the ontology design pattern named Description. With this pattern it is possible to describe the dimension of the clinical cohort on the basis of criteria, not always known a priori, and their values,</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="en">Cohort Criteria Description</rdfs:label>
+        <rdfs:label xml:lang="it">Descrizione dei Criteri per Dimensione Popolazione Clinica</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
     
 
 
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility -->
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/Criterion -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"/>
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/Criterion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Characteristic"/>
+        <rdfs:comment xml:lang="it">La classe che rappresenta criteri. Nello specifico contesto di questa ontologia sono i criteri attraverso cui viene descritta la dimensione della popolazione clinica che concorre al calcolo dell&apos;indicatore di salute. Esempi di criteri includono: età. sesso, anno di inizio sintomi per una malattia infettiva, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class representing criteria. In the specific context of this ontology, these are the criteria by which the  dimension of the clinical population contributing to the calculation of the health indicator is described. Examples of criteria include: age. gender, year of start of symptoms for an infectious disease, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="it">Criterio</rdfs:label>
+        <rdfs:label xml:lang="en">Criterion</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
     
 
 
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/Observation -->
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/Disease -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/Observation"/>
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/Disease">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">La classe che rappresenta una malattia (e.g., COVID-19)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class that represents the disease (e.g., COVID-19).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="en">Disease</rdfs:label>
+        <rdfs:label xml:lang="it">Malattia</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
     
 
 
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter -->
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/DiseaseType -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter"/>
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/DiseaseType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Concept"/>
+        <rdfs:comment xml:lang="it">La classe dei tipi di malattia.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of the types of diseases</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="en">Disease Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Malattia</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
     
 
 
-    <!-- https://w3id.org/italia/env/onto/inspire-mf/ObservationValue -->
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/DrugDistributionIndicatorCalculation -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/ObservationValue"/>
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/DrugDistributionIndicatorCalculation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/HealthcareIndicatorCalculation"/>
+        <rdfs:comment xml:lang="it">La classe del calcolo dell&apos;indicatore relativo alla distribuzione dei farmaci. Questa classe è equivalente al &apos;calcolo dell&apos;indicatore di salute quando l&apos;indicatore sanitario è  &apos;distribuzione farmaci&apos;.&apos;</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of the drug distribution indicator calculation. This class is equivalent to the &apos;health indicator calculation when the health indicator is &apos;drug distribution&apos;.&apos;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="it">Calcolo dell&apos;Indicatore Distribuzione Farmaci</rdfs:label>
+        <rdfs:label xml:lang="en">Drug Distribution Indicator Calculation</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
     
 
 
-    <!-- https://w3id.org/italia/env/onto/place/Municipality -->
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/HealthAgency -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Municipality"/>
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/HealthAgency">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Organisation"/>
+        <rdfs:comment xml:lang="it">La classe delle organizzazioni specifiche che si occupano di assistenza sanitaria (nel caso di Regione Lombardia sono le ATS).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of specific organisations operating in the health care sector.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="it">Agenzia Sanitaria</rdfs:label>
+        <rdfs:label xml:lang="en">Health Agency</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
     
 
 
-    <!-- https://w3id.org/italia/env/onto/place/Province -->
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/HealthCareIndicator -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/env/onto/place/Province"/>
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/HealthCareIndicator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/IndicatorType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe degli indicatori di salute. Utilizzata per poter creare un vocabolario controllato di indicatori in questo settore applicativo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of the health care indicator. It is used to create a controlled list of possible indicators to be used in the health sector.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="en">Health Care Indicator</rdfs:label>
+        <rdfs:label xml:lang="it">Indicatore di Salute</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/HealthConditionIndicatorCalculation -->
+
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/HealthConditionIndicatorCalculation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/HealthcareIndicatorCalculation"/>
+        <rdfs:comment xml:lang="it">La classe del calcolo dell&apos;indicatore relativo alle condizioni generali di salute della popolazione. Questa classe è equivalente al &apos;calcolo dell&apos;indicatore di salute quando l&apos;indicatore sanitario è  &apos;condizioni di salute generali&apos;.&apos;</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of the indicator calculation related to the general health condition of the population. This class is equivalent to the &apos;health indicator calculation when the health indicator is &apos;general health conditions&apos;.&apos;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="it">Calcolo dell&apos;Indicatore Condizioni di Salute Generali</rdfs:label>
+        <rdfs:label xml:lang="en">Health Condition Indicator Calculation</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/HealthcareIndicatorCalculation -->
+
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/HealthcareIndicatorCalculation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Eventuality"/>
+        <rdfs:comment xml:lang="it">La classe che rappresenta il calcolo dell&apos;indicatore di salute e che quindi mette insieme l&apos;indicatore che viene calcolato, il valore risultante dal calcolo, la coorte clinica utilizzata in base a determinati criteri di suddivisione della popolazione e l&apos;area territoriale di pertinenza.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class that represents the calculation of the health care indicator and thus brings together the indicator being calculated, the value resulting from the calculation, the clinical cohort used according to certain population breakdown criteria and the relevant territorial area.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="it">Calcolo dell&apos;Indicatore di Salute</rdfs:label>
+        <rdfs:label xml:lang="en">Healthcare Indicator Calculation</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/HospitalCareIndicatorCalculation -->
+
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/HospitalCareIndicatorCalculation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/HealthcareIndicatorCalculation"/>
+        <rdfs:comment xml:lang="it">La classe del calcolo dell&apos;indicatore relativo all&apos;assistenza ospedaliera. Questa classe è equivalente al &apos;calcolo dell&apos;indicatore di salute quando l&apos;indicatore sanitario è  &apos;assistenza ospedaliera&apos;.&apos;</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of the hospital care indicator calculation. This class is equivalent to the &apos;health indicator calculation when the health indicator is &apos;hospital care&apos;.&apos;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="it">Calcolo Indicatore Assistenza Ospedaliera</rdfs:label>
+        <rdfs:label xml:lang="en">Hospital Care Indicator Calculation</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/IndicatorType -->
+
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/IndicatorType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Concept"/>
+        <rdfs:comment xml:lang="it">La classe dei diversi tipi di indicatori. Tipicamente nel settore sanitario, i tipi di indicatori sono: indicatore di processo, indicatore di risultato, indicatore di struttura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of the different types of indicators. Typically in the health care sector, types of indicators are: process indicator, outcome indicator, structure indicator.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="en">Indicator Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Indicatore</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/InfectiousDiseaseIndicatorCalculation -->
+
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/InfectiousDiseaseIndicatorCalculation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.com/whow/onto/health-monitoring/HealthcareIndicatorCalculation"/>
+        <rdfs:comment xml:lang="en">La classe del calcolo dell&apos;indicatore relativo alla distribuzione delle malattie infettive. Questa classe è equivalente al &apos;calcolo dell&apos;indicatore di salute quando l&apos;indicatore sanitario è  &apos;diffusione delle malattie infettive&apos;.&apos;</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of the specific calculation related to infectious diseases distribution. This class is equivalent to the Healthcare Indicator Calculation when the Healthcare Indicator is diffusion of infectious diseases.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="it">Calcolo dell&apos;Indicatore Malattie Infettive</rdfs:label>
+        <rdfs:label xml:lang="en">Infectious Disease Indicator Calculation</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.com/whow/onto/health-monitoring/Population -->
+
+    <owl:Class rdf:about="http://www.w3id.com/whow/onto/health-monitoring/Population">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
+        <rdfs:comment xml:lang="it">La classe che rappresenta la popolazione (di una regione in questa ontologia) totale, utilizzata nel calcolo degli indicatori di salute.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class of the entire popolation considered when computing specific healthcare indicator calculation operations</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
+        <rdfs:label xml:lang="it">Popolazione</rdfs:label>
+        <rdfs:label xml:lang="en">Population</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Characteristic -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Characteristic"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Concept -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Concept"/>
+    
+
+
+    <!-- https://w3id.org/italia/env/onto/top/Description -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Description"/>
     
 
 
@@ -392,424 +483,27 @@
     
 
 
+    <!-- https://w3id.org/italia/env/onto/top/Eventuality -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Eventuality"/>
+    
+
+
     <!-- https://w3id.org/italia/env/onto/top/Location -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Location"/>
     
 
 
-    <!-- https://w3id.org/whow/onto/water-monitoring/BiologicalAgent -->
+    <!-- https://w3id.org/italia/env/onto/top/Organisation -->
 
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/BiologicalAgent">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring/ChemicalSubstance"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring/RadioactivityObject"/>
-        <rdfs:comment xml:lang="en">This class represents all the biological and microbiological agents that are available in the water be it surface and groundwater or drinking water (e.g., phytoplankton, macrophytes, phytobenthos, benthic invertebrate fauna and fish, bacteria such as coliforms).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Biological Agent</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Organisation"/>
     
 
 
-    <!-- https://w3id.org/whow/onto/water-monitoring/ChemicalSubstance -->
+    <!-- https://w3id.org/italia/env/onto/top/Value -->
 
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/ChemicalSubstance">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring/RadioactivityObject"/>
-        <rdfs:comment xml:lang="en">This class represents the chemical substances. A controlled vocabulary can be constructed for this class based on the CAS numbering of the chemical substances.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Chemical Substance</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/DrinkingWaterObservation -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/DrinkingWaterObservation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring/SurfaceOrGroundwaterObservation"/>
-        <rdfs:comment xml:lang="en">The class of observations of water intended for human consumption.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Drinking Water Observation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/ObservationValue -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/ObservationValue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/ObservationValue"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/italia/env/onto/top/Value"/>
-                    <rdf:Description rdf:about="https://w3id.org/whow/onto/water-monitoring/Range"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The result of an observation. It is a value  or a range of values which is charaterised by the value(s) ifself(themselves) and , when applicable, by a unit of measure.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Observation Value</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/RadioactivityObject -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/RadioactivityObject">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject"/>
-        <rdfs:comment xml:lang="en">This class represents the radioactivity object. Examples are randon 22, nuclide, etc.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Radioactivity Object</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/Range -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/Range">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Characteristic"/>
-        <rdfs:comment xml:lang="en">The class of value intervals. Examples: the value of the observation of the concentration of copepr is &lt;10, meaning between 0 and 10, etc.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Range (of Values)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/SamplingPoint -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/SamplingPoint">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/inspire-emf/FeatureOfInterest"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Location"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/isSamplingPointOfWaterSample"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSample"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The point, also considered as a location (address), where the water sample is taken or collected.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Sampling Point</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/SurfaceOrGroundwaterObservation -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/SurfaceOrGroundwaterObservation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
-        <rdfs:comment xml:lang="en">The class of observations of surface and ground waters.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Surface or Groundwater Observation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterBiologicalQualityParameterObservation -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterBiologicalQualityParameterObservation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/SurfaceOrGroundwaterObservation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasBiologicalAgent"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/BiologicalAgent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasBiologicalAgent"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/BiologicalAgent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterHydromorphologicalParameterObservation"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterPhysicoChemicalParameterObservation"/>
-        <rdfs:comment xml:lang="en">Observation of biological quality elements parameters according to the European Environmental Agency (EEA): phytoplankton, macrophytes, phytobenthos, benthic invertebrate fauna and fish. The most frequently classified biological  quality elements are, for rivers, benthic invertebrates, phytobenthos/other aquatic flora/macrophytes and fish; for lakes, phytoplankton; and for transitional and coastal waters, phytoplankton and benthic invertebrates. (2018)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Biological Quality Parameter/Element Observation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterChemicalParameterObservation -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterChemicalParameterObservation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/DrinkingWaterObservation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasChemicalSubstance"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/ChemicalSubstance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasChemicalSubstance"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/ChemicalSubstance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterIndicatorParameterObservation"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterMicrobiologicalParameterObservation"/>
-        <rdfs:comment xml:lang="en">The class of all the observations of chemcal paraemeters of the water. Examples include the observations of the nickel, selenium, etc.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Chemical Parameter Observation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterEmergingParametersObservation -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterEmergingParametersObservation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/DrinkingWaterObservation"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterMicrobiologicalParameterObservation"/>
-        <rdfs:comment xml:lang="en">The class of all the observations of emerging paraemeters of the water. They are called emerging because of their interest in recent years.  Examples include the observations of the Thallium, perfluoroalkyl substances etc.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Emerging Parameter Observation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterHydromorphologicalParameterObservation -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterHydromorphologicalParameterObservation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/SurfaceOrGroundwaterObservation"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterPhysicoChemicalParameterObservation"/>
-        <rdfs:comment xml:lang="en">Observation of hydromorphological elements according to the European Environmental Agency (EEA): hydrology, morphology, barriers. (2018)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Hydromorphological Parameter Observation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterIndicatorParameterObservation -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterIndicatorParameterObservation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/DrinkingWaterObservation"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterMicrobiologicalParameterObservation"/>
-        <rdfs:comment xml:lang="en">The class of all the observations of indicator paraemeters of the water. Examples include the observations of the colour, taste, conductivity, etc.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Indicator Parameter Observation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterMicrobiologicalParameterObservation -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterMicrobiologicalParameterObservation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/DrinkingWaterObservation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasBiologicalAgent"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/BiologicalAgent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasBiologicalAgent"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/BiologicalAgent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The class of all the observations of microbiological paraemeters of the water. Examples include the observations of the Escherichia coli, etc.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Microbiological Parameter Observation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterObservableProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterObservableProperty">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/ObservationParameter"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/ofPropertyObject"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">An observable quality (parameter, characteristic) of the observation for a feature of interest.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Observable Property</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Entity"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObjectType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The specific object of the property observed. Examples are: biological agents, chemical substances, and radioactivity objects</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Observable Property Object</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObjectType -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObjectType">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Characteristic"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/top/Concept"/>
-        <rdfs:comment xml:lang="en">The type of the object of the water property observed.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Observable Property Object Type </rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterObservation -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterObservation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/Observation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasResult"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/ObservationValue"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasWaterObservableProperty"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservableProperty"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasObservationSample"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSample"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasResult"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/ObservationValue"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasWaterObservableProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservableProperty"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasWaterObservablePropertyObject"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A specific observation regarding water be it drinking water or surface or graoudwater.  It can be an observation related to quality parameters (e.g., the concentration of a specific chemical substance) or physical parameters (e.g., the level of water in a river) or the concentration of radioactivity that may apply for both drinking and surface/ground waters</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Observation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterPhysicoChemicalParameterObservation -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterPhysicoChemicalParameterObservation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/SurfaceOrGroundwaterObservation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasChemicalSubstance"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/ChemicalSubstance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasChemicalSubstance"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/ChemicalSubstance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Observation of physico-chemical elements according to the European Environmental Agency (EEA):  nutrients, organic pollution, acidification. (2018)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Physico-Chemical Parameter Observation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterRadioactivityObservation -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterRadioactivityObservation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasRadioactivityObject"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/RadioactivityObject"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/hasRadioactivityObject"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/RadioactivityObject"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The class of observations related to the level of radioactivity.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Radioactivity Observation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterSample -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterSample">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/isObtainedBy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSampler"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/isSampleOf"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/isObtainedBy"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterSampler"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/isTakenAt"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/whow/onto/water-monitoring/SamplingPoint"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A specific water feature which is intended to be representative of a FeatureOfInterest on which water observations may be made. They are used in situations where observations cannot be made directly on the ultimate feature of interest, either because the entire feature cannot be observed, or because it is more convenient to use a proxy</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Sample</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/WaterSampler -->
-
-    <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterSampler">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasMunicipality"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Municipality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasProvince"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/env/onto/place/Province"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Any device or monitoring object that is used to obtain a water sample.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">Water Sampler</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Value"/>
 </rdf:RDF>
 
 
