@@ -1,0 +1,363 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix clvapit: <https://w3id.org/italia/onto/CLV/> .
+@prefix crml: <http://w3id.org/stlab/crml#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+@prefix hm: <https://w3id.org/whow/onto/health-monitoring/> .
+@prefix idlab-fn: <http://example.com/idlab/function/> .
+@prefix ispra-top: <https:/w3id.org/italia/env/onto/top/> .
+@prefix l0: <https://w3id.org/italia/onto/l0/> .
+@prefix ndc: <http://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases> a dcatapit:Dataset, skos:ConceptScheme,
+    adms:Asset, dcat:Dataset;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
+  dct:creator <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab>;
+  dct:description "Questo è il vocabolario controllato delle malattie (infettive) utilizzato nel contesto del progetto WHOW - Water Health Open Knowledge per modellare i dati sulla distribuzione delle malattie (infettive)"@it,
+    "This is the controlled vocabulary on (infectious) diseases used in the context of the WHOW - Water Health Open Knowledge project to model the rates of the (infectious) diseases"@en;
+  dct:identifier "https://w3id.org/whow/controlled-vocabulary/diseases";
+  dct:issued "2023-05-04"^^xsd:date;
+  dct:language <http://publications.europa.eu/resource/authority/language/ENG>, <http://publications.europa.eu/resource/authority/language/ITA>;
+  dct:modified "2023-05-04"^^xsd:date;
+  dct:publisher <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab>;
+  dct:rightsHolder <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab>;
+  dct:title "Controlled Vocabulary on (infectious) diseases"@en, "Vocabolario controllato delle malattie (infettive)"@it;
+  dct:type <http://purl.org/adms/assettype/Taxonomy>;
+  xkos:numberOfLevels "2";
+  ndc:keyConcept "diseases";
+  rdfs:comment "Questo è il vocabolario controllato delle malattie (infettive) utilizzato nel contesto del progetto WHOW - Water Health Open Knowledge per modellare i dati sulla distribuzione delle malattie (infettive)"@it,
+    "This is the controlled vocabulary on (infectious) diseases used in the context of the WHOW - Water Health Open Knowledge project to model the rates of the (infectious) diseases"@en;
+  rdfs:label "Controlled Vocabulary on (infectious) diseases"@en, "Vocabolario controllato delle malattie (infettive)"@it;
+  owl:versionInfo "Versione 0.1"@it;
+  skos:hasTopConcept <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS>;
+  dcat:distribution <https://w3id.org/whow/data/distribution/d-RDF-TURTLE>;
+  dcat:keyword "diseases"@en, "malattia"@it, "malattie"@it, "malattie infettive"@it;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL> .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>
+  a skos:Concept, hm:DiseaseType;
+  rdfs:label "MALATTIE ESANTEMICHE INFANTILI"@it;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:narrower <https://w3id.org/whow/controlled-vocabulary/diseases/mononucleosi-infettiva>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/morbillo>, <https://w3id.org/whow/controlled-vocabulary/diseases/parotite-epidemica>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/pertosse>, <https://w3id.org/whow/controlled-vocabulary/diseases/rosolia>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/scarlattina>, <https://w3id.org/whow/controlled-vocabulary/diseases/varicella>;
+  skos:prefLabel "MALATTIE ESANTEMICHE INFANTILI"@it;
+  clvapit:hasRankOrder "1";
+  l0:name "MALATTIE ESANTEMICHE INFANTILI"@it;
+  hm:narrower <https://w3id.org/whow/controlled-vocabulary/diseases/mononucleosi-infettiva>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/morbillo>, <https://w3id.org/whow/controlled-vocabulary/diseases/parotite-epidemica>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/pertosse>, <https://w3id.org/whow/controlled-vocabulary/diseases/rosolia>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/scarlattina>, <https://w3id.org/whow/controlled-vocabulary/diseases/varicella>;
+  ispra-top:name "MALATTIE ESANTEMICHE INFANTILI"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>
+  a skos:Concept, hm:DiseaseType;
+  rdfs:label "MALATTIE ESANTEMATICHE INFANTILI"@it;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:narrower <https://w3id.org/whow/controlled-vocabulary/diseases/mononucleosi-infettiva>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/morbillo>, <https://w3id.org/whow/controlled-vocabulary/diseases/parotite-epidemica>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/pertosse>, <https://w3id.org/whow/controlled-vocabulary/diseases/rosolia>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/scarlattina>, <https://w3id.org/whow/controlled-vocabulary/diseases/varicella>;
+  skos:prefLabel "MALATTIE ESANTEMATICHE INFANTILI"@it;
+  clvapit:hasRankOrder "1";
+  l0:name "MALATTIE ESANTEMATICHE INFANTILI"@it;
+  hm:narrower <https://w3id.org/whow/controlled-vocabulary/diseases/mononucleosi-infettiva>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/morbillo>, <https://w3id.org/whow/controlled-vocabulary/diseases/parotite-epidemica>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/pertosse>, <https://w3id.org/whow/controlled-vocabulary/diseases/rosolia>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/scarlattina>, <https://w3id.org/whow/controlled-vocabulary/diseases/varicella>;
+  ispra-top:name "MALATTIE ESANTEMATICHE INFANTILI"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/diarrea-infettiva> a skos:Concept,
+    hm:Disease;
+  rdfs:label "La malattia DIARREA INFETTIVA"@it;
+  owl:sameAs <http://snomed.info/id/19213003>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "DIARREA INFETTIVA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "DIARREA INFETTIVA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
+  ispra-top:name "DIARREA INFETTIVA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>
+  a skos:Concept, hm:DiseaseType;
+  rdfs:label "MALATTIE GASTROINTESTINALI/A TRASMISSIONE ALIMENTARE"@it;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:narrower <https://w3id.org/whow/controlled-vocabulary/diseases/diarrea-infettiva>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-a>, <https://w3id.org/whow/controlled-vocabulary/diseases/giardiasi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/listeriosi>, <https://w3id.org/whow/controlled-vocabulary/diseases/salmonellosi-non-tifoidee>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/shigellosi>;
+  skos:prefLabel "MALATTIE GASTROINTESTINALI/A TRASMISSIONE ALIMENTARE"@it;
+  clvapit:hasRankOrder "1";
+  l0:name "MALATTIE GASTROINTESTINALI/A TRASMISSIONE ALIMENTARE"@it;
+  hm:narrower <https://w3id.org/whow/controlled-vocabulary/diseases/diarrea-infettiva>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-a>, <https://w3id.org/whow/controlled-vocabulary/diseases/giardiasi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/listeriosi>, <https://w3id.org/whow/controlled-vocabulary/diseases/salmonellosi-non-tifoidee>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/shigellosi>;
+  ispra-top:name "MALATTIE GASTROINTESTINALI/A TRASMISSIONE ALIMENTARE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/epatite-a> a skos:Concept, hm:Disease;
+  rdfs:label "La malattia EPATITE A"@it;
+  owl:sameAs <http://snomed.info/id/40468003>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "EPATITE A"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "EPATITE A"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
+  ispra-top:name "EPATITE A"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>
+  a skos:Concept, hm:DiseaseType;
+  rdfs:label "MALATTIE BATTERICHE"@it;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:narrower <https://w3id.org/whow/controlled-vocabulary/diseases/legionellosi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-da-hib>, <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-meningococcica>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-pneumococcica>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/meningiti-batteriche>, <https://w3id.org/whow/controlled-vocabulary/diseases/tubercolosi>;
+  skos:prefLabel "MALATTIE BATTERICHE"@it;
+  clvapit:hasRankOrder "1";
+  l0:name "MALATTIE BATTERICHE"@it;
+  hm:narrower <https://w3id.org/whow/controlled-vocabulary/diseases/legionellosi>, <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-da-hib>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-meningococcica>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-pneumococcica>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/meningiti-batteriche>, <https://w3id.org/whow/controlled-vocabulary/diseases/tubercolosi>;
+  ispra-top:name "MALATTIE BATTERICHE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/giardiasi> a skos:Concept, hm:Disease;
+  rdfs:label "La malattia GIARDIASI"@it;
+  owl:sameAs <http://snomed.info/id/58265007>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "GIARDIASI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "GIARDIASI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
+  ispra-top:name "GIARDIASI"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/legionellosi> a skos:Concept,
+    hm:Disease;
+  rdfs:label "La malattia LEGIONELLOSI"@it;
+  owl:sameAs <http://snomed.info/id/26726000>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "LEGIONELLOSI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "LEGIONELLOSI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
+  ispra-top:name "LEGIONELLOSI"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/listeriosi> a skos:Concept,
+    hm:Disease;
+  rdfs:label "La malattia LISTERIOSI"@it;
+  owl:sameAs <http://snomed.info/id/4241002>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "LISTERIOSI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "LISTERIOSI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
+  ispra-top:name "LISTERIOSI"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-da-hib> a
+    skos:Concept, hm:Disease;
+  rdfs:label "La malattia MALATTIA INVASIVA DA HIB"@it;
+  owl:sameAs <http://snomed.info/id/373035007>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "MALATTIA INVASIVA DA HIB"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "MALATTIA INVASIVA DA HIB"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
+  ispra-top:name "MALATTIA INVASIVA DA HIB"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-meningococcica>
+  a skos:Concept, hm:Disease;
+  rdfs:label "La malattia MALATTIA INVASIVA MENINGOCOCCICA"@it;
+  owl:sameAs <http://snomed.info/id/23511006>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "MALATTIA INVASIVA MENINGOCOCCICA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "MALATTIA INVASIVA MENINGOCOCCICA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
+  ispra-top:name "MALATTIA INVASIVA MENINGOCOCCICA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-pneumococcica>
+  a skos:Concept, hm:Disease;
+  rdfs:label "La malattia MALATTIA INVASIVA PNEUMOCOCCICA"@it;
+  owl:sameAs <http://snomed.info/id/16814004>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "MALATTIA INVASIVA PNEUMOCOCCICA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "MALATTIA INVASIVA PNEUMOCOCCICA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
+  ispra-top:name "MALATTIA INVASIVA PNEUMOCOCCICA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/meningiti-batteriche> a skos:Concept,
+    hm:Disease;
+  rdfs:label "La malattia MENINGITI BATTERICHE"@it;
+  owl:sameAs <http://snomed.info/id/95883001>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "MENINGITI BATTERICHE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "MENINGITI BATTERICHE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
+  ispra-top:name "MENINGITI BATTERICHE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/mononucleosi-infettiva> a skos:Concept,
+    hm:Disease;
+  rdfs:label "La malattia MONONUCLEOSI INFETTIVA"@it;
+  owl:sameAs <http://snomed.info/id/271558008>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "MONONUCLEOSI INFETTIVA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "MONONUCLEOSI INFETTIVA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  ispra-top:name "MONONUCLEOSI INFETTIVA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/morbillo> a skos:Concept, hm:Disease;
+  rdfs:label "La malattia MORBILLO"@it;
+  owl:sameAs <http://snomed.info/id/14189004>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "MORBILLO"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "MORBILLO"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  ispra-top:name "MORBILLO"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/parotite-epidemica> a skos:Concept,
+    hm:Disease;
+  rdfs:label "La malattia PAROTITE EPIDEMICA"@it;
+  owl:sameAs <http://snomed.info/id/240526004>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "PAROTITE EPIDEMICA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "PAROTITE EPIDEMICA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  ispra-top:name "PAROTITE EPIDEMICA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/pertosse> a skos:Concept, hm:Disease;
+  rdfs:label "La malattia PERTOSSE"@it;
+  owl:sameAs <http://snomed.info/id/27836007>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "PERTOSSE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "PERTOSSE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  ispra-top:name "PERTOSSE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/rosolia> a skos:Concept, hm:Disease;
+  rdfs:label "La malattia ROSOLIA"@it;
+  owl:sameAs <http://snomed.info/id/36653000>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "ROSOLIA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "ROSOLIA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  ispra-top:name "ROSOLIA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/salmonellosi-non-tifoidee> a
+    skos:Concept, hm:Disease;
+  rdfs:label "La malattia SALMONELLOSI NON TIFOIDEE"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "SALMONELLOSI NON TIFOIDEE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "SALMONELLOSI NON TIFOIDEE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
+  ispra-top:name "SALMONELLOSI NON TIFOIDEE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/scarlattina> a skos:Concept,
+    hm:Disease;
+  rdfs:label "La malattia SCARLATTINA"@it;
+  owl:sameAs <http://snomed.info/id/30242009>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "SCARLATTINA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "SCARLATTINA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  ispra-top:name "SCARLATTINA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/shigellosi> a skos:Concept,
+    hm:Disease;
+  rdfs:label "La malattia SHIGELLOSI"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "SHIGELLOSI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "SHIGELLOSI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
+  ispra-top:name "SHIGELLOSI"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/tubercolosi> a skos:Concept,
+    hm:Disease;
+  rdfs:label "La malattia TUBERCOLOSI"@it;
+  owl:sameAs <http://snomed.info/id/56717001>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "TUBERCOLOSI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "TUBERCOLOSI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
+  ispra-top:name "TUBERCOLOSI"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/varicella> a skos:Concept, hm:Disease;
+  rdfs:label "La malattia VARICELLA"@it;
+  owl:sameAs <http://snomed.info/id/38907003>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "VARICELLA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "VARICELLA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
+  ispra-top:name "VARICELLA"@it .
+
+<https://w3id.org/whow/data/distribution/d-RDF-TURTLE> a dcatapit:Distribution, dcat:Distribution;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>;
+  dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dct:title "Questa è la distribuzione RDF TURTLE del vocabolario controllato sulle malattie (infettive)"@it,
+    "This is the RDF TURTLE distribution of the controlled vocabulary on the malattie (infettive)"@en;
+  dcat:accessURL <https://github.com/whow-project/datasets/tree/main/RML-RULES/diseases>;
+  dcat:downloadURL <https://raw.githubusercontent.com/whow-project/datasets/main/RML-RULES/diseases/diseases-linking.ttl> .
