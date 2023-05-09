@@ -35,14 +35,14 @@ The Weather monitoring ontological module is used in WHOW to support the extreme
 The Health monitoring ontological module aims to represent health indicators with a specific focus on infectious diseases.
 
 
-# WHOW Controlled vocabularies
+# WHOW Controlled Vocabularies
 There are at the time being three controlled vocabularies:
 
-1)[chemical substances](https://w3id.org/whow/controlled-vocabulary/chemical-substances), linked to Wikidata
+1) [chemical substances](https://w3id.org/whow/controlled-vocabulary/chemical-substances), linked to Wikidata
 
-2)[(infectious) diseases](https://w3id.org/whow/controlled-vocabulary/diseases), linked to Snomed
+2) [(infectious) diseases](https://w3id.org/whow/controlled-vocabulary/diseases), linked to Snomed
 
-3)[water indicators](https://w3id.org/whow/controlled-vocabulary/water-indicators)
+3) [water indicators](https://w3id.org/whow/controlled-vocabulary/water-indicators)
 
 ## License
 All the ontological modules are realeased under the open license Creative Commons Attribution 4.0
