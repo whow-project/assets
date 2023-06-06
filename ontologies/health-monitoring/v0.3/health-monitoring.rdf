@@ -1,31 +1,31 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/whow/onto/health-monitoring/"
-     xml:base="https://w3id.org/whow/onto/health-monitoring/"
+<rdf:RDF xmlns="https://w3id.org/whow/onto/health-monitoring#"
+     xml:base="https://w3id.org/whow/onto/health-monitoring"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/whow/onto/health-monitoring">
-        <owl:versionIRI rdf:resource="https//w3id.org/whow/onto/health-monitoring/0.3"/>
+        <owl:versionIRI rdf:resource="urn:absolute:https//w3id.org/whow/onto/health-monitoring/0.3"/>
         <owl:imports rdf:resource="https://w3id.org/italia/env/onto/top"/>
         <dc:description rdf:resource="https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/health-monitoring.png"/>
-        <dct:description xml:lang="it">Questa è l&apos;ontologia del progetto WHOW utilizzata per rappresentare un insieme di indicatori utilizzati nel settore sanitario della regione Lombardia per monitorare alcuni parametri sanitari (ad esempio, la diffusione di malattie infettive, la distribuzione di farmaci, l&apos;andamento delle cause di morte e l&apos;accesso a specifiche strutture di ricovero). L&apos;ontologia è generale per modellare indicatori in ambito sanitario e non è strettamente dipendente dai dataset (aperti) della regione Lombardia.</dct:description>
-        <dct:description xml:lang="en">This is the ontology of the WHOW project that used to represent a set of indicators used in the health sector of Lombardy region to monitor some health parameters (e.g., spread of infectious diseases, distribution of drugs, causes of deaths and access to specific inpatient facilities). The ontology is general to model indicators in the health domain and not strictly dependent on Lombarday region (open) datasets.</dct:description>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-03</dct:issued>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-05</dct:modified>
-        <dct:title xml:lang="en">Health Care Indicator Monitoring Ontology</dct:title>
-        <dct:title xml:lang="it">Ontologia di Monitoraggio di Indicatori della Salute</dct:title>
+        <terms:description xml:lang="it">Questa è l&apos;ontologia del progetto WHOW utilizzata per rappresentare un insieme di indicatori utilizzati nel settore sanitario della regione Lombardia per monitorare alcuni parametri sanitari (ad esempio, la diffusione di malattie infettive, la distribuzione di farmaci, l&apos;andamento delle cause di morte e l&apos;accesso a specifiche strutture di ricovero). L&apos;ontologia è generale per modellare indicatori in ambito sanitario e non è strettamente dipendente dai dataset (aperti) della regione Lombardia.</terms:description>
+        <terms:description xml:lang="en">This is the ontology of the WHOW project that used to represent a set of indicators used in the health sector of Lombardy region to monitor some health parameters (e.g., spread of infectious diseases, distribution of drugs, causes of deaths and access to specific inpatient facilities). The ontology is general to model indicators in the health domain and not strictly dependent on Lombarday region (open) datasets.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-03</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-06</terms:modified>
+        <terms:title xml:lang="en">Healthcare Indicator Monitoring Ontology</terms:title>
+        <terms:title xml:lang="it">Ontologia di Monitoraggio di Indicatori della Salute</terms:title>
         <rdfs:label xml:lang="en">Health Care Indicator Monitoring Ontology</rdfs:label>
         <rdfs:label xml:lang="it">Ontologia di Monitoraggio di Indicatori della Salute</rdfs:label>
         <owl:versionInfo xml:lang="en">Version 0.3 - June 2023 - modified some elements of the ontology (introduction of the property hasScope for the Cohort and related elements, revision of the organisations involved in the computation of some indicators)</owl:versionInfo>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -33,40 +33,40 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -74,19 +74,19 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/isIndicatorOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/inspire-mf/isIndicatorOf"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/isClassifiedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/env/onto/top/isClassifiedBy"/>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/affectedBy -->
@@ -94,7 +94,14 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/health-monitoring/affectedBy">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/health-monitoring/hasScope"/>
         <rdfs:domain rdf:resource="https://w3id.org/whow/onto/health-monitoring/ClinicalCohort"/>
-        <rdfs:range rdf:resource="https://w3id.org/whow/onto/health-monitoring/Disease"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/whow/onto/health-monitoring/Disease"/>
+                    <rdf:Description rdf:about="https://w3id.org/whow/onto/health-monitoring/DiseaseType"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">Property that links the clinical cohort with the disease they are affected by.</rdfs:comment>
         <rdfs:comment xml:lang="it">Proprietà che consente di collegare la coorte clinica con la malattia  di cui sono affetti.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/health-monitoring"/>
@@ -103,7 +110,7 @@
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/assumed -->
@@ -120,7 +127,7 @@
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/diedFrom -->
@@ -137,7 +144,7 @@
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/doneForHCIndicator -->
@@ -152,7 +159,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/hasCohortCriteriaDescription -->
@@ -168,7 +175,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/hasCriterion -->
@@ -184,7 +191,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/hasHealthcareIndicatorValue -->
@@ -200,7 +207,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/hasScope -->
@@ -216,7 +223,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/isResponsibleFor -->
@@ -233,7 +240,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/isTerritoriallyCompetentFor -->
@@ -249,7 +256,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/isUnderResponsibilityOf -->
@@ -265,7 +272,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/narrower -->
@@ -281,7 +288,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/ofClinicalCohort -->
@@ -298,7 +305,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/subIndicator -->
@@ -314,10 +321,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:ObjectProperty>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -325,7 +332,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/totalValue -->
@@ -341,10 +348,10 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -352,61 +359,61 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/inspire-mf/Indicator -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/inspire-mf/Indicator"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Characteristic -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Characteristic"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Concept -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Concept"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Description -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Description"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Entity -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Entity"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Eventuality -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Eventuality"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Location -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Location"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Organisation -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Organisation"/>
-
+    
 
 
     <!-- https://w3id.org/italia/env/onto/top/Value -->
 
     <owl:Class rdf:about="https://w3id.org/italia/env/onto/top/Value"/>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/CauseOfDeath -->
@@ -427,7 +434,7 @@
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/ClinicalCohort -->
@@ -448,7 +455,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/CohortCriteriaDescription -->
@@ -475,7 +482,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/Criterion -->
@@ -490,7 +497,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/Disease -->
@@ -505,7 +512,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/DiseaseType -->
@@ -521,7 +528,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/DrugDistributionIndicatorCalculation -->
@@ -536,7 +543,7 @@
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/DrugType -->
@@ -563,7 +570,7 @@
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/GroupCauseOfDeath -->
@@ -578,7 +585,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/HealthConditionIndicatorCalculation -->
@@ -593,7 +600,7 @@
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/HealthOrganisation -->
@@ -608,7 +615,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/HealthcareAuthority -->
@@ -648,7 +655,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/HealthcareIndicator -->
@@ -669,7 +676,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation -->
@@ -715,7 +722,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/HospitalCareIndicatorCalculation -->
@@ -730,7 +737,7 @@
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/IndicatorType -->
@@ -746,7 +753,7 @@
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/InfectiousDiseaseIndicatorCalculation -->
@@ -761,7 +768,7 @@
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/InpatientFacility -->
@@ -778,7 +785,7 @@ Sanitario raccoglie informazioni sulla struttura di ricovero pubblica e privata 
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
-
+    
 
 
     <!-- https://w3id.org/whow/onto/health-monitoring/Population -->
@@ -805,3 +812,4 @@ Sanitario raccoglie informazioni sulla struttura di ricovero pubblica e privata 
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

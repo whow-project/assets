@@ -1,14 +1,42 @@
 [ {
   "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/whow/onto/health-monitoring/Disease"
+    }, {
+      "@id" : "https://w3id.org/whow/onto/health-monitoring/DiseaseType"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/GroupCauseOfDeath"
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/InpatientFacility"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/isTerritoriallyCompetentFor"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/IndicatorType"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
   } ]
 }, {
-  "@id" : "_:genid10",
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/atTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
+  } ]
+}, {
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring/hasHealthcareIndicatorValue"
@@ -17,7 +45,7 @@
     "@id" : "https://w3id.org/italia/env/onto/top/Value"
   } ]
 }, {
-  "@id" : "_:genid11",
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthOrganisation"
@@ -26,7 +54,7 @@
     "@id" : "https://w3id.org/italia/env/onto/inspire-mf/isIndicatorOf"
   } ]
 }, {
-  "@id" : "_:genid12",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring/ClinicalCohort"
@@ -35,7 +63,7 @@
     "@id" : "https://w3id.org/whow/onto/health-monitoring/ofClinicalCohort"
   } ]
 }, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthcareIndicatorCalculation"
@@ -44,7 +72,7 @@
     "@id" : "https://w3id.org/whow/onto/health-monitoring/subIndicator"
   } ]
 }, {
-  "@id" : "_:genid14",
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -57,7 +85,16 @@
     "@id" : "https://w3id.org/whow/onto/health-monitoring/totalValue"
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/whow/onto/health-monitoring/GroupCauseOfDeath"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
+  } ]
+}, {
+  "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Concept"
@@ -66,7 +103,7 @@
     "@id" : "https://w3id.org/whow/onto/health-monitoring/hasScope"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring/hasCriterion"
@@ -75,7 +112,7 @@
     "@id" : "https://w3id.org/whow/onto/health-monitoring/Criterion"
   } ]
 }, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/value"
@@ -84,7 +121,7 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "_:genid5",
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/identifier"
@@ -93,40 +130,13 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/name"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/InpatientFacility"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/isTerritoriallyCompetentFor"
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/IndicatorType"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/top/isClassifiedBy"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/top/atTime"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/top/TemporalEntity"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
@@ -195,11 +205,11 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-06-05"
+    "@value" : "2023-06-06"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
-    "@value" : "Health Care Indicator Monitoring Ontology"
+    "@value" : "Healthcare Indicator Monitoring Ontology"
   }, {
     "@language" : "it",
     "@value" : "Ontologia di Monitoraggio di Indicatori della Salute"
@@ -215,7 +225,7 @@
     "@id" : "https://w3id.org/italia/env/onto/top"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https//w3id.org/whow/onto/health-monitoring/0.3"
+    "@id" : "urn:absolute:https//w3id.org/whow/onto/health-monitoring/0.3"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
@@ -244,7 +254,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Concept"
   }, {
-    "@id" : "_:genid1"
+    "@id" : "_:genid4"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -276,7 +286,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring/Population"
   }, {
-    "@id" : "_:genid2"
+    "@id" : "_:genid5"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -308,9 +318,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Description"
   }, {
-    "@id" : "_:genid3"
+    "@id" : "_:genid6"
   }, {
-    "@id" : "_:genid4"
+    "@id" : "_:genid7"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -464,9 +474,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Concept"
   }, {
-    "@id" : "_:genid5"
+    "@id" : "_:genid8"
   }, {
-    "@id" : "_:genid6"
+    "@id" : "_:genid9"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -588,7 +598,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring/HealthOrganisation"
   }, {
-    "@id" : "_:genid7"
+    "@id" : "_:genid10"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring/InpatientFacility"
@@ -623,7 +633,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   }, {
-    "@id" : "_:genid8"
+    "@id" : "_:genid11"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -657,15 +667,15 @@
   }, {
     "@id" : "https://w3id.org/italia/env/onto/top/Eventuality"
   }, {
-    "@id" : "_:genid9"
-  }, {
-    "@id" : "_:genid10"
-  }, {
-    "@id" : "_:genid11"
-  }, {
     "@id" : "_:genid12"
   }, {
     "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -819,7 +829,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/italia/env/onto/top/Entity"
   }, {
-    "@id" : "_:genid14"
+    "@id" : "_:genid17"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "it",
@@ -852,7 +862,7 @@
     "@value" : "affetta da"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/whow/onto/health-monitoring/Disease"
+    "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/whow/onto/health-monitoring/hasScope"
