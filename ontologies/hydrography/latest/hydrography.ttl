@@ -15,7 +15,7 @@
                                           dc:description <https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/hydrography-ontology.png> ;
                                           dct:description "Ontologia per la descrizione dell'idrografia. Include concetti quali i bacini idrici e la classificazione dei corpi idrici. È semanticamente allineata a concetti definiti nell'INSPIRE registry."@it ,
                                                           "Ontology for describing the hydrography. It includes concepts such as water basins and the classification of water bodies"@en ;
-                                          dct:modified "2023-02-13"^^xsd:date ;
+                                          dct:modified "2023-11-08"^^xsd:date ;
                                           dct:issued "2022-01-10"^^xsd:date ;
                                           dct:title "Hydrography Ontology"@en ,
                                                     "Ontologia dell'Idrografia"@it ;
@@ -103,8 +103,8 @@ prov:wasDerivedFrom rdf:type owl:AnnotationProperty .
                prov:wasDerivedFrom <http://inspire.ec.europa.eu/featureconcept/WFDLake> .
 
 
-###  https://w3id.org/whow/onto/hydrography/MarineWater
-:MarineWater rdf:type owl:Class ;
+###  https://w3id.org/whow/onto/hydrography/MarineWaterBody
+:MarineWaterBody rdf:type owl:Class ;
              rdfs:subClassOf :WaterBody ;
              rdfs:comment "The waters, the seabed and subsoil on the seaward side of the baseline from which the extent of territorial waters is measured"@en ;
              rdfs:isDefinedBy <https://w3id.org/whow/onto/hydrography> ;

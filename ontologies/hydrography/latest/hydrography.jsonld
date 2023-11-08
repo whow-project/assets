@@ -61,7 +61,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-02-13"
+    "@value" : "2023-11-08"
   } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -153,7 +153,7 @@
     "@id" : "http://inspire.ec.europa.eu/featureconcept/WFDLake"
   } ]
 }, {
-  "@id" : "https://w3id.org/whow/onto/hydrography/MarineWater",
+  "@id" : "https://w3id.org/whow/onto/hydrography/MarineWaterBody",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
