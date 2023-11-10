@@ -26,7 +26,7 @@
         <rdfs:comment xml:lang="en">The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements.</rdfs:comment>
         <rdfs:label xml:lang="it">Ontologia del Monitoraggio delle Acque</rdfs:label>
         <rdfs:label xml:lang="en">Water Monitoring Ontology</rdfs:label>
-        <owl:versionInfo xml:lang="en">version 0.5 - added with respect to reference param property to connect the hydromecric zero to the observable property like height of lakes.</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">version 0.5 - added &apos;has reference parameter&apos; property to connect the water feature to a parameter of reference. It is used to model the hydrometric zero for lakes used when observing the heights</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -162,6 +162,19 @@
     
 
 
+    <!-- https://w3id.org/whow/onto/water-monitoring/hasReferenceParameter -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasReferenceParameter">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Parameter"/>
+        <rdfs:comment xml:lang="en">Property that connects the water observation to a conventional reference parameter. This property has been introduced to manage parameters like the hydrometric zero with respect to the observation of height of lakes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
+        <rdfs:label xml:lang="en">has reference parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/whow/onto/water-monitoring/hasResult -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasResult">
@@ -264,19 +277,6 @@
         <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">of property object</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/whow/onto/water-monitoring/withRespectToReferenceParam -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/withRespectToReferenceParam">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservableProperty"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Parameter"/>
-        <rdfs:comment xml:lang="en">Property that connects the observable property to a conventional reference parameter. This property has been introduced to manage parameter like the hydrometric zero with respect to the height of lakes.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">with respect to reference parameter</rdfs:label>
     </owl:ObjectProperty>
     
 

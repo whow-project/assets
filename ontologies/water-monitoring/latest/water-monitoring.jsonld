@@ -358,7 +358,7 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "version 0.5 - added with respect to reference param property to connect the hydromecric zero to the observable property like height of lakes."
+    "@value" : "version 0.5 - added 'has reference parameter' property to connect the water feature to a parameter of reference. It is used to model the hydrometric zero for lakes used when observing the heights"
   } ]
 }, {
   "@id" : "https://w3id.org/whow/onto/water-monitoring/BiologicalAgent",
@@ -916,6 +916,29 @@
     "@id" : "https://w3id.org/whow/onto/water-monitoring/hasWaterObservablePropertyObject"
   } ]
 }, {
+  "@id" : "https://w3id.org/whow/onto/water-monitoring/hasReferenceParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that connects the water observation to a conventional reference parameter. This property has been introduced to manage parameters like the hydrometric zero with respect to the observation of height of lakes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/hydrography/WaterFeature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/water-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has reference parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
+  } ]
+}, {
   "@id" : "https://w3id.org/whow/onto/water-monitoring/hasResult",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1162,28 +1185,5 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
-  } ]
-}, {
-  "@id" : "https://w3id.org/whow/onto/water-monitoring/withRespectToReferenceParam",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property that connects the observable property to a conventional reference parameter. This property has been introduced to manage parameter like the hydrometric zero with respect to the height of lakes."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/whow/onto/water-monitoring/WaterObservableProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/whow/onto/water-monitoring"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "with respect to reference parameter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
   } ]
 } ]
