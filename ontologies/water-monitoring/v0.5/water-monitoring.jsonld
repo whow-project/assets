@@ -146,15 +146,28 @@
 }, {
   "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/whow/onto/water-monitoring/hasChemicalSubstance"
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/whow/onto/water-monitoring/ChemicalSubstance"
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/whow/onto/water-monitoring/withRespectToReferenceParam"
   } ]
 }, {
   "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/whow/onto/water-monitoring/hasChemicalSubstance"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/whow/onto/water-monitoring/ChemicalSubstance"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/whow/onto/water-monitoring/ChemicalSubstance"
   } ],
@@ -162,7 +175,7 @@
     "@id" : "https://w3id.org/whow/onto/water-monitoring/hasChemicalSubstance"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/whow/onto/water-monitoring/hasRadioactivityObject"
@@ -171,7 +184,7 @@
     "@id" : "https://w3id.org/whow/onto/water-monitoring/RadioactivityObject"
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/whow/onto/water-monitoring/RadioactivityObject"
@@ -180,7 +193,7 @@
     "@id" : "https://w3id.org/whow/onto/water-monitoring/hasRadioactivityObject"
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/whow/onto/water-monitoring/isObtainedBy"
@@ -189,7 +202,7 @@
     "@id" : "https://w3id.org/whow/onto/water-monitoring/WaterSampler"
   } ]
 }, {
-  "@id" : "_:genid30",
+  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/whow/onto/water-monitoring/isSampleOf"
@@ -198,7 +211,7 @@
     "@id" : "https://w3id.org/whow/onto/hydrography/WaterFeature"
   } ]
 }, {
-  "@id" : "_:genid31",
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/whow/onto/water-monitoring/WaterSampler"
@@ -207,7 +220,7 @@
     "@id" : "https://w3id.org/whow/onto/water-monitoring/isObtainedBy"
   } ]
 }, {
-  "@id" : "_:genid32",
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -220,7 +233,7 @@
     "@id" : "https://w3id.org/whow/onto/water-monitoring/isTakenAt"
   } ]
 }, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/place/hasMunicipality"
@@ -229,7 +242,7 @@
     "@id" : "https://w3id.org/italia/env/onto/place/Municipality"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/italia/env/onto/place/hasProvince"
@@ -358,7 +371,7 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "version 0.5 - added 'has reference parameter' property to connect the water feature to a parameter of reference. It is used to model the hydrometric zero for lakes used when observing the heights"
+    "@value" : "version 0.5 - added 'with respect to reference param' property to connect the water observations to an additional reference parameter. The property is used to model the hydrometric zero when observing the lake height"
   } ]
 }, {
   "@id" : "https://w3id.org/whow/onto/water-monitoring/BiologicalAgent",
@@ -733,6 +746,8 @@
     "@id" : "_:genid23"
   }, {
     "@id" : "_:genid24"
+  }, {
+    "@id" : "_:genid25"
   } ]
 }, {
   "@id" : "https://w3id.org/whow/onto/water-monitoring/WaterPhysicoChemicalParameterObservation",
@@ -751,9 +766,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/whow/onto/water-monitoring/SurfaceOrGroundwaterObservation"
   }, {
-    "@id" : "_:genid25"
-  }, {
     "@id" : "_:genid26"
+  }, {
+    "@id" : "_:genid27"
   } ]
 }, {
   "@id" : "https://w3id.org/whow/onto/water-monitoring/WaterRadioactivityObservation",
@@ -772,9 +787,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/whow/onto/water-monitoring/WaterObservation"
   }, {
-    "@id" : "_:genid27"
-  }, {
     "@id" : "_:genid28"
+  }, {
+    "@id" : "_:genid29"
   } ]
 }, {
   "@id" : "https://w3id.org/whow/onto/water-monitoring/WaterSample",
@@ -793,13 +808,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/whow/onto/hydrography/WaterFeature"
   }, {
-    "@id" : "_:genid29"
-  }, {
     "@id" : "_:genid30"
   }, {
     "@id" : "_:genid31"
   }, {
     "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid33"
   } ]
 }, {
   "@id" : "https://w3id.org/whow/onto/water-monitoring/WaterSampler",
@@ -816,11 +831,11 @@
     "@value" : "Water Sampler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"
-  }, {
-    "@id" : "_:genid33"
+    "@id" : "https://w3id.org/italia/env/onto/inspire-mf/Sampler"
   }, {
     "@id" : "_:genid34"
+  }, {
+    "@id" : "_:genid35"
   } ]
 }, {
   "@id" : "https://w3id.org/whow/onto/water-monitoring/hasBiologicalAgent",
@@ -914,29 +929,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/whow/onto/water-monitoring/hasWaterObservablePropertyObject"
-  } ]
-}, {
-  "@id" : "https://w3id.org/whow/onto/water-monitoring/hasReferenceParameter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property that connects the water observation to a conventional reference parameter. This property has been introduced to manage parameters like the hydrometric zero with respect to the observation of height of lakes."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/whow/onto/hydrography/WaterFeature"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/whow/onto/water-monitoring"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has reference parameter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
   } ]
 }, {
   "@id" : "https://w3id.org/whow/onto/water-monitoring/hasResult",
@@ -1185,5 +1177,28 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/water-monitoring/withRespectToReferenceParam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that connects the water observation to a conventional reference parameter. This property has been introduced to manage parameters like the hydrometric zero with respect to the observation of height of lakes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/water-monitoring/WaterObservation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/water-monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "with respect to reference param"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/italia/env/onto/top/associatedWith"
   } ]
 } ]

@@ -1,32 +1,31 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/whow/onto/water-monitoring/"
-     xml:base="https://w3id.org/whow/onto/water-monitoring/"
+<rdf:RDF xmlns="https://w3id.org/whow/onto/water-monitoring#"
+     xml:base="https://w3id.org/whow/onto/water-monitoring"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/whow/onto/water-monitoring">
         <owl:versionIRI rdf:resource="https://w3id.org/whow/onto/water-monitoring/0.5"/>
         <owl:imports rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/"/>
         <owl:imports rdf:resource="https://w3id.org/italia/env/onto/place/"/>
         <owl:imports rdf:resource="https://w3id.org/whow/onto/hydrography"/>
         <dc:description rdf:resource="https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/water-monitoring.png"/>
-        <dct:description xml:lang="it">L&apos;ontologia utilizzata nel progetto WHOW per rappresentare le osservazioni relative a diversi aspetti dell&apos;acqua: qualità/inquinamento ed elementi fisici.</dct:description>
-        <dct:description xml:lang="en">The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements.</dct:description>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-20</dct:issued>
-        <dct:modified>2023-11-10</dct:modified>
-        <dct:title xml:lang="it">Ontologia del Monitoraggio delle Acque</dct:title>
-        <dct:title xml:lang="en">Water Monitoring Ontology</dct:title>
+        <terms:description xml:lang="it">L&apos;ontologia utilizzata nel progetto WHOW per rappresentare le osservazioni relative a diversi aspetti dell&apos;acqua: qualità/inquinamento ed elementi fisici.</terms:description>
+        <terms:description xml:lang="en">The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-20</terms:issued>
+        <terms:modified>2023-11-10</terms:modified>
+        <terms:title xml:lang="it">Ontologia del Monitoraggio delle Acque</terms:title>
+        <terms:title xml:lang="en">Water Monitoring Ontology</terms:title>
         <rdfs:comment xml:lang="it">L&apos;ontologia utilizzata nel progetto WHOW per rappresentare le osservazioni relative a diversi aspetti dell&apos;acqua: qualità/inquinamento ed elementi fisici.</rdfs:comment>
         <rdfs:comment xml:lang="en">The ontology used in the WHOW project to represent the observations related to different aspects of water: quality/pollution and physical elements.</rdfs:comment>
         <rdfs:label xml:lang="it">Ontologia del Monitoraggio delle Acque</rdfs:label>
         <rdfs:label xml:lang="en">Water Monitoring Ontology</rdfs:label>
-        <owl:versionInfo xml:lang="en">version 0.5 - added &apos;has reference parameter&apos; property to connect the water feature to a parameter of reference. It is used to model the hydrometric zero for lakes used when observing the heights</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">version 0.5 - added &apos;with respect to reference param&apos; property to connect the water observations to an additional reference parameter. The property is used to model the hydrometric zero when observing the lake height</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -162,19 +161,6 @@
     
 
 
-    <!-- https://w3id.org/whow/onto/water-monitoring/hasReferenceParameter -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasReferenceParameter">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
-        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/hydrography/WaterFeature"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Parameter"/>
-        <rdfs:comment xml:lang="en">Property that connects the water observation to a conventional reference parameter. This property has been introduced to manage parameters like the hydrometric zero with respect to the observation of height of lakes.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
-        <rdfs:label xml:lang="en">has reference parameter</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/whow/onto/water-monitoring/hasResult -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/hasResult">
@@ -277,6 +263,19 @@
         <rdfs:range rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">of property object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/water-monitoring/withRespectToReferenceParam -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/water-monitoring/withRespectToReferenceParam">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/env/onto/top/associatedWith"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservation"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/env/onto/top/Parameter"/>
+        <rdfs:comment xml:lang="en">Property that connects the water observation to a conventional reference parameter. This property has been introduced to manage parameters like the hydrometric zero with respect to the observation of height of lakes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
+        <rdfs:label xml:lang="en">with respect to reference param</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -714,6 +713,13 @@
                 <owl:allValuesFrom rdf:resource="https://w3id.org/whow/onto/water-monitoring/WaterObservablePropertyObject"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/water-monitoring/withRespectToReferenceParam"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/italia/env/onto/top/Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A specific observation regarding water be it drinking water or surface or graoudwater.  It can be an observation related to quality parameters (e.g., the concentration of a specific chemical substance) or physical parameters (e.g., the level of water in a river) or the concentration of radioactivity that may apply for both drinking and surface/ground waters</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/water-monitoring"/>
         <rdfs:label xml:lang="en">Water Observation</rdfs:label>
@@ -806,7 +812,7 @@
     <!-- https://w3id.org/whow/onto/water-monitoring/WaterSampler -->
 
     <owl:Class rdf:about="https://w3id.org/whow/onto/water-monitoring/WaterSampler">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/MonitoringFacility"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/env/onto/inspire-mf/Sampler"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/env/onto/place/hasMunicipality"/>
