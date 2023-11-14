@@ -29,7 +29,7 @@
   dct:identifier "https://w3id.org/whow/controlled-vocabulary/chemical-substances";
   dct:issued "2022-05-22"^^xsd:date;
   dct:language <http://publications.europa.eu/resource/authority/language/ENG>, <http://publications.europa.eu/resource/authority/language/ITA>;
-  dct:modified "2023-05-03"^^xsd:date;
+  dct:modified "2023-11-14"^^xsd:date;
   dct:publisher <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab>;
   dct:rightsHolder <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab>;
   dct:title "Controlled Vocabulary on the chemical substances of the WHOW project"@en,
@@ -51,6 +51,7 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-100646-51-3>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1007-28-9>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-100728-84-5>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-100784-20-1>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-10095-06-4>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-101-05-3>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-101-21-3>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-101-42-8>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-101007-06-1>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-101200-48-0>,
@@ -83,10 +84,10 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-38-3>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-41-8>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-42-9>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-43-0>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-44-1>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-60-1>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-62-3>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-70-3>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-86-1>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-88-3>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-90-7>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-95-2>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108173-90-6>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-62-3>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-67-8>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-70-3>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-86-1>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-88-3>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-90-7>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-95-2>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108173-90-6>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1085-98-9>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-110-42-9>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-110235-47-7>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-110488-70-5>,
@@ -197,7 +198,8 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-13977-65-6>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-139968-49-3>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-140-66-9>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-140923-17-7>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-141-66-2>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-141112-29-0>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-141-30-0>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-141-66-2>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-141112-29-0>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-141517-21-7>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-141776-32-1>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-142-28-9>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1420-07-1>,
@@ -223,6 +225,7 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-149877-41-8>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-149961-52-4>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-149979-41-9>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14998-27-7>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-150-68-5>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-150114-71-9>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-15090-23-0>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-15165-67-0>,
@@ -276,7 +279,7 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-18530-56-8>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-18540-29-9>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1861-32-1>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1861-40-1>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-18691-97-9>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1868-53-7>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-18691-97-9>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-18708-86-6>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-18708-87-7>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-188425-85-6>,
@@ -286,8 +289,9 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1912-24-9>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1912-26-1>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1918-00-9>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1918-02-1>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1918-13-4>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1918-16-7>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1928-38-7>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1929-77-7>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-193-39-5>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-193740-76-0>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1925-78-6>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1928-38-7>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1929-77-7>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-193-39-5>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-193740-76-0>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-19408-74-3>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-19666-30-9>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1967-16-4>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1982-47-4>,
@@ -295,9 +299,10 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2008-41-5>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2008-58-4>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2032-65-7>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-203313-25-1>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-20427-59-2>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-205-99-2>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2058-94-8>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-206-44-0>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-207-08-9>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-208-96-8>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-208465-21-8>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-205-82-3>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-205-99-2>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2058-94-8>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-206-44-0>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-207-08-9>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-208-96-8>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-208465-21-8>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-20859-73-8>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-209866-92-2>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-2104-96-3>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-21087-64-9>,
@@ -479,7 +484,7 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52-51-7>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52-68-6>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52315-07-8>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-5234-68-4>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-5259-88-1>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52645-53-1>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-526-73-8>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52645-53-1>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52663-63-5>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52663-68-0>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52663-69-1>,
@@ -494,9 +499,9 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-53122-28-0>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-533-74-4>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-534-52-1>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-53494-70-5>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-54-11-5>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-540-59-0>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-541-73-1>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-542-75-6>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-54364-62-4>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-54-11-5>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-54-95-5>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-540-59-0>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-541-73-1>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-542-75-6>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-54364-62-4>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-55-38-9>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-551-92-8>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-55179-31-2>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-55200-89-0>,
@@ -630,11 +635,13 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-01-4>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-09-2>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-25-2>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-27-4>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-34-3>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-35-4>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-69-4>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-99-0>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75736-33-3>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-43-4>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-45-6>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-69-4>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-71-8>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-99-0>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75736-33-3>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-759-94-4>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-03-9>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-06-2>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-44-8>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-87-9>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76578-14-8>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-06-2>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-13-1>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-44-8>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-87-9>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76578-14-8>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7664-41-7>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76674-21-0>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76738-62-0>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7696-12-0>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-77-06-5>,
@@ -642,9 +649,9 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7720-78-7>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7723-14-0>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7758-99-8>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-77732-09-3>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7775-09-9>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7782-44-7>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7782-49-2>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7786-34-7>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-78-48-8>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-78-87-5>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-78587-05-0>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7782-49-2>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7782-50-5>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7786-34-7>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-78-48-8>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-78-87-5>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-78587-05-0>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-786-19-6>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-789-02-6>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-79-00-5>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-79-01-6>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-79-34-5>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-79241-46-6>,
@@ -714,8 +721,9 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-907204-31-3>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-91-20-3>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-91-53-2>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-91-59-8>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-91465-08-6>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-919-86-8>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-93-65-2>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-93-76-5>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-935545-74-7>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-919-86-8>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-92-87-5>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-93-65-2>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-93-76-5>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-935545-74-7>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-94-74-6>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-94-75-7>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-94-81-5>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-94-82-6>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-94051-08-8>,
@@ -726,11 +734,11 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-47-6>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-49-8>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-50-1>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-51-2>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-53-4>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-57-8>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-69-2>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-76-1>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-81-8>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-82-9>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-94-3>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-95-4>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-950-35-6>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-950-37-8>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-951659-40-8>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-63-6>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-69-2>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-76-1>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-81-8>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-82-9>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-94-3>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-95-4>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-950-35-6>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-950-37-8>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-951659-40-8>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95266-40-3>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-953030-84-7>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95465-99-9>,
@@ -869,6 +877,15 @@
   skos:notation "CAS:100784-20-1";
   skos:prefLabel "HALOSULFURON METHYL"@it, "Halosulfuron - methyl"@en;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/100784-20-1> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-10095-06-4> a
+    skos:Concept, w-mon:ChemicalSubstance;
+  rdfs:label "Mebikar — Codice CAS: 10095-06-4"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q4286560>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:10095-06-4";
+  skos:prefLabel "Mebikar"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/10095-06-4> .
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-101-05-3> a skos:Concept,
     w-mon:ChemicalSubstance;
@@ -1329,6 +1346,15 @@
   skos:notation "CAS:108-62-3";
   skos:prefLabel "METALDEIDE"@it, "Metaldehyde"@en;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/108-62-3> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-67-8> a skos:Concept,
+    w-mon:ChemicalSubstance;
+  rdfs:label "1,3,5 trimetilbenzene — Codice CAS: 108-67-8"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q425161>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:108-67-8";
+  skos:prefLabel "1,3,5 trimetilbenzene"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/108-67-8> .
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-108-70-3> a skos:Concept,
     w-mon:ChemicalSubstance;
@@ -2767,6 +2793,15 @@
   skos:prefLabel "IPROVALICARB"@en, "IPROVALICARB"@it;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/140923-17-7> .
 
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-141-30-0> a skos:Concept,
+    w-mon:ChemicalSubstance;
+  rdfs:label "3,6 dicloropiridazina — Codice CAS: 141-30-0"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q72467838>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:141-30-0";
+  skos:prefLabel "3,6 dicloropiridazina"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/141-30-0> .
+
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-141-66-2> a skos:Concept,
     w-mon:ChemicalSubstance;
   rdfs:label "DICROTOFOS — Codice CAS: 141-66-2"@it, "Dicrotophos — CAS Identifier: 141-66-2"@en;
@@ -3045,6 +3080,15 @@
   skos:notation "CAS:149979-41-9";
   skos:prefLabel "TEPRALOXIDIM"@it, "TEPRALOXYDIM"@en;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/149979-41-9> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14998-27-7> a
+    skos:Concept, w-mon:ChemicalSubstance;
+  rdfs:label "clorito — Codice CAS: 14998-27-7"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q593248>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:14998-27-7";
+  skos:prefLabel "clorito"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/14998-27-7> .
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-150-68-5> a skos:Concept,
     w-mon:ChemicalSubstance;
@@ -3679,6 +3723,15 @@
   skos:prefLabel "BENFLURALIN"@en, "BENFLURALIN"@it;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1861-40-1> .
 
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1868-53-7> a
+    skos:Concept, w-mon:ChemicalSubstance;
+  rdfs:label "Dibromofluorometano — Codice CAS: 1868-53-7"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q843733>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:1868-53-7";
+  skos:prefLabel "Dibromofluorometano"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1868-53-7> .
+
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-18691-97-9> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "METABENZTIAZURON — Codice CAS: 18691-97-9"@it, "Methabenzthiazuron — CAS Identifier: 18691-97-9"@en;
@@ -3822,6 +3875,14 @@
   skos:prefLabel "PROPACHLOR"@en, "PROPACLOR"@it;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1918-16-7> .
 
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1925-78-6> a
+    skos:Concept, w-mon:ChemicalSubstance;
+  rdfs:label "2-methyl-5-(methylsulfanyl)-1,3,4-thiadiazole — Codice CAS: 1925-78-6"@it;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:1925-78-6";
+  skos:prefLabel "2-methyl-5-(methylsulfanyl)-1,3,4-thiadiazole"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/1925-78-6> .
+
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-1928-38-7> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "2,4-D METHYL ESTER — Codice CAS: 1928-38-7"@it, "Methyl 2,4-dichlorophenoxyacetate  — CAS Identifier: 1928-38-7"@en;
@@ -3949,6 +4010,15 @@
   skos:notation "CAS:20427-59-2";
   skos:prefLabel "Copper hydroxide"@en, "RAME IDROSSIDO"@it;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/20427-59-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-205-82-3> a skos:Concept,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Benzo(j)fluorantene — Codice CAS: 205-82-3"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q576630>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:205-82-3";
+  skos:prefLabel "Benzo(j)fluorantene"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/205-82-3> .
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-205-99-2> a skos:Concept,
     w-mon:ChemicalSubstance;
@@ -6225,6 +6295,15 @@
   skos:prefLabel "OSSICARBOSSINA"@it, "Oxycarboxin"@en;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/5259-88-1> .
 
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-526-73-8> a skos:Concept,
+    w-mon:ChemicalSubstance;
+  rdfs:label "1,2,3 trimetilbenzene — Codice CAS: 526-73-8"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q4352416>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:526-73-8";
+  skos:prefLabel "1,2,3 trimetilbenzene"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/526-73-8> .
+
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-52645-53-1> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "PERMETHRIN — CAS Identifier: 52645-53-1"@en, "PERMETRINA — Codice CAS: 52645-53-1"@it;
@@ -6412,6 +6491,15 @@
   skos:notation "CAS:54-11-5";
   skos:prefLabel "NICOTINA"@it, "Nicotine"@en;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/54-11-5> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-54-95-5> a skos:Concept,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Pentametilentetrazolo — Codice CAS: 54-95-5"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q412391>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:54-95-5";
+  skos:prefLabel "Pentametilentetrazolo"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/54-95-5> .
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-540-59-0> a skos:Concept,
     w-mon:ChemicalSubstance;
@@ -8141,6 +8229,24 @@
   skos:prefLabel "1,1-Dicloroetilene"@it, "1,1-dichloroethylene"@en;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/75-35-4> .
 
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-43-4> a skos:Concept,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Diclorofluorometano (R-21) — Codice CAS: 75-43-4"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q418163>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:75-43-4";
+  skos:prefLabel "Diclorofluorometano (R-21)"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/75-43-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-45-6> a skos:Concept,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Difluoroclorometano (R-22) — Codice CAS: 75-45-6"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q422994>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:75-45-6";
+  skos:prefLabel "Difluoroclorometano (R-22)"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/75-45-6> .
+
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-69-4> a skos:Concept,
     w-mon:ChemicalSubstance;
   rdfs:label "Triclorofluorometano (Freon 11) — Codice CAS: 75-69-4"@it;
@@ -8149,6 +8255,15 @@
   skos:notation "CAS:75-69-4";
   skos:prefLabel "Triclorofluorometano (Freon 11)"@it;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/75-69-4> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-71-8> a skos:Concept,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Diclorodifluorometano (R-12) — Codice CAS: 75-71-8"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q423021>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:75-71-8";
+  skos:prefLabel "Diclorodifluorometano (R-12)"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/75-71-8> .
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-99-0> a skos:Concept,
     w-mon:ChemicalSubstance;
@@ -8194,6 +8309,15 @@
   skos:notation "CAS:76-06-2";
   skos:prefLabel "CLOROPICRINA"@it, "Chloropicrin"@en;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/76-06-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-13-1> a skos:Concept,
+    w-mon:ChemicalSubstance;
+  rdfs:label "1,1,2-Triclocotrifluoroetano (R-113) — Codice CAS: 76-13-1"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q161276>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:76-13-1";
+  skos:prefLabel "1,1,2-Triclocotrifluoroetano (R-113)"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/76-13-1> .
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-44-8> a skos:Concept,
     w-mon:ChemicalSubstance;
@@ -8347,6 +8471,15 @@
   skos:notation "CAS:7782-49-2";
   skos:prefLabel "Selenio"@it, "Selenium"@en;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/7782-49-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7782-50-5> a
+    skos:Concept, w-mon:ChemicalSubstance;
+  rdfs:label "Cloro attivo libero — Codice CAS: 7782-50-5"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q1904422>, <http://www.wikidata.org/entity/Q688>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:7782-50-5";
+  skos:prefLabel "Cloro attivo libero"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/7782-50-5> .
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7786-34-7> a
     skos:Concept, w-mon:ChemicalSubstance;
@@ -9313,6 +9446,15 @@
   skos:prefLabel "DEMETON-S-METILE"@it, "Demeton-S-methyl"@en;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/919-86-8> .
 
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-92-87-5> a skos:Concept,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Benzidina — Codice CAS: 92-87-5"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q410066>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:92-87-5";
+  skos:prefLabel "Benzidina"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/92-87-5> .
+
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-93-65-2> a skos:Concept,
     w-mon:ChemicalSubstance;
   rdfs:label "2-(4-chloro-2-methylphenoxy)propionic acid — CAS Identifier: 93-65-2"@en,
@@ -9488,6 +9630,15 @@
   skos:notation "CAS:95-57-8";
   skos:prefLabel "2-Clorofenolo"@it, "2-chlorophenol"@en;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/95-57-8> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-63-6> a skos:Concept,
+    w-mon:ChemicalSubstance;
+  rdfs:label "1,2,4 trimetilbenzene — Codice CAS: 95-63-6"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q376994>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:95-63-6";
+  skos:prefLabel "1,2,4 trimetilbenzene"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/95-63-6> .
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-95-69-2> a skos:Concept,
     w-mon:ChemicalSubstance;
@@ -9850,6 +10001,11 @@
   ispra-top:identifier "100784-20-1";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
+<https://w3id.org/whow/data/identifier/10095-06-4> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 10095-06-4"@en, "Identificativo CAS — 10095-06-4"@it;
+  ispra-top:identifier "10095-06-4";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
 <https://w3id.org/whow/data/identifier/101-05-3> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 101-05-3"@en, "Identificativo CAS — 101-05-3"@it;
   ispra-top:identifier "101-05-3";
@@ -10103,6 +10259,11 @@
 <https://w3id.org/whow/data/identifier/108-62-3> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 108-62-3"@en, "Identificativo CAS — 108-62-3"@it;
   ispra-top:identifier "108-62-3";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/108-67-8> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 108-67-8"@en, "Identificativo CAS — 108-67-8"@it;
+  ispra-top:identifier "108-67-8";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
 <https://w3id.org/whow/data/identifier/108-70-3> a ispra-top:UniqueIdentifier;
@@ -10905,6 +11066,11 @@
   ispra-top:identifier "140923-17-7";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
+<https://w3id.org/whow/data/identifier/141-30-0> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 141-30-0"@en, "Identificativo CAS — 141-30-0"@it;
+  ispra-top:identifier "141-30-0";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
 <https://w3id.org/whow/data/identifier/141-66-2> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 141-66-2"@en, "Identificativo CAS — 141-66-2"@it;
   ispra-top:identifier "141-66-2";
@@ -11058,6 +11224,11 @@
 <https://w3id.org/whow/data/identifier/149979-41-9> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 149979-41-9"@en, "Identificativo CAS — 149979-41-9"@it;
   ispra-top:identifier "149979-41-9";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/14998-27-7> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 14998-27-7"@en, "Identificativo CAS — 14998-27-7"@it;
+  ispra-top:identifier "14998-27-7";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
 <https://w3id.org/whow/data/identifier/150-68-5> a ispra-top:UniqueIdentifier;
@@ -11410,6 +11581,11 @@
   ispra-top:identifier "1861-40-1";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
+<https://w3id.org/whow/data/identifier/1868-53-7> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 1868-53-7"@en, "Identificativo CAS — 1868-53-7"@it;
+  ispra-top:identifier "1868-53-7";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
 <https://w3id.org/whow/data/identifier/18691-97-9> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 18691-97-9"@en, "Identificativo CAS — 18691-97-9"@it;
   ispra-top:identifier "18691-97-9";
@@ -11490,6 +11666,11 @@
   ispra-top:identifier "1918-16-7";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
+<https://w3id.org/whow/data/identifier/1925-78-6> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 1925-78-6"@en, "Identificativo CAS — 1925-78-6"@it;
+  ispra-top:identifier "1925-78-6";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
 <https://w3id.org/whow/data/identifier/1928-38-7> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 1928-38-7"@en, "Identificativo CAS — 1928-38-7"@it;
   ispra-top:identifier "1928-38-7";
@@ -11558,6 +11739,11 @@
 <https://w3id.org/whow/data/identifier/20427-59-2> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 20427-59-2"@en, "Identificativo CAS — 20427-59-2"@it;
   ispra-top:identifier "20427-59-2";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/205-82-3> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 205-82-3"@en, "Identificativo CAS — 205-82-3"@it;
+  ispra-top:identifier "205-82-3";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
 <https://w3id.org/whow/data/identifier/205-99-2> a ispra-top:UniqueIdentifier;
@@ -12815,6 +13001,11 @@
   ispra-top:identifier "5259-88-1";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
+<https://w3id.org/whow/data/identifier/526-73-8> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 526-73-8"@en, "Identificativo CAS — 526-73-8"@it;
+  ispra-top:identifier "526-73-8";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
 <https://w3id.org/whow/data/identifier/52645-53-1> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 52645-53-1"@en, "Identificativo CAS — 52645-53-1"@it;
   ispra-top:identifier "52645-53-1";
@@ -12918,6 +13109,11 @@
 <https://w3id.org/whow/data/identifier/54-11-5> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 54-11-5"@en, "Identificativo CAS — 54-11-5"@it;
   ispra-top:identifier "54-11-5";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/54-95-5> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 54-95-5"@en, "Identificativo CAS — 54-95-5"@it;
+  ispra-top:identifier "54-95-5";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
 <https://w3id.org/whow/data/identifier/540-59-0> a ispra-top:UniqueIdentifier;
@@ -13880,9 +14076,24 @@
   ispra-top:identifier "75-35-4";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
+<https://w3id.org/whow/data/identifier/75-43-4> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 75-43-4"@en, "Identificativo CAS — 75-43-4"@it;
+  ispra-top:identifier "75-43-4";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/75-45-6> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 75-45-6"@en, "Identificativo CAS — 75-45-6"@it;
+  ispra-top:identifier "75-45-6";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
 <https://w3id.org/whow/data/identifier/75-69-4> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 75-69-4"@en, "Identificativo CAS — 75-69-4"@it;
   ispra-top:identifier "75-69-4";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/75-71-8> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 75-71-8"@en, "Identificativo CAS — 75-71-8"@it;
+  ispra-top:identifier "75-71-8";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
 <https://w3id.org/whow/data/identifier/75-99-0> a ispra-top:UniqueIdentifier;
@@ -13908,6 +14119,11 @@
 <https://w3id.org/whow/data/identifier/76-06-2> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 76-06-2"@en, "Identificativo CAS — 76-06-2"@it;
   ispra-top:identifier "76-06-2";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/76-13-1> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 76-13-1"@en, "Identificativo CAS — 76-13-1"@it;
+  ispra-top:identifier "76-13-1";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
 <https://w3id.org/whow/data/identifier/76-44-8> a ispra-top:UniqueIdentifier;
@@ -13993,6 +14209,11 @@
 <https://w3id.org/whow/data/identifier/7782-49-2> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 7782-49-2"@en, "Identificativo CAS — 7782-49-2"@it;
   ispra-top:identifier "7782-49-2";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/7782-50-5> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 7782-50-5"@en, "Identificativo CAS — 7782-50-5"@it;
+  ispra-top:identifier "7782-50-5";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
 <https://w3id.org/whow/data/identifier/7786-34-7> a ispra-top:UniqueIdentifier;
@@ -14530,6 +14751,11 @@
   ispra-top:identifier "919-86-8";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
+<https://w3id.org/whow/data/identifier/92-87-5> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 92-87-5"@en, "Identificativo CAS — 92-87-5"@it;
+  ispra-top:identifier "92-87-5";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
 <https://w3id.org/whow/data/identifier/93-65-2> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 93-65-2"@en, "Identificativo CAS — 93-65-2"@it;
   ispra-top:identifier "93-65-2";
@@ -14623,6 +14849,11 @@
 <https://w3id.org/whow/data/identifier/95-57-8> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 95-57-8"@en, "Identificativo CAS — 95-57-8"@it;
   ispra-top:identifier "95-57-8";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/95-63-6> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 95-63-6"@en, "Identificativo CAS — 95-63-6"@it;
+  ispra-top:identifier "95-63-6";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
 <https://w3id.org/whow/data/identifier/95-69-2> a ispra-top:UniqueIdentifier;

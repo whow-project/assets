@@ -32,7 +32,7 @@
   dct:identifier "https://w3id.org/whow/controlled-vocabulary/diseases";
   dct:issued "2023-05-04"^^xsd:date;
   dct:language <http://publications.europa.eu/resource/authority/language/ENG>, <http://publications.europa.eu/resource/authority/language/ITA>;
-  dct:modified "2023-05-04"^^xsd:date;
+  dct:modified "2023-11-14"^^xsd:date;
   dct:publisher <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab>;
   dct:rightsHolder <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab>;
   dct:title "Controlled Vocabulary on (infectious) diseases"@en, "Vocabolario controllato delle malattie (infettive)"@it;
@@ -42,9 +42,10 @@
   rdfs:comment "Questo è il vocabolario controllato delle malattie (infettive) utilizzato nel contesto del progetto WHOW - Water Health Open Knowledge per modellare i dati sulla distribuzione delle malattie (infettive)"@it,
     "This is the controlled vocabulary on (infectious) diseases used in the context of the WHOW - Water Health Open Knowledge project to model the rates of the (infectious) diseases"@en;
   rdfs:label "Controlled Vocabulary on (infectious) diseases"@en, "Vocabolario controllato delle malattie (infettive)"@it;
-  owl:versionInfo "Versione 0.1"@it;
+  owl:versionInfo "Versione 0.2 - aggiunte altre malattie infettive"@it;
   skos:hasTopConcept <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
     <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>,
     <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>,
     <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
   adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS>;
@@ -86,9 +87,184 @@
     <https://w3id.org/whow/controlled-vocabulary/diseases/scarlattina>, <https://w3id.org/whow/controlled-vocabulary/diseases/varicella>;
   ispra-top:name "MALATTIE ESANTEMATICHE INFANTILI"@it .
 
+<https://w3id.org/whow/controlled-vocabulary/diseases/aids> a skos:Concept, hm:Disease;
+  rdfs:label "AIDS"@it;
+  owl:sameAs <http://snomed.info/id/62479008>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "AIDS"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "AIDS"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "AIDS"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/amebiasi> a skos:Concept, hm:Disease;
+  rdfs:label "AMEBIASI"@it;
+  owl:sameAs <http://snomed.info/id/111910009>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "AMEBIASI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "AMEBIASI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "AMEBIASI"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/antrace> a skos:Concept, hm:Disease;
+  rdfs:label "ANTRACE"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "ANTRACE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "ANTRACE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "ANTRACE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>
+  a skos:Concept, hm:DiseaseType;
+  rdfs:label "NON SPECIFICATA"@it;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:narrower <https://w3id.org/whow/controlled-vocabulary/diseases/aids>, <https://w3id.org/whow/controlled-vocabulary/diseases/amebiasi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/antrace>, <https://w3id.org/whow/controlled-vocabulary/diseases/botulismo>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/brucellosi>, <https://w3id.org/whow/controlled-vocabulary/diseases/clamidia>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/colera>, <https://w3id.org/whow/controlled-vocabulary/diseases/condilomatosi-ano-genitale>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/dengue>, <https://w3id.org/whow/controlled-vocabulary/diseases/dermatofitosi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/difterite>, <https://w3id.org/whow/controlled-vocabulary/diseases/encefalite-da-zecche>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/encefalopatia-di-creutzeld-jacob>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-b>, <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-c>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-d>, <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-e>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-non-a-non-b>, <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-non-specificata>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/febbre-emorragica>, <https://w3id.org/whow/controlled-vocabulary/diseases/febbre-gialla>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/febbre-ricorrente-epidemica>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/febbre-tifoide>, <https://w3id.org/whow/controlled-vocabulary/diseases/filariosi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/gonorrea>, <https://w3id.org/whow/controlled-vocabulary/diseases/infezione-da-hiv>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/infezioni-tossinfezioni-intossicazioni-alimentari>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/influenza>, <https://w3id.org/whow/controlled-vocabulary/diseases/lebbra>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/leishmaniosi-cutanea-e-viscerale>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/leptospirosi>, <https://w3id.org/whow/controlled-vocabulary/diseases/malaria>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-chikungunya>, <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-di-lyme>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-da-emofilo>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/meningo-encefaliti-virali-west-nile-disease-usutu>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/micobatteriosi-non-tubercolare>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/parassitosi>, <https://w3id.org/whow/controlled-vocabulary/diseases/pediculosi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/peste>, <https://w3id.org/whow/controlled-vocabulary/diseases/poliomelite>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/rabbia>, <https://w3id.org/whow/controlled-vocabulary/diseases/rickettsiosi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/scabbia>, <https://w3id.org/whow/controlled-vocabulary/diseases/sifilide>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/tetano>, <https://w3id.org/whow/controlled-vocabulary/diseases/tifo-esantematico>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/toxoplasmosi>, <https://w3id.org/whow/controlled-vocabulary/diseases/trichinosi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/tularemia>, <https://w3id.org/whow/controlled-vocabulary/diseases/zika>;
+  skos:prefLabel "NON SPECIFICATA"@it;
+  clvapit:hasRankOrder "1";
+  l0:name "NON SPECIFICATA"@it;
+  hm:narrower <https://w3id.org/whow/controlled-vocabulary/diseases/aids>, <https://w3id.org/whow/controlled-vocabulary/diseases/amebiasi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/antrace>, <https://w3id.org/whow/controlled-vocabulary/diseases/botulismo>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/brucellosi>, <https://w3id.org/whow/controlled-vocabulary/diseases/clamidia>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/colera>, <https://w3id.org/whow/controlled-vocabulary/diseases/condilomatosi-ano-genitale>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/dengue>, <https://w3id.org/whow/controlled-vocabulary/diseases/dermatofitosi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/difterite>, <https://w3id.org/whow/controlled-vocabulary/diseases/encefalite-da-zecche>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/encefalopatia-di-creutzeld-jacob>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-b>, <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-c>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-d>, <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-e>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-non-a-non-b>, <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-non-specificata>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/febbre-emorragica>, <https://w3id.org/whow/controlled-vocabulary/diseases/febbre-gialla>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/febbre-ricorrente-epidemica>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/febbre-tifoide>, <https://w3id.org/whow/controlled-vocabulary/diseases/filariosi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/gonorrea>, <https://w3id.org/whow/controlled-vocabulary/diseases/infezione-da-hiv>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/infezioni-tossinfezioni-intossicazioni-alimentari>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/influenza>, <https://w3id.org/whow/controlled-vocabulary/diseases/lebbra>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/leishmaniosi-cutanea-e-viscerale>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/leptospirosi>, <https://w3id.org/whow/controlled-vocabulary/diseases/malaria>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-chikungunya>, <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-di-lyme>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-da-emofilo>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/meningo-encefaliti-virali-west-nile-disease-usutu>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/micobatteriosi-non-tubercolare>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/parassitosi>, <https://w3id.org/whow/controlled-vocabulary/diseases/pediculosi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/peste>, <https://w3id.org/whow/controlled-vocabulary/diseases/poliomelite>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/rabbia>, <https://w3id.org/whow/controlled-vocabulary/diseases/rickettsiosi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/scabbia>, <https://w3id.org/whow/controlled-vocabulary/diseases/sifilide>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/tetano>, <https://w3id.org/whow/controlled-vocabulary/diseases/tifo-esantematico>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/toxoplasmosi>, <https://w3id.org/whow/controlled-vocabulary/diseases/trichinosi>,
+    <https://w3id.org/whow/controlled-vocabulary/diseases/tularemia>, <https://w3id.org/whow/controlled-vocabulary/diseases/zika>;
+  ispra-top:name "NON SPECIFICATA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/botulismo> a skos:Concept, hm:Disease;
+  rdfs:label "BOTULISMO"@it;
+  owl:sameAs <http://snomed.info/id/398565003>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "BOTULISMO"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "BOTULISMO"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "BOTULISMO"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/brucellosi> a skos:Concept,
+    hm:Disease;
+  rdfs:label "BRUCELLOSI"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "BRUCELLOSI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "BRUCELLOSI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "BRUCELLOSI"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/clamidia> a skos:Concept, hm:Disease;
+  rdfs:label "CLAMIDIA"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "CLAMIDIA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "CLAMIDIA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "CLAMIDIA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/colera> a skos:Concept, hm:Disease;
+  rdfs:label "COLERA"@it;
+  owl:sameAs <http://snomed.info/id/7718000>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "COLERA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "COLERA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "COLERA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/condilomatosi-ano-genitale>
+  a skos:Concept, hm:Disease;
+  rdfs:label "CONDILOMATOSI ANO GENITALE"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "CONDILOMATOSI ANO GENITALE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "CONDILOMATOSI ANO GENITALE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "CONDILOMATOSI ANO GENITALE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/dengue> a skos:Concept, hm:Disease;
+  rdfs:label "DENGUE"@it;
+  owl:sameAs <http://snomed.info/id/38362002>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "DENGUE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "DENGUE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "DENGUE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/dermatofitosi> a skos:Concept,
+    hm:Disease;
+  rdfs:label "DERMATOFITOSI"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "DERMATOFITOSI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "DERMATOFITOSI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "DERMATOFITOSI"@it .
+
 <https://w3id.org/whow/controlled-vocabulary/diseases/diarrea-infettiva> a skos:Concept,
     hm:Disease;
-  rdfs:label "La malattia DIARREA INFETTIVA"@it;
+  rdfs:label "DIARREA INFETTIVA"@it;
   owl:sameAs <http://snomed.info/id/19213003>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
@@ -97,6 +273,17 @@
   l0:name "DIARREA INFETTIVA"@it;
   ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
   ispra-top:name "DIARREA INFETTIVA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/difterite> a skos:Concept, hm:Disease;
+  rdfs:label "DIFTERITE"@it;
+  owl:sameAs <http://snomed.info/id/397430003>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "DIFTERITE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "DIFTERITE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "DIFTERITE"@it .
 
 <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>
   a skos:Concept, hm:DiseaseType;
@@ -115,8 +302,31 @@
     <https://w3id.org/whow/controlled-vocabulary/diseases/shigellosi>;
   ispra-top:name "MALATTIE GASTROINTESTINALI/A TRASMISSIONE ALIMENTARE"@it .
 
+<https://w3id.org/whow/controlled-vocabulary/diseases/encefalite-da-zecche> a skos:Concept,
+    hm:Disease;
+  rdfs:label "ENCEFALITE DA ZECCHE"@it;
+  owl:sameAs <http://snomed.info/id/414093008>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "ENCEFALITE DA ZECCHE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "ENCEFALITE DA ZECCHE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "ENCEFALITE DA ZECCHE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/encefalopatia-di-creutzeld-jacob>
+  a skos:Concept, hm:Disease;
+  rdfs:label "ENCEFALOPATIA di Creutzeld Jacob"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "ENCEFALOPATIA di Creutzeld Jacob"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "ENCEFALOPATIA di Creutzeld Jacob"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "ENCEFALOPATIA di Creutzeld Jacob"@it .
+
 <https://w3id.org/whow/controlled-vocabulary/diseases/epatite-a> a skos:Concept, hm:Disease;
-  rdfs:label "La malattia EPATITE A"@it;
+  rdfs:label "EPATITE A"@it;
   owl:sameAs <http://snomed.info/id/40468003>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
@@ -125,6 +335,73 @@
   l0:name "EPATITE A"@it;
   ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
   ispra-top:name "EPATITE A"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/epatite-b> a skos:Concept, hm:Disease;
+  rdfs:label "EPATITE B"@it;
+  owl:sameAs <http://snomed.info/id/66071002>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "EPATITE B"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "EPATITE B"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "EPATITE B"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/epatite-c> a skos:Concept, hm:Disease;
+  rdfs:label "EPATITE C"@it;
+  owl:sameAs <http://snomed.info/id/50711007>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "EPATITE C"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "EPATITE C"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "EPATITE C"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/epatite-d> a skos:Concept, hm:Disease;
+  rdfs:label "EPATITE D"@it;
+  owl:sameAs <http://snomed.info/id/707341005>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "EPATITE D"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "EPATITE D"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "EPATITE D"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/epatite-e> a skos:Concept, hm:Disease;
+  rdfs:label "EPATITE E"@it;
+  owl:sameAs <http://snomed.info/id/7111000119109>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "EPATITE E"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "EPATITE E"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "EPATITE E"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/epatite-non-a-non-b> a skos:Concept,
+    hm:Disease;
+  rdfs:label "EPATITE NON A NON B"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "EPATITE NON A NON B"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "EPATITE NON A NON B"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "EPATITE NON A NON B"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/epatite-non-specificata> a skos:Concept,
+    hm:Disease;
+  rdfs:label "EPATITE NON SPECIFICATA"@it;
+  owl:sameAs <http://snomed.info/id/128241005>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "EPATITE NON SPECIFICATA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "EPATITE NON SPECIFICATA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "EPATITE NON SPECIFICATA"@it .
 
 <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>
   a skos:Concept, hm:DiseaseType;
@@ -143,8 +420,65 @@
     <https://w3id.org/whow/controlled-vocabulary/diseases/meningiti-batteriche>, <https://w3id.org/whow/controlled-vocabulary/diseases/tubercolosi>;
   ispra-top:name "MALATTIE BATTERICHE"@it .
 
+<https://w3id.org/whow/controlled-vocabulary/diseases/febbre-emorragica> a skos:Concept,
+    hm:Disease;
+  rdfs:label "FEBBRE EMORRAGICA"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "FEBBRE EMORRAGICA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "FEBBRE EMORRAGICA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "FEBBRE EMORRAGICA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/febbre-gialla> a skos:Concept,
+    hm:Disease;
+  rdfs:label "FEBBRE GIALLA"@it;
+  owl:sameAs <http://snomed.info/id/16541001>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "FEBBRE GIALLA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "FEBBRE GIALLA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "FEBBRE GIALLA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/febbre-ricorrente-epidemica>
+  a skos:Concept, hm:Disease;
+  rdfs:label "FEBBRE RICORRENTE EPIDEMICA"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "FEBBRE RICORRENTE EPIDEMICA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "FEBBRE RICORRENTE EPIDEMICA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "FEBBRE RICORRENTE EPIDEMICA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/febbre-tifoide> a skos:Concept,
+    hm:Disease;
+  rdfs:label "FEBBRE TIFOIDE"@it;
+  owl:sameAs <http://snomed.info/id/4834000>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "FEBBRE TIFOIDE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "FEBBRE TIFOIDE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "FEBBRE TIFOIDE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/filariosi> a skos:Concept, hm:Disease;
+  rdfs:label "FILARIOSI"@it;
+  owl:sameAs <http://snomed.info/id/105706003>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "FILARIOSI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "FILARIOSI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "FILARIOSI"@it .
+
 <https://w3id.org/whow/controlled-vocabulary/diseases/giardiasi> a skos:Concept, hm:Disease;
-  rdfs:label "La malattia GIARDIASI"@it;
+  rdfs:label "GIARDIASI"@it;
   owl:sameAs <http://snomed.info/id/58265007>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
@@ -154,9 +488,64 @@
   ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
   ispra-top:name "GIARDIASI"@it .
 
+<https://w3id.org/whow/controlled-vocabulary/diseases/gonorrea> a skos:Concept, hm:Disease;
+  rdfs:label "GONORREA"@it;
+  owl:sameAs <http://snomed.info/id/15628003>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "GONORREA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "GONORREA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "GONORREA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/infezione-da-hiv> a skos:Concept,
+    hm:Disease;
+  rdfs:label "INFEZIONE DA HIV"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "INFEZIONE DA HIV"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "INFEZIONE DA HIV"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "INFEZIONE DA HIV"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/infezioni-tossinfezioni-intossicazioni-alimentari>
+  a skos:Concept, hm:Disease;
+  rdfs:label "INFEZIONI TOSSINFEZIONI INTOSSICAZIONI ALIMENTARI"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "INFEZIONI TOSSINFEZIONI INTOSSICAZIONI ALIMENTARI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "INFEZIONI TOSSINFEZIONI INTOSSICAZIONI ALIMENTARI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "INFEZIONI TOSSINFEZIONI INTOSSICAZIONI ALIMENTARI"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/influenza> a skos:Concept, hm:Disease;
+  rdfs:label "INFLUENZA"@it;
+  owl:sameAs <http://snomed.info/id/6142004>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "INFLUENZA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "INFLUENZA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "INFLUENZA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/lebbra> a skos:Concept, hm:Disease;
+  rdfs:label "LEBBRA"@it;
+  owl:sameAs <http://snomed.info/id/81004002>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "LEBBRA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "LEBBRA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "LEBBRA"@it .
+
 <https://w3id.org/whow/controlled-vocabulary/diseases/legionellosi> a skos:Concept,
     hm:Disease;
-  rdfs:label "La malattia LEGIONELLOSI"@it;
+  rdfs:label "LEGIONELLOSI"@it;
   owl:sameAs <http://snomed.info/id/26726000>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
@@ -166,9 +555,33 @@
   ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
   ispra-top:name "LEGIONELLOSI"@it .
 
+<https://w3id.org/whow/controlled-vocabulary/diseases/leishmaniosi-cutanea-e-viscerale>
+  a skos:Concept, hm:Disease;
+  rdfs:label "LEISHMANIOSI CUTANEA E VISCERALE"@it;
+  owl:sameAs <http://snomed.info/id/80612004>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "LEISHMANIOSI CUTANEA E VISCERALE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "LEISHMANIOSI CUTANEA E VISCERALE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "LEISHMANIOSI CUTANEA E VISCERALE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/leptospirosi> a skos:Concept,
+    hm:Disease;
+  rdfs:label "LEPTOSPIROSI"@it;
+  owl:sameAs <http://snomed.info/id/77377001>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "LEPTOSPIROSI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "LEPTOSPIROSI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "LEPTOSPIROSI"@it .
+
 <https://w3id.org/whow/controlled-vocabulary/diseases/listeriosi> a skos:Concept,
     hm:Disease;
-  rdfs:label "La malattia LISTERIOSI"@it;
+  rdfs:label "LISTERIOSI"@it;
   owl:sameAs <http://snomed.info/id/4241002>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
@@ -178,9 +591,55 @@
   ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
   ispra-top:name "LISTERIOSI"@it .
 
+<https://w3id.org/whow/controlled-vocabulary/diseases/malaria> a skos:Concept, hm:Disease;
+  rdfs:label "MALARIA"@it;
+  owl:sameAs <http://snomed.info/id/61462000>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "MALARIA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "MALARIA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "MALARIA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/malattia-chikungunya> a skos:Concept,
+    hm:Disease;
+  rdfs:label "MALATTIA CHIKUNGUNYA"@it;
+  owl:sameAs <http://snomed.info/id/111864006>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "MALATTIA CHIKUNGUNYA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "MALATTIA CHIKUNGUNYA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "MALATTIA CHIKUNGUNYA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/malattia-di-lyme> a skos:Concept,
+    hm:Disease;
+  rdfs:label "MALATTIA DI LYME"@it;
+  owl:sameAs <http://snomed.info/id/23502006>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "MALATTIA DI LYME"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "MALATTIA DI LYME"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "MALATTIA DI LYME"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-da-emofilo>
+  a skos:Concept, hm:Disease;
+  rdfs:label "MALATTIA INVASIVA DA EMOFILO"@it;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "MALATTIA INVASIVA DA EMOFILO"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "MALATTIA INVASIVA DA EMOFILO"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "MALATTIA INVASIVA DA EMOFILO"@it .
+
 <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-da-hib> a
     skos:Concept, hm:Disease;
-  rdfs:label "La malattia MALATTIA INVASIVA DA HIB"@it;
+  rdfs:label "MALATTIA INVASIVA DA HIB"@it;
   owl:sameAs <http://snomed.info/id/373035007>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
@@ -192,7 +651,7 @@
 
 <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-meningococcica>
   a skos:Concept, hm:Disease;
-  rdfs:label "La malattia MALATTIA INVASIVA MENINGOCOCCICA"@it;
+  rdfs:label "MALATTIA INVASIVA MENINGOCOCCICA"@it;
   owl:sameAs <http://snomed.info/id/23511006>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
@@ -204,7 +663,7 @@
 
 <https://w3id.org/whow/controlled-vocabulary/diseases/malattia-invasiva-pneumococcica>
   a skos:Concept, hm:Disease;
-  rdfs:label "La malattia MALATTIA INVASIVA PNEUMOCOCCICA"@it;
+  rdfs:label "MALATTIA INVASIVA PNEUMOCOCCICA"@it;
   owl:sameAs <http://snomed.info/id/16814004>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
@@ -216,7 +675,7 @@
 
 <https://w3id.org/whow/controlled-vocabulary/diseases/meningiti-batteriche> a skos:Concept,
     hm:Disease;
-  rdfs:label "La malattia MENINGITI BATTERICHE"@it;
+  rdfs:label "MENINGITI BATTERICHE"@it;
   owl:sameAs <http://snomed.info/id/95883001>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
@@ -226,9 +685,33 @@
   ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
   ispra-top:name "MENINGITI BATTERICHE"@it .
 
+<https://w3id.org/whow/controlled-vocabulary/diseases/meningo-encefaliti-virali-west-nile-disease-usutu>
+  a skos:Concept, hm:Disease;
+  rdfs:label "MENINGO ENCEFALITI VIRALI WEST NILE DISEASE USUTU"@it;
+  owl:sameAs <http://snomed.info/id/392662004>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "MENINGO ENCEFALITI VIRALI WEST NILE DISEASE USUTU"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "MENINGO ENCEFALITI VIRALI WEST NILE DISEASE USUTU"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "MENINGO ENCEFALITI VIRALI WEST NILE DISEASE USUTU"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/micobatteriosi-non-tubercolare>
+  a skos:Concept, hm:Disease;
+  rdfs:label "MICOBATTERIOSI NON TUBERCOLARE"@it;
+  owl:sameAs <http://snomed.info/id/88415009>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "MICOBATTERIOSI NON TUBERCOLARE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "MICOBATTERIOSI NON TUBERCOLARE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "MICOBATTERIOSI NON TUBERCOLARE"@it .
+
 <https://w3id.org/whow/controlled-vocabulary/diseases/mononucleosi-infettiva> a skos:Concept,
     hm:Disease;
-  rdfs:label "La malattia MONONUCLEOSI INFETTIVA"@it;
+  rdfs:label "MONONUCLEOSI INFETTIVA"@it;
   owl:sameAs <http://snomed.info/id/271558008>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
     <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
@@ -241,7 +724,7 @@
   ispra-top:name "MONONUCLEOSI INFETTIVA"@it .
 
 <https://w3id.org/whow/controlled-vocabulary/diseases/morbillo> a skos:Concept, hm:Disease;
-  rdfs:label "La malattia MORBILLO"@it;
+  rdfs:label "MORBILLO"@it;
   owl:sameAs <http://snomed.info/id/14189004>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
     <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
@@ -253,9 +736,21 @@
     <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
   ispra-top:name "MORBILLO"@it .
 
+<https://w3id.org/whow/controlled-vocabulary/diseases/parassitosi> a skos:Concept,
+    hm:Disease;
+  rdfs:label "PARASSITOSI"@it;
+  owl:sameAs <http://snomed.info/id/17322007>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "PARASSITOSI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "PARASSITOSI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "PARASSITOSI"@it .
+
 <https://w3id.org/whow/controlled-vocabulary/diseases/parotite-epidemica> a skos:Concept,
     hm:Disease;
-  rdfs:label "La malattia PAROTITE EPIDEMICA"@it;
+  rdfs:label "PAROTITE EPIDEMICA"@it;
   owl:sameAs <http://snomed.info/id/240526004>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
     <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
@@ -267,8 +762,20 @@
     <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
   ispra-top:name "PAROTITE EPIDEMICA"@it .
 
+<https://w3id.org/whow/controlled-vocabulary/diseases/pediculosi> a skos:Concept,
+    hm:Disease;
+  rdfs:label "PEDICULOSI"@it;
+  owl:sameAs <http://snomed.info/id/20848007>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "PEDICULOSI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "PEDICULOSI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "PEDICULOSI"@it .
+
 <https://w3id.org/whow/controlled-vocabulary/diseases/pertosse> a skos:Concept, hm:Disease;
-  rdfs:label "La malattia PERTOSSE"@it;
+  rdfs:label "PERTOSSE"@it;
   owl:sameAs <http://snomed.info/id/27836007>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
     <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
@@ -280,8 +787,54 @@
     <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
   ispra-top:name "PERTOSSE"@it .
 
+<https://w3id.org/whow/controlled-vocabulary/diseases/peste> a skos:Concept, hm:Disease;
+  rdfs:label "PESTE"@it;
+  owl:sameAs <http://snomed.info/id/58750007>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "PESTE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "PESTE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "PESTE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/poliomelite> a skos:Concept,
+    hm:Disease;
+  rdfs:label "POLIOMELITE"@it;
+  owl:sameAs <http://snomed.info/id/398102009>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "POLIOMELITE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "POLIOMELITE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "POLIOMELITE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/rabbia> a skos:Concept, hm:Disease;
+  rdfs:label "RABBIA"@it;
+  owl:sameAs <http://snomed.info/id/14168008>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "RABBIA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "RABBIA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "RABBIA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/rickettsiosi> a skos:Concept,
+    hm:Disease;
+  rdfs:label "RICKETTSIOSI"@it;
+  owl:sameAs <http://snomed.info/id/416829003>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "RICKETTSIOSI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "RICKETTSIOSI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "RICKETTSIOSI"@it .
+
 <https://w3id.org/whow/controlled-vocabulary/diseases/rosolia> a skos:Concept, hm:Disease;
-  rdfs:label "La malattia ROSOLIA"@it;
+  rdfs:label "ROSOLIA"@it;
   owl:sameAs <http://snomed.info/id/36653000>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
     <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
@@ -295,7 +848,7 @@
 
 <https://w3id.org/whow/controlled-vocabulary/diseases/salmonellosi-non-tifoidee> a
     skos:Concept, hm:Disease;
-  rdfs:label "La malattia SALMONELLOSI NON TIFOIDEE"@it;
+  rdfs:label "SALMONELLOSI NON TIFOIDEE"@it;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
   skos:prefLabel "SALMONELLOSI NON TIFOIDEE"@it;
@@ -304,9 +857,20 @@
   ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
   ispra-top:name "SALMONELLOSI NON TIFOIDEE"@it .
 
+<https://w3id.org/whow/controlled-vocabulary/diseases/scabbia> a skos:Concept, hm:Disease;
+  rdfs:label "SCABBIA"@it;
+  owl:sameAs <http://snomed.info/id/128869009>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "SCABBIA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "SCABBIA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "SCABBIA"@it .
+
 <https://w3id.org/whow/controlled-vocabulary/diseases/scarlattina> a skos:Concept,
     hm:Disease;
-  rdfs:label "La malattia SCARLATTINA"@it;
+  rdfs:label "SCARLATTINA"@it;
   owl:sameAs <http://snomed.info/id/30242009>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
     <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
@@ -320,7 +884,7 @@
 
 <https://w3id.org/whow/controlled-vocabulary/diseases/shigellosi> a skos:Concept,
     hm:Disease;
-  rdfs:label "La malattia SHIGELLOSI"@it;
+  rdfs:label "SHIGELLOSI"@it;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
   skos:prefLabel "SHIGELLOSI"@it;
@@ -329,9 +893,67 @@
   ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/e961c11a88228ed1e0170aa9606a2678>;
   ispra-top:name "SHIGELLOSI"@it .
 
+<https://w3id.org/whow/controlled-vocabulary/diseases/sifilide> a skos:Concept, hm:Disease;
+  rdfs:label "SIFILIDE"@it;
+  owl:sameAs <http://snomed.info/id/76272004>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "SIFILIDE"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "SIFILIDE"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "SIFILIDE"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/tetano> a skos:Concept, hm:Disease;
+  rdfs:label "TETANO"@it;
+  owl:sameAs <http://snomed.info/id/10629009>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "TETANO"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "TETANO"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "TETANO"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/tifo-esantematico> a skos:Concept,
+    hm:Disease;
+  rdfs:label "TIFO ESANTEMATICO"@it;
+  owl:sameAs <http://snomed.info/id/240613006>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "TIFO ESANTEMATICO"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "TIFO ESANTEMATICO"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "TIFO ESANTEMATICO"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/toxoplasmosi> a skos:Concept,
+    hm:Disease;
+  rdfs:label "TOXOPLASMOSI"@it;
+  owl:sameAs <http://snomed.info/id/187192000>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "TOXOPLASMOSI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "TOXOPLASMOSI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "TOXOPLASMOSI"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/trichinosi> a skos:Concept,
+    hm:Disease;
+  rdfs:label "TRICHINOSI"@it;
+  owl:sameAs <http://snomed.info/id/709018004>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "TRICHINOSI"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "TRICHINOSI"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "TRICHINOSI"@it .
+
 <https://w3id.org/whow/controlled-vocabulary/diseases/tubercolosi> a skos:Concept,
     hm:Disease;
-  rdfs:label "La malattia TUBERCOLOSI"@it;
+  rdfs:label "TUBERCOLOSI"@it;
   owl:sameAs <http://snomed.info/id/56717001>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
@@ -341,8 +963,19 @@
   ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/f4413243bbe97130548e1ee5b31686f6>;
   ispra-top:name "TUBERCOLOSI"@it .
 
+<https://w3id.org/whow/controlled-vocabulary/diseases/tularemia> a skos:Concept, hm:Disease;
+  rdfs:label "TULAREMIA"@it;
+  owl:sameAs <http://snomed.info/id/19265001>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "TULAREMIA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "TULAREMIA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "TULAREMIA"@it .
+
 <https://w3id.org/whow/controlled-vocabulary/diseases/varicella> a skos:Concept, hm:Disease;
-  rdfs:label "La malattia VARICELLA"@it;
+  rdfs:label "VARICELLA"@it;
   owl:sameAs <http://snomed.info/id/38907003>;
   skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
     <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
@@ -353,6 +986,17 @@
   ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/88c9580352ff551e493258b9efb16e42>,
     <https://w3id.org/whow/controlled-vocabulary/diseases/aa5e3f94194f1115a4c36853c0aa5f9d>;
   ispra-top:name "VARICELLA"@it .
+
+<https://w3id.org/whow/controlled-vocabulary/diseases/zika> a skos:Concept, hm:Disease;
+  rdfs:label "ZIKA"@it;
+  owl:sameAs <http://snomed.info/id/3928002>;
+  skos:broader <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/diseases>;
+  skos:prefLabel "ZIKA"@it;
+  clvapit:hasRankOrder "2";
+  l0:name "ZIKA"@it;
+  ispra-top:isClassifiedBy <https://w3id.org/whow/controlled-vocabulary/diseases/b096b60fcd334ba27ab572fb5653d2a9>;
+  ispra-top:name "ZIKA"@it .
 
 <https://w3id.org/whow/data/distribution/d-RDF-TURTLE> a dcatapit:Distribution, dcat:Distribution;
   dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>;
