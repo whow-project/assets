@@ -639,9 +639,9 @@
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-69-4>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-71-8>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75-99-0>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-75736-33-3>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-759-94-4>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-03-9>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-06-2>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-13-1>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-44-8>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-87-9>,
-    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76578-14-8>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-06-2>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-12-0>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-13-1>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-44-8>,
+    <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-87-9>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76578-14-8>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7664-41-7>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76674-21-0>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76738-62-0>,
     <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7696-12-0>, <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-77-06-5>,
@@ -2984,7 +2984,7 @@
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14797-55-8> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "Azoto nitrico — Codice CAS: 14797-55-8"@it;
-  owl:sameAs <http://www.wikidata.org/entity/Q182168>;
+  owl:sameAs <http://www.wikidata.org/entity/Q182168>, <https://w3id.org/leo/data/chemical-substance/14797-55-8>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
   skos:notation "CAS:14797-55-8";
   skos:prefLabel "Azoto nitrico"@it;
@@ -2993,7 +2993,7 @@
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14797-65-0> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "Azoto nitroso — Codice CAS: 14797-65-0"@it;
-  owl:sameAs <http://www.wikidata.org/entity/Q213788>;
+  owl:sameAs <http://www.wikidata.org/entity/Q213788>, <https://w3id.org/leo/data/chemical-substance/14797-65-0>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
   skos:notation "CAS:14797-65-0";
   skos:prefLabel "Azoto nitroso"@it;
@@ -3002,7 +3002,7 @@
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14798-03-9> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "Ammoniaca totale — Codice CAS: 14798-03-9"@it, "Azoto ammoniacale — Codice CAS: 14798-03-9"@it;
-  owl:sameAs <http://www.wikidata.org/entity/Q190901>;
+  owl:sameAs <http://www.wikidata.org/entity/Q190901>, <https://w3id.org/leo/data/chemical-substance/14798-03-9>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
   skos:notation "CAS:14798-03-9";
   skos:prefLabel "Ammoniaca totale"@it, "Azoto ammoniacale"@it;
@@ -3030,7 +3030,7 @@
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14808-79-8> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "Solfati — Codice CAS: 14808-79-8"@it;
-  owl:sameAs <http://www.wikidata.org/entity/Q172290>;
+  owl:sameAs <http://www.wikidata.org/entity/Q172290>, <https://w3id.org/leo/data/chemical-substance/14808-79-8>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
   skos:notation "CAS:14808-79-8";
   skos:prefLabel "Solfati"@it;
@@ -3083,11 +3083,11 @@
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-14998-27-7> a
     skos:Concept, w-mon:ChemicalSubstance;
-  rdfs:label "clorito — Codice CAS: 14998-27-7"@it;
+  rdfs:label "Clorito — Codice CAS: 14998-27-7"@it;
   owl:sameAs <http://www.wikidata.org/entity/Q593248>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
   skos:notation "CAS:14998-27-7";
-  skos:prefLabel "clorito"@it;
+  skos:prefLabel "Clorito"@it;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/14998-27-7> .
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-150-68-5> a skos:Concept,
@@ -3400,7 +3400,7 @@
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-16887-00-6> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "Cloruri — Codice CAS: 16887-00-6"@it;
-  owl:sameAs <http://www.wikidata.org/entity/Q108200>;
+  owl:sameAs <http://www.wikidata.org/entity/Q108200>, <https://w3id.org/leo/data/chemical-substance/16887-00-6>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
   skos:notation "CAS:16887-00-6";
   skos:prefLabel "Cloruri"@it;
@@ -7673,7 +7673,7 @@
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-71-52-3> a skos:Concept,
     w-mon:ChemicalSubstance;
   rdfs:label "Bicarbonati — Codice CAS: 71-52-3"@it;
-  owl:sameAs <http://www.wikidata.org/entity/Q409202>;
+  owl:sameAs <http://www.wikidata.org/entity/Q409202>, <https://w3id.org/leo/data/chemical-substance/71-52-3>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
   skos:notation "CAS:71-52-3";
   skos:prefLabel "Bicarbonati"@it;
@@ -7989,7 +7989,7 @@
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7439-89-6> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "Ferro — Codice CAS: 7439-89-6"@it, "Iron — CAS Identifier: 7439-89-6"@en;
-  owl:sameAs <http://www.wikidata.org/entity/Q677>;
+  owl:sameAs <http://www.wikidata.org/entity/Q677>, <https://w3id.org/leo/data/chemical-substance/7439-89-6>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
   skos:notation "CAS:7439-89-6";
   skos:prefLabel "Ferro"@it, "Iron"@en;
@@ -8007,7 +8007,7 @@
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7439-95-4> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "Magnesio — Codice CAS: 7439-95-4"@it, "Magnesium — CAS Identifier: 7439-95-4"@en;
-  owl:sameAs <http://www.wikidata.org/entity/Q660>;
+  owl:sameAs <http://www.wikidata.org/entity/Q660>, <https://w3id.org/leo/data/chemical-substance/7439-95-4>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
   skos:notation "CAS:7439-95-4";
   skos:prefLabel "Magnesio"@it, "Magnesium"@en;
@@ -8043,7 +8043,7 @@
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-09-7> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "Potassio — Codice CAS: 7440-09-7"@it;
-  owl:sameAs <http://www.wikidata.org/entity/Q703>;
+  owl:sameAs <http://www.wikidata.org/entity/Q703>, <https://w3id.org/leo/data/chemical-substance/7440-09-7>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
   skos:notation "CAS:7440-09-7";
   skos:prefLabel "Potassio"@it;
@@ -8052,7 +8052,7 @@
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-23-5> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "Sodio — Codice CAS: 7440-23-5"@it, "Sodium — CAS Identifier: 7440-23-5"@en;
-  owl:sameAs <http://www.wikidata.org/entity/Q658>;
+  owl:sameAs <http://www.wikidata.org/entity/Q658>, <https://w3id.org/leo/data/chemical-substance/7440-23-5>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
   skos:notation "CAS:7440-23-5";
   skos:prefLabel "Sodio"@it, "Sodium"@en;
@@ -8070,7 +8070,7 @@
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-38-2> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "Arsenic — CAS Identifier: 7440-38-2"@en, "Arsenico — Codice CAS: 7440-38-2"@it;
-  owl:sameAs <http://www.wikidata.org/entity/Q871>;
+  owl:sameAs <http://www.wikidata.org/entity/Q871>, <https://w3id.org/leo/data/chemical-substance/7440-38-2>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
   skos:notation "CAS:7440-38-2";
   skos:prefLabel "Arsenic"@en, "Arsenico"@it;
@@ -8133,7 +8133,7 @@
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-7440-50-8> a
     skos:Concept, w-mon:ChemicalSubstance;
   rdfs:label "Copper — CAS Identifier: 7440-50-8"@en, "Rame — Codice CAS: 7440-50-8"@it;
-  owl:sameAs <http://www.wikidata.org/entity/Q753>;
+  owl:sameAs <http://www.wikidata.org/entity/Q753>, <https://w3id.org/leo/data/chemical-substance/7440-50-8>;
   skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
   skos:notation "CAS:7440-50-8";
   skos:prefLabel "Copper"@en, "Rame"@it;
@@ -8309,6 +8309,15 @@
   skos:notation "CAS:76-06-2";
   skos:prefLabel "CLOROPICRINA"@it, "Chloropicrin"@en;
   ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/76-06-2> .
+
+<https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-12-0> a skos:Concept,
+    w-mon:ChemicalSubstance;
+  rdfs:label "Tetracloro-1,2-Difluoroetano (R-112) — Codice CAS: 76-12-0"@it;
+  owl:sameAs <http://www.wikidata.org/entity/Q2806548>;
+  skos:inScheme <https://w3id.org/whow/controlled-vocabulary/chemical-substances>;
+  skos:notation "CAS:76-12-0";
+  skos:prefLabel "Tetracloro-1,2-Difluoroetano (R-112)"@it;
+  ispra-top:hasUniqueIdentifier <https://w3id.org/whow/data/identifier/76-12-0> .
 
 <https://w3id.org/whow/controlled-vocabulary/chemical-substances/cas-76-13-1> a skos:Concept,
     w-mon:ChemicalSubstance;
@@ -14119,6 +14128,11 @@
 <https://w3id.org/whow/data/identifier/76-06-2> a ispra-top:UniqueIdentifier;
   rdfs:label "CAS Identifier — 76-06-2"@en, "Identificativo CAS — 76-06-2"@it;
   ispra-top:identifier "76-06-2";
+  ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
+
+<https://w3id.org/whow/data/identifier/76-12-0> a ispra-top:UniqueIdentifier;
+  rdfs:label "CAS Identifier — 76-12-0"@en, "Identificativo CAS — 76-12-0"@it;
+  ispra-top:identifier "76-12-0";
   ispra-top:isIssuedBy <https://w3id.org/whow/data/organisation/american-chemical-society> .
 
 <https://w3id.org/whow/data/identifier/76-13-1> a ispra-top:UniqueIdentifier;
