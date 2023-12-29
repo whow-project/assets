@@ -1,0 +1,527 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/isActivityOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Plan"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Service"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/hasBoundService"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/hasActivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@id" : "https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/flow.png"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "it",
+    "@value" : "2023-12-29"
+  }, {
+    "@language" : "en",
+    "@value" : "A simple ontology for representing plans we modelled in the context of the project by reusing the sequence ontology design pattern"
+  }, {
+    "@language" : "it",
+    "@value" : "2023-02-25"
+  }, {
+    "@language" : "it",
+    "@value" : "Un'ontologia semplice per la rappresentazione dei piani è stata modellata nel contesto del progetto riutilizzando il modello di progettazione dell'ontologia della sequenza."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Flow ontology"
+  }, {
+    "@language" : "it",
+    "@value" : "Ontologia dei workflow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A simple ontology for representing plans we modelled in the context of the project by reusing the sequence ontology design pattern"
+  }, {
+    "@language" : "it",
+    "@value" : "Un'ontologia semplice per la rappresentazione dei piani è stata modellata nel contesto del progetto riutilizzando il modello di progettazione dell'ontologia della sequenza."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Ontologia dei workflow"
+  }, {
+    "@language" : "en",
+    "@value" : "Flow ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/0.1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe che rappresenta una parte di attività di un piano."
+  }, {
+    "@language" : "en",
+    "@value" : "The class that represents an activity part of a plan."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Activity"
+  }, {
+    "@language" : "it",
+    "@value" : "Attività"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/Plan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe che rappresenta un piano da eseguire."
+  }, {
+    "@language" : "en",
+    "@value" : "The class that represents a plan to be executed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Piano"
+  }, {
+    "@language" : "en",
+    "@value" : "Plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe per rappresentare i servizi che possono essere legati alle attività."
+  }, {
+    "@language" : "en",
+    "@value" : "The class to represent services that can be bound to activities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service"
+  }, {
+    "@language" : "it",
+    "@value" : "Servizio"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/hasActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà dell'oggetto utilizzata per riferirsi a una parte di attività di un piano, indipendentemente dalla sua collocazione nel piano."
+  }, {
+    "@language" : "en",
+    "@value" : "The object property used for referring to an activity part of a plan regardless to its oreder in the plan."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha attività"
+  }, {
+    "@language" : "en",
+    "@value" : "has activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/isActivityOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/hasBoundService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Proprietà dell'oggetto che collega un'attività a un servizio. Consente di affermare che un'attività può essere eseguita da un servizio (ad esempio, API REST, API WebSocket, ecc.)."
+  }, {
+    "@language" : "en",
+    "@value" : "The object property that links an activity to a service. This allows to state that an activity can be executed by a service (e.g. REST API, WebSocket API, etc.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha servizio collegato"
+  }, {
+    "@language" : "en",
+    "@value" : "has bound Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Service"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/isServiceBoundTo"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/hasDirectNextActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà dell'oggetto per collegare l'attività successiva a una data attività utilizzata come soggetto della tripla. La proprietà non è transitiva."
+  }, {
+    "@language" : "en",
+    "@value" : "The object property to link the next activity to a given one used as subject of the triple. The property is not transitive."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha attività successiva diretta"
+  }, {
+    "@language" : "en",
+    "@value" : "has direct next activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/hasNextActivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/hasDirectPreviousActivity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/hasDirectPreviousActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà dell'oggetto collega l'attività precedente a una determinata attività utilizzata come soggetto della tripla. La proprietà non è transitiva."
+  }, {
+    "@language" : "en",
+    "@value" : "The object property to link the previous activity to a given one used as subject of the triple. The property is not transitive."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha attività precedente diretta"
+  }, {
+    "@language" : "en",
+    "@value" : "has direct previous activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/hasPreviousActivity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/hasFirstActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà dell'oggetto utilizzata per riferirsi alla prima parte di attività di un piano."
+  }, {
+    "@language" : "en",
+    "@value" : "The object property used for referring to the first activity part of a plan."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha prima attività"
+  }, {
+    "@language" : "en",
+    "@value" : "has first activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/hasActivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/isFirstActivityOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/hasLastActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà dell'oggetto utilizzata per riferirsi all'ultima parte di attività di un piano."
+  }, {
+    "@language" : "en",
+    "@value" : "The object property used for referring to the last activity part of a plan."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha ultima attività"
+  }, {
+    "@language" : "en",
+    "@value" : "has last activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/hasActivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/isLastActivityOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/hasNextActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà dell'oggetto per collegare l'attività successiva a una data attività utilizzata come soggetto della tripla. La proprietà è transitiva, quindi permette di creare catene di attività."
+  }, {
+    "@language" : "en",
+    "@value" : "The object property to link the next activity to a given one used as subject of the triple. The property is transitive, hence it allows one to create chains of activities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha attività successiva"
+  }, {
+    "@language" : "en",
+    "@value" : "has next activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/hasPreviousActivity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/hasPreviousActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà dell'oggetto collega l'attività precedente a una determinata attività utilizzata come soggetto della tripla. La proprietà è transitiva, quindi permette di creare catene di attività attraverso la chiusura transitiva."
+  }, {
+    "@language" : "en",
+    "@value" : "The object property to link the previous activity to a given one used as subject of the triple. The property is transitive, hence it allows one to create chains of activity by means of transitive closure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha attività precedente"
+  }, {
+    "@language" : "en",
+    "@value" : "has previous activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/ingestion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/whow/onto/flow/Service" ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/isActivityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Proprietà dell'oggetto utilizzata per collegare un'attività al piano a cui appartiene senza specificare l'ordine di esecuzione."
+  }, {
+    "@language" : "en",
+    "@value" : "The object property used for linking an activity to the plan it belongs to without specifying any order for its execution."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is activity of"
+  }, {
+    "@language" : "it",
+    "@value" : "è attività di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Plan"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/isFirstActivityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Proprietà dell'oggetto che consente di collegare un'attività a un piano. Nel caso in cui venga utilizzata questa proprietà oggetto, l'attività è la prima del flusso di lavoro rappresentato dal piano."
+  }, {
+    "@language" : "en",
+    "@value" : "The object property that allows to connect an activity to a plan. In the case this object property is used the activity is the first in workflow represented by the plan."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is first activity of"
+  }, {
+    "@language" : "it",
+    "@value" : "è prima attività di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/isActivityOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/isLastActivityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà utilizzata per collegare un'attività, che è l'ultima di un piano, al suo piano."
+  }, {
+    "@language" : "en",
+    "@value" : "The property used for linking an activity, which is the last one of a plan, to its plan."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is last activity of"
+  }, {
+    "@language" : "it",
+    "@value" : "è ultima attività di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/isActivityOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/isServiceBoundTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La proprietà dell'oggetto per legare un servizio a un'attività."
+  }, {
+    "@language" : "en",
+    "@value" : "The object property to bound a service to an activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is service bound to"
+  }, {
+    "@language" : "it",
+    "@value" : "è servizio collegato a"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/whow/onto/flow/Activity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/mapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/whow/onto/flow/Service" ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/metadating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/whow/onto/flow/Service" ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/reasoning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/whow/onto/flow/Service" ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/storing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/whow/onto/flow/Service" ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/translation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/whow/onto/flow/Service" ]
+}, {
+  "@id" : "https://w3id.org/whow/onto/flow/validation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/whow/onto/flow/Service" ]
+} ]

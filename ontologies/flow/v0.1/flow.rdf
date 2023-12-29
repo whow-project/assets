@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/whow/onto/flow/"
+     xml:base="https://w3id.org/whow/onto/flow/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/whow/onto/flow">
+        <owl:versionIRI rdf:resource="https://w3id.org/whow/onto/flow/0.1"/>
+        <rdfs:comment xml:lang="en">A simple ontology for representing plans we modelled in the context of the project by reusing the sequence ontology design pattern</rdfs:comment>
+        <dct:description xml:lang="it">2023-12-29</dct:description>
+        <dct:title xml:lang="en">Flow ontology</dct:title>
+        <dct:title xml:lang="it">Ontologia dei workflow</dct:title>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/whow-project/semantic-assets/main/ontologies/graphical-representation-ontologies/flow.png"/>
+        <dct:description xml:lang="en">A simple ontology for representing plans we modelled in the context of the project by reusing the sequence ontology design pattern</dct:description>
+        <dct:description xml:lang="it">2023-02-25</dct:description>
+        <rdfs:label xml:lang="it">Ontologia dei workflow</rdfs:label>
+        <rdfs:label xml:lang="en">Flow ontology</rdfs:label>
+        <dct:description xml:lang="it">Un&apos;ontologia semplice per la rappresentazione dei piani è stata modellata nel contesto del progetto riutilizzando il modello di progettazione dell&apos;ontologia della sequenza.</dct:description>
+        <rdfs:comment xml:lang="it">Un&apos;ontologia semplice per la rappresentazione dei piani è stata modellata nel contesto del progetto riutilizzando il modello di progettazione dell&apos;ontologia della sequenza.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/hasActivity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/flow/hasActivity">
+        <owl:inverseOf rdf:resource="https://w3id.org/whow/onto/flow/isActivityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/flow/Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:comment xml:lang="it">La proprietà dell&apos;oggetto utilizzata per riferirsi a una parte di attività di un piano, indipendentemente dalla sua collocazione nel piano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The object property used for referring to an activity part of a plan regardless to its oreder in the plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="it">ha attività</rdfs:label>
+        <rdfs:label xml:lang="en">has activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/hasBoundService -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/flow/hasBoundService">
+        <owl:inverseOf rdf:resource="https://w3id.org/whow/onto/flow/isServiceBoundTo"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/flow/Service"/>
+        <rdfs:comment xml:lang="it">Proprietà dell&apos;oggetto che collega un&apos;attività a un servizio. Consente di affermare che un&apos;attività può essere eseguita da un servizio (ad esempio, API REST, API WebSocket, ecc.).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The object property that links an activity to a service. This allows to state that an activity can be executed by a service (e.g. REST API, WebSocket API, etc.).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="it">ha servizio collegato</rdfs:label>
+        <rdfs:label xml:lang="en">has bound Service</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/hasDirectNextActivity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/flow/hasDirectNextActivity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/flow/hasNextActivity"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/whow/onto/flow/hasDirectPreviousActivity"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:comment xml:lang="it">La proprietà dell&apos;oggetto per collegare l&apos;attività successiva a una data attività utilizzata come soggetto della tripla. La proprietà non è transitiva.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The object property to link the next activity to a given one used as subject of the triple. The property is not transitive.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="it">ha attività successiva diretta</rdfs:label>
+        <rdfs:label xml:lang="en">has direct next activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/hasDirectPreviousActivity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/flow/hasDirectPreviousActivity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/flow/hasPreviousActivity"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:comment xml:lang="it">La proprietà dell&apos;oggetto collega l&apos;attività precedente a una determinata attività utilizzata come soggetto della tripla. La proprietà non è transitiva.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The object property to link the previous activity to a given one used as subject of the triple. The property is not transitive.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="it">ha attività precedente diretta</rdfs:label>
+        <rdfs:label xml:lang="en">has direct previous activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/hasFirstActivity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/flow/hasFirstActivity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/flow/hasActivity"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/whow/onto/flow/isFirstActivityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/flow/Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:comment xml:lang="it">La proprietà dell&apos;oggetto utilizzata per riferirsi alla prima parte di attività di un piano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The object property used for referring to the first activity part of a plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="it">ha prima attività</rdfs:label>
+        <rdfs:label xml:lang="en">has first activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/hasLastActivity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/flow/hasLastActivity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/flow/hasActivity"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/whow/onto/flow/isLastActivityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/flow/Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:comment xml:lang="it">La proprietà dell&apos;oggetto utilizzata per riferirsi all&apos;ultima parte di attività di un piano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The object property used for referring to the last activity part of a plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="it">ha ultima attività</rdfs:label>
+        <rdfs:label xml:lang="en">has last activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/hasNextActivity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/flow/hasNextActivity">
+        <owl:inverseOf rdf:resource="https://w3id.org/whow/onto/flow/hasPreviousActivity"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:comment xml:lang="it">La proprietà dell&apos;oggetto per collegare l&apos;attività successiva a una data attività utilizzata come soggetto della tripla. La proprietà è transitiva, quindi permette di creare catene di attività.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The object property to link the next activity to a given one used as subject of the triple. The property is transitive, hence it allows one to create chains of activities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="it">ha attività successiva</rdfs:label>
+        <rdfs:label xml:lang="en">has next activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/hasPreviousActivity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/flow/hasPreviousActivity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:comment xml:lang="it">La proprietà dell&apos;oggetto collega l&apos;attività precedente a una determinata attività utilizzata come soggetto della tripla. La proprietà è transitiva, quindi permette di creare catene di attività attraverso la chiusura transitiva.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The object property to link the previous activity to a given one used as subject of the triple. The property is transitive, hence it allows one to create chains of activity by means of transitive closure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="it">ha attività precedente</rdfs:label>
+        <rdfs:label xml:lang="en">has previous activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/isActivityOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/flow/isActivityOf">
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/flow/Plan"/>
+        <rdfs:comment xml:lang="it">Proprietà dell&apos;oggetto utilizzata per collegare un&apos;attività al piano a cui appartiene senza specificare l&apos;ordine di esecuzione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The object property used for linking an activity to the plan it belongs to without specifying any order for its execution.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="en">is activity of</rdfs:label>
+        <rdfs:label xml:lang="it">è attività di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/isFirstActivityOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/flow/isFirstActivityOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/flow/isActivityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/flow/Plan"/>
+        <rdfs:comment xml:lang="it">Proprietà dell&apos;oggetto che consente di collegare un&apos;attività a un piano. Nel caso in cui venga utilizzata questa proprietà oggetto, l&apos;attività è la prima del flusso di lavoro rappresentato dal piano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The object property that allows to connect an activity to a plan. In the case this object property is used the activity is the first in workflow represented by the plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="en">is first activity of</rdfs:label>
+        <rdfs:label xml:lang="it">è prima attività di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/isLastActivityOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/flow/isLastActivityOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/whow/onto/flow/isActivityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/flow/Plan"/>
+        <rdfs:comment xml:lang="it">La proprietà utilizzata per collegare un&apos;attività, che è l&apos;ultima di un piano, al suo piano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property used for linking an activity, which is the last one of a plan, to its plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="en">is last activity of</rdfs:label>
+        <rdfs:label xml:lang="it">è ultima attività di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/isServiceBoundTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/whow/onto/flow/isServiceBoundTo">
+        <rdfs:domain rdf:resource="https://w3id.org/whow/onto/flow/Service"/>
+        <rdfs:range rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+        <rdfs:comment xml:lang="it">La proprietà dell&apos;oggetto per legare un servizio a un&apos;attività.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The object property to bound a service to an activity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="en">is service bound to</rdfs:label>
+        <rdfs:label xml:lang="it">è servizio collegato a</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/Activity -->
+
+    <owl:Class rdf:about="https://w3id.org/whow/onto/flow/Activity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/flow/isActivityOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/whow/onto/flow/Plan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/flow/hasBoundService"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/whow/onto/flow/Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe che rappresenta una parte di attività di un piano.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class that represents an activity part of a plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="en">Activity</rdfs:label>
+        <rdfs:label xml:lang="it">Attività</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/Plan -->
+
+    <owl:Class rdf:about="https://w3id.org/whow/onto/flow/Plan">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/whow/onto/flow/hasActivity"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/whow/onto/flow/Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">La classe che rappresenta un piano da eseguire.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class that represents a plan to be executed.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="it">Piano</rdfs:label>
+        <rdfs:label xml:lang="en">Plan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/Service -->
+
+    <owl:Class rdf:about="https://w3id.org/whow/onto/flow/Service">
+        <rdfs:comment xml:lang="it">La classe per rappresentare i servizi che possono essere legati alle attività.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class to represent services that can be bound to activities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/whow/onto/flow"/>
+        <rdfs:label xml:lang="en">Service</rdfs:label>
+        <rdfs:label xml:lang="it">Servizio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/ingestion -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/whow/onto/flow/ingestion">
+        <rdf:type rdf:resource="https://w3id.org/whow/onto/flow/Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/mapping -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/whow/onto/flow/mapping">
+        <rdf:type rdf:resource="https://w3id.org/whow/onto/flow/Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/metadating -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/whow/onto/flow/metadating">
+        <rdf:type rdf:resource="https://w3id.org/whow/onto/flow/Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/reasoning -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/whow/onto/flow/reasoning">
+        <rdf:type rdf:resource="https://w3id.org/whow/onto/flow/Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/storing -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/whow/onto/flow/storing">
+        <rdf:type rdf:resource="https://w3id.org/whow/onto/flow/Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/translation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/whow/onto/flow/translation">
+        <rdf:type rdf:resource="https://w3id.org/whow/onto/flow/Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/whow/onto/flow/validation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/whow/onto/flow/validation">
+        <rdf:type rdf:resource="https://w3id.org/whow/onto/flow/Service"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
